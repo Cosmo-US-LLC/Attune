@@ -10,6 +10,7 @@ import MeetFew from './MeetFew'
 import WhyChoose from './WhyChoose'
 import Testimonials from './Testimonials'
 import AnyQuestions from './AnyQuestions'
+import WeBelieve from './WeBelieve'
 
 function HomeMobile() {
   return (
@@ -25,6 +26,7 @@ function HomeMobile() {
       <WhyChoose />
       <Testimonials />
       <AnyQuestions />
+      <WeBelieve />
     </div>
   )
 }
