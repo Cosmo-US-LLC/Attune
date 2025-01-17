@@ -7,6 +7,9 @@ import NoNeed from './NoNeed'
 import WhatMakes from './WhatMakes'
 import WhyListeners from './WhyListeners'
 import MeetFew from './MeetFew'
+import WhyChoose from './WhyChoose'
+import Testimonials from './Testimonials'
+import AnyQuestions from './AnyQuestions'
 
 function HomeMobile() {
   return (
@@ -19,6 +22,9 @@ function HomeMobile() {
       <WhatMakes />
       <WhyListeners />
       <MeetFew />
+      <WhyChoose />
+      <Testimonials />
+      <AnyQuestions />
     </div>
   )
 }

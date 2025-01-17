@@ -14,7 +14,7 @@ function HeroMobile() {
         </p>
       </div>
       
-      <Button className="bg-[#5200FF] rounded-full text-[15px]">Connect Now</Button>
+      <Button className="bg-[#5200FF] rounded-full text-[15px]">Connect to a Listener</Button>
 
       <img src={"/mobile/heroBg.png"} alt='' className='h-[257.833px] w-[350px] object-contain' />
     </div>

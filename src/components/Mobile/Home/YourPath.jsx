@@ -58,7 +58,7 @@ function SupportCards({bg, img, title, points}) {
 
             <ul className='list-disc text-[15px] leading-[22px] pl-[19px] space-y-[22px] text-white'>
                 {points?.map((point, id) => (
-                    <li key={id} className=''
+                    <li key={id} className='capitalize'
                         style={{
                             listStyleImage: "url(/mobile/yourPath/list-disc.svg)"
                         }}
