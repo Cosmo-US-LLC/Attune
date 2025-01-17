@@ -3,13 +3,14 @@ import { Button } from "../ui/button";
 
 function NavbarMobile() {
   return (
-    <div className="bg-white flex justify-between items-center">
-      <div className="flex gap-1">
-        <Button variant="ghost">
+    <div className="bg-white h-[68px] flex justify-between items-center py-[14px] px-5">
+      <div className="flex gap-3">
+        <button className="bg-[#F4EFEA] w-[40px] h-[40px] p-2 rounded-sm">
           <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
+            className=""
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -20,7 +21,7 @@ function NavbarMobile() {
               strokeLinecap="round"
             />
           </svg>
-        </Button>
+        </button>
         <svg
           width="84"
           height="39"
@@ -39,7 +40,7 @@ function NavbarMobile() {
         </svg>
       </div>
 
-      <Button className="bg-[#FF6F61] rounded-full">Connect Now</Button>
+      <Button className="bg-[#FF6F61] rounded-full text-[15px]">Connect Now</Button>
     </div>
   );
 }
