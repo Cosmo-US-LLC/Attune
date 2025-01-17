@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button'
 import clsx from 'clsx'
 import Image from 'next/image'
 import React from 'react'
@@ -10,14 +11,36 @@ function YourPath() {
         <div className='space-y-5'>
             <SupportCards bg="bg-[#38AB9B]" img="/mobile/yourPath/seeking1.png" title="Seeking Connection?" points={[
                 {
-                    title: "",
-                    body: ""
+                    title: "Loneliness",
+                    body: "People Craving Connection And A Listening Ear."
+                },
+                {
+                    title: "Emotional Support",
+                    body: "Those feeling isolated and desiring a safe space to share their thoughts."
                 }
             ]} />
-            {/* <ul className='list-disc text-[15px] leading-[22px]'>
-                <li><strong>Loneliness:</strong> People Craving Connection And A Listening Ear.</li>
-                <li><strong>Emotional Support:</strong> Those feeling isolated and desiring a safe space to share their thoughts.</li>
-            </ul> */}
+            
+            <SupportCards bg="bg-[#F097DD]" img="/mobile/yourPath/seeking2.png" title="Seeking Connection?" points={[
+                {
+                    title: "Loneliness",
+                    body: "People Craving Connection And A Listening Ear."
+                },
+                {
+                    title: "Emotional Support",
+                    body: "Those feeling isolated and desiring a safe space to share their thoughts."
+                }
+            ]} />
+            
+            <SupportCards bg="bg-[#FF6F61]" img="/mobile/yourPath/seeking3.png" title="Seeking Connection?" points={[
+                {
+                    title: "Loneliness",
+                    body: "People Craving Connection And A Listening Ear."
+                },
+                {
+                    title: "Emotional Support",
+                    body: "Those feeling isolated and desiring a safe space to share their thoughts."
+                }
+            ]} />
         </div>
     </div>
   )
@@ -25,7 +48,6 @@ function YourPath() {
 
 function SupportCards({bg, img, title, points}) {
     return (
-    // <div className={clsx('p-[14px] rounded-3xl', classes)}>
     <div className={"p-[14px] rounded-3xl space-y-6" + ` ${bg}`}>
         <Image src={img} alt="Seeking connection 1" width={322} height={151} className='object-contain' />
 
@@ -34,13 +56,21 @@ function SupportCards({bg, img, title, points}) {
                 {title}
             </h2>
 
-            <ul className='list-disc text-[15px] leading-[22px]'>
+            <ul className='list-disc text-[15px] leading-[22px] pl-[19px] space-y-[22px] text-white'>
                 {points?.map((point, id) => (
-                    <li key={id} className=''>
-                        <strong>{point?.title}:</strong>
+                    <li key={id} className=''
+                        style={{
+                            listStyleImage: "url(/mobile/yourPath/list-disc.svg)"
+                        }}
+                    >
+                        <strong>{point?.title}:</strong> {point?.body}
                     </li>
                 ))}
             </ul>
+        </div>
+              
+        <div className='flex justify-center'>
+            <Button className="bg-[#5200FF] rounded-full text-[15px]">Get Started</Button>
         </div>
     </div>
     )
