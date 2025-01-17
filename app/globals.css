@@ -42,3 +42,28 @@ body {
     --radius: 0.5rem;
   }
 }
+
+.accordion-icon::before {
+  content: "+";
+  transition: transform 0.3s ease;
+}
+
+[data-state="open"] .accordion-icon::before {
+  content: "×";
+}
+.no-need-section {
+  background-image: url(../public/desktop/no-need/no-need.webp); /* Replace with your image path */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 603px;
+}
+
+.why-listeners-matter-section {
+  background-image: url(../public/desktop/why-listeners-matter/frame_131.webp); /* Replace with your image path */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 603px;
+}
+
