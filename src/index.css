@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'OT Miniature';
+  src: url('/fonts/otminiature-regular.OTF') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OT Miniature';
+  src: url('/fonts/otminiature-bold.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OT Miniature';
+  src: url('/fonts/otminiature-bolditalic.OTF') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OT Miniature';
+  src: url('/fonts/otminiature-regulatitalic.OTF') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OT Miniature';
+  src: url('/fonts/otminiature-extralightitalic.OTF') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+.accordion-icon::before {
+  content: "+";
+  transition: transform 0.3s ease;
+}
+
+[data-state="open"] .accordion-icon::before {
+  content: "×";
+}
+.no-need-section {
+  background-image: url(../public/desktop/no-need/no-need.webp); /* Replace with your image path */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 603px;
+}
+
+.why-listeners-matter-section {
+  background-image: url(../public/desktop/why-listeners-matter/frame_131.webp); /* Replace with your image path */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 603px;
+}
