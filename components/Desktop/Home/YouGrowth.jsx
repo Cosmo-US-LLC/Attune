@@ -16,7 +16,7 @@ const gridData = [
     id: 2,
     text: "",
     bgColor: "bg-white",
-    image: heal, // Correctly importing image
+    image: heal,  
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const gridData = [
     id: 4,
     text: "",
     bgColor: "bg-white",
-    image: happyTree, // Correctly importing image
+    image: happyTree,  
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ const gridData = [
     id: 6,
     text: "",
     bgColor: "bg-white",
-    image: cupOfCoffe, // Correctly importing image
+    image: cupOfCoffe,  
   },
 ];
 
