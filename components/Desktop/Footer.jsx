@@ -39,35 +39,35 @@ function Footer() {
           {/* Right Section */}
           <div className="flex flex-col items-center md:items-start">
             <img
-              src="/heart-wellness.png"
+              src=" "
               alt="Mental Wellness"
               className="w-24 h-24 mb-4"
             />
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 hover:text-yellow-400">
                 <img
-                  src="/facebook-icon.png"
+                  src=" "
                   alt="Facebook"
                   className="w-8 h-8 rounded-full"
                 />
               </a>
               <a href="#" className="text-gray-600 hover:text-yellow-400">
                 <img
-                  src="/instagram-icon.png"
+                  src=" "
                   alt="Instagram"
                   className="w-8 h-8 rounded-full"
                 />
               </a>
               <a href="#" className="text-gray-600 hover:text-yellow-400">
                 <img
-                  src="/linkedin-icon.png"
+                  src=""
                   alt="LinkedIn"
                   className="w-8 h-8 rounded-full"
                 />
               </a>
               <a href="#" className="text-gray-600 hover:text-yellow-400">
                 <img
-                  src="/youtube-icon.png"
+                  src=" "
                   alt="YouTube"
                   className="w-8 h-8 rounded-full"
                 />
