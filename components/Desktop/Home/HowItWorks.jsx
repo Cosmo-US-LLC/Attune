@@ -10,7 +10,7 @@ function HowItWorks() {
                 01
               </span>
               <img
-                src="/sign-up-icon.png"
+                src=" "
                 alt="Sign Up"
                 className="h-10 w-10 ml-4"
               />
@@ -29,7 +29,7 @@ function HowItWorks() {
                 02
               </span>
               <img
-                src="/find-listener-icon.png"
+                src=" "
                 alt="Find Your Listener"
                 className="h-10 w-10 ml-4"
               />
@@ -50,7 +50,7 @@ function HowItWorks() {
                 03
               </span>
               <img
-                src="/connect-icon.png"
+                src=" "
                 alt="Connect"
                 className="h-10 w-10 ml-4"
               />

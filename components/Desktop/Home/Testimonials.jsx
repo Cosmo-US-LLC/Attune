@@ -5,42 +5,42 @@ const testimonials = [
   {
     id: 1,
     name: "Jake, 24",
-    image: "/testimonial-jake.png", // Update with actual image path
+    image: " ", // Update with actual image path
     text: "Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference.",
     bgColor: "bg-lime-200",
   },
   {
     id: 2,
     name: "Jessica, 45",
-    image: "/testimonial-jessica.png", // Update with actual image path
+    image: " ", // Update with actual image path
     text: "As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters.",
     bgColor: "bg-pink-200",
   },
   {
     id: 3,
     name: "John, 72",
-    image: "/testimonial-john.png", // Update with actual image path
+    image: " ", // Update with actual image path
     text: "Losing my partner was the hardest thing I've ever faced. Talking to a Listener allowed me to process my grief and feel less alone.",
     bgColor: "bg-red-200",
   },
   {
     id: 4,
     name: "Sara, 30",
-    image: "/testimonial-sara.png", // Update with actual image path
+    image: " ", // Update with actual image path
     text: "Joining this community gave me the confidence to speak about my struggles without judgment.",
     bgColor: "bg-yellow-200",
   },
   {
     id: 5,
     name: "Michael, 50",
-    image: "/testimonial-michael.png", // Update with actual image path
+    image: " ", // Update with actual image path
     text: "This platform has been a lifesaver, allowing me to process my challenges.",
     bgColor: "bg-teal-200",
   },
   {
     id: 6,
     name: "Emily, 29",
-    image: "/testimonial-emily.png", // Update with actual image path
+    image: " ", // Update with actual image path
     text: "Having a Listener gave me the strength to overcome my fears.",
     bgColor: "bg-blue-200",
   },
