@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			miniature: ['OT Miniature', 'sans-serif'],
+		},	
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)'

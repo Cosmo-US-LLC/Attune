@@ -16,8 +16,8 @@ function NavbarMobile() {
             <path
               d="M20 18H4M14.5 12H4M20 6H4"
               stroke="#5200FF"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
           </svg>
         </Button>
