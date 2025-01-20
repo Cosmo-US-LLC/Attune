@@ -49,13 +49,14 @@ function TestimonialsCarousel() {
   ];
 
   return (
-    <div className="bg-[#F4EFEA] p-[105px] pt-[85px] space-y-6">
+    <div className="bg-[#F4EFEA]">
+      <div className="max-w-[1440px] mx-auto  p-[105px] pt-[85px] space-y-6">
       <h1 className="text-[76px] font-miniature">Testimonials</h1>
 
       <Carousel className="">
         <CarouselContent>
           {testimonials?.map((test, id) => (
-            <CarouselItem key={id} className="basis-1/3 w-full">
+            <CarouselItem key={id} className="max-xl:basis-1/2 basis-1/3 w-full">
               <div
                 className={
                   "border border-black rounded-[30px] py-[35px] px-[28px] min-h-[440px] " +
@@ -79,6 +80,7 @@ function TestimonialsCarousel() {
         <CarouselPrevious className="border border-black w-[48px] h-[48px] disabled:hidden bg-transparent -left-16" />
         <CarouselNext className="border border-black w-[48px] h-[48px] disabled:hidden bg-transparent -right-16" />
       </Carousel>
+      </div>
     </div>
   );
 }

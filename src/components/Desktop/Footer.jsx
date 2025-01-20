@@ -1,18 +1,18 @@
 function Footer() {
   return (
     <footer className="bg-[#E5DDD4] overflow-hidden relative p-[50px]">
-      <div className="relative z-10 max-w-[90%] px-6">
+      <div className="relative z-10 xl:max-w-[90%] px-6">
         {/* Top Section */}
         <div className="flex">
-          <div className="min-w-[200px] flex items-end">
+          <div className="min-w-[200px] flex max-xl:items-center items-end">
             <img src="/desktop/logo-footer.svg" alt="Attune Logo" className="" />
           </div>
 
           <div className="grow flex pb-1">
-            <div className="space-y-[57px]">
-              <div className="space-y-[43px]">
-                <div className="flex items-center gap-11">
-                  <h1 className="text-[55px] font-miniature leading-[69px]">
+            <div className="space-y-[20px] xl:space-y-[57px]">
+              <div className="space-y-[20px] xl:space-y-[43px]">
+                <div className="flex max-xl:flex-col items-start xl:items-center gap-4 xl:gap-11">
+                  <h1 className="text-[55px] font-miniature leading-[50px] xl:leading-[69px]">
                     Talk to a
                     <br />
                     professional
@@ -27,7 +27,7 @@ function Footer() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-4 grid-rows-2 gap-y-[12px] text-[16.2px] font-[500]">
+                <div className="grid max-xl:grid-cols-2 grid-cols-4 grid-rows-2 gap-y-[12px] text-[16.2px] font-[500]">
                   <a href="#">Who We Serve</a>
                   <a href="#">Our Approach</a>
                   <a href="#">Who We Serve</a>

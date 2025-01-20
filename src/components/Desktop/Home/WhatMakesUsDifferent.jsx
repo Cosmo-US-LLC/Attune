@@ -38,10 +38,10 @@ const features = [
 
 function WhatMakesUsDifferent() {
   return (
-    <div className="bg-[#f4efea] p-[114px]">
-      <div className="space-y-[39px]">
+    <div className="bg-[#f4efea]">
+      <div className="max-w-[1440px] p-[114px] mx-auto space-y-[39px]">
         {/* Title Section */}
-        <h1 className="text-[76px] leading-10 font-miniature text-left">
+        <h1 className="text-[76px] leading-[76px] font-miniature text-left">
           What Makes Us Different?
         </h1>
         <p className="text-lg text-left max-w-[677px]">
@@ -66,16 +66,16 @@ function WhatMakesUsDifferent() {
           ))}
         </div>
 
-        <p className="text-[18px] leading-[26px] max-w-[630px]">
+        <p className="relative z-10 text-[18px] leading-[26px] max-w-[630px]">
           Choose Attune for an approachable, supportive, and stigma-free experience in managing your emotional health and well-being.
         </p>
 
         {/* Footer Section */}
         <div className="relative z-0">
-          <button className="bg-[#5200FF] text-white py-3 px-6 rounded-full">
+          <button className="bg-[#5200FF] relative z-10 text-white py-3 px-6 rounded-full">
             Connect Now
           </button>
-          <img src="/desktop/what-makes/sitting-girl.svg" alt="Sitting girl" className="absolute right-0 -bottom-1" />
+          <img src="/desktop/what-makes/sitting-girl.svg" alt="Sitting girl" className="absolute max-xl:-right-[10%] right-0 z-0 max-xl:bottom-[300%] -bottom-1" />
         </div>
       </div>
     </div>
