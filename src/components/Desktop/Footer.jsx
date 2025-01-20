@@ -58,12 +58,13 @@ function Footer() {
 
       </div>
 
-      <div className=" absolute left-[60px] top-[17.5vw] leading-3 text-[32vw] font-miniature text-[#ded6ce]">
-        Att<span className="italic">une</span>
-      </div>
 
       {/* Bottom Section */}
       <div className="relative z-10 mt-5 border-t border-black pt-4">
+        <div className=" absolute bottom-[100%]">
+          {/* Att<span className="italic">une</span> */}
+          <img src="/desktop/footer/attune.svg" alt="Attune logo" />
+        </div>
         <div className="flex flex-col md:flex-row justify-between items-center text-[12px] max-w-[1020px]">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum is simply dummy text of the printing and
