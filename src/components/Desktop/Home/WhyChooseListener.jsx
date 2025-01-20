@@ -1,83 +1,166 @@
 function WhyChooseListener() {
-    return (
-      <div className="bg-white py-10 px-4">
-        <h1 className="text-3xl font-bold text-center mb-8">Why Choose a Listener?</h1>
-        <div className="overflow-x-auto max-w-5xl mx-auto">
-          <table className="w-full border-collapse">
-            {/* Table Head */}
-            <thead>
-              <tr>
-                <th className="border-b-2 border-gray-300 bg-white text-left px-4 py-3 text-gray-800">Feature</th>
-                <th className="border-b-2 border-gray-300 bg-lime-200 text-center px-4 py-3 font-bold text-gray-900">Attune</th>
-                <th className="border-b-2 border-gray-300 bg-white text-center px-4 py-3 text-gray-800">Traditional Therapy</th>
-              </tr>
-            </thead>
-  
-            {/* Table Body */}
-            <tbody>
-              {/* Row 1 */}
-              <tr className="border-b border-gray-300">
-                <td className="px-4 py-4 text-gray-800">Affordability</td>
-                <td className="bg-lime-100 text-center px-4 py-4">
-                  <span className="text-purple-600 font-bold">&#10004;</span> More affordable
-                </td>
-                <td className="text-center px-4 py-4">
-                  <span className="text-blue-600 font-bold">!</span> Expensive
-                </td>
-              </tr>
-              {/* Row 2 */}
-              <tr className="border-b border-gray-300">
-                <td className="px-4 py-4 text-gray-800">Accessibility</td>
-                <td className="bg-lime-100 text-center px-4 py-4">
-                  <span className="text-purple-600 font-bold">&#10004;</span> Anytime, anywhere
-                </td>
-                <td className="text-center px-4 py-4">
-                  <span className="text-orange-600 font-bold">&#10008;</span> Requires appointments
-                </td>
-              </tr>
-              {/* Row 3 */}
-              <tr className="border-b border-gray-300">
-                <td className="px-4 py-4 text-gray-800">Support for Everyday Issues</td>
-                <td className="bg-lime-100 text-center px-4 py-4">
-                  <span className="text-purple-600 font-bold">&#10004;</span> Stress, loneliness
-                </td>
-                <td className="text-center px-4 py-4">
-                  <span className="text-blue-600 font-bold">!</span> Diagnosis-focused
-                </td>
-              </tr>
-              {/* Row 4 */}
-              <tr className="border-b border-gray-300">
-                <td className="px-4 py-4 text-gray-800">Approachability</td>
-                <td className="bg-lime-100 text-center px-4 py-4">
-                  <span className="text-purple-600 font-bold">&#10004;</span> No clinical intimidation
-                </td>
-                <td className="text-center px-4 py-4">
-                  <span className="text-orange-600 font-bold">&#10008;</span> Intimidating
-                </td>
-              </tr>
-              {/* Row 5 */}
-              <tr>
-                <td className="px-4 py-4 text-gray-800">Judgment-Free</td>
-                <td className="bg-lime-100 text-center px-4 py-4">
-                  <span className="text-purple-600 font-bold">&#10004;</span> Safe spaces
-                </td>
-                <td className="text-center px-4 py-4">
-                  <span className="text-orange-600 font-bold">&#10008;</span> Less personal setting
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-  
+  return (
+    <div className="bg-white p-[105px] space-y-[87px]">
+      <h1 className="text-[76px] font-miniature text-center">
+        Why Choose a Listener?
+      </h1>
+
+      <div className="overflow-x-auto max-w-7xl mx-auto">
+        <table className="w-full border-collapse">
+          {/* Table Head */}
+          <thead>
+            <tr className="border-b border-black grid grid-cols-10">
+              <th className="p-[20px] text-left text-[20px] font-[500] flex items-center col-span-4">
+                Feature
+              </th>
+              <th className="col-span-3 p-[20px] border-l border-black text-left flex justify-center items-center leading-[22px] text-[43.85px] font-[400] font-miniature bg-[#e5ff7d]">
+                Att<span className="italic">une</span>
+              </th>
+              <th className="col-span-3 p-[20px] border-l border-black text-left text-[20px] font-[500] flex justify-center items-center">
+                Traditional Therapy
+              </th>
+            </tr>
+          </thead>
+
+          {/* Table Body */}
+          <tbody>
+            <tr className="border-b border-black grid grid-cols-10">
+              <td className="p-[20px] text-[25px] flex items-center col-span-4">
+                Affordability
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[10px]  bg-[#e5ff7d]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/tick.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                More Affordable
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/exclaim.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Expensive
+              </td>
+            </tr>
+            <tr className="border-b border-black grid grid-cols-10">
+              <td className="p-[20px] text-[25px] flex items-center col-span-4">
+                Accessibility
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/tick.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Anytime, Anywhere
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/cross.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Requires appointments
+              </td>
+            </tr>
+            <tr className="border-b border-black grid grid-cols-10">
+              <td className="p-[20px] text-[25px] flex items-center col-span-4">
+                Support for Everyday Issues
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/tick.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Stress, loneliness
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/exclaim.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Diagnosis-focused
+              </td>
+            </tr>
+            <tr className="border-b border-black grid grid-cols-10">
+              <td className="p-[20px] text-[25px] flex items-center col-span-4">
+                Approachability
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/tick.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                No clinical intimidation
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/cross.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Intimidating
+              </td>
+            </tr>
+            <tr className="grid grid-cols-10">
+              <td className="p-[20px] text-[25px] flex items-center col-span-4">
+                Judgment-Free
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/tick.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Safe spaces
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/cross.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Less personal setting
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
         {/* Call-to-Action Button */}
-        <div className="flex justify-center mt-8">
-          <button className="bg-purple-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-purple-700">
+        <div className="flex justify-center mt-[47px]">
+          <button className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-lg">
             Get Started
           </button>
         </div>
       </div>
-    );
-  }
-  
-  export default WhyChooseListener;
-  
+    </div>
+  );
+}
+
+export default WhyChooseListener;

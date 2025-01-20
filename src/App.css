@@ -1,0 +1,7 @@
+.custom-list-item::marker {
+    /* content: url(/desktop/your-path/list-disc.svg); */
+    list-style-image: url(/desktop/your-path/list-disc.svg);
+    /* margin-top: 4px;
+    margin-right: 5px; */
+    /* display: inline-block; */
+  }

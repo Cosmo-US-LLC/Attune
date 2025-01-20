@@ -58,16 +58,18 @@ body {
 }
 .no-need-section {
   background-image: url(../public/desktop/no-need/no-need.webp); /* Replace with your image path */
-  background-size: 100% 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 603px;
+  /* min-height: 603px; */
+  min-height: 43.7vw;
 }
 
 .why-listeners-matter-section {
   background-image: url(../public/desktop/why-listeners-matter/frame_131.webp); /* Replace with your image path */
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  /* min-height: 41.875vw; */
   min-height: 603px;
 }

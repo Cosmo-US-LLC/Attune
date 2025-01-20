@@ -2,68 +2,68 @@ const experts = [
   {
     id: 1,
     name: "Jessica Williams",
-    role: "Certified Mental Health Advisor",
-    description:
+    title: "Certified Mental Health Advisor",
+    body:
       "Jessica is a compassionate listener with over 5 years of experience helping people through life's ups and downs.",
-    image: "/jessica-williams.png", // Replace with actual image path
-    borderColor: "border-yellow-400",
+    image: "/desktop/meet-expert/expert-1.png", // Replace with actual image path
   },
   {
     id: 2,
     name: "Michael Brown",
-    role: "Life Coach and Stress Management Specialist",
-    description:
+    title: "Life Coach and Stress Management Specialist",
+    body:
       "With a background in coaching and mental wellness, Michael specializes in helping individuals cope with stress, anxiety, and personal transitions.",
-    image: "/michael-brown.png", // Replace with actual image path
-    borderColor: "border-yellow-400",
+    image: "/desktop/meet-expert/expert-2.png", // Replace with actual image path
   },
   {
     id: 3,
     name: "Olivia Davis",
-    role: "Certified Wellness Advisor",
-    description:
+    title: "Certified Wellness Advisor",
+    body:
       "Olivia is passionate about supporting emotional well-being. She combines mindfulness techniques with empathetic listening to help people.",
-    image: "/olivia-davis.png", // Replace with actual image path
-    borderColor: "border-yellow-400",
+    image: "/desktop/meet-expert/expert-3.png", // Replace with actual image path
   },
   {
     id: 4,
     name: "Daniel Thompson",
-    role: "Trauma-Informed Listener",
-    description:
+    title: "Trauma-Informed Listener",
+    body:
       "Daniel focuses on providing safe, empathetic support to individuals navigating through trauma or personal struggles.",
-    image: "/daniel-thompson.png", // Replace with actual image path
-    borderColor: "border-yellow-400",
+    image: "/desktop/meet-expert/expert-4.png", // Replace with actual image path
   },
 ];
 
 function MeetTheExperts() {
   return (
-    <div className="bg-gray-50 py-12 px-6">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-[#f4efea] p-[75px]">
+      <div className="max-w-7xl mx-auto space-y-[35px]">
         {/* Title Section */}
-        <h1 className="text-3xl font-bold text-center mb-6">Meet a Few Experts</h1>
+        <h1 className="font-miniature text-[76px] text-center">Meet a Few Experts</h1>
 
         {/* Expert Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {experts.map((expert) => (
-            <div
-              key={expert.id}
-              className="bg-white border rounded-lg shadow-md p-6 flex flex-col items-center text-center"
-            >
-              <div
-                className={`w-28 h-28 rounded-full overflow-hidden border-4 ${expert.borderColor} mb-4`}
-              >
-                <img
-                  src={expert.image}
-                  alt={expert.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900">{expert.name}</h3>
-              <p className="text-sm font-medium text-gray-600">{expert.role}</p>
-              <p className="mt-2 text-gray-600 text-sm">{expert.description}</p>
+          {experts.map((card, id) => (
+            <div key={id} className={"max-w-[274px] mx-auto border border-black p-3 pt-[10px] space-y-[14px] " + (id%2 !== 0 ? "bg-[#FFE87E]": "bg-white")}
+            style={{ borderRadius: "130px 130px 30px 30px" }}
+          >
+            <div className="relative">
+              <img
+                src={card?.image || ""}
+                alt="Icon"
+                className="w-[254px] h-[162px] object-contain"
+              />
+              <h3 className="absolute bottom-3 w-full text-white text-center text-[30px] font-miniature leading-3">
+                {card?.name}
+              </h3>
             </div>
+
+            <h3 className="text-[16px] font-[600] leading-[21px] px-6 text-center">
+              {card?.title}
+            </h3>
+
+            <p className="text-[16px] leading-[20px] text-center capitalize">{card?.body}</p>
+            <br />
+          </div>
           ))}
         </div>
       </div>

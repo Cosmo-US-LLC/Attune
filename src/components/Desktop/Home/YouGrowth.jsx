@@ -14,7 +14,7 @@ const gridData = [
     id: 2,
     text: "",
     bgColor: "bg-white",
-    image: "/desktop/growth/heal.svg",  
+    image: "/desktop/growth/heal.svg",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const gridData = [
     id: 4,
     text: "",
     bgColor: "bg-white",
-    image: "/desktop/growth/happy-tree.svg",  
+    image: "/desktop/growth/happy-tree.svg",
   },
   {
     id: 5,
@@ -38,33 +38,33 @@ const gridData = [
     id: 6,
     text: "",
     bgColor: "bg-white",
-    image: "/desktop/growth/cup-of-coffe.svg",  
+    image: "/desktop/growth/cup-of-coffe.svg",
   },
 ];
 
 function YouGrowth() {
   return (
-    <div className="bg-gray-50 py-10 px-4">
- <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
-  {gridData.map((item) => (
-    <div
-      key={item.id}
-      className={`flex flex-col items-center justify-center text-center w-[300px] h-[300px] px-[68px] py-[134px] rounded-[30px] border border-black flex-shrink-0 ${item.bgColor}`}
-    >
-      {item.image ? (
-        <img
-          src={item.image}
-          alt="Visual"
-          className="mb-4 w-[180px] h-[180px]"
-        />
-      ) : (
-        <p className="text-[35px] font-miniature font-[400] text-black">{item.text}</p>
-      )}
-    </div>
-  ))}
-</div>
-
-
+    <div className="bg-[#f4efea] p-[35px]">
+      <div className="grid grid-cols-3 grid-rows-2 gap-[26px]">
+        {gridData.map((item, id) => (
+          <div
+            key={item.id}
+            className={`flex flex-col items-center justify-center text-center w-[100%] h-[100%] px-[56px] py-[99px] rounded-[30px] border border-black flex-shrink-0 ${item.bgColor}`}
+          >
+            {item.image ? (
+              <img
+                src={item.image}
+                alt="Visual"
+                className="mb-4 w-[180px] h-[180px]"
+              />
+            ) : (
+              <p className={"text-[55px] leading-[69px] font-miniature font-[400] px-2 text-black " + (id == 2 && " text-right ") + (id == 4 && " text-center ")}>
+                {item.text}
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

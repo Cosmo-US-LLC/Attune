@@ -7,19 +7,19 @@
 
 function AsSeenIn() {
   return (
-    <div className="bg-[#F4EFEA] h-[260px] w-full">
-      <div className="w-full h-full flex flex-row justify-center items-center gap-12">
-        <p className="text-gray-700 text-lg font-semibold text-center  ">
+    <div className="bg-[#F4EFEA] px-[150px] py-[50px] w-full">
+      <div className="w-full h-full flex flex-row justify-center items-center gap-[41px]">
+        <p className="font-miniature text-[30px] text-center  ">
           As Seen In:
         </p>
 
-        <div className="flex items-center justify-center space-x-8 rounded-xl bg-white py-5 px-8">
+        <div className="flex items-center justify-center space-x-[73px] rounded-[30px] bg-white py-[33px] px-[51px]">
           
-          <img src={"/desktop/as-seen-in/time.svg"} alt="NewsWatch Logo" className="h-[24px] w-[96px]" />
-          <img src= {"/desktop/as-seen-in/news-nation.svg"} alt="Axios Logo" className="h-[24px] w-[96px]" />
-          <img src={"/desktop/as-seen-in/axios.svg"} alt="BBC Logo" className="h-[24px] w-[96px]" />
-          <img src={"/desktop/as-seen-in/bbc.svg"} alt="Axios Logo" className="h-[24px] w-[96px]" />
-          <img src={"/desktop/as-seen-in/inc.svg"} alt="BBC Logo" className="h-[24px] w-[96px]" />
+          <img src={"/desktop/as-seen-in/time.svg"} alt="Time Logo" className="h-[32px] w-[102px]" />
+          <img src= {"/desktop/as-seen-in/news-nation.svg"} alt="NewsNation Logo" className="h-[41px] w-[135px]" />
+          <img src={"/desktop/as-seen-in/axios.svg"} alt="Axios Logo" className="h-[27px] w-[106px]" />
+          <img src={"/desktop/as-seen-in/bbc.svg"} alt="BBC Logo" className="h-[33px] w-[116px]" />
+          <img src={"/desktop/as-seen-in/inc.svg"} alt="INC Logo" className="h-[31px] w-[90px]" />
            
         </div>
       </div>

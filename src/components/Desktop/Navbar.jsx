@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <nav className="bg-white h-[99px] flex-shrink-0 shadow-sm">
-      <div className="max-w-[1440px] w-full h-full mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
         <div className="flex items-center flex-col relative">
           <h1 className="font-miniature relative">
             <span className="text-black font-[400] text-[46.167px] leading-normal">

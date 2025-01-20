@@ -1,77 +1,48 @@
 function HowItWorks() {
-    return (
-      <div className="bg-lime-100 py-10 px-4">
-        <h1 className="text-3xl font-bold text-center mb-8">How it works</h1>
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
-          {/* Step 1 */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="flex justify-center items-center mb-4">
-              <span className="bg-pink-200 text-pink-800 font-bold w-10 h-10 flex items-center justify-center rounded-full">
-                01
-              </span>
-              <img
-                src=" "
-                alt="Sign Up"
-                className="h-10 w-10 ml-4"
-              />
-            </div>
-            <h2 className="text-xl font-semibold text-gray-800 mb-2">Sign Up</h2>
-            <p className="text-gray-600">
-              Create your profile in just a few clicks. It’s quick, simple, and
-              all about you.
-            </p>
-          </div>
-  
-          {/* Step 2 */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="flex justify-center items-center mb-4">
-              <span className="bg-pink-200 text-pink-800 font-bold w-10 h-10 flex items-center justify-center rounded-full">
-                02
-              </span>
-              <img
-                src=" "
-                alt="Find Your Listener"
-                className="h-10 w-10 ml-4"
-              />
-            </div>
-            <h2 className="text-xl font-semibold text-gray-800 mb-2">
-              Find your Listener
-            </h2>
-            <p className="text-gray-600">
-              Explore a variety of compassionate, judgment-free listeners. Choose
-              someone who truly gets you.
-            </p>
-          </div>
-  
-          {/* Step 3 */}
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="flex justify-center items-center mb-4">
-              <span className="bg-pink-200 text-pink-800 font-bold w-10 h-10 flex items-center justify-center rounded-full">
-                03
-              </span>
-              <img
-                src=" "
-                alt="Connect"
-                className="h-10 w-10 ml-4"
-              />
-            </div>
-            <h2 className="text-xl font-semibold text-gray-800 mb-2">Connect</h2>
-            <p className="text-gray-600">
-              Open up through voice or video, anytime and anywhere. It’s your safe
-              space to share.
-            </p>
-          </div>
-        </div>
-  
-        {/* Call-to-Action Button */}
-        <div className="flex justify-center mt-8">
-          <button className="bg-purple-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-purple-700">
-            Sign up now
-          </button>
-        </div>
+  return (
+    <div className="bg-[#e5ff7d] py-[70px] px-4 space-y-[26px]">
+      <h1 className='font-miniature text-center text-[76px] leading-[110px]'>How it Works</h1>
+
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+        <HowItCards id="01" title="Sign Up" body="Create your profile in just a few clicks. It’s quick, simple, and all about you.">
+            <img src="/desktop/how-it/card-1.svg" alt="Hug" className="w-[107px] h-[71px]" />
+        </HowItCards>
+        
+        <HowItCards id="01" title="Find Your Listener" body="Explore a variety of compassionate, judgment-free Listeners. Choose someone who truly gets you.">
+        <img src="/desktop/how-it/card-2.svg" alt="Talk" className="w-[92px] h-[69px]" />
+        </HowItCards>
+        
+        <HowItCards id="01" title="Connect" body="Open up through voice or video, anytime and anywhere. It’s your safe space to share.">
+        <img src="/desktop/how-it/card-3.svg" alt="Schedule" className="w-[82px] h-[73px]" />
+        </HowItCards>
       </div>
-    );
-  }
-  
-  export default HowItWorks;
-  
+
+      {/* Call-to-Action Button */}
+      <div className="flex justify-center mt-8">
+        <button className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[16px]">
+          Sign up now
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function HowItCards({ id, title, body, children }) {
+  return (
+    <div className="bg-white border border-black min-h-[240px] p-[28px] pt-[14px] pr-[14px] rounded-[20px] space-y-[10px]">
+      <div className="flex justify-between items-start">
+        <div className="h-[71px] w-[71px] mt-4 rounded-full bg-[#FF9AE9] text-white font-miniature flex justify-center items-center text-[30px]">
+          {id}
+        </div>
+        {children}
+      </div>
+
+      <div className="space-y-[5px]">
+        <h3 className="text-black font-miniature text-[30px]">{title}</h3>
+        <p className="text-black text-[16px] leading-[20px]">{body}</p>
+      </div>
+    </div>
+  );
+}
+
+export default HowItWorks;

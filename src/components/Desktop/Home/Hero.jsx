@@ -3,15 +3,15 @@
 
 function Hero() {
   return (
-    <div className="bg-yellow-300 overflow-hidden px-10">
+    <div className="bg-[#ffd23f] overflow-hidden px-16">
       <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between p-8 h-[80vh]">
         {/* Text Section */}
-        <div className="text-center md:text-left max-w-md">
-          <h1 className="text-[46px] font-[500] text-black leading-[1.2]">
+        <div className="text-center md:text-left md:max-w-[50%]">
+          <h1 className="font-miniature max-w-md text-[99.3px] font-[500] text-black leading-[91px]">
             Your Safe <br /> Space for <br />
-            <span className="text-[#5200FF]">Support</span>
+            <span className="text-[#5200FF] italic">Support</span>
           </h1>
-          <p className="mt-4 text-black text-lg">
+          <p className="mt-4 text-black text-[18px] font-[500] leading-[26px]">
             In a world where 1 in 5 adults experience mental health challenges,
             Attune offers a revolutionary approach to emotional well-being. Our
             platform connects you with compassionate Listeners, providing a
@@ -23,12 +23,12 @@ function Hero() {
         </div>
 
         {/* Image Section */}
-        <div className="mt-8 md:mt-0 relative">
+        <div className="mt-8 md:mt-0 relative  md:max-w-[50%]">
           <div className="relative">
             <img
               src={"/desktop/hero/phone-boy.webp"}
               alt="Listener"
-              className="h-[442px] w-[600px] rounded-lg"
+              className="h-[442px] w-[600px] rounded-lg object-contain"
             />
           </div>
         </div>

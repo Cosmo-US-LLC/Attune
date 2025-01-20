@@ -6,91 +6,55 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 
-const faqData = [
-  {
-    id: 1,
-    question: "What is the Listener Program?",
-    answer:
-      "The Listener Program connects you with trained, non-judgmental individuals who provide emotional support through conversation. They are here to listen and help you navigate life’s challenges without the need for therapy or counseling.",
-    bgColor: "bg-lime-200",
-  },
-  {
-    id: 2,
-    question: "How does it work?",
-    answer:
-      "It’s simple! Sign up, create your profile, and select a Listener who resonates with your needs. Start talking at your convenience.",
-    bgColor: "bg-white",
-  },
-  {
-    id: 3,
-    question: "Is this therapy?",
-    answer:
-      "No, this is not therapy. Our Listeners are here to provide a compassionate and supportive ear, not professional counseling.",
-    bgColor: "bg-white",
-  },
-  {
-    id: 4,
-    question: "How much does it cost?",
-    answer:
-      "The basic services are free, but additional premium features may involve charges.",
-    bgColor: "bg-white",
-  },
-  {
-    id: 5,
-    question: "What if I don’t feel a connection with my Listener?",
-    answer:
-      "You can always select another Listener. We encourage finding someone who truly understands you and makes you feel heard.",
-    bgColor: "bg-white",
-  },
-];
-
 function FAQAccordion() {
+  const questions = [
+    {
+      id: "01",
+      question: "What is the Listener Program?",
+      answer: "The Listener Program connects you with trained, non-judgmental individuals who provide emotional support through conversation. They are here to listen and help you navigate life’s challenges without the need for therapy or counseling.",
+    },
+    {
+      id: "02",
+      question: "How does it work?",
+      answer: "You can connect with a Listener anytime, anywhere. Simply sign up, choose a Listener, and schedule your session. You can talk to them via text or voice—whatever makes you most comfortable.",
+    },
+    {
+      id: "03",
+      question: "Is this therapy?",
+      answer: "No, our Listeners are not therapists. They are trained individuals who provide supportive listening and a safe space for you to express your feelings. If you need professional therapy, we recommend seeking a licensed therapist.",
+    },
+    {
+      id: "04",
+      question: "How much does this cost?",
+      answer: "Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, starting at just $30/hr. We believe emotional support should be accessible to everyone",
+    },
+    {
+      id: "05",
+      question: "What if I don’t feel a connection with my Listener?",
+      answer: "You can always choose a new Listener who better fits your needs.",
+    },
+  ]
+
   return (
-    <div className="max-w-4xl mx-auto py-10 px-4">
-      <h1 className="text-3xl font-bold text-center mb-8">Any Questions?</h1>
-      <Accordion type="single" collapsible className="space-y-2">
-        {faqData.map((faq, index) => (
-          <AccordionItem key={faq.id} value={`faq-${faq.id}`}>
-            <AccordionTrigger
-              className={`flex items-center justify-between py-4 px-6 rounded-lg text-lg font-semibold ${
-                index === 0 ? faq.bgColor : "bg-white"
-              }`}
-            >
-              <div className="flex items-center">
-                <span
-                  className={`mr-4 text-2xl font-bold ${
-                    index === 0 ? "text-gray-900" : "text-gray-400"
-                  }`}
-                >
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span
-                  className={`${
-                    index === 0 ? "text-gray-900" : "text-gray-800"
-                  }`}
-                >
-                  {faq.question}
-                </span>
-              </div>
-              {/* <span
-                className={`text-xl font-bold text-gray-700 accordion-icon ${
-                  index === 0 ? "text-gray-900" : "text-gray-400"
-                }`}
-              >
-                +
-              </span> */}
-            </AccordionTrigger>
-            <AccordionContent
-              className={`px-6 py-4 ${
-                index === 0 ? "bg-lime-200" : "bg-gray-50"
-              }`}
-            >
-              <p className="text-gray-800">{faq.answer}</p>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
-    </div>
+    <div className="bg-white px-[130px] py-[107px] space-y-[74px]">
+          <h1 className="font-miniature text-[76px] text-center">Any Questions?</h1>
+    
+          <Accordion type="single" collapsible>
+            {questions?.map((question) => (
+              <AccordionItem key={question?.id} value={question?.id} className={"px-[60px] py-[52px] data-[state=closed]:bg-[#fbf9f7] data-[state=open]:bg-[#e5ff7d] duration-200 border-black " + (question?.id == "05" && "border-transparent")}>
+                <AccordionTrigger className2="w-8 h-8">
+                  <div className="flex gap-[52px] items-start">
+                    <span className="text-[#95ADF0] text-[48px] font-bold leading-[50px]">{question?.id}</span>
+                    <span className="text-left text-[32px] font-bold leading-[38px]">{question?.question}</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="data-[state=open]:bg-[#e5ff7d] pl-[110px] pb-0 text-[20px] leading-[28px] duration-150 max-w-[90%]">
+                  {question?.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
   );
 }
 
