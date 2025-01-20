@@ -41,14 +41,14 @@ function AnyQuestions() {
 
       <Accordion type="single" collapsible>
         {questions?.map((question) => (
-          <AccordionItem key={question?.id} value={question?.id}>
+          <AccordionItem key={question?.id} value={question?.id} className={"px-[14px] data-[state=open]:bg-[#e5ff7d] duration-200 border-black " + (question?.id == "05" && "border-transparent")}>
             <AccordionTrigger className="">
               <div className="flex gap-2 items-center">
                 <span className="text-[#95ADF0] text-[24px] font-bold leading-[120%]">{question?.id}</span>
                 <span className="text-left text-[16px] font-bold leading-[22px]">{question?.question}</span>
               </div>
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="data-[state=open]:bg-[#e5ff7d] duration-150">
               {question?.answer}
             </AccordionContent>
           </AccordionItem>

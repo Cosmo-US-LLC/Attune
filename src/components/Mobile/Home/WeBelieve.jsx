@@ -49,8 +49,8 @@ function WeBelieve() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="border border-black disabled:border-neutral-500 bg-white left-0" />
-        <CarouselNext className="border border-black disabled:border-neutral-500 bg-white right-0" />
+        <CarouselPrevious className="border border-black disabled:opacity-0 bg-white left-1" />
+        <CarouselNext className="border border-black disabled:opacity-0 bg-white right-1" />
       </Carousel>
     </div>
   );

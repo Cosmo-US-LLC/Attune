@@ -55,7 +55,7 @@ function WhatMakes() {
         <CarouselContent>
             {cards?.map((card, id) => (
                 <CarouselItem key={id} className="basis-1/1 w-full">
-                    <div className="max-w-[274px] mx-auto bg-white py-5 px-4 rounded-[20px] space-y-[20px]">
+                    <div className="max-w-[274px] mx-auto border border-black bg-white py-5 px-4 rounded-[20px] space-y-[20px]">
                         <img src={card?.img} alt="Icon" className="object-contain w-[44px] h-[44px]" />
 
                         <div className="space-y-[14px]">

@@ -40,9 +40,10 @@ function Testimonials() {
                 <div className={"border border-black rounded-[12px] p-5 " + test?.bg}>
                     <img src={test?.img} alt="person" className="w-[60px] h-[60px] object-contain rounded-full mb-[28px]" />
 
-                    <h3 className="font-miniature text-[32px]">{test?.title}</h3>
-
-                    <p className="text-[15px] leading-[20px]">{test?.body}</p>
+                    <div className="space-y-[10px] pb-5">
+                      <h3 className="font-miniature text-[32px]">{test?.title}</h3>
+                      <p className="text-[15px] leading-[20px]">{test?.body}</p>
+                    </div>
                 </div>
             </CarouselItem>
           ))}
