@@ -10,25 +10,25 @@ import {
 function MeetFew() {
   const cards = [
     {
-      img: "/mobile/meetFew/expert1.png",
+      img: "/mobile/meetFew/expert1.webp",
       name: "Jessica Williams",
       title: "Certified Mental Health Advisor",
       body: "Jessica is a compassionate listener with over 5 years of experience helping people through life’s ups and downs.",
     },
     {
-      img: "/mobile/meetFew/expert2.png",
+      img: "/mobile/meetFew/expert2.webp",
       name: "Michael Brown",
       title: "Life Coach and Stress Management Specialist",
       body: "With a background in coaching and mental wellness, Michael specializes in helping individuals cope with stress, anxiety, and personal transitions.",
     },
     {
-      img: "/mobile/meetFew/expert3.png",
+      img: "/mobile/meetFew/expert3.webp",
       name: "Olivia Davis",
       title: "Certified Wellness Advisor",
       body: "Olivia is passionate about supporting emotional well-being. She combines mindfulness techniques with empathetic listening to help people.",
     },
     {
-      img: "/mobile/meetFew/expert4.png",
+      img: "/mobile/meetFew/expert4.webp",
       name: "Daniel Thompson",
       title: "Trauma-Informed Listener",
       body: "Daniel focuses on providing safe, empathetic support to individuals navigating through trauma or personal struggles.",

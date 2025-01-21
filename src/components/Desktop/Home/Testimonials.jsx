@@ -11,38 +11,38 @@ function TestimonialsCarousel() {
   const testimonials = [
     {
       bg: "bg-[#E5FF7D]",
-      img: "/desktop/testimonials/test-1.png",
+      img: "/desktop/testimonials/test-1.webp",
       title: "Jake, 24",
       body: '"Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference."',
     },
     {
       bg: "bg-[#F097DD]",
-      img: "/desktop/testimonials/test-2.png",
+      img: "/desktop/testimonials/test-2.webp",
       title: "Jessica, 45",
       body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
       bg: "bg-[#FF6F61]",
-      img: "/desktop/testimonials/test-3.png",
+      img: "/desktop/testimonials/test-3.webp",
       title: "John, 72",
       body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
     },
 
     {
       bg: "bg-[#E5FF7D]",
-      img: "/desktop/testimonials/test-1.png",
+      img: "/desktop/testimonials/test-1.webp",
       title: "Jake, 24",
       body: '"Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference."',
     },
     {
       bg: "bg-[#F097DD]",
-      img: "/desktop/testimonials/test-2.png",
+      img: "/desktop/testimonials/test-2.webp",
       title: "Jessica, 45",
       body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
       bg: "bg-[#FF6F61]",
-      img: "/desktop/testimonials/test-3.png",
+      img: "/desktop/testimonials/test-3.webp",
       title: "John, 72",
       body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
     },

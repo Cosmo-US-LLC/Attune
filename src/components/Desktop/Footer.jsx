@@ -43,7 +43,7 @@ function Footer() {
             </div>
 
             <div className="min-w-[278px] flex flex-col items-center justify-between">
-              <img src="/desktop/heart.png" alt="Mental Wellness" className="w-[233px] h-[185px]" />
+              <img src="/desktop/heart.webp" alt="Mental Wellness" className="w-[233px] h-[185px]" />
               <br />
               <div className="grid grid-cols-5 gap-x-4">
                 <a href="#"><img src="/desktop/footer/link-1.svg" alt="Share link" className="w-[43px] h-[43px]" /></a>

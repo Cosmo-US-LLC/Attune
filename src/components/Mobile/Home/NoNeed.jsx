@@ -9,9 +9,9 @@ function NoNeed() {
             <h1 className='pt-4 pb-6 font-miniature text-[38px]'>No need to<br /> endure</h1>
 
             <div className='w-[290px] h-[276px] relative mx-auto mb-5 bg-transparent border border-black rounded-[16.5px]'>
-                <img src="/mobile/noNeed/blonde-girl.png" alt="Girl" className='object-contain absolute left-1 bottom-0 h-[253px] w-[185px]' />
-                <img src="/mobile/noNeed/mini1.png" alt="Contacts" className='object-contain absolute right-5 -top-8 h-[125px] w-[126px]' />
-                <img src="/mobile/noNeed/mini2.png" alt="Cartoon" className='object-contain absolute right-2 bottom-2 h-[70px] w-[72px]' />
+                <img src="/mobile/noNeed/blonde-girl.webp" alt="Girl" className='object-contain absolute left-1 bottom-0 h-[253px] w-[185px]' />
+                <img src="/mobile/noNeed/mini1.webp" alt="Contacts" className='object-contain absolute right-5 -top-8 h-[125px] w-[126px]' />
+                <img src="/mobile/noNeed/mini2.webp" alt="Cartoon" className='object-contain absolute right-2 bottom-2 h-[70px] w-[72px]' />
                 <img src="/mobile/noNeed/bird.svg" alt="Bird" className='object-contain absolute -right-7 -top-14 h-[40px] w-[45px]' />
             </div>
 

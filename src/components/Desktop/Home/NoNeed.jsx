@@ -52,7 +52,7 @@ function NoNeed() {
 
           <div className="relative z-10 h-[300px] overflow-visible col-span-5">
             <img
-              src="/desktop/no-need/girl.png"
+              src="/desktop/no-need/girl.webp"
               alt="Moods"
               className="w-[529px] mx-auto h-auto object-contain"
             />

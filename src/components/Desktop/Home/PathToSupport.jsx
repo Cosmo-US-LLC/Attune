@@ -7,7 +7,7 @@ function PathToSupport() {
         </h1>
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
           <YourPathCard
-            img="/desktop/your-path/path-to-support-1.png"
+            img="/desktop/your-path/path-to-support-1.webp"
             title="Seeking Connection?"
             classes="bg-[#38AB9B] text-white"
             points={[
@@ -23,7 +23,7 @@ function PathToSupport() {
           />
 
           <YourPathCard
-            img="/desktop/your-path/path-to-support-2.png"
+            img="/desktop/your-path/path-to-support-2.webp"
             imgClass="bg-[#00FBFC] rounded-[30px] border border-black"
             title="Facing Mental Barriers?"
             classes="bg-[#F097DD] text-black"
@@ -41,7 +41,7 @@ function PathToSupport() {
 
           {/* Card 3 */}
           <YourPathCard
-            img="/desktop/your-path/path-to-support-3.png"
+            img="/desktop/your-path/path-to-support-3.webp"
             title="Looking for Extra Support?"
             classes="bg-[#FF6F61] text-white"
             points={[

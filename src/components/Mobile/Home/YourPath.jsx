@@ -9,7 +9,7 @@ function YourPath() {
         <p className='font-miniature text-center text-[38px]'>Your Path to Support</p>
       
         <div className='space-y-5'>
-            <SupportCards bg="bg-[#38AB9B]" img="/mobile/yourPath/seeking1.png" title="Seeking Connection?" points={[
+            <SupportCards bg="bg-[#38AB9B]" img="/mobile/yourPath/seeking1.webp" title="Seeking Connection?" points={[
                 {
                     title: "Loneliness",
                     body: "People Craving Connection And A Listening Ear."
@@ -20,7 +20,7 @@ function YourPath() {
                 }
             ]} />
             
-            <SupportCards bg="bg-[#F097DD]" img="/mobile/yourPath/seeking2.png" title="Seeking Connection?" points={[
+            <SupportCards bg="bg-[#F097DD]" img="/mobile/yourPath/seeking2.webp" title="Seeking Connection?" points={[
                 {
                     title: "Loneliness",
                     body: "People Craving Connection And A Listening Ear."
@@ -31,7 +31,7 @@ function YourPath() {
                 }
             ]} />
             
-            <SupportCards bg="bg-[#FF6F61]" img="/mobile/yourPath/seeking3.png" title="Seeking Connection?" points={[
+            <SupportCards bg="bg-[#FF6F61]" img="/mobile/yourPath/seeking3.webp" title="Seeking Connection?" points={[
                 {
                     title: "Loneliness",
                     body: "People Craving Connection And A Listening Ear."

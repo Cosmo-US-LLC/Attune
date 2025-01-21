@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 function WhyChoose() {
   const cards = [
     {
-      img: "/mobile/meetFew/expert1.png",
+      img: "/mobile/meetFew/expert1.webp",
       name: "Jessica Williams",
       title: "Certified Mental Health Advisor",
       body: "Jessica is a compassionate listener with over 5 years of experience helping people through life’s ups and downs.",

@@ -12,28 +12,28 @@ const experts = [
     name: "Jessica Williams",
     title: "Certified Mental Health Advisor",
     body: "Jessica is a compassionate listener with over 5 years of experience helping people through life's ups and downs.",
-    image: "/desktop/meet-expert/expert-1.png", // Replace with actual image path
+    image: "/desktop/meet-expert/expert-1.webp", // Replace with actual image path
   },
   {
     id: 2,
     name: "Michael Brown",
     title: "Life Coach and Stress Management Specialist",
     body: "With a background in coaching and mental wellness, Michael specializes in helping individuals cope with stress, anxiety, and personal transitions.",
-    image: "/desktop/meet-expert/expert-2.png", // Replace with actual image path
+    image: "/desktop/meet-expert/expert-2.webp", // Replace with actual image path
   },
   {
     id: 3,
     name: "Olivia Davis",
     title: "Certified Wellness Advisor",
     body: "Olivia is passionate about supporting emotional well-being. She combines mindfulness techniques with empathetic listening to help people.",
-    image: "/desktop/meet-expert/expert-3.png", // Replace with actual image path
+    image: "/desktop/meet-expert/expert-3.webp", // Replace with actual image path
   },
   {
     id: 4,
     name: "Daniel Thompson",
     title: "Trauma-Informed Listener",
     body: "Daniel focuses on providing safe, empathetic support to individuals navigating through trauma or personal struggles.",
-    image: "/desktop/meet-expert/expert-4.png", // Replace with actual image path
+    image: "/desktop/meet-expert/expert-4.webp", // Replace with actual image path
   },
 ];
 
