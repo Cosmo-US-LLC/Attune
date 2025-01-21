@@ -44,11 +44,11 @@ function NavbarMobile() {
               </SheetTitle>
               <SheetDescription hidden></SheetDescription>
             </SheetHeader>
-            <div className="relative h-[90dvh] bg-[#E5DDD4] py-[30px]">
+            <div className="relative h-full max-h-[70dvh] bg-[#E5DDD4] py-[30px]">
               <div className="relative z-10 flex flex-col h-full">
                 <div className="grow flex flex-col justify-between">
                   <div className="flex flex-row items-start justify-start">
-                    <h1 className="text-left font-miniature text-[38px]">
+                    <h1 className="text-left font-miniature text-[38px] leading-[38px]">
                       Talk to a <br />
                       professional
                     </h1>
@@ -60,18 +60,14 @@ function NavbarMobile() {
                     navigating life transitions, or simply craving a
                     connection, we’re here to help.
                   </p> */}
-                  <div className="relative mt-8 flex flex-row justify-between items-center">
+                  <div className="relative mt-8">
                     <div className="flex flex-col gap-4">
                       <a href={"#"}>Who we serve</a>
-                      <a href={"#"}>Who we serve</a>
-                      <a href={"#"}>our approach</a>
                       <a href={"#"}>our approach</a>
                       <a href={"#"}>What we do</a>
-                      <a href={"#"}>What we do</a>
-                      <a href={"#"}>resources</a>
                       <a href={"#"}>resources</a>
                     </div>
-                    <img src="/mobile/footer/footer_heart.svg" alt="Time" />
+                    {/* <img src="/mobile/footer/footer_heart.svg" alt="Time" /> */}
                   </div>
                   <div className="flex flex-row items-center justify-center gap-4 mt-8">
                     <img
@@ -113,8 +109,8 @@ function NavbarMobile() {
                   </p>
                 </div>
               </div>
-              <div className="absolute top-0 left-0 w-[32vw] h-[23dvh] z-0 flex justify-start items-center">
-                <h1 className="font-miniature text-center rotate-90 w-full text-[#ded6ce] text-[50vw] z-0">
+              <div className="absolute top-0 left-0 w-[40%] h-[28dvh] z-0 flex justify-start items-center">
+                <h1 className="font-miniature text-center rotate-90 w-full text-[#ded6ce] text-[20dvh] z-0">
                   Att<span className="italic">une</span>
                 </h1>
               </div>
