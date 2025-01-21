@@ -17,7 +17,7 @@ function Footer() {
                     <br />
                     professional
                   </h1>
-
+                  
                   <p className="text-[16px] leading-[22px]">
                     Looking for someone to listen? Our trained Listeners are
                     here to provide non-judgmental, compassionate support
