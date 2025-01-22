@@ -17,7 +17,7 @@ function Footer() {
                     <br />
                     professional
                   </h1>
-                  
+
                   <p className="text-[16px] leading-[22px]">
                     Looking for someone to listen? Our trained Listeners are
                     here to provide non-judgmental, compassionate support
@@ -49,8 +49,7 @@ function Footer() {
                 <a href="#"><img src="/desktop/footer/link-1.svg" alt="Share link" className="w-[43px] h-[43px]" /></a>
                 <a href="#"><img src="/desktop/footer/link-2.svg" alt="Share link" className="w-[43px] h-[43px]" /></a>
                 <a href="#"><img src="/desktop/footer/link-3.svg" alt="Share link" className="w-[43px] h-[43px]" /></a>
-                <a href="#"><img src="/desktop/footer/link-4.svg" alt="Share link" className="w-[43px] h-[43px]" /></a>
-                <a href="#"><img src="/desktop/footer/link-5.svg" alt="Share link" className="w-[43px] h-[43px]" /></a>
+                <button className="bg-[#5200FF] text-white w-[150px] py-2 rounded-full">Get Started</button>
               </div>
             </div>
           </div>

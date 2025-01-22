@@ -31,7 +31,7 @@ function HowItCards({ id, title, body, children }) {
   return (
     <div className="bg-white border border-black min-h-[240px] p-[28px] pt-[14px] pr-[14px] rounded-[20px] space-y-[10px]">
       <div className="flex justify-between items-start">
-        <div className="h-[71px] w-[71px] mt-4 rounded-full bg-[#FF9AE9] text-white font-miniature flex justify-center items-center text-[30px]">
+        <div className="h-[71px] w-[71px] mt-4 rounded-full bg-[#95ADF0] text-white font-miniature flex justify-center items-center text-[30px]">
           {id}
         </div>
         {children}

@@ -41,7 +41,7 @@ function FAQAccordion() {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-[#F4EFEA]">
       <div className="max-w-[1440px] mx-auto  px-[130px] py-[107px] space-y-[74px]">
         <h1 className="font-miniature text-[76px] text-center">
           Any Questions?

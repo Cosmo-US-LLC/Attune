@@ -66,10 +66,24 @@ body {
 }
 
 .why-listeners-matter-section {
-  background-image: url(/desktop/why-listeners-matter/frame_131.webp); /* Replace with your image path */
+  background-image: url(/desktop/why-listeners-matter/frame-161.png); /* Replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   /* min-height: 41.875vw; */
   min-height: 603px;
 }
+
+.listener{
+  background-image: url(/desktop/listener/listener-bg.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-height: 41.875vw; */
+  min-height: 903px;
+  width: 100vw; /* Full width of the viewport */
+  
+  
+  
+}
+

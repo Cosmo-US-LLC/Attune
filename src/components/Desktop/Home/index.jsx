@@ -4,29 +4,27 @@ import AsSeenIn from './AsSeenIn'
 import PathToSupport from './PathToSupport'
 import HowItWorks from './HowItWorks'
 import WhyChooseListener from './WhyChooseListener'
-import Testimonials from './Testimonials'
+import MakeAnImpactCarousel from './MakeAnImpact'
 import FAQAccordion from './FAQAccordion'
-import YouGrowth from './YouGrowth'
-import WhatMakesUsDifferent from './WhatMakesUsDifferent'
-import MeetTheExperts from './MeetTheExperts'
-import NoNeed from './NoNeed'
 import WhyListenersMatter from './WhyListenersMatter'
-
+import Listener from './Listener'
+import CoreValues from './CoreValues'
+import FeelHeard from './FeelHeard'
 function HomeDesktop() {
   return (
     <div>
       <Hero />
       <AsSeenIn />
       <PathToSupport />
-      <HowItWorks />
-      <NoNeed />
-      <WhatMakesUsDifferent />
+      <Listener />
+      <MakeAnImpactCarousel />
       <WhyListenersMatter />
-      <MeetTheExperts />
+      <HowItWorks />
+      <FeelHeard />
       <WhyChooseListener />
-      <Testimonials />
+      <CoreValues />
       <FAQAccordion />
-      <YouGrowth />
+      
     </div>
   )
 }

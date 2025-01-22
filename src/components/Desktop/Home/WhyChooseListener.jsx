@@ -1,6 +1,6 @@
 function WhyChooseListener() {
   return (
-    <div className="bg-white p-[105px] space-y-[87px]">
+    <div className="bg-[#F4EFEA] p-[105px] space-y-[87px]">
       <h1 className="text-[76px] font-miniature text-center">
         Why Choose a Listener?
       </h1>
@@ -26,7 +26,7 @@ function WhyChooseListener() {
           <tbody>
             <tr className="border-b border-black grid grid-cols-10">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
-                Affordability
+                Accessibility
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                 <div>
@@ -36,7 +36,32 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                More Affordable
+                Immediate, <br/> anytime support
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/cross.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Long wait times for appointments.
+              </td>
+            </tr>
+            <tr className="border-b border-black grid grid-cols-10">
+              <td className="p-[20px] text-[25px] flex items-center col-span-4">
+                Cost
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/tick.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Affordable for all income levels
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
@@ -46,12 +71,13 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Expensive
+                Expensive, often requiring insurance.
+
               </td>
             </tr>
             <tr className="border-b border-black grid grid-cols-10">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
-                Accessibility
+                Focus
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
@@ -61,7 +87,7 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Anytime, Anywhere
+                Everyday challenges, resilience.
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
@@ -71,12 +97,13 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Requires appointments
+                Severe mental health issues.
+
               </td>
             </tr>
             <tr className="border-b border-black grid grid-cols-10">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
-                Support for Everyday Issues
+                Purpose
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
@@ -86,7 +113,57 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Stress, loneliness
+                Judgment-free emotional support.
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/cross.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Clinical interventions
+              </td>
+            </tr>
+            <tr className="border-b border-black grid grid-cols-10">
+              <td className="p-[20px] text-[25px] flex items-center col-span-4">
+                Stigma
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/tick.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Low stigma, human connection.
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/cross.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                May carry stigma.
+              </td>
+            </tr>
+            <tr className=" grid grid-cols-10">
+              <td className="p-[20px] text-[25px] flex items-center col-span-4">
+                Ideal For
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/tick.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Everyday clarity and motivation.
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
@@ -96,57 +173,7 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Diagnosis-focused
-              </td>
-            </tr>
-            <tr className="border-b border-black grid grid-cols-10">
-              <td className="p-[20px] text-[25px] flex items-center col-span-4">
-                Approachability
-              </td>
-              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
-                <div>
-                  <img
-                    src="/desktop/why-choose/tick.svg"
-                    alt="Tick"
-                    className="w-[40px] h-[40px]"
-                  />
-                </div>
-                No clinical intimidation
-              </td>
-              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
-                <div>
-                  <img
-                    src="/desktop/why-choose/cross.svg"
-                    alt="Tick"
-                    className="w-[40px] h-[40px]"
-                  />
-                </div>
-                Intimidating
-              </td>
-            </tr>
-            <tr className="grid grid-cols-10">
-              <td className="p-[20px] text-[25px] flex items-center col-span-4">
-                Judgment-Free
-              </td>
-              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
-                <div>
-                  <img
-                    src="/desktop/why-choose/tick.svg"
-                    alt="Tick"
-                    className="w-[40px] h-[40px]"
-                  />
-                </div>
-                Safe spaces
-              </td>
-              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
-                <div>
-                  <img
-                    src="/desktop/why-choose/cross.svg"
-                    alt="Tick"
-                    className="w-[40px] h-[40px]"
-                  />
-                </div>
-                Less personal setting
+                Severe emotional distress.
               </td>
             </tr>
           </tbody>

@@ -35,7 +35,20 @@ export default {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
-  	}
+  	},
+	  screens: {
+		// Default Tailwind breakpoints
+		sm: '640px',  // Small devices
+		md: '768px',  // Medium devices
+		lg: '1024px', // Large devices
+		xl: '1280px', // Extra large devices
+		'2xl': '1440px', // 2X Extra large devices
+  
+		// Custom breakpoints
+		xs: '480px',    // Extra small devices
+		'3xl': '1920px', // 3X Extra large devices
+		custom: '2500px', // Custom screen size
+	  },
   },
   plugins: [require("tailwindcss-animate")],
 }
