@@ -2,7 +2,7 @@ import React from 'react'
 
 function FooterMobile() {
   return (
-    <div className='relative min-h-[738px] bg-[#E5DDD4] px-5 py-[30px]'>
+    <div className='relative min-h-[738px] bg-[#E5DDD4] px-5 py-[30px] overflow-hidden'>
       <div className='relative z-10'>
         <div className="flex flex-row items-start justify-start">
           <h1 className="text-left font-miniature text-[38px]">Talk to a <br />professional</h1>

@@ -4,8 +4,10 @@ import Footer from "./components/Desktop/Footer";
 import NavbarMobile from "./components/Mobile/NavbarMobile";
 import FooterMobile from "./components/Mobile/FooterMobile";
 
-import HomeDesktop from "./components/Desktop/Home"
-import HomeMobile from "./components/Mobile/Home"
+import HomeDesktop from "./components/Desktop/Main";
+import HomeMobile from "./components/Mobile/Main";
+
+import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
   return (
@@ -19,12 +21,22 @@ function App() {
         <NavbarMobile />
       </div>
 
-
       {/* Desktop */}
-      <div className="max-lg:hidden"><HomeDesktop /></div>
+      <div className="max-lg:hidden">
+        <Routes>
+          {/* <HomeDesktop /> */}
+          <Route path="/" element={<HomeDesktop />} />
+          <Route path="/young-adults" element={<HomeDesktop />} />
+        </Routes>
+      </div>
       {/* Mobile */}
-      <div className="lg:hidden"><HomeMobile /></div>
-
+      <div className="lg:hidden">
+        <Routes>
+          {/* <HomeMobile /> */}
+          <Route path="/" element={<HomeMobile />} />
+          <Route path="/young-adults" element={<HomeMobile />} />
+        </Routes>
+      </div>
 
       {/* Desktop */}
       <div className="max-lg:hidden">
