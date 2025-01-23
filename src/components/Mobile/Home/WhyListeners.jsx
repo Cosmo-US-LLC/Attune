@@ -12,18 +12,17 @@ function WhyListeners() {
             <div className="flex justify-between w-full min-h-[230px] pl-[17px] pr-2">
                 <div className="bg-[#E5FF7D] w-[162px] h-[162px] rounded-full flex flex-col justify-center items-center">
                 <h3 className="text-[34.676px] text-black leading-[34px] font-[500] text-center ">
-                    30%
+                    54%
                 </h3>
-                <p className="text-xs text-black text-center w-[137px]">
-                    of people experience high levels of stress.
+                <p className="text-[12px] text-black text-center w-[124px]">
+                    oof individuals report feeling socially isolated.
                 </p>
                 </div>
-                <div className="bg-[#F097DD] w-[162px] h-[162px] mt-[64px] rounded-full flex flex-col justify-center items-center">
-                <h3 className="text-[34.676px] text-black leading-[34px] font-[500] text-center ">
-                    2 in 3
-                </h3>
-                <p className="text-xs text-black text-center w-[137px]">
-                    of people experience high levels of stress.
+                <div className="bg-[#FF6F61]  w-[162px] h-[162px] mt-[74px] rounded-full flex flex-col justify-center items-center">
+                
+                <p className="text-[12px] text-white text-center w-[137px]">
+                A study from Harvard University found that <span className="text-[16px] font-semibold">61% </span> of young adults
+                feel “serious loneliness.”
                 </p>
                 </div>
             </div>
@@ -39,14 +38,18 @@ function WhyListeners() {
                 </Button>
                 </div>
             </div>
-
-            <div className="bg-[#FF6F61] w-[162px] h-[162px] rounded-full flex flex-col justify-center items-center">
-                <h3 className="text-[34.676px] text-[#F5F5F5] leading-[34px] font-[500] text-center ">
-                47%
-                </h3>
-                <p className="text-xs text-white text-center w-[137px]">
-                of people experience high levels of stress.
+            <div className="mr-36 mb-8">
+            <div className="bg-[#F097DD] w-[203px] h-[203px] rounded-full flex flex-col justify-center items-center ">
+            <p className="text-[12px]  text-center w-[168px]">
+            According to the Centers for Disease Control and Prevention (CDC), about
                 </p>
+                <h3 className="text-[34.676px]  leading-[34px] font-[500] text-center ">
+                1 in 3 Adults
+                </h3>
+                <p className="text-[12px]  text-center w-[168px]">
+                feel lonely, a feeling often tied to social isolation.
+                </p>
+            </div>
             </div>
         </div>
     </div>

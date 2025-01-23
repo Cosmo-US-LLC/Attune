@@ -11,6 +11,9 @@ import WhyChoose from './WhyChoose'
 import Testimonials from './Testimonials'
 import AnyQuestions from './AnyQuestions'
 import WeBelieve from './WeBelieve'
+import ListenerMobile from './ListenerMobile'
+import Feel from './Feel'
+import Values from './Values'
 
 function HomeMobile() {
   return (
@@ -18,15 +21,19 @@ function HomeMobile() {
       <HeroMobile />
       <AsSeen />
       <YourPath />
-      <HowIt />
-      <NoNeed />
-      <WhatMakes />
-      <WhyListeners />
-      <MeetFew />
-      <WhyChoose />
+      <ListenerMobile/>
       <Testimonials />
+      <WhyListeners />
+      <HowIt />
+      <Feel/>
+      <WhyChoose />
+      <Values/>
+      {/* <NoNeed />
+      <WhatMakes />
+      <MeetFew />
+      <Testimonials /> */}
       <AnyQuestions />
-      <WeBelieve />
+      {/* <WeBelieve /> */}
     </div>
   )
 }

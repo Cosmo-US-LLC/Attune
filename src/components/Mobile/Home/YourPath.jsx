@@ -1,79 +1,117 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
+
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel" 
 // import clsx from 'clsx'
 // import Image from 'next/image'
 
 function YourPath() {
+    const cards = [
+        {
+            img: "/desktop/your-path/liveTransitions.png",
+            title: "Life Transitions",
+            body: "Our trained, non-judgmental Listeners provide a safe space for you to share your thoughts, feelings, and experiences without fear of judgment. You’ll always feel heard and supported."
+        },
+        {
+            img: "/desktop/your-path/socialPressures.png",
+            title: "Social pressures",
+            body: "Whether you're at home or on the go, you can connect with a Listener from anywhere, at any time. Our platform is available to support you whenever you need it."
+        },
+        {
+            img: "/desktop/your-path/digitalOverload.png",
+            title: "Digital Overload",
+            body: "Our services are grounded in real, measurable outcomes. We focus on providing practical, effective support for a range of emotional and mental health needs, backed by data-driven results."
+        },
+        {
+            img: "/desktop/your-path/relationshipChallenges.png",
+            title: "Realtionship Challenges",
+            body: "We are committed to breaking down the barriers of traditional mental health care. There’s no need for clinical intervention—just real, meaningful conversations when you need them most."
+        },
+        {
+            img: "/desktop/your-path/careerStress.png",
+            title: "Career Stress",
+            body: "Your well-being and privacy are our top priority. All conversations are confidential, ensuring that you can speak freely and openly without concerns."
+        },
+    ]
   return (
-    <div className='bg-white py-[30px] px-5 space-y-6'>
-        <p className='font-miniature text-center text-[38px]'>Your Path to Support</p>
+    <div className='bg-white py-[30px] px-5 space-y-4'>
+        <p className='font-miniature text-center text-[38px]'>Why Does Loneliness Affect So Many Young Adults?</p>
+        <p className='font-semibold text-center text-[15px]'>Loneliness among young adults is more common than you think. 
+            As you navigate through major life transitions—like starting college, entering the workforce, or building new relationships—it’s easy to feel disconnected. 
+            The pressure to balance expectations, independence, and social belonging can sometimes feel overwhelming.</p>
+        <p className='font-miniature font-bold text-center text-[32px]'>Reasons for Loneliness:</p>
       
         <div className='space-y-5'>
-            <SupportCards bg="bg-[#38AB9B]" img="/mobile/yourPath/seeking1.webp" title="Seeking Connection?" points={[
-                {
-                    title: "Loneliness",
-                    body: "People Craving Connection And A Listening Ear."
-                },
-                {
-                    title: "Emotional Support",
-                    body: "Those feeling isolated and desiring a safe space to share their thoughts."
-                }
-            ]} />
+             <Carousel className="">
+                    <CarouselContent>
+                        {cards?.map((card, id) => (
+                            <CarouselItem key={id} className="basis-1/1 w-full">
+                                <div className="max-w-[274px] mx-auto border border-black bg-[#95ADF0] py-5 px-4 rounded-[20px] space-y-[20px]">
+                                    <img src={card?.img} alt="Icon" className="rounded-[30px]  border border-black  w-[249px] h-[213px]" />
             
-            <SupportCards bg="bg-[#F097DD]" img="/mobile/yourPath/seeking2.webp" title="Seeking Connection?" points={[
-                {
-                    title: "Loneliness",
-                    body: "People Craving Connection And A Listening Ear."
-                },
-                {
-                    title: "Emotional Support",
-                    body: "Those feeling isolated and desiring a safe space to share their thoughts."
-                }
-            ]} />
+                                    <div className="space-y-[14px]">
+                                        <h3 className="h-[72px] pl-4 flex items-center text-white text-[30px] font-miniature">
+                                        {card?.title}
+                                        </h3>
             
-            <SupportCards bg="bg-[#FF6F61]" img="/mobile/yourPath/seeking3.webp" title="Seeking Connection?" points={[
-                {
-                    title: "Loneliness",
-                    body: "People Craving Connection And A Listening Ear."
-                },
-                {
-                    title: "Emotional Support",
-                    body: "Those feeling isolated and desiring a safe space to share their thoughts."
-                }
-            ]} />
+                                        
+                                    </div>
+                                </div>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="border border-black disabled:border-neutral-500 bg-white left-0" />
+                    <CarouselNext className="border border-black disabled:border-neutral-500 bg-white right-0" />
+                  </Carousel>
         </div>
+
+        <Button className="bg-[#5200FF] rounded-full text-[15px]"> Start Your Journey to Connection Today
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" className="">
+                    <path d="M0.617188 10C0.617188 4.53539 5.03539 0.117188 10.5 0.117188C15.9646 0.117188 20.3828 4.53539 20.3828 10C20.3828 15.4646 15.9646 19.8828 10.5 19.8828C5.03539 19.8828 0.617188 15.4646 0.617188 10ZM19.2201 10C19.2201 5.17486 15.3251 1.27987 10.5 1.27987C5.67486 1.27987 1.77987 5.17486 1.77987 10C1.77987 14.8251 5.67486 18.7201 10.5 18.7201C15.3251 18.7201 19.2201 14.8251 19.2201 10Z" fill="white" />
+                    <path d="M9.51585 14.8274L14.341 10.0023L9.51585 5.17716L10.3297 4.36328L15.9688 10.0023L10.3297 15.6413L9.51585 14.8274Z" fill="white" />
+                    <path d="M15.1562 9.4209V10.5836L5.27344 10.5836V9.4209L15.1562 9.4209Z" fill="white" />
+                  </svg>
+              </Button>
     </div>
   )
 }
 
-function SupportCards({bg, img, title, points}) {
-    return (
-    <div className={"p-[14px] rounded-3xl space-y-6" + ` ${bg}`}>
-        <img src={img} alt="Seeking connection 1" className='w-[322px] h-[151px] object-contain' />
 
-        <div className='space-y-[14px]'>
-            <h2 className='text-white font-miniature text-[26px]'>
-                {title}
-            </h2>
 
-            <ul className='list-disc text-[15px] leading-[22px] pl-[19px] space-y-[22px] text-white'>
-                {points?.map((point, id) => (
-                    <li key={id} className='capitalize'
-                        style={{
-                            listStyleImage: "url(/mobile/yourPath/list-disc.svg)"
-                        }}
-                    >
-                        <strong>{point?.title}:</strong> {point?.body}
-                    </li>
-                ))}
-            </ul>
-        </div>
+// function SupportCards({bg, img, title, points}) {
+//     return (
+//     <div className={"p-[14px] rounded-3xl space-y-6" + ` ${bg}`}>
+//         <img src={img} alt="Seeking connection 1" className='w-[322px] h-[151px] object-contain' />
+
+//         <div className='space-y-[14px]'>
+//             <h2 className='text-white font-miniature text-[26px]'>
+//                 {title}
+//             </h2>
+
+//             <ul className='list-disc text-[15px] leading-[22px] pl-[19px] space-y-[22px] text-white'>
+//                 {points?.map((point, id) => (
+//                     <li key={id} className='capitalize'
+//                         style={{
+//                             listStyleImage: "url(/mobile/yourPath/list-disc.svg)"
+//                         }}
+//                     >
+//                         <strong>{point?.title}:</strong> {point?.body}
+//                     </li>
+//                 ))}
+//             </ul>
+//         </div>
               
-        <div className='flex justify-center'>
-            <Button className="bg-[#5200FF] rounded-full text-[15px]">Get Started</Button>
-        </div>
-    </div>
-    )
-}
+//         <div className='flex justify-center'>
+//             <Button className="bg-[#5200FF] rounded-full text-[15px]">Get Started</Button>
+//         </div>
+//     </div>
+//     )
+// }
 
 export default YourPath

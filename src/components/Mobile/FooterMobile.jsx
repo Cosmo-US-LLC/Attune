@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from "../ui/button";
 
 function FooterMobile() {
   return (
@@ -19,13 +20,28 @@ function FooterMobile() {
           </div>
           <img src="/mobile/footer/footer_heart.svg" alt="Time" />
         </div>
-        <div className='flex flex-row items-center justify-center gap-4 mt-8'>
-          <img src="/mobile/footer/facebook.svg" alt="facebook" className='' />
-          <img src="/mobile/footer/instagram.svg" alt="instagram" className='' />
-          <img src="/mobile/footer/x.svg" alt="x" className='' />
-          <img src="/mobile/footer/linkedIn.svg" alt="linkedIn" className='' />
-          <img src="/mobile/footer/youtube.svg" alt="youtube" className='' />
-        </div>
+        <div className="flex flex-row items-center justify-between gap-4 mt-8">
+                           <div className=" flex flex-row gap-4">
+                           <img
+                             src="/mobile/footer/linkedIn.svg"
+                             alt="linkedIn"
+                             className=""
+                           />
+                           <img
+                             src="/mobile/footer/facebook.svg"
+                             alt="facebook"
+                             className=""
+                           />
+                           <img
+                             src="/mobile/footer/instagram.svg"
+                             alt="instagram"
+                             className=""
+                           />
+                          </div>
+                          <div className="">
+                          <Button className="bg-[#5200FF] text-white  py-3 rounded-full">Get Started</Button>
+                          </div>
+                         </div>
         <p className="mt-8 text-left">
           © 2024 Attune. All rights reserved
         </p>
