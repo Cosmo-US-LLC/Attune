@@ -8,11 +8,11 @@ function HowItWorks() {
             <img src="/desktop/how-it/card-1.svg" alt="Hug" className="w-[107px] h-[71px]" />
         </HowItCards>
         
-        <HowItCards id="01" title="Find Your Listener" body="Explore a variety of compassionate, judgment-free Listeners. Choose someone who truly gets you.">
+        <HowItCards id="02" title="Find Your Listener" body="Explore a variety of compassionate, judgment-free Listeners. Choose someone who truly gets you.">
         <img src="/desktop/how-it/card-2.svg" alt="Talk" className="w-[92px] h-[69px]" />
         </HowItCards>
         
-        <HowItCards id="01" title="Connect" body="Open up through voice or video, anytime and anywhere. It’s your safe space to share.">
+        <HowItCards id="03" title="Connect" body="Open up through voice or video, anytime and anywhere. It’s your safe space to share.">
         <img src="/desktop/how-it/card-3.svg" alt="Schedule" className="w-[82px] h-[73px]" />
         </HowItCards>
       </div>

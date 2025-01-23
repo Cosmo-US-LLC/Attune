@@ -11,11 +11,11 @@ function FooterMobile() {
           Looking for someone to listen? Our trained Listeners are here to provide non-judgmental, compassionate support whenever you need it. Whether you’re managing stress, navigating life transitions, or simply craving a connection, we’re here to help.
         </p>
         <div className="relative mt-8 flex flex-row justify-between items-center">
-          <div className="flex flex-col gap-4">
-            <p>Who we serve</p>
-            <p>our approach</p>
-            <p>What we do</p>
-            <p>resources</p>
+          <div className="flex flex-col gap-4 font-[500]">
+            <a href='#'>Who we serve</a>
+            <a href='#'>our approach</a>
+            <a href='#'>What we do</a>
+            <a href='#'>resources</a>
           </div>
           <img src="/mobile/footer/footer_heart.svg" alt="Time" />
         </div>

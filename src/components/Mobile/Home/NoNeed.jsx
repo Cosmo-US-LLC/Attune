@@ -22,7 +22,7 @@ function NoNeed() {
         </div>
 
         <div className='relative bg-[#FFD23F] h-[61px]'>
-            <h2 className='absolute right-[20px] -bottom-1 leading-snug text-[38px] font-miniature'>Life's trials<br /> alone.</h2>
+            <h2 className='absolute right-[20px] -bottom-1 leading-snug text-[38px] font-miniature'>life's trials<br /> alone.</h2>
         </div>
     </div>
   )

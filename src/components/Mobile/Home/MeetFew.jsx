@@ -59,7 +59,7 @@ function MeetFew() {
                   </h3>
                 </div>
 
-                <h3 className="flex items-center text-[16px] font-[600] leading-[21px]">
+                <h3 className="text-center text-[16px] font-[600] leading-[21px]">
                   {card?.title}
                 </h3>
 

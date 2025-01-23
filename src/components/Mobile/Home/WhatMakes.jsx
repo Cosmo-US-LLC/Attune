@@ -59,7 +59,7 @@ function WhatMakes() {
                         <img src={card?.img} alt="Icon" className="object-contain w-[44px] h-[44px]" />
 
                         <div className="space-y-[14px]">
-                            <h3 className="h-[72px] flex items-center text-[24px] font-miniature">
+                            <h3 className="h-[72px] w-[90%] flex items-center text-[24px] font-miniature">
                             {card?.title}
                             </h3>
 

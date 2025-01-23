@@ -15,7 +15,7 @@ function WhyListeners() {
                     30%
                 </h3>
                 <p className="text-xs text-black text-center w-[137px]">
-                    of people experience high levels of stress.
+                    of adults report feelings of chronic loneliness
                 </p>
                 </div>
                 <div className="bg-[#F097DD] w-[162px] h-[162px] mt-[64px] rounded-full flex flex-col justify-center items-center">
@@ -23,7 +23,7 @@ function WhyListeners() {
                     2 in 3
                 </h3>
                 <p className="text-xs text-black text-center w-[137px]">
-                    of people experience high levels of stress.
+                    individuals never seek mental health care due to stigma, cost, or accessibility
                 </p>
                 </div>
             </div>
@@ -45,7 +45,7 @@ function WhyListeners() {
                 47%
                 </h3>
                 <p className="text-xs text-white text-center w-[137px]">
-                of people experience high levels of stress.
+                    of people experience high levels of stress.
                 </p>
             </div>
         </div>

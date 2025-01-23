@@ -61,7 +61,7 @@ function NavbarMobile() {
                     connection, we’re here to help.
                   </p> */}
                   <div className="relative mt-8">
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 font-[500]">
                       <a href={"#"}>Who we serve</a>
                       <a href={"#"}>our approach</a>
                       <a href={"#"}>What we do</a>

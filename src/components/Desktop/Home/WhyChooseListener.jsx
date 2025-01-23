@@ -23,7 +23,7 @@ function WhyChooseListener() {
           </thead>
 
           {/* Table Body */}
-          <tbody>
+          <tbody className="font-[500]">
             <tr className="border-b border-black grid grid-cols-10">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Affordability

@@ -50,8 +50,12 @@ function PathToSupport() {
                 body: "People already in therapy or clinical care who want additional, informal support.",
               },
               {
-                title: "Come to Us",
-                body: "To combat loneliness and isolation.  To manage stress, anxiety, or life transitions.  To find understanding without judgment.",
+                title: "Why You Come to Us",
+                body: <ul className="list-disc pl-7">
+                  <li>To combat loneliness and isolation.</li>
+                  <li>To manage stress, anxiety, or life transitions.</li>
+                  <li>To find understanding without judgment.</li>
+                </ul>,
               },
             ]}
           />

@@ -18,7 +18,7 @@ function Footer() {
                     professional
                   </h1>
 
-                  <p className="text-[16px] leading-[22px]">
+                  <p className="text-[16px] leading-[22px] capitalize">
                     Looking for someone to listen? Our trained Listeners are
                     here to provide non-judgmental, compassionate support
                     whenever you need it. Whether you’re managing stress,

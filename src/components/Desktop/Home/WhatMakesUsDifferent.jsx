@@ -61,7 +61,7 @@ function WhatMakesUsDifferent() {
               <h3 className="font-miniature text-[30px] leading-[39px] pb-2">
                 {feature.title}
               </h3>
-              <p className="text-[16px] leading-[22px]">{feature.description}</p>
+              <p className="text-[16px] leading-[22px] capitalize">{feature.description}</p>
             </div>
           ))}
         </div>

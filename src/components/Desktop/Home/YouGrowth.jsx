@@ -18,7 +18,7 @@ const gridData = [
   },
   {
     id: 3,
-    text: "Take a mental break",
+    text: <>Take a<br/>mental break</>,
     bgColor: "bg-[#E5FF7D]",
     image: null,
   },
