@@ -10,9 +10,9 @@ function FAQAccordion() {
   const questions = [
     {
       id: "01",
-      question: "What is the Listener Program?",
+      question: "What is Attune?",
       answer:
-        "The Listener Program connects you with trained, non-judgmental individuals who provide emotional support through conversation. They are here to listen and help you navigate life’s challenges without the need for therapy or counseling.",
+        "Attune is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
     },
     {
       id: "02",

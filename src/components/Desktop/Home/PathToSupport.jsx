@@ -5,7 +5,7 @@ function PathToSupport() {
         <h1 className="font-miniature text-[76px] text-center leading-[69px]">
         Why Does Loneliness Affect So <br/> Many Young Adults?
         </h1>
-        <h6 className="text-[18px]  text-center min-w-[1001px] font-semibold">Loneliness among young adults is more common than you think. As you navigate through major life transitions—like starting college, entering the workforce, or building new relationships—it’s 
+        <h6 className="text-[18px] px-16 text-center lg:min-w-[600px] xl:min-w-[700px] 2xl:min-w-[800px] 3xl:min-w-[1001px] font-semibold">Loneliness among young adults is more common than you think. As you navigate through major life transitions—like starting college, entering the workforce, or building new relationships—it’s 
           easy to feel disconnected. The pressure to balance expectations, independence, and social belonging can sometimes feel overwhelming.</h6>
         <h6 className="font-miniature text-[50px] font-bold text-center">Reasons for Loneliness:</h6>
         <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">

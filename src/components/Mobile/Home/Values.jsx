@@ -6,7 +6,7 @@ export default function Values (){
           bg: "bg-[#E5FF7D]",
           img: "/desktop/coreValues/c-1.png",
           title: "You Deserve Connection",
-          body: 'Feeling burnt out or overwhelmed? We’re here for you. Our platform creates a safe, open space for you to talk about what matters to you, no matter how big or small.',
+          body: 'Navigating university life or starting a career? We’re here for you. Our platform creates a safe, open space for you to talk about what matters to you, no matter how big or small.',
         },
         {
           bg: "bg-[#FFA8ED]",
@@ -18,7 +18,7 @@ export default function Values (){
           bg: "bg-[#6FE0D1]",
           img: "/desktop/coreValues/c-2.png",
           title: "Affordable & Accessible",
-          body: 'Support that fits your budget and schedule. Designed for caregivers and busy professionals, we ensure connection is easy and affordable anytime, anywhere.',
+          body: 'Support that fits your budget and schedule. Designed for students and young professionals, we ensure connection is easy and affordable anytime, anywhere.',
         },
     
        
@@ -26,7 +26,7 @@ export default function Values (){
     return(
          <>
          <div className=" py-[30px] px-5 space-y-6">
-            <h3 className="text-center font-miniature text-[38px]">Core Values</h3>
+            <h3 className="text-center font-miniature text-[38px]">Our Core Values</h3>
           {values?.map((test, id) => (
                      
                         <div

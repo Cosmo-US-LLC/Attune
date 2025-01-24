@@ -10,13 +10,13 @@ function AnyQuestions() {
   const questions = [
     {
       id: "01",
-      question: "What is the Attune?",
+      question: "What is Attune?",
       answer: "Attune is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
     },
     {
       id: "02",
       question: "How does it work?",
-      answer: "You can connect with a Listener anytime, anywhere. Simply sign up, choose a Listener, and schedule your session. You can talk to them via text or voice—whatever makes you most comfortable.",
+      answer: "You can connect with a Listener anytime, anywhere. Simply sign up, choose a Listener, and schedule your session. You can talk to them via voice or video—whatever makes you most comfortable.",
     },
     {
       id: "03",
@@ -31,7 +31,7 @@ function AnyQuestions() {
             <li>Build resilience and navigate toward your desired outcomes.</li>
           </ul>
           <p className="mt-4">
-            However, it’s important to note that Listeners are not licensed mental health professionals. They do not diagnose, treat mental illnesses, or provide clinical interventions. If you’re experiencing severe emotional distress, trauma, or clinical conditions such as anxiety, depression, or addiction, we recommend seeking support from a qualified therapist or counselor. Listeners is here to complement—not replace—professional mental health care, offering empathetic support for everyday challenges.
+            However, it’s important to note that Listeners are not licensed mental health professionals. They do not diagnose, treat mental illnesses, or provide clinical interventions. If you’re experiencing severe emotional distress, trauma, or clinical conditions such as anxiety, depression, or addiction, we recommend seeking support from a qualified therapist or counselor. <br/> Listeners are here to complement—not replace—professional mental health care, offering empathetic support for everyday challenges.
           </p>
         </div>
       ),

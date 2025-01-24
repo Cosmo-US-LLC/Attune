@@ -17,13 +17,13 @@ function Testimonials() {
     },
     {
       bg: 'bg-[#FF6F61]',
-      img: "/desktop/testimonials/test-2.png",
+      img: "/mobile/testimonials/emily.png",
       title: "Emily Green, 21",
       body: '"I was feeling so lost after moving to a new city for college. My Listener helped me feel less alone and gave me the confidence to meet new people."',
     },
     {
       bg: 'bg-[#6FE0D1]',
-      img: "/desktop/testimonials/test-3.png",
+      img: "/mobile/testimonials/david.png",
       title: "David Lee, 31",
       body: '"I’ve always felt like I didn’t have anyone to talk to, but since joining, I’ve felt so much more connected. The Listener I spoke with helped me open up about my stress and gave me the comfort I didn’t know I needed."',
     },

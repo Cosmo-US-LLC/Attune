@@ -5,15 +5,15 @@ function HowItWorks() {
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
         <HowItCards id="01" title="Sign Up" body="Create your profile in just a few clicks. It’s quick, simple, and all about you.">
-            <img src="/desktop/how-it/card-1.svg" alt="Hug" className="w-[107px] h-[71px]" />
+            <img src="/desktop/how-it/card-1.png" alt="Hug" className="w-[107px] h-[71px]" />
         </HowItCards>
         
         <HowItCards id="01" title="Find Your Listener" body="Explore a variety of compassionate, judgment-free Listeners. Choose someone who truly gets you.">
-        <img src="/desktop/how-it/card-2.svg" alt="Talk" className="w-[92px] h-[69px]" />
+        <img src="/desktop/how-it/card-2.png" alt="Talk" className="w-[92px] h-[69px]" />
         </HowItCards>
         
         <HowItCards id="01" title="Connect" body="Open up through voice or video, anytime and anywhere. It’s your safe space to share.">
-        <img src="/desktop/how-it/card-3.svg" alt="Schedule" className="w-[82px] h-[73px]" />
+        <img src="/desktop/how-it/card-3.png" alt="Schedule" className="w-[82px] h-[73px]" />
         </HowItCards>
       </div>
 

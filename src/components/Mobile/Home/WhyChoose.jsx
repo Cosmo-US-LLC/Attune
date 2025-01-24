@@ -30,7 +30,7 @@ function WhyChoose() {
           <CarouselItem className="basis-1/1 w-full">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr]">
                     <th className="p-[10px] text-left text-[16px] font-[500] flex items-center">
                       Feature
                     </th>
@@ -39,8 +39,8 @@ function WhyChoose() {
                     </th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr className="border-b border-black grid grid-cols-2">
+                <tbody >
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px]">Accessibility</td>
                     <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
@@ -60,7 +60,7 @@ function WhyChoose() {
                       Immediate, anytime support
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px] flex items-center">Cost</td>
                     <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
@@ -80,7 +80,7 @@ function WhyChoose() {
                       Affordable for all income levels
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px]">
                       Focus
                     </td>
@@ -104,7 +104,7 @@ function WhyChoose() {
                       Everyday challenges, resilience.
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px] flex items-center">Purpose</td>
                     <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
@@ -124,7 +124,7 @@ function WhyChoose() {
                       Judgement-free emotional support.
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px]">Stigma</td>
                     <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
@@ -144,7 +144,7 @@ function WhyChoose() {
                       Low stigma, human connection.
                     </td>
                   </tr>
-                  <tr className=" grid grid-cols-2">
+                  <tr className=" grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px]">Ideal For</td>
                     <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
@@ -170,7 +170,7 @@ function WhyChoose() {
             <CarouselItem className="basis-1/1 w-full">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr]">
                     <th className="p-[10px] text-left text-[16px] font-[500] flex items-center">
                       Feature
                     </th>
@@ -180,7 +180,7 @@ function WhyChoose() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px]">Accessibility</td>
                     <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
                     <div><svg
@@ -201,7 +201,7 @@ function WhyChoose() {
                       Long wait times for appointments.
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px] flex items-center">Cost</td>
                     <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
                     <div><svg
@@ -229,7 +229,7 @@ function WhyChoose() {
                       Expensive, often requiring insurance.
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px]">
                       Focus
                     </td>
@@ -252,7 +252,7 @@ function WhyChoose() {
                       Severe mental health issues.
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px]">Purpose</td>
                     <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
                       <div><svg
@@ -273,7 +273,7 @@ function WhyChoose() {
                       Clinical Interventions.
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-2">
+                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px] flex items-center">Stigma</td>
                     <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
                       <div><svg
@@ -294,7 +294,7 @@ function WhyChoose() {
                       May carry stigma.
                     </td>
                   </tr>
-                  <tr className=" grid grid-cols-2">
+                  <tr className=" grid grid-cols-[1.4fr,1.6fr] font-[500]">
                     <td className="p-[10px] text-[15px] flex items-center">Ideal For</td>
                     <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
                     <div><svg

@@ -50,7 +50,7 @@ export default function ListenerMobile() {
 
                                         <div className="space-y-[14px]">
                                             <h3 className="pr-6 leading-normal flex items-center text-black text-[38px] font-miniature">
-                                                {card?.title}
+                                            How a Listener Can Help You<br/> Feel Less Alone
                                             </h3>
                                             <p className=" text-[15px] flex flex-row font-semibold leading-[22px]">
                                             <img src='/desktop/listener/tick-circle.webp' alt="Icon" className=" mr-1 mt-0.5 w-[20px] h-[21px]" />

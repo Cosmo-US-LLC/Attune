@@ -4,7 +4,7 @@
 function Hero() {
   return (
 
-    <div className="lg:min-w-[1024px] xl:min-w-[1280px] 2xl:min-w-[1440px] flex flex-row overflow-hidden xl:h-auto 2xl:h-[55vh]">
+    <div className="lg:min-w-[1000px] xl:min-w-[1260px] 2xl:min-w-[1420px] flex flex-row overflow-hidden ">
       <div className="bg-[#E5FF7D] min-w-[50%] ">
         <div className="relative">
           <img

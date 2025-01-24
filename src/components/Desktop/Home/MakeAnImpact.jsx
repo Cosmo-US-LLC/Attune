@@ -36,7 +36,7 @@ function MakeAnImpactCarousel() {
     },
     {
       bg: "bg-[#FF6F61]",
-      img: "/desktop/testimonials/test-2.png",
+      img: "/mobile/testimonials/test-2.png",
       title: "Emily Green, 21",
       body: '"I was feeling so lost after moving to a new city for college. My Listener helped me feel less alone and gave me the confidence to meet new people."',
     },

@@ -14,17 +14,17 @@ import {
 function YourPath() {
     const cards = [
         {
-            img: "/desktop/your-path/liveTransitions.png",
+            img: "/mobile/yourPath/card3.png",
             title: "Life Transitions",
             body: "Our trained, non-judgmental Listeners provide a safe space for you to share your thoughts, feelings, and experiences without fear of judgment. You’ll always feel heard and supported."
         },
         {
-            img: "/desktop/your-path/socialPressures.png",
+            img: "/mobile/yourPath/card2.png",
             title: "Social pressures",
             body: "Whether you're at home or on the go, you can connect with a Listener from anywhere, at any time. Our platform is available to support you whenever you need it."
         },
         {
-            img: "/desktop/your-path/digitalOverload.png",
+            img: "/mobile/yourPath/card1.png",
             title: "Digital Overload",
             body: "Our services are grounded in real, measurable outcomes. We focus on providing practical, effective support for a range of emotional and mental health needs, backed by data-driven results."
         },
@@ -56,7 +56,7 @@ function YourPath() {
                                     <img src={card?.img} alt="Icon" className="rounded-[30px]  border border-black  w-[249px] h-[213px]" />
             
                                     <div className="space-y-[14px]">
-                                        <h3 className="h-[72px] pl-4 flex items-center text-white text-[30px] font-miniature">
+                                        <h3 className="h-[72px] flex items-center justify-center text-center text-white text-[30px] font-miniature">
                                         {card?.title}
                                         </h3>
             
@@ -71,7 +71,7 @@ function YourPath() {
                   </Carousel>
         </div>
 
-        <Button className="bg-[#5200FF] rounded-full text-[15px]"> Start Your Journey to Connection Today
+        <Button className="bg-[#5200FF] rounded-full text-[15px] ml-3"> Start Your Journey to Connection Today
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" className="">
                     <path d="M0.617188 10C0.617188 4.53539 5.03539 0.117188 10.5 0.117188C15.9646 0.117188 20.3828 4.53539 20.3828 10C20.3828 15.4646 15.9646 19.8828 10.5 19.8828C5.03539 19.8828 0.617188 15.4646 0.617188 10ZM19.2201 10C19.2201 5.17486 15.3251 1.27987 10.5 1.27987C5.67486 1.27987 1.77987 5.17486 1.77987 10C1.77987 14.8251 5.67486 18.7201 10.5 18.7201C15.3251 18.7201 19.2201 14.8251 19.2201 10Z" fill="white" />
                     <path d="M9.51585 14.8274L14.341 10.0023L9.51585 5.17716L10.3297 4.36328L15.9688 10.0023L10.3297 15.6413L9.51585 14.8274Z" fill="white" />

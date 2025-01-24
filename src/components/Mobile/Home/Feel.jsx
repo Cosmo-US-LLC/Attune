@@ -10,7 +10,7 @@ export default function Feel() {
             className=" object-cover"
           />
         </div>
-        <div className="bg-white py-[30px] px-5">
+        <div className="bg-white border border-y-black py-[30px] px-5">
         <div className="">
             <div className='flex flex-row'>
               <h3 className="font-miniature text-[38px] leading-[55px]">Feel Heard with <br/> 

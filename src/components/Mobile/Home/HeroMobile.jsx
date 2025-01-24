@@ -6,7 +6,7 @@ function HeroMobile() {
   return (
     <>
     <div className='w-full bg-[#E5FF7D]'>
-    <img src={"/mobile/hero/hero-bg.webp"} alt='' className='pt-12  h-[328.893px] w-[493.464px] object-cover' />
+    <img src={"/mobile/hero/hero-bg.webp"} alt='' className=' h-[300px] object-left object-cover' />
     </div>
     <div className='bg-[#95ADF0] py-[30px] px-[20px] space-y-[28px]'>
       <div className='space-y-6 text-white'>
