@@ -5,11 +5,12 @@ function PathToSupport() {
         <h1 className="font-miniature text-[76px] text-center leading-[69px]">
           Your Path to Support
         </h1>
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-6">
+          <div className="col-span-2"></div>
           <YourPathCard
             img="/desktop/your-path/path-to-support-1.webp"
             title="Seeking Connection?"
-            classes="bg-[#38AB9B] text-white"
+            classes="bg-[#38AB9B] text-white col-span-4"
             points={[
               {
                 title: "Loneliness",
@@ -26,7 +27,7 @@ function PathToSupport() {
             img="/desktop/your-path/path-to-support-2.webp"
             imgClass="bg-[#00FBFC] rounded-[30px] border border-black"
             title="Facing Mental Barriers?"
-            classes="bg-[#F097DD] text-black"
+            classes="bg-[#F097DD] text-black col-span-4"
             points={[
               {
                 title: "Mental Health Barriers",
@@ -38,9 +39,10 @@ function PathToSupport() {
               },
             ]}
           />
+          <div className="col-span-2"></div>
 
           {/* Card 3 */}
-          <YourPathCard
+          {/* <YourPathCard
             img="/desktop/your-path/path-to-support-3.webp"
             title="Looking for Extra Support?"
             classes="bg-[#FF6F61] text-white"
@@ -58,7 +60,7 @@ function PathToSupport() {
                 </ul>,
               },
             ]}
-          />
+          /> */}
         </div>
       </div>
     </div>

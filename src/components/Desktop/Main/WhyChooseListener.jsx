@@ -1,4 +1,43 @@
 function WhyChooseListener() {
+  const features = [
+    {
+      title: "Accessibility",
+      attune: "Immediate, anytime support.",
+      traditional: "Long wait times for appointments.",
+      cross: true,
+    },
+    {
+      title: "Cost",
+      attune: "Affordable for all income levels.",
+      traditional: "Expensive, often requiring insurance.",
+      cross: false,
+    },
+    {
+      title: "Focus",
+      attune: "Everyday challenges, resilience.",
+      traditional: "Severe mental health issues.",
+      cross: true,
+    },
+    {
+      title: "Purpose",
+      attune: "Judgment-free emotional support.",
+      traditional: "Clinical interventions.",
+      cross: true,
+    },
+    {
+      title: "Stigma",
+      attune: "Low stigma, human connection.",
+      traditional: "May carry stigma.",
+      cross: true,
+    },
+    {
+      title: "Ideal For",
+      attune: "Everyday clarity and motivation.",
+      traditional: "Severe emotional distress.",
+      cross: false,
+    },
+  ]
+
   return (
     <div className="bg-white p-[105px] space-y-[87px]">
       <h1 className="text-[76px] font-miniature text-center">
@@ -24,34 +63,36 @@ function WhyChooseListener() {
 
           {/* Table Body */}
           <tbody className="font-[500]">
-            <tr className="border-b border-black grid grid-cols-10">
+            {features?.map((feature, id) => (
+              <tr key="id" className="border-b border-black grid grid-cols-10">
+                <td className="p-[20px] text-[25px] flex items-center col-span-4">
+                  {feature?.title}
+                </td>
+                <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[10px]  bg-[#e5ff7d]">
+                  <div className="min-w-[40px]">
+                    <img
+                      src="/desktop/why-choose/tick.svg"
+                      alt="Tick"
+                      className="w-[40px] h-[40px]"
+                    />
+                  </div>
+                  {feature?.attune}
+                </td>
+                <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
+                  <div className="min-w-[40px]">
+                    <img
+                      src={feature?.cross ? "/desktop/why-choose/cross.svg" : "/desktop/why-choose/exclaim.svg"}
+                      alt="Tick"
+                      className="w-[40px] h-[40px]"
+                    />
+                  </div>
+                  {feature?.traditional}
+                </td>
+              </tr>
+            ))}
+            {/* <tr className="border-b border-black grid grid-cols-10">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
-                Affordability
-              </td>
-              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[10px]  bg-[#e5ff7d]">
-                <div>
-                  <img
-                    src="/desktop/why-choose/tick.svg"
-                    alt="Tick"
-                    className="w-[40px] h-[40px]"
-                  />
-                </div>
-                More Affordable
-              </td>
-              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
-                <div>
-                  <img
-                    src="/desktop/why-choose/exclaim.svg"
-                    alt="Tick"
-                    className="w-[40px] h-[40px]"
-                  />
-                </div>
-                Expensive
-              </td>
-            </tr>
-            <tr className="border-b border-black grid grid-cols-10">
-              <td className="p-[20px] text-[25px] flex items-center col-span-4">
-                Accessibility
+                Cost
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
@@ -61,7 +102,7 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Anytime, Anywhere
+                Affordable for all income levels.
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
@@ -71,12 +112,12 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Requires appointments
+                Expensive, often requiring insurance.
               </td>
             </tr>
             <tr className="border-b border-black grid grid-cols-10">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
-                Support for Everyday Issues
+                Focus
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
@@ -86,7 +127,7 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Stress, loneliness
+                Everyday challenges, resilience.
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
@@ -96,12 +137,12 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Diagnosis-focused
+                Severe mental health issues.
               </td>
             </tr>
             <tr className="border-b border-black grid grid-cols-10">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
-                Approachability
+                Purpose
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
@@ -111,7 +152,7 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                No clinical intimidation
+                Judgment-free emotional support.
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
@@ -121,12 +162,12 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Intimidating
+                Clinical interventions
               </td>
             </tr>
             <tr className="grid grid-cols-10">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
-                Judgment-Free
+                Stigma
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
@@ -136,7 +177,7 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Safe spaces
+                Low stigma, human connection.
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
@@ -146,9 +187,34 @@ function WhyChooseListener() {
                     className="w-[40px] h-[40px]"
                   />
                 </div>
-                Less personal setting
+                May carry stigma.
               </td>
             </tr>
+            <tr className="grid grid-cols-10">
+              <td className="p-[20px] text-[25px] flex items-center col-span-4">
+                Ideal For
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/tick.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Everyday clarity and motivation.
+              </td>
+              <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
+                <div>
+                  <img
+                    src="/desktop/why-choose/cross.svg"
+                    alt="Tick"
+                    className="w-[40px] h-[40px]"
+                  />
+                </div>
+                Severe emotional distress.
+              </td>
+            </tr>2 */}
           </tbody>
         </table>
 
