@@ -10,7 +10,7 @@ function Navbar() {
 
             <span className="text-black font-[400] text-[46.167px] leading-normal italic">une</span>
           </h1>
-          <span className="text-sm font-light absolute -bottom-1 right-0">By SocialRx</span>
+          <span className="text-sm font-light absolute -bottom-1 right-0">By EaseCare</span>
         </div>
 
         <div className="hidden md:flex space-x-8">
