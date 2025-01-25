@@ -8,7 +8,7 @@ function FooterMobile() {
           <h1 className="text-left font-miniature text-[38px]">Talk to a <br />professional</h1>
         </div>
         <p className="mt-6">
-          Looking for someone to listen? Our trained Listeners are here to provide non-judgmental, compassionate support whenever you need it. Whether you’re managing stress, navigating life transitions, or simply craving a connection, we’re here to help.
+        We would like to acknowledge the traditional, ancestral, and unceded territory of the many First Nations, Metis, and Inuit who have lived and cared for the lands known as Canada for generations. We are grateful for the traditional knowledge keepers and elders who are still with us today and those who have gone before us. We make this acknowledgment as an act of reconciliation and gratitude to those whose territory we reside on.
         </p>
         <div className="relative mt-8 flex flex-row justify-between items-center">
           <div className="flex flex-col gap-4 font-[500]">
@@ -31,7 +31,7 @@ function FooterMobile() {
         </p>
         <div className='my-4 border-[0.5px] border-[black] w-full' />
         <p className="mt-4 text-left">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        We would like to acknowledge the traditional, ancestral, and unceded territory of the many First Nations, Metis, and Inuit who have lived and cared for the lands known as Canada for generations. We are grateful for the traditional knowledge keepers and elders who are still with us today and those who have gone before us. We make this acknowledgment as an act of reconciliation and gratitude to those whose territory we reside on.
         </p>
       </div>
       <div className='absolute top-0 left-0 w-full h-full z-0 flex items-center'>

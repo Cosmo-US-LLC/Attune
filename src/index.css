@@ -73,3 +73,28 @@ body {
   /* min-height: 41.875vw; */
   min-height: 603px;
 }
+.swiper-pagination-bullet {
+  background: gray;
+  opacity: 0.6;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+  display: none !important;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+  display: none !important;
+
+}
+.swiper-pagination-bullet-active {
+  background: rgb(48, 48, 48) !important;
+  opacity: 1;
+}
+.swiper-button-prev-meet.swiper-button-disabled, .swiper-button-next-meet.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+.swiper-button-prev-tes.swiper-button-disabled, .swiper-button-next-tes.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
