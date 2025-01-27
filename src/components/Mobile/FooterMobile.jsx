@@ -36,11 +36,13 @@ function FooterMobile() {
             Talk to a <br />
             professional
           </h1>
-          <img
-            src="/mobile/logo_footer.svg"
-            alt="Logo"
-            className="absolute top-0 right-0 w-[81px] h-[43px]"
-          />
+          <a href="/">
+            <img
+              src="/mobile/logo_footer.svg"
+              alt="Logo"
+              className="absolute top-0 right-0 w-[81px] h-[43px]"
+            />
+          </a>
         </div>
         <p className="mt-6 text-[15px]">
           Looking for someone to listen? Our trained Listeners are here to

@@ -41,11 +41,13 @@ function NavbarMobile() {
                 <SheetContent side={"left"} className="bg-[#e5ddd4] z-[101]">
                   <SheetHeader>
                     <SheetTitle>
-                      <img
-                        src="/mobile/logo.svg"
-                        alt="Attune Logo"
-                        className="w-[83px] h-[44px] object-contain"
-                      />
+                      <a href="/" onClick={()=>setSideOpen(false)}>
+                        <img
+                          src="/mobile/logo.svg"
+                          alt="Attune Logo"
+                          className="w-[83px] h-[44px] object-contain"
+                        />
+                      </a>
                     </SheetTitle>
                     <SheetDescription hidden></SheetDescription>
                   </SheetHeader>
@@ -125,11 +127,13 @@ function NavbarMobile() {
                 </SheetContent>
               </Sheet>
 
-              <img
-                src="/mobile/logo.svg"
-                alt="Attune Logo"
-                className="w-[83px] h-[44px] object-contain"
-              />
+              <a href="/">
+                <img
+                  src="/mobile/logo.svg"
+                  alt="Attune Logo"
+                  className="w-[83px] h-[44px] object-contain"
+                />
+              </a>
             </div>
 
             <a href="https://innovacare.tech/listenerhub/signup">

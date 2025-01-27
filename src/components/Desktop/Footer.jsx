@@ -4,13 +4,13 @@ function Footer() {
       <div className="relative z-10 xl:max-w-[1313px] px-6">
         {/* Top Section */}
         <div className="flex">
-          <div className="min-w-[200px] flex max-xl:items-center items-end">
+          <a href="/" className="min-w-[200px] flex max-xl:items-center items-end">
             <img
               src="/desktop/logo-footer.svg"
               alt="Attune Logo"
               className=""
             />
-          </div>
+          </a>
 
           <div className="grow flex pb-1 gap-x-[34px]">
             <div className="space-y-[20px] xl:space-y-[57px]">
