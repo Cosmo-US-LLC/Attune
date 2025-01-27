@@ -13,7 +13,7 @@ function Listener() {
           <div className="w-full md:w-[50%]"></div>
   
           <div className="w-full md:w-[50%] flex justify-center px-6 md:px-12 lg:px-16">
-            <div className="w-full max-w-[600px] lg:mt-16 xl:mt-32">
+            <div className="w-full max-w-[600px] lg:mt-16 xl:mt-20 2xl:mt-32">
               <div className="bg-white border border-black rounded-[20px] p-[16px] md:p-[20px] lg:p-[48px] space-y-[22px]">
                 <h3 className="font-miniature text-[30px] lg:text-[24px] xl:text-[50px] leading-[35px] md:leading-[40px] xl:leading-[57px] pb-4 text-center md:text-left">
                   How a Listener Can Help You Feel Less Alone
