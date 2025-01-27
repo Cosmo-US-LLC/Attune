@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 
 function YourPath() {
   return (
-    <div className='bg-white py-[30px] px-5 space-y-6'>
+    <div id="Mpathtosupport" className='bg-white py-[30px] px-5 space-y-6'>
         <p className='font-miniature text-center text-[38px]'>Your Path to Support</p>
       
         <div className='space-y-5'>
@@ -31,7 +31,7 @@ function YourPath() {
                 }
             ]} />
             
-            <SupportCards bg="bg-[#FF6F61]" img="/mobile/yourPath/seeking3.webp" title="Seeking Connection?" points={[
+            {/* <SupportCards bg="bg-[#FF6F61]" img="/mobile/yourPath/seeking3.webp" title="Seeking Connection?" points={[
                 {
                     title: "Loneliness",
                     body: "People Craving Connection And A Listening Ear."
@@ -40,7 +40,7 @@ function YourPath() {
                     title: "Emotional Support",
                     body: "Those feeling isolated and desiring a safe space to share their thoughts."
                 }
-            ]} />
+            ]} /> */}
         </div>
     </div>
   )
@@ -69,9 +69,9 @@ function SupportCards({bg, img, title, points}) {
             </ul>
         </div>
               
-        <div className='flex justify-center'>
+        <a href='https://innovacare.tech/listenerhub/signup' className='flex justify-center'>
             <Button className="bg-[#5200FF] rounded-full text-[15px]">Get Started</Button>
-        </div>
+        </a>
     </div>
     )
 }

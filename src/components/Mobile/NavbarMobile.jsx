@@ -12,123 +12,140 @@ import {
 function NavbarMobile() {
   return (
     <>
-    <div className="pb-[3.5rem]">
-      <div className="fixed top-0 w-[100%] z-[99]">
-      <div className="bg-white h-[68px] flex justify-between items-center py-[14px] px-5">
-      <div className="flex gap-3">
-        <Sheet>
-          <SheetTrigger asChild>
-            <button className="bg-[#F4EFEA] w-[40px] h-[40px] p-2 rounded-sm">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className=""
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20 18H4M14.5 12H4M20 6H4"
-                  stroke="#5200FF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </button>
-          </SheetTrigger>
-          <SheetContent side={"left"} className="bg-[#e5ddd4]">
-            <SheetHeader>
-              <SheetTitle>
-                <img
-                  src="/mobile/logo.svg"
-                  alt="Attune Logo"
-                  className="w-[83px] h-[44px] object-contain"
-                />
-              </SheetTitle>
-              <SheetDescription hidden></SheetDescription>
-            </SheetHeader>
-            <div className="relative h-full max-h-[70dvh] bg-[#E5DDD4] py-[30px]">
-              <div className="relative z-10 flex flex-col h-full">
-                <div className="grow flex flex-col justify-between">
-                  <div className="flex flex-row items-start justify-start">
-                    <h1 className="text-left font-miniature text-[38px] leading-[38px]">
-                      Talk to a <br />
-                      professional
-                    </h1>
-                  </div>
-                  {/* <p className="mt-6">
+      <div className="pb-[3.5rem]">
+        <div className="fixed top-0 w-[100%] z-[99]">
+          <div className="bg-white h-[68px] flex justify-between items-center py-[14px] px-5">
+            <div className="flex gap-3 relative z-[100]">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <button className="bg-[#F4EFEA] w-[40px] h-[40px] p-2 rounded-sm">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      className=""
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 18H4M14.5 12H4M20 6H4"
+                        stroke="#5200FF"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </button>
+                </SheetTrigger>
+                <SheetContent side={"left"} className="bg-[#e5ddd4] z-[101]">
+                  <SheetHeader>
+                    <SheetTitle>
+                      <img
+                        src="/mobile/logo.svg"
+                        alt="Attune Logo"
+                        className="w-[83px] h-[44px] object-contain"
+                      />
+                    </SheetTitle>
+                    <SheetDescription hidden></SheetDescription>
+                  </SheetHeader>
+                  <div className="relative h-full max-h-[70dvh] bg-[#E5DDD4] py-[30px]">
+                    <div className="relative z-10 flex flex-col h-full">
+                      <div className="grow flex flex-col justify-between">
+                        <div className="flex flex-row items-start justify-start">
+                          <h1 className="text-left font-miniature text-[38px] leading-[48px]">
+                            Talk to a <br />
+                            professional
+                          </h1>
+                        </div>
+                        {/* <p className="mt-6">
                     Looking for someone to listen? Our trained Listeners are
                     here to provide non-judgmental, compassionate support
                     whenever you need it. Whether you’re managing stress,
                     navigating life transitions, or simply craving a
                     connection, we’re here to help.
                   </p> */}
-                  <div className="relative mt-8">
-                    <div className="flex flex-col gap-4 font-[500]">
-                      <a href={"#"}>Who we serve</a>
-                      <a href={"#"}>our approach</a>
-                      <a href={"#"}>What we do</a>
-                      <a href={"#"}>resources</a>
+                        <div className="relative mt-8">
+                          <div className="flex flex-col gap-4 font-[500]">
+                            <a href={"#Mpathtosupport"}>Path To Support</a>
+                            <a href={"#Mhowitworks"}>How It Works</a>
+                            <a href={"#Mourapproach"}>Our Approach</a>
+                            <a href={"#Mfaqs"}>FAQs</a>
+                          </div>
+                          {/* <img src="/mobile/footer/footer_heart.svg" alt="Time" /> */}
+                        </div>
+                        <div className="flex justify-between items-center py-0 mt-6">
+                          <div className="flex flex-row items-center justify-center gap-4">
+                            <a href="https://www.linkedin.com/company/easecare/">
+                              <img
+                                src="/mobile/footer/linkedIn.svg"
+                                alt="linkedIn"
+                                className=""
+                              />
+                            </a>
+                            <a href="https://www.facebook.com/easecare.ca">
+                              <img
+                                src="/mobile/footer/facebook.svg"
+                                alt="facebook"
+                                className=""
+                              />
+                            </a>
+                            <a href="https://www.instagram.com/easecare.ca/">
+                              <img
+                                src="/mobile/footer/instagram.svg"
+                                alt="instagram"
+                                className=""
+                              />
+                            </a>
+                          </div>
+
+                          <a href="https://innovacare.tech/listenerhub/signup">
+                            <button className="bg-[#5200FF] text-white px-[10px] h-[38px] my-0 min-w-[112px] rounded-full text-[15px] whitespace-nowrap">
+                              Get Started
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="mt-8 text-left text-xs">
+                          © 2024 Attune. All rights reserved
+                        </p>
+                        <div className="my-4 border-[0.5px] border-[black] w-full" />
+                        <p className="mt-4 text-left text-xs capitalize">
+                          We would like to acknowledge the traditional,
+                          ancestral, and unceded territory of the many First
+                          Nations, Metis, and Inuit who have lived and cared for
+                          the lands known as Canada for generations. We are
+                          grateful for the traditional knowledge keepers and
+                          elders who are still with us today and those who have
+                          gone before us. We make this acknowledgment as an act
+                          of reconciliation and gratitude to those whose
+                          territory we reside on.
+                        </p>
+                      </div>
                     </div>
-                    {/* <img src="/mobile/footer/footer_heart.svg" alt="Time" /> */}
+                    <div className="absolute top-0 left-0 w-[43%] h-[28dvh] z-0 flex justify-start items-center">
+                      <h1 className="font-miniature text-center rotate-90 w-full text-[#ded6ce] text-[20dvh] z-0">
+                        Att<span className="italic">une</span>
+                      </h1>
+                    </div>
                   </div>
-                  <div className="flex flex-row items-center justify-center gap-4 mt-8">
-                    <img
-                      src="/mobile/footer/facebook.svg"
-                      alt="facebook"
-                      className=""
-                    />
-                    <img
-                      src="/mobile/footer/instagram.svg"
-                      alt="instagram"
-                      className=""
-                    />
-                    <img src="/mobile/footer/x.svg" alt="x" className="" />
-                    <img
-                      src="/mobile/footer/linkedIn.svg"
-                      alt="linkedIn"
-                      className=""
-                    />
-                    <img
-                      src="/mobile/footer/youtube.svg"
-                      alt="youtube"
-                      className=""
-                    />
-                  </div>
+                </SheetContent>
+              </Sheet>
 
-                </div>
-                <div>
-                  <p className="mt-8 text-left text-xs">
-                    © 2024 Attune. All rights reserved
-                  </p>
-                  <div className="my-4 border-[0.5px] border-[black] w-full" />
-                  <p className="mt-4 text-left text-xs">
-                  We would like to acknowledge the traditional, ancestral, and unceded territory of the many First Nations, Metis, and Inuit who have lived and cared for the lands known as Canada for generations. We are grateful for the traditional knowledge keepers and elders who are still with us today and those who have gone before us. We make this acknowledgment as an act of reconciliation and gratitude to those whose territory we reside on.
-                  </p>
-                </div>
-              </div>
-              <div className="absolute top-0 left-0 w-[40%] h-[28dvh] z-0 flex justify-start items-center">
-                <h1 className="font-miniature text-center rotate-90 w-full text-[#ded6ce] text-[20dvh] z-0">
-                  Att<span className="italic">une</span>
-                </h1>
-              </div>
+              <img
+                src="/mobile/logo.svg"
+                alt="Attune Logo"
+                className="w-[83px] h-[44px] object-contain"
+              />
             </div>
-          </SheetContent>
-        </Sheet>
 
-        <img
-          src="/mobile/logo.svg"
-          alt="Attune Logo"
-          className="w-[83px] h-[44px] object-contain"
-        />
+            <a href="https://innovacare.tech/listenerhub/signup">
+              <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                Connect Now
+              </Button>
+            </a>
+          </div>
+        </div>
       </div>
-
-      <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-        Connect Now
-      </Button>
-    </div>
-      </div>
-    </div>
     </>
   );
 }

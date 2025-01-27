@@ -72,9 +72,11 @@ function WhatMakesUsDifferent() {
 
         {/* Footer Section */}
         <div className="relative z-0">
-          <button className="bg-[#5200FF] relative z-10 text-white py-3 px-6 rounded-full">
-            Connect Now
-          </button>
+          <a href="https://innovacare.tech/listenerhub/signup">
+            <button className="bg-[#5200FF] relative z-10 text-white py-3 px-6 rounded-full">
+              Connect Now
+            </button>
+          </a>
           <img src="/desktop/what-makes/sitting-girl.svg" alt="Sitting girl" className="absolute max-xl:-right-[10%] right-0 z-0 max-xl:bottom-[300%] -bottom-1" />
         </div>
       </div>

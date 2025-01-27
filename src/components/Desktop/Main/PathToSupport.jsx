@@ -1,6 +1,6 @@
 function PathToSupport() {
   return (
-    <div className="bg-gray-50 py-[130px] px-[110px]">
+    <div id="Mpathtosupport" className="bg-gray-50 py-[130px] px-[110px]">
       <div className="max-w-[1440px] mx-auto space-y-[60px]">
         <h1 className="font-miniature text-[76px] text-center leading-[69px]">
           Your Path to Support
@@ -100,11 +100,11 @@ function YourPathCard({ img, imgClass = "", title, classes, points }) {
           ))}
         </ul>
 
-        <div className="pt-2">
+        <a href="https://innovacare.tech/listenerhub/signup" className="pt-2">
           <button className="w-fit bg-[#5200FF] text-white py-2 px-6 rounded-full text-[16px] font-[500]">
             Get Started
           </button>
-        </div>
+        </a>
       </div>
     </div>
   );

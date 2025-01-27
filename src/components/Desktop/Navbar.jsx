@@ -15,7 +15,8 @@ function Navbar() {
           <span className="text-sm font-light absolute -bottom-1 right-0">By EaseCare</span>
         </div>
 
-        <div className="hidden md:flex space-x-8">
+        {/* md:flex */}
+        <div className="hidden space-x-8"> 
           <a
             href="#who-we-serve"
             className="flex flex-col justify-center text-center text-black font-medium text-[16.222px] leading-[98.144px] capitalize   flex-shrink-0 hover:text-gray-900"
@@ -42,11 +43,11 @@ function Navbar() {
           </a>
         </div>
 
-        <div>
+        <a href="https://innovacare.tech/listenerhub/signup">
           <button className="flex justify-center items-center gap-2 w-[160px] h-[37px] px-[24px] py-[16px] bg-[#FF6F61] text-white rounded-[34.878px] border-[1.622px] border-white hover:bg-red-500">
             Connect Now
           </button>
-        </div>
+        </a>
       </div>
     </nav>
       </div>

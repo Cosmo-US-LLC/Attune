@@ -55,8 +55,7 @@ function FAQAccordion() {
     {
       id: "04",
       question: "How much does it cost?",
-      answer:
-        "Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, starting at just $30/hr. We believe emotional support should be accessible to everyone.",
+      answer: (<>Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, <strong>starting at just $30/hr</strong>. We believe emotional support should be accessible to everyone.</>),
     },
     {
       id: "05",
@@ -67,7 +66,7 @@ function FAQAccordion() {
   ];
 
   return (
-    <div className="bg-[#f4efea]">
+    <div id="Mfaqs" className="bg-[#f4efea]">
       <div className="max-w-[1440px] mx-auto  px-[130px] py-[107px] space-y-[74px]">
         <h1 className="font-miniature text-[76px] text-center">
           Any Questions?

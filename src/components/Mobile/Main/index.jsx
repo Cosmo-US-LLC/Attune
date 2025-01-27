@@ -11,6 +11,7 @@ import WhyChoose from './WhyChoose'
 import Testimonials from './Testimonials'
 import AnyQuestions from './AnyQuestions'
 import WeBelieve from './WeBelieve'
+import OurCore from './OurCore'
 
 function HomeMobile() {
   return (
@@ -22,7 +23,8 @@ function HomeMobile() {
       <NoNeed />
       <WhatMakes />
       <WhyListeners />
-      <MeetFew />
+      <OurCore />
+      {/* <MeetFew /> */}
       <WhyChoose />
       <Testimonials />
       <AnyQuestions />

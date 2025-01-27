@@ -1,6 +1,6 @@
 function HowItWorks() {
   return (
-    <div className="bg-[#e5ff7d] py-[70px] px-4 space-y-[26px]">
+    <div id="Mhowitworks" className="bg-[#e5ff7d] py-[70px] px-4 space-y-[26px]">
       <h1 className='font-miniature text-center text-[76px] leading-[110px]'>How it Works</h1>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
@@ -18,11 +18,11 @@ function HowItWorks() {
       </div>
 
       {/* Call-to-Action Button */}
-      <div className="flex justify-center mt-8">
+      <a href="https://innovacare.tech/listenerhub/signup" className="flex justify-center mt-8">
         <button className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[16px]">
           Sign up now
         </button>
-      </div>
+      </a>
     </div>
   );
 }
