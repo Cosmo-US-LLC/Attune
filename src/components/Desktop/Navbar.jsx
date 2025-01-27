@@ -1,5 +1,7 @@
 function Navbar() {
   return (
+    <div className="pb-[5.5rem]">
+      <div className="fixed top-0 w-[100%] z-[99]">
     <nav className="bg-white h-[99px] flex-shrink-0 shadow-sm">
       <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
         <div className="flex items-center flex-col relative">
@@ -47,6 +49,8 @@ function Navbar() {
         </div>
       </div>
     </nav>
+      </div>
+    </div>
   );
 }
 

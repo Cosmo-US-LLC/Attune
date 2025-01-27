@@ -20,14 +20,14 @@ function YourPath() {
                 }
             ]} />
             
-            <SupportCards bg="bg-[#F097DD]" img="/mobile/yourPath/seeking2.webp" title="Seeking Connection?" points={[
+            <SupportCards bg="bg-[#F097DD]" img="/mobile/yourPath/seeking2.webp" title="Facing Mental Barriers?" points={[
                 {
-                    title: "Loneliness",
-                    body: "People Craving Connection And A Listening Ear."
+                    title: "Mental Health Barriers:",
+                    body: " Individuals facing mental health challenges but hesitant to seek traditional clinical care due to stigma, cost, or rigidity."
                 },
                 {
-                    title: "Emotional Support",
-                    body: "Those feeling isolated and desiring a safe space to share their thoughts."
+                    title: "Underserved Groups",
+                    body: "Young adults transitioning to independence, seniors experiencing isolation, and caregivers managing stress."
                 }
             ]} />
             
@@ -49,7 +49,7 @@ function YourPath() {
 function SupportCards({bg, img, title, points}) {
     return (
     <div className={"p-[14px] rounded-3xl space-y-6" + ` ${bg}`}>
-        <img src={img} alt="Seeking connection 1" className='w-[322px] h-[151px] object-contain' />
+        <img src={img} alt="Seeking connection 1" className='w-[100%]  object-contain' />
 
         <div className='space-y-[14px]'>
             <h2 className='text-white font-miniature text-[26px]'>
