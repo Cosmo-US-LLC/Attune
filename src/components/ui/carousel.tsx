@@ -145,17 +145,19 @@ const Carousel = React.forwardRef<
         >
           {children}
         </div>
-        <div className="flex justify-center gap-[5px] pt-[0px]">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={"w-[5px] h-[5px] rounded-full ".concat(
-                index === selectedIndex ? " bg-[#074785] " : " bg-[#B9B9B9] "
-              )}
-            />
-          ))}
-        </div>
+        {scrollSnaps && scrollSnaps?.length > 1 && (
+          <div className="flex justify-center gap-[5px] pt-[0px]">
+            {scrollSnaps.map((_, index) => (
+              <DotButton
+                key={index}
+                onClick={() => onDotButtonClick(index)}
+                className={"w-[5px] h-[5px] rounded-full ".concat(
+                  index === selectedIndex ? " bg-[#074785] " : " bg-[#B9B9B9] "
+                )}
+              />
+            ))}
+          </div>
+        )}
       </CarouselContext.Provider>
     );
   }
