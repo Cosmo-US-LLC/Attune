@@ -51,23 +51,23 @@ function Footer() {
                 className="w-[233px] h-[185px]"
               />
               <br />
-              <div className="flex justify-between gap-x-[30px]">
+              <div className="flex justify-between gap-x-[30px] relative z-50">
                 <div className="flex gap-x-4">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/easecare/">
                     <img
                       src="/desktop/footer/link-4.svg"
                       alt="Share link"
                       className="w-[43px] h-[43px]"
                     />
                   </a>
-                  <a href="#">
+                  <a href="https://www.facebook.com/easecare.ca">
                     <img
                       src="/desktop/footer/link-1.svg"
                       alt="Share link"
                       className="w-[43px] h-[43px]"
                     />
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/easecare.ca/">
                     <img
                       src="/desktop/footer/link-2.svg"
                       alt="Share link"
@@ -76,9 +76,11 @@ function Footer() {
                   </a>
                 </div>
 
-                <button className="bg-[#5200FF] text-white py-[10px] px-[10px] h-[46px] min-w-[115px] rounded-full text-[16px] whitespace-nowrap">
-                  Get Started
-                </button>
+                <a href="https://innovacare.tech/listenerhub/signup">
+                  <button className="bg-[#5200FF] text-white py-[10px] px-[10px] h-[46px] min-w-[115px] rounded-full text-[16px] whitespace-nowrap">
+                    Get Started
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -86,7 +88,7 @@ function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="relative z-10 mt-5 border-t border-black pt-4">
+      <div className="relative z-0 mt-5 border-t border-black pt-4">
         <div className=" absolute bottom-[100%]">
           {/* Att<span className="italic">une</span> */}
           <img src="/desktop/footer/attune.svg" alt="Attune logo" />

@@ -83,9 +83,11 @@ function NoNeed() {
               <br />
               alone.
             </h2>
+            <a href="https://innovacare.tech/listenerhub/signup" className="">
             <button className="rounded-full text-white bg-[#5200FF] text-[16px] font-[500] p-[10px] w-[115px] text-center">
               Get Started
             </button>
+            </a>
           </div>
         </div>
       </div>

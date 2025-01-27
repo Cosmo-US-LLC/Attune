@@ -32,7 +32,7 @@ function WeBelieve() {
   return (
     <div className="py-[30px] bg-[#F4EFEA]">
       <Carousel className="">
-        <CarouselContent>
+        <CarouselContent className="pb-[15px]">
           {cards?.map((card, id) => (
             <CarouselItem key={id} className="w-full">
               {/* <div className={"max-w-[274px] mx-auto border border-black p-3 pt-[10px] space-y-[14px] " + (id % 2 !== 0 ? "bg-[#FFE87E]" : "bg-white")}

@@ -21,12 +21,12 @@ function WhyChoose() {
       <table className="w-full">
                 <thead>
                   <tr className="border-b border-black grid grid-cols-2">
-                    <th className="p-[10px] text-left text-[16px] font-[500] flex items-center">
-                    <th className="p-[10px] text-left text-[16px] font-[500] flex items-center">
+                    <th className="pt-[7px] pb-[3px] px-[10px] text-left text-[16px] font-[500] flex items-center">
                       Traditional Therapy
                     </th>
-                    </th>
-                    <th className="p-[10px] border-l border-black text-left  flex items-center leading-[22px] text-[24.238px] font-[400] font-miniature bg-[#e5ff7d]">
+                    {/* <th className="p-[10px] text-left text-[16px] font-[500] flex items-center"> */}
+                    {/* </th> */}
+                    <th className="pt-[7px] pb-[3px] px-[10px] border-l border-black text-left  flex items-center leading-[22px] text-[24.238px] font-[400] font-miniature bg-[#e5ff7d]">
                       Att<span className="italic">une</span>
                     </th>
                   </tr>
@@ -236,11 +236,11 @@ function WhyChoose() {
                 </tbody>
               </table>
 
-        <div className="flex justify-center">
+        <a href="https://innovacare.tech/listenerhub/signup" className="flex justify-center">
           <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">
             Get Started
           </Button>
-        </div>
+        </a>
       </div>
     </div>
   );

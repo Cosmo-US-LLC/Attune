@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 function HeroMobile() {
   return (
     <div className='bg-[#FFD23F] py-[30px] px-[20px] space-y-[28px]'>
-      <div className='space-y-6'>
+      <div className='space-y-6 mb-6'>
         <p className='text-[73.829px] font-miniature leading-[73.829px]'>
           Your Safe Space for <span className='text-[#5200FF] italic'>Support</span>
         </p>
@@ -14,7 +14,9 @@ function HeroMobile() {
         </p>
       </div>
       
-      <Button className="bg-[#5200FF] rounded-full text-[15px]">Connect to a Listener</Button>
+      <a href="https://innovacare.tech/listenerhub/signup">
+        <Button className="bg-[#5200FF] rounded-full text-[15px]">Connect to a Listener</Button>
+      </a>
 
       <img src={"/mobile/heroBg.webp"} alt='' className='h-[257.833px] w-[350px] object-contain' />
     </div>

@@ -6,9 +6,11 @@ function WhyListenersMatter() {
           <p className="font-miniature text-center text-[76px] leading-[69px] font-[400] pt-[20px]">
             Why Listeners <br /> Matter
           </p>
-          <button className="bg-[#5200FF] text-white py-3 px-6 w-fit mx-auto rounded-full">
-            Connect Now
-          </button>
+          <a href="https://innovacare.tech/listenerhub/signup" className="w-fit mx-auto">
+            <button className="bg-[#5200FF] text-white py-3 px-6 w-fit mx-auto rounded-full">
+              Connect Now
+            </button>
+          </a>
         </div>
     </section>
   );
