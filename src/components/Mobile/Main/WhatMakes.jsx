@@ -1,15 +1,11 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"  
-// import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-function WhatMakes() {
     const cards = [
         {
             img: "/mobile/whatMakes/card1.svg",
@@ -37,6 +33,8 @@ function WhatMakes() {
             body: "Your well-being and privacy are our top priority. All conversations are confidential, ensuring that you can speak freely and openly without concerns."
         },
     ]
+function WhatMakes() {
+ 
   return (
     <div className="bg-[#F4EFEA] py-[30px] px-5 space-y-6">
       <div className="space-y-5">
@@ -51,29 +49,48 @@ function WhatMakes() {
         </p>
       </div>
 
-      <Carousel className="">
-        <CarouselContent>
-            {cards?.map((card, id) => (
-                <CarouselItem key={id} className="basis-1/1 w-full">
-                    <div className="max-w-[274px] mx-auto border border-black bg-white py-5 px-4 rounded-[20px] space-y-[20px]">
-                        <img src={card?.img} alt="Icon" className="object-contain w-[44px] h-[44px]" />
+      <div className="relative">
+      <Swiper
+        modules={[Navigation, Pagination]}
+        navigation={{
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        }}
+        pagination={{
+          clickable: true,
+          dynamicBullets: true, 
+        }}
+        spaceBetween={20} 
+        slidesPerView={1}
+        className="swiper-container !min-h-[360px]"
+      >
+        {cards?.map((card, id) => (
+          <SwiperSlide key={id}>
+            <div className="max-w-[274px] mx-auto border border-black bg-white py-5 px-4 rounded-[20px] space-y-[20px]">
+              <img
+                src={card?.img}
+                alt="Icon"
+                className="object-contain w-[44px] h-[44px]"
+              />
+              <div className="space-y-[14px]">
+                <h3 className="h-[72px] w-[90%] flex items-center text-[24px] font-miniature">
+                  {card?.title}
+                </h3>
+                <p className="text-[15px] leading-[20px]">{card?.body}</p>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-                        <div className="space-y-[14px]">
-                            <h3 className="h-[72px] w-[90%] flex items-center text-[24px] font-miniature">
-                            {card?.title}
-                            </h3>
-
-                            <p className="text-[15px] leading-[20px]">
-                            {card?.body}
-                            </p>
-                        </div>
-                    </div>
-                </CarouselItem>
-            ))}
-        </CarouselContent>
-        <CarouselPrevious className="border border-black disabled:border-neutral-500 bg-white left-0" />
-        <CarouselNext className="border border-black disabled:border-neutral-500 bg-white right-0" />
-      </Carousel>
+      {/* Custom Navigation Arrows */}
+      <button className="swiper-button-prev rotate-[180deg] !w-[30px] !h-[30px] text-white rounded-full absolute left-2 top-1/2 transform bg-[#fff] -translate-y-1/2">
+       <img src="/mobile/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
+      </button>
+      <button className="swiper-button-next !w-[30px] !h-[30px]  text-white rounded-full absolute right-2 top-1/2 transform bg-[#fff] -translate-y-1/2">
+      <img src="/mobile/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
+      </button>
+    </div>
 
       <p className="text-[15px] leading-[20px]">
       Choose Attune for an approachable, supportive, and stigma-free experience in managing your emotional health and well-being.

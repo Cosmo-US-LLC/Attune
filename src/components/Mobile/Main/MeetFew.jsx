@@ -1,11 +1,10 @@
 import React from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 
 function MeetFew() {
   const cards = [
@@ -41,36 +40,58 @@ function MeetFew() {
         Meet a few experts
       </h1>
 
-      <Carousel className="">
-        <CarouselContent>
-          {cards?.map((card, id) => (
-            <CarouselItem key={id} className="basis-1/1 w-full">
-              <div className={"max-w-[274px] mx-auto border border-black p-3 pt-[10px] space-y-[14px] " + (id%2 !== 0 ? "bg-[#FFE87E]": "bg-white")}
-                style={{ borderRadius: "130px 130px 12px 12px" }}
-              >
-                <div className="relative">
-                  <img
-                    src={card?.img || ""}
-                    alt="Icon"
-                    className="w-[254px] h-[162px] object-contain"
-                  />
-                  <h3 className="absolute bottom-3 w-full text-white text-center text-[24px] font-miniature">
-                    {card?.name}
-                  </h3>
-                </div>
+      <div className="relative">
+      <Swiper
+        modules={[Navigation, Pagination]}
+        navigation={{
+          prevEl: ".swiper-button-prev-meet",
+          nextEl: ".swiper-button-next-meet",
+        }}
+        pagination={{
+          clickable: true,
+          dynamicBullets: true, 
+        }}
+        spaceBetween={20} 
+        slidesPerView={1}
+        className="swiper-container !min-h-[360px]"
+      >
+       {cards?.map((card, id) => (
+        <SwiperSlide key={id}>
+          <div
+            className={
+              "max-w-[274px] mx-auto border border-black p-3 pt-[10px] space-y-[14px] " +
+              (id % 2 !== 0 ? "bg-[#FFE87E]" : "bg-white")
+            }
+            style={{ borderRadius: "130px 130px 12px 12px" }}
+          >
+            <div className="relative">
+              <img
+                src={card?.img || ""}
+                alt="Icon"
+                className="w-[254px] h-[162px] object-contain"
+              />
+              <h3 className="absolute bottom-3 w-full text-white text-center text-[24px] font-miniature">
+                {card?.name}
+              </h3>
+            </div>
 
-                <h3 className="text-center text-[16px] font-[600] leading-[21px]">
-                  {card?.title}
-                </h3>
+            <h3 className="text-center text-[16px] font-[600] leading-[21px]">
+              {card?.title}
+            </h3>
 
-                <p className="text-[15px] leading-[20px] text-center">{card?.body}</p>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="border border-black disabled:border-neutral-500 bg-white left-0" />
-        <CarouselNext className="border border-black disabled:border-neutral-500 bg-white right-0" />
-      </Carousel>
+            <p className="text-[15px] leading-[20px] text-center">{card?.body}</p>
+          </div>
+        </SwiperSlide>
+      ))}
+      </Swiper>
+
+      <button className="swiper-button-prev-meet z-[80] rotate-[180deg] !w-[30px] !h-[30px] text-white rounded-full absolute left-2 top-1/2 transform bg-[#fff] -translate-y-1/2">
+       <img src="/mobile/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
+      </button>
+      <button className="swiper-button-next-meet z-[80] !w-[30px] !h-[30px]  text-white rounded-full absolute right-2 top-1/2 transform bg-[#fff] -translate-y-1/2">
+      <img src="/mobile/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
+      </button>
+    </div>
     </div>
   );
 }
