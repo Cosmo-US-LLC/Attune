@@ -7,11 +7,11 @@ function AsSeen() {
       <p className='font-miniature text-[15px] text-center'>Proudly Supporting</p>
       
       <div className='bg-white flex flex-wrap gap-[27px] justify-center items-center max-w-[350px] py-3 px-[19px] rounded-[11.1px]'>
-        <img src="/mobile/asSeen/support1.svg" alt="Time" className='object-contain w-[73px] h-[26px]' />
+        <img src="/mobile/asSeen/sup1.png" alt="Time" className='object-contain w-[73px] h-[26px]' />
         <img src="/mobile/asSeen/support2.svg" alt="Time" className='object-contain w-[66px] h-[26px]' />
         <img src="/mobile/asSeen/support3.svg" alt="Time" className='object-contain w-[59px] h-[30px]' />
-        <img src="/mobile/asSeen/support4.svg" alt="Time" className='object-contain w-[68px] h-[28px]' />
-        <img src="/mobile/asSeen/support5.svg" alt="Time" className='object-contain w-[58px] h-[27px]' />
+        <img src="/mobile/asSeen/sup4.png" alt="Time" className='object-contain w-[68px] h-[28px]' />
+        <img src="/mobile/asSeen/sup5.png" alt="Time" className='object-contain w-[58px] h-[27px]' />
         <img src="/mobile/asSeen/support6.svg" alt="Time" className='object-contain w-[73px] h-[30px]' />
       </div>
     </div>

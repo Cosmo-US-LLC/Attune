@@ -3,7 +3,7 @@ import React from 'react'
 
 function HowIt() {
   return (
-    <div id='Mhowitworks' className='bg-[#E5FF7D] py-[30px] px-5 space-y-6'>
+    <div id='Mhowitworks2' className='bg-[#E5FF7D] py-[30px] px-5 space-y-6'>
       <h1 className='font-miniature text-center text-[38px] '>How it Works</h1>
 
       <div className='space-y-5'>

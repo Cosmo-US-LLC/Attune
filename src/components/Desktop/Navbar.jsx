@@ -4,7 +4,7 @@ function Navbar() {
       <div className="fixed top-0 w-[100%] z-[99]">
     <nav className="bg-white h-[99px] flex-shrink-0 shadow-sm">
       <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
-        <div className="flex items-center flex-col relative">
+        <a href="/" className="flex items-center flex-col relative">
           <h1 className="font-miniature relative">
             <span className="text-black font-[400] text-[46.167px] leading-normal">
               Att
@@ -13,7 +13,7 @@ function Navbar() {
             <span className="text-black font-[400] text-[46.167px] leading-normal italic">une</span>
           </h1>
           <span className="text-sm font-light absolute -bottom-1 right-0">By EaseCare</span>
-        </div>
+        </a>
 
         {/* md:flex */}
         <div className="hidden space-x-8"> 

@@ -64,7 +64,7 @@ function AnyQuestions() {
   ]
 
   return (
-    <div id="Mfaqs" className="bg-white px-5 py-[30px] space-y-6">
+    <div id="Mfaqs2" className="bg-white px-5 py-[30px] space-y-6">
       <h1 className="font-miniature text-[38px] text-center">Any Questions?</h1>
 
       <Accordion type="single" collapsible>
