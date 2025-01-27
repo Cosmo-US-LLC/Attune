@@ -50,16 +50,16 @@ function FooterMobile() {
         </p>
         <div className="relative mt-8 flex flex-row justify-between items-center">
           <div className="flex flex-col gap-4 font-[500]">
-            <a onClick={(e) => handleScroll(e, "Mpathtosupport", 90)} href="">
+            <a href="#Mpathtosupport2">
               Path To Support
             </a>
-            <a onClick={(e) => handleScroll(e, "Mhowitworks", 90)} href="">
+            <a href="#Mhowitworks2">
               How It Works
             </a>
-            <a onClick={(e) => handleScroll(e, "Mourapproach", 90)} href="">
+            <a href="#Mourapproach2">
               Our Approach
             </a>
-            <a onClick={(e) => handleScroll(e, "Mfaqs", 90)} href="">
+            <a href="#Mfaqs2">
               FAQs
             </a>
           </div>
