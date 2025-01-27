@@ -38,7 +38,7 @@ function NavbarMobile() {
                     </svg>
                   </button>
                 </SheetTrigger>
-                <SheetContent side={"left"} className="bg-[#e5ddd4] z-[101]">
+                <SheetContent side={"left"} className="bg-[#e5ddd4] z-[101] flex flex-col">
                   <SheetHeader>
                     <SheetTitle>
                       <a href="/" onClick={()=>setSideOpen(false)}>
@@ -51,7 +51,7 @@ function NavbarMobile() {
                     </SheetTitle>
                     <SheetDescription hidden></SheetDescription>
                   </SheetHeader>
-                  <div className="relative h-full max-h-[70dvh] bg-[#E5DDD4] py-[30px]">
+                  <div className="relative bg-[#E5DDD4] py-[30px] grow overflow-y-auto">
                     <div className="relative z-10 flex flex-col h-full">
                       <div className="grow flex flex-col justify-between">
                         <div className="flex flex-row items-start justify-start">
