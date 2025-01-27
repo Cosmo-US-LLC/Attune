@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../ui/button";
 import {
   Sheet,
@@ -10,15 +10,17 @@ import {
 } from "@/components/ui/sheet";
 
 function NavbarMobile() {
+  const [sideOpen, setSideOpen] = useState(false);
+
   return (
     <>
       <div className="pb-[3.5rem]">
         <div className="fixed top-0 w-[100%] z-[99]">
           <div className="bg-white h-[68px] flex justify-between items-center py-[14px] px-5">
             <div className="flex gap-3 relative z-[100]">
-              <Sheet>
+              <Sheet open={sideOpen} onOpenChange={setSideOpen}>
                 <SheetTrigger asChild>
-                  <button className="bg-[#F4EFEA] w-[40px] h-[40px] p-2 rounded-sm">
+                  <button onClick={()=>setSideOpen(true)} className="bg-[#F4EFEA] w-[40px] h-[40px] p-2 rounded-sm">
                     <svg
                       width="24"
                       height="24"
@@ -56,21 +58,13 @@ function NavbarMobile() {
                             professional
                           </h1>
                         </div>
-                        {/* <p className="mt-6">
-                    Looking for someone to listen? Our trained Listeners are
-                    here to provide non-judgmental, compassionate support
-                    whenever you need it. Whether you’re managing stress,
-                    navigating life transitions, or simply craving a
-                    connection, we’re here to help.
-                  </p> */}
                         <div className="relative mt-8">
                           <div className="flex flex-col gap-4 font-[500]">
-                            <a href={"#Mpathtosupport2"}>Path To Support</a>
-                            <a href={"#Mhowitworks2"}>How It Works</a>
-                            <a href={"#Mourapproach2"}>Our Approach</a>
-                            <a href={"#Mfaqs2"}>FAQs</a>
+                            <a href={"#Mpathtosupport2"} onClick={()=>setSideOpen(false)}>Path To Support</a>
+                            <a href={"#Mhowitworks2"} onClick={()=>setSideOpen(false)}>How It Works</a>
+                            <a href={"#Mourapproach2"} onClick={()=>setSideOpen(false)}>Our Approach</a>
+                            <a href={"#Mfaqs2"} onClick={()=>setSideOpen(false)}>FAQs</a>
                           </div>
-                          {/* <img src="/mobile/footer/footer_heart.svg" alt="Time" /> */}
                         </div>
                         <div className="flex justify-between items-center py-0 mt-6">
                           <div className="flex flex-row items-center justify-center gap-4">
