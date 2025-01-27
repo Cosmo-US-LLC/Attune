@@ -22,7 +22,7 @@ const features = [
   },
   {
     id: 4,
-    title: "No Stigma, Just Support",
+    title: <>No Stigma,<br />Just Support</>,
     description:
       "We are committed to breaking down the barriers of traditional mental health care. There’s no need for clinical intervention—just real, meaningful conversations when you need them most.",
     icon: "/desktop/what-makes/card-4.svg", // Replace with an actual image or SVG if needed
