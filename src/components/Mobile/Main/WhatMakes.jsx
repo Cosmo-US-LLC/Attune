@@ -32,7 +32,7 @@ const cards = [
   },
   {
     img: "/mobile/whatMakes/card4.svg",
-    title: "No Stigma, Just Support",
+    title: <>No Stigma<br />Just Support</>,
     body: "We are committed to breaking down the barriers of traditional mental health care. There’s no need for clinical intervention—just real, meaningful conversations when you need them most.",
   },
   {
