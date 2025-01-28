@@ -130,9 +130,11 @@ function WhatMakes() {
       </p>
 
       <div className="flex justify-center">
-        <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">
-          Connect Now
-        </Button>
+        <a href="https://innovacare.tech/listenerhub/signup">
+          <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">
+            Connect Now
+          </Button>
+        </a>
       </div>
     </div>
   );
