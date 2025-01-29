@@ -41,9 +41,11 @@ function Navbar() {
         </div>
 
         <div>
-          <button className="flex justify-center items-center gap-2 w-[160px] h-[37px] px-[24px] py-[16px] bg-[#FF6F61] text-white rounded-[34.878px] border-[1.622px] border-white hover:bg-red-500">
-            Connect Now
-          </button>
+          <a href="https://innovacare.tech/listenerhub/signup">
+            <button className="flex justify-center items-center gap-2 w-[160px] h-[37px] px-[24px] py-[16px] bg-[#FF6F61] text-white rounded-[34.878px] border-[1.622px] border-white hover:bg-red-500">
+              Connect Now
+            </button>
+          </a>
         </div>
       </div>
     </nav>

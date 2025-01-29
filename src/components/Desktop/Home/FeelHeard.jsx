@@ -18,9 +18,11 @@ export default function FeelHeard() {
                   Att<span className="italic">une</span>
                 </span>
               </h3>
-              <button className="bg-[#5200FF] text-white w-[160px] mt-4 py-3 rounded-full">
-                Connect Now
-              </button>
+              <a href="https://innovacare.tech/listenerhub/signup">
+                <button className="bg-[#5200FF] text-white w-[160px] mt-4 py-3 rounded-full">
+                  Connect Now
+                </button>
+              </a>
             </div>
             <div className="flex flex-row lg:pl-0 3xl:pl-8 ">
               <img

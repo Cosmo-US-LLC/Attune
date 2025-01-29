@@ -181,9 +181,11 @@ function WhyChooseListener() {
 
         {/* Call-to-Action Button */}
         <div className="flex justify-center mt-[47px]">
-          <button className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-lg">
-            Get Started
-          </button>
+          <a href="https://innovacare.tech/listenerhub/signup">
+            <button className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-lg">
+              Get Started
+            </button>
+          </a>
         </div>
       </div>
     </div>
