@@ -7,7 +7,7 @@ function PathToSupport() {
           <br />
           for Young Adults?
         </h1>
-        <h6 className="text-[18px] px-16 text-center lg:min-w-[600px] xl:min-w-[700px] 2xl:min-w-[800px] 3xl:min-w-[1001px] font-semibold">
+        <h6 className="text-[18px] px-16 text-center lg:min-w-[600px] xl:min-w-[700px] 2xl:min-w-[800px] 3xl:min-w-[1001px]">
           Mental health challenges among young adults are more common than you
           think. As you navigate through major life transitions—like starting
           college, entering the workforce, or building new relationships—it’s

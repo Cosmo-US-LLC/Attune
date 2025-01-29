@@ -21,7 +21,7 @@ function Listener() {
                 {cardArr.map((item, index) => (
                   <li
                     key={index}
-                    className="relative text-[14px] md:text-[16px] font-semibold pb-4 md:pb-6"
+                    className="relative text-[14px] md:text-[16px] pl-4 pb-4 md:pb-6"
                   >
                     <span
                       style={{
@@ -29,8 +29,8 @@ function Listener() {
                         position: "absolute",
                         left: "-36px", // Adjust as needed
                         top: "4px",
-                        width: "20px",
-                        height: "20px",
+                        width: "30px",
+                        height: "30px",
                         backgroundImage:
                           "url('/desktop/listener/tick-circle.webp')",
                         backgroundSize: "contain",
