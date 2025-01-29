@@ -273,9 +273,11 @@ function WhyChoose() {
               </table>
 
         <div className="flex justify-center">
+          <a href="https://innovacare.tech/listenerhub/signup">
           <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">
             Get Started
           </Button>
+          </a>
         </div>
       </div>
     </div>

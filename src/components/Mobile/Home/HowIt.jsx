@@ -59,9 +59,10 @@ function HowIt() {
                 </HowItCards>
             </div>
             <div className='flex justify-center'>
-                <Button className="bg-[#5200FF] rounded-full text-[15px]">Sign Up Now
-
-                </Button>
+                <a href="https://innovacare.tech/listenerhub/signup">
+                    <Button className="bg-[#5200FF] rounded-full text-[15px]">Sign Up Now
+                    </Button>
+                </a>
             </div>
         </div>
     )

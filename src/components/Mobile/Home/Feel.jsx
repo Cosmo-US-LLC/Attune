@@ -22,7 +22,9 @@ export default function Feel() {
           />
               </div>
               <div className='flex flex-row'>
+                <a href="https://innovacare.tech/listenerhub/signup">
               <Button className="bg-[#5200FF] text-white mt-4 py-3 rounded-full">Connect Now</Button>
+                </a>
               <img
             src={"/desktop/feel-heard/feel-circle1.webp"}
             alt="smilinggirl"

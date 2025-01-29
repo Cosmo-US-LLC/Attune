@@ -65,9 +65,11 @@ function FooterMobile() {
             </a>
           </div>
           <div className="">
-            <Button className="bg-[#5200FF] text-white  py-3 rounded-full">
-              Get Started
-            </Button>
+            <a href="https://innovacare.tech/listenerhub/signup">
+              <Button className="bg-[#5200FF] text-white  py-3 rounded-full">
+                Get Started
+              </Button>
+            </a>
           </div>
         </div>
         <p className="mt-8 text-left">© 2024 Attune. All Rights Reserved</p>
