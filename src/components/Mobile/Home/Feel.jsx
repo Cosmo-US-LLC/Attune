@@ -18,7 +18,7 @@ export default function Feel() {
               <img
             src={"/desktop/feel-heard/feel-circle2.webp"}
             alt="smilinggirl"
-            className="h-[76px] w-[75px] ml-[272px] mt-9 absolute "
+            className="h-[76px] w-[75px] ml-[252px] mt-9 absolute "
           />
               </div>
               <div className='flex flex-row'>

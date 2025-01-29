@@ -66,7 +66,7 @@ body {
 }
 
 .why-listeners-matter-section {
-  background-image: url(/desktop/why-listeners-matter/frame-161.png); /* Replace with your image path */
+  background-image: url(/desktop/why-listeners-matter/Frame.png); /* Replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -91,8 +91,38 @@ body {
   background-repeat: no-repeat;
   background-position: start;
   /* min-height: 41.875vw; */
-  height: 389.041px;
   width: 813.855; /* Full width of the viewport */
   
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+  display: none !important;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+  display: none !important;
+
+}
+.swiper-pagination-bullet-active{
+  background-color: #151e28 !important;
+}
+.how .swiper-pagination-bullet-active{
+  background-color: #ffffff !important;
+}
+.custom-prev-how.swiper-button-disabled {
+  opacity: 0 !important;
+}
+.custom-next-how.swiper-button-disabled {
+  opacity: 0 !important;
+}
+.Impact .swiper-pagination-bullet-active{
+  background-color: #151e28 !important;
+}
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+.custom-prev-Impact.swiper-button-disabled {
+  opacity: 0 !important;
+}
+.custom-next-Impact.swiper-button-disabled {
+  opacity: 0 !important;
 }
 

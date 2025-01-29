@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 function FooterMobile() {
   return (
-    <div className='relative min-h-[738px] bg-[#E5DDD4] px-5 py-[30px]'>
+    <div className='relative overflow-hidden min-h-[738px] bg-[#E5DDD4] px-5 py-[30px]'>
       <div className='relative z-10'>
         <div className="flex flex-row items-start justify-between">
           <h1 className="text-left font-miniature text-[38px]">Talk to a <br />professional</h1>
@@ -48,7 +48,7 @@ function FooterMobile() {
         </p>
         <div className='my-4 border-[0.5px] border-[black] w-full' />
         <p className="mt-4 text-left">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        We would like to acknowledge the traditional, ancestral, and unceded territory of the many First Nations, Metis, and Inuit who have lived and cared for the lands known as Canada for generations. We are grateful for the traditional knowledge keepers and elders who are still with us today and those who have gone before us. We make this acknowledgment as an act of reconciliation and gratitude to those whose territory we reside on.
         </p>
       </div>
       <div className='absolute top-0 left-0 w-full h-full z-0 flex items-center'>

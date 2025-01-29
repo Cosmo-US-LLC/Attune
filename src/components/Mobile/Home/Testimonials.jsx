@@ -1,11 +1,9 @@
 import React from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function Testimonials() {
   const testimonials = [
@@ -45,12 +43,37 @@ function Testimonials() {
       <span className="font-semibold">75%</span> of young adults report feeling emotionally supported after a session.
         </p>
         </div>
-      <Carousel className="">
-      <CarouselContent>
-  {testimonials?.map((test, id) => (
-    <CarouselItem key={id} className="basis-1/1 w-full">
-      <div
-        className={`border border-black rounded-[12px] p-5 ${test?.bg}`}
+       <div className="w-full max-w-2xl mx-auto relative">
+                  <button className="custom-prev-Impact absolute left-[-4%] rotate-[180deg] top-[48%] -translate-y-1/2 z-10  rounded-full">
+                    <img
+                      className="w-[28px] h-[28px] bg-[#fff] rounded-[100px]"
+                      src={"/mobile/yourPath/arrow-right (1).png"}
+                      alt=""
+                    />
+                  </button>
+                  <button className="custom-next-Impact absolute right-[-4%] top-[48%] -translate-y-1/2 z-10  rounded-full">
+                    <img
+                      className="w-[28px] h-[28px] bg-[#fff] rounded-[100px]"
+                      src={"/mobile/yourPath/arrow-right (1).png"}
+                      alt=""
+                    />
+                  </button>
+      
+                  <Swiper
+                    modules={[Navigation, Pagination]}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    pagination={{ clickable: true }}
+                    navigation={{
+                      prevEl: ".custom-prev-Impact",
+                      nextEl: ".custom-next-Impact",
+                    }}
+                    className="mySwiper Impact !min-h-[330px]"
+                  >
+                    {testimonials?.map((test, id) => (
+                      <SwiperSlide key={id} className="basis-1/1 w-full">
+                        <div
+        className={`border border-black rounded-[12px] min-h-[287px] px-5 pt-5 ${test?.bg}`}
       >
         <img
           src={test?.img}
@@ -67,13 +90,10 @@ function Testimonials() {
           <p className="text-[15px] leading-[20px]">{test?.body}</p>
         </div>
       </div>
-    </CarouselItem>
-  ))}
-</CarouselContent>
-
-        <CarouselPrevious className="border border-black disabled:hidden bg-white -left-[15px]" />
-        <CarouselNext className="border border-black disabled:hidden bg-white -right-[15px]" />
-      </Carousel>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
     </div>
   );
 }

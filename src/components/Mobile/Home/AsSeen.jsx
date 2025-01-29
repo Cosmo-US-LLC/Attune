@@ -6,12 +6,13 @@ function AsSeen() {
     <div className='bg-[#F4EFEA] py-6 px-5 space-y-[9px]'>
       <p className='font-miniature text-[15px] text-center'>As Seen In:</p>
       
-      <div className='bg-white flex flex-wrap gap-[27px] justify-center items-center max-w-[350px] py-3 px-[19px] rounded-[11.1px]'>
-        <img src="/mobile/asSeen/time.webp" alt="Time" className='object-contain w-[70px] h-[22px]' />
-        <img src="/mobile/asSeen/news.webp" alt="Time" className='object-contain w-[93px] h-[29px]' />
-        <img src="/mobile/asSeen/axios.webp" alt="Time" className='object-contain w-[74px] h-[19px]' />
-        <img src="/mobile/asSeen/bbc.webp" alt="Time" className='object-contain w-[80px] h-[23px]' />
-        <img src="/mobile/asSeen/inc.webp" alt="Time" className='object-contain w-[62px] h-[22px]' />
+      <div className='bg-white grid grid-cols-3  gap-[20px] max-w-[350px] mx-auto py-3 px-[19px] rounded-[11.1px]'>
+        <img src="/mobile/asSeen/as-seen (6).webp" alt="Time" className='object-contain h-[33px] mx-auto ' />
+        <img src="/mobile/asSeen/as-seen (5).webp" alt="Time" className='object-contain h-[33px] mx-auto ' />
+        <img src="/mobile/asSeen/as-seen (4).webp" alt="Time" className='object-contain h-[33px] mx-auto ' />
+        <img src="/mobile/asSeen/as-seen (3).webp" alt="Time" className='object-contain h-[33px] mx-auto ' />
+        <img src="/mobile/asSeen/as-seen (2).webp" alt="Time" className='object-contain h-[33px] mx-auto ' />
+        <img src="/mobile/asSeen/as-seen (1).webp" alt="Time" className='object-contain h-[33px] mx-auto ' />
       </div>
     </div>
   )

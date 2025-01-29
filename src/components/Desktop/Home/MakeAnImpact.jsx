@@ -18,14 +18,14 @@ function MakeAnImpactCarousel() {
     {
       bg: "bg-[#FF6F61]",
       img: "/desktop/testimonials/test-2.png",
-      title: "Emily Green, 21",
+      title: "Emily Green - 21",
       body: '"I was feeling so lost after moving to a new city for college. My Listener helped me feel less alone and gave me the confidence to meet new people."',
     },
     {
       bg: "bg-[#6FE0D1]",
       img: "/desktop/testimonials/test-3.png",
-      title: "David Lee, 31",
-      body: '"I’ve always felt like I didn’t have anyone to talk to, but since joining, I’ve felt so much more connected. The Listener I spoke with helped me open up about my stress and gave me the comfort I didn’t know I needed."',
+      title: "David Lee - 31",
+      body: 'I’ve always felt like I didn’t have anyone to talk to, but since joining, I’ve felt so much more connected. The Listener I spoke with helped me open up about my stress and gave me the comfort I didn’t know I needed.',
     },
 
     {
@@ -60,7 +60,7 @@ function MakeAnImpactCarousel() {
                   className="w-[80%] h-[117px] object-contain rounded-full"
                 />
                 <h3 className="text-[25px] pl-2">
-                <span className="font-semibold">95%</span> of young adults report feeling <br/> emotionally supported after a session.
+                <span className="font-semibold">95%</span> of young adults report feeling <br /> emotionally supported after a session.
                 </h3>
       </div>
       <div className="flex flex-col">
@@ -69,7 +69,7 @@ function MakeAnImpactCarousel() {
                   alt="pg95"
                   className="w-[80%] h-[117px] object-contain rounded-full"
                 />
-                <h3 className="text-[25px] pl-2">Users report a <span className="font-semibold">75%</span> improvement in<br/> emotional clarity after two sessions.</h3>
+                <h3 className="text-[25px] pl-2">Users report a<span className="font-semibold">75%</span> improvement in<br/> emotional clarity after two sessions.</h3>
       </div>
       </div>
       <Carousel className="">

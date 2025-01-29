@@ -31,7 +31,7 @@ function AnyQuestions() {
             <li>Build resilience and navigate toward your desired outcomes.</li>
           </ul>
           <p className="mt-4">
-            However, it’s important to note that Listeners are not licensed mental health professionals. They do not diagnose, treat mental illnesses, or provide clinical interventions. If you’re experiencing severe emotional distress, trauma, or clinical conditions such as anxiety, depression, or addiction, we recommend seeking support from a qualified therapist or counselor. <br/> Listeners are here to complement—not replace—professional mental health care, offering empathetic support for everyday challenges.
+          However, it’s important to note that Listeners are not licensed mental health professionals. They do not diagnose, treat mental illnesses, or provide clinical interventions. If you’re experiencing severe emotional distress, trauma, or clinical conditions such as anxiety, depression, or addiction, we recommend seeking support from a qualified therapist or counselor. <br/> Listeners is here to complement—not replace—professional mental health care, offering empathetic support for everyday challenges.
           </p>
         </div>
       ),

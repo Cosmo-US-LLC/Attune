@@ -65,11 +65,7 @@ function Footer() {
           <img src="/desktop/footer/attune.svg" alt="Attune logo" />
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center text-[12px] max-w-[1020px]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry. Lorem Ipsum is simply dummy
-          text of the printing and typesetting industry.
+        We would like to acknowledge the traditional, ancestral, and unceded territory of the many First Nations, Metis, and Inuit who have lived and cared for the lands known as Canada for generations. We are grateful for the traditional knowledge keepers and elders who are still with us today and those who have gone before us. We make this acknowledgment as an act of reconciliation and gratitude to those whose territory we reside on.
         </div>
       </div>
     </footer>
