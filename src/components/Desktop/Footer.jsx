@@ -86,7 +86,7 @@ function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="relative z-10 mt-5 border-t border-black pt-4">
+      <div className="relative mt-5 border-t border-black pt-4">
         <div className=" absolute bottom-[100%]">
           {/* Att<span className="italic">une</span> */}
           <img src="/desktop/footer/attune.svg" alt="Attune logo" />
