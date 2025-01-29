@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 
 function WhyListeners() {
   return (
-    <div className="h-[650px] relative">
+    <div className="h-[800px] relative">
       <div
-        className="bg-cover bg-center filter grayscale absolute w-full h-full left-0 top-0"
-        style={{ backgroundImage: "url(/mobile/whyListen/whylistenBg.webp)" }}
+        className="absolute top-0 left-0 w-full h-full bg-center bg-cover filter grayscale"
+        style={{ backgroundImage: "url(/mobile/whyListen/whylistenfull.webp)" }}
       ></div>
       <div className="py-[30px] flex flex-col justify-between items-center absolute w-full h-full left-0 top-0 z-10">
         <div className="flex justify-between w-full min-h-[230px] pl-[17px] pr-2">
@@ -31,8 +31,7 @@ function WhyListeners() {
 
         <div className="space-y-5">
           <h1 className="text-[38px] text-center font-miniature">
-            Why Listeners
-            <br /> Matter
+            Mental Health <br /> Challenges are <br /> More Common <br /> Than You Think
           </h1>
           <a href="https://innovacare.tech/listenerhub/signup" className="flex justify-center">
             <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">

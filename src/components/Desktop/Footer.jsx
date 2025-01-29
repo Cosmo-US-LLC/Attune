@@ -1,4 +1,17 @@
 function Footer() {
+  const handleScroll = (event, targetId, offset) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    setMenuOpen(false);
+  };
   return (
     <footer className="bg-[#E5DDD4] overflow-hidden relative p-[50px]">
       <div className="relative z-10 xl:max-w-[1313px] px-6">
@@ -6,16 +19,16 @@ function Footer() {
         <div className="flex">
           <a href="/" className="min-w-[200px] flex max-xl:items-center items-end">
             <img
-              src="/desktop/logo-footer.svg"
+              src="/desktop/feel-attune-logo.webp"
               alt="Attune Logo"
-              className=""
+              className="w-[196px] "
             />
           </a>
 
           <div className="grow flex pb-1 gap-x-[34px]">
             <div className="space-y-[20px] xl:space-y-[57px]">
               <div className="space-y-[20px] xl:space-y-[43px]">
-                <div className="flex max-xl:flex-col items-start xl:items-center gap-4 xl:gap-11">
+                <div className="flex items-start gap-4 max-xl:flex-col xl:items-center xl:gap-11">
                   <h1 className="text-[55px] font-miniature leading-[50px] xl:leading-[69px]">
                     Talk to a
                     <br />
@@ -32,10 +45,10 @@ function Footer() {
                 </div>
 
                 <div className="grid max-xl:grid-cols-2 grid-cols-5 grid-rows-2 gap-y-[12px] text-[16.2px] font-[500]">
-                  <a href="#Mpathtosupport">Path To Support</a>
-                  <a href="#Mhowitworks">How It Works</a>
-                  <a href="#Mourapproach">Our Approach</a>
-                  <a href="#Mfaqs">FAQs</a>
+                  <a href="#Mpathtosupport" onClick={(e) => handleScroll(e, "path-to-support", 90)}>Path To Support</a>
+                  <a href="#Mhowitworks" onClick={(e) => handleScroll(e, "how-it-works", 90)}>How It Works</a>
+                  <a href="#Mourapproach" onClick={(e) => handleScroll(e, "what-make-us-different", 90)}>Our Approach</a>
+                  <a href="#Mfaqs" onClick={(e) => handleScroll(e, "FAQs", 90)}>FAQs</a>
                 </div>
               </div>
 
@@ -88,7 +101,7 @@ function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="relative z-0 mt-5 border-t border-black pt-4">
+      <div className="relative z-0 pt-4 mt-5 border-t border-black">
         <div className=" absolute bottom-[100%]">
           {/* Att<span className="italic">une</span> */}
           <img src="/desktop/footer/attune.svg" alt="Attune logo" />
