@@ -53,7 +53,7 @@ function CoreValues() {
                 />
 
                 <div className="space-y-[22px]">
-                  <h3 className="font-miniature text-[40px]">{test?.title}</h3>
+                  <h3 className="font-miniature text-[40px] leading-[43px]">{test?.title}</h3>
                   <p className="text-[16px] leading-[20px]">{test?.body}</p>
                 </div>
               </div>

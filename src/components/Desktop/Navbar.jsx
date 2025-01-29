@@ -5,7 +5,7 @@ function Navbar() {
         <div className="flex items-center flex-col relative">
           <h1 className="font-miniature relative">
             <span className="text-black font-[400] text-[46.167px] leading-normal">
-              Att
+              Feel Att
             </span>
 
             <span className="text-black font-[400] text-[46.167px] leading-normal italic">une</span>
@@ -15,28 +15,28 @@ function Navbar() {
 
         <div className="hidden md:flex space-x-8">
           <a
-            href="#who-we-serve"
+            href="#WhyDoesD"
             className="flex flex-col justify-center text-center text-black font-medium text-[16.222px] leading-[98.144px] capitalize   flex-shrink-0 hover:text-gray-900"
           >
-            Who We Serve
+            Path To Support
           </a>
           <a
-            href="#what-we-do"
+            href="#HowitworksD"
             className="flex flex-col justify-center text-center text-black font-medium text-[16.222px] leading-[98.144px] capitalize  flex-shrink-0 hover:text-gray-900"
           >
-            What We Do
+            How It Works
           </a>
           <a
-            href="#our-approach"
+            href="#WhyChooseD"
             className="flex flex-col justify-center text-center text-black font-medium text-[16.222px] leading-[98.144px] capitalize   flex-shrink-0 hover:text-gray-900"
           >
             Our Approach
           </a>
           <a
-            href="#resources"
+            href="#FaqD"
             className="flex flex-col justify-center text-center text-black font-medium text-[16.222px] leading-[98.144px] capitalize   flex-shrink-0 hover:text-gray-900"
           >
-            Resources
+            FAQs
           </a>
         </div>
 

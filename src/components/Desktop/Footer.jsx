@@ -18,24 +18,16 @@ function Footer() {
                     professional
                   </h1>
 
-                  <p className="text-[16px] leading-[22px]">
-                    Looking for someone to listen? Our trained Listeners are
-                    here to provide non-judgmental, compassionate support
-                    whenever you need it. Whether you’re managing stress,
-                    navigating life transitions, or simply craving a connection,
-                    we’re here to help.
+                  <p className="text-[16px] leading-[22px] capitalize">
+                  Looking for someone to listen? Our trained Listeners are here to provide non-judgmental, compassionate support whenever you need it. Whether you’re managing stress, navigating life transitions, or simply craving a connection, we’re here to help.
                   </p>
                 </div>
 
                 <div className="grid max-xl:grid-cols-2 grid-cols-4 grid-rows-2 gap-y-[12px] text-[16.2px] font-[500]">
-                  <a href="#">Who We Serve</a>
-                  <a href="#">Our Approach</a>
-                  <a href="#">Who We Serve</a>
-                  <a href="#">Our Approach</a>
-                  <a href="#">What We Do</a>
-                  <a href="#">Resources</a>
-                  <a href="#">What We Do</a>
-                  <a href="#">Resources</a>
+                  <a href="#WhyDoesD">Path To Support</a>
+                  <a href="#HowitworksD">How It Works</a>
+                  <a href="#WhyChooseD">Our Approach</a>
+                  <a href="#FaqD">FAQs</a>
                 </div>
               </div>
 
@@ -64,12 +56,8 @@ function Footer() {
           {/* Att<span className="italic">une</span> */}
           <img src="/desktop/footer/attune.svg" alt="Attune logo" />
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-center text-[12px] max-w-[1020px]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry. Lorem Ipsum is simply dummy
-          text of the printing and typesetting industry.
+        <div className="flex flex-col md:flex-row justify-between items-center text-[12px] max-w-[1020px] capitalize">
+        We would like to acknowledge the traditional, ancestral, and unceded territory of the many First Nations, Metis, and Inuit who have lived and cared for the lands known as Canada for generations. We are grateful for the traditional knowledge keepers and elders who are still with us today and those who have gone before us. We make this acknowledgment as an act of reconciliation and gratitude to those whose territory we reside on.
         </div>
       </div>
     </footer>

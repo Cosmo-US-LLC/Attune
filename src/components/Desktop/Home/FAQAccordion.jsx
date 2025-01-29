@@ -41,7 +41,7 @@ function FAQAccordion() {
   ];
 
   return (
-    <div className="bg-[#F4EFEA]">
+    <div id="FaqD" className="bg-[#F4EFEA]">
       <div className="max-w-[1440px] mx-auto  px-[130px] py-[107px] space-y-[74px]">
         <h1 className="font-miniature text-[76px] text-center">
           Any Questions?
@@ -53,7 +53,7 @@ function FAQAccordion() {
               key={question?.id}
               value={question?.id}
               className={
-                "px-[60px] py-[52px] data-[state=closed]:bg-[#fbf9f7] data-[state=open]:bg-[#e5ff7d] duration-200 border-black " +
+                "px-[60px] py-[52px] data-[state=closed]:bg-[#f4efea] data-[state=open]:bg-[#e5ff7d] duration-200 border-black " +
                 (question?.id == "05" && "border-transparent")
               }
             >

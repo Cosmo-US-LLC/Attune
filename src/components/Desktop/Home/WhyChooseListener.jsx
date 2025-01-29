@@ -1,6 +1,6 @@
 function WhyChooseListener() {
   return (
-    <div className="bg-[#F4EFEA] p-[105px] space-y-[87px]">
+    <div id="WhyChooseD" className="bg-[#F4EFEA] p-[105px] space-y-[87px]">
       <h1 className="text-[76px] font-miniature text-center">
         Why Choose a Listener?
       </h1>
@@ -23,13 +23,13 @@ function WhyChooseListener() {
           </thead>
 
           {/* Table Body */}
-          <tbody>
+          <tbody className="font-[500]">
             <tr className="border-b border-black grid grid-cols-10">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Accessibility
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[10px]  bg-[#e5ff7d]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/tick.svg"
                     alt="Tick"
@@ -39,7 +39,7 @@ function WhyChooseListener() {
                 Immediate, <br/> anytime support
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/cross.svg"
                     alt="Tick"
@@ -54,7 +54,7 @@ function WhyChooseListener() {
                 Cost
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/tick.svg"
                     alt="Tick"
@@ -64,7 +64,7 @@ function WhyChooseListener() {
                 Affordable for all income levels
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/exclaim.svg"
                     alt="Tick"
@@ -80,7 +80,7 @@ function WhyChooseListener() {
                 Focus
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/tick.svg"
                     alt="Tick"
@@ -90,7 +90,7 @@ function WhyChooseListener() {
                 Everyday challenges, resilience.
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/cross.svg"
                     alt="Tick"
@@ -106,7 +106,7 @@ function WhyChooseListener() {
                 Purpose
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/tick.svg"
                     alt="Tick"
@@ -116,7 +116,7 @@ function WhyChooseListener() {
                 Judgment-free emotional support.
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/cross.svg"
                     alt="Tick"
@@ -131,7 +131,7 @@ function WhyChooseListener() {
                 Stigma
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/tick.svg"
                     alt="Tick"
@@ -141,7 +141,7 @@ function WhyChooseListener() {
                 Low stigma, human connection.
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/cross.svg"
                     alt="Tick"
@@ -156,7 +156,7 @@ function WhyChooseListener() {
                 Ideal For
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/tick.svg"
                     alt="Tick"
@@ -166,7 +166,7 @@ function WhyChooseListener() {
                 Everyday clarity and motivation.
               </td>
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
-                <div>
+                <div className="min-w-[40px]">
                   <img
                     src="/desktop/why-choose/exclaim.svg"
                     alt="Tick"

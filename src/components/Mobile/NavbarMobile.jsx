@@ -62,10 +62,10 @@ function NavbarMobile() {
                   </p> */}
                   <div className="relative mt-8">
                     <div className="flex flex-col gap-4">
-                      <a href={"#"}>Who we serve</a>
-                      <a href={"#"}>our approach</a>
-                      <a href={"#"}>What we do</a>
-                      <a href={"#"}>resources</a>
+                      <a href={"#"}>Path To Support</a>
+                      <a href={"#"}>How It Works</a>
+                      <a href={"#"}>Our Approach</a>
+                      <a href={"#"}>FAQs</a>
                     </div>
                     {/* <img src="/mobile/footer/footer_heart.svg" alt="Time" /> */}
                   </div>

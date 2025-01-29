@@ -1,10 +1,9 @@
 function Listener() {
     const cardArr = [
-      "Find Emotional Relief: Share your thoughts without fear of being judged.",
-      "Build Confidence: Gain clarity and self-assurance as you work through your feelings.",
-      "Rediscover Connection: Strengthen relationships and overcome isolation.",
-      "Feel Understood: Experience the comfort of being heard by someone who truly cares.",
-      "Navigate Challenges: Discuss specific situations like transitioning to college or starting a new job.",
+      "Reframing Experiences: Gain a fresh perspective and clarity on your challenges.",
+      "Setting and Achieving Goals: Boost your confidence, manage transitions, and achieve personal milestones.",
+      "Emotional well-being: Explore strategies to enhance your motivation and overall well-being.",
+      "Building Resilience: Strengthen your ability to navigate life’s hurdles and move toward your desired outcomes.",
     ];
   
     return (
@@ -13,10 +12,10 @@ function Listener() {
           <div className="w-full md:w-[50%]"></div>
   
           <div className="w-full md:w-[50%] flex justify-center px-6 md:px-12 lg:px-16">
-            <div className="w-full max-w-[600px] lg:mt-16 xl:mt-20 2xl:mt-32">
-              <div className="bg-white border border-black rounded-[20px] p-[16px] md:p-[20px] lg:p-[48px] space-y-[22px]">
+            <div className="w-full max-w-[646px] flex items-center">
+              <div className="bg-white border border-[#E5FF7D] rounded-[20px] p-[16px] md:p-[20px] lg:p-[48px] space-y-[22px]">
                 <h3 className="font-miniature text-[30px] lg:text-[24px] xl:text-[50px] leading-[35px] md:leading-[40px] xl:leading-[57px] pb-4 text-center md:text-left">
-                  How a Listener Can Help You Feel Less Alone
+                  How a Listener Can Help
                 </h3>
                 <ul className="leading-[28px] md:leading-[24px] pl-6 md:pl-12 lg:pl-10">
                   {cardArr.map((item, index) => (
