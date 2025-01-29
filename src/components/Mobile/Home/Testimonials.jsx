@@ -1,11 +1,9 @@
 import React from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function Testimonials() {
   const testimonials = [
@@ -67,13 +65,10 @@ function Testimonials() {
           <p className="text-[15px] leading-[20px]">{test?.body}</p>
         </div>
       </div>
-    </CarouselItem>
-  ))}
-</CarouselContent>
-
-        <CarouselPrevious className="border border-black disabled:hidden bg-white -left-[15px]" />
-        <CarouselNext className="border border-black disabled:hidden bg-white -right-[15px]" />
-      </Carousel>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
     </div>
   );
 }

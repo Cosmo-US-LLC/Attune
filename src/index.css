@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: 'OT Miniature';
   src: url('/fonts/otminiature-regular.OTF') format('opentype');
@@ -97,5 +93,36 @@ body {
   /* height: 389.041px; */
   width: 813.855; /* Full width of the viewport */
   
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+  display: none !important;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+  display: none !important;
+
+}
+.swiper-pagination-bullet-active{
+  background-color: #151e28 !important;
+}
+.how .swiper-pagination-bullet-active{
+  background-color: #ffffff !important;
+}
+.custom-prev-how.swiper-button-disabled {
+  opacity: 0 !important;
+}
+.custom-next-how.swiper-button-disabled {
+  opacity: 0 !important;
+}
+.Impact .swiper-pagination-bullet-active{
+  background-color: #151e28 !important;
+}
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+.custom-prev-Impact.swiper-button-disabled {
+  opacity: 0 !important;
+}
+.custom-next-Impact.swiper-button-disabled {
+  opacity: 0 !important;
 }
 

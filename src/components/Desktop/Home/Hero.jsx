@@ -6,7 +6,7 @@ function Hero() {
 
     <div className="lg:min-w-[1000px] xl:min-w-[1260px] 2xl:min-w-[1420px] flex flex-row overflow-hidden ">
       <div className="bg-[#E5FF7D] min-w-[50%] ">
-        <div className="relative">
+        <div className="relative bottom-[-2%]">
           <img
             src={"/desktop/hero/Hero.png"}
             alt="Listener"

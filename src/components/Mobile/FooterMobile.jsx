@@ -72,7 +72,7 @@ function FooterMobile() {
         </div>
         <p className="mt-8 text-left">© 2024 Attune. All Rights Reserved</p>
         <div className="my-4 border-[0.5px] border-[black] w-full" />
-        <p className="mt-4 text-left">
+        <p className="mt-4 text-left capitalize">
           We would like to acknowledge the traditional, ancestral, and unceded
           territory of the many First Nations, Metis, and Inuit who have lived
           and cared for the lands known as Canada for generations. We are

@@ -1,13 +1,11 @@
-import React from 'react'
-import { Button } from '@/components/ui/button'
+import React from "react";
+import { Button } from "@/components/ui/button";
 
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function ListenerMobile() {
     const cards = [

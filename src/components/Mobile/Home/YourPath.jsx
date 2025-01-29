@@ -138,6 +138,7 @@ function YourPath() {
 //             </ul>
 //         </div>
 
+
 //         <div className='flex justify-center'>
 //             <Button className="bg-[#5200FF] rounded-full text-[15px]">Get Started</Button>
 //         </div>
