@@ -17,23 +17,23 @@ import "swiper/css/pagination";
 const cards = [
   {
     img: "/mobile/whatMakes/card1.svg",
-    title: "Compassionate Listeners",
-    body: "Our trained, non-judgmental Listeners provide a safe space for you to share your thoughts, feelings, and experiences without fear of judgment. You’ll always feel heard and supported.",
+    title: "Real Conversations, Real Impact",
+    body: "Attune connects you to compassionate listeners who provide a supportive environment for sharing your thoughts and feelings. It's a space to gain clarity, set goals, and explore strategies for emotional well-being.",
   },
   {
     img: "/mobile/whatMakes/card2.svg",
-    title: "Accessible Anytime, Anywhere",
-    body: "Whether you're at home or on the go, you can connect with a Listener from anywhere, at any time. Our platform is available to support you whenever you need it.",
+    title: "Accessible and Affordable Support",
+    body: "No more barriers like high costs or long wait times. Attune offers connection to immediate, non-clinical emotional support that fits your schedule and budget.",
   },
   {
     img: "/mobile/whatMakes/card3.svg",
-    title: "Evidence-Based Approach",
-    body: "Our services are grounded in real, measurable outcomes. We focus on providing practical, effective support for a range of emotional and mental health needs, backed by data-driven results.",
+    title: "Focused on Everyday Challenges",
+    body: "While therapy addresses severe mental health conditions, this service is ideal for managing everyday stress, coping with life transitions, or building self-confidence.",
   },
   {
     img: "/mobile/whatMakes/card4.svg",
-    title: <>No Stigma<br />Just Support</>,
-    body: "We are committed to breaking down the barriers of traditional mental health care. There’s no need for clinical intervention—just real, meaningful conversations when you need them most.",
+    title: <>No Stigma Just<br /> Support</>,
+    body: "Seeking support has never been easier. Attune normalizes conversations about mental wellness, creating a space that prioritizes connection and growth over clinical formality.",
   },
   {
     img: "/mobile/whatMakes/card5.svg",
@@ -101,7 +101,7 @@ function WhatMakes() {
       <Carousel className="">
         <CarouselContent>
           {cards?.map((card, id) => (
-            <CarouselItem key={id} className="basis-1/1 w-full">
+            <CarouselItem key={id} className="w-full basis-1/1">
               <div className="max-w-[274px] mx-auto border border-black bg-white py-5 px-4 rounded-[20px] space-y-[20px]">
                 <img
                   src={card?.img}
@@ -120,19 +120,21 @@ function WhatMakes() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="border border-black disabled:border-neutral-500 bg-white left-0" />
-        <CarouselNext className="border border-black disabled:border-neutral-500 bg-white right-0" />
+        <CarouselPrevious className="bg-white border border-black -left-2 disabled:border-neutral-500" />
+        <CarouselNext className="bg-white border border-black -right-2 disabled:border-neutral-500" />
       </Carousel>
 
-      <p className="text-[15px] leading-[20px]">
+      <p className="text-[15px] leading-[20px] w-[350px]">
         Choose Attune for an approachable, supportive, and stigma-free
         experience in managing your emotional health and well-being.
       </p>
 
       <div className="flex justify-center">
-        <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">
-          Connect Now
-        </Button>
+        <a href="https://innovacare.tech/listenerhub/signup">
+          <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">
+            Connect Now
+          </Button>
+        </a>
       </div>
     </div>
   );

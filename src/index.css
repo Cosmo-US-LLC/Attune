@@ -226,3 +226,34 @@ body {
 .embla__dot--selected:after {
   box-shadow: inset 0 0 0 0.2rem var(--text-body);
 }
+
+
+.listener{
+  background-image: url(/desktop/listener/listener-bg.webp);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+   
+  min-height: 811px;
+  width: 100vw;  
+  
+}
+
+.listenerMobile{
+  background-image: url(/desktop/listener/listener-bg.webp);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: start;
+  
+  height: 389.041px;
+  width: 813.855; 
+  
+}
+
+@keyframes marquee {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}

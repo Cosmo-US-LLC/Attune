@@ -1,24 +1,29 @@
 function PathToSupport() {
   return (
-    <div id="Mpathtosupport" className="bg-gray-50 py-[130px] px-[110px]">
+    <div className="bg-gray-50 py-[60px] px-[110px]" id="path-to-support">
       <div className="max-w-[1440px] mx-auto space-y-[60px]">
         <h1 className="font-miniature text-[76px] text-center leading-[69px]">
           Your Path to Support
         </h1>
-        <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-6">
-          <div className="col-span-2"></div>
+        <div className="grid gap-6 mx-auto max-w-7xl md:grid-cols-12">
+          {/* <div className="col-span-2"></div> */}
           <YourPathCard
             img="/desktop/your-path/path-to-support-1.webp"
-            title="Seeking Connection?"
+            title="For youth"
             classes="bg-[#38AB9B] text-white col-span-4"
+            buttonLabel="Start Your Journey "
             points={[
               {
-                title: "Loneliness",
-                body: "People Craving Connection And A Listening Ear.",
+                title: "",
+                body: "Navigate life transitions confidently",
               },
               {
-                title: "Emotional Support",
-                body: "Those feeling isolated and desiring a safe space to share their thoughts.",
+                title: "",
+                body: "Manage academic or career pressure",
+              },
+              {
+                title: "",
+                body: "Build self-confidence in a judgment-free space",
               },
             ]}
           />
@@ -26,20 +31,47 @@ function PathToSupport() {
           <YourPathCard
             img="/desktop/your-path/path-to-support-2.webp"
             imgClass="bg-[#00FBFC] rounded-[30px] border border-black"
-            title="Facing Mental Barriers?"
+            title="For Middle-Aged Individuals"
+            buttonLabel="Connect Now"
             classes="bg-[#F097DD] text-black col-span-4"
             points={[
               {
-                title: "Mental Health Barriers",
-                body: "Individuals facing mental health challenges but hesitant to seek traditional clinical care due to stigma, cost, or rigidity.",
+                title: "",
+                body: "Balance work and life stressors",
               },
               {
-                title: "Underserved Groups",
-                body: "Young adults transitioning to independence, seniors experiencing isolation, and caregivers managing stress.",
+                title: "",
+                body: "Process relationship challenges",
+              },
+              {
+                title: "",
+                body: "Find support during major life changes",
               },
             ]}
           />
-          <div className="col-span-2"></div>
+          
+          <YourPathCard
+            img="/desktop/your-path/path-to-support-4.webp"
+            imgClass="bg-[#E5FF7D] rounded-[30px] border border-black"
+            title="For Seniors"
+            buttonLabel="Talk To Someone"
+            classes="bg-[#FF6F61] text-black col-span-4"
+            points={[
+              {
+                title: "",
+                body: "Combat loneliness and isolation",
+              },
+              {
+                title: "",
+                body: "Share life experiences",
+              },
+              {
+                title: "",
+                body: "Find understanding companionship",
+              },
+            ]}
+          />
+          {/* <div className="col-span-2"></div> */}
 
           {/* Card 3 */}
           {/* <YourPathCard
@@ -67,7 +99,7 @@ function PathToSupport() {
   );
 }
 
-function YourPathCard({ img, imgClass = "", title, classes, points }) {
+function YourPathCard({ img, imgClass = "", title, classes, points, buttonLabel }) {
   return (
     <div
       className={
@@ -82,27 +114,27 @@ function YourPathCard({ img, imgClass = "", title, classes, points }) {
       />
 
       <div className="grow flex flex-col space-y-[13px] p-1">
-        <h2 className="max-xl:text-[24px] text-[30px] font-miniature">
+        <h2 className="max-xl:text-[24px] text-[30px] font-miniature w-[352px]">
           {title}
         </h2>
 
-        <ul className="grow list-disc max-xl:text-[15px] text-[18px] max-xl:leading-tight leading-[22px] pl-[23px] space-y-[22px]">
+        <ul className="w-[322px] grow list-disc max-xl:text-[15px] text-[18px] max-xl:leading-tight leading-[22px] pl-[23px] space-y-[22px]">
           {points?.map((point, id) => (
             <li
               key={id}
-              className="capitalize"
+              className="pl-4 capitalize "
               style={{
                 listStyleImage: "url(/desktop/your-path/list-disc.svg)",
               }}
             >
-              <strong>{point?.title}:</strong> {point?.body}
+              <strong>{point?.title}</strong> {point?.body}
             </li>
           ))}
         </ul>
 
-        <a href="https://innovacare.tech/listenerhub/signup" className="pt-2">
+        <a href="https://innovacare.tech/listenerhub/signup" className="pt-10">
           <button className="w-fit bg-[#5200FF] text-white py-2 px-6 rounded-full text-[16px] font-[500]">
-            Get Started
+             {buttonLabel}
           </button>
         </a>
       </div>

@@ -13,6 +13,7 @@ import MeetTheExperts from './MeetTheExperts'
 import NoNeed from './NoNeed'
 import WhyListenersMatter from './WhyListenersMatter'
 import OurCoreValues from './OurCore'
+import Listener from './Listener'
 
 function HomeDesktop() {
   return (
@@ -20,13 +21,14 @@ function HomeDesktop() {
       <Hero />
       <ProudlySupporting />
       <PathToSupport />
+      <Listener />
       <HowItWorks />
       <NoNeed />
       <WhatMakesUsDifferent />
-      <WhyListenersMatter />
-      <OurCoreValues />
-      <WhyChooseListener />
       <Testimonials />
+      <WhyListenersMatter />
+      {/* <OurCoreValues /> */}
+      <WhyChooseListener />     
       <FAQAccordion />
       <YouGrowth />
     </div>
