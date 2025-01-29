@@ -35,7 +35,7 @@ function YourPath() {
     },
   ];
   return (
-    <div className="bg-white py-[30px] px-5 space-y-4">
+    <div className="bg-white py-[30px] px-5 space-y-4" id="Mpathtosupport2">
       <p className="font-miniature text-center text-[38px]">
         Why Does Loneliness Affect So Many Young Adults?
       </p>

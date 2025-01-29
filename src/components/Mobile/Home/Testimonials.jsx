@@ -25,7 +25,7 @@ function Testimonials() {
       bg: 'bg-[#6FE0D1]',
       img: "/mobile/testimonials/david.png",
       title: "David Lee, 31",
-      body: '"I’ve always felt like I didn’t have anyone to talk to, but since joining, I’ve felt so much more connected. The Listener I spoke with helped me open up about my stress and gave me the comfort I didn’t know I needed."',
+      body: 'I’ve always felt like I didn’t have anyone to talk to, but since joining, I’ve felt so much more connected. The Listener I spoke with helped me open up about my stress and gave me the comfort I didn’t know I needed.',
     },
   ];
 
@@ -50,7 +50,7 @@ function Testimonials() {
   {testimonials?.map((test, id) => (
     <CarouselItem key={id} className="basis-1/1 w-full">
       <div
-        className={`border border-black rounded-[12px] p-5 ${test?.bg}`}
+        className={`border border-black rounded-[12px] min-h-[290px] pt-5 px-5 ${test?.bg}`}
       >
         <img
           src={test?.img}

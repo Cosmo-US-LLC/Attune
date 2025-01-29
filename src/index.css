@@ -47,6 +47,9 @@ body {
     --radius: 0.5rem;
   }
 }
+.Listener .DotButton {
+  background: white !important;
+}
 
 .accordion-icon::before {
   content: "+";
@@ -91,7 +94,7 @@ body {
   background-repeat: no-repeat;
   background-position: start;
   /* min-height: 41.875vw; */
-  height: 389.041px;
+  /* height: 389.041px; */
   width: 813.855; /* Full width of the viewport */
   
 }

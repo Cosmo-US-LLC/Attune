@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+
 import { Button } from "@/components/ui/button";
 
 function WhyChoose() {
@@ -24,25 +18,21 @@ function WhyChoose() {
         Why Choose a Listener
       </h1>
 
-      <div className="space-y-[18px]">
-        <Carousel className="">
-          <CarouselContent>
-          <CarouselItem className="basis-1/1 w-full">
-              <table className="w-full">
+      <div className="space-y-[18px]" id="Mourapproach2">
+      <table className="w-full">
                 <thead>
                   <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr]">
-                    <th className="p-[10px] text-left text-[16px] font-[500] flex items-center">
-                      Feature
-                    </th>
-                    <th className="p-[10px] border-l border-black text-left  flex items-center leading-[22px] text-[24.238px] font-[400] font-miniature bg-[#e5ff7d]">
+                    <th className="p-[10px]  border-black text-left  flex items-center leading-[22px] text-[24.238px] font-[400] font-miniature bg-[#e5ff7d]">
                       Att<span className="italic">une</span>
+                    </th>
+                    <th className="p-[10px] text-left text-[16px] font-[500] flex items-center">
+                      Traditional Therapy
                     </th>
                   </tr>
                 </thead>
                 <tbody >
                   <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px]">Accessibility</td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
+                    <td className="p-[10px]  border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -59,130 +49,7 @@ function WhyChoose() {
                       </svg></div>
                       Immediate, anytime support
                     </td>
-                  </tr>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px] flex items-center">Cost</td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
-                      <div><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M0 8.19531C0 6.07358 0.842855 4.03875 2.34315 2.53846C3.84344 1.03817 5.87827 0.195313 8 0.195312C10.1217 0.195313 12.1566 1.03817 13.6569 2.53846C15.1571 4.03875 16 6.07358 16 8.19531C16 10.317 15.1571 12.3519 13.6569 13.8522C12.1566 15.3525 10.1217 16.1953 8 16.1953C5.87827 16.1953 3.84344 15.3525 2.34315 13.8522C0.842855 12.3519 0 10.317 0 8.19531ZM7.54347 11.6193L12.1493 5.86145L11.3173 5.19585L7.38987 10.1036L4.608 7.78571L3.92533 8.60491L7.54347 11.6193Z"
-                          fill="#5200FF"
-                        />
-                      </svg></div>
-                      Affordable for all income levels
-                    </td>
-                  </tr>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px]">
-                      Focus
-                    </td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
-                      <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M0 8.19531C0 6.07358 0.842855 4.03875 2.34315 2.53846C3.84344 1.03817 5.87827 0.195313 8 0.195312C10.1217 0.195313 12.1566 1.03817 13.6569 2.53846C15.1571 4.03875 16 6.07358 16 8.19531C16 10.317 15.1571 12.3519 13.6569 13.8522C12.1566 15.3525 10.1217 16.1953 8 16.1953C5.87827 16.1953 3.84344 15.3525 2.34315 13.8522C0.842855 12.3519 0 10.317 0 8.19531ZM7.54347 11.6193L12.1493 5.86145L11.3173 5.19585L7.38987 10.1036L4.608 7.78571L3.92533 8.60491L7.54347 11.6193Z"
-                          fill="#5200FF"
-                        />
-                      </svg>
-                      </div>
-                      Everyday challenges, resilience.
-                    </td>
-                  </tr>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px] flex items-center">Purpose</td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
-                      <div><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M0 8.19531C0 6.07358 0.842855 4.03875 2.34315 2.53846C3.84344 1.03817 5.87827 0.195313 8 0.195312C10.1217 0.195313 12.1566 1.03817 13.6569 2.53846C15.1571 4.03875 16 6.07358 16 8.19531C16 10.317 15.1571 12.3519 13.6569 13.8522C12.1566 15.3525 10.1217 16.1953 8 16.1953C5.87827 16.1953 3.84344 15.3525 2.34315 13.8522C0.842855 12.3519 0 10.317 0 8.19531ZM7.54347 11.6193L12.1493 5.86145L11.3173 5.19585L7.38987 10.1036L4.608 7.78571L3.92533 8.60491L7.54347 11.6193Z"
-                          fill="#5200FF"
-                        />
-                      </svg></div>
-                      Judgement-free emotional support.
-                    </td>
-                  </tr>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px]">Stigma</td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
-                      <div><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M0 8.19531C0 6.07358 0.842855 4.03875 2.34315 2.53846C3.84344 1.03817 5.87827 0.195313 8 0.195312C10.1217 0.195313 12.1566 1.03817 13.6569 2.53846C15.1571 4.03875 16 6.07358 16 8.19531C16 10.317 15.1571 12.3519 13.6569 13.8522C12.1566 15.3525 10.1217 16.1953 8 16.1953C5.87827 16.1953 3.84344 15.3525 2.34315 13.8522C0.842855 12.3519 0 10.317 0 8.19531ZM7.54347 11.6193L12.1493 5.86145L11.3173 5.19585L7.38987 10.1036L4.608 7.78571L3.92533 8.60491L7.54347 11.6193Z"
-                          fill="#5200FF"
-                        />
-                      </svg></div>
-                      Low stigma, human connection.
-                    </td>
-                  </tr>
-                  <tr className=" grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px]">Ideal For</td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]  bg-[#e5ff7d]">
-                      <div><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="17"
-                        viewBox="0 0 16 17"
-                        fill="none"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M0 8.19531C0 6.07358 0.842855 4.03875 2.34315 2.53846C3.84344 1.03817 5.87827 0.195313 8 0.195312C10.1217 0.195313 12.1566 1.03817 13.6569 2.53846C15.1571 4.03875 16 6.07358 16 8.19531C16 10.317 15.1571 12.3519 13.6569 13.8522C12.1566 15.3525 10.1217 16.1953 8 16.1953C5.87827 16.1953 3.84344 15.3525 2.34315 13.8522C0.842855 12.3519 0 10.317 0 8.19531ZM7.54347 11.6193L12.1493 5.86145L11.3173 5.19585L7.38987 10.1036L4.608 7.78571L3.92533 8.60491L7.54347 11.6193Z"
-                          fill="#5200FF"
-                        />
-                      </svg></div>
-                      Everyday clarity and motivation.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </CarouselItem>
-            <CarouselItem className="basis-1/1 w-full">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr]">
-                    <th className="p-[10px] text-left text-[16px] font-[500] flex items-center">
-                      Feature
-                    </th>
-                    <th className="p-[10px] text-left text-[16px] font-[500] flex items-center">
-                      Traditional Therapy
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px]">Accessibility</td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
+                    <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
                     <div><svg
                         width="16"
                         height="16"
@@ -202,8 +69,24 @@ function WhyChoose() {
                     </td>
                   </tr>
                   <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px] flex items-center">Cost</td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
+                    <td className="p-[10px]  border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
+                      <div><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M0 8.19531C0 6.07358 0.842855 4.03875 2.34315 2.53846C3.84344 1.03817 5.87827 0.195313 8 0.195312C10.1217 0.195313 12.1566 1.03817 13.6569 2.53846C15.1571 4.03875 16 6.07358 16 8.19531C16 10.317 15.1571 12.3519 13.6569 13.8522C12.1566 15.3525 10.1217 16.1953 8 16.1953C5.87827 16.1953 3.84344 15.3525 2.34315 13.8522C0.842855 12.3519 0 10.317 0 8.19531ZM7.54347 11.6193L12.1493 5.86145L11.3173 5.19585L7.38987 10.1036L4.608 7.78571L3.92533 8.60491L7.54347 11.6193Z"
+                          fill="#5200FF"
+                        />
+                      </svg></div>
+                      Affordable for all income levels
+                    </td>
+                    <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
                     <div><svg
                         width="16"
                         height="17"
@@ -230,10 +113,26 @@ function WhyChoose() {
                     </td>
                   </tr>
                   <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px]">
-                      Focus
+                    <td className="p-[10px]  border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
+                      <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M0 8.19531C0 6.07358 0.842855 4.03875 2.34315 2.53846C3.84344 1.03817 5.87827 0.195313 8 0.195312C10.1217 0.195313 12.1566 1.03817 13.6569 2.53846C15.1571 4.03875 16 6.07358 16 8.19531C16 10.317 15.1571 12.3519 13.6569 13.8522C12.1566 15.3525 10.1217 16.1953 8 16.1953C5.87827 16.1953 3.84344 15.3525 2.34315 13.8522C0.842855 12.3519 0 10.317 0 8.19531ZM7.54347 11.6193L12.1493 5.86145L11.3173 5.19585L7.38987 10.1036L4.608 7.78571L3.92533 8.60491L7.54347 11.6193Z"
+                          fill="#5200FF"
+                        />
+                      </svg>
+                      </div>
+                      Everyday challenges, resilience.
                     </td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
+                    <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
                     <div><svg
                         width="16"
                         height="16"
@@ -253,8 +152,24 @@ function WhyChoose() {
                     </td>
                   </tr>
                   <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px]">Purpose</td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
+                    <td className="p-[10px]  border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
+                      <div><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M0 8.19531C0 6.07358 0.842855 4.03875 2.34315 2.53846C3.84344 1.03817 5.87827 0.195313 8 0.195312C10.1217 0.195313 12.1566 1.03817 13.6569 2.53846C15.1571 4.03875 16 6.07358 16 8.19531C16 10.317 15.1571 12.3519 13.6569 13.8522C12.1566 15.3525 10.1217 16.1953 8 16.1953C5.87827 16.1953 3.84344 15.3525 2.34315 13.8522C0.842855 12.3519 0 10.317 0 8.19531ZM7.54347 11.6193L12.1493 5.86145L11.3173 5.19585L7.38987 10.1036L4.608 7.78571L3.92533 8.60491L7.54347 11.6193Z"
+                          fill="#5200FF"
+                        />
+                      </svg></div>
+                      Judgement-free emotional support.
+                    </td>
+                    <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
                       <div><svg
                         width="16"
                         height="16"
@@ -274,8 +189,24 @@ function WhyChoose() {
                     </td>
                   </tr>
                   <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px] flex items-center">Stigma</td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
+                    <td className="p-[10px] border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
+                      <div><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M0 8.19531C0 6.07358 0.842855 4.03875 2.34315 2.53846C3.84344 1.03817 5.87827 0.195313 8 0.195312C10.1217 0.195313 12.1566 1.03817 13.6569 2.53846C15.1571 4.03875 16 6.07358 16 8.19531C16 10.317 15.1571 12.3519 13.6569 13.8522C12.1566 15.3525 10.1217 16.1953 8 16.1953C5.87827 16.1953 3.84344 15.3525 2.34315 13.8522C0.842855 12.3519 0 10.317 0 8.19531ZM7.54347 11.6193L12.1493 5.86145L11.3173 5.19585L7.38987 10.1036L4.608 7.78571L3.92533 8.60491L7.54347 11.6193Z"
+                          fill="#5200FF"
+                        />
+                      </svg></div>
+                      Low stigma, human connection.
+                    </td>
+                    <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
                       <div><svg
                         width="16"
                         height="16"
@@ -295,8 +226,24 @@ function WhyChoose() {
                     </td>
                   </tr>
                   <tr className=" grid grid-cols-[1.4fr,1.6fr] font-[500]">
-                    <td className="p-[10px] text-[15px] flex items-center">Ideal For</td>
-                    <td className="p-[10px] border-l border-black text-[14px] flex items-center gap-[10px]">
+                    <td className="p-[10px] border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
+                      <div><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M0 8.19531C0 6.07358 0.842855 4.03875 2.34315 2.53846C3.84344 1.03817 5.87827 0.195313 8 0.195312C10.1217 0.195313 12.1566 1.03817 13.6569 2.53846C15.1571 4.03875 16 6.07358 16 8.19531C16 10.317 15.1571 12.3519 13.6569 13.8522C12.1566 15.3525 10.1217 16.1953 8 16.1953C5.87827 16.1953 3.84344 15.3525 2.34315 13.8522C0.842855 12.3519 0 10.317 0 8.19531ZM7.54347 11.6193L12.1493 5.86145L11.3173 5.19585L7.38987 10.1036L4.608 7.78571L3.92533 8.60491L7.54347 11.6193Z"
+                          fill="#5200FF"
+                        />
+                      </svg></div>
+                      Everyday clarity and motivation.
+                    </td>
+                    <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
                     <div><svg
                         width="16"
                         height="17"
@@ -324,14 +271,6 @@ function WhyChoose() {
                   </tr>
                 </tbody>
               </table>
-            </CarouselItem>
-          
-          </CarouselContent>
-          <div className="h-[48px] relative">
-            <CarouselPrevious className="border border-black disabled:border-neutral-500 bg-white top-8 left-[35%]" />
-            <CarouselNext className="border border-black disabled:border-neutral-500 bg-white top-8 right-[35%]" />
-          </div>
-        </Carousel>
 
         <div className="flex justify-center">
           <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">

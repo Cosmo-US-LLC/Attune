@@ -12,36 +12,31 @@ import {
 export default function ListenerMobile() {
     const cards = [
         {
-            img: "/desktop/listener/tick-circle.webp",
-            title: "How a Listener Can Help You Feel Less Alone",
-            body: "Find Emotional Relief: Share your thoughts without fear of being judged."
+          img: "/desktop/listener/tick-circle.webp",
+          title: "How a Listener Can Helpe",
+          body: "<strong>Reframing Experiences:</strong> Gain a fresh perspective and clarity on your challenges.  ",
         },
         {
-            img: "/desktop/your-path/socialPressures.png",
-            title: "How a Listener Can Help You Feel Less Alone",
-            body: "Build Confidence: Gain clarity and self-assurance as you work through your feelings."
+          img: "/desktop/your-path/socialPressures.png",
+          title: "How a Listener Can Help",
+          body: "<strong>Setting and Achieving Goals:</strong> Boost your confidence, manage transitions, and achieve personal milestones.  ",
         },
         {
-            img: "/desktop/your-path/digitalOverload.png",
-            title: "How a Listener Can Help You Feel Less Alone",
-            body: "Rediscover Connection: Strengthen relationships and overcome isolation."
+          img: "/desktop/your-path/digitalOverload.png",
+          title: "How a Listener Can Help",
+          body: "<strong>Emotional well-being:</strong> Explore strategies to enhance your motivation and overall well-being. ",
         },
         {
-            img: "/desktop/your-path/relationshipChallenges.png",
-            title: "How a Listener Can Help You Feel Less Alone",
-            body: "Feel Understood: Experience the comfort of being heard by someone who truly cares."
-        },
-        {
-            img: "/desktop/your-path/careerStress.png",
-            title: "How a Listener Can Help You Feel Less Alone",
-            body: "Navigate Challenges: Discuss specific situations like transitioning to college or starting a new job."
-        },
-    ]
+          img: "/desktop/your-path/relationshipChallenges.png",
+          title: "How a Listener Can Help",
+          body: "<strong>Building Resilience:</strong> Strengthen your ability to navigate life’s hurdles and move toward your desired outcomes.. ",
+        }
+      ];
     return (
         <>
-            <div className="listenerMobile py-[30px] px-1 space-y-4">
+            <div className="listenerMobile min-h-[400px] py-[50px] px-1 space-y-4">
                 <div className='space-y-5 '>
-                    <Carousel className="">
+                    <Carousel className="Listener">
                         <CarouselContent>
                             {cards?.map((card, id) => (
                                 <CarouselItem key={id} className="basis-1/1 w-full">
@@ -50,12 +45,13 @@ export default function ListenerMobile() {
 
                                         <div className="space-y-[14px]">
                                             <h3 className="pr-6 leading-normal flex items-center text-black text-[38px] font-miniature">
-                                            How a Listener Can Help You<br/> Feel Less Alone
+                                            How a Listener Can Help
                                             </h3>
-                                            <p className=" text-[15px] flex flex-row font-semibold leading-[22px]">
+                                            <div className='flex items-center space-x-1'>
                                             <img src='/desktop/listener/tick-circle.webp' alt="Icon" className=" mr-1 mt-0.5 w-[20px] h-[21px]" />
-                                                {card?.body}
+                                            <p className=" text-[15px] !block flex flex-row font-semibold leading-[22px]" dangerouslySetInnerHTML={{ __html: card?.body}}>
                                             </p>
+                                            </div>
 
                                         </div>
                                         <Button className="bg-[#5200FF] rounded-full text-[15px]">Find Your Listener
