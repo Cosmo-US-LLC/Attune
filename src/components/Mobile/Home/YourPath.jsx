@@ -80,12 +80,12 @@ function YourPath() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-0 bg-white border border-black disabled:border-neutral-500" />
-          <CarouselNext className="right-0 bg-white border border-black disabled:border-neutral-500" />
+          <CarouselPrevious className="bg-white border border-black -left-2 disabled:border-neutral-500" />
+          <CarouselNext className="bg-white border border-black -right-2 disabled:border-neutral-500" />
         </Carousel>
       </div>
 
-      <div>
+      <div className="flex items-center justify-center">
         <a href="https://innovacare.tech/listenerhub/signup">
           <Button className="bg-[#5200FF] rounded-full text-[15px] ml-3">
             {" "}

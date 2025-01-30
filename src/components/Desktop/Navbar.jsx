@@ -15,15 +15,15 @@ function Navbar() {
   return (
     <nav className="bg-white h-[99px] flex-shrink-0 shadow-sm">
       <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
-        <div className="relative flex flex-col items-center">
-          <h1 className="relative font-miniature">
-            <span className="text-black font-[400] text-[46.167px] leading-normal">
-              Feel Att
-            </span>
-
-            <span className="text-black font-[400] text-[46.167px] leading-normal italic">une</span>
-          </h1>
-          <span className="absolute right-0 text-sm font-light -bottom-1">By EaseCare</span>
+        <div
+          className="relative flex flex-col items-center cursor-pointer"
+          onClick={() => location.reload()}
+        >
+          <img
+            src="/desktop/feel-attune-logo.webp"
+            alt="Attune Logo"
+            className="cursor-pointer w-[174px] h-[54px]"
+          />
         </div>
 
         <div className="hidden space-x-8 md:flex">

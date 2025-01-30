@@ -3,6 +3,19 @@ import { Button } from "../ui/button";
 
 function FooterMobile() {
   const [sideOpen, setSideOpen] = useState(false);
+  const handleScroll = (event, targetId, offset) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    setMenuOpen(false);
+  };
   return (
     <div className="relative min-h-[738px] overflow-hidden bg-[#E5DDD4] px-5 py-[30px]">
       <div className="relative z-10">
@@ -12,9 +25,9 @@ function FooterMobile() {
             professional
           </h1>
           <img
-            src="/desktop/logo-footer.svg"
+            src="/mobile/feel-attune-logo.webp"
             alt="Attune Logo"
-            className="mt-2"
+            className="mt-2 w-[120px] h-[38px]"
           />
         </div>
         <p className="mt-6">
@@ -23,25 +36,25 @@ function FooterMobile() {
           Whether you’re managing stress, navigating life transitions, or simply
           craving a connection, we’re here to help.
         </p>
-        <div className="relative mt-8 flex flex-row justify-between items-center">
+        <div className="relative flex flex-row items-center justify-between mt-8">
           <div className="flex flex-col gap-4 font-[500]">
-            <a href={"#Mpathtosupport2"} onClick={() => setSideOpen(false)}>
+            <a href={"#Mpathtosupport2"} onClick={(e) => handleScroll(e, "Mpathtosupport2", 90)}>
               Path To Support
             </a>
-            <a href={"#Mhowitworks2"} onClick={() => setSideOpen(false)}>
+            <a href={"#Mhowitworks2"} onClick={(e) => handleScroll(e, "Mhowitworks2", 90)}>
               How It Works
             </a>
-            <a href={"#Mourapproach2"} onClick={() => setSideOpen(false)}>
+            <a href={"#Mourapproach2"} onClick={(e) => handleScroll(e, "Mourapproach2", 90)}>
               Our Approach
             </a>
-            <a href={"#Mfaqs2"} onClick={() => setSideOpen(false)}>
+            <a href={"#Mfaqs2"} onClick={(e) => handleScroll(e, "Mfaqs2", 90)}>
               FAQs
             </a>
           </div>
           <img src="/mobile/footer/footer_heart.svg" alt="Time" />
         </div>
         <div className="flex flex-row items-center justify-between gap-4 mt-8">
-          <div className=" flex flex-row gap-3">
+          <div className="flex flex-row gap-3 ">
             <a href="https://www.linkedin.com/company/easecare/">
               <img
                 src="/mobile/footer/linkedIn.svg"
@@ -84,7 +97,7 @@ function FooterMobile() {
           whose territory we reside on.
         </p>
       </div>
-      <div className="absolute top-0 left-0 w-full h-full z-0 flex items-center">
+      <div className="absolute top-0 left-0 z-0 flex items-center w-full h-full">
         <h1 className="font-miniature text-center w-full text-[#ded6ce] text-[35vw] z-0">
           Att<span className="italic">une</span>
         </h1>

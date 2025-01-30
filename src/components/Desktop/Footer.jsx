@@ -1,4 +1,13 @@
+import { useEffect } from "react";
 function Footer() {
+
+  const handleLogoClick = () => {
+    // Scroll to the top of the page on logo click
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Adds a smooth scrolling effect
+    });
+  };
   const handleScroll = (event, targetId, offset) => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
@@ -14,53 +23,68 @@ function Footer() {
   };
   return (
     <footer className="bg-[#E5DDD4] overflow-hidden relative w-full">
-      <div className="max-w-[1440px] h-[500] mx-auto pt-[80px]">
-        <div className="relative flex flex-col gap-16">
-          <div className="absolute bottom-[-30px] left-[50px]">
-            <img src="/desktop/footer/attune.svg" alt="Attune logo" />
+      <div className="max-w-[1440px] h-[500] mx-auto  ">
+        <div className="relative flex flex-row w-full py-[30px] px-[50px]">
+          <div className="absolute bottom-[30px] left-[0px]">
+            <img src="/desktop/feelattune.webp" alt="Attune logo" />
           </div>
-
-          <div className="relative flex flex-col pl-[220px] gap-10">
-            <div className="flex gap-10">
-              <h1 className="text-[55px] font-miniature leading-[69px] w-[301px]">
-                Talk to a
-                <br />
-                professional
-              </h1>
-
-              <p className="text-[16px] leading-[22px] capitalize w-[382px]">
-                Looking for someone to listen? Our trained Listeners are here to
-                provide non-judgmental, compassionate support whenever you need
-                it. Whether you’re managing stress, navigating life transitions,
-                or simply craving a connection, we’re here to help.
+          <div className="w-[25%] flex justify-center items-center relative z-10">
+            <h1 className="text-[55px] font-[400] font-miniature leading-[69px] w-[301px]">
+              Talk to a
+              <br />
+              professional
+            </h1>
+          </div>
+          <div className="w-[50%] flex gap-6 flex-col justify-center items-start px-4 pt-6 relative z-10">
+            <div className="flex flex-col gap-2 mt-4">
+              <p className="text-[16px] font-[700] leading-[20px]">
+                Looking for someone to listen?
+              </p>
+              <p className="text-[16px] leading-[22px] capitalize ">
+                Our trained Listeners are here to provide non-judgmental,
+                compassionate support whenever you need it. Whether you’re
+                managing stress, navigating life transitions, or simply craving
+                a connection, we’re here to help.
               </p>
             </div>
-
-            <div className="text-[16px] font-[500] flex gap-10">
-              <a href="#WhyDoesD" onClick={(e) => handleScroll(e, "WhyDoesD", 90)}>Path To Support</a>
-              <a href="#HowitworksD" onClick={(e) => handleScroll(e, "HowitworksD", 90)}>How It Works</a>
-              <a href="#WhyChooseD" onClick={(e) => handleScroll(e, "WhyChooseD", 90)}>Our Approach</a>
-              <a href="#FaqD" onClick={(e) => handleScroll(e, "FaqD", 90)}>FAQs</a>
+            <div className="text-[16px] font-[500] mt-8 flex gap-10">
+              <a
+                href="#WhyDoesD"
+                onClick={(e) => handleScroll(e, "WhyDoesD", 90)}
+              >
+                Path To Support
+              </a>
+              <a
+                href="#HowitworksD"
+                onClick={(e) => handleScroll(e, "HowitworksD", 90)}
+              >
+                How It Works
+              </a>
+              <a
+                href="#WhyChooseD"
+                onClick={(e) => handleScroll(e, "WhyChooseD", 90)}
+              >
+                Our Approach
+              </a>
+              <a href="#FaqD" onClick={(e) => handleScroll(e, "FaqD", 90)}>
+                FAQs
+              </a>
             </div>
-            <div className="absolute right-[180px] top-[-20px]">
+            <div className="relative z-10 flex items-end justify-center w-full mt-12" onClick={handleLogoClick}>
+              <img
+                src="/desktop/feel-attune-logo.webp"
+                alt="Attune Logo"
+                className="cursor-pointer w-[174px] h-[54px]"
+              />
+            </div>
+          </div>
+          <div className="w-[25%] flex flex-col justify-center items-center gap-[80px]">
+            <div className="relative z-10 pt-2 mt-4">
               <img
                 src="/desktop/heart.webp"
                 alt="Mental Wellness"
                 className="w-[233px] h-[185px]"
               />
-            </div>
-          </div>
-
-          <div className="flex w-full px-[70px]">
-            <div className="flex w-[50%] justify-start items-center gap-8">
-              <div className="flex ">
-                <img
-                  src="/desktop/feel-attune-logo.webp"
-                  alt="Attune Logo"
-                  className="cursor-pointer "
-                />
-              </div>
-              <div className="">&copy; 2025 Attune. All Rights Reserved</div>
             </div>
 
             <div className="flex gap-4 justify-end items-center w-[50%] z-20">
@@ -85,18 +109,11 @@ function Footer() {
                   className="w-[43px] h-[43px]"
                 />
               </a>
-
-              <a href="https://innovacare.tech/listenerhub/signup">
-                <button className="bg-[#5200FF] text-white w-[150px] py-2 rounded-full">
-                  Get Started
-                </button>
-              </a>
             </div>
           </div>
         </div>
-
-        <div className="flex justify-center items-center h-[120px] px-[70px] mt-8 border-t  border-black">
-          <div className="flex text-[12px] capitalize">
+        <div className="flex justify-center items-center px-[50px] py-[30px]  border-t border-black">
+          <div className="text-black text-center font-inter text-[12px] font-[400] leading-[16px] capitalize">
             We would like to acknowledge the traditional, ancestral, and unceded
             territory of the many First Nations, Metis, and Inuit who have lived
             and cared for the lands known as Canada for generations. We are
@@ -104,6 +121,11 @@ function Footer() {
             still with us today and those who have gone before us. We make this
             acknowledgment as an act of reconciliation and gratitude to those
             whose territory we reside on.
+          </div>
+        </div>
+        <div className="flex justify-center items-center h-[60px] px-[50px] border-t  border-black">
+          <div className="text-black font-inter text-[16px] font-[400] leading-[20px] capitalize">
+            &copy; 2025 Attune. All Rights Reserved
           </div>
         </div>
       </div>

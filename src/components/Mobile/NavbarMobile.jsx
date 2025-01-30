@@ -46,9 +46,9 @@ function NavbarMobile() {
               <SheetTitle>
                 <a href="/" onClick={() => setSideOpen(false)}>
                   <img
-                    src="/mobile/logo.svg"
+                    src="/mobile/feel-attune-logo.webp"
                     alt="Attune Logo"
-                    className="w-[103px] h-[30px] object-contain"
+                    className="w-[113px] h-[35px] object-contain"
                   />
                 </a>
               </SheetTitle>
@@ -147,9 +147,9 @@ function NavbarMobile() {
         </Sheet>
 
         <img
-          src="/mobile/logo.svg"
+          src="/mobile/feel-attune-logo.webp"
           alt="Attune Logo"
-          className="w-[103px] h-[30px] object-contain"
+          className="w-[113px] h-[35px] object-contain"
         />
       </div>
 
