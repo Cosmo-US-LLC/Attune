@@ -15,37 +15,36 @@ function ProudlySupporting() {
           Supporting
         </p>
 
-        <div className="flex w-full items-start justify-between rounded-[30px] bg-white py-[25px] px-[52px] mr-[32px] ">
+        <div className="flex w-full gap-8 items-start justify-between rounded-[30px] bg-white py-[25px] px-[32px] mr-[22px] ">
           <img
-            src={"/desktop/proudly/Alberta.svg"}
+            src={"/desktop/proudly/logo1.webp"}
             alt="Alberta"
-            className="max-xl:h-[25px] h-[54.3px] w-[131px]"
+            className="h-[37px] w-[102px]"
           />
           <img
-            src={"/desktop/proudly/AlbertaHealth.svg"}
+            src={"/desktop/proudly/logo2.webp"}
             alt="Alberta"
-            className="max-xl:h-[25px] h-[52.2px] w-[110.8px]"
+            className="h-[37px] w-[129px]"
           />
           <img
-            src={"/desktop/proudly/Ruralcomm.svg"}
+            src={"/desktop/proudly/logo3.webp"}
             alt="Rural"
-            className="max-xl:h-[20px] h-[57.6px] w-[140px]"
+            className="h-[56px] w-[137px]"
           />
-          {/* <img src={"/desktop/proudly/health.svg"} alt="Addiction &" className="max-xl:h-[25px] h-[49.4px] w-[140px]" /> */}
-          <img
-            src={"/desktop/proudly/Addiction.svg"}
+           <img
+            src={"/desktop/proudly/logo4.webp"}
             alt="211 Alberta"
-            className="mt-1 max-xl:h-[25px] h-[50.929px] w-[158.708px]"
+            className="h-[50px] w-[158px]"
           />
           <img
-            src={"/desktop/proudly/Alberta211.svg"}
+            src={"/desktop/proudly/logo5.webp"}
             alt="NPO's"
-            className="max-xl:h-[25px] h-[57.6px] w-[112.8px]"
+            className="h-[47px] w-[131px]"
           />
           <img
-            src={"/desktop/proudly/Npos.svg"}
+            src={"/desktop/proudly/logo6.webp"}
             alt="NPO's"
-            className="max-xl:h-[25px] h-[57.6px] w-[112.8px]"
+            className="h-[57px] w-[112px]"
           />
         </div>
       </div>

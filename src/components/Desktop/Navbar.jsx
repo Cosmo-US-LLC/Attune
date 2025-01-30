@@ -21,7 +21,14 @@ function Navbar() {
         <nav className="bg-white h-[99px] flex-shrink-0 shadow-sm">
           <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
             <a href="/" className="relative flex flex-col items-center">
-              <h1 className="relative font-miniature">
+            <a href="/" className="min-w-[200px] flex max-xl:items-center items-end">
+            <img
+              src="/desktop/feel-attune-logo.webp"
+              alt="Attune Logo"
+              className="w-[196px] "
+            />
+          </a>
+              {/* <h1 className="relative font-miniature">
                 <span className="text-black font-[400] text-[46.167px] leading-normal">
                   Feel Att
                 </span>
@@ -32,7 +39,7 @@ function Navbar() {
               </h1>
               <span className="absolute right-0 text-sm font-light -bottom-1">
                 By EaseCare
-              </span>
+              </span> */}
             </a>
 
             {/* md:flex */}
