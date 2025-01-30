@@ -18,8 +18,8 @@ function HeroMobile() {
             <span className="font-[600]"> Facing </span> <br />{" "}
             <span className="text-[#E5FF7D] italic"> Challenges </span>
           </p>
-          <p className="text-[15px] leading-[21px]">
-            Life’s pressures can feel overwhelming, especially when you’re
+          <p className="text-[14px] font-[400] leading-[21px]">
+            Life’s pressures can feel overwhelming, <br /> especially when you’re
             managing stress, anxiety, or emotional barriers. You don’t have to
             go through it alone.
           </p>
