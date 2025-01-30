@@ -1,13 +1,13 @@
 function PathToSupport() {
   return (
     <div id="WhyDoesD" className="bg-gray-50 py-[110px] px-[110px]">
-      <div className="max-w-[1440px] mx-auto space-y-[60px]">
+      <div className="max-w-[1440px] mx-auto space-y-[60px] flex justify-center flex-col items-center">
         <h1 className="font-miniature text-[76px] text-center leading-[69px]">
           Why Does Mental Health Matter
           <br />
           for Young Adults?
         </h1>
-        <h6 className="text-[18px] px-16 text-center lg:min-w-[600px] xl:min-w-[700px] 2xl:min-w-[800px] 3xl:min-w-[1001px]">
+        <h6 className="text-[16px] font-[400] px-16 text-center w-[1061px]">
           Mental health challenges among young adults are more common than you
           think. As you navigate through major life transitions—like starting
           college, entering the workforce, or building new relationships—it’s
@@ -49,7 +49,7 @@ function PathToSupport() {
             body="Pressure to conform to societal norms."
           />
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex items-center justify-center">
           <a href="https://innovacare.tech/listenerhub/signup">
             <button className="mt-6 bg-[#5200FF] flex flex-row text-white text-[16px] font-[500] py-5 px-10 rounded-full hover:bg-purple-800">
               Break the Barriers. Find Support Now
@@ -104,7 +104,7 @@ function YourPathCard({ img, imgClass = "", title, classes, body }) {
             {title}
           </h2>
 
-          <p className="text-[18px] leading-[26px] font-[500] text-white">
+          <p className="text-[16px] font-[400] leading-[26px]  text-white">
             {body}
           </p>
         </div>

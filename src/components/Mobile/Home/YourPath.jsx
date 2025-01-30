@@ -39,13 +39,16 @@ function YourPath() {
       <p className="font-miniature text-center text-[38px]">
         Why Does Loneliness Affect So Many Young Adults?
       </p>
-      <p className="font-semibold text-center text-[15px]">
-        Loneliness among young adults is more common than you think. As you
-        navigate through major life transitions—like starting college, entering
-        the workforce, or building new relationships—it’s easy to feel
-        disconnected. The pressure to balance expectations, independence, and
-        social belonging can sometimes feel overwhelming.
+      <p className="w-[350px] text-center text-black font-inter text-[15px] font-normal leading-[26px]">
+        Mental health challenges among young adults are more common than you
+        think. As you navigate through major life transitions—like starting
+        college, entering the workforce, or building new relationships—it’s easy
+        to feel overwhelmed and isolated. The pressure to balance expectations,
+        independence, and social belonging can sometimes feel insurmountable.
+        Here are some common reasons why young adults often face mental health
+        challenges:
       </p>
+
       <p className="font-miniature font-bold text-center text-[32px]">
         Reasons for Loneliness:
       </p>
@@ -54,7 +57,7 @@ function YourPath() {
         <Carousel className="">
           <CarouselContent>
             {cards?.map((card, id) => (
-              <CarouselItem key={id} className="basis-1/1 w-full">
+              <CarouselItem key={id} className="w-full basis-1/1">
                 <div className="max-w-[274px] mx-auto border border-black bg-[#95ADF0] py-5 px-3 rounded-[30px] space-y-[20px] w-[294px] h-[426px]">
                   <div className="px-2">
                     <img
@@ -77,12 +80,12 @@ function YourPath() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="border border-black disabled:border-neutral-500 bg-white left-0" />
-          <CarouselNext className="border border-black disabled:border-neutral-500 bg-white right-0" />
+          <CarouselPrevious className="bg-white border border-black -left-2 disabled:border-neutral-500" />
+          <CarouselNext className="bg-white border border-black -right-2 disabled:border-neutral-500" />
         </Carousel>
       </div>
 
-      <div>
+      <div className="flex items-center justify-center">
         <a href="https://innovacare.tech/listenerhub/signup">
           <Button className="bg-[#5200FF] rounded-full text-[15px] ml-3">
             {" "}
@@ -137,7 +140,6 @@ function YourPath() {
 //                 ))}
 //             </ul>
 //         </div>
-
 
 //         <div className='flex justify-center'>
 //             <Button className="bg-[#5200FF] rounded-full text-[15px]">Get Started</Button>

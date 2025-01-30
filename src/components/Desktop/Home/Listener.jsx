@@ -8,7 +8,7 @@ function Listener() {
 
   return (
     <div className="w-full overflow-x-hidden">
-      <div className="listener flex flex-wrap md:flex-row flex-col">
+      <div className="flex flex-col flex-wrap listener md:flex-row">
         <div className="w-full md:w-[50%]"></div>
 
         <div className="w-full md:w-[50%] flex justify-center px-6 md:px-12 lg:px-16">
@@ -21,7 +21,7 @@ function Listener() {
                 {cardArr.map((item, index) => (
                   <li
                     key={index}
-                    className="relative text-[14px] md:text-[16px] pl-4 pb-4 md:pb-6"
+                    className="relative text-[16px] font-[300] pl-4 pb-4 md:pb-6"
                   >
                     <span
                       style={{
@@ -42,7 +42,7 @@ function Listener() {
                   </li>
                 ))}
               </ul>
-              <div className="flex justify-center md:justify-start mt-6">
+              <div className="flex justify-center mt-6 md:justify-start">
                 <a href="https://innovacare.tech/listenerhub/signup">
                 <button className="bg-[#5200FF] flex flex-row text-white text-[14px] md:text-[16px] font-[500] py-2 md:py-4 px-8 md:px-16 rounded-full hover:bg-purple-800">
                   Find Your Listener

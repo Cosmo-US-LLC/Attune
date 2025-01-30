@@ -14,7 +14,7 @@ function NavbarMobile() {
 
   return (
     <div className="bg-white h-[68px] flex justify-between items-center py-[14px] px-5">
-      <div className="flex gap-3 items-center">
+      <div className="flex items-center gap-3">
         <Sheet open={sideOpen} onOpenChange={setSideOpen}>
           <SheetTrigger asChild>
             <button
@@ -46,9 +46,9 @@ function NavbarMobile() {
               <SheetTitle>
                 <a href="/" onClick={() => setSideOpen(false)}>
                   <img
-                    src="/mobile/logo.svg"
+                    src="/mobile/feel-attune-logo.webp"
                     alt="Attune Logo"
-                    className="w-[103px] h-[30px] object-contain"
+                    className="w-[113px] h-[35px] object-contain"
                   />
                 </a>
               </SheetTitle>
@@ -56,7 +56,7 @@ function NavbarMobile() {
             </SheetHeader>
             <div className="relative bg-[#E5DDD4] py-[30px] grow overflow-y-auto">
               <div className="relative z-10 flex flex-col h-full">
-                <div className="grow flex flex-col justify-between">
+                <div className="flex flex-col justify-between grow">
                   <div className="flex flex-row items-start justify-start">
                     <h1 className="text-left font-miniature text-[38px] leading-[48px]">
                       Talk to a <br />
@@ -88,7 +88,7 @@ function NavbarMobile() {
                       </a>
                     </div>
                   </div>
-                  <div className="flex justify-between items-center py-0 mt-6">
+                  <div className="flex items-center justify-between py-0 mt-6">
                     <div className="flex flex-row items-center justify-center gap-4">
                       <a href="https://www.linkedin.com/company/easecare/">
                         <img
@@ -121,11 +121,11 @@ function NavbarMobile() {
                   </div>
                 </div>
                 <div>
-                  <p className="mt-8 text-left text-xs">
+                  <p className="mt-8 text-xs text-left">
                     © 2024 Attune. All rights reserved
                   </p>
                   <div className="my-4 border-[0.5px] border-[black] w-full" />
-                  <p className="mt-4 text-left text-xs capitalize">
+                  <p className="mt-4 text-xs text-left capitalize">
                     We would like to acknowledge the traditional, ancestral, and
                     unceded territory of the many First Nations, Metis, and
                     Inuit who have lived and cared for the lands known as Canada
@@ -147,9 +147,9 @@ function NavbarMobile() {
         </Sheet>
 
         <img
-          src="/mobile/logo.svg"
+          src="/mobile/feel-attune-logo.webp"
           alt="Attune Logo"
-          className="w-[103px] h-[30px] object-contain"
+          className="w-[113px] h-[35px] object-contain"
         />
       </div>
 
