@@ -1,7 +1,9 @@
 const features = [
   {
     id: 1,
-    title: "Real Conversations, Real Impact",
+    title: (<>
+    Real Conversations,<br/> Real Impact
+    </>),
     description:
       "Attune connects you to compassionate listeners who provide a supportive environment for sharing your thoughts and feelings. It's a space to gain clarity, set goals, and explore strategies for emotional well-being.",
     icon: "/desktop/what-makes/card-1.svg", // Replace with an actual image or SVG if needed

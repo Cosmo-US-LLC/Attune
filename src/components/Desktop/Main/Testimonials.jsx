@@ -25,6 +25,7 @@ function TestimonialsCarousel() {
       bg: "bg-[#FF6F61]",
       img: "/desktop/testimonials/test-3.webp",
       title: "John, 72",
+      textColor: "text-white",
       body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
     }
   ];
@@ -50,10 +51,14 @@ function TestimonialsCarousel() {
                   className="w-[117px] h-[117px] object-contain rounded-full mb-[47px]"
                 />
 
-                <div className="space-y-[22px]">
-                  <h3 className="font-miniature text-[40px]">{test?.title}</h3>
-                  <p className="text-[16px] leading-[20px]">{test?.body}</p>
-                </div>
+<div className={`space-y-[22px] ${test?.textColor || 'text-black'}`}>
+  <h3 className={`font-miniature text-[40px] ${test?.textColor || ''}`}>
+    {test?.title}
+  </h3>
+  <p className={`text-[16px] leading-[20px] ${test?.textColor || ''}`}>
+    {test?.body}
+  </p>
+</div>
               </div>
             </CarouselItem>
           ))}

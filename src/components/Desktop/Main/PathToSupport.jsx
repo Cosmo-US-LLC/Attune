@@ -55,7 +55,7 @@ function PathToSupport() {
             imgClass="bg-[#E5FF7D] rounded-[30px] border border-black"
             title="For Seniors"
             buttonLabel="Talk To Someone"
-            classes="bg-[#FF6F61] text-black col-span-4"
+            classes="bg-[#FF6F61] text-white col-span-4"
             points={[
               {
                 title: "",

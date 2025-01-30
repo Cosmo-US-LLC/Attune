@@ -11,29 +11,34 @@ function AsSeen() {
       <div className="w-[100%] py-3 overflow-hidden bg-white">
         <div className="flex gap-[27px] animate-marquee whitespace-nowrap">
           <img
-            src="/mobile/asSeen/sup4.png"
+            src="/desktop/proudly/Alberta.svg"
             alt="Time"
             className="object-contain w-[68px] h-[28px]"
           />
           {/* <img src="/mobile/asSeen/sup1.png" alt="Time" className='object-contain w-[73px] h-[26px]' /> */}
           <img
-            src="/mobile/asSeen/support2.svg"
+            src="/desktop/proudly/AlbertaHealth.svg"
             alt="Time"
             className="object-contain w-[66px] h-[26px]"
           />
           <img
-            src="/mobile/asSeen/support3.svg"
+            src="/desktop/proudly/Ruralcomm.svg"
             alt="Time"
             className="object-contain w-[59px] h-[30px]"
           />
 
           <img
-            src="/mobile/asSeen/sup5.png"
+            src="/desktop/proudly/Addiction.svg"
             alt="Time"
-            className="object-contain w-[58px] h-[27px]"
+            className="object-contain w-[78px] h-[30px]"
           />
           <img
-            src="/mobile/asSeen/support6.svg"
+            src="/desktop/proudly/Alberta211.svg"
+            alt="Time"
+            className="object-contain w-[73px] h-[30px]"
+          />
+           <img
+            src="/desktop/proudly/Npos.svg"
             alt="Time"
             className="object-contain w-[73px] h-[30px]"
           />

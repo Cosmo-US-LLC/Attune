@@ -4,15 +4,15 @@ function HowItWorks() {
       <h1 className='font-miniature text-center text-[76px] leading-[110px]'>How it Works</h1>
 
       <div className="grid gap-6 mx-auto max-w-7xl md:grid-cols-3">
-        <HowItCards id="01" title="Sign Up" body="Create your profile in just a few clicks. It’s quick, simple, and all about you.">
+        <HowItCards id="01" title="Sign Up" body="Create Your Profile In Just A Few Clicks. It’s Quick, Simple, And All About You.">
             <img src="/desktop/how-it/card-1.svg" alt="Hug" className="w-[107px] h-[71px]" />
         </HowItCards>
         
-        <HowItCards id="02" title="Find Your Listener" body="Explore a variety of compassionate, judgment-free Listeners. Choose someone who truly gets you.">
+        <HowItCards id="02" title="Find Your Listener" body="Explore A Variety Of Compassionate, Judgment-Free Listeners. Choose Someone Who Truly Gets You.">
         <img src="/desktop/how-it/card-2.svg" alt="Talk" className="w-[92px] h-[69px]" />
         </HowItCards>
         
-        <HowItCards id="03" title="Connect" body="Open up through voice or video, anytime and anywhere. It’s your safe space to share.">
+        <HowItCards id="03" title="Connect" body="Open Up Through Voice Or Video, Anytime And Anywhere. It’s Your Safe Space To Share.">
         <img src="/desktop/how-it/card-3.svg" alt="Schedule" className="w-[82px] h-[73px]" />
         </HowItCards>
       </div>
