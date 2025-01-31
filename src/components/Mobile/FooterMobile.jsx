@@ -98,7 +98,7 @@ function FooterMobile() {
             </button>
           </a> */}
         </div>
-        <p className="mt-5 text-left">© 2024 Attune. All Rights Reserved</p>
+        <p className="mt-5 text-left">© 2025 Attune. All Rights Reserved</p>
         <div className="my-4 border-[0.5px] border-[black] w-full" />
         <p className="mt-4 text-left text-[14px] capitalize w-[340px]">
           We would like to acknowledge the traditional, ancestral, and unceded

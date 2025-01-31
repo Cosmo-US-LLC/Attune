@@ -12,6 +12,27 @@ import {
 function NavbarMobile() {
   const [sideOpen, setSideOpen] = useState(false);
 
+  const handleClick = (e, targetId, offset) => {
+    e.preventDefault();
+  
+    setSideOpen(false);
+  
+    setTimeout(() => {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        // Calculate the position with offset
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - offset;
+  
+        // Smooth scroll with offset applied
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }, 300);
+  };
+
   return (
     <>
       <div className="pb-[3.5rem]">
@@ -62,10 +83,10 @@ function NavbarMobile() {
                         </div>
                         <div className="relative mt-8">
                           <div className="flex flex-col gap-4 font-[500]">
-                            <a href={"#Mpathtosupport2"} onClick={()=>setSideOpen(false)}>Path To Support</a>
-                            <a href={"#Mhowitworks2"} onClick={()=>setSideOpen(false)}>How It Works</a>
-                            <a href={"#Mourapproach2"} onClick={()=>setSideOpen(false)}>Our Approach</a>
-                            <a href={"#Mfaqs2"} onClick={()=>setSideOpen(false)}>FAQs</a>
+                            <a href={"#path-to-support"} onClick={(e) => handleClick(e, "mobile-path-to-support", 50)}>Path To Support</a>
+                            <a href={"#how-it-works"} onClick={(e) => handleClick(e, "mobile-how-it-works", 50)}>How It Works</a>
+                            <a href={"#why-choose-a-listener"} onClick={(e) => handleClick(e, "mobile-why-choose-a-listener", 50)}>Our Approach</a>
+                            <a href={"#Mfaqs2"} onClick={(e) => handleClick(e, "mobile-FAQs", 50)}>FAQs</a>
                           </div>
                         </div>
                         <div className="flex items-center justify-between py-0 mt-6">
