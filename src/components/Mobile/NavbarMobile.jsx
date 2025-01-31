@@ -12,7 +12,30 @@ import {
 function NavbarMobile() {
   const [sideOpen, setSideOpen] = useState(false);
 
+  const handleClick = (e, targetId, offset) => {
+    e.preventDefault();
+  
+    setSideOpen(false);
+  
+    setTimeout(() => {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        // Calculate the position with offset
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - offset;
+  
+        // Smooth scroll with offset applied
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }, 300);
+  };
+
   return (
+    <div className="pb-[5rem]">
+      <div className="fixed top-0 w-[100%] z-[99]">
     <div className="bg-white h-[68px] flex justify-between items-center py-[14px] px-5">
       <div className="flex items-center gap-3">
         <Sheet open={sideOpen} onOpenChange={setSideOpen}>
@@ -67,23 +90,23 @@ function NavbarMobile() {
                     <div className="flex flex-col gap-4 font-[500]">
                       <a
                         href={"#Mpathtosupport2"}
-                        onClick={() => setSideOpen(false)}
+                        onClick={(e) => handleClick(e, "Mpathtosupport2", 50)}
                       >
                         Path To Support
                       </a>
                       <a
                         href={"#Mhowitworks2"}
-                        onClick={() => setSideOpen(false)}
+                        onClick={(e) => handleClick(e, "Mhowitworks2", 50)}
                       >
                         How It Works
                       </a>
                       <a
                         href={"#Mourapproach2"}
-                        onClick={() => setSideOpen(false)}
+                        onClick={(e) => handleClick(e, "Mourapproach2", 220)}
                       >
                         Our Approach
                       </a>
-                      <a href={"#Mfaqs2"} onClick={() => setSideOpen(false)}>
+                      <a href={"#Mfaqs2"} onClick={(e) => handleClick(e, "Mfaqs2", 60)}>
                         FAQs
                       </a>
                     </div>
@@ -145,12 +168,13 @@ function NavbarMobile() {
             </div>
           </SheetContent>
         </Sheet>
-
+        <a href="/" onClick={() => setSideOpen(false)}>
         <img
           src="/mobile/feel-attune-logo.webp"
           alt="Attune Logo"
           className="w-[113px] h-[35px] object-contain"
         />
+        </a>
       </div>
 
       <a href="https://innovacare.tech/listenerhub/signup">
@@ -158,6 +182,8 @@ function NavbarMobile() {
           Connect Now
         </Button>
       </a>
+    </div>
+    </div>
     </div>
   );
 }

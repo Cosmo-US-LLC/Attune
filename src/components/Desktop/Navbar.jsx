@@ -13,6 +13,8 @@ function Navbar() {
     setMenuOpen(false);
   };
   return (
+    <div className="pb-[5.5rem]">
+      <div className="fixed top-0 w-[100%] z-[99]">
     <nav className="bg-white h-[99px] flex-shrink-0 shadow-sm">
       <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
         <div
@@ -22,7 +24,7 @@ function Navbar() {
           <img
             src="/desktop/feel-attune-logo.webp"
             alt="Attune Logo"
-            className="cursor-pointer w-[174px] h-[54px]"
+            className="cursor-pointer w-[198px] h-[54px]"
           />
         </div>
 
@@ -66,6 +68,8 @@ function Navbar() {
         </div>
       </div>
     </nav>
+    </div>
+      </div>
   );
 }
 

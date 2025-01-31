@@ -27,7 +27,7 @@ function FooterMobile() {
           <img
             src="/mobile/feel-attune-logo.webp"
             alt="Attune Logo"
-            className="mt-2 w-[120px] h-[38px]"
+            className="mt-2 w-[118px] h-[36px]"
           />
         </div>
         <p className="mt-6">
@@ -38,13 +38,13 @@ function FooterMobile() {
         </p>
         <div className="relative flex flex-row items-center justify-between mt-8">
           <div className="flex flex-col gap-4 font-[500]">
-            <a href={"#Mpathtosupport2"} onClick={(e) => handleScroll(e, "Mpathtosupport2", 90)}>
+            <a href={"#Mpathtosupport2"} onClick={(e) => handleScroll(e, "Mpathtosupport2", 50)}>
               Path To Support
             </a>
-            <a href={"#Mhowitworks2"} onClick={(e) => handleScroll(e, "Mhowitworks2", 90)}>
+            <a href={"#Mhowitworks2"} onClick={(e) => handleScroll(e, "Mhowitworks2", 50)}>
               How It Works
             </a>
-            <a href={"#Mourapproach2"} onClick={(e) => handleScroll(e, "Mourapproach2", 90)}>
+            <a href={"#Mourapproach2"} onClick={(e) => handleScroll(e, "Mourapproach2", 220)}>
               Our Approach
             </a>
             <a href={"#Mfaqs2"} onClick={(e) => handleScroll(e, "Mfaqs2", 90)}>
@@ -77,15 +77,15 @@ function FooterMobile() {
               />
             </a>
           </div>
-          <div className="">
+          {/* <div className="">
             <a href="https://innovacare.tech/listenerhub/signup">
               <Button className="bg-[#5200FF] text-white  py-3 rounded-full">
                 Get Started
               </Button>
             </a>
-          </div>
+          </div> */}
         </div>
-        <p className="mt-8 text-left">© 2024 Attune. All Rights Reserved</p>
+        <p className="mt-8 text-left">© 2025 Attune. All Rights Reserved</p>
         <div className="my-4 border-[0.5px] border-[black] w-full" />
         <p className="mt-4 text-left capitalize">
           We would like to acknowledge the traditional, ancestral, and unceded

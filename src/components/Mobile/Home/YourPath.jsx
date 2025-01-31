@@ -25,7 +25,7 @@ function YourPath() {
     },
     {
       img: "/mobile/yourPath/mental3.png",
-      title: "Digital Overload",
+      title: "Pressure to Succeed:",
       body: "Balancing academic, career, and personal expectations.",
     },
     {
@@ -37,7 +37,7 @@ function YourPath() {
   return (
     <div className="bg-white py-[30px] px-5 space-y-4" id="Mpathtosupport2">
       <p className="font-miniature text-center text-[38px]">
-        Why Does Loneliness Affect So Many Young Adults?
+      Why Does Mental Health Matter for Young Adults?
       </p>
       <p className="w-[350px] text-center text-black font-inter text-[15px] font-normal leading-[26px]">
         Mental health challenges among young adults are more common than you
@@ -68,7 +68,7 @@ function YourPath() {
                   </div>
 
                   <div className="space-y-[14px]">
-                    <h3 className="h-[72px] flex items-center justify-center text-center text-white text-[30px] font-miniature px-6">
+                    <h3 className=" h-[72px] flex items-center justify-center text-center text-white text-[30px] font-miniature px-6">
                       {card?.title}
                     </h3>
 
