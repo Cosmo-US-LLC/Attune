@@ -49,8 +49,8 @@ function YourPath() {
         challenges:
       </p>
 
-      <p className="font-miniature font-bold text-center text-[32px]">
-        Reasons for Loneliness:
+      <p className="font-miniature font-bold text-center text-[30px] w-[354px]">
+      Some Reasons for Mental Health Challenges:
       </p>
 
       <div className="space-y-5">

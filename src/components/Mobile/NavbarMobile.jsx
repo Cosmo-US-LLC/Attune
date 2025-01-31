@@ -145,7 +145,7 @@ function NavbarMobile() {
                 </div>
                 <div>
                   <p className="mt-8 text-xs text-left">
-                    © 2024 Attune. All rights reserved
+                    © 2025 Attune. All rights reserved
                   </p>
                   <div className="my-4 border-[0.5px] border-[black] w-full" />
                   <p className="mt-4 text-xs text-left capitalize">
