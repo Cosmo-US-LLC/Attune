@@ -25,24 +25,48 @@ function App() {
         <NavbarMobile />
       </div>
 
-      {/* Desktop */}
-      <div className="max-lg:hidden">
-        <Routes>
-          {/* <HomeDesktop /> */}
-          <Route path="/" element={<HomeDesktop />} />
-          <Route path="/young-adults-lonliness" element={<HomeDesktopLonely />} />
-          <Route path="/young-adults-mental-health-barriers" element={<HomeDesktopMental />} />
-        </Routes>
-      </div>
-      {/* Mobile */}
-      <div className="lg:hidden">
-        <Routes>
-          {/* <HomeMobile /> */}
-          <Route path="/" element={<HomeMobile />} />
-          <Route path="/young-adults-lonliness" element={<HomeMobileLonely />} />
-          <Route path="/young-adults-mental-health-barriers" element={<HomeMobileMental />} />
-        </Routes>
-      </div>
+      <Routes>
+        {/* <HomeDesktop /> */}
+        <Route
+          path="/"
+          element={
+            <>
+              <div className="max-lg:hidden">
+                <HomeDesktop />
+              </div>
+              <div className="lg:hidden">
+                <HomeMobile />
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/young-adults-lonliness"
+          element={
+            <>
+              <div className="max-lg:hidden">
+                <HomeDesktopLonely />
+              </div>
+              <div className="lg:hidden">
+                <HomeMobileLonely />
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/young-adults-mental-health-barriers"
+          element={
+            <>
+              <div className="max-lg:hidden">
+                <HomeDesktopMental />
+              </div>
+              <div className="lg:hidden">
+                <HomeMobileMental />
+              </div>
+            </>
+          }
+        />
+      </Routes>
 
       {/* Desktop */}
       <div className="max-lg:hidden">
