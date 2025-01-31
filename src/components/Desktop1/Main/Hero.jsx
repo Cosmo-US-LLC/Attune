@@ -1,5 +1,5 @@
 // import Image from "next/image";
-// import phoneImage from "../../../public/desktop/hero/phone-boy.webp";
+// import phoneImage from "../../../public/desktop1/hero/phone-boy.webp";
 
 function Hero() {
   return (
@@ -29,7 +29,7 @@ function Hero() {
         <div className="mt-8 md:mt-0 relative  md:max-w-[50%]">
           <div className="relative">
             <img
-              src={"/desktop/hero/phone-boy.png"}
+              src={"/desktop1/hero/phone-boy.png"}
               alt="Listener"
               className="max-xl:w-[480px] max-xl:h-auto h-[442px] w-[600px] rounded-lg object-contain"
             />

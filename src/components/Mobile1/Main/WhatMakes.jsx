@@ -16,27 +16,27 @@ import "swiper/css/pagination";
 
 const cards = [
   {
-    img: "/mobile/whatMakes/card1.svg",
+    img: "/mobile1/whatMakes/card1.svg",
     title: "Compassionate Listeners",
     body: "Our trained, non-judgmental Listeners provide a safe space for you to share your thoughts, feelings, and experiences without fear of judgment. You’ll always feel heard and supported.",
   },
   {
-    img: "/mobile/whatMakes/card2.svg",
+    img: "/mobile1/whatMakes/card2.svg",
     title: "Accessible Anytime, Anywhere",
     body: "Whether you're at home or on the go, you can connect with a Listener from anywhere, at any time. Our platform is available to support you whenever you need it.",
   },
   {
-    img: "/mobile/whatMakes/card3.svg",
+    img: "/mobile1/whatMakes/card3.svg",
     title: "Evidence-Based Approach",
     body: "Our services are grounded in real, measurable outcomes. We focus on providing practical, effective support for a range of emotional and mental health needs, backed by data-driven results.",
   },
   {
-    img: "/mobile/whatMakes/card4.svg",
+    img: "/mobile1/whatMakes/card4.svg",
     title: <>No Stigma<br />Just Support</>,
     body: "We are committed to breaking down the barriers of traditional mental health care. There’s no need for clinical intervention—just real, meaningful conversations when you need them most.",
   },
   {
-    img: "/mobile/whatMakes/card5.svg",
+    img: "/mobile1/whatMakes/card5.svg",
     title: "Privacy and Confidentiality",
     body: "Your well-being and privacy are our top priority. All conversations are confidential, ensuring that you can speak freely and openly without concerns.",
   },
@@ -91,10 +91,10 @@ function WhatMakes() {
       </Swiper>
 
       <button className="swiper-button-prev rotate-[180deg] !w-[30px] !h-[30px] text-white rounded-full absolute left-2 top-1/2 transform bg-[#fff] -translate-y-1/2">
-       <img src="/mobile/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
+       <img src="/mobile1/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
       </button>
       <button className="swiper-button-next !w-[30px] !h-[30px]  text-white rounded-full absolute right-2 top-1/2 transform bg-[#fff] -translate-y-1/2">
-      <img src="/mobile/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
+      <img src="/mobile1/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
       </button>
     </div> */}
 

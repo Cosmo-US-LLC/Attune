@@ -30,7 +30,7 @@ function NoNeed() {
           <div className="grid grid-rows-2 col-span-3 max-h-[500px]">
             <div className="">
               <img
-                src="/desktop/no-need/sun.svg"
+                src="/desktop1/no-need/sun.svg"
                 alt="Sun"
                 className="w-[74px] h-[79px]"
               />
@@ -43,7 +43,7 @@ function NoNeed() {
 
             <div className="flex justify-end items-end">
               <img
-                src="/desktop/no-need/bird.svg"
+                src="/desktop1/no-need/bird.svg"
                 alt="Bird"
                 className="w-[80px] h-auto mr-[80px]"
               />
@@ -52,7 +52,7 @@ function NoNeed() {
 
           <div className="relative z-10 h-[300px] overflow-visible col-span-5">
             <img
-              src="/desktop/no-need/girl.webp"
+              src="/desktop1/no-need/girl.webp"
               alt="Moods"
               className="w-[529px] mx-auto h-auto object-contain"
             />
@@ -61,14 +61,14 @@ function NoNeed() {
           <div className="grid grid-rows-2 col-span-3">
             <div className="flex justify-center items-center">
               <img
-                src="/desktop/no-need/mood.svg"
+                src="/desktop1/no-need/mood.svg"
                 alt="Moods"
                 className="w-[64px] h-[96px]"
               />
             </div>
             <div className="flex items-center justify-end">
               <img
-                src="/desktop/no-need/clouds.svg"
+                src="/desktop1/no-need/clouds.svg"
                 alt="Clouds"
                 className="w-[99px] h-[54px]"
               />

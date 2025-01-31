@@ -6,7 +6,7 @@ function Footer() {
         <div className="flex">
           <a href="/" className="min-w-[200px] flex max-xl:items-center items-end">
             <img
-              src="/desktop/logo-footer.svg"
+              src="/desktop1/logo-footer.svg"
               alt="Attune Logo"
               className=""
             />
@@ -46,7 +46,7 @@ function Footer() {
 
             <div className="min-w-[278px] grow flex flex-col items-start justify-between">
               <img
-                src="/desktop/heart.webp"
+                src="/desktop1/heart.webp"
                 alt="Mental Wellness"
                 className="w-[233px] h-[185px]"
               />
@@ -55,21 +55,21 @@ function Footer() {
                 <div className="flex gap-x-4">
                   <a href="https://www.linkedin.com/company/easecare/">
                     <img
-                      src="/desktop/footer/link-4.svg"
+                      src="/desktop1/footer/link-4.svg"
                       alt="Share link"
                       className="w-[43px] h-[43px]"
                     />
                   </a>
                   <a href="https://www.facebook.com/easecare.ca">
                     <img
-                      src="/desktop/footer/link-1.svg"
+                      src="/desktop1/footer/link-1.svg"
                       alt="Share link"
                       className="w-[43px] h-[43px]"
                     />
                   </a>
                   <a href="https://www.instagram.com/easecare.ca/">
                     <img
-                      src="/desktop/footer/link-2.svg"
+                      src="/desktop1/footer/link-2.svg"
                       alt="Share link"
                       className="w-[43px] h-[43px]"
                     />
@@ -91,7 +91,7 @@ function Footer() {
       <div className="relative z-0 mt-5 border-t border-black pt-4">
         <div className=" absolute bottom-[100%]">
           {/* Att<span className="italic">une</span> */}
-          <img src="/desktop/footer/attune.svg" alt="Attune logo" />
+          <img src="/desktop1/footer/attune.svg" alt="Attune logo" />
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center text-[12px] max-w-[1020px] capitalize">
         We would like to acknowledge the traditional, ancestral, and unceded territory of the many First Nations, Metis, and Inuit who have lived and cared for the lands known as Canada for generations. We are grateful for the traditional knowledge keepers and elders who are still with us today and those who have gone before us. We make this acknowledgment as an act of reconciliation and gratitude to those whose territory we reside on.

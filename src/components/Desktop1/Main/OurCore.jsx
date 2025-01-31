@@ -11,19 +11,19 @@ function OurCoreValues() {
   const testimonials = [
     {
       bg: "bg-[#E5FF7D]",
-      img: "/desktop/our-core/core1.svg",
+      img: "/desktop1/our-core/core1.svg",
       title: "You Deserve Connection",
       body: "Navigating university life or starting a career? We’re here for you. Our platform creates a safe, open space for you to talk about what matters to you, no matter how big or small.",
     },
     {
       bg: "bg-[#FFA8ED]",
-      img: "/desktop/our-core/core2.svg",
+      img: "/desktop1/our-core/core2.svg",
       title: "No Labels, Just Support",
       body: "No diagnosis needed—just real conversations. Whether you're feeling stressed, overwhelmed, or just want to share your thoughts, we’re ready to listen.",
     },
     {
       bg: "bg-[#6FE0D1]",
-      img: "/desktop/our-core/core3.svg",
+      img: "/desktop1/our-core/core3.svg",
       title: "Affordable & Accessible",
       body: "Support that fits your budget and schedule. Designed for students and young professionals, we ensure connection is easy and affordable anytime, anywhere.",
     },

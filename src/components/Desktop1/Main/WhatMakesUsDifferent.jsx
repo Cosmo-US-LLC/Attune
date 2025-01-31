@@ -4,35 +4,35 @@ const features = [
     title: "Compassionate Listeners",
     description:
       "Our trained, non-judgmental Listeners provide a safe space for you to share your thoughts, feelings, and experiences without fear of judgment. You’ll always feel heard and supported.",
-    icon: "/desktop/what-makes/card-1.svg", // Replace with an actual image or SVG if needed
+    icon: "/desktop1/what-makes/card-1.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 2,
     title: "Accessible Anytime, Anywhere",
     description:
       "Whether you're at home or on the go, you can connect with a Listener from anywhere, at any time. Our platform is available to support you whenever you need it.",
-    icon: "/desktop/what-makes/card-2.svg", // Replace with an actual image or SVG if needed
+    icon: "/desktop1/what-makes/card-2.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 3,
     title: "Evidence-Based Approach",
     description:
       "Our services are grounded in real, measurable outcomes. We focus on providing practical, effective support for a range of emotional and mental health needs, backed by data-driven results.",
-    icon: "/desktop/what-makes/card-3.svg", // Replace with an actual image or SVG if needed
+    icon: "/desktop1/what-makes/card-3.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 4,
     title: <>No Stigma,<br />Just Support</>,
     description:
       "We are committed to breaking down the barriers of traditional mental health care. There’s no need for clinical intervention—just real, meaningful conversations when you need them most.",
-    icon: "/desktop/what-makes/card-4.svg", // Replace with an actual image or SVG if needed
+    icon: "/desktop1/what-makes/card-4.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 5,
     title: "Privacy and Confidentiality",
     description:
       "Your well-being and privacy are our top priority. All conversations are confidential, ensuring that you can speak freely and openly without concerns.",
-    icon: "/desktop/what-makes/card-5.svg", // Replace with an actual image or SVG if needed
+    icon: "/desktop1/what-makes/card-5.svg", // Replace with an actual image or SVG if needed
   },
 ];
 
@@ -77,7 +77,7 @@ function WhatMakesUsDifferent() {
               Connect Now
             </button>
           </a>
-          <img src="/desktop/what-makes/sitting-girl.svg" alt="Sitting girl" className="absolute max-xl:-right-[10%] right-0 z-0 max-xl:bottom-[300%] -bottom-1" />
+          <img src="/desktop1/what-makes/sitting-girl.svg" alt="Sitting girl" className="absolute max-xl:-right-[10%] right-0 z-0 max-xl:bottom-[300%] -bottom-1" />
         </div>
       </div>
     </div>

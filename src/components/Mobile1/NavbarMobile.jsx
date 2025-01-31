@@ -43,7 +43,7 @@ function NavbarMobile() {
                     <SheetTitle>
                       <a href="/" onClick={()=>setSideOpen(false)}>
                         <img
-                          src="/mobile/logo.svg"
+                          src="/mobile1/logo.svg"
                           alt="Attune Logo"
                           className="w-[83px] h-[44px] object-contain"
                         />
@@ -72,21 +72,21 @@ function NavbarMobile() {
                           <div className="flex flex-row items-center justify-center gap-4">
                             <a href="https://www.linkedin.com/company/easecare/">
                               <img
-                                src="/mobile/footer/linkedIn.svg"
+                                src="/mobile1/footer/linkedIn.svg"
                                 alt="linkedIn"
                                 className=""
                               />
                             </a>
                             <a href="https://www.facebook.com/easecare.ca">
                               <img
-                                src="/mobile/footer/facebook.svg"
+                                src="/mobile1/footer/facebook.svg"
                                 alt="facebook"
                                 className=""
                               />
                             </a>
                             <a href="https://www.instagram.com/easecare.ca/">
                               <img
-                                src="/mobile/footer/instagram.svg"
+                                src="/mobile1/footer/instagram.svg"
                                 alt="instagram"
                                 className=""
                               />
@@ -129,7 +129,7 @@ function NavbarMobile() {
 
               <a href="/">
                 <img
-                  src="/mobile/logo.svg"
+                  src="/mobile1/logo.svg"
                   alt="Attune Logo"
                   className="w-[83px] h-[44px] object-contain"
                 />

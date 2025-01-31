@@ -12,57 +12,49 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-function OurCore() {
-  const values = [
+function Testimonials() {
+  const testimonials = [
     {
       bg: "bg-[#E5FF7D]",
-      img: "/mobile/ourCore/core1.svg",
-      title: "You Deserve Connection",
-      body: "Navigating university life or starting a career? We’re here for you. Our platform creates a safe, open space for you to talk about what matters to you, no matter how big or small.",
+      img: "/mobile1/testimonials/test1.webp",
+      title: "Jake, 24",
+      body: '"Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference."',
     },
     {
-      bg: "bg-[#FFA8ED]",
-      img: "/mobile/ourCore/core2.svg",
-      title: "No Labels, Just Support",
-      body: "No diagnosis needed—just real conversations. Whether you're feeling stressed, overwhelmed, or just want to share your thoughts, we’re ready to listen.",
+      bg: "bg-[#F097DD]",
+      img: "/mobile1/testimonials/test2.webp",
+      title: "Jessica, 45",
+      body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
-      bg: "bg-[#6FE0D1]",
-      img: "/mobile/ourCore/core3.svg",
-      title: "Affordable & Accessible",
-      body: "Support that fits your budget and schedule. Designed for students and young professionals, we ensure connection is easy and affordable anytime, anywhere.",
+      bg: "bg-[#FF6F61]",
+      img: "/mobile1/testimonials/test3.webp",
+      title: "John, 72",
+      body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
     },
   ];
 
   return (
     <div className="bg-[#F4EFEA] py-[30px] px-5 space-y-6">
-      <h1 className="font-miniature text-[38px]">Our Core Values</h1>
+      <h1 className="font-miniature text-[38px]">Testimonials</h1>
 
-      <Carousel className="">
+      <Carousel>
         <CarouselContent>
-          {values?.map((test, id) => (
+          {testimonials?.map((test, id) => (
             <CarouselItem key={id} className="basis-1/1 w-full">
-              <div
-                className={"max-w-[263px] mx-auto border border-black rounded-[12px] p-5 " + test?.bg}
-              >
-                <img
-                  src={test?.img}
-                  alt="person"
-                  className="w-[66.5px] h-[66.5px] object-contain rounded-full mb-[15px]"
-                />
+                <div className={"border border-black rounded-[12px] p-5 " + test?.bg}>
+                    <img src={test?.img} alt="person" className="w-[60px] h-[60px] object-contain rounded-full mb-[28px]" />
 
-                <div className="space-y-[10px] pb-5">
-                  <h3 className="font-miniature text-[24px] leading-[28px]">
-                    {test?.title}
-                  </h3>
-                  <p className="text-[15px] leading-[20px]">{test?.body}</p>
+                    <div className="space-y-[10px] pb-5">
+                      <h3 className="font-miniature text-[32px]">{test?.title}</h3>
+                      <p className="text-[15px] leading-[20px]">{test?.body}</p>
+                    </div>
                 </div>
-              </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="border border-black disabled:border-neutral-500 bg-white left-0" />
-        <CarouselNext className="border border-black disabled:border-neutral-500 bg-white right-0" />
+        <CarouselPrevious className="border border-black disabled:hidden bg-white -left-[15px]" />
+        <CarouselNext className="border border-black disabled:hidden bg-white -right-[15px]" />
       </Carousel>
       {/* <div className="relative">
         <Swiper
@@ -79,7 +71,7 @@ function OurCore() {
           slidesPerView={1}
           className="swiper-container !min-h-[320px]"
         >
-          {values?.map((test, id) => (
+          {testimonials?.map((test, id) => (
             <SwiperSlide key={id} className="basis-1/1 w-full">
               <div
                 className={"border border-black rounded-[12px] p-5 " + test?.bg}
@@ -101,14 +93,14 @@ function OurCore() {
 
         <button className="swiper-button-prev-tes z-[80] rotate-[180deg] !w-[30px] !h-[30px] text-white rounded-full absolute -left-3 top-1/2 transform bg-[#fff] -translate-y-1/2">
           <img
-            src="/mobile/whatMakes/arrow.png"
+            src="/mobile1/whatMakes/arrow.png"
             className="h-[30px] w-[30px]"
             alt=""
           />
         </button>
         <button className="swiper-button-next-tes z-[80] !w-[30px] !h-[30px]  text-white rounded-full absolute -right-3 top-1/2 transform bg-[#fff] -translate-y-1/2">
           <img
-            src="/mobile/whatMakes/arrow.png"
+            src="/mobile1/whatMakes/arrow.png"
             className="h-[30px] w-[30px]"
             alt=""
           />
@@ -118,4 +110,4 @@ function OurCore() {
   );
 }
 
-export default OurCore;
+export default Testimonials;

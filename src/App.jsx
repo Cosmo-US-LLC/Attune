@@ -1,11 +1,11 @@
 import "./App.css";
-import Navbar from "./components/Desktop/Navbar";
-import Footer from "./components/Desktop/Footer";
-import NavbarMobile from "./components/Mobile/NavbarMobile";
-import FooterMobile from "./components/Mobile/FooterMobile";
+import Navbar from "./components/Desktop1/Navbar";
+import Footer from "./components/Desktop1/Footer";
+import NavbarMobile from "./components/Mobile1/NavbarMobile";
+import FooterMobile from "./components/Mobile1/FooterMobile";
 
-import HomeDesktop from "./components/Desktop/Main";
-import HomeMobile from "./components/Mobile/Main";
+import HomeDesktop from "./components/Desktop1/Main";
+import HomeMobile from "./components/Mobile1/Main";
 
 import { BrowserRouter, Routes, Route } from "react-router";
 

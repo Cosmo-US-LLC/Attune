@@ -1,44 +1,44 @@
 // import Image from "next/image";
-// import heal from "@/public/desktop/growth/heal.svg";
-// import happyTree from "@/public/desktop/growth/happy-tree.svg";
-// import cupOfCoffe from "@/public/desktop/growth/cup-of-coffe.svg";
+// import heal from "@/public/desktop1/growth/heal.svg";
+// import happyTree from "@/public/desktop1/growth/happy-tree.svg";
+// import cupOfCoffe from "@/public/desktop1/growth/cup-of-coffe.svg";
 
 const gridData = [
   {
     id: 1,
     text: "", // We believe in personal growth.
     bgColor: false,
-    image: "/desktop/growth/weBelieve.svg",
+    image: "/desktop1/growth/weBelieve.svg",
   },
   {
     id: 2,
     text: "",
     bgColor: "bg-white",
-    image: "/desktop/growth/heal.svg",
+    image: "/desktop1/growth/heal.svg",
   },
   {
     id: 3,
     text: "", // <>Take a<br/>mental break</>
     bgColor: false,
-    image: "/desktop/growth/takeMental.svg",
+    image: "/desktop1/growth/takeMental.svg",
   },
   {
     id: 4,
     text: "",
     bgColor: "bg-white",
-    image: "/desktop/growth/happy-tree.svg",
+    image: "/desktop1/growth/happy-tree.svg",
   },
   {
     id: 5,
     text: "", // Take time to nurture your mind.
     bgColor: false,
-    image: "/desktop/growth/takeTime.svg",
+    image: "/desktop1/growth/takeTime.svg",
   },
   {
     id: 6,
     text: "",
     bgColor: "bg-white",
-    image: "/desktop/growth/cup-of-coffe.svg",
+    image: "/desktop1/growth/cup-of-coffe.svg",
   },
 ];
 

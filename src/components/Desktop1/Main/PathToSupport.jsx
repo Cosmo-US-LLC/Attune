@@ -8,7 +8,7 @@ function PathToSupport() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-6">
           <div className="col-span-2"></div>
           <YourPathCard
-            img="/desktop/your-path/path-to-support-1.webp"
+            img="/desktop1/your-path/path-to-support-1.webp"
             title="Seeking Connection?"
             classes="bg-[#38AB9B] text-white col-span-4"
             points={[
@@ -24,7 +24,7 @@ function PathToSupport() {
           />
 
           <YourPathCard
-            img="/desktop/your-path/path-to-support-2.webp"
+            img="/desktop1/your-path/path-to-support-2.webp"
             imgClass="bg-[#00FBFC] rounded-[30px] border border-black"
             title="Facing Mental Barriers?"
             classes="bg-[#F097DD] text-black col-span-4"
@@ -43,7 +43,7 @@ function PathToSupport() {
 
           {/* Card 3 */}
           {/* <YourPathCard
-            img="/desktop/your-path/path-to-support-3.webp"
+            img="/desktop1/your-path/path-to-support-3.webp"
             title="Looking for Extra Support?"
             classes="bg-[#FF6F61] text-white"
             points={[
@@ -92,7 +92,7 @@ function YourPathCard({ img, imgClass = "", title, classes, points }) {
               key={id}
               className="capitalize"
               style={{
-                listStyleImage: "url(/desktop/your-path/list-disc.svg)",
+                listStyleImage: "url(/desktop1/your-path/list-disc.svg)",
               }}
             >
               <strong>{point?.title}:</strong> {point?.body}

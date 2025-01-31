@@ -9,7 +9,7 @@ function YourPath() {
         <p className='font-miniature text-center text-[38px]'>Your Path to Support</p>
       
         <div className='space-y-5'>
-            <SupportCards bg="bg-[#38AB9B]" img="/mobile/yourPath/seeking1.webp" title="Seeking Connection?" points={[
+            <SupportCards bg="bg-[#38AB9B]" img="/mobile1/yourPath/seeking1.webp" title="Seeking Connection?" points={[
                 {
                     title: "Loneliness",
                     body: "People Craving Connection And A Listening Ear."
@@ -20,7 +20,7 @@ function YourPath() {
                 }
             ]} />
             
-            <SupportCards bg="bg-[#F097DD]" img="/mobile/yourPath/seeking2.webp" title="Facing Mental Barriers?" points={[
+            <SupportCards bg="bg-[#F097DD]" img="/mobile1/yourPath/seeking2.webp" title="Facing Mental Barriers?" points={[
                 {
                     title: "Mental Health Barriers:",
                     body: " Individuals facing mental health challenges but hesitant to seek traditional clinical care due to stigma, cost, or rigidity."
@@ -31,7 +31,7 @@ function YourPath() {
                 }
             ]} />
             
-            {/* <SupportCards bg="bg-[#FF6F61]" img="/mobile/yourPath/seeking3.webp" title="Seeking Connection?" points={[
+            {/* <SupportCards bg="bg-[#FF6F61]" img="/mobile1/yourPath/seeking3.webp" title="Seeking Connection?" points={[
                 {
                     title: "Loneliness",
                     body: "People Craving Connection And A Listening Ear."
@@ -60,7 +60,7 @@ function SupportCards({bg, img, title, points}) {
                 {points?.map((point, id) => (
                     <li key={id} className='capitalize'
                         style={{
-                            listStyleImage: "url(/mobile/yourPath/list-disc.svg)"
+                            listStyleImage: "url(/mobile1/yourPath/list-disc.svg)"
                         }}
                     >
                         <strong>{point?.title}:</strong> {point?.body}
