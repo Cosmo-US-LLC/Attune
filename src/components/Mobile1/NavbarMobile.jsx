@@ -12,6 +12,27 @@ import {
 function NavbarMobile() {
   const [sideOpen, setSideOpen] = useState(false);
 
+  const handleClick = (e, targetId, offset) => {
+    e.preventDefault();
+  
+    setSideOpen(false);
+  
+    setTimeout(() => {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        // Calculate the position with offset
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - offset;
+  
+        // Smooth scroll with offset applied
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }, 300);
+  };
+
   return (
     <>
       <div className="pb-[3.5rem]">
@@ -43,9 +64,9 @@ function NavbarMobile() {
                     <SheetTitle>
                       <a href="/" onClick={()=>setSideOpen(false)}>
                         <img
-                          src="/mobile1/logo.svg"
+                          src="/mobile1/feel-attune-logo.webp"
                           alt="Attune Logo"
-                          className="w-[83px] h-[44px] object-contain"
+                          className="w-[140px] h-[60px] object-contain"
                         />
                       </a>
                     </SheetTitle>
@@ -53,7 +74,7 @@ function NavbarMobile() {
                   </SheetHeader>
                   <div className="relative bg-[#E5DDD4] py-[30px] grow overflow-y-auto">
                     <div className="relative z-10 flex flex-col h-full">
-                      <div className="grow flex flex-col justify-between">
+                      <div className="flex flex-col justify-between grow">
                         <div className="flex flex-row items-start justify-start">
                           <h1 className="text-left font-miniature text-[38px] leading-[48px]">
                             Talk to a <br />
@@ -62,13 +83,13 @@ function NavbarMobile() {
                         </div>
                         <div className="relative mt-8">
                           <div className="flex flex-col gap-4 font-[500]">
-                            <a href={"#Mpathtosupport2"} onClick={()=>setSideOpen(false)}>Path To Support</a>
-                            <a href={"#Mhowitworks2"} onClick={()=>setSideOpen(false)}>How It Works</a>
-                            <a href={"#Mourapproach2"} onClick={()=>setSideOpen(false)}>Our Approach</a>
-                            <a href={"#Mfaqs2"} onClick={()=>setSideOpen(false)}>FAQs</a>
+                            <a href={"#path-to-support"} onClick={(e) => handleClick(e, "mobile-path-to-support", 50)}>Path To Support</a>
+                            <a href={"#how-it-works"} onClick={(e) => handleClick(e, "mobile-how-it-works", 50)}>How It Works</a>
+                            <a href={"#why-choose-a-listener"} onClick={(e) => handleClick(e, "mobile-why-choose-a-listener", 50)}>Our Approach</a>
+                            <a href={"#Mfaqs2"} onClick={(e) => handleClick(e, "mobile-FAQs", 50)}>FAQs</a>
                           </div>
                         </div>
-                        <div className="flex justify-between items-center py-0 mt-6">
+                        <div className="flex items-center justify-between py-0 mt-6">
                           <div className="flex flex-row items-center justify-center gap-4">
                             <a href="https://www.linkedin.com/company/easecare/">
                               <img
@@ -93,19 +114,19 @@ function NavbarMobile() {
                             </a>
                           </div>
 
-                          <a href="https://innovacare.tech/listenerhub/signup">
+                           {/* <a href="https://innovacare.tech/listenerhub/signup">
                             <button className="bg-[#5200FF] text-white px-[10px] h-[38px] my-0 min-w-[112px] rounded-full text-[15px] whitespace-nowrap">
                               Get Started
                             </button>
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                       <div>
-                        <p className="mt-8 text-left text-xs">
-                          © 2024 Attune. All rights reserved
+                        <p className="mt-8 text-xs text-left">
+                          © 2025 Attune. All rights reserved
                         </p>
                         <div className="my-4 border-[0.5px] border-[black] w-full" />
-                        <p className="mt-4 text-left text-xs capitalize">
+                        <p className="mt-4 text-xs text-left capitalize">
                           We would like to acknowledge the traditional,
                           ancestral, and unceded territory of the many First
                           Nations, Metis, and Inuit who have lived and cared for
@@ -129,9 +150,9 @@ function NavbarMobile() {
 
               <a href="/">
                 <img
-                  src="/mobile1/logo.svg"
+                  src="/mobile1/feel-attune-logo.webp"
                   alt="Attune Logo"
-                  className="w-[83px] h-[44px] object-contain"
+                  className="w-[105px]   object-contain"
                 />
               </a>
             </div>

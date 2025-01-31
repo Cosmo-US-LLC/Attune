@@ -24,20 +24,24 @@ function AnyQuestions() {
       answer: (
         <>
           The Listeners offer a supportive and judgment-free space to share your
-          thoughts and feelings. Listeners can help you:
-          <ul className="list-disc pl-7">
+          thoughts and feelings. Listeners can help you: <br/><br/>
+          <ul className="pl-6 list-disc">
             <li>
               Reframe experiences and gain fresh perspective and clarity about
               your challenges.
             </li>
+            <br/>
             <li>
               Set and achieve personal goals, such as improving confidence or
               managing life transitions.
             </li>
+            <br/>
             <li>
               Explore strategies to enhance emotional well-being and motivation.
             </li>
+            <br/>
             <li>Build resilience and navigate toward your desired outcomes.</li>
+            <br/>
           </ul>
           However, it’s important to note that Listeners are not licensed mental
           health professionals. They do not diagnose, treat mental illnesses, or
@@ -45,9 +49,10 @@ function AnyQuestions() {
           emotional distress, trauma, or clinical conditions such as anxiety,
           depression, or addiction, we recommend seeking support from a
           qualified therapist or counselor.
-          <br />
+          <br /><br/>
           Listeners is here to complement—not replace—professional mental health
           care, offering empathetic support for everyday challenges.
+          <br/>
         </>
       ),
     },
@@ -64,14 +69,14 @@ function AnyQuestions() {
   ]
 
   return (
-    <div id="Mfaqs2" className="bg-white px-5 py-[30px] space-y-6">
+    <div id="mobile-FAQs" className="bg-white px-5 py-[30px] space-y-6">
       <h1 className="font-miniature text-[38px] text-center">Any Questions?</h1>
 
       <Accordion type="single" collapsible>
         {questions?.map((question) => (
           <AccordionItem key={question?.id} value={question?.id} className={"px-[14px] data-[state=open]:bg-[#e5ff7d] duration-200 border-black " + (question?.id == "05" && "border-transparent")}>
             <AccordionTrigger className="">
-              <div className="flex gap-2 items-center">
+              <div className="flex items-center gap-2">
                 <span className="text-[#95ADF0] text-[24px] font-bold leading-[120%]">{question?.id}</span>
                 <span className="text-left text-[16px] font-bold leading-[22px]">{question?.question}</span>
               </div>

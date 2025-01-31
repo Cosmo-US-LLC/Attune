@@ -15,7 +15,7 @@ function AsSeenIn() {
 
         <div className="flex items-center justify-center max-xl:space-x-[33px] space-x-[73px] rounded-[30px] bg-white py-[33px] px-[51px] w-fit">
           
-          <img src={"/desktop1/as-seen-in/time.svg"} alt="Time Logo" className="max-xl:h-[25px] h-[32px] w-[102px]" />
+          <img src={"/desktop1/as-seen-in/logo1.webp"} alt="Time Logo" className="max-xl:h-[25px] h-[32px] w-[102px]" />
           <img src= {"/desktop1/as-seen-in/news-nation.svg"} alt="NewsNation Logo" className="max-xl:h-[25px] h-[41px] w-[135px]" />
           <img src={"/desktop1/as-seen-in/axios.svg"} alt="Axios Logo" className="max-xl:h-[20px] h-[27px] w-[106px]" />
           <img src={"/desktop1/as-seen-in/bbc.svg"} alt="BBC Logo" className="max-xl:h-[25px] h-[33px] w-[116px]" />

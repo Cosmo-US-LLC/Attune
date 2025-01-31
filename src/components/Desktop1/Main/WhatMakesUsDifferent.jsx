@@ -1,30 +1,32 @@
 const features = [
   {
     id: 1,
-    title: "Compassionate Listeners",
+    title: (<>
+    Real Conversations,<br/> Real Impact
+    </>),
     description:
-      "Our trained, non-judgmental Listeners provide a safe space for you to share your thoughts, feelings, and experiences without fear of judgment. You’ll always feel heard and supported.",
+      "Attune connects you to compassionate listeners who provide a supportive environment for sharing your thoughts and feelings. It's a space to gain clarity, set goals, and explore strategies for emotional well-being.",
     icon: "/desktop1/what-makes/card-1.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 2,
-    title: "Accessible Anytime, Anywhere",
+    title: "Accessible and Affordable Support",
     description:
-      "Whether you're at home or on the go, you can connect with a Listener from anywhere, at any time. Our platform is available to support you whenever you need it.",
+      "No more barriers like high costs or long wait times. Attune offers connection to immediate, non-clinical emotional support that fits your schedule and budget.",
     icon: "/desktop1/what-makes/card-2.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 3,
-    title: "Evidence-Based Approach",
+    title: "Focused on Everyday Challenges",
     description:
-      "Our services are grounded in real, measurable outcomes. We focus on providing practical, effective support for a range of emotional and mental health needs, backed by data-driven results.",
+      "While therapy addresses severe mental health conditions, this service is ideal for managing everyday stress, coping with life transitions, or building self-confidence.",
     icon: "/desktop1/what-makes/card-3.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 4,
     title: <>No Stigma,<br />Just Support</>,
     description:
-      "We are committed to breaking down the barriers of traditional mental health care. There’s no need for clinical intervention—just real, meaningful conversations when you need them most.",
+      "Seeking support has never been easier. Attune normalizes conversations about mental wellness, creating a space that prioritizes connection and growth over clinical formality.",
     icon: "/desktop1/what-makes/card-4.svg", // Replace with an actual image or SVG if needed
   },
   {
@@ -38,7 +40,7 @@ const features = [
 
 function WhatMakesUsDifferent() {
   return (
-    <div className="bg-[#f4efea]">
+    <div className="bg-[#f4efea]" id="what-make-us-different">
       <div className="max-w-[1440px] p-[114px] mx-auto space-y-[39px]">
         {/* Title Section */}
         <h1 className="text-[76px] leading-[76px] font-miniature text-left">
@@ -55,7 +57,7 @@ function WhatMakesUsDifferent() {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="bg-white border border-black rounded-[30px] p-[23px] pt-[40px] space-y-[22]"
+              className="bg-white border border-black rounded-[30px] p-[18px] pt-[40px] space-y-[22]"
             >
               <img src={feature.icon} alt="Card Icon" className="w-[55px] h-[55px] mb-5" />
               <h3 className="font-miniature text-[30px] leading-[39px] pb-2">

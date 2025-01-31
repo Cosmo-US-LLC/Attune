@@ -1,8 +1,8 @@
 import "./App.css";
-import Navbar from "./components/Desktop3/Navbar";
-import Footer from "./components/Desktop3/Footer";
-import NavbarMobile from "./components/Mobile3/NavbarMobile";
-import FooterMobile from "./components/Mobile3/FooterMobile";
+import Navbar from "./components/Desktop1/Navbar";
+import Footer from "./components/Desktop1/Footer";
+import NavbarMobile from "./components/Mobile1/NavbarMobile";
+import FooterMobile from "./components/Mobile1/FooterMobile";
 
 import HomeDesktop from "./components/Desktop1/Main";
 import HomeMobile from "./components/Mobile1/Main";

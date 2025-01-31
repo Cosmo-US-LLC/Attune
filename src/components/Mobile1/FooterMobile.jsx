@@ -2,45 +2,32 @@ import React from "react";
 
 const handleScroll = (event, targetId, offset) => {
   event.preventDefault();
-
   const targetElement = document.getElementById(targetId);
-  console.log(targetElement);
-
   if (targetElement) {
-    // Position relative to the document
-    const elementPosition =
-      targetElement.getBoundingClientRect().top + window.scrollY;
-
-    // Adjust position with offset
-    const offsetPosition = elementPosition - offset;
-
-    console.log("Element Position Relative to Document:", elementPosition);
-    console.log("Offset Position:", offsetPosition);
-
-    // Smooth scroll to the target position
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - offset;
     window.scrollTo({
       top: offsetPosition,
       behavior: "smooth",
     });
-  } else {
-    console.error(`Element with ID "${targetId}" not found`);
   }
+  setMenuOpen(false);
 };
 
 function FooterMobile() {
   return (
     <div className="relative min-h-[738px] bg-[#E5DDD4] px-5 py-[30px] overflow-hidden">
       <div className="relative z-10">
-        <div className="flex flex-row items-start justify-start relative">
+        <div className="relative flex flex-row items-start justify-start">
           <h1 className="text-left font-miniature text-[38px]">
             Talk to a <br />
             professional
           </h1>
           <a href="/">
             <img
-              src="/mobile1/logo_footer.svg"
+              src="/mobile1/feel-attune-logo.webp"
               alt="Logo"
-              className="absolute top-0 right-0 w-[81px] h-[43px]"
+              className="absolute top-0 right-0 w-[120px] h-[38px]"
             />
           </a>
         </div>
@@ -50,18 +37,27 @@ function FooterMobile() {
           Whether you’re managing stress, navigating life transitions, or simply
           craving a connection, we’re here to help.
         </p>
-        <div className="relative mt-8 flex flex-row justify-between items-center">
+        <div className="relative flex flex-row items-center justify-between mt-8">
           <div className="flex flex-col gap-4 font-[500]">
-            <a href="#Mpathtosupport2">
+            <a
+              href="#path-to-support"
+              onClick={(e) => handleScroll(e, "mobile-path-to-support", 90)}
+            >
               Path To Support
             </a>
-            <a href="#Mhowitworks2">
+            <a
+              href="#how-it-works"
+              onClick={(e) => handleScroll(e, "mobile-how-it-works", 90)}
+            >
               How It Works
             </a>
-            <a href="#Mourapproach2">
+            <a
+              href="#why-choose-a-listener"
+              onClick={(e) => handleScroll(e, "mobile-why-choose-a-listener", 90)}
+            >
               Our Approach
             </a>
-            <a href="#Mfaqs2">
+            <a href="#FAQs" onClick={(e) => handleScroll(e, "mobile-FAQs", 90)}>
               FAQs
             </a>
           </div>
@@ -71,7 +67,7 @@ function FooterMobile() {
             className="w-[134px] h-[107px]"
           />
         </div>
-        <div className="flex justify-between items-center py-0 mt-6">
+        <div className="flex items-center justify-between py-0 mt-6">
           <div className="flex flex-row items-center justify-center gap-4">
             <a href="https://www.linkedin.com/company/easecare/">
               <img
@@ -96,15 +92,15 @@ function FooterMobile() {
             </a>
           </div>
 
-          <a href="https://innovacare.tech/listenerhub/signup">
+          {/* <a href="https://innovacare.tech/listenerhub/signup">
             <button className="bg-[#5200FF] text-white px-[10px] h-[38px] my-0 min-w-[112px] rounded-full text-[15px] whitespace-nowrap">
               Get Started
             </button>
-          </a>
+          </a> */}
         </div>
-        <p className="mt-5 text-left">© 2024 Attune. All Rights Reserved</p>
+        <p className="mt-5 text-left">© 2025 Attune. All Rights Reserved</p>
         <div className="my-4 border-[0.5px] border-[black] w-full" />
-        <p className="mt-4 text-left text-[14px] capitalize">
+        <p className="mt-4 text-left text-[14px] capitalize w-[340px]">
           We would like to acknowledge the traditional, ancestral, and unceded
           territory of the many First Nations, Metis, and Inuit who have lived
           and cared for the lands known as Canada for generations. We are
@@ -114,7 +110,7 @@ function FooterMobile() {
           whose territory we reside on.
         </p>
       </div>
-      <div className="absolute top-0 left-0 w-full h-full z-0 flex items-center">
+      <div className="absolute top-0 left-0 z-0 flex items-center w-full h-full">
         <h1 className="font-miniature text-center w-full text-[#ded6ce] text-[35vw] z-0">
           Att<span className="italic">une</span>
         </h1>

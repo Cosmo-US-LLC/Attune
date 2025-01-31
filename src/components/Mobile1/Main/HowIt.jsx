@@ -3,11 +3,11 @@ import React from 'react'
 
 function HowIt() {
   return (
-    <div id='Mhowitworks2' className='bg-[#E5FF7D] py-[30px] px-5 space-y-6'>
+    <div id='mobile-how-it-works' className='bg-[#E5FF7D] py-[30px] px-5 space-y-6'>
       <h1 className='font-miniature text-center text-[38px] '>How it Works</h1>
 
       <div className='space-y-5'>
-        <HowItCards id="01" title="Sign Up" body="Create your profile in just a few clicks. It’s quick, simple, and all about you.">
+        <HowItCards id="01" title="Sign Up" body="Create Your Profile In Just A Few Clicks. It’s Quick, Simple, And All About You.">
             <svg width="60" height="37" viewBox="0 0 60 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="mask0_5_1341" style={{maskType: "luminance"}} maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="37">
                 <path d="M0.231689 0.833496H59.6305V36.8498H0.231689V0.833496Z" fill="white"/>
@@ -24,7 +24,7 @@ function HowIt() {
             </svg>
         </HowItCards>
         
-        <HowItCards id="02" title="Find Your Listener" body="Explore a variety of compassionate, judgment-free Listeners. Choose someone who truly gets you.">
+        <HowItCards id="02" title="Find Your Listener" body="Explore A Variety Of Compassionate, Judgment-Free Listeners. Choose Someone Who Truly Gets You.">
             <svg width="49" height="37" viewBox="0 0 49 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23.1999 9.77758C23.0847 9.77758 22.9716 9.81426 22.8789 9.88356L20.8826 11.3795V10.3115C20.8826 10.016 20.6432 9.77758 20.3476 9.77758H18.922C18.4309 9.77758 18.0304 9.37812 18.0304 8.88695V3.18858C18.0304 2.69741 18.4309 2.29796 18.922 2.29796H28.9044C29.3955 2.29796 29.796 2.69741 29.796 3.18858V8.88695C29.796 9.37812 29.3955 9.77758 28.9044 9.77758H23.1999ZM30.865 8.88695V3.18858C30.865 2.10842 29.9855 1.229 28.9044 1.229H18.922C17.8408 1.229 16.9614 2.10842 16.9614 3.18858V8.88695C16.9614 9.96712 17.8408 10.8455 18.922 10.8455H19.8137V12.4484C19.8137 12.6502 19.9278 12.8357 20.1092 12.9264C20.1846 12.9641 20.2661 12.9824 20.3476 12.9824C20.4618 12.9824 20.5749 12.9467 20.6686 12.8754L23.3782 10.8455H28.9044C29.9855 10.8455 30.865 9.96712 30.865 8.88695Z" fill="#A3CB03"/>
                 <mask id="mask0_5_1359" style={{maskType: "luminance"}} maskUnits="userSpaceOnUse" x="25" y="0" width="24" height="37">
@@ -45,7 +45,7 @@ function HowIt() {
             </svg>
         </HowItCards>
         
-        <HowItCards id="03" title="Connect" body="Open up through voice or video, anytime and anywhere. It’s your safe space to share.">
+        <HowItCards id="03" title="Connect" body="Open Up Through Voice Or Video, Anytime And Anywhere. It’s Your Safe Space To Share.">
             <svg width="33" height="37" viewBox="0 0 33 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.4834 15.6776L14.5166 23.6577L11.4151 20.5511C11.355 20.491 11.2862 20.4441 11.2077 20.4118C11.1293 20.3796 11.0472 20.3627 10.963 20.3627C10.878 20.3627 10.7959 20.3796 10.7175 20.4118C10.639 20.4441 10.5702 20.491 10.5101 20.5511L6.88903 24.178C6.82893 24.2381 6.78276 24.3077 6.75052 24.3861C6.71754 24.4645 6.70142 24.5459 6.70142 24.6309C6.70142 24.7159 6.71754 24.798 6.75052 24.8764C6.78276 24.9548 6.82893 25.0244 6.88903 25.0845L14.0637 32.2724C14.1238 32.3324 14.1927 32.3794 14.2711 32.4116C14.3495 32.4438 14.4308 32.4607 14.5158 32.4607C14.6009 32.4607 14.6822 32.4438 14.7606 32.4116C14.839 32.3794 14.9087 32.3324 14.9687 32.2724L27.0095 20.211C27.0696 20.1509 27.1158 20.0813 27.1488 20.0029C27.181 19.9245 27.1972 19.8424 27.1972 19.7574C27.1972 19.6724 27.181 19.591 27.1488 19.5126C27.1158 19.4335 27.0696 19.3646 27.0095 19.3045L23.3885 15.6776C23.3284 15.6175 23.2595 15.5713 23.1811 15.5391C23.1027 15.5061 23.0214 15.49 22.9363 15.49C22.8513 15.49 22.77 15.5061 22.6916 15.5391C22.6132 15.5713 22.5435 15.6175 22.4834 15.6776ZM14.5166 30.9129L8.24334 24.6294L10.9622 21.9127L14.0637 25.02C14.1245 25.0779 14.1941 25.1219 14.2725 25.1534C14.351 25.1849 14.4316 25.2003 14.5158 25.2003C14.6001 25.2003 14.6815 25.1849 14.7599 25.1534C14.8376 25.1219 14.9072 25.0779 14.9687 25.02L22.9363 17.04L25.6545 19.7574L14.5166 30.9129Z" fill="#A3CB03"/>
                 <mask id="mask0_5_1380" style={{maskType: "luminance"}} maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="37">
@@ -64,7 +64,7 @@ function HowIt() {
 function HowItCards({id, title, body, children}) {
     return (
         <div className='bg-white border border-black p-[14px] rounded-[20px] space-y-[10px]'>
-            <div className='flex justify-between items-center'>
+            <div className='flex items-center justify-between'>
                 <div className='h-[50px] w-[50px] rounded-full bg-[#FF9AE9] text-white font-miniature flex justify-center items-center text-[20px]'>{id}</div>
                 {children}
             </div>

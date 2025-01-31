@@ -11,10 +11,10 @@ function Hero() {
             Your Safe <br /> Space for <br />
             <span className="text-[#5200FF] italic">Support</span>
           </h1>
-          <p className="my-4 text-black max-xl:text-[15px] text-[18px] font-[500] pr-10 max-xl:leading-[20px] leading-[26px]">
+          <p className="w-[539px] my-4 text-black max-xl:text-[15px] text-[18px] font-[500] pr-10 max-xl:leading-[20px] leading-[26px]">
             In a world where 1 in 5 adults experience mental health challenges,
-            Attune offers a revolutionary approach to emotional well-being. Our
-            platform connects you with compassionate Listeners, providing a
+            Attune offers a revolutionary approach to emotional well-being.
+            Attune connects you with compassionate Listeners, providing a
             judgment-free zone for sharing your thoughts and feelings.
           </p>
 

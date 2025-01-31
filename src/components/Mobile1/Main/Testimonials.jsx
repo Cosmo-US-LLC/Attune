@@ -29,13 +29,14 @@ function Testimonials() {
     {
       bg: "bg-[#FF6F61]",
       img: "/mobile1/testimonials/test3.webp",
+      textColor: "text-white",
       title: "John, 72",
       body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
     },
   ];
 
   return (
-    <div className="bg-[#F4EFEA] py-[30px] px-5 space-y-6">
+    <div className="bg-[#F4EFEA] pb-[30px] px-5 space-y-6">
       <h1 className="font-miniature text-[38px]">Testimonials</h1>
 
       <Carousel>
@@ -45,9 +46,9 @@ function Testimonials() {
                 <div className={"border border-black rounded-[12px] p-5 " + test?.bg}>
                     <img src={test?.img} alt="person" className="w-[60px] h-[60px] object-contain rounded-full mb-[28px]" />
 
-                    <div className="space-y-[10px] pb-5">
-                      <h3 className="font-miniature text-[32px]">{test?.title}</h3>
-                      <p className="text-[15px] leading-[20px]">{test?.body}</p>
+                    <div className={`space-y-[10px] pb-5 ${test?.textColor || 'text-black'}`}>
+                      <h3 className={`font-miniature text-[32px] ${test?.textColor || ''}`}>{test?.title}</h3>
+                      <p className={`text-[15px] leading-[20px] ${test?.textColor || ''}`}>{test?.body}</p>
                     </div>
                 </div>
             </CarouselItem>

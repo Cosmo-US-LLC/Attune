@@ -1,18 +1,18 @@
 function HowItWorks() {
   return (
-    <div id="Mhowitworks" className="bg-[#e5ff7d] py-[70px] px-4 space-y-[26px]">
+    <div id="how-it-works" className="bg-[#e5ff7d] py-[70px] px-4 space-y-[26px]"  >
       <h1 className='font-miniature text-center text-[76px] leading-[110px]'>How it Works</h1>
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
-        <HowItCards id="01" title="Sign Up" body="Create your profile in just a few clicks. It’s quick, simple, and all about you.">
+      <div className="grid gap-6 mx-auto max-w-7xl md:grid-cols-3">
+        <HowItCards id="01" title="Sign Up" body="Create Your Profile In Just A Few Clicks. It’s Quick, Simple, And All About You.">
             <img src="/desktop1/how-it/card-1.svg" alt="Hug" className="w-[107px] h-[71px]" />
         </HowItCards>
         
-        <HowItCards id="02" title="Find Your Listener" body="Explore a variety of compassionate, judgment-free Listeners. Choose someone who truly gets you.">
+        <HowItCards id="02" title="Find Your Listener" body="Explore A Variety Of Compassionate, Judgment-Free Listeners. Choose Someone Who Truly Gets You.">
         <img src="/desktop1/how-it/card-2.svg" alt="Talk" className="w-[92px] h-[69px]" />
         </HowItCards>
         
-        <HowItCards id="03" title="Connect" body="Open up through voice or video, anytime and anywhere. It’s your safe space to share.">
+        <HowItCards id="03" title="Connect" body="Open Up Through Voice Or Video, Anytime And Anywhere. It’s Your Safe Space To Share.">
         <img src="/desktop1/how-it/card-3.svg" alt="Schedule" className="w-[82px] h-[73px]" />
         </HowItCards>
       </div>
@@ -30,7 +30,7 @@ function HowItWorks() {
 function HowItCards({ id, title, body, children }) {
   return (
     <div className="bg-white border border-black min-h-[240px] p-[28px] pt-[14px] pr-[14px] rounded-[20px] space-y-[10px]">
-      <div className="flex justify-between items-start">
+      <div className="flex items-start justify-between">
         <div className="h-[71px] w-[71px] mt-4 rounded-full bg-[#FF9AE9] text-white font-miniature flex justify-center items-center text-[30px]">
           {id}
         </div>

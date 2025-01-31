@@ -12,6 +12,8 @@ import Testimonials from './Testimonials'
 import AnyQuestions from './AnyQuestions'
 import WeBelieve from './WeBelieve'
 import OurCore from './OurCore'
+import { List } from 'lucide-react'
+import ListenerMobile from './ListenerMobile'
 
 function HomeMobile() {
   return (
@@ -19,14 +21,16 @@ function HomeMobile() {
       <HeroMobile />
       <AsSeen />
       <YourPath />
+      <ListenerMobile/>
       <HowIt />
       <NoNeed />
       <WhatMakes />
+      <Testimonials />
       <WhyListeners />
-      <OurCore />
+      {/* <OurCore /> */}
       {/* <MeetFew /> */}
       <WhyChoose />
-      <Testimonials />
+      
       <AnyQuestions />
       <WeBelieve />
     </div>

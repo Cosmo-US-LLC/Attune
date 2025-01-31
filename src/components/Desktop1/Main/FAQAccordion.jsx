@@ -25,28 +25,29 @@ function FAQAccordion() {
       answer: (
         <>
           The Listeners offer a supportive and judgment-free space to share your
-          thoughts and feelings. Listeners can help you:
+          thoughts and feelings. Listeners can help you: <br /> <br />
           <ul className="list-disc pl-7">
-            <li>
+            <li className="pl-3">
               Reframe experiences and gain fresh perspective and clarity about
               your challenges.
             </li>
-            <li>
+            <li className="pl-3">
               Set and achieve personal goals, such as improving confidence or
               managing life transitions.
             </li>
-            <li>
+            <li className="pl-3">
               Explore strategies to enhance emotional well-being and motivation.
             </li>
-            <li>Build resilience and navigate toward your desired outcomes.</li>
+            <li className="pl-3">Build resilience and navigate toward your desired outcomes.</li>
           </ul>
+          <br />
           However, it’s important to note that Listeners are not licensed mental
           health professionals. They do not diagnose, treat mental illnesses, or
           provide clinical interventions. If you’re experiencing severe
           emotional distress, trauma, or clinical conditions such as anxiety,
           depression, or addiction, we recommend seeking support from a
           qualified therapist or counselor.
-          <br />
+          <br /> <br />
           Listeners is here to complement—not replace—professional mental health
           care, offering empathetic support for everyday challenges.
         </>
@@ -55,7 +56,7 @@ function FAQAccordion() {
     {
       id: "04",
       question: "How much does it cost?",
-      answer: (<>Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, <strong>starting at just $30/hr</strong>. We believe emotional support should be accessible to everyone.</>),
+      answer: (<>Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, <span className="font-bold">starting at just $30/hr</span>. We believe emotional support should be accessible to everyone.</>),
     },
     {
       id: "05",
@@ -66,7 +67,7 @@ function FAQAccordion() {
   ];
 
   return (
-    <div id="Mfaqs" className="bg-[#f4efea]">
+    <div id="FAQs" className="bg-[#f4efea]">
       <div className="max-w-[1440px] mx-auto  px-[130px] py-[107px] space-y-[74px]">
         <h1 className="font-miniature text-[76px] text-center">
           Any Questions?

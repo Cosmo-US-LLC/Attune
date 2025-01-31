@@ -39,16 +39,16 @@ function WhyChooseListener() {
   ]
 
   return (
-    <div id="Mourapproach" className="bg-white p-[105px] space-y-[87px]">
+    <div id="why-choose-a-listener" className="bg-white p-[105px] space-y-[87px]">
       <h1 className="text-[76px] font-miniature text-center">
         Why Choose a Listener?
       </h1>
 
-      <div className="overflow-x-auto max-w-7xl mx-auto">
+      <div className="mx-auto overflow-x-auto max-w-7xl">
         <table className="w-full border-collapse">
-          {/* Table Head */}
+     
           <thead>
-            <tr className="border-b border-black grid grid-cols-10">
+            <tr className="grid grid-cols-10 border-b border-black">
               <th className="p-[20px] text-left text-[20px] font-[500] flex items-center col-span-4">
                 Feature
               </th>
@@ -61,10 +61,10 @@ function WhyChooseListener() {
             </tr>
           </thead>
 
-          {/* Table Body */}
+ 
           <tbody className="font-[500]">
             {features?.map((feature, id) => (
-              <tr key="id" className="border-b border-black grid grid-cols-10">
+              <tr key="id" className="grid grid-cols-10 border-b border-black">
                 <td className="p-[20px] text-[25px] flex items-center col-span-4">
                   {feature?.title}
                 </td>
@@ -90,7 +90,7 @@ function WhyChooseListener() {
                 </td>
               </tr>
             ))}
-            {/* <tr className="border-b border-black grid grid-cols-10">
+            {/* <tr className="grid grid-cols-10 border-b border-black">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Cost
               </td>
@@ -115,7 +115,7 @@ function WhyChooseListener() {
                 Expensive, often requiring insurance.
               </td>
             </tr>
-            <tr className="border-b border-black grid grid-cols-10">
+            <tr className="grid grid-cols-10 border-b border-black">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Focus
               </td>
@@ -140,7 +140,7 @@ function WhyChooseListener() {
                 Severe mental health issues.
               </td>
             </tr>
-            <tr className="border-b border-black grid grid-cols-10">
+            <tr className="grid grid-cols-10 border-b border-black">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Purpose
               </td>

@@ -7,23 +7,45 @@
 
 function ProudlySupporting() {
   return (
-    <div className="bg-[#F4EFEA] max-2xl:px-[100px] px-[150px] py-[50px] w-full">
-      <div className="max-w-[1440px] mx-auto w-full h-full flex flex-row justify-between items-center max-xl:gap-[26px] gap-[43px]">
-        <p className="font-miniature max-xl:text-[26px] text-[30px] text-left">
+    <div className="bg-[#F4EFEA]  max-2xl:px-[100px] px-[150px] py-[50px] w-full">
+      <div className="max-w-[1440px]  mx-auto w-full h-full flex flex-row items-center max-xl:gap-[26px] gap-[73px]">
+        <p className="font-miniature   font-[500] text-[30px] text-left">
           Proudly
           <br />
           Supporting
         </p>
 
-        <div className="flex items-center justify-center max-xl:space-x-[12px] space-x-[24.7px] mr-[32px] rounded-[30px] bg-white py-[25px] px-[31px] w-fit">
-          
-          <img src={"/desktop1/proudly/alberta.svg"} alt="Alberta" className="max-xl:h-[25px] h-[54.3px] w-[131px]" />
-          <img src= {"/desktop1/proudly/alberta-2.svg"} alt="Alberta" className="max-xl:h-[25px] h-[52.2px] w-[110.8px]" />
-          <img src={"/desktop1/proudly/rural.svg"} alt="Rural" className="max-xl:h-[20px] h-[57.6px] w-[140px]" />
-          <img src={"/desktop1/proudly/health.svg"} alt="Addiction &" className="max-xl:h-[25px] h-[49.4px] w-[140px]" />
-          <img src={"/desktop1/proudly/211.svg"} alt="211 Alberta" className="max-xl:h-[25px] h-[50.2px] w-[126.8px]" />
-          <img src={"/desktop1/proudly/npos.svg"} alt="NPO's" className="max-xl:h-[25px] h-[57.6px] w-[112.8px]" />
-           
+        <div className="flex w-full gap-8 items-start justify-between rounded-[30px] bg-white py-[25px] px-[32px] mr-[22px] ">
+          <img
+            src={"/desktop1/proudly/logo1.webp"}
+            alt="Alberta"
+            className="h-[37px] w-[102px]"
+          />
+          <img
+            src={"/desktop1/proudly/logo2.webp"}
+            alt="Alberta"
+            className="h-[37px] w-[129px]"
+          />
+          <img
+            src={"/desktop1/proudly/logo3.webp"}
+            alt="Rural"
+            className="h-[56px] w-[137px]"
+          />
+           <img
+            src={"/desktop1/proudly/logo4.webp"}
+            alt="211 Alberta"
+            className="h-[50px] w-[158px]"
+          />
+          <img
+            src={"/desktop1/proudly/logo5.webp"}
+            alt="NPO's"
+            className="h-[47px] w-[131px]"
+          />
+          <img
+            src={"/desktop1/proudly/logo6.webp"}
+            alt="NPO's"
+            className="h-[57px] w-[112px]"
+          />
         </div>
       </div>
     </div>
