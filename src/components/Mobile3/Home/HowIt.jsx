@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 
 function HowIt() {
     return (
-        <div className='bg-[#E5FF7D] py-[30px] px-5 space-y-6' id='Mhowitworks2'>
+        <div className='bg-[#E5FF7D] py-[30px] px-5 space-y-6' id='mobile-how-it-works'>
             <h1 className='font-miniature text-center text-[38px] '>How it Works</h1>
 
             <div className='space-y-5'>

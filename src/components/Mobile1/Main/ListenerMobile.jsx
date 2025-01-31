@@ -14,22 +14,22 @@ export default function ListenerMobile() {
     {
       img: "/desktop1/listener/tick-circle.webp",
       title: "How a Listener Can Help",
-      body: "Reframing Experiences: Gain a fresh perspective and clarity on your challenges.  ",
+      body: <p><strong>Reframing Experiences: </strong>Gain a fresh perspective and clarity on your challenges.</p>,
     },
     {
       img: "/desktop1/your-path/socialPressures.png",
       title: "How a Listener Can Help",
-      body: "Setting and Achieving Goals: Boost your confidence, manage transitions, and achieve personal milestones.  ",
+      body: <p><strong>Setting and Achieving Goals: </strong>Boost your confidence, manage transitions, and achieve personal milestone.</p>,
     },
     {
       img: "/desktop1/your-path/digitalOverload.png",
       title: "How a Listener Can Help",
-      body: "Emotional well-being: Explore strategies to enhance your motivation and overall well-being. ",
+      body: <p><strong>Emotional well-being: </strong>Explore strategies to enhance your motivation and overall well-being.</p>,
     },
     {
       img: "/desktop1/your-path/relationshipChallenges.png",
       title: "How a Listener Can Help",
-      body: "Building Resilience: Strengthen your ability to navigate life’s hurdles and move toward your desired outcomes.",
+      body: <p><strong>Building Resilience: </strong>Strengthen your ability to navigate life’s hurdles and move towards your desired outcomes.</p>,
     },
   ];
   return (

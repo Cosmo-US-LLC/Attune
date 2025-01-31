@@ -1,6 +1,4 @@
 function Navbar() {
-
-  
   const handleScroll = (event, targetId, offset) => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
@@ -20,14 +18,16 @@ function Navbar() {
       <div className="fixed top-0 w-[100%] z-[99]">
         <nav className="bg-white h-[99px] flex-shrink-0 shadow-sm">
           <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
-            <a href="/" className="relative flex flex-col items-center">
-            <a href="/" className="min-w-[200px] flex max-xl:items-center items-end">
-            <img
-              src="/desktop1/feel-attune-logo.webp"
-              alt="Attune Logo"
-              className="w-[196px] "
-            />
-          </a>
+            <a href="#" className="relative flex flex-col items-center">
+              <div
+                className="min-w-[200px] flex max-xl:items-center items-end"
+              >
+                <img
+                  src="/desktop1/feel-attune-logo.webp"
+                  alt="Attune Logo"
+                  className="w-[196px] "
+                />
+              </div>
               {/* <h1 className="relative font-miniature">
                 <span className="text-black font-[400] text-[46.167px] leading-normal">
                   Feel Att

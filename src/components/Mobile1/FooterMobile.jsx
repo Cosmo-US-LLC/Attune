@@ -23,7 +23,7 @@ function FooterMobile() {
             Talk to a <br />
             professional
           </h1>
-          <a href="/">
+          <a href="#">
             <img
               src="/mobile1/feel-attune-logo.webp"
               alt="Logo"

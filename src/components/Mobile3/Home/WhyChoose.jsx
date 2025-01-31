@@ -13,7 +13,7 @@ function WhyChoose() {
   ];
 
   return (
-    <div className="bg-[#F4EFEA] px-5 py-[30px] space-y-[24px]">
+    <div id="mobile-why-choose-a-listener" className="bg-[#F4EFEA] px-5 py-[30px] space-y-[24px]">
       <h1 className="font-miniature text-center text-[38px]">
         Why Choose a Listener
       </h1>
@@ -21,7 +21,7 @@ function WhyChoose() {
       <div className="space-y-[18px]" id="Mourapproach2">
       <table className="w-full">
                 <thead>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr]">
+                  <tr className="border-b border-black grid grid-cols-2">
                     <th className="p-[10px]  border-black text-left  flex items-center leading-[22px] text-[24.238px] font-[400] font-miniature bg-[#e5ff7d]">
                       Att<span className="italic">une</span>
                     </th>
@@ -31,7 +31,7 @@ function WhyChoose() {
                   </tr>
                 </thead>
                 <tbody >
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
+                  <tr className="border-b border-black grid grid-cols-2 font-[500]">
                     <td className="p-[10px]  border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ function WhyChoose() {
                       Long wait times for appointments.
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
+                  <tr className="border-b border-black grid grid-cols-2 font-[500]">
                     <td className="p-[10px]  border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ function WhyChoose() {
                       Expensive, often requiring insurance.
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
+                  <tr className="border-b border-black grid grid-cols-2 font-[500]">
                     <td className="p-[10px]  border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
                       <div>
                       <svg
@@ -151,7 +151,7 @@ function WhyChoose() {
                       Severe mental health issues.
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
+                  <tr className="border-b border-black grid grid-cols-2 font-[500]">
                     <td className="p-[10px]  border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +188,7 @@ function WhyChoose() {
                       Clinical Interventions.
                     </td>
                   </tr>
-                  <tr className="border-b border-black grid grid-cols-[1.4fr,1.6fr] font-[500]">
+                  <tr className="border-b border-black grid grid-cols-2 font-[500]">
                     <td className="p-[10px] border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +225,7 @@ function WhyChoose() {
                       May carry stigma.
                     </td>
                   </tr>
-                  <tr className=" grid grid-cols-[1.4fr,1.6fr] font-[500]">
+                  <tr className=" grid grid-cols-2 font-[500]">
                     <td className="p-[10px] border-black text-[14px] flex leading-[98%] items-center gap-[10px]  bg-[#e5ff7d]">
                       <div><svg
                         xmlns="http://www.w3.org/2000/svg"

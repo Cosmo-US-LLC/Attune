@@ -14,33 +14,33 @@ import {
 function YourPath() {
     const cards = [
         {
-            img: "/mobile2/yourPath/card3.png",
+            img: "/desktop2/your-path/path1.png",
             title: "Life Transitions",
             body: "Our trained, non-judgmental Listeners provide a safe space for you to share your thoughts, feelings, and experiences without fear of judgment. You’ll always feel heard and supported."
         },
         {
-            img: "/mobile2/yourPath/card2.png",
+            img: "/desktop2/your-path/path2.png",
             title: "Social pressures",
             body: "Whether you're at home or on the go, you can connect with a Listener from anywhere, at any time. Our platform is available to support you whenever you need it."
         },
         {
-            img: "/mobile2/yourPath/card1.png",
+            img: "/desktop2/your-path/path3.png",
             title: "Digital Overload",
             body: "Our services are grounded in real, measurable outcomes. We focus on providing practical, effective support for a range of emotional and mental health needs, backed by data-driven results."
         },
         {
-            img: "/desktop2/your-path/relationshipChallenges.png",
+            img: "/desktop2/your-path/path4.png",
             title: "Realtionship Challenges",
             body: "We are committed to breaking down the barriers of traditional mental health care. There’s no need for clinical intervention—just real, meaningful conversations when you need them most."
         },
         {
-            img: "/desktop2/your-path/careerStress.png",
+            img: "/desktop2/your-path/path5.png",
             title: "Career Stress",
             body: "Your well-being and privacy are our top priority. All conversations are confidential, ensuring that you can speak freely and openly without concerns."
         },
     ]
   return (
-    <div className='bg-white py-[30px] px-5 space-y-4' id='WhyDoesM'>
+    <div className='bg-white py-[30px] px-5 space-y-4' id='mobile-path-to-support'>
         <p className='font-miniature text-center text-[38px]'>Why Does Loneliness Affect So Many Young Adults?</p>
         <p className='font-[400] text-center text-[15px]'>Loneliness among young adults is more common than you think. As you navigate through major life transitions—like starting college, entering the workforce, or building new relationships—it’s easy to feel disconnected. You’re not alone—61% of young adults report feeling serious loneliness.</p>
         <p className='font-miniature font-[700] text-center text-[30px]'>Reasons for Loneliness:</p>
@@ -51,7 +51,7 @@ function YourPath() {
                         {cards?.map((card, id) => (
                             <CarouselItem key={id} className="w-full basis-1/1">
                                 <div className="max-w-[274px] mx-auto border border-black bg-[#95ADF0] py-5 px-4 rounded-[20px] space-y-[20px]">
-                                    <img src={card?.img} alt="Icon" className="rounded-[30px]  border border-black  w-[249px] h-[213px]" />
+                                    <img src={card?.img} alt="Icon" className="rounded-[30px] bg-black border border-black  w-[249px] h-[213px]" />
             
                                     <div className="space-y-[14px]">
                                         <h3 className="h-[72px] flex items-center justify-center text-center text-white text-[30px] font-miniature">

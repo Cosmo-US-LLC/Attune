@@ -62,7 +62,7 @@ function NavbarMobile() {
                 <SheetContent side={"left"} className="bg-[#e5ddd4] z-[101] flex flex-col">
                   <SheetHeader>
                     <SheetTitle>
-                      <a href="/" onClick={()=>setSideOpen(false)}>
+                      <a href="#" onClick={()=>setSideOpen(false)}>
                         <img
                           src="/mobile1/feel-attune-logo.webp"
                           alt="Attune Logo"
@@ -83,10 +83,10 @@ function NavbarMobile() {
                         </div>
                         <div className="relative mt-8">
                           <div className="flex flex-col gap-4 font-[500]">
-                            <a href={"#path-to-support"} onClick={(e) => handleClick(e, "mobile-path-to-support", 50)}>Path To Support</a>
-                            <a href={"#how-it-works"} onClick={(e) => handleClick(e, "mobile-how-it-works", 50)}>How It Works</a>
-                            <a href={"#why-choose-a-listener"} onClick={(e) => handleClick(e, "mobile-why-choose-a-listener", 50)}>Our Approach</a>
-                            <a href={"#Mfaqs2"} onClick={(e) => handleClick(e, "mobile-FAQs", 50)}>FAQs</a>
+                            <a href={"#mobile-path-to-support"} onClick={(e) => handleClick(e, "mobile-path-to-support", 50)}>Path To Support</a>
+                            <a href={"#mobile-how-it-works"} onClick={(e) => handleClick(e, "mobile-how-it-works", 50)}>How It Works</a>
+                            <a href={"#mobile-why-choose-a-listener"} onClick={(e) => handleClick(e, "mobile-why-choose-a-listener", 50)}>Our Approach</a>
+                            <a href={"#mobile-FAQs"} onClick={(e) => handleClick(e, "mobile-FAQs", 50)}>FAQs</a>
                           </div>
                         </div>
                         <div className="flex items-center justify-between py-0 mt-6">
@@ -148,7 +148,7 @@ function NavbarMobile() {
                 </SheetContent>
               </Sheet>
 
-              <a href="/">
+              <a href="#">
                 <img
                   src="/mobile1/feel-attune-logo.webp"
                   alt="Attune Logo"

@@ -1,6 +1,6 @@
 function HowItWorks() {
   return (
-    <div id="HowitworksD" className="bg-[#e5ff7d] py-[80px] px-4 space-y-[26px]">
+    <div id="how-it-works" className="bg-[#e5ff7d] py-[80px] px-4 space-y-[26px]">
       <h1 className='font-miniature text-center text-[76px] leading-[110px]'>How it Works</h1>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">

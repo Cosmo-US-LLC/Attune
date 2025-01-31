@@ -65,6 +65,23 @@ body {
   min-height: 43.7vw;
 }
 
+.why-listeners-matter-section-2 {
+  background-image: url(/desktop2/why-listeners-matter/new-bg.png); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-height: 41.875vw; */
+  min-height: 603px;
+}
+.why-listeners-matter-section-3 {
+  background-image: url(/desktop3/why-listeners-matter/mental.png); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-height: 41.875vw; */
+  min-height: 603px;
+}
+
 .why-listeners-matter-section {
   background-image: url(/desktop1/why-listeners-matter/frame_131.webp); /* Replace with your image path */
   background-size: cover;

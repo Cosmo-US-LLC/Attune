@@ -1,6 +1,6 @@
 function PathToSupport() {
   return (
-    <div id="WhyDoesD" className="bg-gray-50 py-[110px] px-[110px]">
+    <div id="path-to-support" className="bg-gray-50 py-[110px] px-[110px]">
       <div className="max-w-[1440px] mx-auto space-y-[60px] flex justify-center flex-col items-center">
         <h1 className="font-miniature text-[76px] text-center leading-[69px]">
           Why Does Mental Health Matter

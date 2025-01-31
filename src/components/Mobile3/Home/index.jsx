@@ -14,12 +14,13 @@ import WeBelieve from './WeBelieve'
 import ListenerMobile from './ListenerMobile'
 import Feel from './Feel'
 import Values from './Values'
+import AsSeenMob1 from '../../Mobile1/Main/AsSeen'
 
-function HomeMobileMental() {
+function HomeMobile() {
   return (
     <div>
       <HeroMobile />
-      <AsSeen />
+      <AsSeenMob1 />
       <YourPath />
       <ListenerMobile/>
       <Testimonials />
@@ -38,4 +39,4 @@ function HomeMobileMental() {
   )
 }
 
-export default HomeMobileMental
+export default HomeMobile

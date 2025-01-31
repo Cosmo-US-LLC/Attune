@@ -11,22 +11,23 @@ function MakeAnImpactCarousel() {
   const testimonials = [
     {
       bg: "bg-[#E5FF7D]",
-      img: "/desktop3/testimonials/test1.png",
+      img: "/desktop1/testimonials/test-1.webp",
       title: "Jake, 24",
       body: '"Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference."',
     },
     {
-      bg: "bg-[#FF6F61]",
-      img: "/desktop3/testimonials/test2.png",
-      title: "Emily Green, 21",
-      body: '"I was feeling so lost after moving to a new city for college. My Listener helped me feel less alone and gave me the confidence to meet new people."',
+      bg: "bg-[#F097DD]",
+      img: "/desktop1/testimonials/test-2.webp",
+      title: "Jessica, 45",
+      body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
-      bg: "bg-[#6FE0D1]",
-      img: "/desktop3/testimonials/test3.png",
-      title: "David Lee, 31",
-      body: '"I’ve always felt like I didn’t have anyone to talk to, but since joining, I’ve felt so much more connected. The Listener I spoke with helped me open up about my stress and gave me the comfort I didn’t know I needed."',
-    },
+      bg: "bg-[#FF6F61]",
+      img: "/desktop1/testimonials/test-3.webp",
+      title: "John, 72",
+      textColor: "text-white",
+      body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
+    }
   ];
 
   return (
@@ -79,7 +80,7 @@ function MakeAnImpactCarousel() {
                     className="w-[117px] h-[117px] object-contain rounded-full mb-[47px]"
                   />
 
-                  <div className={"space-y-[22px] " + (id == 1 && " text-white")}>
+                  <div className={"space-y-[22px] " + (id == 2 && " text-white")}>
                     <h3 className="font-miniature text-[40px]">
                       {test?.title}
                     </h3>

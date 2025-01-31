@@ -1,9 +1,9 @@
 function Listener() {
   const cardArr = [
-    "Reframing Experiences: Gain a fresh perspective and clarity on your challenges.",
-    "Setting and Achieving Goals: Boost your confidence, manage transitions, and achieve personal milestones.",
-    "Emotional well-being: Explore strategies to enhance your motivation and overall well-being.",
-    "Building Resilience: Strengthen your ability to navigate life’s hurdles and move toward your desired outcomes.",
+    <p><strong>Reframing Experiences: </strong>Gain a fresh perspective and clarity on your challenges.</p>,
+    <p><strong>Setting and Achieving Goals: </strong>Boost your confidence, manage transitions, and achieve personal milestone.</p>,
+    <p><strong>Emotional well-being: </strong>Explore strategies to enhance your motivation and overall well-being.</p>,
+    <p><strong>Building Resilience: </strong>Strengthen your ability to navigate life’s hurdles and move towards your desired outcomes.</p>,
   ];
 
   return (
@@ -21,7 +21,7 @@ function Listener() {
                 {cardArr.map((item, index) => (
                   <li
                     key={index}
-                    className="relative text-[16px] font-[300] pl-4 pb-4 md:pb-6"
+                    className="relative text-[16px] pl-4 pb-4 md:pb-6"
                   >
                     <span
                       style={{

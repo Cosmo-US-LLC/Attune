@@ -1,6 +1,6 @@
 function PathToSupport() {
   return (
-    <div className="bg-gray-50 py-[110px] px-[110px]" id="PathToSupport">
+    <div className="bg-gray-50 py-[110px] px-[110px]" id="path-to-support">
       <div className="max-w-[1440px] mx-auto space-y-[60px]">
         <h1 className="font-miniature text-[76px] text-center leading-[69px]">
         Why Does Loneliness Affect So <br/> Many Young Adults?
@@ -9,7 +9,7 @@ function PathToSupport() {
         <h6 className="font-miniature text-[50px] font-bold text-center">Reasons for Loneliness:</h6>
         <div className="grid max-w-4xl gap-6 mx-auto md:grid-cols-3">
           <YourPathCard
-            img="/desktop2/your-path/liveTransitions.png"
+            img="/desktop2/your-path/path1.png"
             title="Life Transitions"
             classes="bg-[#95ADF0] text-white"
             points={[
@@ -25,7 +25,7 @@ function PathToSupport() {
           />
 
           <YourPathCard
-            img="/desktop2/your-path/socialPressures.png"
+            img="/desktop2/your-path/path2.png"
             imgClass="bg-[#95ADF0] rounded-[30px] border border-black"
             title="Social pressures"
             classes="bg-[#95ADF0] text-white"
@@ -43,7 +43,7 @@ function PathToSupport() {
 
           {/* Card 3 */}
           <YourPathCard
-            img="/desktop2/your-path/digitalOverload.png"
+            img="/desktop2/your-path/path3.png"
             title="Digital Overload"
             classes="bg-[#95ADF0] text-white"
             points={[
@@ -61,7 +61,7 @@ function PathToSupport() {
         </div>
         <div className="grid max-w-xl gap-6 mx-auto md:grid-cols-2">
           <YourPathCard
-            img="/desktop2/your-path/relationshipChallenges.png"
+            img="/desktop2/your-path/path4.png"
             title="Relationship Challenges"
             classes="bg-[#95ADF0] text-white"
             points={[
@@ -77,7 +77,7 @@ function PathToSupport() {
           />
 
           <YourPathCard
-            img="/desktop2/your-path/careerStress.png"
+            img="/desktop2/your-path/path5.png"
             imgClass="bg-[#00FBFC] rounded-[30px] border border-black"
             title="Career Stress"
             classes="bg-[#95ADF0] text-white"
@@ -125,7 +125,7 @@ function YourPathCard({ img, imgClass = "", title, classes, points }) {
       <img
         src={img}
         alt={title}
-        className={"rounded-[30px]  border border-black w-full h-auto" + imgClass}
+        className={"rounded-[30px] bg-black border border-black w-full h-auto" + imgClass}
       />
 
       <div className="grow flex flex-col space-y-[13px] p-1">

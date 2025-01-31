@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from './Hero'
 import AsSeenIn from './AsSeenIn'
-import ProudlySupporting from './ProudlySupport'
+import ProudlySupporting1 from './ProudlySupport'
 import PathToSupport from './PathToSupport'
 import HowItWorks from './HowItWorks'
 import WhyChooseListener from './WhyChooseListener'
@@ -19,7 +19,7 @@ function HomeDesktop() {
   return (
     <div>
       <Hero />
-      <ProudlySupporting />
+      <ProudlySupporting1 />
       <PathToSupport />
       <Listener />
       <HowItWorks />

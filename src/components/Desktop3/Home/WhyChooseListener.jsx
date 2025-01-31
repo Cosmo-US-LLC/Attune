@@ -1,6 +1,6 @@
 function WhyChooseListener() {
   return (
-    <div id="WhyChooseD" className="bg-[#F4EFEA] p-[105px] space-y-[87px]">
+    <div id="why-choose-a-listener" className="bg-[#F4EFEA] p-[105px] space-y-[87px]">
       <h1 className="text-[76px] font-miniature text-center">
         Why Choose a Listener?
       </h1>

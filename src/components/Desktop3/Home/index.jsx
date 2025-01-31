@@ -10,11 +10,12 @@ import WhyListenersMatter from './WhyListenersMatter'
 import Listener from './Listener'
 import CoreValues from './CoreValues'
 import FeelHeard from './FeelHeard'
-function HomeDesktopMental() {
+import ProudlySupporting1 from '../../Desktop1/Main/ProudlySupport'
+function HomeDesktop() {
   return (
     <div>
       <Hero />
-      <AsSeenIn />
+      <ProudlySupporting1 />
       <PathToSupport />
       <Listener />
       <MakeAnImpactCarousel />
@@ -29,4 +30,4 @@ function HomeDesktopMental() {
   )
 }
 
-export default HomeDesktopMental
+export default HomeDesktop

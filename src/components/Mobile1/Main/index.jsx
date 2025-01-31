@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroMobile from './HeroMobile'
-import AsSeen from './AsSeen'
+import AsSeenMob1 from './AsSeen'
 import YourPath from './YourPath'
 import HowIt from './HowIt'
 import NoNeed from './NoNeed'
@@ -19,7 +19,7 @@ function HomeMobile() {
   return (
     <div>
       <HeroMobile />
-      <AsSeen />
+      <AsSeenMob1 />
       <YourPath />
       <ListenerMobile/>
       <HowIt />

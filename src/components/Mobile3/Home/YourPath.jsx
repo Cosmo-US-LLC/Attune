@@ -35,7 +35,7 @@ function YourPath() {
     },
   ];
   return (
-    <div className="bg-white py-[30px] px-5 space-y-4" id="Mpathtosupport2">
+    <div className="bg-white py-[30px] px-5 space-y-4" id="mobile-path-to-support">
       <p className="font-miniature text-center text-[38px]">
       Why Does Mental Health Matter for Young Adults?
       </p>

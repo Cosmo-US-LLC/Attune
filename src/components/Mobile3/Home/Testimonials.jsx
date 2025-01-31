@@ -10,22 +10,23 @@ import {
 function Testimonials() {
   const testimonials = [
     {
-      bg: 'bg-[#E5FF7D]',
-      img: "/desktop3/testimonials/test-1.png",
+      bg: "bg-[#E5FF7D]",
+      img: "/mobile1/testimonials/test1.webp",
       title: "Jake, 24",
       body: '"Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference."',
     },
     {
-      bg: 'bg-[#FF6F61]',
-      img: "/mobile3/testimonials/emily.png",
-      title: "Emily Green, 21",
-      body: '"I was feeling so lost after moving to a new city for college. My Listener helped me feel less alone and gave me the confidence to meet new people."',
+      bg: "bg-[#F097DD]",
+      img: "/mobile1/testimonials/test2.webp",
+      title: "Jessica, 45",
+      body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
-      bg: 'bg-[#6FE0D1]',
-      img: "/mobile3/testimonials/david.png",
-      title: "David Lee, 31",
-      body: 'I’ve always felt like I didn’t have anyone to talk to, but since joining, I’ve felt so much more connected. The Listener I spoke with helped me open up about my stress and gave me the comfort I didn’t know I needed.',
+      bg: "bg-[#FF6F61]",
+      img: "/mobile1/testimonials/test3.webp",
+      textColor: "text-white",
+      title: "John, 72",
+      body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
     },
   ];
 
@@ -52,15 +53,23 @@ function Testimonials() {
       <div
         className={`border border-black rounded-[12px] min-h-[290px] pt-5 px-5 ${test?.bg}`}
       >
+        {/* Apply conditional margin-bottom for the image */}
         <img
           src={test?.img}
           alt="person"
-          className="w-[60px] h-[60px] object-contain rounded-full mb-[28px]"
+          className={`w-[60px] h-[60px] object-contain rounded-full ${
+            test.title === "John, 72" ? "mb-[6px]" : "mb-[28px]"
+          }`}
         />
 
+        {/* Apply conditions for spacing */}
         <div
-          className={`space-y-[10px] pb-5 ${
-            test.title === "Emily Green, 21" ? "text-white" : "text-black"
+          className={`pb-5 ${
+            test.title === "John, 72"
+              ? "space-y-[4px]" /* Reduced space */
+              : "space-y-[10px]"
+          } ${
+            test.title === "Jessica, 45" ? "text-white" : "text-black"
           }`}
         >
           <h3 className="font-miniature text-[32px]">{test?.title}</h3>
@@ -70,6 +79,7 @@ function Testimonials() {
     </CarouselItem>
   ))}
 </CarouselContent>
+
 
         <CarouselPrevious className="border border-black disabled:hidden bg-white -left-[15px]" />
         <CarouselNext className="border border-black disabled:hidden bg-white -right-[15px]" />

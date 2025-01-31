@@ -73,7 +73,7 @@ function FAQAccordion() {
   ];
 
   return (
-    <div className="bg-[#F4EFEA]" id="FaqD">
+    <div className="bg-[#F4EFEA]" id="FAQs">
       <div className="max-w-[1440px] mx-auto  px-[130px] py-[107px] space-y-[74px]">
         <h1 className="font-miniature text-[76px] text-center">
           Any Questions?

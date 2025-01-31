@@ -45,7 +45,7 @@ export default function ListenerMobile() {
                         <CarouselContent>
                             {cards?.map((card, id) => (
                                 <CarouselItem key={id} className="basis-1/1 w-full">
-                                    <div className="max-w-[350px] mx-auto  bg-white/50 backdrop-blur-sm py-5 px-[16px] rounded-xl space-y-[20px]">
+                                    <div className="max-w-[350px] h-full mx-auto  bg-white/50 backdrop-blur-sm py-5 px-[16px] rounded-xl space-y-[20px]">
 
 
                                         <div className="space-y-[14px]">

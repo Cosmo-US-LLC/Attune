@@ -1,10 +1,9 @@
 function Listener() {
     const cardArr = [
-      "Find Emotional Relief: Share your thoughts without fear of being judged.",
-      "Build Confidence: Gain clarity and self-assurance as you work through your feelings.",
-      "Rediscover Connection: Strengthen relationships and overcome isolation.",
-      "Feel Understood: Experience the comfort of being heard by someone who truly cares.",
-      "Navigate Challenges: Discuss specific situations like transitioning to college or starting a new job.",
+      <p><strong>Reframing Experiences: </strong>Gain a fresh perspective and clarity on your challenges.</p>,
+      <p><strong>Setting and Achieving Goals: </strong>Boost your confidence, manage transitions, and achieve personal milestone.</p>,
+      <p><strong>Emotional well-being: </strong>Explore strategies to enhance your motivation and overall well-being.</p>,
+      <p><strong>Building Resilience: </strong>Strengthen your ability to navigate life’s hurdles and move towards your desired outcomes.</p>,
     ];
   
     return (
@@ -22,7 +21,7 @@ function Listener() {
                   {cardArr.map((item, index) => (
                     <li
                       key={index}
-                      className="relative text-[14px] md:text-[16px] font-semibold pb-4 md:pb-6"
+                      className="relative text-[14px] md:text-[16px] pb-4 md:pb-6"
                     >
                       <span
                         style={{

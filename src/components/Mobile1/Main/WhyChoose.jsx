@@ -12,7 +12,10 @@ function WhyChoose() {
   ];
 
   return (
-    <div id="mobile-why-choose-a-listener" className="bg-white px-5 py-[30px] space-y-[24px]">
+    <div
+      id="mobile-why-choose-a-listener"
+      className="bg-white px-5 py-[30px] space-y-[24px]"
+    >
       <h1 className="font-miniature text-center text-[38px]">
         Why Choose a Listener
       </h1>
@@ -21,7 +24,7 @@ function WhyChoose() {
         <table className="w-full">
           <thead>
             <tr className="grid grid-cols-2 border-b border-black">
-            <th className="pt-[10px]  pb-[10px] px-[10px] border-b-l border-black text-left  flex items-center leading-[22px] text-[24.238px] font-[400] font-miniature bg-[#e5ff7d]">
+              <th className="pt-[10px]  pb-[10px] px-[10px] border-b-l border-black text-left  flex items-center leading-[22px] text-[24.238px] font-[400] font-miniature bg-[#e5ff7d]">
                 Att<span className="italic">une</span>
               </th>
               <th className="pt-[7px] pb-[3px] px-[6px] text-left text-[16px] font-[500] flex items-center bg-[#F4EFEA]">
@@ -29,12 +32,11 @@ function WhyChoose() {
               </th>
               {/* <th className="p-[10px] text-left text-[16px] font-[500] flex items-center"> */}
               {/* </th> */}
-              
             </tr>
           </thead>
           <tbody>
             <tr className="grid grid-cols-2 border-b border-black">
-            <td className="p-[6px] border-b-l border-black text-[15px] flex items-center gap-[10px]  bg-[#e5ff7d]">
+              <td className="p-[6px] border-b-l border-black text-[15px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -80,10 +82,9 @@ function WhyChoose() {
                 </div>
                 Long wait times for appointments.
               </td>
-             
             </tr>
             <tr className="grid grid-cols-2 border-b border-black">
-            <td className="p-[6px] border-b-l border-black text-[15px] flex items-center gap-[10px]  bg-[#e5ff7d]">
+              <td className="p-[6px] border-b-l border-black text-[15px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -121,12 +122,10 @@ function WhyChoose() {
                   </svg>
                 </div>
                 Expensive, often requiring insurance.
-
               </td>
-              
             </tr>
             <tr className="grid grid-cols-2 border-b border-black">
-            <td className="p-[6px] border-b-l border-black text-[15px] flex items-center gap-[10px]  bg-[#e5ff7d]">
+              <td className="p-[6px] border-b-l border-black text-[15px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -171,12 +170,10 @@ function WhyChoose() {
                   </svg>
                 </div>
                 Severe mental health issues.
-
               </td>
-              
             </tr>
             <tr className="grid grid-cols-2 border-b border-black">
-            <td className="p-[6px] border-b-l border-black text-[15px] flex items-center gap-[10px]  bg-[#e5ff7d]">
+              <td className="p-[6px] border-b-l border-black text-[15px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -194,7 +191,6 @@ function WhyChoose() {
                   </svg>
                 </div>
                 Judgment-free emotional support.
-
               </td>
               <td className="p-[6px] border-0 border-black text-[15px] flex items-center gap-[10px] bg-[#F4EFEA]">
                 <div>
@@ -216,10 +212,9 @@ function WhyChoose() {
                 </div>
                 Clinical interventions
               </td>
-             
             </tr>
             <tr className="grid grid-cols-2 ">
-            <td className="p-[6px] border-b-0 border-black text-[15px] flex items-center gap-[10px]  bg-[#e5ff7d]">
+              <td className="p-[6px] border-b-0 border-black text-[15px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -257,9 +252,7 @@ function WhyChoose() {
                   </svg>
                 </div>
                 May carry stigma.
-
               </td>
-             
             </tr>
           </tbody>
         </table>

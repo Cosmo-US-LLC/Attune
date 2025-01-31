@@ -2,7 +2,7 @@
 import React from "react";
 import { Marquee } from "../../ui/marquee";
 
-function AsSeen() {
+function AsSeenMob1() {
   return (
     <div className="bg-[#F4EFEA] py-6 overflow-hidden space-y-[9px]">
       <p className="font-miniature text-[38px] font-[400] text-center">
@@ -10,9 +10,9 @@ function AsSeen() {
       </p>
 
       <div className="max-w-[100vw] py-3 px-0 bg-white overflow-hidden">
-        {/* <Marquee pauseOnHover className="[--duration:4s] border border-red-500 animate-marquee flex justify-start repeat-infinite px-0"> */}
+        <Marquee pauseOnHover className="[--duration:10s] flex justify-start gap-8 repeat-infinite px-0">
         {/* <div className="flex justify-start px-0"> */}
-        <div className="max-w-[200vw] [--duration:4s] border border-red-500 overflow-visible animate-marquee flex justify-start repeat-infinite px-0">
+        {/* <div className="max-w-[200vw] [--duration:4s] border border-red-500 overflow-visible animate-marquee flex justify-start repeat-infinite px-0"> */}
           
           <img
             src="/desktop1/proudly/logo1.webp"
@@ -44,10 +44,10 @@ function AsSeen() {
             alt="Time"
             className="object-contain w-[73px] h-[30px]"
           />
-        </div>
+        </Marquee>
       </div>
     </div>
   );
 }
 
-export default AsSeen;
+export default AsSeenMob1;
