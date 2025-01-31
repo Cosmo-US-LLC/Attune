@@ -93,7 +93,7 @@ function NavbarMobile() {
                             </a>
                           </div>
 
-                          <a href="https://innovacare.tech/listenerhub/signup">
+                           <a href="https://innovacare.tech/listenerhub/signup">
                             <button className="bg-[#5200FF] text-white px-[10px] h-[38px] my-0 min-w-[112px] rounded-full text-[15px] whitespace-nowrap">
                               Get Started
                             </button>

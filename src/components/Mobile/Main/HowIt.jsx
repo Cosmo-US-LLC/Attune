@@ -3,7 +3,7 @@ import React from 'react'
 
 function HowIt() {
   return (
-    <div id='Mhowitworks2' className='bg-[#E5FF7D] py-[30px] px-5 space-y-6'>
+    <div id='mobile-how-it-works' className='bg-[#E5FF7D] py-[30px] px-5 space-y-6'>
       <h1 className='font-miniature text-center text-[38px] '>How it Works</h1>
 
       <div className='space-y-5'>
@@ -64,7 +64,7 @@ function HowIt() {
 function HowItCards({id, title, body, children}) {
     return (
         <div className='bg-white border border-black p-[14px] rounded-[20px] space-y-[10px]'>
-            <div className='flex justify-between items-center'>
+            <div className='flex items-center justify-between'>
                 <div className='h-[50px] w-[50px] rounded-full bg-[#FF9AE9] text-white font-miniature flex justify-center items-center text-[20px]'>{id}</div>
                 {children}
             </div>

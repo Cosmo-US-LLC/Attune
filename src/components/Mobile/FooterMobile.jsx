@@ -27,7 +27,7 @@ function FooterMobile() {
             <img
               src="/mobile/feel-attune-logo.webp"
               alt="Logo"
-              className="absolute top-0 right-0 w-[91px] h-[31px]"
+              className="absolute top-0 right-0 w-[120px] h-[38px]"
             />
           </a>
         </div>
@@ -40,24 +40,24 @@ function FooterMobile() {
         <div className="relative flex flex-row items-center justify-between mt-8">
           <div className="flex flex-col gap-4 font-[500]">
             <a
-              href="#Mpathtosupport2"
-              onClick={(e) => handleScroll(e, "Mpathtosupport2", 90)}
+              href="#path-to-support"
+              onClick={(e) => handleScroll(e, "mobile-path-to-support", 90)}
             >
               Path To Support
             </a>
             <a
-              href="#Mhowitworks2"
-              onClick={(e) => handleScroll(e, "Mhowitworks2", 90)}
+              href="#how-it-works"
+              onClick={(e) => handleScroll(e, "mobile-how-it-works", 90)}
             >
               How It Works
             </a>
             <a
-              href="#Mourapproach2"
-              onClick={(e) => handleScroll(e, "Mourapproach2", 90)}
+              href="#why-choose-a-listener"
+              onClick={(e) => handleScroll(e, "mobile-why-choose-a-listener", 90)}
             >
               Our Approach
             </a>
-            <a href="#Mfaqs2" onClick={(e) => handleScroll(e, "Mfaqs2", 90)}>
+            <a href="#FAQs" onClick={(e) => handleScroll(e, "mobile-FAQs", 90)}>
               FAQs
             </a>
           </div>
@@ -92,11 +92,11 @@ function FooterMobile() {
             </a>
           </div>
 
-          <a href="https://innovacare.tech/listenerhub/signup">
+          {/* <a href="https://innovacare.tech/listenerhub/signup">
             <button className="bg-[#5200FF] text-white px-[10px] h-[38px] my-0 min-w-[112px] rounded-full text-[15px] whitespace-nowrap">
               Get Started
             </button>
-          </a>
+          </a> */}
         </div>
         <p className="mt-5 text-left">© 2024 Attune. All Rights Reserved</p>
         <div className="my-4 border-[0.5px] border-[black] w-full" />

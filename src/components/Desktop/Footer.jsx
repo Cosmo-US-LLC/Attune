@@ -47,26 +47,27 @@ function Footer() {
                 a connection, we’re here to help.
               </p>
             </div>
-            <div className="text-[16px] font-[500] mt-8 flex gap-10">
+            <div className="text-[16px] font-[500] mt-8 flex gap-10 relative z-40">
               <a
-                href="#WhyDoesD"
-                onClick={(e) => handleScroll(e, "WhyDoesD", 90)}
+              className="relative z-10"
+                href="#path-to-support"
+                onClick={(e) => handleScroll(e, "path-to-support", 90)}
               >
                 Path To Support
               </a>
               <a
-                href="#HowitworksD"
-                onClick={(e) => handleScroll(e, "HowitworksD", 90)}
+                href="#how-it-works"
+                onClick={(e) => handleScroll(e, "how-it-works", 90)}
               >
                 How It Works
               </a>
               <a
-                href="#WhyChooseD"
-                onClick={(e) => handleScroll(e, "WhyChooseD", 90)}
+                href="#why-choose-a-listener"
+                onClick={(e) => handleScroll(e, "why-choose-a-listener", 90)}
               >
                 Our Approach
               </a>
-              <a href="#FaqD" onClick={(e) => handleScroll(e, "FaqD", 90)}>
+              <a href="#FAQs" onClick={(e) => handleScroll(e, "FAQs", 90)}>
                 FAQs
               </a>
             </div>

@@ -12,7 +12,7 @@ function WhyChoose() {
   ];
 
   return (
-    <div id="Mourapproach2" className="bg-white px-5 py-[30px] space-y-[24px]">
+    <div id="mobile-why-choose-a-listener" className="bg-white px-5 py-[30px] space-y-[24px]">
       <h1 className="font-miniature text-center text-[38px]">
         Why Choose a Listener
       </h1>

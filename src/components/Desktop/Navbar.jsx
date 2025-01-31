@@ -59,8 +59,8 @@ function Navbar() {
                 How It Works
               </a>
               <a
-                href="#what-make-us-different"
-                onClick={(e) => handleScroll(e, "what-make-us-different", 90)}
+                href="#why-choose-a-listener"
+                onClick={(e) => handleScroll(e, "why-choose-a-listener", 90)}
                 className="flex flex-col justify-center text-center text-black font-medium text-[16.222px] leading-[98.144px] capitalize   flex-shrink-0 hover:text-gray-900"
               >
                 our approach

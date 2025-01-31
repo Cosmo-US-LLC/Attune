@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 function YourPath() {
   return (
-    <div id="Mpathtosupport2" className="bg-white py-[30px] px-5 space-y-6">
+    <div id="mobile-path-to-support" className="bg-white py-[30px] px-5 space-y-6">
       <p className="font-miniature text-center text-[38px]">
         Your Path to Support
       </p>

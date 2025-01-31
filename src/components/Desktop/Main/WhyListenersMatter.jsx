@@ -1,6 +1,6 @@
 function WhyListenersMatter() {
   return (
-    <section className="why-listeners-matter-section h-[910px] relative bg-gray-100 py-12 px-6 flex justify-center items-center">
+    <section id="" className="why-listeners-matter-section h-[910px] relative bg-gray-100 py-12 px-6 flex justify-center items-center">
       
       <div className="relative flex flex-col justify-center space-y-4">
           <p className="font-miniature text-center text-[76px] leading-[69px] font-[400]  pt-[170px] ml-[-40px]">
