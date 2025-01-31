@@ -30,8 +30,8 @@ function App() {
         <Routes>
           {/* <HomeDesktop /> */}
           <Route path="/" element={<HomeDesktop />} />
-          <Route path="/young-adults" element={<HomeDesktopLonely />} />
-          <Route path="/mental-health" element={<HomeDesktopMental />} />
+          <Route path="/young-adults-lonliness" element={<HomeDesktopLonely />} />
+          <Route path="/young-adults-mental-health-barriers" element={<HomeDesktopMental />} />
         </Routes>
       </div>
       {/* Mobile */}
@@ -39,8 +39,8 @@ function App() {
         <Routes>
           {/* <HomeMobile /> */}
           <Route path="/" element={<HomeMobile />} />
-          <Route path="/young-adults" element={<HomeMobileLonely />} />
-          <Route path="/mental-health" element={<HomeMobileMental />} />
+          <Route path="/young-adults-lonliness" element={<HomeMobileLonely />} />
+          <Route path="/young-adults-mental-health-barriers" element={<HomeMobileMental />} />
         </Routes>
       </div>
 
