@@ -60,7 +60,7 @@ function WhyChoose() {
                 </div>
                 Immediate, anytime support
               </td>
-              <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
+              <td className="p-[10px] text-[14px] flex leading-[98%] items-center gap-[10px]">
                 <div>
                   <svg
                     width="16"
@@ -101,7 +101,7 @@ function WhyChoose() {
                 </div>
                 Affordable for all income levels
               </td>
-              <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
+              <td className="p-[10px] text-[14px] flex leading-[98%] items-center gap-[10px]">
                 <div>
                   <svg
                     width="16"
@@ -149,7 +149,7 @@ function WhyChoose() {
                 </div>
                 Everyday challenges, resilience.
               </td>
-              <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
+              <td className="p-[10px] text-[14px] flex leading-[98%] items-center gap-[10px]">
                 <div>
                   <svg
                     width="16"
@@ -190,7 +190,7 @@ function WhyChoose() {
                 </div>
                 Judgement-free emotional support.
               </td>
-              <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
+              <td className="p-[10px] text-[14px] flex leading-[98%] items-center gap-[10px]">
                 <div>
                   <svg
                     width="16"
@@ -231,7 +231,7 @@ function WhyChoose() {
                 </div>
                 Low stigma, human connection.
               </td>
-              <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
+              <td className="p-[10px] text-[14px] flex leading-[98%] items-center gap-[10px]">
                 <div>
                   <svg
                     width="16"
@@ -272,7 +272,7 @@ function WhyChoose() {
                 </div>
                 Everyday clarity and motivation.
               </td>
-              <td className="p-[10px] border-l border-black text-[14px] flex leading-[98%] items-center gap-[10px]">
+              <td className="p-[10px] text-[14px] flex leading-[98%] items-center gap-[10px]">
                 <div>
                   <svg
                     width="16"

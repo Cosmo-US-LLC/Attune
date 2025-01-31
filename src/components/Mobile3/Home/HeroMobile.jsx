@@ -16,7 +16,7 @@ function HeroMobile() {
         <div className="space-y-6 text-white">
           <p className="font-miniature text-[52.627px]  leading-[52.627px]">
             <span className="font-[600]"> Facing </span> <br />{" "}
-            <span className="text-[#E5FF7D] italic"> Challenges </span>
+            <span className="text-[#E5FF7D] italic"> Challenges? </span>
           </p>
           <p className="text-[14px] font-[400] leading-[21px]">
             Life’s pressures can feel overwhelming, <br /> especially when you’re

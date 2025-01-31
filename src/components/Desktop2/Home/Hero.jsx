@@ -17,7 +17,7 @@ function Hero() {
       <div className="bg-[#95ADF0] min-w-[50%] lg:px-12 lg:py-16 xl:p-20 ">
         <h1 className="font-miniature max-w-md max-xl:text-[79px] lg:mt-8 xl:mt-4 text-[77px] text-white leading-[91px]">
           <span className="font-[600]"> Feeling </span> <br />{" "}
-          <span className="text-[#E5FF7D] italic"> Disconnected </span>
+          <span className="text-[#E5FF7D] italic"> Disconnected? </span>
         </h1>
         <p className="mt-4 max-w-[477px]  text-white max-xl:text-[15px] text-[18px] font-[400] pr-10  leading-[26px]">
           Experience the power of real connection—judgment-free, accessible, and

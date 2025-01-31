@@ -16,7 +16,7 @@ function HeroMobile() {
         <div className="space-y-6 text-white">
           <p className="font-miniature text-[52.627px]  leading-[52.627px]">
             <span className="font-[600]"> Feeling </span> <br />{" "}
-            <span className="text-[#E5FF7D] italic"> Disconnected </span>
+            <span className="text-[#E5FF7D] italic"> Disconnected? </span>
           </p>
           <p className="text-[15px] leading-[21px]">
             Experience the power of real connection—judgment-free, accessible,
