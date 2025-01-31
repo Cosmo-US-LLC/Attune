@@ -1,9 +1,10 @@
 function Listener() {
     const cardArr = [
-      <p><strong>Reframing Experiences: </strong>Gain a fresh perspective and clarity on your challenges.</p>,
-      <p><strong>Setting and Achieving Goals: </strong>Boost your confidence, manage transitions, and achieve personal milestone.</p>,
-      <p><strong>Emotional well-being: </strong>Explore strategies to enhance your motivation and overall well-being.</p>,
-      <p><strong>Building Resilience: </strong>Strengthen your ability to navigate life’s hurdles and move towards your desired outcomes.</p>,
+      <p><strong>Find Emotional Relief: </strong>Share your thoughts without fear of being judged.</p>,
+      <p><strong>Build Confidence: </strong>Gain clarity and self-assurance as you work through your feelings.</p>,
+      <p><strong>Rediscover Connection: </strong>Strengthen relationships and overcome isolation.</p>,
+      <p><strong>Feel Understood: </strong>Experience the comfort of being heard by someone who truly cares.</p>,
+      <p><strong>Navigate Challenges: </strong>Discuss specific situations like transitioning to college or starting a new job.</p>,
     ];
   
     return (

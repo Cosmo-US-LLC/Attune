@@ -71,7 +71,7 @@ function HowItCards({id, title, body, children}) {
 
             <div className='space-y-[5px]'>
                 <h3 className='text-black font-miniature text-[24px]'>{title}</h3>
-                <p className='text-black text-[15px] leading-[20px]'>{body}</p>
+                <p className='text-black text-[15px] leading-[20px] capitalize'>{body}</p>
             </div>
         </div>
     )

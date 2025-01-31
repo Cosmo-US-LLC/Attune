@@ -14,27 +14,27 @@ export default function ListenerMobile() {
         {
             img: "/desktop2/listener/tick-circle.webp",
             title: "How a Listener Can Help You Feel Less Alone",
-            body: "Find Emotional Relief: Share your thoughts without fear of being judged."
+            body: <p><strong>Find Emotional Relief: </strong>Share your thoughts without fear of being judged.</p>
         },
         {
             img: "/desktop2/your-path/socialPressures.png",
             title: "How a Listener Can Help You Feel Less Alone",
-            body: "Build Confidence: Gain clarity and self-assurance as you work through your feelings."
+            body: <p><strong>Build Confidence: </strong>Gain clarity and self-assurance as you work through your feelings.</p>,
         },
         {
             img: "/desktop2/your-path/digitalOverload.png",
             title: "How a Listener Can Help You Feel Less Alone",
-            body: "Rediscover Connection: Strengthen relationships and overcome isolation."
+            body: <p><strong>Rediscover Connection: </strong>Strengthen relationships and overcome isolation.</p>,
         },
         {
             img: "/desktop2/your-path/relationshipChallenges.png",
             title: "How a Listener Can Help You Feel Less Alone",
-            body: "Feel Understood: Experience the comfort of being heard by someone who truly cares."
+            body: <p><strong>Feel Understood: </strong>Experience the comfort of being heard by someone who truly cares.</p>,
         },
         {
             img: "/desktop2/your-path/careerStress.png",
             title: "How a Listener Can Help You Feel Less Alone",
-            body: "Navigate Challenges: Discuss specific situations like transitioning to college or starting a new job."
+            body: <p><strong>Navigate Challenges: </strong>Discuss specific situations like transitioning to college or starting a new job.</p>,
         },
     ]
     return (

@@ -19,7 +19,7 @@ function Hero() {
           <span className="font-[600]"> Feeling </span> <br />{" "}
           <span className="text-[#E5FF7D] italic"> Disconnected </span>
         </h1>
-        <p className="mt-4 max-w-[477px]  text-white max-xl:text-[15px] text-[18px] font-[500] pr-10  leading-[26px]">
+        <p className="mt-4 max-w-[477px]  text-white max-xl:text-[15px] text-[18px] font-[400] pr-10  leading-[26px]">
           Experience the power of real connection—judgment-free, accessible, and
           affordable support for young adults navigating life's challenges.
         </p>
