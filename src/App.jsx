@@ -8,6 +8,10 @@ import HomeDesktop from "./components/Desktop1/Main";
 import HomeMobile from "./components/Mobile1/Main";
 
 import { BrowserRouter, Routes, Route } from "react-router";
+import HomeMobileMental from "./components/Mobile3/Home";
+import HomeMobileLonely from "./components/Mobile2/Home";
+import HomeDesktopLonely from "./components/Desktop2/Home";
+import HomeDesktopMental from "./components/Desktop3/Home";
 
 function App() {
   return (
@@ -26,7 +30,8 @@ function App() {
         <Routes>
           {/* <HomeDesktop /> */}
           <Route path="/" element={<HomeDesktop />} />
-          <Route path="/young-adults" element={<HomeDesktop />} />
+          <Route path="/young-adults" element={<HomeDesktopLonely />} />
+          <Route path="/mental-health" element={<HomeDesktopMental />} />
         </Routes>
       </div>
       {/* Mobile */}
@@ -34,7 +39,8 @@ function App() {
         <Routes>
           {/* <HomeMobile /> */}
           <Route path="/" element={<HomeMobile />} />
-          <Route path="/young-adults" element={<HomeMobile />} />
+          <Route path="/young-adults" element={<HomeMobileLonely />} />
+          <Route path="/mental-health" element={<HomeMobileMental />} />
         </Routes>
       </div>
 
