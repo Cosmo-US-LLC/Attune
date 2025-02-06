@@ -23,7 +23,7 @@ function NoNeed() {
 
         <div className='relative bg-[#FFD23F] h-[61px] px-[33px] flex items-center'>
             <a href="https://innovacare.tech/listenerhub/signup">
-                <button className='rounded-full px-[14px] py-[10px] text-[15px] bg-[#5200FF] text-center w-fit text-white font-[500] whitespace-nowrap'>
+                <button className='rounded-full hover:bg-purple-800 px-[14px] py-[10px] text-[15px] bg-[#5200FF] text-center w-fit text-white font-[500] whitespace-nowrap'>
                     Get Started
                 </button>
             </a>

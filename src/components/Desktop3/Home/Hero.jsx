@@ -24,7 +24,7 @@ function Hero() {
           managing stress, anxiety, or emotional barriers. You don’t have to go
           through it alone.
         </p>
-        <a href="https://innovacare.tech/listenerhub/signup">
+        <a href="https://innovacare.tech/listenerhub/signup" className="w-fit flex">
           <button className="mt-6 bg-[#5200FF] flex flex-row text-white text-[16px] font-[500] py-2 px-10 rounded-full hover:bg-purple-800">
             Get Support Now
             <svg

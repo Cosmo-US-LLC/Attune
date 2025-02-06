@@ -10,7 +10,7 @@ function WhyListenersMatter() {
         </p>
         <div className="w-fit mx-auto">
           <a href="https://innovacare.tech/listenerhub/signup">
-            <button className="bg-[#FF6F61] text-white py-3 px-6 rounded-full">
+            <button className="bg-[#FF6F61] text-white py-3 hover:bg-red-500 px-6 rounded-full">
               Connect Now
             </button>
           </a>

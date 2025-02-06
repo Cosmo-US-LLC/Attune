@@ -18,8 +18,8 @@ function HowItWorks() {
       </div>
 
       {/* Call-to-Action Button */}
-      <a href="https://innovacare.tech/listenerhub/signup" className="flex justify-center mt-8">
-        <button className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[16px]">
+      <a href="https://innovacare.tech/listenerhub/signup" className="w-fit mx-auto flex justify-center mt-8">
+        <button className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[16px] hover:bg-purple-800">
           Sign up now
         </button>
       </a>

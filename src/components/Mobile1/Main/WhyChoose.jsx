@@ -259,9 +259,9 @@ function WhyChoose() {
 
         <a
           href="https://innovacare.tech/listenerhub/signup"
-          className="flex justify-center"
+          className="flex justify-center w-fit mx-auto"
         >
-          <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">
+          <Button className="bg-[#5200FF] hover:bg-purple-800 rounded-full font-[500] text-[15px]">
             Get Started
           </Button>
         </a>

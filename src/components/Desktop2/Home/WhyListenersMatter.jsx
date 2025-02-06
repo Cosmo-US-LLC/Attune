@@ -6,8 +6,8 @@ function WhyListenersMatter() {
           <p className="font-miniature text-center lg:text-[60px] xl:text-[76px]  leading-[69px] font-[400] pt-[20px]">
           Loneliness is More <br /> Common Than You Think
           </p>
-          <a href="https://innovacare.tech/listenerhub/signup" className="flex justify-center">
-          <button className="bg-[#FF6F61] text-white py-3 px-6 w-fit mx-auto rounded-full">
+          <a href="https://innovacare.tech/listenerhub/signup" className="w-fit mx-auto flex justify-center">
+          <button className="bg-[#FF6F61]  hover:bg-red-500 text-white py-3 px-6 w-fit mx-auto rounded-full">
             Connect Now
           </button>
           </a>

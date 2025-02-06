@@ -7,7 +7,7 @@ function WhyListenersMatter() {
           Mental Health <br /> Challenges are <br /> More Common <br /> Than You Think
           </p>
           <a href="https://innovacare.tech/listenerhub/signup" className="mx-auto w-fit">
-            <button className="bg-[#5200FF] text-white py-3 px-6 w-fit mx-auto rounded-full mt-6 mr-4">
+            <button className="bg-[#5200FF] text-white hover:bg-purple-800 py-3 px-6 w-fit mx-auto rounded-full mt-6 mr-4">
               Connect Now
             </button>
           </a>
