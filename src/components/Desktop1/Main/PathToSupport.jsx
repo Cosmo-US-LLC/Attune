@@ -132,8 +132,8 @@ function YourPathCard({ img, imgClass = "", title, classes, points, buttonLabel 
           ))}
         </ul>
 
-        <a href="https://innovacare.tech/listenerhub/signup" className="pt-10">
-          <button className="w-fit bg-[#5200FF] text-white py-2 px-6 rounded-full text-[16px] font-[500]">
+        <a href="https://innovacare.tech/listenerhub/signup" className="pt-10 w-fit">
+          <button className="w-fit bg-[#5200FF] text-white py-2 px-6 rounded-full text-[16px] font-[500] hover:bg-purple-800">
              {buttonLabel}
           </button>
         </a>

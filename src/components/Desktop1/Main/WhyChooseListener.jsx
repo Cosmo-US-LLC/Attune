@@ -219,8 +219,8 @@ function WhyChooseListener() {
         </table>
 
         {/* Call-to-Action Button */}
-        <a href="https://innovacare.tech/listenerhub/signup" className="flex justify-center mt-[47px]">
-          <button className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-lg">
+        <a href="https://innovacare.tech/listenerhub/signup" className="w-fit mx-auto flex justify-center mt-[47px]">
+          <button className="bg-[#5200FF] hover:bg-purple-800 text-white py-3 px-8 rounded-full text-lg">
             Get Started
           </button>
         </a>

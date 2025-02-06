@@ -107,7 +107,7 @@ function SupportCards({ bg, img, title, points }) {
 
       <a
         href="https://innovacare.tech/listenerhub/signup"
-        className="flex justify-center"
+        className="flex justify-center w-fit mx-auto"
       >
         <Button className="bg-[#5200FF] rounded-full text-[15px] mt-4">
           Get Started
