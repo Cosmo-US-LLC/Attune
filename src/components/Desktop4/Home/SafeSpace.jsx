@@ -40,7 +40,7 @@ function SafeSpace() {
                       style={{
                         content: "''",
                         position: "absolute",
-                        left: "-36px", // Adjust as needed
+                        left: "-36px",  
                         top: "4px",
                         width: "30px",
                         height: "30px",

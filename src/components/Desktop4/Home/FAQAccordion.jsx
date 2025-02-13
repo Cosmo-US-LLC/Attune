@@ -86,7 +86,7 @@ function FAQAccordion() {
             >
               <AccordionTrigger className2="w-8 h-8">
                 <div className="flex gap-[52px] items-start">
-                  <span className="text-[#95ADF0] text-[48px] font-bold leading-[50px]">
+                  <span className="text-[#D43525] text-[48px] font-bold leading-[50px]">
                     {question?.id}
                   </span>
                   <span className="text-left text-[32px] font-bold leading-[38px]">
