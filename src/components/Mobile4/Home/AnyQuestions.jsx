@@ -30,7 +30,7 @@ function AnyQuestions() {
             your thoughts and feelings. Listeners can help you:
           </p>
           <br />
-          <ul className="list-disc pl-6 mt-2">
+          <ul className="pl-6 mt-2 list-disc">
             <li>
               Reframe experiences and gain fresh perspective and clarity about
               your challenges.
@@ -96,8 +96,8 @@ function AnyQuestions() {
             }
           >
             <AccordionTrigger className="">
-              <div className="flex gap-2 items-center">
-                <span className="text-[#95ADF0] text-[24px] font-bold leading-[120%]">
+              <div className="flex items-center gap-2">
+                <span className="text-[#D43525] text-[24px] font-bold leading-[120%]">
                   {question?.id}
                 </span>
                 <span className="text-left text-[16px] font-bold leading-[22px]">
