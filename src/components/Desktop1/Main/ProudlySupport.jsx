@@ -1,10 +1,3 @@
-// import Image from 'next/image';
-// import timeImage from "@/public/desktop1/as-seen-in/time.svg";
-// import newsImage from "@/public/desktop1/as-seen-in/news-nation.svg";
-// import axiosImage from "@/public/desktop1/as-seen-in/axios.svg";
-// import bbcImage from "@/public/desktop1/as-seen-in/bbc.svg";
-// import incImage from "@/public/desktop1/as-seen-in/inc.svg";
-
 function ProudlySupporting1() {
   return (
     <div className="bg-[#F4EFEA]  max-2xl:px-[100px] px-[150px] py-[50px] w-full">
@@ -31,7 +24,7 @@ function ProudlySupporting1() {
             alt="Rural"
             className="h-[56px] w-[137px]"
           />
-           <img
+          <img
             src={"/desktop1/proudly/logo4.webp"}
             alt="211 Alberta"
             className="h-[50px] w-[158px]"
