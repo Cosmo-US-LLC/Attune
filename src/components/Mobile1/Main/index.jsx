@@ -14,6 +14,7 @@ import WeBelieve from './WeBelieve'
 import OurCore from './OurCore'
 import { List } from 'lucide-react'
 import ListenerMobile from './ListenerMobile'
+import BreakingBarriersMobile from './BreakingBarriersMobile'
 
 function HomeMobile() {
   return (
@@ -21,6 +22,7 @@ function HomeMobile() {
       <HeroMobile />
       <AsSeenMob1 />
       <YourPath />
+      <BreakingBarriersMobile/>
       <ListenerMobile/>
       <HowIt />
       <NoNeed />
