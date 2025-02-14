@@ -14,6 +14,7 @@ import NoNeed from './NoNeed'
 import WhyListenersMatter from './WhyListenersMatter'
 import OurCoreValues from './OurCore'
 import Listener from './Listener'
+import BreakingBarriers from './BreakingBarriers'
 
 function HomeDesktop() {
   return (
@@ -21,6 +22,7 @@ function HomeDesktop() {
       <Hero />
       <ProudlySupporting1 />
       <PathToSupport />
+      <BreakingBarriers />
       <Listener />
       <HowItWorks />
       <NoNeed />
