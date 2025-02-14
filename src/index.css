@@ -120,8 +120,27 @@ body {
   width: 100vw; /* Full width of the viewport */
   
 }
+.CFMHCDesktop{
+  background-image: url(/desktop5/listener/listener-bg.webp); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+  min-height: 900px;
+  width: 100vw;  
+  
+}
 .listenerMobile4{
   background-image: url(/mobile4/listener/listener-bg-m.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: start;
+ min-height: 725px;
+  
+}
+
+.listenerMobile5{
+  background-image: url(/mobile5/listener/listener-bg.webp); /* Replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: start;
