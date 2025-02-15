@@ -34,7 +34,7 @@ jobs:
           node --version 2>&1
 
           cd /var/www/attune &&
-          echo "Pulling latest code..." 2>&1 &&
+          echo "Pulling latest code.." 2>&1 &&
           git stash
           git pull 2>&1 &&
 
