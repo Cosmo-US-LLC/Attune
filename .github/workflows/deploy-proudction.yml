@@ -33,7 +33,7 @@ jobs:
           # Verify Node.js version
           node --version 2>&1
 
-          cd /var/www/attune &&
+          cd /var/www/Attune &&
           echo "Pulling latest code.." 2>&1 &&
           git stash
           git pull 2>&1 &&
