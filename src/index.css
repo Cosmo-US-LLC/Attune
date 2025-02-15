@@ -81,6 +81,14 @@ body {
   /* min-height: 41.875vw; */
   min-height: 603px;
 }
+.why-listeners-matter-section-4 {
+  background-image: url(/desktop4/why-listeners-matter/mental.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-height: 41.875vw; */
+  min-height: 603px;
+}
 
 .why-listeners-matter-section {
   background-image: url(/desktop1/why-listeners-matter/frame_131.webp); /* Replace with your image path */
@@ -99,6 +107,44 @@ body {
   /* min-height: 41.875vw; */
   min-height: 903px;
   width: 100vw; /* Full width of the viewport */
+  
+}
+
+.listenerCaregiversSeeking{
+  background-image: url(/desktop4/listener/listener-bg.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-height: 41.875vw; */
+  min-height: 900px;
+  width: 100vw; /* Full width of the viewport */
+  
+}
+.CFMHCDesktop{
+  background-image: url(/desktop5/listener/listener-bg.webp); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+  min-height: 900px;
+  width: 100vw;  
+  
+}
+.listenerMobile4{
+  background-image: url(/mobile4/listener/listener-bg-m.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: start;
+ min-height: 725px;
+  
+}
+
+.listenerMobile5{
+  background-image: url(/mobile5/listener/listener-bg.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: start;
+ min-height: 725px;
   
 }
 

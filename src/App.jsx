@@ -12,6 +12,10 @@ import HomeMobileMental from "./components/Mobile3/Home";
 import HomeMobileLonely from "./components/Mobile2/Home";
 import HomeDesktopLonely from "./components/Desktop2/Home";
 import HomeDesktopMental from "./components/Desktop3/Home";
+import HomeDesktopCaregiverSeeking from "./components/Desktop4/Home";
+import HomeMobileCaregiverSeeking from "./components/Mobile4/Home";
+import HomeDesktopCaregiversFacingMentalHealthChallenges from "./components/Desktop5/Home";
+import HomeMobileCaregiversFacingMentalHealthChallenges from "./components/Mobile5/Home";
 
 function App() {
   return (
@@ -62,6 +66,35 @@ function App() {
               </div>
               <div className="lg:hidden">
                 <HomeMobileMental />
+              </div>
+            </>
+          }
+        />
+         <Route
+          path="/young-adults-caregivers-seeking-support"
+          element={
+            <>
+              <div className="max-lg:hidden">
+                  <HomeDesktopCaregiverSeeking />
+              </div>
+              <div className="lg:hidden">
+                 <HomeMobileCaregiverSeeking />
+              </div>
+            </>
+          }
+        />
+           <Route
+          path="/young-adults-caregivers-facing-mental-health-challenges"
+          element={
+            <>
+              <div className="max-lg:hidden">
+                <HomeDesktopCaregiversFacingMentalHealthChallenges />
+                 
+              </div>
+              <div className="lg:hidden">
+             
+              <HomeMobileCaregiversFacingMentalHealthChallenges />
+                  
               </div>
             </>
           }
