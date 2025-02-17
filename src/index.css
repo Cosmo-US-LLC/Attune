@@ -109,6 +109,34 @@ body {
   width: 100vw; /* Full width of the viewport */
   
 }
+.listener-desktop-1{
+  background-image: url(/desktop1/listener/listener-bg-D.webp);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 903px;
+  width: 100vw;  
+}
+.listener-desktop-2{
+  background-image: url(/desktop2/listener/listener-bg-D.webp);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 903px;
+  width: 100vw;  
+  
+}
+.listener-desktop-3{
+  background-image: url(/desktop3/listener/listener-bg-D.webp);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+  min-height: 903px;
+  width: 100vw;  
+  
+}
+
 
 .listenerCaregiversSeeking{
   background-image: url(/desktop4/listener/listener-bg.webp); /* Replace with your image path */
@@ -148,15 +176,29 @@ body {
   
 }
 
-.listenerMobile{
-  background-image: url(/desktop1/listener/listener-bg.webp); /* Replace with your image path */
+.listenerMobile2{
+  background-image: url(/desktop2/listener/listener-bg-M.webp); /* Replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: start;
-  /* min-height: 41.875vw; */
-  /* height: 389.041px; */
-  width: 813.855; /* Full width of the viewport */
+  width: 100%;  
   
+}
+
+.listenerMobile3{
+  background-image: url(/desktop3/listener/listener-bg-M.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: start;
+  width: 100%;  
+  
+}
+
+.listenerMobile1{
+  background-image: url(/desktop1/listener/listener-bg-M.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: start; 
 }
 .swiper-pagination-bullet {
   background: gray;

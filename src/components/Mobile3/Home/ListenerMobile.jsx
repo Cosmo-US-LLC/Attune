@@ -34,7 +34,7 @@ export default function ListenerMobile() {
   ];
 
   return (
-    <div className="listenerMobile min-h-[400px] py-[50px] px-1 space-y-4">
+    <div className="listenerMobile3 min-h-[400px] py-[50px] px-1 space-y-4">
       <div className="space-y-5">
         <Carousel className="Listener">
           <CarouselContent>
