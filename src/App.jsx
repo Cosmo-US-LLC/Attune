@@ -70,8 +70,8 @@ function App() {
             </>
           }
         />
-         <Route
-          path="/young-adults-caregivers-seeking-support"
+         <Route 
+          path="/middle-aged-facing-loneliness"
           element={
             <>
               <div className="max-lg:hidden">
@@ -84,7 +84,7 @@ function App() {
           }
         />
            <Route
-          path="/young-adults-caregivers-facing-mental-health-challenges"
+          path="/middle-age-individual-facing-mental-health-challenges"
           element={
             <>
               <div className="max-lg:hidden">

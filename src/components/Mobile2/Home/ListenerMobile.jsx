@@ -39,12 +39,12 @@ export default function ListenerMobile() {
     ]
     return (
         <>
-            <div className="listenerMobile pb-[40px] pt-[50px] px-1 space-y-4">
+            <div className="listenerMobile2 pb-[40px] pt-[50px] px-1 space-y-4">
                 <div className='space-y-5 '>
                     <Carousel className="">
                         <CarouselContent>
                             {cards?.map((card, id) => (
-                                <CarouselItem key={id} className="basis-1/1 w-full">
+                                <CarouselItem key={id} className="w-full basis-1/1">
                                     <div className="max-w-[350px] h-full mx-auto  bg-white/50 backdrop-blur-sm py-5 px-[16px] rounded-xl space-y-[20px]">
 
 
@@ -72,8 +72,8 @@ export default function ListenerMobile() {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious className="border border-black disabled:hidden bg-white top-40 left-0" />
-                        <CarouselNext className="border border-black disabled:hidden bg-white top-40 right-0" />
+                        <CarouselPrevious className="left-0 bg-white border border-black disabled:hidden top-40" />
+                        <CarouselNext className="right-0 bg-white border border-black disabled:hidden top-40" />
                     </Carousel>
                 </div>
             </div>

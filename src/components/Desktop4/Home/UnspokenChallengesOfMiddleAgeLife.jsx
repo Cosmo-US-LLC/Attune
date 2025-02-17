@@ -30,14 +30,14 @@ function UnspokenChallengesOfMiddleAgeLife() {
           />
 
           <YourPathCard
-            img="/desktop4/your-path/path-to-support-3.webp"
+            img="/desktop4/your-path/path-to-support-5.webp"
             title="Pressure to Succeed:"
             classes="bg-[#D43525] text-white"
             body="Caring for loved ones, managing work stress, and handling personal responsibilities can feel overwhelming."
           />
 
           <YourPathCard
-            img="/desktop4/your-path/path-to-support-4.webp"
+            img="/desktop4/your-path/path-to-support-6.webp"
             title="The Cost of Loneliness"
             classes="bg-[#D43525] text-white"
             body="Loneliness isn’t just an emotion—it affects your well-being, your health, and your happiness."

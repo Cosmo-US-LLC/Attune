@@ -8,7 +8,7 @@ function Listener() {
 
   return (
     <div className="w-full overflow-x-hidden">
-      <div className="flex flex-col flex-wrap listener md:flex-row">
+      <div className="flex flex-col flex-wrap listener-desktop-1 md:flex-row">
         <div className="w-full md:w-[45%]"></div>
 
         <div className="w-full md:w-[55%] flex justify-center px-6 md:px-12 lg:px-16">
