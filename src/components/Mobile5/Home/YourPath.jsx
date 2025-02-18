@@ -40,7 +40,7 @@ function YourPath() {
       id="mobile-path-to-support"
     >
       <p className="font-miniature text-center text-[38px]">
-        Supporting Everyon Except Yourself?
+        Supporting Everyone Except Yourself?
       </p>
       <p className="w-[350px] text-center text-black font-inter text-[15px] font-normal leading-[26px]">
         You spend so much time supporting others, but who is supporting you?
@@ -86,7 +86,7 @@ function YourPath() {
         <a href="https://innovacare.tech/listenerhub/signup">
           <Button className="bg-[#5200FF] rounded-full text-[15px] ml-3">
             {" "}
-            Start Your Journey to Connection Today
+            Start your journey today
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"

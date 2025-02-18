@@ -31,7 +31,7 @@ function UnspokenChallengesOfMiddleAgeLife() {
 
           <YourPathCard
             img="/desktop4/your-path/path-to-support-5.webp"
-            title="Pressure to Succeed:"
+            title="Uneven Struggles"
             classes="bg-[#D43525] text-white"
             body="Caring for loved ones, managing work stress, and handling personal responsibilities can feel overwhelming."
           />

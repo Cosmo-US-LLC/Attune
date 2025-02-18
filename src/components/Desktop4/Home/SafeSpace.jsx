@@ -5,14 +5,14 @@ function SafeSpace() {
       judgment.
     </p>,
     <p className="pt-2">
-      <strong>Confidential & Safe:</strong>No pressure, just conversation.
+      <strong>Confidential & Safe: </strong>No pressure, just conversation.
     </p>,
     <p className="pt-2">
       <strong>Affordable Access: </strong>No clinical labels, no costly therapy
       fees.
     </p>,
     <p className="pt-2">
-      <strong>Flexible & On-Demand:</strong>Support that fits your schedule.
+      <strong>Flexible & On-Demand: </strong>Support that fits your schedule.
     </p>,
   ];
 

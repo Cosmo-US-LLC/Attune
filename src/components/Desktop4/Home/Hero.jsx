@@ -21,7 +21,7 @@ function Hero() {
         </h1>
         <p className="mt-4 max-w-[477px] text-white font-inter text-[16px] font-[400] leading-[26px] max-xl:text-[15px] pr-2">
           You spend your days supporting others, but in the quiet moments, who
-          supports you? When you're always looking out for others, it's easy to
+          supports you? <br /> When you're always looking out for others, it's easy to
           feel alone. FeelAttune offers a safe space for you to connect, share,
           and be heard—without judgment.
         </p>

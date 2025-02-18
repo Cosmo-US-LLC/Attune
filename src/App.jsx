@@ -16,15 +16,16 @@ import HomeDesktopCaregiverSeeking from "./components/Desktop4/Home";
 import HomeMobileCaregiverSeeking from "./components/Mobile4/Home";
 import HomeDesktopCaregiversFacingMentalHealthChallenges from "./components/Desktop5/Home";
 import HomeMobileCaregiversFacingMentalHealthChallenges from "./components/Mobile5/Home";
+import useFavicon from "./hooks/useFavicon";
 
 function App() {
+  useFavicon()
   return (
     <>
-      {/* Desktop */}
       <div className="max-lg:hidden">
         <Navbar />
       </div>
-      {/* Mobile */}
+
       <div className="lg:hidden">
         <NavbarMobile />
       </div>
@@ -70,42 +71,38 @@ function App() {
             </>
           }
         />
-         <Route 
+        <Route
           path="/middle-aged-facing-loneliness"
           element={
             <>
               <div className="max-lg:hidden">
-                  <HomeDesktopCaregiverSeeking />
+                <HomeDesktopCaregiverSeeking />
               </div>
               <div className="lg:hidden">
-                 <HomeMobileCaregiverSeeking />
+                <HomeMobileCaregiverSeeking />
               </div>
             </>
           }
         />
-           <Route
+        <Route
           path="/middle-age-individual-facing-mental-health-challenges"
           element={
             <>
               <div className="max-lg:hidden">
                 <HomeDesktopCaregiversFacingMentalHealthChallenges />
-                 
               </div>
               <div className="lg:hidden">
-             
-              <HomeMobileCaregiversFacingMentalHealthChallenges />
-                  
+                <HomeMobileCaregiversFacingMentalHealthChallenges />
               </div>
             </>
           }
         />
       </Routes>
 
-      {/* Desktop */}
       <div className="max-lg:hidden">
         <Footer />
       </div>
-      {/* Mobile */}
+
       <div className="lg:hidden">
         <FooterMobile />
       </div>
