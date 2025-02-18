@@ -31,7 +31,7 @@ function App() {
       </div>
 
       <Routes>
-        {/* <HomeDesktop /> */}
+      
         <Route
           path="/"
           element={
