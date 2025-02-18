@@ -35,17 +35,17 @@ export default function ListenerMobile() {
 
   const cardArr = [
     <p>
-      <strong>Reframing Experiences: </strong>Gain a fresh perspective and clarity on your challenges.
+      <strong>Reframing Experiences: </strong> Gain a fresh perspective and clarity on your challenges.
     </p>,
     <p className="">
-      <strong>Setting and Achieving Goals:</strong>Boost your confidence, manage transitions, and achieve personal milestone.
+      <strong>Setting and Achieving Goals:</strong> Boost your confidence, manage transitions, and achieve personal milestone.
     </p>,
     <p className="">
       <strong>Emotional well-being: </strong> Explore strategies to enhance your motivation and overall well-being.
       fees.
     </p>,
     <p className="">
-      <strong>Building Resilience:</strong>Building Resilience: Strengthen your ability to navigate life's hurdles and move towards your desired outcomes.
+      <strong>Building Resilience:</strong> Building Resilience: Strengthen your ability to navigate life's hurdles and move towards your desired outcomes.
     </p>,
   ];
 
