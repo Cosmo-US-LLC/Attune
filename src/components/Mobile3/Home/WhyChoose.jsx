@@ -25,10 +25,10 @@ function WhyChoose() {
         <table className="w-full">
           <thead>
             <tr className="grid grid-cols-2 ">
-              <th className="p-[10px]   text-left  flex items-center leading-[22px] text-[24.238px] font-[400] font-miniature bg-[#e5ff7d]">
+              <th className="p-[10px]  border-b border-black text-left  flex items-center leading-[22px] text-[24.238px] font-[400] font-miniature bg-[#e5ff7d]">
                 Att<span className="italic">une</span>
               </th>
-              <th className="p-[10px] text-left text-[16px] font-[500] flex items-center">
+              <th className="p-[10px] border-b border-black text-left text-[16px] font-[500] flex items-center">
                 Traditional Therapy
               </th>
             </tr>
