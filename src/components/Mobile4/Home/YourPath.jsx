@@ -87,7 +87,7 @@ function YourPath() {
         <a href="https://innovacare.tech/listenerhub/signup">
           <Button className="bg-[#5200FF] rounded-full text-[15px] ml-3">
             {" "}
-            Start your journey today
+            Start Your Journey Today
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"

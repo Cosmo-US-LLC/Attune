@@ -45,7 +45,7 @@ function UnspokenChallengesOfMiddleAgeLife() {
         <div className="flex items-center justify-center">
           <a href="https://innovacare.tech/listenerhub/signup">
             <button className="mt-6 bg-[#5200FF] flex flex-row text-white text-[16px] font-[500] py-5 px-10 rounded-full hover:bg-purple-800">
-            You deserve to feel supported. Connect Today.
+            You Deserve To Feel Supported. Connect Today.
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"
