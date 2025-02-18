@@ -16,21 +16,22 @@ import HomeDesktopCaregiverSeeking from "./components/Desktop4/Home";
 import HomeMobileCaregiverSeeking from "./components/Mobile4/Home";
 import HomeDesktopCaregiversFacingMentalHealthChallenges from "./components/Desktop5/Home";
 import HomeMobileCaregiversFacingMentalHealthChallenges from "./components/Mobile5/Home";
+import useFavicon from "./hooks/useFavicon";
 
 function App() {
+  useFavicon()
   return (
     <>
-      {/* Desktop */}
       <div className="max-lg:hidden">
         <Navbar />
       </div>
-      {/* Mobile */}
+
       <div className="lg:hidden">
         <NavbarMobile />
       </div>
 
       <Routes>
-        {/* <HomeDesktop /> */}
+      
         <Route
           path="/"
           element={
@@ -70,42 +71,38 @@ function App() {
             </>
           }
         />
-         <Route
-          path="/young-adults-caregivers-seeking-support"
+        <Route
+          path="/middle-age-loneliness"
           element={
             <>
               <div className="max-lg:hidden">
-                  <HomeDesktopCaregiverSeeking />
+                <HomeDesktopCaregiverSeeking />
               </div>
               <div className="lg:hidden">
-                 <HomeMobileCaregiverSeeking />
+                <HomeMobileCaregiverSeeking />
               </div>
             </>
           }
         />
-           <Route
-          path="/young-adults-caregivers-facing-mental-health-challenges"
+        <Route
+          path="/middle-age-mental-health-barriers"
           element={
             <>
               <div className="max-lg:hidden">
                 <HomeDesktopCaregiversFacingMentalHealthChallenges />
-                 
               </div>
               <div className="lg:hidden">
-             
-              <HomeMobileCaregiversFacingMentalHealthChallenges />
-                  
+                <HomeMobileCaregiversFacingMentalHealthChallenges />
               </div>
             </>
           }
         />
       </Routes>
 
-      {/* Desktop */}
       <div className="max-lg:hidden">
         <Footer />
       </div>
-      {/* Mobile */}
+
       <div className="lg:hidden">
         <FooterMobile />
       </div>

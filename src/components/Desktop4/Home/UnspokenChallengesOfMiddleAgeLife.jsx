@@ -30,14 +30,14 @@ function UnspokenChallengesOfMiddleAgeLife() {
           />
 
           <YourPathCard
-            img="/desktop4/your-path/path-to-support-3.webp"
-            title="Pressure to Succeed:"
+            img="/desktop4/your-path/path-to-support-5.webp"
+            title="Uneven Struggles"
             classes="bg-[#D43525] text-white"
             body="Caring for loved ones, managing work stress, and handling personal responsibilities can feel overwhelming."
           />
 
           <YourPathCard
-            img="/desktop4/your-path/path-to-support-4.webp"
+            img="/desktop4/your-path/path-to-support-6.webp"
             title="The Cost of Loneliness"
             classes="bg-[#D43525] text-white"
             body="Loneliness isn’t just an emotion—it affects your well-being, your health, and your happiness."
@@ -46,7 +46,7 @@ function UnspokenChallengesOfMiddleAgeLife() {
         <div className="flex items-center justify-center">
           <a href="https://innovacare.tech/listenerhub/signup">
             <button className="mt-6 bg-[#5200FF] flex flex-row text-white text-[16px] font-[500] py-5 px-10 rounded-full hover:bg-purple-800">
-            You Deserve to Feel Heard. Connect Today
+            You Deserve To Feel Heard. Connect Today
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"

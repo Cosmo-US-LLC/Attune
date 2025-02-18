@@ -20,7 +20,7 @@ function HeroMobile() {
           </p>
           <p className="text-[14px] font-[400] leading-[21px]">
             Balancing life’s responsibilities can be overwhelming. Who is there
-            for you when you need support? Our program provides a safe space for
+            for you when you need support? <br/> Our program provides a safe space for
             middle-aged individuals to talk, share, and feel heard—without
             judgment.
           </p>

@@ -24,12 +24,12 @@ function YourPath() {
       body: "Many middle-aged individuals feel emotionally isolated, stuck in a cycle of obligations with little personal connection.",
     },
     {
-      img: "/mobile4/your-path/path-to-support-3.webp",
+      img: "/mobile4/your-path/path-to-support-5.webp",
       title: "Uneven Struggles",
       body: "Caring for loved ones, managing work stress, and handling personal responsibilities can feel overwhelming.",
     },
     {
-      img: "/mobile4/your-path/path-to-support-4.webp",
+      img: "/mobile4/your-path/path-to-support-6.webp",
       title: "The Cost of Loneliness",
       body: "Loneliness isn’t just an emotion—it affects your well-being, your health, and your happiness.",
     },
@@ -56,12 +56,12 @@ function YourPath() {
           <CarouselContent>
             {cards?.map((card, id) => (
               <CarouselItem key={id} className="w-full basis-1/1">
-                <div className="  mx-auto border border-black bg-[#D43525] py-4 px-2 rounded-[30px] space-y-[20px] w-[278px] h-[400px]">
+                <div className="  mx-auto border border-black bg-[#D43525] py-4 px-2 rounded-[12px] space-y-[20px] w-[278px] h-[359px]">
                   <div className="px-2">
                     <img
                       src={card?.img}
                       alt="Icon"
-                      className="rounded-[30px]  border border-black bg-black mx-auto w-[278px] h-[185px]"
+                      className="rounded-[8px]  border border-black bg-black mx-auto w-[246px] h-[148px]"
                     />
                   </div>
 
@@ -87,7 +87,7 @@ function YourPath() {
         <a href="https://innovacare.tech/listenerhub/signup">
           <Button className="bg-[#5200FF] rounded-full text-[15px] ml-3">
             {" "}
-            Start Your Journey to Connection Today
+            Start Your Journey Today
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"

@@ -40,7 +40,7 @@ function YourPath() {
       id="mobile-path-to-support"
     >
       <p className="font-miniature text-center text-[38px]">
-        Supporting Everyone—Except Yourself?
+        Supporting Everyone Except Yourself?
       </p>
       <p className="w-[350px] text-center text-black font-inter text-[15px] font-normal leading-[26px]">
         You spend so much time supporting others, but who is supporting you?
@@ -55,17 +55,17 @@ function YourPath() {
           <CarouselContent>
             {cards?.map((card, id) => (
               <CarouselItem key={id} className="w-full basis-1/1">
-                <div className="  mx-auto border border-black bg-[#D43525] py-4 px-2 rounded-[30px] space-y-[20px] w-[278px] h-[400px]">
+                <div className="  mx-auto border border-black bg-[#D43525] py-4 px-2 rounded-[12px] space-y-[20px] w-[278px] h-[359px]">
                   <div className="px-2">
                     <img
                       src={card?.img}
                       alt="Icon"
-                      className="rounded-[30px]  border border-black bg-black mx-auto w-[278px] h-[185px]"
+                      className="rounded-[8px]  border border-black bg-black mx-auto w-[246px] h-[148px]"
                     />
                   </div>
 
-                  <div className="space-y-[14px]">
-                    <h3 className=" h-[61px] flex items-center leading-normal font-[400] justify-center text-center text-white text-[28px] font-miniature px-6">
+                  <div className="space-y-[14px] ">
+                    <h3 className="   flex items-center leading-normal font-[400] justify-center text-center text-white text-[28px] font-miniature    ">
                       {card?.title}
                     </h3>
 
@@ -86,7 +86,7 @@ function YourPath() {
         <a href="https://innovacare.tech/listenerhub/signup">
           <Button className="bg-[#5200FF] rounded-full text-[15px] ml-3">
             {" "}
-            Start Your Journey to Connection Today
+            Start Your Journey Today
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"

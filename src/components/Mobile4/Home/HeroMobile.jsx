@@ -20,7 +20,7 @@ function HeroMobile() {
           </p>
           <p className="text-[14px] font-[400] leading-[21px]">
             You spend your days supporting others, but in the quiet moments, who
-            supports you? When you're always looking out for others, it's easy
+            supports you? <br /> When you're always looking out for others, it's easy
             to feel alone. Our program offers a safe space for middle-aged
             individuals to connect, share, and be heard—without judgment.
           </p>

@@ -18,7 +18,7 @@ function Hero() {
         </h1>
         <p className="mt-4 max-w-[477px] text-white font-inter text-[16px] font-[400] leading-[26px] max-xl:text-[15px] pr-2">
           Balancing life’s responsibilities can be overwhelming. Who is there
-          for you when you need support? Our program provides a safe space for
+          for you when you need support? <br /> Our program provides a safe space for
           middle-aged individuals to talk, share, and feel heard—without
           judgment.
         </p>

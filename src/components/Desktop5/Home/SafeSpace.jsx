@@ -5,15 +5,15 @@ function SafeSpace() {
       clarity on your challenges.
     </p>,
     <p className="">
-      <strong>Setting and Achieving Goals:</strong>Boost your confidence, manage
+      <strong>Setting and Achieving Goals: </strong>Boost your confidence, manage
       transitions, and achieve personal milestone.
     </p>,
     <p className="">
-      <strong>Emotional well-being:</strong>Explore strategies to enhance your
+      <strong>Emotional well-being: </strong>Explore strategies to enhance your
       motivation and overall well-being. fees.
     </p>,
     <p className="">
-      <strong>Building Resilience:</strong>Strengthen your ability to navigate
+      <strong>Building Resilience: </strong>Strengthen your ability to navigate
       life's hurdles and move towards your desired outcomes.
     </p>,
   ];

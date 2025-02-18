@@ -39,14 +39,14 @@ export default function ListenerMobile() {
       judgment.
     </p>,
     <p className="pt-2">
-      <strong>Confidential & Safe:</strong>No pressure, just conversation.
+      <strong>Confidential & Safe: </strong>No pressure, just conversation.
     </p>,
     <p className="pt-2">
       <strong>Affordable Access: </strong>No clinical labels, no costly therapy
       fees.
     </p>,
     <p className="pt-2">
-      <strong>Flexible & On-Demand:</strong>Support that fits your schedule.
+      <strong>Flexible & On-Demand: </strong>Support that fits your schedule.
     </p>,
   ];
 
@@ -102,11 +102,11 @@ export default function ListenerMobile() {
     //   </div>
     // </div>
     <div className="flex items-center justify-center w-full px-6 overflow-x-hidden listenerMobile4">
-      <div className="  rounded-[20px] px-6 py-6 gap-4 flex flex-col justify-center items-center   bg-white/70 backdrop-blur-sm ">
-        <h3 className="font-miniature text-[30px]       ">
-          A Safe Space for Those Who Give <br /> Their All
+      <div className="  rounded-[20px] px-6 py-6 gap-5 flex flex-col justify-center     bg-white/80 backdrop-blur-lg ">
+        <h3 className="font-miniature text-[30px] w-[260px]  ">
+          A Safe Space for Those Who Give   Their All
         </h3>
-        <p className="text-[14px] font-[400] leading-[20px]">
+        <p className="text-[14px] font-[400] leading-[20px] w-[300px]">
           Let us ease your burden, even for a moment.
         </p>
         <ul className="pl-8">

@@ -16,13 +16,13 @@ function MakeAnImpactCarousel() {
       body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
-      bg: "bg-[#F097DD]",
+      bg: "bg-[#FF6F61]",
       img: "/desktop4/testimonials/test-3.webp",
       title: "Michael, 52",
       body: '"Balancing work and personal life became too much. My Listener helped me regain confidence and manage my emotions effectively."',
     },
     {
-      bg: "bg-[#FF6F61]",
+      bg: "bg-[#6FE0D1]",
       img: "/desktop4/testimonials/test-2.webp",
       title: "Sophia, 38",
       textColor: "text-white",
@@ -79,7 +79,7 @@ function MakeAnImpactCarousel() {
                     className="w-[117px] h-[117px] object-contain rounded-full mb-[47px]"
                   />
 
-                  <div className={"space-y-[22px] " + (id == 2 && " text-white")}>
+                  <div className={"space-y-[22px] " + (test?.title === "Michael, 52" && " text-white")}>
                     <h3 className="font-miniature text-[40px]">
                       {test?.title}
                     </h3>
