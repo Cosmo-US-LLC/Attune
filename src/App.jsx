@@ -72,7 +72,7 @@ function App() {
           }
         />
         <Route
-          path="/middle-aged-facing-loneliness"
+          path="/middle-age-loneliness"
           element={
             <>
               <div className="max-lg:hidden">
@@ -85,7 +85,7 @@ function App() {
           }
         />
         <Route
-          path="/middle-age-individual-facing-mental-health-challenges"
+          path="/middle-age-mental-health-barriers"
           element={
             <>
               <div className="max-lg:hidden">
