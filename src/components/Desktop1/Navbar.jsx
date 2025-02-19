@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { useLocation } from "react-router-dom";
 
 function Navbar() {
   const location = useLocation();
 
-  // Get the current path without the hash part
+ 
   const currentPath = location.pathname;
+
+  useEffect(() => {
+   
+    if (location.hash) {
+      const targetId = location.hash.replace("#", "");
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        setTimeout(() => {
+          window.scrollTo({
+            top: targetElement.getBoundingClientRect().top + window.scrollY - 50,
+            behavior: "smooth",
+          });
+        }, 100);
+      }
+    }
+  }, []);
+
 
   const handleScroll = (targetId, offset = 0) => {
     const targetElement = document.getElementById(targetId);
