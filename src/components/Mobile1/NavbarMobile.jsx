@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "../ui/button";
 import {
   Sheet,
@@ -16,6 +16,23 @@ function NavbarMobile() {
   const location = useLocation();
 
   const currentPath = location.pathname;
+
+  useEffect(() => {
+    // Check if there is a hash in the URL
+    if (location.hash) {
+        const targetId = location.hash.replace("#", "");
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            setTimeout(() => {
+                window.scrollTo({
+                    top: targetElement.getBoundingClientRect().top + window.scrollY - 50,
+                    behavior: "smooth",
+                });
+            }, 100);
+        }
+    }
+}, [location]);
+
 
   const handleClick = (targetId, offset) => {
     setSideOpen(false);
