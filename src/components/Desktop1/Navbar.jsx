@@ -8,25 +8,46 @@ function Navbar() {
   // Get the current path without the hash part
   const currentPath = location.pathname;
 
-  const handleScroll = (targetId, offset) => {
+  const handleScroll = (targetId, offset = 0) => {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - offset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
+      const offsetPosition = window.pageYOffset + elementPosition - offset;
+
+      setTimeout(() => {
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }, 100);
     }
   };
+
+  // const handleScroll = (targetId, offset) => {
+  //   const targetElement = document.getElementById(targetId);
+  //   if (targetElement) {
+  //     const elementPosition = targetElement.getBoundingClientRect().top;
+  //     const offsetPosition = elementPosition + window.scrollY - offset;
+  //     window.scrollTo({
+  //       top: offsetPosition,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // };
 
   return (
     <div className="pb-[5.5rem]">
       <div className="fixed top-0 w-[100%] z-[99]">
         <nav className="bg-white h-[99px] shadow-sm">
           <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
-            
-            <Link to="/" className="flex items-center">
+            <Link
+              to="/"
+              className="flex items-center"
+              onClick={(e) => {
+               
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
               <img
                 src="/desktop1/feel-attune-logo.webp"
                 alt="Attune Logo"
@@ -37,32 +58,44 @@ function Navbar() {
             <div className="flex items-center space-x-8">
               <Link
                 smooth
-                to={`${currentPath}#path-to-support`} // Use the current path dynamically
-                onClick={() => handleScroll("path-to-support", 90)}
+                to={`${currentPath}#path-to-support`}
+                onClick={(e) => {
+                  
+                  handleScroll("path-to-support", 50);
+                }}
                 className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
               >
                 Path To Support
               </Link>
               <Link
                 smooth
-                to={`${currentPath}#how-it-works`} // Maintain current path
-                onClick={() => handleScroll("how-it-works", 90)}
+                to={`${currentPath}#how-it-works`}
+                onClick={(e) => {
+                  
+                  handleScroll("how-it-works", 90);
+                }}
                 className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
               >
                 How It Works
               </Link>
               <Link
                 smooth
-                to={`${currentPath}#why-choose-a-listener`} // Dynamic path handling
-                onClick={() => handleScroll("why-choose-a-listener", 90)}
+                to={`${currentPath}#why-choose-a-listener`}
+                onClick={(e) => {
+                 
+                  handleScroll("why-choose-a-listener", 90);
+                }}
                 className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
               >
                 Our Approach
               </Link>
               <Link
                 smooth
-                to={`${currentPath}#FAQs`} // Avoid losing the current route
-                onClick={() => handleScroll("FAQs", 90)}
+                to={`${currentPath}#FAQs`}
+                onClick={(e) => {
+                  
+                  handleScroll("FAQs", 90);
+                }}
                 className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
               >
                 FAQs
@@ -82,19 +115,6 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // function Navbar() {
 //   const handleScroll = (event, targetId, offset) => {

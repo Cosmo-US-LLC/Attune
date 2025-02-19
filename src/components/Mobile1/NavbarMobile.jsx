@@ -90,7 +90,16 @@ function NavbarMobile() {
                 >
                   <SheetHeader>
                     <SheetTitle>
-                      <Link to="/" onClick={() => setSideOpen(false)}>
+                      <Link
+                        to="/"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setSideOpen(false);
+                          setTimeout(() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }, 100);
+                        }}
+                      >
                         <img
                           src="/mobile1/feel-attune-logo.webp"
                           alt="Attune Logo"
@@ -114,34 +123,36 @@ function NavbarMobile() {
                             <Link
                               smooth
                               to={`${window.location.pathname}#mobile-path-to-support`}
-                              onClick={() =>
-                                handleClick("mobile-path-to-support", 50)
-                              }
+                              onClick={(e) => {
+                                handleClick("mobile-path-to-support", 50);
+                              }}
                             >
                               Path To Support
                             </Link>
                             <Link
                               smooth
                               to={`${window.location.pathname}#mobile-how-it-works`}
-                              onClick={() =>
-                                handleClick("mobile-how-it-works", 50)
-                              }
+                              onClick={(e) => {
+                                handleClick("mobile-how-it-works", 50);
+                              }}
                             >
                               How It Works
                             </Link>
                             <Link
                               smooth
                               to={`${window.location.pathname}#mobile-why-choose-a-listener`}
-                              onClick={() =>
-                                handleClick("mobile-why-choose-a-listener", 50)
-                              }
+                              onClick={(e) => {
+                                handleClick("mobile-why-choose-a-listener", 50);
+                              }}
                             >
                               Our Approach
                             </Link>
                             <Link
                               smooth
                               to={`${window.location.pathname}#mobile-FAQs`}
-                              onClick={() => handleClick("mobile-FAQs", 50)}
+                              onClick={(e) => {
+                                handleClick("mobile-FAQs", 50);
+                              }}
                             >
                               FAQs
                             </Link>
@@ -207,13 +218,22 @@ function NavbarMobile() {
                 </SheetContent>
               </Sheet>
 
-              <a href="#">
+              <Link
+                to="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setSideOpen(false);
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }, 100);  
+                }}
+              >
                 <img
                   src="/mobile1/feel-attune-logo.webp"
                   alt="Attune Logo"
-                  className="w-[105px]   object-contain"
+                  className="w-[105px] object-contain"
                 />
-              </a>
+              </Link>
             </div>
 
             <a href="https://innovacare.tech/listenerhub/signup">
