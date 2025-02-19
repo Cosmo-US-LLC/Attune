@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "../ui/button";
 import {
   Sheet,
@@ -8,30 +8,69 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { HashLink as Link } from "react-router-hash-link";
+import { useLocation } from "react-router-dom";
 
 function NavbarMobile() {
   const [sideOpen, setSideOpen] = useState(false);
+  const location = useLocation();
 
-  const handleClick = (e, targetId, offset) => {
-    e.preventDefault();
-  
+  const currentPath = location.pathname;
+
+  useEffect(() => {
+    // Check if there is a hash in the URL
+    if (location.hash) {
+        const targetId = location.hash.replace("#", "");
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            setTimeout(() => {
+                window.scrollTo({
+                    top: targetElement.getBoundingClientRect().top + window.scrollY - 50,
+                    behavior: "smooth",
+                });
+            }, 100);
+        }
+    }
+}, [location]);
+
+
+  const handleClick = (targetId, offset) => {
     setSideOpen(false);
-  
     setTimeout(() => {
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
-        // Calculate the position with offset
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.scrollY - offset;
-  
-        // Smooth scroll with offset applied
         window.scrollTo({
           top: offsetPosition,
           behavior: "smooth",
         });
       }
-    }, 300);
+    }, 200);
   };
+
+  // const [sideOpen, setSideOpen] = useState(false);
+
+  // const handleClick = (e, targetId, offset) => {
+  //   e.preventDefault();
+
+  //   setSideOpen(false);
+
+  //   setTimeout(() => {
+  //     const targetElement = document.getElementById(targetId);
+  //     if (targetElement) {
+  //       // Calculate the position with offset
+  //       const elementPosition = targetElement.getBoundingClientRect().top;
+  //       const offsetPosition = elementPosition + window.scrollY - offset;
+
+  //       // Smooth scroll with offset applied
+  //       window.scrollTo({
+  //         top: offsetPosition,
+  //         behavior: "smooth",
+  //       });
+  //     }
+  //   }, 300);
+  // };
 
   return (
     <>
@@ -41,7 +80,10 @@ function NavbarMobile() {
             <div className="flex gap-3 relative z-[100]">
               <Sheet open={sideOpen} onOpenChange={setSideOpen}>
                 <SheetTrigger asChild>
-                  <button onClick={()=>setSideOpen(true)} className="bg-[#F4EFEA] w-[40px] h-[40px] p-2 rounded-sm">
+                  <button
+                    onClick={() => setSideOpen(true)}
+                    className="bg-[#F4EFEA] w-[40px] h-[40px] p-2 rounded-sm"
+                  >
                     <svg
                       width="24"
                       height="24"
@@ -59,16 +101,28 @@ function NavbarMobile() {
                     </svg>
                   </button>
                 </SheetTrigger>
-                <SheetContent side={"left"} className="bg-[#e5ddd4] z-[101] flex flex-col">
+                <SheetContent
+                  side={"left"}
+                  className="bg-[#e5ddd4] z-[101] flex flex-col"
+                >
                   <SheetHeader>
                     <SheetTitle>
-                      <a href="#" onClick={()=>setSideOpen(false)}>
+                      <Link
+                        to="/"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setSideOpen(false);
+                          setTimeout(() => {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          }, 100);
+                        }}
+                      >
                         <img
                           src="/mobile1/feel-attune-logo.webp"
                           alt="Attune Logo"
                           className="w-[140px] h-[60px] object-contain"
                         />
-                      </a>
+                      </Link>
                     </SheetTitle>
                     <SheetDescription hidden></SheetDescription>
                   </SheetHeader>
@@ -83,12 +137,45 @@ function NavbarMobile() {
                         </div>
                         <div className="relative mt-8">
                           <div className="flex flex-col gap-4 font-[500]">
-                            <a href={"#mobile-path-to-support"} onClick={(e) => handleClick(e, "mobile-path-to-support", 50)}>Path To Support</a>
-                            <a href={"#mobile-how-it-works"} onClick={(e) => handleClick(e, "mobile-how-it-works", 50)}>How It Works</a>
-                            <a href={"#mobile-why-choose-a-listener"} onClick={(e) => handleClick(e, "mobile-why-choose-a-listener", 50)}>Our Approach</a>
-                            <a href={"#mobile-FAQs"} onClick={(e) => handleClick(e, "mobile-FAQs", 50)}>FAQs</a>
+                            <Link
+                              smooth
+                              to={`${window.location.pathname}#mobile-path-to-support`}
+                              onClick={(e) => {
+                                handleClick("mobile-path-to-support", 50);
+                              }}
+                            >
+                              Path To Support
+                            </Link>
+                            <Link
+                              smooth
+                              to={`${window.location.pathname}#mobile-how-it-works`}
+                              onClick={(e) => {
+                                handleClick("mobile-how-it-works", 50);
+                              }}
+                            >
+                              How It Works
+                            </Link>
+                            <Link
+                              smooth
+                              to={`${window.location.pathname}#mobile-why-choose-a-listener`}
+                              onClick={(e) => {
+                                handleClick("mobile-why-choose-a-listener", 50);
+                              }}
+                            >
+                              Our Approach
+                            </Link>
+                            <Link
+                              smooth
+                              to={`${window.location.pathname}#mobile-FAQs`}
+                              onClick={(e) => {
+                                handleClick("mobile-FAQs", 50);
+                              }}
+                            >
+                              FAQs
+                            </Link>
                           </div>
                         </div>
+
                         <div className="flex items-center justify-between py-0 mt-6">
                           <div className="flex flex-row items-center justify-center gap-4">
                             <a href="https://www.linkedin.com/company/easecare/">
@@ -114,7 +201,7 @@ function NavbarMobile() {
                             </a>
                           </div>
 
-                           {/* <a href="https://innovacare.tech/listenerhub/signup">
+                          {/* <a href="https://innovacare.tech/listenerhub/signup">
                             <button className="bg-[#5200FF] text-white px-[10px] h-[38px] my-0 min-w-[112px] rounded-full text-[15px] whitespace-nowrap">
                               Get Started
                             </button>
@@ -148,13 +235,22 @@ function NavbarMobile() {
                 </SheetContent>
               </Sheet>
 
-              <a href="#">
+              <Link
+                to="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setSideOpen(false);
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }, 100);  
+                }}
+              >
                 <img
                   src="/mobile1/feel-attune-logo.webp"
                   alt="Attune Logo"
-                  className="w-[105px]   object-contain"
+                  className="w-[105px] object-contain"
                 />
-              </a>
+              </Link>
             </div>
 
             <a href="https://innovacare.tech/listenerhub/signup">
