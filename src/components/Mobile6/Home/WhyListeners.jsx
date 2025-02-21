@@ -13,7 +13,7 @@ function WhyListeners() {
       <div className="py-[30px] flex flex-col justify-between items-center absolute w-full h-full left-0 top-0 z-10">
         <div className="flex justify-between w-full min-h-[230px] pl-[17px] pr-2">
           <div className="bg-[#E5FF7D] w-[162px] h-[162px] rounded-full flex flex-col justify-center items-center">
-            <h3 className="flex flex-col justify-center self-stretch text-center text-black text-[18px] leading-[15px] font-[700] tracking-[-1.68px] h-[29.474px]">
+            <h3 className="flex flex-col justify-center self-stretch text-center text-black text-[18px] leading-[15px] font-[700] tracking-[-1px] h-[29.474px]">
               Over 50%
             </h3>
 
@@ -23,10 +23,10 @@ function WhyListeners() {
             </p>
           </div>
           <div className="bg-[#6FE0D1] w-[162px] h-[162px] mt-[54px] rounded-full flex gap-2 flex-col justify-center items-center">
-            <h3 className="text-[14px]   text-black leading-[16px] font-[700] text-center   ">
+            <h3 className="text-[14px]   text-black leading-[19px] font-[700] text-center   ">
               20% of older adults
             </h3>
-            <p className="text-[12px] text-black text-center leading-[13px] w-[144px] ">
+            <p className="text-[12px] text-black text-center leading-[16px] w-[144px] ">
               Experience mental health challenges, including depression and
               anxiety.
             </p>
@@ -69,21 +69,21 @@ function WhyListeners() {
         </div>
         <div className="flex justify-between w-full min-h-[230px] pl-[17px] pr-2">
           <div className="mb-16 ">
-            <div className="bg-[#6FE0D1] w-[162px] h-[162px] rounded-full flex flex-col justify-center items-center ">
-              <h3 className="text-[14px] text-black leading-[14px] font-[700] text-center ml-3 ">
+            <div className="bg-[#6FE0D1] w-[162px] h-[162px] gap-1 rounded-full flex flex-col justify-center items-center ">
+              <h3 className="text-[14px] text-black leading-[19px] font-[700] text-center  ">
               1 in 5 young adults
               </h3>
-              <p className="text-[12px] text-black text-center w-[144px]">
+              <p className="text-[12px] text-black text-center w-[144px] leading-[16px]">
                lives with a mental health condition.
               </p>
             </div>
           </div>
           <div className="mb-16 ">
-            <div className="bg-[#FFA8ED] mt-[54px] w-[162px] h-[162px] rounded-full flex flex-col justify-center items-center ">
-              <h3 className="text-[14px] text-black leading-[14px] font-[700] text-center ml-3">
+            <div className="bg-[#FFA8ED] mt-[54px] gap-1 w-[162px] h-[162px] rounded-full flex flex-col justify-center items-center ">
+              <h3 className="text-[14px] text-black leading-[16px] font-[700] text-center  ">
               70% of caregivers
               </h3>
-              <p className="text-[12px] text-black text-center w-[144px]">
+              <p className="text-[12px] text-black text-center w-[144px] leading-[19px]">
               experience significant stress or burnout.
               </p>
             </div>

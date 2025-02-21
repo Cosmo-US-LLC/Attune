@@ -46,7 +46,7 @@ function UnspokenChallengesOfMiddleAgeLife() {
             body="Many struggle alone because they don’t know what support is right for them."
           />
           <YourPathCard
-            img="/desktop6/your-path/path-to-support-4.webp"
+            img="/desktop6/your-path/path-to-support-5.webp"
             title='Feeling "Not Bad Enough"'
             classes="bg-[#6FE0D1] text-white"
             body="Some believe their struggles aren’t serious enough for professional help."

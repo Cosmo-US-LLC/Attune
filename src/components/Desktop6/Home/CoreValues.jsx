@@ -13,7 +13,7 @@ function CoreValues() {
       bg: "bg-[#E5FF7D]",
       img: "/desktop3/coreValues/c-1.png",
       title: "You Deserve Connection",
-      body: 'Feeling burnt out or overwhelmed? We’re here for you. Our platform creates a safe, open space for you to talk about what matters to you, no matter how big or small.',
+      body: 'Navigating university life or starting a career? We’re here for you. Our platform creates a safe, open space for you to talk about what matters to you, no matter how big or small.',
     },
     {
       bg: "bg-[#FFA8ED]",
@@ -39,7 +39,7 @@ function CoreValues() {
       <Carousel className="">
         <CarouselContent>
           {testimonials?.map((test, id) => (
-            <CarouselItem key={id} className="max-xl:basis-1/2 basis-1/3 w-full">
+            <CarouselItem key={id} className="w-full max-xl:basis-1/2 basis-1/3">
               <div
                 className={
                   "border border-black rounded-[30px] py-[35px] px-[28px] min-h-[440px] " +

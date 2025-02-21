@@ -10,19 +10,19 @@ import {
 function MakeAnImpactCarousel() {
   const testimonials = [
     {
-      bg: "bg-[#E5FF7D]",
+      bg: "bg-[#F097DD]",
       img: "/desktop6/testimonials/test-21.webp",
       title: "Jessica, 45",
       body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
-      bg: "bg-[#FF6F61]",
+      bg: "bg-[#E5FF7D]",
       img: "/desktop6/testimonials/test-1.webp",
       title: "Jake, 24",
       body: '"Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference."',
     },
     {
-      bg: "bg-[#6FE0D1]",
+      bg: "bg-[#FF6F61]",
       img: "/desktop6/testimonials/test-31.webp",
       title: "John, 72",
       textColor: "text-white",
@@ -83,7 +83,7 @@ function MakeAnImpactCarousel() {
                   <div
                     className={
                       "space-y-[22px] " +
-                      (test?.title === "Jake, 24" && " text-white")
+                      (test?.title === "John, 72" && " text-white")
                     }
                   >
                     <h3 className="font-miniature text-[40px]">

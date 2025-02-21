@@ -10,7 +10,7 @@ function SafeSpace() {
     </p>,
     <p className="">
       <strong>Emotional well-being: </strong>Explore strategies to enhance your
-      motivation and overall well-being. fees.
+      motivation and overall well-being.
     </p>,
     <p className="">
       <strong>Building Resilience: </strong>Strengthen your ability to navigate

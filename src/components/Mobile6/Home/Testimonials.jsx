@@ -10,19 +10,19 @@ import {
 function Testimonials() {
   const testimonials = [
     {
-      bg: "bg-[#E5FF7D]",
+      bg: "bg-[#F097DD]",
       img: "/mobile6/testimonials/test2.webp",
       title: "Jessica, 45",
       body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
-      bg: "bg-[#FF6F61]",
+      bg: "bg-[#E5FF7D]",
       img: "/mobile6/testimonials/test1.webp",
       title: "Jake, 24",
       body: '"Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference."',
     },
     {
-      bg: "bg-[#6FE0D1]",
+      bg: "bg-[#FF6F61]",
       img: "/mobile6/testimonials/test3.webp",
       textColor: "text-white",
       title: "John, 72",
@@ -77,7 +77,7 @@ function Testimonials() {
                       ? "space-y-[4px]" /* Reduced space */
                       : "space-y-[10px]"
                   } ${
-                    test.title === "Jake, 24" ? "text-white" : "text-black"
+                    test.title === "John, 72" ? "text-white" : "text-black"
                   }`}
                 >
                   <h3 className="font-miniature text-[32px]">{test?.title}</h3>
