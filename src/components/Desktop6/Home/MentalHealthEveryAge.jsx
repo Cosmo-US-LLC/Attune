@@ -16,17 +16,17 @@ const content = {
   ],
   "middle-aged": [
     { img: "/desktop6/mentalHealthEveryAge/young-adult-1.webp", title: "Workplace Stress and Burnout", description: "Managing careers, deadlines, and expectations while handling family can be exhausting." },
-    { img: "/desktop6/mentalHealthEveryAge/young-adult-2.webp", title: "Emotional Isolation", description: "Neglecting personal relationships and work stress can result in isolation." },
-    { img: "/desktop6/mentalHealthEveryAge/young-adult-3.webp", title: "Financial Anxiety", description: "Providing for family and long-term financial concerns create pressure." },
-    { img: "/desktop6/mentalHealthEveryAge/young-adult-4.webp", title: "Relationship Strain", description: "Marriage, parenting, and family expectations often cause tension." },
-    { img: "/desktop6/mentalHealthEveryAge/young-adult-5.webp", title: "Self Doubt and Midlife Crisis", description: "Questioning life choices and career paths creates emotional distress." },
+    { img: "/desktop6/mentalHealthEveryAge/young-adult-2.webp", title: "Emotional Isolation", description: "Juggling responsibilities often leads to neglecting personal relationships, increasing isolation." },
+    { img: "/desktop6/mentalHealthEveryAge/young-adult-3.webp", title: "Financial Anxiety", description: "Providing for family while planning for the future causes constant financial stress." },
+    { img: "/desktop6/mentalHealthEveryAge/young-adult-4.webp", title: "Relationship Strain", description: "Providing for family while planning for the future causes constant financial stress." },
+    { img: "/desktop6/mentalHealthEveryAge/young-adult-5.webp", title: "Self Doubt and Midlife Crisis", description: "Questioning life choices and personal accomplishments can fuel self-doubt and depression." },
   ],
   "seniors": [
-    { img: "/desktop6/mentalHealthEveryAge/young-adult-1.webp", title: "Loneliness and Social Isolation", description: "Changes in social networks and reduced mobility result in deep loneliness." },
-    { img: "/desktop6/mentalHealthEveryAge/young-adult-2.webp", title: "Loss and Grief", description: "Coping with the loss of loved ones leads to sadness and emotional distress." },
-    { img: "/desktop6/mentalHealthEveryAge/young-adult-3.webp", title: "Cognitive Decline Anxiety", description: "Fear of aging and cognitive decline adds stress and uncertainty." },
-    { img: "/desktop6/mentalHealthEveryAge/young-adult-4.webp", title: "Physical Health Challenges", description: "Chronic health issues limit physical activity and increase mental stress." },
-    { img: "/desktop6/mentalHealthEveryAge/young-adult-5.webp", title: "Lack of Emotional Support", description: "Limited access to loved ones and emotional support makes seniors feel isolated." },
+    { img: "/desktop6/mentalHealthEveryAge/young-adult-1.webp", title: "Loneliness and Social Isolation", description: "Changes in social circles and reduced mobility often result in deep loneliness." },
+    { img: "/desktop6/mentalHealthEveryAge/young-adult-2.webp", title: "Loss and Grief", description: "Coping with the loss of loved ones can trigger prolonged sadness and emotional distress." },
+    { img: "/desktop6/mentalHealthEveryAge/young-adult-3.webp", title: "Cognitive Decline Anxiety", description: "Fear of aging and cognitive decline creates constant worry and emotional strain." },
+    { img: "/desktop6/mentalHealthEveryAge/young-adult-4.webp", title: "Physical Health Challenges", description: "Chronic health issues often impact mental well-being and independence." },
+    { img: "/desktop6/mentalHealthEveryAge/young-adult-5.webp", title: "Lack of Emotional Support", description: "Limited access to emotional outlets can make seniors feel unheard and undervalued." },
   ],
 };
 

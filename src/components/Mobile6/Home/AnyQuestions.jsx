@@ -67,7 +67,7 @@ function AnyQuestions() {
         <div>
           Our pricing is affordable and based on the number of hours you use.
           You can choose from flexible plans that work for your needs,
-          <span className="font-bold">starting at just $30/hr</span>. We believe
+          <span className="font-bold"> starting at just $30/hr</span>. We believe
           emotional support should be accessible to everyone
         </div>
       ),

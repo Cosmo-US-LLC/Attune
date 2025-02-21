@@ -9,7 +9,7 @@ function HeroMobile() {
         <img
           src={"/mobile6/hero/Hero.webp"}
           alt=""
-          className=" h-[300px] object-center pt-6"
+          className=" h-[300px] object-center pt-6 mx-auto"
         />
       </div>
       <div className="bg-[#95ADF0] py-[30px] px-[20px] space-y-[28px]">
