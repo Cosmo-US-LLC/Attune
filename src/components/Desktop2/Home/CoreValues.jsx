@@ -19,7 +19,7 @@ function CoreValues() {
       bg: "bg-[#FFA8ED]",
       img: "/desktop2/coreValues/c-3.png",
       title: "No Labels, Just Support",
-      body: "No diagnosis needed—just real conversations. Whether you're feeling stressed, overwhelmed, or just want to share your thoughts, we’re ready to listen.",
+      body: "Whether you're feeling stressed, overwhelmed, or just want to share your thoughts, we’re ready to listen.",
     },
     {
       bg: "bg-[#6FE0D1]",
