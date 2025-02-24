@@ -18,7 +18,7 @@ const content = {
     { img: "/desktop6/mentalHealthEveryAge/young-adult-1.webp", title: "Workplace Stress and Burnout", description: "Managing careers, deadlines, and expectations while handling family can be exhausting." },
     { img: "/desktop6/mentalHealthEveryAge/young-adult-2.webp", title: "Emotional Isolation", description: "Juggling responsibilities often leads to neglecting personal relationships, increasing isolation." },
     { img: "/desktop6/mentalHealthEveryAge/young-adult-3.webp", title: "Financial Anxiety", description: "Providing for family while planning for the future causes constant financial stress." },
-    { img: "/desktop6/mentalHealthEveryAge/young-adult-4.webp", title: "Relationship Strain", description: "Providing for family while planning for the future causes constant financial stress." },
+    { img: "/desktop6/mentalHealthEveryAge/young-adult-4.webp", title: "Relationship Strain", description: "Marriage, parenting, and friendships often face tension due to time and emotional pressures." },
     { img: "/desktop6/mentalHealthEveryAge/young-adult-5.webp", title: "Self Doubt and Midlife Crisis", description: "Questioning life choices and personal accomplishments can fuel self-doubt and depression." },
   ],
   "seniors": [
