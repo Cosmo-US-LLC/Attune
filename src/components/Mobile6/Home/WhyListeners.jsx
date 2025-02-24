@@ -35,9 +35,12 @@ function WhyListeners() {
 
         <div className="flex flex-col items-center justify-center mt-6 mb-6">
           <h1 className="text-[38px] font-[400] w-[352px] leading-normal text-center font-miniature">
-          Updated Stats Section: Breaking the Stigma Around Mental Health
+            Updated Stats Section: Breaking the Stigma Around Mental Health
           </h1>
-          <p className="text-[15px] font-[400] px-4 leading-normal text-center">Mental health struggles are more common than you think, yet many hesitate to seek help due to stigma, cost, or fear of judgment.</p>
+          <p className="text-[15px] font-[400] px-4 leading-normal text-center">
+            Mental health struggles are more common than you think, yet many
+            hesitate to seek help due to stigma, cost, or fear of judgment.
+          </p>
           <a href="https://innovacare.tech/listenerhub/signup">
             <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#ff6f61] mt-4">
               <button className="text-white font-[500] text-[15px]">
@@ -71,20 +74,20 @@ function WhyListeners() {
           <div className="mb-16 ">
             <div className="bg-[#6FE0D1] w-[162px] h-[162px] gap-1 rounded-full flex flex-col justify-center items-center ">
               <h3 className="text-[14px] text-black leading-[19px] font-[700] text-center  ">
-              1 in 5 young adults
+                1 in 5 young adults
               </h3>
               <p className="text-[12px] text-black text-center w-[144px] leading-[16px]">
-               lives with a mental health condition.
+                lives with a mental health condition.
               </p>
             </div>
           </div>
           <div className="mb-16 ">
             <div className="bg-[#FFA8ED] mt-[54px] gap-1 w-[162px] h-[162px] rounded-full flex flex-col justify-center items-center ">
               <h3 className="text-[14px] text-black leading-[16px] font-[700] text-center  ">
-              70% of caregivers
+                70% of caregivers
               </h3>
               <p className="text-[12px] text-black text-center w-[144px] leading-[19px]">
-              experience significant stress or burnout.
+                experience significant stress or burnout.
               </p>
             </div>
           </div>

@@ -65,8 +65,17 @@ body {
   min-height: 43.7vw;
 }
 
+.why-listeners-matter-section-1 {
+  background-image: url(/desktop1/why-listeners-matter/why-listener.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-height: 41.875vw; */
+  min-height: 603px;
+}
+
 .why-listeners-matter-section-2 {
-  background-image: url(/desktop2/why-listeners-matter/new-bg.png); /* Replace with your image path */
+  background-image: url(/desktop2/why-listeners-matter/why-listener.webp); /* Replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -74,7 +83,7 @@ body {
   min-height: 603px;
 }
 .why-listeners-matter-section-3 {
-  background-image: url(/desktop3/why-listeners-matter/mental.png); /* Replace with your image path */
+  background-image: url(/desktop3/why-listeners-matter/why-listener.webp); /* Replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -82,15 +91,23 @@ body {
   min-height: 603px;
 }
 .why-listeners-matter-section-4 {
-  background-image: url(/desktop4/why-listeners-matter/mental.webp); /* Replace with your image path */
+  background-image: url(/desktop4/why-listeners-matter/why-listener.webp); /* Replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   /* min-height: 41.875vw; */
   min-height: 603px;
 }
+
+.why-listeners-matter-section-5 {
+  background-image: url(/desktop5/why-listeners-matter/why-listener.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 603px;
+}
 .why-listeners-matter-section-6 {
-  background-image: url(/desktop6/why-listeners-matter/mental.webp); /* Replace with your image path */
+  background-image: url(/desktop6/why-listeners-matter/why-listener.webp); /* Replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

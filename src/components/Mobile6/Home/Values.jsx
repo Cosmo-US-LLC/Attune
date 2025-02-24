@@ -4,19 +4,19 @@ export default function Values (){
     const values = [
         {
           bg: "bg-[#E5FF7D]",
-          img: "/desktop3/coreValues/c-1.png",
+          img: "/desktop3/coreValues/c-1.svg",
           title: "You Deserve Connection",
           body: 'Navigating university life or starting a career? We’re here for you. Our platform creates a safe, open space for you to talk about what matters to you, no matter how big or small.',
         },
         {
           bg: "bg-[#FFA8ED]",
-          img: "/desktop3/coreValues/c-3.png",
+          img: "/desktop3/coreValues/c-2.svg",
           title: "No Labels, Just Support",
           body: "Whether you're feeling stressed, overwhelmed, or just want to share your thoughts, we’re ready to listen.",
         },
         {
           bg: "bg-[#6FE0D1]",
-          img: "/desktop3/coreValues/c-2.png",
+          img: "/desktop3/coreValues/c-3.svg",
           title: "Affordable & Accessible",
           body: 'Support that fits your budget and schedule. Designed for students and young professionals, we ensure connection is easy and affordable anytime, anywhere.',
         },
