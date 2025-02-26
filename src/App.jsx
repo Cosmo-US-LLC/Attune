@@ -19,6 +19,10 @@ import HomeMobileCaregiversFacingMentalHealthChallenges from "./components/Mobil
 import useFavicon from "./hooks/useFavicon";
 import AllAgeGroupsMentalHealthBarriers from "./components/Desktop6/Home";
 import AllAgeGroupsMentalHealthBarriersMobile from "./components/Mobile6/Home";
+import SeniorsAgeLonelinessDesktop from "./components/Desktop7/Home";
+import SeniorsAgeLonelinessMobile from "./components/Mobile7/Home";
+import SeniorsAgeMentalHealthBarriersDesktop from "./components/Desktop8/Home";
+import SeniorsAgeMentalHealthBarriersMobile from "./components/Mobile8/Home";
 
 function App() {
   useFavicon();
@@ -107,6 +111,32 @@ function App() {
               </div>
               <div className="lg:hidden">
                 <AllAgeGroupsMentalHealthBarriersMobile />
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/seniors-age-loneliness"
+          element={
+            <>
+              <div className="max-lg:hidden">
+                <SeniorsAgeMentalHealthBarriersDesktop />
+              </div>
+              <div className="lg:hidden">
+                <SeniorsAgeMentalHealthBarriersMobile />
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/seniors-age-mental-health-barriers"
+          element={
+            <>
+              <div className="max-lg:hidden">
+                <SeniorsAgeLonelinessDesktop />
+              </div>
+              <div className="lg:hidden">
+                <SeniorsAgeLonelinessMobile />
               </div>
             </>
           }

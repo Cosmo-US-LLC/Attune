@@ -98,6 +98,14 @@ body {
   /* min-height: 41.875vw; */
   min-height: 603px;
 }
+.why-listeners-matter-section-7 {
+  background-image: url(/desktop7/why-listeners-matter/why-listener.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-height: 41.875vw; */
+  min-height: 603px;
+}
 
 .why-listeners-matter-section-5 {
   background-image: url(/desktop5/why-listeners-matter/why-listener.webp); /* Replace with your image path */
@@ -180,9 +188,18 @@ body {
   background-position: center;
   /* min-height: 41.875vw; */
   min-height: 900px;
-  width: 100vw; /* Full width of the viewport */
-  
+  width: 100vw; /* Full width of the viewport */ 
 }
+.listenerSeniorsMentalHealthDesktop{
+  background-image: url(/desktop7/listener/listener-bg.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-height: 41.875vw; */
+  min-height: 900px;
+  width: 100vw; /* Full width of the viewport */ 
+}
+
 .CFMHCDesktop{
   background-image: url(/desktop5/listener/listener-bg.webp); 
   background-size: cover;
