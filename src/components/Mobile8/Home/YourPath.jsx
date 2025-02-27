@@ -14,24 +14,24 @@ import {
 function YourPath() {
   const cards = [
     {
-      img: "/mobile4/your-path/path-to-support-1.webp",
-      title: "Emotional Exhaustion",
-      body: "You give so much to others—your family, your work, your responsibilities—but what about you?",
+      img: "/mobile7/your-path/path-to-support-1.webp",
+      title: "Life Transitions:",
+      body: "Retirement, loss of loved ones, and reduced social opportunities can leave seniors feeling disconnected.",
     },
     {
-      img: "/mobile4/your-path/path-to-support-2.webp",
-      title: "Isolation",
-      body: "Many middle-aged individuals feel emotionally isolated, stuck in a cycle of obligations with little personal connection.",
+      img: "/mobile7/your-path/path-to-support-2.webp",
+      title: "Physical Barriers:",
+      body: "Health conditions or mobility challenges often limit social interactions.",
     },
     {
-      img: "/mobile4/your-path/path-to-support-5.webp",
-      title: "Uneven Struggles",
-      body: "Caring for loved ones, managing work stress, and handling personal responsibilities can feel overwhelming.",
+      img: "/mobile7/your-path/path-to-support-3.webp",
+      title: "Technology Gaps:",
+      body: "A lack of familiarity with digital tools can make staying connected difficult.",
     },
     {
-      img: "/mobile4/your-path/path-to-support-6.webp",
-      title: "The Cost of Loneliness",
-      body: "Loneliness isn’t just an emotion—it affects your well-being, your health, and your happiness.",
+      img: "/mobile7/your-path/path-to-support-4.webp",
+      title: "Emotional Impact:",
+      body: "Loneliness often leads to feelings of sadness, anxiety, and low self-worth.",
     },
   ];
   return (
@@ -39,38 +39,38 @@ function YourPath() {
       className="bg-white py-[30px] px-5 space-y-4"
       id="mobile-path-to-support"
     >
-      <p className="font-miniature text-center text-[38px]">
-        The Unspoken Challenges of Middle-Aged Life
+      <p className="font-miniature text-center text-[38px] font-[400]">
+        Understanding the Roots of Loneliness in Seniors
       </p>
-      <p className="w-[350px] text-center text-black font-inter text-[15px] font-normal leading-[26px]">
-        Have you ever felt like you're carrying the weight of everything, with
-        no one to lean on?
+      <p className="w-[350px] text-center text-black font-inter text-[15px] font-[400] leading-[26px]">
+        Exploring the emotional, social, and physical factors contributing to
+        isolation.
       </p>
 
-      {/* <p className="font-miniature font-bold text-center text-[30px] w-[354px]">
-      Some Reasons for Mental Health Challenges:
-      </p> */}
+      <p className="font-miniature font-[700] text-center text-[30px] w-[354px]">
+      Common Barriers to Mental Well-being:
+      </p>
 
       <div className="space-y-5">
         <Carousel className="">
           <CarouselContent>
             {cards?.map((card, id) => (
               <CarouselItem key={id} className="w-full basis-1/1">
-                <div className="  mx-auto border border-black bg-[#D43525] py-4 px-2 rounded-[12px] space-y-[20px] w-[278px] h-[359px]">
+                <div className="  mx-auto border border-black bg-[#6FE0D1] py-4 px-2 rounded-[30px] space-y-[20px] w-[284px] h-[390px]">
                   <div className="px-2">
                     <img
                       src={card?.img}
                       alt="Icon"
-                      className="rounded-[8px]  border border-black bg-black mx-auto w-[246px] h-[148px]"
+                      className="rounded-[30px] border border-black bg-black mx-auto w-[252px] h-[215px]"
                     />
                   </div>
 
-                  <div className="space-y-[14px]">
-                    <h3 className=" h-[61px] flex items-center leading-normal font-[400] justify-center text-center text-white text-[28px] font-miniature px-6">
+                  <div className="space-y-[8px]">
+                    <h3 className="   flex   leading-normal font-[700]   text-left text-black text-[28px] font-miniature  px-2">
                       {card?.title}
                     </h3>
 
-                    <p className="text-[15px] leading-[20px] font-[400] text-white text-center px-0">
+                    <p className="text-[15px] leading-[20px] font-[400] text-black text-left px-2">
                       {card?.body}
                     </p>
                   </div>
@@ -87,7 +87,7 @@ function YourPath() {
         <a href="https://innovacare.tech/listenerhub/signup">
           <Button className="bg-[#5200FF] rounded-full text-[15px] ml-3">
             {" "}
-            Start Your Journey Today
+            Start Your Journey To Connection Today
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
@@ -115,35 +115,4 @@ function YourPath() {
     </div>
   );
 }
-
-// function SupportCards({bg, img, title, points}) {
-//     return (
-//     <div className={"p-[14px] rounded-3xl space-y-6" + ` ${bg}`}>
-//         <img src={img} alt="Seeking connection 1" className='w-[322px] h-[151px] object-contain' />
-
-//         <div className='space-y-[14px]'>
-//             <h2 className='text-white font-miniature text-[26px]'>
-//                 {title}
-//             </h2>
-
-//             <ul className='list-disc text-[15px] leading-[22px] pl-[19px] space-y-[22px] text-white'>
-//                 {points?.map((point, id) => (
-//                     <li key={id} className='capitalize'
-//                         style={{
-//                             listStyleImage: "url(/mobile3/yourPath/list-disc.svg)"
-//                         }}
-//                     >
-//                         <strong>{point?.title}:</strong> {point?.body}
-//                     </li>
-//                 ))}
-//             </ul>
-//         </div>
-
-//         <div className='flex justify-center'>
-//             <Button className="bg-[#5200FF] rounded-full text-[15px]">Get Started</Button>
-//         </div>
-//     </div>
-//     )
-// }
-
 export default YourPath;

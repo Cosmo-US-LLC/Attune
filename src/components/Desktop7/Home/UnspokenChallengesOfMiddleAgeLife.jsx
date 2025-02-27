@@ -3,47 +3,33 @@ function UnspokenChallengesOfMiddleAgeLife() {
     <div id="path-to-support" className="bg-gray-50 py-[60px] px-[60px]">
       <div className="max-w-[1440px] mx-auto space-y-[30px] flex justify-center flex-col items-center">
         <h1 className="font-miniature text-[76px] text-center leading-[69px]">
-          The Unspoken Challenges of <br /> Middle-Aged Life
+        A Safe Space for You
         </h1>
-        <h6 className="text-[16px] font-[400] px-16 text-center w-[1061px]">
+        {/* <h6 className="text-[16px] font-[400] px-16 text-center w-[1061px]">
           Have you ever felt like you're carrying the weight of everything, with
           no one to lean on?
-        </h6>
+        </h6> */}
         {/* <h6 className="font-miniature text-[50px] font-bold text-center">
           Some Reasons for Mental Health Challenges:
         </h6> */}
         {/* <div className="max-w-4xl w-fit mx-auto grid md:grid-cols-2   gap-y-[28px]"> */}
         <div className="flex flex-wrap justify-center gap-6">
           <YourPathCard
-            img="/desktop4/your-path/path-to-support-1.webp"
-            title="Emotional Exhaustion"
-            classes="bg-[#D43525] text-white"
-            body="You give so much to others—your family, your work, your responsibilities—but what about you?"
+            img="/desktop8/your-path/path-to-support-1.webp"
+            title="Facing Challenges Together"
+            classes="bg-[#00DDBE] text-black"
+            body="As we age, emotional challenges like isolation and stress often arise. Nearly 1 in 8 seniors face mental health struggles annually, yet less than half seek support. You’re not alone."
           />
 
           <YourPathCard
-            img="/desktop4/your-path/path-to-support-2.webp"
+            img="/desktop8/your-path/path-to-support-2.webp"
             imgClass="bg-[#95ADF0] rounded-[30px] border border-black"
-            title="Isolation"
-            classes="bg-[#D43525] text-white"
-            body="Many middle-aged individuals feel emotionally isolated, stuck in a cycle of obligations with little personal connection."
-          />
-
-          <YourPathCard
-            img="/desktop4/your-path/path-to-support-5.webp"
-            title="Uneven Struggles"
-            classes="bg-[#D43525] text-white"
-            body="Caring for loved ones, managing work stress, and handling personal responsibilities can feel overwhelming."
-          />
-
-          <YourPathCard
-            img="/desktop4/your-path/path-to-support-6.webp"
-            title="The Cost of Loneliness"
-            classes="bg-[#D43525] text-white"
-            body="Loneliness isn’t just an emotion—it affects your well-being, your health, and your happiness."
+            title="Support Without Barriers"
+            classes="bg-[#E5FF7D] text-black"
+            body="Traditional solutions can feel intimidating, costly, or too formal. Sometimes, all you need is someone to listen—without labels or pressure."
           />
         </div>
-        <div className="flex items-center justify-center">
+        {/* <div className="flex items-center justify-center">
           <a href="https://innovacare.tech/listenerhub/signup">
             <button className="mt-6 bg-[#5200FF] flex flex-row text-white text-[16px] font-[500] py-5 px-10 rounded-full hover:bg-purple-800">
             You Deserve To Feel Heard. Connect Today
@@ -70,7 +56,7 @@ function UnspokenChallengesOfMiddleAgeLife() {
               </svg>
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -89,17 +75,17 @@ function YourPathCard({ img, imgClass = "", title, classes, body }) {
           src={img}
           alt={title}
           className={
-            "rounded-[30px]  border border-black bg-black w-[528px] h-[213px] mx-auto " +
+            "rounded-[30px]  border border-black bg-black w-[528px] h-[200px] mx-auto " +
             imgClass
           }
         />
 
-        <div className="grow flex flex-col text-center space-y-[5px] p-1">
-          <h2 className="max-xl:text-[24px] text-[30px] font-miniature">
+        <div className="grow flex flex-col text-left space-y-[5px] px-2 py-2">
+          <h2 className="text-[35px] font-[400] font-miniature">
             {title}
           </h2>
 
-          <p className="text-[16px] font-[400] leading-[26px]  text-white">
+          <p className="text-[18px] font-[500] leading-[26px]  text-black">
             {body}
           </p>
         </div>

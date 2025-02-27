@@ -1,51 +1,53 @@
 function SafeSpace() {
   const cardArr = [
     <p>
-      <strong>Empathetic Listeners: </strong>Trained to provide support, without
-      judgment.
+      <strong>Stigma and Labels: </strong> You want support, not a diagnosis.
     </p>,
     <p className="pt-2">
-      <strong>Confidential & Safe: </strong>No pressure, just conversation.
+      <strong>Cost Concerns: </strong> Therapy can feel out of reach.
     </p>,
     <p className="pt-2">
-      <strong>Affordable Access: </strong>No clinical labels, no costly therapy
-      fees.
+      <strong>Intimidation: </strong> Clinical environments can feel cold and
+      unwelcoming.
     </p>,
     <p className="pt-2">
-      <strong>Flexible & On-Demand: </strong>Support that fits your schedule.
+      <strong>Rigidity: </strong> Appointments and formal processes don’t always
+      fit your needs or schedule.
     </p>,
   ];
 
   return (
     <div className="w-full overflow-x-hidden">
-      <div className="flex flex-col flex-wrap listenerCaregiversSeeking md:flex-row">
+      <div className="flex flex-col flex-wrap listenerLonelyDesktop md:flex-row">
         <div className="w-full md:w-[50%]"></div>
 
         <div className="w-full md:w-[50%] flex justify-center px-6 md:px-12 lg:px-16">
           <div className="w-full max-w-[646px] flex items-center">
             <div className="bg-white border border-[#E5FF7D] rounded-[20px] p-[16px] md:p-[20px] lg:p-[48px] space-y-[22px]">
               <h3 className="font-miniature text-[30px] lg:text-[24px] xl:text-[50px] leading-[35px] md:leading-[40px] xl:leading-[57px]  text-center md:text-left">
-                A Safe Space for Those Who Give Their All
+                Life Change, But So Do the Challenges We Face
               </h3>
               <p className="text-[16px] font-[400] leading-[26px]">
-                Let us ease your burden, even for a moment.
+                As we grow older, feelings of isolation and stress can creep in.
+                Nearly 2 in 3 seniors facing mental health challenges do not
+                receive the care they need. Why?
               </p>
               <ul className="leading-[28px] md:leading-[24px] pl-6 md:pl-12 lg:pl-10">
                 {cardArr.map((item, index) => (
                   <li
                     key={index}
-                    className="relative text-[16px] pl-4 pb-4 md:pb-6"
+                    className="relative text-[18px] pl-4 pb-4 md:pb-6"
                   >
                     <span
                       style={{
                         content: "''",
                         position: "absolute",
-                        left: "-36px",  
+                        left: "-36px",
                         top: "4px",
                         width: "30px",
                         height: "30px",
                         backgroundImage:
-                          "url('/desktop4/listener/tick-circle.svg')",
+                          "url('/desktop7/listener/tick-circle.svg')",
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         display: "inline-block",
@@ -56,12 +58,14 @@ function SafeSpace() {
                 ))}
               </ul>
               <p className="text-[16px] font-[400] leading-[26px]">
-                Take the first step towards feeling lighter.
+                But support doesn’t have to feel this way. We offer on-demand,
+                judgment-free conversations with compassionate Listeners who are
+                here to help—anytime, anywhere.
               </p>
               <div className="flex justify-center mt-6 md:justify-start">
                 <a href="https://innovacare.tech/listenerhub/signup">
                   <button className="bg-[#5200FF] flex flex-row text-white text-[14px] md:text-[16px] font-[500] py-2 md:py-4 px-8 md:px-8 rounded-full hover:bg-purple-800">
-                    Start Your Journey Towards Connection
+                    Find Your Listener
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="21"

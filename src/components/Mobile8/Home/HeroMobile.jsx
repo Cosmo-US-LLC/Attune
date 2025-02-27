@@ -7,29 +7,27 @@ function HeroMobile() {
     <>
       <div className="w-full bg-[#E5FF7D]">
         <img
-          src={"/desktop4/hero/Hero.webp"}
+          src={"/desktop7/hero/Hero.webp"}
           alt=""
           className=" h-[300px] object-center object-cover"
         />
       </div>
-      <div className="bg-[#D43525] py-[30px] px-[20px] space-y-[28px]">
+      <div className="bg-[#00DDBE] py-[30px] px-[20px] space-y-[28px]">
         <div className="space-y-6 text-white">
-          <p className="font-miniature text-[52.627px]  leading-[52.627px]">
-            <span className="font-[600]"> Feeling </span> <br />{" "}
-            <span className="text-[#E5FF7D] italic"> Isolated? </span>
+          <p className="font-miniature text-[52px]  leading-[52.627px]">
+            <span className="font-[700]"> Rekindle Connection and</span>{" "}
+            <span className="text-[#E5FF7D] italic"> Find Comfort </span>
           </p>
           <p className="text-[14px] font-[400] leading-[21px]">
-            You spend your days supporting others, but in the quiet moments, who
-            supports you? <br /> When you're always looking out for others, it's easy
-            to feel alone. Our program offers a safe space for middle-aged
-            individuals to connect, share, and be heard—without judgment.
+            Loneliness doesn’t have to be your story. Rediscover the joy of
+            connection with a compassionate Listener who understands.
           </p>
         </div>
 
         <div>
           <a href="https://innovacare.tech/listenerhub/signup">
             <Button className="bg-[#5200FF] rounded-full text-[15px]">
-              Connect with a Listener Today
+              Talk to Listener Today
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"

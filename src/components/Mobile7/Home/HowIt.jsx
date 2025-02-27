@@ -13,8 +13,8 @@ function HowIt() {
       <div className="space-y-5">
         <HowItCards
           id="01"
-          title="Sign Up"
-          body="Create your profile in just a few clicks. It’s quick, simple, and all about you."
+          title="Create Your Profile"
+          body="Sign up in just a few clicks. It's quick and designed for your comfort."
         >
           <svg
             width="60"
@@ -143,7 +143,7 @@ function HowIt() {
 
         <HowItCards
           id="03"
-          title="Connect"
+          title="Connect Anytime, Anywhere"
           body="Open up through voice or video, anytime and anywhere. It’s your safe space to share."
         >
           <svg
@@ -196,7 +196,7 @@ function HowItCards({ id, title, body, children }) {
     <>
       <div className="bg-white border border-black p-[14px] rounded-[20px] space-y-[10px]">
         <div className="flex items-center justify-between">
-          <div className="h-[50px] w-[50px] rounded-full bg-[#D43525] text-white font-miniature flex justify-center items-center text-[20px]">
+          <div className="h-[50px] w-[50px] rounded-full bg-[#6FE0D1] text-white font-miniature flex justify-center items-center text-[20px]">
             {id}
           </div>
           {children}
