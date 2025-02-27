@@ -97,7 +97,7 @@ function AnyQuestions() {
           >
             <AccordionTrigger className="">
               <div className="flex items-center gap-2">
-                <span className="text-[#D43525] text-[24px] font-bold leading-[120%]">
+                <span className="text-[#6FE0D1] text-[24px] font-bold leading-[120%]">
                   {question?.id}
                 </span>
                 <span className="text-left text-[16px] font-bold leading-[22px]">

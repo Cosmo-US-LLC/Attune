@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 export default function Feel() {
   return (
     <>
-      <div className="bg-[#D43525]">
+      <div className="bg-[#6FE0D1]">
         <img
-          src={"/desktop4/feel-heard/smiling-girl.webp"}
+          src={"/desktop7/feel-heard/smiling-girl.webp"}
           alt="smilinggirl"
           className="object-cover "
         />
@@ -20,7 +20,7 @@ export default function Feel() {
               </span>
             </h3>
             <img
-              src={"/desktop4/feel-heard/feel-circle2.webp"}
+              src={"/desktop7/feel-heard/feel-circle2.webp"}
               alt="smilinggirl"
               className="h-[76px] w-[75px] ml-[252px] mt-9 absolute "
             />
@@ -55,7 +55,7 @@ export default function Feel() {
               </div>
             </a>
             <img
-              src={"/desktop4/feel-heard/feel-circle1.webp"}
+              src={"/desktop7/feel-heard/feel-circle1.webp"}
               alt="smilinggirl"
               className="h-[94px] w-[94px] ml-44 mt-3 absolute "
             />

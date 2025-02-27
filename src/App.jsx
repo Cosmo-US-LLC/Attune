@@ -115,6 +115,19 @@ function App() {
             </>
           }
         />
+        <Route 
+          path="/seniors-age-mental-health-barriers"
+          element={
+            <>
+              <div className="max-lg:hidden">
+                <SeniorsAgeLonelinessDesktop />
+              </div>
+              <div className="lg:hidden">
+                <SeniorsAgeLonelinessMobile />
+              </div>
+            </>
+          }
+        />
         <Route
           path="/seniors-age-loneliness"
           element={
@@ -124,19 +137,6 @@ function App() {
               </div>
               <div className="lg:hidden">
                 <SeniorsAgeMentalHealthBarriersMobile />
-              </div>
-            </>
-          }
-        />
-        <Route
-          path="/seniors-age-mental-health-barriers"
-          element={
-            <>
-              <div className="max-lg:hidden">
-                <SeniorsAgeLonelinessDesktop />
-              </div>
-              <div className="lg:hidden">
-                <SeniorsAgeLonelinessMobile />
               </div>
             </>
           }

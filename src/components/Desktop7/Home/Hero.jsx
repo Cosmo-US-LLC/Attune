@@ -1,36 +1,30 @@
-// import Image from "next/image";
-// import phoneImage from "../../../public/desktop3/hero/phone-boy.webp";
-
 function Hero() {
   return (
     <div className="lg:min-w-[1000px] xl:min-w-[1260px] 2xl:min-w-[1420px] flex flex-row overflow-hidden ">
-      <div className="bg-[#E5FF7D] min-w-[50%] ">
-        <div className="relative bottom-[-6%] ">
+      <div className="bg-[#E5FF7D] min-w-[50%] flex justify-center">
+        <div className="relative bottom-[-7%] ">
           <img
-            src={"/desktop4/hero/Hero.webp"}
+            src={"/desktop8/hero/Hero.webp"}
             alt="Listener"
-            className="max-2xl:w-[650px] max-lg:w-[480p] max-lg:h-auto h-[532px] w-[600px] rounded-lg object-cover"
+            className="   h-[594px] w-[720px] rounded-lg object-cover"
           />
         </div>
       </div>
 
-      <div className="bg-[#D43525] min-w-[50%] lg:px-12 lg:py-16 xl:p-20 ">
-        <h1 className="font-miniature max-w-md max-xl:text-[79px] lg:mt-8 xl:mt-4 text-[77px] text-white leading-[91px]">
-          <span className="font-[600]"> Feeling </span> <br />{" "}
-          <span className="text-[#E5FF7D] italic"> Isolated? </span>
+      <div className="bg-[#00DDBE] min-w-[50%]  flex flex-col justify-center px-12  ">
+        <h1 className="font-miniature    text-[77px] text-white leading-[91px]">
+          <span className="font-[600]">Support <br /> Without</span>  
+          <span className="text-[#E5FF7D] italic"> Stigma? </span>
         </h1>
         <p className="mt-4 max-w-[477px] text-white font-inter text-[16px] font-[400] leading-[26px] max-xl:text-[15px] pr-2">
-          You spend your days supporting others, but in the quiet moments, who
-          supports you? <br /> When you're always looking out for others, it's easy to
-          feel alone. FeelAttune offers a safe space for you to connect, share,
-          and be heard—without judgment.
+          A safe space to share your thoughts, your way. No judgment. No stigma.
         </p>
         <a
           href="https://innovacare.tech/listenerhub/signup"
           className="flex w-fit"
         >
           <button className="mt-6 bg-[#5200FF] flex flex-row text-white text-[16px] font-[500] py-2 px-10 rounded-full hover:bg-purple-800">
-          Connect with a Listener Today
+          Connect With A Listener
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
@@ -56,38 +50,6 @@ function Hero() {
         </a>
       </div>
     </div>
-
-    // <div className="bg-[#ffd23f] overflow-hidden px-16">
-    //   <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between p-8 h-[80vh]">
-    //     {/* Text Section */}
-    // <div className="text-center md:text-left md:max-w-[50%]">
-    //   <h1 className="font-miniature max-w-md max-xl:text-[79px] text-[99.3px] font-[500] text-black max-xl:leading-[79px] leading-[91px]">
-    //     Your Safe <br /> Space for <br />
-    //     <span className="text-[#5200FF] italic">Support</span>
-    //   </h1>
-    //   <p className="mt-4 text-black max-xl:text-[15px] text-[18px] font-[500] pr-10 max-xl:leading-[20px] leading-[26px]">
-    //     In a world where 1 in 5 adults experience mental health challenges,
-    //     Attune offers a revolutionary approach to emotional well-being. Our
-    //     platform connects you with compassionate Listeners, providing a
-    //     judgment-free zone for sharing your thoughts and feelings.
-    //   </p>
-    //   <button className="mt-6 bg-[#5200FF] text-white text-[16px] font-[500] py-2 px-4 rounded-full hover:bg-purple-800">
-    //     Connect to a Listener
-    //   </button>
-    // </div>
-
-    //     {/* Image Section */}
-    //     <div className="mt-8 md:mt-0 relative  md:max-w-[50%]">
-    //       <div className="relative">
-    //         <img
-    //           src={"/desktop3/hero/phone-boy.webp"}
-    //           alt="Listener"
-    //           className="max-xl:w-[480px] max-xl:h-auto h-[442px] w-[600px] rounded-lg object-contain"
-    //         />
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
 

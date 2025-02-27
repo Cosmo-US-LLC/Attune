@@ -10,7 +10,7 @@ function SafeSpace() {
     </p>,
     <p className="pt-2">
       <strong>Human Connection, Anywhere: </strong>Create meaningful
-      relationships, no matter where you are. fees.
+      relationships, no matter where you are.
     </p>,
     <p className="pt-2">
       <strong>Affordable and Personalized Support: </strong>Get the help you
@@ -64,7 +64,7 @@ function SafeSpace() {
               <div className="flex justify-center mt-6 md:justify-start">
                 <a href="https://innovacare.tech/listenerhub/signup">
                   <button className="bg-[#5200FF] flex flex-row text-white text-[14px] md:text-[16px] font-[500] py-2 md:py-4 px-8 md:px-8 rounded-full hover:bg-purple-800">
-                    Start Your Journey Towards Connection
+                  Start Connecting Today
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="21"
