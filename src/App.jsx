@@ -116,7 +116,7 @@ function App() {
           }
         />
         <Route 
-          path="/seniors-age-mental-health-barriers"
+          path="/seniors-mental-health-barriers"
           element={
             <>
               <div className="max-lg:hidden">
@@ -129,7 +129,7 @@ function App() {
           }
         />
         <Route
-          path="/seniors-age-loneliness"
+          path="/seniors-loneliness"
           element={
             <>
               <div className="max-lg:hidden">

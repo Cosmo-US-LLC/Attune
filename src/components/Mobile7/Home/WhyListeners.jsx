@@ -29,7 +29,7 @@ function WhyListeners() {
             Statistics That <br /> Matter
           </h1>
           <a href="https://innovacare.tech/listenerhub/signup">
-            <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#ff6f61] mt-4">
+            <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#5200FF] mt-4">
               <button className="text-white font-[500] text-[15px]">
                 Connect Now
               </button>

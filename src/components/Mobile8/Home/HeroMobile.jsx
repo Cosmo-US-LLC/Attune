@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 function HeroMobile() {
   return (
     <>
-      <div className="w-full bg-[#E5FF7D]">
+      <div className="w-full bg-[#E5FF7D] flex flex-col items-center">
         <img
           src={"/desktop7/hero/Hero.webp"}
           alt=""
-          className=" h-[300px] object-center object-cover"
+          className=" h-[300px]   object-cover"
         />
       </div>
       <div className="bg-[#00DDBE] py-[30px] px-[20px] space-y-[28px]">
