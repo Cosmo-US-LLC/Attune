@@ -26,7 +26,7 @@ function Testimonials() {
       img: "/desktop7/testimonials/test3.webp",
       textColor: "text-white",
       title: "Catherine, 65",
-      body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
+      body: '"I’ve always felt uneasy opening up, but this platform made it so easy and comforting. I now feel understood and less overwhelmed."',
     },
   ];
 

@@ -86,7 +86,7 @@ export default function ListenerMobile() {
                     </div>
                     <div>
                       <a href="https://innovacare.tech/listenerhub/signup">
-                        <Button className="bg-[#5200FF]   rounded-full text-[15px] text-left font-[500] leading-[20px] py-7 ">
+                        <Button className="bg-[#5200FF]   rounded-full text-[15px] text-left font-[500] leading-[20px] py-5 ">
                           Find Your Listener
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ export default function ListenerMobile() {
                             height="20"
                             viewBox="0 0 21 20"
                             fill="none"
-                            className="inline-block ml-4"
+                            className="inline-block ml-2"
                           >
                             <path
                               d="M0.617188 10C0.617188 4.53539 5.03539 0.117188 10.5 0.117188C15.9646 0.117188 20.3828 4.53539 20.3828 10C20.3828 15.4646 15.9646 19.8828 10.5 19.8828C5.03539 19.8828 0.617188 15.4646 0.617188 10ZM19.2201 10C19.2201 5.17486 15.3251 1.27987 10.5 1.27987C5.67486 1.27987 1.77987 5.17486 1.77987 10C1.77987 14.8251 5.67486 18.7201 10.5 18.7201C15.3251 18.7201 19.2201 14.8251 19.2201 10Z"

@@ -85,7 +85,7 @@ function YourPathCard({ img, imgClass = "", title, classes, body }) {
             {title}
           </h2>
 
-          <p className="text-[18px] font-[500] leading-[26px]  text-black">
+          <p className="text-[16px] font-[400] leading-[22px]  text-black">
             {body}
           </p>
         </div>

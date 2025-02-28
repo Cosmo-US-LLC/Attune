@@ -58,7 +58,8 @@ function Navbar() {
         <nav className="bg-white h-[99px] shadow-sm">
           <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
             <Link
-              to="/"
+            smooth
+            to={`${currentPath}`}
               className="flex items-center"
               onClick={(e) => {
                

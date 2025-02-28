@@ -3,14 +3,14 @@ function SafeSpace() {
     <p>
       <strong>Stigma and Labels: </strong> You want support, not a diagnosis.
     </p>,
-    <p className="pt-2">
+    <p className="">
       <strong>Cost Concerns: </strong> Therapy can feel out of reach.
     </p>,
-    <p className="pt-2">
+    <p className="">
       <strong>Intimidation: </strong> Clinical environments can feel cold and
       unwelcoming.
     </p>,
-    <p className="pt-2">
+    <p className="">
       <strong>Rigidity: </strong> Appointments and formal processes don’t always
       fit your needs or schedule.
     </p>,
@@ -25,14 +25,14 @@ function SafeSpace() {
           <div className="w-full max-w-[646px] flex items-center">
             <div className="bg-white border border-[#E5FF7D] rounded-[20px] p-[16px] md:p-[20px] lg:p-[48px] space-y-[22px]">
               <h3 className="font-miniature text-[30px] lg:text-[24px] xl:text-[50px] leading-[35px] md:leading-[40px] xl:leading-[57px]  text-center md:text-left">
-                Life Change, But So Do the Challenges We Face
+                Life Change, But So Do <br/> the Challenges We Face
               </h3>
               <p className="text-[16px] font-[400] leading-[26px]">
                 As we grow older, feelings of isolation and stress can creep in.
                 Nearly 2 in 3 seniors facing mental health challenges do not
                 receive the care they need. Why?
               </p>
-              <ul className="leading-[28px] md:leading-[24px] pl-6 md:pl-12 lg:pl-10">
+              <ul className="leading-[28px] space-y-3 md:leading-[24px] pl-6 md:pl-12 lg:pl-10">
                 {cardArr.map((item, index) => (
                   <li
                     key={index}
@@ -51,6 +51,7 @@ function SafeSpace() {
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         display: "inline-block",
+                        
                       }}
                     />
                     {item}
