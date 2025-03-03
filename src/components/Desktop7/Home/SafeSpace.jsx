@@ -1,18 +1,16 @@
 function SafeSpace() {
   const cardArr = [
     <p>
-      <strong>Stigma and Labels: </strong> You want support, not a diagnosis.
+      <strong>Reframing Experiences: </strong> Gain a fresh perspective and clarity on your challenges.
     </p>,
     <p className="">
-      <strong>Cost Concerns: </strong> Therapy can feel out of reach.
+      <strong>Setting and Achieving Goals: </strong> Boost your confidence, manage transitions, and achieve personal milestone.
     </p>,
     <p className="">
-      <strong>Intimidation: </strong> Clinical environments can feel cold and
-      unwelcoming.
+      <strong>Emotional well-being: </strong> Explore strategies to enhance your motivation and overall well-being.
     </p>,
     <p className="">
-      <strong>Rigidity: </strong> Appointments and formal processes don’t always
-      fit your needs or schedule.
+      <strong>Building Resilience: </strong> Strengthen your ability to navigate life’s hurdles and move towards your desired outcomes.
     </p>,
   ];
 
