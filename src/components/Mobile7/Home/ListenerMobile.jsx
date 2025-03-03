@@ -16,7 +16,7 @@ export default function ListenerMobile() {
       title: "Life Change, But So Do the Challenges We Face",
       description:
         "As we grow older, feelings of isolation and stress can creep in. Nearly 2 in 3 seniors facing mental health challenges do not receive the care they need. Why?",
-      body: "Stigma and Labels: You want support, not a diagnosis.",
+      body: "Reframing Experiences: Gain a fresh perspective and clarity on your challenges. ",
       description2:
         "But support doesn’t have to feel this way. We offer on-demand, judgment-free conversations with compassionate Listeners who are here to help—anytime, anywhere.",
     },
@@ -25,7 +25,7 @@ export default function ListenerMobile() {
       title: "Life Change, But So Do the Challenges We Face",
       description:
         "As we grow older, feelings of isolation and stress can creep in. Nearly 2 in 3 seniors facing mental health challenges do not receive the care they need. Why?",
-      body: "Cost Concerns: Therapy can feel out of reach. ",
+      body: "Setting and Achieving Goals: Boost your confidence, manage transitions, and achieve personal milestone.",
       description2:
         "But support doesn’t have to feel this way. We offer on-demand, judgment-free conversations with compassionate Listeners who are here to help—anytime, anywhere.",
     },
@@ -34,7 +34,7 @@ export default function ListenerMobile() {
       title: "Life Change, But So Do the Challenges We Face",
       description:
         "As we grow older, feelings of isolation and stress can creep in. Nearly 2 in 3 seniors facing mental health challenges do not receive the care they need. Why?",
-      body: "Intimidation: Clinical environments can feel cold and unwelcoming.",
+      body: "Emotional well-being: Explore strategies to enhance your motivation and overall well-being.",
       description2:
         "But support doesn’t have to feel this way. We offer on-demand, judgment-free conversations with compassionate Listeners who are here to help—anytime, anywhere.",
     },
@@ -43,7 +43,7 @@ export default function ListenerMobile() {
       title: "Life Change, But So Do the Challenges We Face",
       description:
         "As we grow older, feelings of isolation and stress can creep in. Nearly 2 in 3 seniors facing mental health challenges do not receive the care they need. Why?",
-      body: "Rigidity: Appointments and formal processes don’t always fit your needs or schedule.",
+      body: "Building Resilience: Strengthen your ability to navigate life’s hurdles and move towards your desired outcomes.",
       description2:
         "But support doesn’t have to feel this way. We offer on-demand, judgment-free conversations with compassionate Listeners who are here to help—anytime, anywhere.",
     },
