@@ -23,6 +23,7 @@ import SeniorsAgeLonelinessDesktop from "./components/Desktop7/Home";
 import SeniorsAgeLonelinessMobile from "./components/Mobile7/Home";
 import SeniorsAgeMentalHealthBarriersDesktop from "./components/Desktop8/Home";
 import SeniorsAgeMentalHealthBarriersMobile from "./components/Mobile8/Home";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
   useFavicon();
@@ -137,6 +138,16 @@ function App() {
               </div>
               <div className="lg:hidden">
                 <SeniorsAgeMentalHealthBarriersMobile />
+              </div>
+            </>
+          }
+        />
+          <Route
+          path="/privacy-policy"
+          element={
+            <>
+              <div className="">
+                <PrivacyPolicy />
               </div>
             </>
           }
