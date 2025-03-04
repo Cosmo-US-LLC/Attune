@@ -24,6 +24,7 @@ import SeniorsAgeLonelinessMobile from "./components/Mobile7/Home";
 import SeniorsAgeMentalHealthBarriersDesktop from "./components/Desktop8/Home";
 import SeniorsAgeMentalHealthBarriersMobile from "./components/Mobile8/Home";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsandConditions from "./components/TermsandConditions";
 
 function App() {
   useFavicon();
@@ -148,6 +149,16 @@ function App() {
             <>
               <div className="">
                 <PrivacyPolicy />
+              </div>
+            </>
+          }
+        />
+         <Route
+          path="/terms-and-conditions"
+          element={
+            <>
+              <div className="">
+                <TermsandConditions />
               </div>
             </>
           }
