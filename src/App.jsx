@@ -25,6 +25,8 @@ import SeniorsAgeMentalHealthBarriersDesktop from "./components/Desktop8/Home";
 import SeniorsAgeMentalHealthBarriersMobile from "./components/Mobile8/Home";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsandConditions from "./components/TermsandConditions";
+import ListenerRecruitmentDesktop from "./components/ListenerRecruitment/Desktop";
+import ListenerRecruitmentMobile from "./components/ListenerRecruitment/Mobile";
 
 function App() {
   useFavicon();
@@ -117,7 +119,7 @@ function App() {
             </>
           }
         />
-        <Route 
+        <Route
           path="/seniors-mental-health-barriers"
           element={
             <>
@@ -143,7 +145,20 @@ function App() {
             </>
           }
         />
-          <Route
+        <Route
+          path="/listener-recruitment"
+          element={
+            <>
+              <div className="max-lg:hidden">
+                <ListenerRecruitmentDesktop />
+              </div>
+              <div className="lg:hidden">
+                <ListenerRecruitmentMobile />
+              </div>
+            </>
+          }
+        />
+        <Route
           path="/privacy-policy"
           element={
             <>
