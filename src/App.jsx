@@ -150,7 +150,6 @@ function App() {
           element={
             <>
               <div className="max-lg:hidden">
-                {" "}
                 <ListenerRecruitmentDesktop />
               </div>
               <div className="lg:hidden">
