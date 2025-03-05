@@ -73,7 +73,7 @@ function Footer() {
                 FAQs
               </a>
             </div>
-            <div className="space-x-10 text-[16px] font-[500] ">
+            <div className="space-x-[3.8rem] text-[16px] font-[500] ">
               <Link to="/terms-of-use">
             <a href="" >
               Terms of Use
