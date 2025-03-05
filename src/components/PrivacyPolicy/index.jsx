@@ -1,6 +1,11 @@
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function PrivacyPolicy() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
     return (
       <div className="max-w-[1340px] py-[80px] w-[90%] mx-auto space-y-[30px]">
         <div>

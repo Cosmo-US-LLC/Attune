@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const handleScroll = (event, targetId, offset) => {
   event.preventDefault();
@@ -60,6 +61,18 @@ function FooterMobile() {
             <a href="#FAQs" onClick={(e) => handleScroll(e, "mobile-FAQs", 90)}>
               FAQs
             </a>
+            <div className="space-y-[15px] flex flex-col text-[16px] font-[500] ">
+              <Link to="/terms-of-use">
+            <a href="" >
+              Terms of Use
+              </a>
+              </Link>
+             <Link to="/privacy-policy">
+             <a href="" >
+              Privacy Policy
+              </a>
+             </Link>
+            </div>
           </div>
           <img
             src="/mobile1/footer/footer_heart.svg"
