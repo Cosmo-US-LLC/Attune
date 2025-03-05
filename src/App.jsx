@@ -154,7 +154,7 @@ function App() {
           }
         />
          <Route
-          path="/terms-and-conditions"
+          path="/terms-of-use"
           element={
             <>
               <div className="">
