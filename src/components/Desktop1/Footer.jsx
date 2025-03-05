@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import {Link} from "react-router-dom"
 function Footer() {
 
   const handleLogoClick = () => {
@@ -47,6 +48,7 @@ function Footer() {
                 a connection, we’re here to help.
               </p>
             </div>
+            <div className="space-y-[10px]">
             <div className="text-[16px] font-[500] mt-8 flex gap-10 relative z-40">
               <a
               className="relative z-10"
@@ -70,6 +72,19 @@ function Footer() {
               <a href="#FAQs" onClick={(e) => handleScroll(e, "FAQs", 90)}>
                 FAQs
               </a>
+            </div>
+            <div className="space-x-10 text-[16px] font-[500] ">
+              <Link to="/terms-of-use">
+            <a href="" >
+              Terms of Use
+              </a>
+              </Link>
+             <Link to="/privacy-policy">
+             <a href="" >
+              Privacy Policy
+              </a>
+             </Link>
+            </div>
             </div>
             <div className="relative z-10 flex items-end justify-center w-full mt-12" onClick={handleLogoClick}>
               <img

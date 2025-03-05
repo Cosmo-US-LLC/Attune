@@ -1,9 +1,19 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 function TermsandConditions() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <div className="max-w-[1340px] py-[80px] w-[90%] mx-auto space-y-[30px]">
       <div>
         <h3 className="font-miniature 2xl:text-[92.21px] xl:text-[92.21px] lg:text-[92.21px] md:text-[92.21px] sm:text-[52.21px] text-[52.21px] font-[400] leading-[110%]">
-          Terms and Conditions
+          Terms of Use
         </h3>
       </div>
       <div>
