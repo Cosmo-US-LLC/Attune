@@ -73,6 +73,14 @@ body {
   max-height: 649px;
 }
 
+.readyToMakeMobile {
+  background-image: url(/listener-recruitment/mobile/ready-to-make/readyToMake.webp);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* max-height: 649px; */
+}
+
 .why-listeners-matter-section-1 {
   background-image: url(/desktop1/why-listeners-matter/why-listener.webp); /* Replace with your image path */
   background-size: cover;

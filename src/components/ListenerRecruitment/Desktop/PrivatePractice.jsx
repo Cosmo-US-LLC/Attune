@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 
 function PrivatePractice() {
+  // const [hours, setHours] = useState(12);
+  // const hourlyRate = 772; // Example hourly rate for calculation
+  // const estimatedEarnings = hours * hourlyRate;
+
   const [hours, setHours] = useState(40);
+  const estimatedEarnings = (hours / 40) * 100100;
   const minHours = 30;
   const maxHours = 50;
 
-  // Example earnings formula (adjust as needed)
-  const estimatedEarnings = (hours / 40) * 100100;
+
 
   const benefits = [
     "Competitive OH 15% based on the hours provided",
@@ -47,6 +51,63 @@ function PrivatePractice() {
             </div>
           </div>
           <div className="w-[50%]">
+            {/* <div className="w-full max-w-lg p-8 mx-auto text-center bg-white border shadow-md border-lime-300 rounded-xl">
+              <h2 className="text-xl font-semibold text-black">
+                Estimated earnings <br /> with FeelAttune
+              </h2>
+
+              <div className="flex items-center justify-between mt-6">
+                <div className="flex flex-col text-left">
+                  <label className="text-sm font-medium text-gray-700">
+                    Weekly Hours
+                  </label>
+                  <select
+                    className="w-24 p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md focus:ring-2 focus:ring-blue-400"
+                    value={hours}
+                    onChange={(e) => setHours(Number(e.target.value))}
+                  >
+                    {[10, 12, 15, 20, 25, 30, 35, 40].map((h) => (
+                      <option key={h} value={h}>
+                        {h}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="flex flex-col text-right">
+                  <label className="text-sm font-medium text-gray-700">
+                    Estimated Annual Earnings
+                  </label>
+                  <p className="text-4xl font-bold text-[#9090F5]">
+                    ${estimatedEarnings.toLocaleString()}
+                  </p>
+                </div>
+              </div>
+
+              <button className="mt-6 px-6 py-3 bg-[#5200FF] hover:bg-[#3D00CC] text-white rounded-full text-lg font-medium flex items-center justify-center gap-2 shadow-lg">
+                Get Started
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M0.617188 10C0.617188 4.53539 5.03539 0.117188 10.5 0.117188C15.9646 0.117188 20.3828 4.53539 20.3828 10C20.3828 15.4646 15.9646 19.8828 10.5 19.8828C5.03539 19.8828 0.617188 15.4646 0.617188 10ZM19.2201 10C19.2201 5.17486 15.3251 1.27987 10.5 1.27987C5.67486 1.27987 1.77987 5.17486 1.77987 10C1.77987 14.8251 5.67486 18.7201 10.5 18.7201C15.3251 18.7201 19.2201 14.8251 19.2201 10Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M9.51585 14.8274L14.341 10.0023L9.51585 5.17716L10.3297 4.36328L15.9688 10.0023L10.3297 15.6413L9.51585 14.8274Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M15.1562 9.4209V10.5836L5.27344 10.5836V9.4209L15.1562 9.4209Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div> */}
             <div className="max-w-[491px] p-6 mx-auto bg-white border shadow-md rounded-2xl border-lime-300">
               <h2 className="text-[25px] font-[500] text-center text-[#000] leading-[31px]">
                 Estimated earnings with BetterHelp
