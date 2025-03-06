@@ -31,18 +31,14 @@ function PrivatePractice() {
               </p>
               <ul className="mt-3 space-y-3">
                 {benefits.map((benefit, index) => (
-                  <li key={index} className="flex items-center space-x-3">
-                    {/* Circular Purple Background with Image */}
-                    <div className="flex items-center justify-center w-6 h-6 bg-[#A78BFA] rounded-full">
-                      <img
-                        src="/listener-recruitment/desktop/private-practice/tick.webp"
-                        alt="Check"
-                        className="w-4 h-4"
-                      />
-                    </div>
+                  <li key={index} className="flex space-x-4 text-left">
+                    <img
+                      src="/listener-recruitment/desktop/private-practice/tick.webp"
+                      alt="Check"
+                      className="w-5 h-5 mt-2"
+                    />
 
-                    {/* Benefit Text */}
-                    <span className="text-[#000] text-[18px] font-[400]">
+                    <span className="text-[#000] text-[18px] font-[400] mt-1 ">
                       {benefit}
                     </span>
                   </li>
