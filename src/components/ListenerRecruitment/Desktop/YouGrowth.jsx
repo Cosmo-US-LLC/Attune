@@ -1,7 +1,3 @@
-// import Image from "next/image";
-// import heal from "@/public/desktop1/growth/heal.svg";
-// import happyTree from "@/public/desktop1/growth/happy-tree.svg";
-// import cupOfCoffe from "@/public/desktop1/growth/cup-of-coffe.svg";
 
 const gridData = [
   {

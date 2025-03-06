@@ -1,8 +1,8 @@
 function Hero() {
   return (
-    <div className=" lg:min-w-[1000px] 2xl:min-w-[1420px] flex flex-row  overflow-hidden bg-[#A78BFA]">
-      <div className="  w-[40%] flex flex-col justify-center  items-end   ">
-        <div className="w-[492px]">
+    <div className="bg-[#A78BFA] w-full overflow-hidden">
+      <div className="min-w-[1000px] max-w-[1220px]  h-[605px] mx-auto flex flex-row  justify-center items-center ">
+        <div className="max-w-[592px] w-[50%] flex flex-col justify-center   ">
           <h1 className="font-miniature text-[92px] text-white leading-[97px]">
             <span className="font-[400]"> Join</span> <br />{" "}
             <span className="text-[#E5FF7D] italic"> FeelAttune </span>
@@ -45,13 +45,12 @@ function Hero() {
             </button>
           </a>
         </div>
-      </div>
-      <div className="  w-[60%]    flex justify-center  items-start">
-        <div className="">
+
+        <div className="border-4 border-[#b49ef6] rounded-xl w-[50%] max-w-[500px]   flex justify-center  items-start">
           <img
             src={"/listener-recruitment/desktop/hero/Hero.webp"}
             alt="Listener"
-            className="object-cover w-[457px] h-auto   py-12"
+            className="object-cover w-[500px] h-auto    "
           />
         </div>
       </div>
