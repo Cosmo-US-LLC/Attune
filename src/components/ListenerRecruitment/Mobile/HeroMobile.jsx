@@ -4,17 +4,17 @@ import { Button } from "@/components/ui/button";
 function HeroMobile() {
   return (
     <>
-      <div className="bg-[#A78BFA] py-4 px-4 flex flex-col gap-6">
-        <div className="flex flex-col gap-6">
+      <div className="bg-[#A78BFA] py-8 px-6 flex flex-col gap-6">
+        <div className="flex flex-col ">
           <div className="flex flex-col text-white">
-            <p className="font-miniature text-[52px] font-[400] leading-normal">
+            <p className="font-miniature text-[50px] font-[400] leading-normal">
               <span className=""> Join </span>
               <span className="text-[#E5FF7D] italic"> FeelAttune </span>
             </p>
-            <p className="text-[18px] font-[600] leading-normal">
+            <p className="text-[18px] font-[600]   leading-normal">
               Make a Difference, One Conversation at a Time{" "}
             </p>
-            <p className="text-[15px] font-[400] leading-[21px] mt-2">
+            <p className="text-[14px] font-[400] my-6 leading-[21px] ">
               FeelAttune connects compassionate individuals with people seeking
               judgment-free support. If you’re empathetic and great at
               listening, join our community to make a meaningful impact.
@@ -51,11 +51,11 @@ function HeroMobile() {
           </div>
         </div>
 
-        <div className="w-full max-w-xs mx-auto overflow-hidden border-4 border-[#b49ef6] rounded-xl">
+        <div className="w-full mx-auto overflow-hidden border-4 border-[#b49ef6] rounded-xl">
           <img
             src="/listener-recruitment/desktop/hero/Hero.webp"
             alt="Happy person waving"
-            className="object-cover w-full "
+            className="object-cover w-full"
           />
         </div>
       </div>

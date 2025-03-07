@@ -17,21 +17,21 @@ const WhyBecomeListenerMobile = () => {
       <div className="grid max-w-md gap-4 mx-auto">
         <HowItCards
           title={<p>make real Impact</p>}
-          body="Help people feel valued, heard, and supported in their everyday challenges."
+          body="Provide a supportive environment that helps people feel heard and validated in their daily challenges—all without the pressures of formal "
           image="/listener-recruitment/desktop/whyBecomeListener/icon1.svg"
         />
 
         <HowItCards
           title={<p>Empower Personal Growth</p>}
-          body="Assist individuals in reframing experiences, setting goals, and finding strategies to improve their well-being."
+          body="Help individuals set goals, explore new perspectives, and gain life skills. As a Listener, you focus on the present and future, guiding people forward rather than diagnosing or treating clinical issues."
           image="/listener-recruitment/desktop/whyBecomeListener/icon2.svg"
         />
 
-        <HowItCards
+        {/* <HowItCards
           title="Be Part of a Meaningful Movement"
           body="Contribute to a scalable, stigma-free platform that bridges the gap between professional mental health care and everyday emotional support."
           image="/listener-recruitment/desktop/whyBecomeListener/icon3.svg"
-        />
+        /> */}
 
         <HowItCards
           title={<p>Enjoy Flexibility</p>}
@@ -41,13 +41,13 @@ const WhyBecomeListenerMobile = () => {
 
         <HowItCards
           title={<p>Set Your Own Rate</p>}
-          body="Determine your own hourly rate and earn for the support you provide."
+          body="Decide on the hourly rate that reflects the value of your time and empathy."
           image="/listener-recruitment/desktop/whyBecomeListener/icon5.svg"
         />
 
         <HowItCards
           title={<p>Work Virtually</p>}
-          body="All services are delivered online, allowing you to provide support from anywhere."
+          body="Connect with people from anywhere in the world, making support more accessible and convenient for everyone."
           image="/listener-recruitment/desktop/whyBecomeListener/icon6.svg"
         />
       </div>

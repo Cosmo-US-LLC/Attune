@@ -23,7 +23,7 @@ function SafeSpace() {
           <div className="w-full max-w-[646px] flex items-center">
             <div className="bg-white border border-[#E5FF7D] rounded-[20px] p-[16px] md:p-[20px] lg:p-[48px] space-y-[22px]">
               <h3 className="font-miniature text-[30px] lg:text-[24px] xl:text-[50px] leading-[35px] md:leading-[40px] xl:leading-[57px]  text-center md:text-left">
-                What is a Listner
+                What is a Listener
               </h3>
               <p className="text-[16px] font-[400] leading-[26px]">
                 A listener is a someone who provides

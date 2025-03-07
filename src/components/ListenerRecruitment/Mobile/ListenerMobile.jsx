@@ -13,7 +13,7 @@ export default function ListenerMobile() {
   const cards = [
     {
       img: "/listener-recruitment/desktop/private-practice/tick.webp",
-      title: "What is a Listner",
+      title: "What is a Listener",
       description: "A listener is a someone who provides",
       body: "A Safe Space for individuals to express their thoughts and emotions without fear of judgment.",
     },
@@ -43,7 +43,7 @@ export default function ListenerMobile() {
                 <CarouselItem key={id} className="w-full basis-1/1">
                   <div className="max-w-[350px] mx-auto bg-white/50 backdrop-blur-lg py-5 px-[16px] rounded-xl space-y-[30px]">
                     <div className="space-y-[18px]">
-                      <h3 className="pr-6 leading-normal flex items-center text-black text-[38px] w-[252px] font-[400] font-miniature">
+                      <h3 className="leading-normal flex items-center text-black text-[38px] w-[280px] font-[400] font-miniature">
                         {card.title}
                       </h3>
                       <p className="w-[318px] text-[15px] leading-[26px] font-[400]">
