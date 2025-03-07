@@ -6,14 +6,15 @@ import PrivatePracticeMobile from "./PrivatePracticeMobile";
 import HowItWorks from "./HowItWorks";
 import WhoCanBecomeListenerMobile from "./WhoCanBecomeListenerMobile";
 import ReadyToMakeMobile from "./ReadyToMakeMobile";
-import DiffersTherapyCounseling from "../Desktop/DiffersTherapyCounseling";
 import DiffersTherapyCounselingMobile from "./DiffersTherapyCounselingMobile";
+import MeaningfulMovementMobile from "./MeaningfulMovementMobile";
 
 function ListenerRecruitmentMobile() {
   return (
     <>
       <HeroMobile />
       <WhyBecomeListenerMobile />
+      <MeaningfulMovementMobile/>
       <ListenerMobile />
       <PrivatePracticeMobile />
       <HowItWorks />

@@ -56,7 +56,7 @@ const WhoCanBecomeListenerMobile = () => {
                 className="object-contain w-[238px] h-[269px]"
               />
             ) : (
-              <p className="text-[35px] font-[400] w-[190px] mx-auto text-left font-miniature leading-[38px] text-[black]">
+              <p className="text-[35px] font-[400] capitalize w-[190px] mx-auto text-left font-miniature leading-[38px] text-[black]">
                 {card.text}
               </p>
             )}
