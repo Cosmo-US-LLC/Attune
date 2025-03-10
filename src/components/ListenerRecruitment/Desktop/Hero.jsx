@@ -7,7 +7,7 @@ function Hero() {
             <span className="font-[400]"> Join</span> <br />{" "}
             <span className="text-[#E5FF7D] italic"> FeelAttune </span>
           </h1>
-          <p className="   text-white font-inter text-[16px] font-[400] leading-[26px]  pr-2">
+          <p className="   text-white font-inter text-[24px] font-[600] leading-normal  pr-2">
             Make a Difference, One Conversation at a Time
           </p>
           <p className="mt-4   text-white font-inter text-[16px] font-[400] leading-[26px]   pr-2">

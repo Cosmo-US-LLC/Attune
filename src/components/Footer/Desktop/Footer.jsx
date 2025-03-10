@@ -3,10 +3,10 @@ import {Link} from "react-router-dom"
 function Footer() {
 
   const handleLogoClick = () => {
-    // Scroll to the top of the page on logo click
+ 
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Adds a smooth scrolling effect
+      behavior: "smooth",  
     });
   };
   const handleScroll = (event, targetId, offset) => {

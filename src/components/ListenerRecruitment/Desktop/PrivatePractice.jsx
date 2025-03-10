@@ -60,7 +60,7 @@ function PrivatePractice() {
                     Weekly Hours
                   </label>
                   <select
-                    className="w-24 p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md focus:ring-2 focus:ring-blue-400"
+                    className="w-24 p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md focus:ring-2 focus:ring-[#A78BFA]"
                     value={hours}
                     onChange={(e) => setHours(Number(e.target.value))}
                   >
@@ -86,7 +86,7 @@ function PrivatePractice() {
                 <a href="https://innovacare.tech/listenerhub/signup">
                   <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#5200FF] hover:bg-purple-800">
                     <button className="text-white font-[500] text-[16px]">
-                      Sign Up Now
+                      Get Started
                     </button>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
