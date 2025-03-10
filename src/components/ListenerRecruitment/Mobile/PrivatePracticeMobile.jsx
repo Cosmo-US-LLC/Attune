@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const PrivatePracticeMobile = () => {
   const [hours, setHours] = useState(12);
-  const hourlyRate = 10;
+  const hourlyRate = 30;
   const estimatedEarnings = hours * hourlyRate;
   // const [hours, setHours] = useState(40);
   // const minHours = 30;
