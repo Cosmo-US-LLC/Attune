@@ -21,7 +21,7 @@ import SeniorsAgeLonelinessMobile from "./components/Mobile7/Home";
 import SeniorsAgeMentalHealthBarriersDesktop from "./components/Desktop8/Home";
 import SeniorsAgeMentalHealthBarriersMobile from "./components/Mobile8/Home";
 import PrivacyPolicy from "./components/PrivacyPolicy";
-import TermsAndConditions from "./components/TermsAndConditions/index.jsx";
+import TermsAndConditions from "./components/TermsandConditions";
 import ListenerRecruitmentDesktop from "./components/ListenerRecruitment/Desktop";
 import ListenerRecruitmentMobile from "./components/ListenerRecruitment/Mobile";
 
