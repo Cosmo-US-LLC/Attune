@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function PrivatePractice() {
   const [hours, setHours] = useState(12);
-  const hourlyRate = 772;
+  const hourlyRate = 10;
   const estimatedEarnings = hours * hourlyRate;
 
   // const [hours, setHours] = useState(40);
