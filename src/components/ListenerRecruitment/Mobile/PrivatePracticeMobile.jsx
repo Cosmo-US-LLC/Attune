@@ -80,7 +80,7 @@ const PrivatePracticeMobile = () => {
           <a href="https://innovacare.tech/listenerhub/signup">
             <div className="flex flex-row justify-center items-center px-5 py-[10px]  gap-2 rounded-full bg-[#5200FF] hover:bg-purple-800">
               <button className="text-white font-[500] text-[14px] leading-[17px]">
-                Sign Up Now
+                Get Started
               </button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

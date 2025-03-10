@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-function TermsandConditions() {
+function TermsAndConditions() {
 
   const location = useLocation();
 
@@ -474,4 +474,4 @@ TO THE EXTENT THAT THE FOREGOING LIMITATION DOES NOT APPLY, IN NO EVENT WILL THE
   );
 }
 
-export default TermsandConditions;
+export default TermsAndConditions;
