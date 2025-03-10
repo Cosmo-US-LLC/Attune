@@ -65,6 +65,22 @@ body {
   min-height: 43.7vw;
 }
 
+.readyToMake {
+  background-image: url(/listener-recruitment/desktop/ready-to-make/readyToMake.webp);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 649px;
+}
+
+.readyToMakeMobile {
+  background-image: url(/listener-recruitment/mobile/ready-to-make/readyToMake.webp);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* max-height: 649px; */
+}
+
 .why-listeners-matter-section-1 {
   background-image: url(/desktop1/why-listeners-matter/why-listener.webp); /* Replace with your image path */
   background-size: cover;
@@ -183,6 +199,16 @@ body {
 
 .listenerCaregiversSeeking{
   background-image: url(/desktop4/listener/listener-bg.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* min-height: 41.875vw; */
+  min-height: 900px;
+  width: 100vw; /* Full width of the viewport */ 
+}
+
+.listenerRecruitmentDesktop{
+  background-image: url(/listener-recruitment/desktop/listener/listener-bg.webp); /* Replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
