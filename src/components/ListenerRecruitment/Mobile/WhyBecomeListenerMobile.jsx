@@ -27,11 +27,7 @@ const WhyBecomeListenerMobile = () => {
           image="/listener-recruitment/desktop/whyBecomeListener/icon2.svg"
         />
 
-        {/* <HowItCards
-          title="Be Part of a Meaningful Movement"
-          body="Contribute to a scalable, stigma-free platform that bridges the gap between professional mental health care and everyday emotional support."
-          image="/listener-recruitment/desktop/whyBecomeListener/icon3.svg"
-        /> */}
+        
 
         <HowItCards
           title={<p>Enjoy Flexibility</p>}
