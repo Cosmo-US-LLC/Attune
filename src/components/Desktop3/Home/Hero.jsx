@@ -7,7 +7,7 @@ function Hero() {
       <div className="bg-[#E5FF7D] min-w-[50%] ">
         <div className="relative bottom-[-2%]">
           <img
-            src={"/desktop3/hero/Hero.png"}
+            src={"/assets/desktop3/hero/Hero.png"}
             alt="Listener"
             className="max-2xl:w-[650px] max-lg:w-[480p] max-lg:h-auto h-[532px] w-[600px] rounded-lg object-cover"
           />
