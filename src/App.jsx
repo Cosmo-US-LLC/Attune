@@ -4,26 +4,28 @@ import useFavicon from "./hooks/useFavicon";
 import Layout from "./components/Layout";
 import NotFound from "./components/NotFound";
 
-import HomeDesktop from "./components/Desktop1/Main";
-import HomeMobile from "./components/Mobile1/Main";
-import HomeMobileMental from "./components/Mobile3/Home";
-import HomeMobileLonely from "./components/Mobile2/Home";
-import HomeDesktopLonely from "./components/Desktop2/Home";
-import HomeDesktopMental from "./components/Desktop3/Home";
-import HomeDesktopCaregiverSeeking from "./components/Desktop4/Home";
-import HomeMobileCaregiverSeeking from "./components/Mobile4/Home";
-import HomeDesktopCaregiversFacingMentalHealthChallenges from "./components/Desktop5/Home";
-import HomeMobileCaregiversFacingMentalHealthChallenges from "./components/Mobile5/Home";
-import AllAgeGroupsMentalHealthBarriers from "./components/Desktop6/Home";
-import AllAgeGroupsMentalHealthBarriersMobile from "./components/Mobile6/Home";
-import SeniorsAgeLonelinessDesktop from "./components/Desktop7/Home";
-import SeniorsAgeLonelinessMobile from "./components/Mobile7/Home";
-import SeniorsAgeMentalHealthBarriersDesktop from "./components/Desktop8/Home";
-import SeniorsAgeMentalHealthBarriersMobile from "./components/Mobile8/Home";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import TermsAndConditions from "./components/TermsandConditions";
+import FeelAttuneHomeDesktop from "./components/FeelAttuneHome/Desktop";
+import FeelAttuneHomeMobile from "./components/FeelAttuneHome/Mobile";
+import YoungAdultsLonlinessDesktop from "./components/YoungAdultsLonliness/Desktop";
+import YoungAdultsLonlinessMobile from "./components/YoungAdultsLonliness/Mobile";
+import YoungAdultsMentalHealthBarriersDesktop from "./components/YoungAdultsMentalHealthBarriers/Desktop";
+import YoungAdultsMentalHealthBarriersMobile from "./components/YoungAdultsMentalHealthBarriers/Mobile";
+import MiddleAgeLonelinessDesktop from "./components/MiddleAgeLoneliness/Desktop";
+import MiddleAgeLonelinessMobile from "./components/MiddleAgeLoneliness/Mobile";
+import MiddleAgeMentalHealthBarriersDesktop from "./components/MiddleAgeMentalHealthBarriers/Desktop";
+import MiddleAgeMentalHealthBarriersMobile from "./components/MiddleAgeMentalHealthBarriers/Mobile";
+import AllAgeGroupsDesktop from "./components/AllAgeGroups/Desktop";
+import AllAgeGroupsMobile from "./components/AllAgeGroups/Mobile";
+import SeniorsMentalHealthBarriersDesktop from "./components/SeniorsMentalHealthBarriers/Desktop";
+import SeniorsMentalHealthBarriersMobile from "./components/SeniorsMentalHealthBarriers/Mobile";
+import SeniorsLonelinessDesktop from "./components/SeniorsLoneliness/Desktop";
+import SeniorsLonelinessMobile from "./components/SeniorsLoneliness/Mobile";
 import ListenerRecruitmentDesktop from "./components/ListenerRecruitment/Desktop";
 import ListenerRecruitmentMobile from "./components/ListenerRecruitment/Mobile";
+
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndConditions from "./components/TermsandConditions";
+
 
 function App() {
   useFavicon();
@@ -36,10 +38,10 @@ function App() {
             element={
               <>
                 <div className="max-lg:hidden">
-                  <HomeDesktop />
+                  <FeelAttuneHomeDesktop />
                 </div>
                 <div className="lg:hidden">
-                  <HomeMobile />
+                  <FeelAttuneHomeMobile />
                 </div>
               </>
             }
@@ -49,10 +51,10 @@ function App() {
             element={
               <>
                 <div className="max-lg:hidden">
-                  <HomeDesktopLonely />
+                  <YoungAdultsLonlinessDesktop />
                 </div>
                 <div className="lg:hidden">
-                  <HomeMobileLonely />
+                  <YoungAdultsLonlinessMobile />
                 </div>
               </>
             }
@@ -62,10 +64,10 @@ function App() {
             element={
               <>
                 <div className="max-lg:hidden">
-                  <HomeDesktopMental />
+                  <YoungAdultsMentalHealthBarriersDesktop />
                 </div>
                 <div className="lg:hidden">
-                  <HomeMobileMental />
+                  <YoungAdultsMentalHealthBarriersMobile />
                 </div>
               </>
             }
@@ -75,10 +77,10 @@ function App() {
             element={
               <>
                 <div className="max-lg:hidden">
-                  <HomeDesktopCaregiverSeeking />
+                  <MiddleAgeLonelinessDesktop />
                 </div>
                 <div className="lg:hidden">
-                  <HomeMobileCaregiverSeeking />
+                  <MiddleAgeLonelinessMobile />
                 </div>
               </>
             }
@@ -88,10 +90,10 @@ function App() {
             element={
               <>
                 <div className="max-lg:hidden">
-                  <HomeDesktopCaregiversFacingMentalHealthChallenges />
+                  <MiddleAgeMentalHealthBarriersDesktop />
                 </div>
                 <div className="lg:hidden">
-                  <HomeMobileCaregiversFacingMentalHealthChallenges />
+                  <MiddleAgeMentalHealthBarriersMobile />
                 </div>
               </>
             }
@@ -101,10 +103,24 @@ function App() {
             element={
               <>
                 <div className="max-lg:hidden">
-                  <AllAgeGroupsMentalHealthBarriers />
+                  <AllAgeGroupsDesktop />
                 </div>
                 <div className="lg:hidden">
-                  <AllAgeGroupsMentalHealthBarriersMobile />
+                  <AllAgeGroupsMobile />
+                </div>
+              </>
+            }
+          />
+
+          <Route
+            path="/seniors-loneliness"
+            element={
+              <>
+                <div className="max-lg:hidden">
+                  <SeniorsLonelinessDesktop />
+                </div>
+                <div className="lg:hidden">
+                  <SeniorsLonelinessMobile />
                 </div>
               </>
             }
@@ -114,27 +130,15 @@ function App() {
             element={
               <>
                 <div className="max-lg:hidden">
-                  <SeniorsAgeLonelinessDesktop />
+                  <SeniorsMentalHealthBarriersDesktop />
                 </div>
                 <div className="lg:hidden">
-                  <SeniorsAgeLonelinessMobile />
+                  <SeniorsMentalHealthBarriersMobile />
                 </div>
               </>
             }
           />
-          <Route
-            path="/seniors-loneliness"
-            element={
-              <>
-                <div className="max-lg:hidden">
-                  <SeniorsAgeMentalHealthBarriersDesktop />
-                </div>
-                <div className="lg:hidden">
-                  <SeniorsAgeMentalHealthBarriersMobile />
-                </div>
-              </>
-            }
-          />
+
           <Route
             path="/listener-recruitment"
             element={
