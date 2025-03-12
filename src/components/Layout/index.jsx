@@ -4,6 +4,7 @@ import NavbarMobile from "../Navbar/mobile/NavbarMobile.jsx";
 import Footer from "../Footer/desktop/Footer.jsx";
 import FooterMobile from "../Footer/mobile/FooterMobile.jsx";
 
+
 const Layout = () => {
   return (
     <>
