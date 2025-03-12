@@ -15,14 +15,14 @@ function UnspokenChallengesOfMiddleAgeLife() {
         {/* <div className="max-w-4xl w-fit mx-auto grid md:grid-cols-2   gap-y-[28px]"> */}
         <div className="flex flex-wrap justify-center gap-6">
           <YourPathCard
-            img="/desktop8/your-path/path-to-support-1.webp"
+            img="assets/desktop8/your-path/path-to-support-1.webp"
             title="Facing Challenges Together"
             classes="bg-[#00DDBE] text-black"
             body="As we age, emotional challenges like isolation and stress often arise. Nearly 1 in 8 seniors face mental health struggles annually, yet less than half seek support. You’re not alone."
           />
 
           <YourPathCard
-            img="/desktop8/your-path/path-to-support-2.webp"
+            img="assets/desktop8/your-path/path-to-support-2.webp"
             imgClass="bg-[#95ADF0] rounded-[30px] border border-black"
             title="Support Without Barriers"
             classes="bg-[#E5FF7D] text-black"

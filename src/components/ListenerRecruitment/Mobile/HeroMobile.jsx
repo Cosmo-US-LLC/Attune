@@ -53,7 +53,7 @@ function HeroMobile() {
 
         <div className="w-full mx-auto overflow-hidden border-4 border-[#b49ef6] rounded-xl">
           <img
-            src="/listener-recruitment/desktop/hero/Hero.webp"
+            src="assets/listener-recruitmentassets/desktop/hero/Hero.webp"
             alt="Happy person waving"
             className="object-cover w-full"
           />

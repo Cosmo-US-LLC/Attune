@@ -10,32 +10,32 @@ function ProudlySupporting() {
 
         <div className="flex flex-row w-full min-w-fit gap-4 flex-wrap items-center justify-between rounded-[30px] bg-white py-[25px] px-[32px]">
           <img
-            src={"/desktop1/proudly/logo1.webp"}
+            src={"assets/desktop1/proudly/logo1.webp"}
             alt="Alberta"
             className="h-[37px] w-[102px]"
           />
           <img
-            src={"/desktop1/proudly/logo2.webp"}
+            src={"assets/desktop1/proudly/logo2.webp"}
             alt="Alberta"
             className="h-[37px] w-[129px]"
           />
           <img
-            src={"/desktop1/proudly/logo3.webp"}
+            src={"assets/desktop1/proudly/logo3.webp"}
             alt="Rural"
             className="h-[56px] w-[137px]"
           />
           <img
-            src={"/desktop1/proudly/logo4.webp"}
+            src={"assets/desktop1/proudly/logo4.webp"}
             alt="211 Alberta"
             className="h-[50px] w-[158px]"
           />
           <img
-            src={"/desktop1/proudly/logo5.webp"}
+            src={"assets/desktop1/proudly/logo5.webp"}
             alt="NPO's"
             className="h-[47px] w-[131px]"
           />
           <img
-            src={"/desktop1/proudly/logo6.webp"}
+            src={"assets/desktop1/proudly/logo6.webp"}
             alt="NPO's"
             className="h-[57px] w-[112px]"
           />

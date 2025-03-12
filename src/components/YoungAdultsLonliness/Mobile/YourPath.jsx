@@ -14,27 +14,27 @@ import {
 function YourPath() {
   const cards = [
     {
-      img: "/desktop2/your-path/path1.png",
+      img: "assets/desktop2/your-path/path1.png",
       title: "Life Transitions",
       body: "Starting college, moving to a new city, or stepping into adulthood can feel overwhelming. Adjusting to change takes time, but feeling disconnected during major life transitions can make the journey harder.",
     },
     {
-      img: "/desktop2/your-path/path2.png",
+      img: "assets/desktop2/your-path/path2.png",
       title: "Social pressures",
       body: "From academic expectations to fitting in, social pressures can lead to stress and self-doubt. The fear of not being “enough” often isolates young adults, making it harder to reach out for support.",
     },
     {
-      img: "/desktop2/your-path/path3.png",
+      img: "assets/desktop2/your-path/path3.png",
       title: "Digital Overload",
       body: "Social media can make it seem like everyone has it all figured out—except you. The constant comparison, unrealistic expectations, and online interactions often deepen loneliness instead of solving it.",
     },
     {
-      img: "/desktop2/your-path/path4.png",
+      img: "assets/desktop2/your-path/path4.png",
       title: "Realtionship Challenges",
       body: "Navigating friendships, romantic relationships, and family dynamics isn’t always easy. Breakups, conflicts, or a lack of emotional support can make loneliness feel even heavier.",
     },
     {
-      img: "/desktop2/your-path/path5.png",
+      img: "assets/desktop2/your-path/path5.png",
       title: "Career Stress",
       body: "Balancing work, studies, and personal life can be exhausting. Whether it’s job stress, imposter syndrome, or uncertainty about the future, feeling overwhelmed is common—but you don’t have to handle it alone.",
     },
@@ -131,7 +131,7 @@ function YourPath() {
 //                 {points?.map((point, id) => (
 //                     <li key={id} className='capitalize'
 //                         style={{
-//                             listStyleImage: "url(/mobile2/yourPath/list-disc.svg)"
+//                             listStyleImage: "url(assets/mobile2/yourPath/list-disc.svg)"
 //                         }}
 //                     >
 //                         <strong>{point?.title}:</strong> {point?.body}

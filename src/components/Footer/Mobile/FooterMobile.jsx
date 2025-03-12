@@ -26,7 +26,7 @@ function FooterMobile() {
           </h1>
           <a href="#">
             <img
-              src="/mobile1/feel-attune-logo.webp"
+              src="assets/mobile1/feel-attune-logo.webp"
               alt="Logo"
               className="absolute top-0 right-0 w-[120px] h-[38px]"
             />
@@ -75,7 +75,7 @@ function FooterMobile() {
             </div>
           </div>
           <img
-            src="/mobile1/footer/footer_heart.svg"
+            src="assets/mobile1/footer/footer_heart.svg"
             alt="Time"
             className="w-[134px] h-[107px]"
           />
@@ -84,21 +84,21 @@ function FooterMobile() {
           <div className="flex flex-row items-center justify-center gap-4">
             <a href="https://www.linkedin.com/company/easecare/">
               <img
-                src="/mobile1/footer/linkedIn.svg"
+                src="assets/mobile1/footer/linkedIn.svg"
                 alt="linkedIn"
                 className=""
               />
             </a>
             <a href="https://www.facebook.com/easecare.ca">
               <img
-                src="/mobile1/footer/facebook.svg"
+                src="assets/mobile1/footer/facebook.svg"
                 alt="facebook"
                 className=""
               />
             </a>
             <a href="https://www.instagram.com/easecare.ca/">
               <img
-                src="/mobile1/footer/instagram.svg"
+                src="assets/mobile1/footer/instagram.svg"
                 alt="instagram"
                 className=""
               />

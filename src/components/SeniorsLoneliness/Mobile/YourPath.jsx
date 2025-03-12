@@ -14,22 +14,22 @@ import {
 function YourPath() {
   const cards = [
     {
-      img: "/mobile7/your-path/path-to-support-1.webp",
+      img: "assets/mobile7/your-path/path-to-support-1.webp",
       title: "Life Transitions:",
       body: "Retirement, loss of loved ones, and reduced social opportunities can leave seniors feeling disconnected.",
     },
     {
-      img: "/mobile7/your-path/path-to-support-2.webp",
+      img: "assets/mobile7/your-path/path-to-support-2.webp",
       title: "Physical Barriers:",
       body: "Health conditions or mobility challenges often limit social interactions.",
     },
     {
-      img: "/mobile7/your-path/path-to-support-3.webp",
+      img: "assets/mobile7/your-path/path-to-support-3.webp",
       title: "Technology Gaps:",
       body: "A lack of familiarity with digital tools can make staying connected difficult.",
     },
     {
-      img: "/mobile7/your-path/path-to-support-4.webp",
+      img: "assets/mobile7/your-path/path-to-support-4.webp",
       title: "Emotional Impact:",
       body: "Loneliness often leads to feelings of sadness, anxiety, and low self-worth.",
     },

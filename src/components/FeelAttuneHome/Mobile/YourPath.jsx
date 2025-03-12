@@ -13,7 +13,7 @@ function YourPath() {
       <div className="space-y-5">
         <SupportCards
           bg="bg-[#38AB9B]"
-          img="/mobile1/yourPath/seeking1.webp"
+          img="assets/mobile1/yourPath/seeking1.webp"
           title="For youth"
           buttonLabel="Start Your Journey "
           points={[
@@ -34,7 +34,7 @@ function YourPath() {
 
         <SupportCards
           bg="bg-[#F097DD]"
-          img="/mobile1/yourPath/seeking2.webp"
+          img="assets/mobile1/yourPath/seeking2.webp"
           title="For Middle-Aged Individuals"
           buttonLabel="Connect Now"
           points={[
@@ -55,7 +55,7 @@ function YourPath() {
 
         <SupportCards
           bg="bg-[#FF6F61]"
-          img="/mobile1/yourPath/seeking4.png"
+          img="assets/mobile1/yourPath/seeking4.png"
           title="For Seniors"
           buttonLabel="Talk To Someone"
           points={[
@@ -96,7 +96,7 @@ function SupportCards({ bg, img, title, points }) {
               key={id}
               className="capitalize"
               style={{
-                listStyleImage: "url(/mobile1/yourPath/list-disc.svg)",
+                listStyleImage: "url(assets/mobile1/yourPath/list-disc.svg)",
               }}
             >
               <strong>{point?.title}</strong> {point?.body}

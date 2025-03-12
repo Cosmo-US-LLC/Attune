@@ -18,7 +18,7 @@ function WhyBecomeListener() {
             </p>
           }
           body="Provide a supportive environment that helps people feel heard and validated in their daily challenges—all without the pressures of formal "
-          image="/listener-recruitment/desktop/whyBecomeListener/icon1.svg"
+          image="assets/listener-recruitmentassets/desktop/whyBecomeListener/icon1.svg"
         />
 
         <HowItCards
@@ -28,13 +28,13 @@ function WhyBecomeListener() {
             </p>
           }
           body="Help individuals set goals, explore new perspectives, and gain life skills. As a Listener, you focus on the present and future, guiding people forward rather than diagnosing or treating clinical issues."
-          image="/listener-recruitment/desktop/whyBecomeListener/icon2.svg"
+          image="assets/listener-recruitmentassets/desktop/whyBecomeListener/icon2.svg"
         />
 
         {/* <HowItCards
           title="Be Part of a Meaningful Movement"
           body="Contribute to a scalable, stigma-free platform that bridges the gap between professional mental health care and everyday emotional support."
-          image="/listener-recruitment/desktop/whyBecomeListener/icon3.svg"
+          image="assets/listener-recruitmentassets/desktop/whyBecomeListener/icon3.svg"
         /> */}
 
         <HowItCards
@@ -44,7 +44,7 @@ function WhyBecomeListener() {
             </p>
           }
           body="Set your own availability and support others at times that work for you."
-          image="/listener-recruitment/desktop/whyBecomeListener/icon4.svg"
+          image="assets/listener-recruitmentassets/desktop/whyBecomeListener/icon4.svg"
         />
 
         <HowItCards
@@ -54,7 +54,7 @@ function WhyBecomeListener() {
             </p>
           }
           body="Decide on the hourly rate that reflects the value of your time and empathy."
-          image="/listener-recruitment/desktop/whyBecomeListener/icon5.svg"
+          image="assets/listener-recruitmentassets/desktop/whyBecomeListener/icon5.svg"
         />
 
         <HowItCards
@@ -65,7 +65,7 @@ function WhyBecomeListener() {
             </p>
           }
           body="Connect with people from anywhere in the world, making support more accessible and convenient for everyone."
-          image="/listener-recruitment/desktop/whyBecomeListener/icon6.svg"
+          image="assets/listener-recruitmentassets/desktop/whyBecomeListener/icon6.svg"
         />
       </div>
     </div>

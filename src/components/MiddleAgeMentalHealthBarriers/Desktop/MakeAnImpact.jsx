@@ -11,19 +11,19 @@ function MakeAnImpactCarousel() {
   const testimonials = [
     {
       bg: "bg-[#E5FF7D]",
-      img: "/desktop4/testimonials/test-1.webp",
+      img: "assets/desktop4/testimonials/test-1.webp",
       title: "Jessica, 45",
       body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
       bg: "bg-[#FF6F61]",
-      img: "/desktop4/testimonials/test-3.webp",
+      img: "assets/desktop4/testimonials/test-3.webp",
       title: "Michael, 52",
       body: '"Balancing work and personal life became too much. My Listener helped me regain confidence and manage my emotions effectively."',
     },
     {
       bg: "bg-[#6FE0D1]",
-      img: "/desktop4/testimonials/test-2.webp",
+      img: "assets/desktop4/testimonials/test-2.webp",
       title: "Sophia, 38",
       textColor: "text-white",
       body: '"I didn’t realize how much I needed someone to just listen. After a few sessions, I felt a renewed sense of purpose and calm."',
@@ -39,7 +39,7 @@ function MakeAnImpactCarousel() {
         <div className=" flex flex-row pb-[30px]">
           <div className="flex flex-col">
             <img
-              src="/desktop4/testimonials/red-bar-1.svg"
+              src="assets/desktop4/testimonials/red-bar-1.svg"
               alt="pg95"
               className="w-[80%] h-[117px] object-contain rounded-full"
             />
@@ -50,7 +50,7 @@ function MakeAnImpactCarousel() {
           </div>
           <div className="flex flex-col">
             <img
-              src="/desktop4/testimonials/red-bar-2.svg"
+              src="assets/desktop4/testimonials/red-bar-2.svg"
               alt="pg95"
               className="w-[80%] h-[117px] object-contain rounded-full"
             />

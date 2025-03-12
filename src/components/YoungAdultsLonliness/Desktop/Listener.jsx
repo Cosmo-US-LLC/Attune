@@ -32,7 +32,7 @@ function Listener() {
                           top: "4px",
                           width: "20px",
                           height: "20px",
-                          backgroundImage: "url('/desktop2/listener/tick-circle.webp')",
+                          backgroundImage: "url('assets/desktop2/listener/tick-circle.webp')",
                           backgroundSize: "contain",
                           backgroundRepeat: "no-repeat",
                           display: "inline-block",

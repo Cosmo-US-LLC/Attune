@@ -16,27 +16,27 @@ import "swiper/css/pagination";
 
 const cards = [
   {
-    img: "/mobile1/whatMakes/card1.svg",
+    img: "assets/mobile1/whatMakes/card1.svg",
     title: "Real Conversations, Real Impact",
     body: "Attune connects you to compassionate listeners who provide a supportive environment for sharing your thoughts and feelings. It's a space to gain clarity, set goals, and explore strategies for emotional well-being.",
   },
   {
-    img: "/mobile1/whatMakes/card2.svg",
+    img: "assets/mobile1/whatMakes/card2.svg",
     title: "Accessible and Affordable Support",
     body: "No more barriers like high costs or long wait times. Attune offers connection to immediate, non-clinical emotional support that fits your schedule and budget.",
   },
   {
-    img: "/mobile1/whatMakes/card3.svg",
+    img: "assets/mobile1/whatMakes/card3.svg",
     title: "Focused on Everyday Challenges",
     body: "While therapy addresses severe mental health conditions, this service is ideal for managing everyday stress, coping with life transitions, or building self-confidence.",
   },
   {
-    img: "/mobile1/whatMakes/card4.svg",
+    img: "assets/mobile1/whatMakes/card4.svg",
     title: <>No Stigma Just<br /> Support</>,
     body: "Seeking support has never been easier. Attune normalizes conversations about mental wellness, creating a space that prioritizes connection and growth over clinical formality.",
   },
   {
-    img: "/mobile1/whatMakes/card5.svg",
+    img: "assets/mobile1/whatMakes/card5.svg",
     title: "Privacy and Confidentiality",
     body: "Your well-being and privacy are our top priority. All conversations are confidential, ensuring that you can speak freely and openly without concerns.",
   },
@@ -91,10 +91,10 @@ function WhatMakes() {
       </Swiper>
 
       <button className="swiper-button-prev rotate-[180deg] !w-[30px] !h-[30px] text-white rounded-full absolute left-2 top-1/2 transform bg-[#fff] -translate-y-1/2">
-       <img src="/mobile1/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
+       <img src="assets/mobile1/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
       </button>
       <button className="swiper-button-next !w-[30px] !h-[30px]  text-white rounded-full absolute right-2 top-1/2 transform bg-[#fff] -translate-y-1/2">
-      <img src="/mobile1/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
+      <img src="assets/mobile1/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
       </button>
     </div> */}
 

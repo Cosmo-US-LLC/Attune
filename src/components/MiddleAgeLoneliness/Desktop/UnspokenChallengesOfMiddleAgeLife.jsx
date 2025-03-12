@@ -15,14 +15,14 @@ function UnspokenChallengesOfMiddleAgeLife() {
         {/* <div className="max-w-4xl w-fit mx-auto grid md:grid-cols-2   gap-y-[28px]"> */}
         <div className="flex flex-wrap justify-center gap-6">
           <YourPathCard
-            img="/desktop4/your-path/path-to-support-1.webp"
+            img="assets/desktop4/your-path/path-to-support-1.webp"
             title="Emotional Exhaustion"
             classes="bg-[#D43525] text-white"
             body="You give so much to others—your family, your work, your responsibilities—but what about you?"
           />
 
           <YourPathCard
-            img="/desktop4/your-path/path-to-support-2.webp"
+            img="assets/desktop4/your-path/path-to-support-2.webp"
             imgClass="bg-[#95ADF0] rounded-[30px] border border-black"
             title="Isolation"
             classes="bg-[#D43525] text-white"
@@ -30,14 +30,14 @@ function UnspokenChallengesOfMiddleAgeLife() {
           />
 
           <YourPathCard
-            img="/desktop4/your-path/path-to-support-5.webp"
+            img="assets/desktop4/your-path/path-to-support-5.webp"
             title="Uneven Struggles"
             classes="bg-[#D43525] text-white"
             body="Caring for loved ones, managing work stress, and handling personal responsibilities can feel overwhelming."
           />
 
           <YourPathCard
-            img="/desktop4/your-path/path-to-support-6.webp"
+            img="assets/desktop4/your-path/path-to-support-6.webp"
             title="The Cost of Loneliness"
             classes="bg-[#D43525] text-white"
             body="Loneliness isn’t just an emotion—it affects your well-being, your health, and your happiness."

@@ -9,25 +9,25 @@ import "swiper/css/pagination";
 function MeetFew() {
   const cards = [
     {
-      img: "/mobile1/meetFew/expert1.webp",
+      img: "assets/mobile1/meetFew/expert1.webp",
       name: "Jessica Williams",
       title: "Certified Mental Health Advisor",
       body: "Jessica is a compassionate listener with over 5 years of experience helping people through life’s ups and downs.",
     },
     {
-      img: "/mobile1/meetFew/expert2.webp",
+      img: "assets/mobile1/meetFew/expert2.webp",
       name: "Michael Brown",
       title: "Life Coach and Stress Management Specialist",
       body: "With a background in coaching and mental wellness, Michael specializes in helping individuals cope with stress, anxiety, and personal transitions.",
     },
     {
-      img: "/mobile1/meetFew/expert3.webp",
+      img: "assets/mobile1/meetFew/expert3.webp",
       name: "Olivia Davis",
       title: "Certified Wellness Advisor",
       body: "Olivia is passionate about supporting emotional well-being. She combines mindfulness techniques with empathetic listening to help people.",
     },
     {
-      img: "/mobile1/meetFew/expert4.webp",
+      img: "assets/mobile1/meetFew/expert4.webp",
       name: "Daniel Thompson",
       title: "Trauma-Informed Listener",
       body: "Daniel focuses on providing safe, empathetic support to individuals navigating through trauma or personal struggles.",
@@ -86,10 +86,10 @@ function MeetFew() {
       </Swiper>
 
       <button className="swiper-button-prev-meet z-[80] rotate-[180deg] !w-[30px] !h-[30px] text-white rounded-full absolute left-2 top-1/2 transform bg-[#fff] -translate-y-1/2">
-       <img src="/mobile1/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
+       <img src="assets/mobile1/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
       </button>
       <button className="swiper-button-next-meet z-[80] !w-[30px] !h-[30px]  text-white rounded-full absolute right-2 top-1/2 transform bg-[#fff] -translate-y-1/2">
-      <img src="/mobile1/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
+      <img src="assets/mobile1/whatMakes/arrow.png" className="h-[30px] w-[30px]" alt="" />
       </button>
     </div>
     </div>

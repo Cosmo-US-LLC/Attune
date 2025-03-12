@@ -6,7 +6,7 @@ const WhoCanBecomeListenerDesktop = () => {
     {
       text: "",
       color: "bg-white  ",
-      image: "/listener-recruitment/desktop/become-listener/listener1.webp",
+      image: "assets/listener-recruitmentassets/desktop/become-listener/listener1.webp",
     },
     {
       text: "Passionate About Supporting Others",
@@ -16,12 +16,12 @@ const WhoCanBecomeListenerDesktop = () => {
     {
       text: "",
       color: "bg-white  ",
-      image: "/listener-recruitment/desktop/become-listener/listener2.webp",
+      image: "assets/listener-recruitmentassets/desktop/become-listener/listener2.webp",
     },
     {
       text: "",
       color: "bg-white  ",
-      image: "/listener-recruitment/desktop/become-listener/listener3.webp",
+      image: "assets/listener-recruitmentassets/desktop/become-listener/listener3.webp",
     },
     {
       text: "Excellent Communicators",
@@ -31,7 +31,7 @@ const WhoCanBecomeListenerDesktop = () => {
     {
       text: "",
       color: "bg-white  ",
-      image: "/listener-recruitment/desktop/become-listener/listener4.webp",
+      image: "assets/listener-recruitmentassets/desktop/become-listener/listener4.webp",
     },
 
     {

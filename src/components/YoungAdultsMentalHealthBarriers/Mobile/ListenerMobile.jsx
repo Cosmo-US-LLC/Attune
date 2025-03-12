@@ -12,22 +12,22 @@ import {
 export default function ListenerMobile() {
   const cards = [
     {
-      img: "/desktop3/listener/tick-circle.webp",
+      img: "assets/desktop3/listener/tick-circle.webp",
       title: "How a Listener Can Help",
       body: "Reframing Experiences: Gain a fresh perspective and clarity on your challenges.",
     },
     {
-      img: "/desktop3/your-path/socialPressures.png",
+      img: "assets/desktop3/your-path/socialPressures.png",
       title: "How a Listener Can Help",
       body: "Setting and Achieving Goals: Boost your confidence, manage transitions, and achieve personal milestones.",
     },
     {
-      img: "/desktop3/your-path/digitalOverload.png",
+      img: "assets/desktop3/your-path/digitalOverload.png",
       title: "How a Listener Can Help",
       body: "Emotional well-being: Explore strategies to enhance your motivation and overall well-being.",
     },
     {
-      img: "/desktop3/your-path/relationshipChallenges.png",
+      img: "assets/desktop3/your-path/relationshipChallenges.png",
       title: "How a Listener Can Help",
       body: "Building Resilience: Strengthen your ability to navigate life’s hurdles and move toward your desired outcomes.",
     },
@@ -49,7 +49,7 @@ export default function ListenerMobile() {
                         How a Listener Can Help
                       </h3>
                       <div className="flex items-center space-x-1">
-                        <img src='/desktop3/listener/tick-circle.webp' alt="Icon" className="mr-1 mt-0.5 w-[20px] h-[21px]" />
+                        <img src='assets/desktop3/listener/tick-circle.webp' alt="Icon" className="mr-1 mt-0.5 w-[20px] h-[21px]" />
                         <p className="text-[15px] !block flex flex-row leading-[22px]">
                           <span className="font-bold">{boldText}:</span>
                           <span className="ml-1">{normalText}</span>

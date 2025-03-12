@@ -14,27 +14,27 @@ import {
 function YourPath() {
   const cards = [
     {
-      img: "/mobile6/your-path/path-to-support-1.webp",
+      img: "assets/mobile6/your-path/path-to-support-1.webp",
       title: "Stigma & Judgment",
       body: "Fear of being labeled or misunderstood stops many from seeking help.",
     },
     {
-      img: "/mobile6/your-path/path-to-support-2.webp",
+      img: "assets/mobile6/your-path/path-to-support-2.webp",
       title: "High Cost of Therapy",
       body: "Traditional therapy can be expensive and inaccessible.",
     },
     {
-      img: "/mobile6/your-path/path-to-support-3.webp",
+      img: "assets/mobile6/your-path/path-to-support-3.webp",
       title: "Lack of Time & Flexibility",
       body: "Busy schedules make it hard to commit to formal therapy.",
     },
     {
-      img: "/mobile6/your-path/path-to-support-4.webp",
+      img: "assets/mobile6/your-path/path-to-support-4.webp",
       title: "Not Knowing Where to Start",
       body: "Many struggle alone because they don’t know what support is right for them.",
     },
     {
-      img: "/mobile6/your-path/path-to-support-5.webp",
+      img: "assets/mobile6/your-path/path-to-support-5.webp",
       title: 'Feeling "Not Bad Enough"',
       body: "Some believe their struggles aren’t serious enough for professional help.",
     },

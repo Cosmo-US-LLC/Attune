@@ -67,7 +67,7 @@ function Navbar() {
               }}
             >
               <img
-                src="/desktop1/feel-attune-logo.webp"
+                src="assets/desktop1/feel-attune-logo.webp"
                 alt="Attune Logo"
                 className="w-[196px]"
               />
@@ -159,7 +159,7 @@ export default Navbar;
 //                 className="min-w-[200px] flex max-xl:items-center items-end"
 //               >
 //                 <img
-//                   src="/desktop1/feel-attune-logo.webp"
+//                   src="assets/desktop1/feel-attune-logo.webp"
 //                   alt="Attune Logo"
 //                   className="w-[196px] "
 //                 />

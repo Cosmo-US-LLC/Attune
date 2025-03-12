@@ -18,14 +18,14 @@ function UnspokenChallengesOfMiddleAgeLife() {
 
         <div className="flex flex-wrap justify-center gap-6">
           <YourPathCard
-            img="/desktop6/your-path/path-to-support-1.webp"
+            img="assets/desktop6/your-path/path-to-support-1.webp"
             title="Stigma & Judgment"
             classes="bg-[#6FE0D1] text-white"
             body="Fear of being labeled or misunderstood stops many from seeking help."
           />
 
           <YourPathCard
-            img="/desktop6/your-path/path-to-support-2.webp"
+            img="assets/desktop6/your-path/path-to-support-2.webp"
             imgClass="bg-[#95ADF0] rounded-[30px] border border-black"
             title="High Cost of Therapy"
             classes="bg-[#6FE0D1] text-white"
@@ -33,20 +33,20 @@ function UnspokenChallengesOfMiddleAgeLife() {
           />
 
           <YourPathCard
-            img="/desktop6/your-path/path-to-support-3.webp"
+            img="assets/desktop6/your-path/path-to-support-3.webp"
             title="Lack of Time & Flexibility"
             classes="bg-[#6FE0D1] text-white"
             body="Busy schedules make it hard to commit to formal therapy."
           />
 
           <YourPathCard
-            img="/desktop6/your-path/path-to-support-4.webp"
+            img="assets/desktop6/your-path/path-to-support-4.webp"
             title="Not Knowing Where to Start"
             classes="bg-[#6FE0D1] text-white"
             body="Many struggle alone because they don’t know what support is right for them."
           />
           <YourPathCard
-            img="/desktop6/your-path/path-to-support-5.webp"
+            img="assets/desktop6/your-path/path-to-support-5.webp"
             title='Feeling "Not Bad Enough"'
             classes="bg-[#6FE0D1] text-white"
             body="Some believe their struggles aren’t serious enough for professional help."

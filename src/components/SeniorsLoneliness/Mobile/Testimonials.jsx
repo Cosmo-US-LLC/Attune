@@ -11,19 +11,19 @@ function Testimonials() {
   const testimonials = [
     {
       bg: "bg-[#E5FF7D]",
-      img: "/desktop7/testimonials/test1.webp",
+      img: "assets/desktop7/testimonials/test1.webp",
       title: "Margaret, 68",
       body: '"Living alone after retiring left me feeling invisible. My Listener gave me a space to share my feelings without judgment, helping me rediscover purpose and joy."',
     },
     {
       bg: "bg-[#FF6F61]",
-      img: "/desktop7/testimonials/test2.webp",
+      img: "assets/desktop7/testimonials/test2.webp",
       title: "John, 72",
       body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
     },
     {
       bg: "bg-[#6FE0D1]",
-      img: "/desktop7/testimonials/test3.webp",
+      img: "assets/desktop7/testimonials/test3.webp",
       textColor: "text-white",
       title: "Catherine, 65",
       body: '"I’ve always felt uneasy opening up, but this platform made it so easy and comforting. I now feel understood and less overwhelmed."',
@@ -37,7 +37,7 @@ function Testimonials() {
       </h1>
       <div className="space-y-2">
         <img
-          src="/desktop7/testimonials/progress75.svg"
+          src="assets/desktop7/testimonials/progress75.svg"
           alt="pg95"
           className="w-full"
         />
@@ -48,7 +48,7 @@ function Testimonials() {
 
       <div className="space-y-2">
         <img
-          src="/desktop7/testimonials/progress95.svg"
+          src="assets/desktop7/testimonials/progress95.svg"
           alt="pg75"
           className="w-full"
         />

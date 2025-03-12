@@ -14,22 +14,22 @@ import {
 function YourPath() {
   const cards = [
     {
-      img: "/mobile3/yourPath/mental1.png",
+      img: "assets/mobile3/yourPath/mental1.png",
       title: "Stigma and Judgment: ",
       body: "Fear of being labeled or misunderstood.",
     },
     {
-      img: "/mobile3/yourPath/mental2.png",
+      img: "assets/mobile3/yourPath/mental2.png",
       title: "Limited Resources:",
       body: "Lack of affordable or accessible mental health support.",
     },
     {
-      img: "/mobile3/yourPath/mental3.png",
+      img: "assets/mobile3/yourPath/mental3.png",
       title: "Pressure to Succeed:",
       body: "Balancing academic, career, and personal expectations.",
     },
     {
-      img: "/mobile3/yourPath/mental4.png",
+      img: "assets/mobile3/yourPath/mental4.png",
       title: "Realtionship Challenges",
       body: "Pressure to conform to societal norms.",
     },
@@ -132,7 +132,7 @@ function YourPath() {
 //                 {points?.map((point, id) => (
 //                     <li key={id} className='capitalize'
 //                         style={{
-//                             listStyleImage: "url(/mobile3/yourPath/list-disc.svg)"
+//                             listStyleImage: "url(assets/mobile3/yourPath/list-disc.svg)"
 //                         }}
 //                     >
 //                         <strong>{point?.title}:</strong> {point?.body}

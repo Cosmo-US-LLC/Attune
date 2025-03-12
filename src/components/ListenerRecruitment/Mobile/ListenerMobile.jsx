@@ -12,19 +12,19 @@ import {
 export default function ListenerMobile() {
   const cards = [
     {
-      img: "/listener-recruitment/desktop/private-practice/tick.webp",
+      img: "assets/listener-recruitmentassets/desktop/private-practice/tick.webp",
       title: "What is a Listener",
       description: "A listener is a someone who provides",
       body: "A Safe Space for individuals to express their thoughts and emotions without fear of judgment.",
     },
     {
-      img: "/listener-recruitment/desktop/private-practice/tick.webp",
+      img: "assets/listener-recruitmentassets/desktop/private-practice/tick.webp",
       title: "What is a Listner",
       description: "A listener is a someone who provides",
       body: "Support & Encouragement to help individuals gain clarity, motivation, and resilience.",
     },
     {
-      img: "/listener-recruitment/desktop/private-practice/tick.webp",
+      img: "assets/listener-recruitmentassets/desktop/private-practice/tick.webp",
       title: "What is a Listner",
       description: "A listener is a someone who provides",
       body: "Guidance to Navigate Life’s Challenges, such as confidence-building, life transitions, and personal goal-setting.",
@@ -51,7 +51,7 @@ export default function ListenerMobile() {
                       </p>
                       <div className="flex space-x-2">
                         <img
-                          src="/desktop7/listener/tick-circle.svg"
+                          src="assets/desktop7/listener/tick-circle.svg"
                           alt="Icon"
                           className="mr-1 mt-1  w-[20px] h-[21px]"
                         />

@@ -15,32 +15,32 @@ function AsSeenMob1() {
         {/* <div className="max-w-[200vw] [--duration:4s] border border-red-500 overflow-visible animate-marquee flex justify-start repeat-infinite px-0"> */}
           
           <img
-            src="/desktop1/proudly/logo1.webp"
+            src="assets/desktop1/proudly/logo1.webp"
             alt="Time"
             className="object-contain w-[68px] h-[28px]"
           />
           <img
-            src="/desktop1/proudly/logo2.webp"
+            src="assets/desktop1/proudly/logo2.webp"
             alt="Time"
             className="object-contain w-[66px] h-[26px]"
           />
           <img
-            src="/desktop1/proudly/logo3.webp"
+            src="assets/desktop1/proudly/logo3.webp"
             alt="Time"
             className="object-contain w-[59px] h-[30px]"
           />
           <img
-            src="/desktop1/proudly/logo4.webp"
+            src="assets/desktop1/proudly/logo4.webp"
             alt="Time"
             className="object-contain w-[78px] h-[30px]"
           />
           <img
-            src="/desktop1/proudly/logo5.webp"
+            src="assets/desktop1/proudly/logo5.webp"
             alt="Time"
             className="object-contain w-[73px] h-[30px]"
           />
            <img
-            src="/desktop1/proudly/logo6.webp"
+            src="assets/desktop1/proudly/logo6.webp"
             alt="Time"
             className="object-contain w-[73px] h-[30px]"
           />

@@ -118,7 +118,7 @@ function NavbarMobile() {
                         }}
                       >
                         <img
-                          src="/mobile1/feel-attune-logo.webp"
+                          src="assets/mobile1/feel-attune-logo.webp"
                           alt="Attune Logo"
                           className="w-[140px] h-[60px] object-contain"
                         />
@@ -180,21 +180,21 @@ function NavbarMobile() {
                           <div className="flex flex-row items-center justify-center gap-4">
                             <a href="https://www.linkedin.com/company/easecare/">
                               <img
-                                src="/mobile1/footer/linkedIn.svg"
+                                src="assets/mobile1/footer/linkedIn.svg"
                                 alt="linkedIn"
                                 className=""
                               />
                             </a>
                             <a href="https://www.facebook.com/easecare.ca">
                               <img
-                                src="/mobile1/footer/facebook.svg"
+                                src="assets/mobile1/footer/facebook.svg"
                                 alt="facebook"
                                 className=""
                               />
                             </a>
                             <a href="https://www.instagram.com/easecare.ca/">
                               <img
-                                src="/mobile1/footer/instagram.svg"
+                                src="assets/mobile1/footer/instagram.svg"
                                 alt="instagram"
                                 className=""
                               />
@@ -246,7 +246,7 @@ function NavbarMobile() {
                 }}
               >
                 <img
-                  src="/mobile1/feel-attune-logo.webp"
+                  src="assets/mobile1/feel-attune-logo.webp"
                   alt="Attune Logo"
                   className="w-[105px] object-contain"
                 />

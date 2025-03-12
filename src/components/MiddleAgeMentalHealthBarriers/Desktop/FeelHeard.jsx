@@ -4,7 +4,7 @@ export default function FeelHeard() {
       <div className="flex flex-row w-full border border-black ">
         <div className="bg-[#D43525] flex w-[25%] border-r border-black">
           <img
-            src={"/desktop4/feel-heard/smiling-girl.webp"}
+            src={"assets/desktop4/feel-heard/smiling-girl.webp"}
             alt="smilinggirl"
             className="object-cover w-full h-auto "
           />
@@ -29,13 +29,13 @@ export default function FeelHeard() {
           </div>
 
           <img
-            src={"/desktop4/feel-heard/feel-circle1.webp"}
+            src={"assets/desktop4/feel-heard/feel-circle1.webp"}
             alt="smilinggirl"
             className="absolute bottom-[-40px] left-[50%] z-10 w-[200px] h-[200px] object-contain "
           />
 
           <img
-            src={"/desktop4/feel-heard/feel-circle2.webp"}
+            src={"assets/desktop4/feel-heard/feel-circle2.webp"}
             alt="smilinggirl"
             className="object-contain w-[150px] h-[150px] absolute bottom-[32%] left-[70%] z-10 "
           />

@@ -3,17 +3,17 @@ import React from "react";
 const MeaningfulMovementMobile = () => {
   const cards = [
     {
-      icon: "/listener-recruitment/desktop/meaningfull-movement/icon1.svg",
+      icon: "assets/listener-recruitmentassets/desktop/meaningfull-movement/icon1.svg",
       text: "Our mission is to bridge the gap between traditional mental health services and everyday emotional support.",
       color: "bg-[#E5FF7D]",
     },
     {
-      icon: "/listener-recruitment/desktop/meaningfull-movement/icon2.svg",
+      icon: "assets/listener-recruitmentassets/desktop/meaningfull-movement/icon2.svg",
       text: "We believe everyone deserves a welcoming, stigma-free space to share life’s ups and downs—even if they’re not ready for, or don’t need, clinical intervention.",
       color: "bg-[#FFA8ED]",
     },
     {
-      icon: "/listener-recruitment/desktop/meaningfull-movement/icon3.svg",
+      icon: "assets/listener-recruitmentassets/desktop/meaningfull-movement/icon3.svg",
       text: "By becoming a Listener, you join a community committed to broadening access to empathetic, judgment-free connection.",
       color: "bg-[#6FE0D1]",
     },

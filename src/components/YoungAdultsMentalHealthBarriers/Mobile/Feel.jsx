@@ -5,7 +5,7 @@ export default function Feel() {
       <>
         <div className="bg-[#95ADF0]">
           <img
-            src={"/desktop3/feel-heard/smiling-girl.webp"}
+            src={"assets/desktop3/feel-heard/smiling-girl.webp"}
             alt="smilinggirl"
             className=" object-cover"
           />
@@ -16,7 +16,7 @@ export default function Feel() {
               <h3 className="font-miniature text-[38px] leading-[55px]">Feel Heard with <br/> 
               <span className="text-[54px]">Att<span className="italic">une</span></span></h3>
               <img
-            src={"/desktop3/feel-heard/feel-circle2.webp"}
+            src={"assets/desktop3/feel-heard/feel-circle2.webp"}
             alt="smilinggirl"
             className="h-[76px] w-[75px] ml-[252px] mt-9 absolute "
           />
@@ -26,7 +26,7 @@ export default function Feel() {
               <Button className="bg-[#5200FF] text-white mt-4 py-3 rounded-full">Connect Now</Button>
                 </a>
               <img
-            src={"/desktop3/feel-heard/feel-circle1.webp"}
+            src={"assets/desktop3/feel-heard/feel-circle1.webp"}
             alt="smilinggirl"
             className="h-[94px] w-[94px] ml-44 mt-3 absolute "
           />

@@ -16,19 +16,19 @@ function Testimonials() {
   const testimonials = [
     {
       bg: "bg-[#E5FF7D]",
-      img: "/mobile1/testimonials/test1.webp",
+      img: "assets/mobile1/testimonials/test1.webp",
       title: "Jake, 24",
       body: '"Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference."',
     },
     {
       bg: "bg-[#F097DD]",
-      img: "/mobile1/testimonials/test2.webp",
+      img: "assets/mobile1/testimonials/test2.webp",
       title: "Jessica, 45",
       body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
       bg: "bg-[#FF6F61]",
-      img: "/mobile1/testimonials/test3.webp",
+      img: "assets/mobile1/testimonials/test3.webp",
       textColor: "text-white",
       title: "John, 72",
       body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
@@ -94,14 +94,14 @@ function Testimonials() {
 
         <button className="swiper-button-prev-tes z-[80] rotate-[180deg] !w-[30px] !h-[30px] text-white rounded-full absolute -left-3 top-1/2 transform bg-[#fff] -translate-y-1/2">
           <img
-            src="/mobile1/whatMakes/arrow.png"
+            src="assets/mobile1/whatMakes/arrow.png"
             className="h-[30px] w-[30px]"
             alt=""
           />
         </button>
         <button className="swiper-button-next-tes z-[80] !w-[30px] !h-[30px]  text-white rounded-full absolute -right-3 top-1/2 transform bg-[#fff] -translate-y-1/2">
           <img
-            src="/mobile1/whatMakes/arrow.png"
+            src="assets/mobile1/whatMakes/arrow.png"
             className="h-[30px] w-[30px]"
             alt=""
           />

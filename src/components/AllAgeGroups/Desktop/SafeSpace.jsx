@@ -49,7 +49,7 @@ function SafeSpace() {
                         width: "30px",
                         height: "30px",
                         backgroundImage:
-                          "url('/desktop6/listener/tick-circle.webp')",
+                          "url('assets/desktop6/listener/tick-circle.webp')",
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         display: "inline-block",

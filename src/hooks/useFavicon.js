@@ -14,7 +14,7 @@ const useFavicon = () => {
     const updateFavicon = (e) => {
       try {
         // Reverse behavior: Light mode -> Dark favicon | Dark mode -> Light favicon
-        const newFavicon = e.matches ? "/favicon-light.svg" : "/favicon-dark.svg";
+        const newFavicon = e.matches ? "assets/favicon-light.svg" : "assets/favicon-dark.svg";
 
         console.log(`🌗 System Mode Detected: ${e.matches ? "Dark Mode" : "Light Mode"}`);
         console.log(`🔄 Updating Favicon to: ${newFavicon}`);
@@ -70,7 +70,7 @@ export default useFavicon;
 //     const updateFavicon = (e) => {
 //       try {
 //         // REVERSE behavior: Light mode -> Dark favicon | Dark mode -> Light favicon
-//         const newFavicon = e.matches ? "/favicon-light.svg" : "/favicon-dark.svg";
+//         const newFavicon = e.matches ? "assets/favicon-light.svg" : "assets/favicon-dark.svg";
 
 //         // Change favicon only if it's different from the current one
 //         if (favicon.getAttribute("href") !== newFavicon) {

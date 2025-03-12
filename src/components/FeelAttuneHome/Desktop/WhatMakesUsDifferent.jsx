@@ -6,35 +6,35 @@ const features = [
     </>),
     description:
       "Attune connects you to compassionate listeners who provide a supportive environment for sharing your thoughts and feelings. It's a space to gain clarity, set goals, and explore strategies for emotional well-being.",
-    icon: "/desktop1/what-makes/card-1.svg", // Replace with an actual image or SVG if needed
+    icon: "assets/desktop1/what-makes/card-1.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 2,
     title: "Accessible and Affordable Support",
     description:
       "No more barriers like high costs or long wait times. Attune offers connection to immediate, non-clinical emotional support that fits your schedule and budget.",
-    icon: "/desktop1/what-makes/card-2.svg", // Replace with an actual image or SVG if needed
+    icon: "assets/desktop1/what-makes/card-2.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 3,
     title: "Focused on Everyday Challenges",
     description:
       "While therapy addresses severe mental health conditions, this service is ideal for managing everyday stress, coping with life transitions, or building self-confidence.",
-    icon: "/desktop1/what-makes/card-3.svg", // Replace with an actual image or SVG if needed
+    icon: "assets/desktop1/what-makes/card-3.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 4,
     title: <>No Stigma,<br />Just Support</>,
     description:
       "Seeking support has never been easier. Attune normalizes conversations about mental wellness, creating a space that prioritizes connection and growth over clinical formality.",
-    icon: "/desktop1/what-makes/card-4.svg", // Replace with an actual image or SVG if needed
+    icon: "assets/desktop1/what-makes/card-4.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 5,
     title: "Privacy and Confidentiality",
     description:
       "Your well-being and privacy are our top priority. All conversations are confidential, ensuring that you can speak freely and openly without concerns.",
-    icon: "/desktop1/what-makes/card-5.svg", // Replace with an actual image or SVG if needed
+    icon: "assets/desktop1/what-makes/card-5.svg", // Replace with an actual image or SVG if needed
   },
 ];
 
@@ -79,7 +79,7 @@ function WhatMakesUsDifferent() {
               Connect Now
             </button>
           </a>
-          <img src="/desktop1/what-makes/sitting-girl.svg" alt="Sitting girl" className="absolute max-xl:-right-[10%] right-0 z-0 max-xl:bottom-[300%] -bottom-1" />
+          <img src="assets/desktop1/what-makes/sitting-girl.svg" alt="Sitting girl" className="absolute max-xl:-right-[10%] right-0 z-0 max-xl:bottom-[300%] -bottom-1" />
         </div>
       </div>
     </div>

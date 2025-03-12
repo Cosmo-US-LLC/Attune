@@ -4,7 +4,7 @@ function Hero() {
       <div className="bg-[#E5FF7D] min-w-[46%] ">
         <div className="relative bottom-[-6%] ">
           <img
-            src={"/desktop5/hero/Hero.webp"}
+            src={"assets/desktop5/hero/Hero.webp"}
             alt="Listener"
             className="max-2xl:w-[650px] w-[100%] rounded-lg object-cover"
           />
@@ -77,7 +77,7 @@ function Hero() {
     //     <div className="mt-8 md:mt-0 relative  md:max-w-[50%]">
     //       <div className="relative">
     //         <img
-    //           src={"/desktop3/hero/phone-boy.webp"}
+    //           src={"assets/desktop3/hero/phone-boy.webp"}
     //           alt="Listener"
     //           className="max-xl:w-[480px] max-xl:h-auto h-[442px] w-[600px] rounded-lg object-contain"
     //         />

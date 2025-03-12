@@ -15,7 +15,7 @@ function HowItWorks() {
           body="Sign up in just a few clicks. It's quick and designed for your comfort."
         >
           <img
-            src="/desktop4/how-it/card-1.svg"
+            src="assets/desktop4/how-it/card-1.svg"
             alt="Hug"
             className="w-[107px] h-[71px]"
           />
@@ -27,7 +27,7 @@ function HowItWorks() {
           body="Explore a variety of compassionate, judgment-free Listeners. Choose someone who truly gets you."
         >
           <img
-            src="/desktop4/how-it/card-2.svg"
+            src="assets/desktop4/how-it/card-2.svg"
             alt="Talk"
             className="w-[92px] h-[69px]"
           />
@@ -40,7 +40,7 @@ function HowItWorks() {
 "
         >
           <img
-            src="/desktop4/how-it/card-3.svg"
+            src="assets/desktop4/how-it/card-3.svg"
             alt="Schedule"
             className="w-[82px] h-[73px]"
           />

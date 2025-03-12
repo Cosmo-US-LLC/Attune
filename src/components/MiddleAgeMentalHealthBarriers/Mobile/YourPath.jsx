@@ -14,22 +14,22 @@ import {
 function YourPath() {
   const cards = [
     {
-      img: "/mobile5/your-path/path-to-support-1.webp",
+      img: "assets/mobile5/your-path/path-to-support-1.webp",
       title: "Emotional Strain",
       body: "Balancing responsibilities, work, and personal challenges can feel relentless, leaving little time for self-care.",
     },
     {
-      img: "/mobile5/your-path/path-to-support-2.webp",
+      img: "assets/mobile5/your-path/path-to-support-2.webp",
       title: "Burnout Risk",
       body: "Without support, daily stress can build into exhaustion, anxiety, and emotional fatigue.",
     },
     {
-      img: "/mobile5/your-path/path-to-support-3.webp",
+      img: "assets/mobile5/your-path/path-to-support-3.webp",
       title: "Stigma and Barriers",
       body: "Seeking help can feel overwhelming, and traditional mental health care may seem inaccessible or costly.",
     },
     {
-      img: "/mobile5/your-path/path-to-support-4.webp",
+      img: "assets/mobile5/your-path/path-to-support-4.webp",
       title: "You’re Not Alone",
       body: "Many middle-aged individuals face similar challenges but struggle to find a supportive space to share their experiences.",
     },
@@ -129,7 +129,7 @@ function YourPath() {
 //                 {points?.map((point, id) => (
 //                     <li key={id} className='capitalize'
 //                         style={{
-//                             listStyleImage: "url(/mobile3/yourPath/list-disc.svg)"
+//                             listStyleImage: "url(assets/mobile3/yourPath/list-disc.svg)"
 //                         }}
 //                     >
 //                         <strong>{point?.title}:</strong> {point?.body}

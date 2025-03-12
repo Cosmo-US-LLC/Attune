@@ -14,14 +14,14 @@ function UnspokenChallengesOfMiddleAgeLife() {
         {/* <div className="max-w-4xl w-fit mx-auto grid md:grid-cols-2   gap-y-[28px]"> */}
         <div className="flex flex-wrap justify-center gap-6">
           <YourPathCard
-            img="/desktop5/your-path/path-to-support-1.webp"
+            img="assets/desktop5/your-path/path-to-support-1.webp"
             title="Emotional Strain"
             classes="bg-[#D43525] text-white"
             body="Balancing responsibilities, work, and personal challenges can feel relentless, leaving little time for self-care."
           />
 
           <YourPathCard
-            img="/desktop5/your-path/path-to-support-2.webp"
+            img="assets/desktop5/your-path/path-to-support-2.webp"
             imgClass="bg-[#95ADF0] rounded-[30px] border border-black"
             title="Burnout Risk"
             classes="bg-[#D43525] text-white"
@@ -29,14 +29,14 @@ function UnspokenChallengesOfMiddleAgeLife() {
           />
 
           <YourPathCard
-            img="/desktop5/your-path/path-to-support-3.webp"
+            img="assets/desktop5/your-path/path-to-support-3.webp"
             title="Stigma and Barriers"
             classes="bg-[#D43525] text-white"
             body="Seeking help can feel overwhelming, and traditional mental health care may seem inaccessible or costly."
           />
 
           <YourPathCard
-            img="/desktop5/your-path/path-to-support-4.webp"
+            img="assets/desktop5/your-path/path-to-support-4.webp"
             title="You’re Not Alone"
             classes="bg-[#D43525] text-white"
             body="Many middle-aged individuals face similar challenges but struggle to find a supportive space to share their experiences."

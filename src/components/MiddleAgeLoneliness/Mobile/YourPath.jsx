@@ -14,22 +14,22 @@ import {
 function YourPath() {
   const cards = [
     {
-      img: "/mobile4/your-path/path-to-support-1.webp",
+      img: "assets/mobile4/your-path/path-to-support-1.webp",
       title: "Emotional Exhaustion",
       body: "You give so much to others—your family, your work, your responsibilities—but what about you?",
     },
     {
-      img: "/mobile4/your-path/path-to-support-2.webp",
+      img: "assets/mobile4/your-path/path-to-support-2.webp",
       title: "Isolation",
       body: "Many middle-aged individuals feel emotionally isolated, stuck in a cycle of obligations with little personal connection.",
     },
     {
-      img: "/mobile4/your-path/path-to-support-5.webp",
+      img: "assets/mobile4/your-path/path-to-support-5.webp",
       title: "Uneven Struggles",
       body: "Caring for loved ones, managing work stress, and handling personal responsibilities can feel overwhelming.",
     },
     {
-      img: "/mobile4/your-path/path-to-support-6.webp",
+      img: "assets/mobile4/your-path/path-to-support-6.webp",
       title: "The Cost of Loneliness",
       body: "Loneliness isn’t just an emotion—it affects your well-being, your health, and your happiness.",
     },
@@ -130,7 +130,7 @@ function YourPath() {
 //                 {points?.map((point, id) => (
 //                     <li key={id} className='capitalize'
 //                         style={{
-//                             listStyleImage: "url(/mobile3/yourPath/list-disc.svg)"
+//                             listStyleImage: "url(assets/mobile3/yourPath/list-disc.svg)"
 //                         }}
 //                     >
 //                         <strong>{point?.title}:</strong> {point?.body}

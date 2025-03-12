@@ -12,28 +12,28 @@ import {
 export default function ListenerMobile() {
   const cards = [
     {
-      img: "/desktop3/listener/tick-circle.webp",
+      img: "assets/desktop3/listener/tick-circle.webp",
       title: "Meaningful Conversations That Make a Difference",
       description:
         "See how a compassionate Listener can bring comfort and connection to your life.",
       body: "Feel Heard, Without Judgment: Share your thoughts and emotions openly in a safe space.",
     },
     {
-      img: "/desktop3/your-path/socialPressures.png",
+      img: "assets/desktop3/your-path/socialPressures.png",
       title: "Meaningful Conversations That Make a Difference",
       description:
         "See how a compassionate Listener can bring comfort and connection to your life.",
       body: "Accessible Anytime: Connect with a Listener when it’s convenient for you.",
     },
     {
-      img: "/desktop3/your-path/digitalOverload.png",
+      img: "assets/desktop3/your-path/digitalOverload.png",
       title: "Meaningful Conversations That Make a Difference",
       description:
         "See how a compassionate Listener can bring comfort and connection to your life.",
       body: "Human Connection, Anywhere: Create meaningful relationships, no matter where you are.",
     },
     {
-      img: "/desktop3/your-path/relationshipChallenges.png",
+      img: "assets/desktop3/your-path/relationshipChallenges.png",
       title: "Meaningful Conversations That Make a Difference",
       description:
         "See how a compassionate Listener can bring comfort and connection to your life.",
@@ -61,7 +61,7 @@ export default function ListenerMobile() {
                       </p>
                       <div className="flex space-x-2">
                         <img
-                          src="/desktop3/listener/tick-circle.webp"
+                          src="assets/desktop3/listener/tick-circle.webp"
                           alt="Icon"
                           className="mr-1 mt-1  w-[20px] h-[21px]"
                         />

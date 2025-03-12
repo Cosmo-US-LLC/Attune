@@ -3,13 +3,13 @@ import React from "react";
 function YourPath() {
   const cards = [
     {
-      img: "/mobile8/your-path/path-to-support-2.webp",
+      img: "assets/mobile8/your-path/path-to-support-2.webp",
       title: "Facing Challenges Together",
       body: "As we age, emotional challenges like isolation and stress often arise. Nearly 1 in 8 seniors face mental health struggles annually, yet less than half seek support. You’re not alone.",
       bgColor: "#6FE0D1",
     },
     {
-      img: "/mobile8/your-path/path-to-support-1.webp",
+      img: "assets/mobile8/your-path/path-to-support-1.webp",
       title: "Support Without Barriers",
       body: "Traditional solutions can feel intimidating, costly, or too formal. Sometimes, all you need is someone to listen—without labels or pressure.",
       bgColor: "#E5FF7D",

@@ -12,7 +12,7 @@ import {
 export default function ListenerMobile() {
   const cards = [
     {
-      img: "/desktop3/listener/tick-circle.webp",
+      img: "assets/desktop3/listener/tick-circle.webp",
       title: "Life Change, But So Do the Challenges We Face",
       description:
         "As we grow older, feelings of isolation and stress can creep in. Nearly 2 in 3 seniors facing mental health challenges do not receive the care they need. Why?",
@@ -21,7 +21,7 @@ export default function ListenerMobile() {
         "But support doesn’t have to feel this way. We offer on-demand, judgment-free conversations with compassionate Listeners who are here to help—anytime, anywhere.",
     },
     {
-      img: "/desktop3/your-path/socialPressures.png",
+      img: "assets/desktop3/your-path/socialPressures.png",
       title: "Life Change, But So Do the Challenges We Face",
       description:
         "As we grow older, feelings of isolation and stress can creep in. Nearly 2 in 3 seniors facing mental health challenges do not receive the care they need. Why?",
@@ -30,7 +30,7 @@ export default function ListenerMobile() {
         "But support doesn’t have to feel this way. We offer on-demand, judgment-free conversations with compassionate Listeners who are here to help—anytime, anywhere.",
     },
     {
-      img: "/desktop3/your-path/digitalOverload.png",
+      img: "assets/desktop3/your-path/digitalOverload.png",
       title: "Life Change, But So Do the Challenges We Face",
       description:
         "As we grow older, feelings of isolation and stress can creep in. Nearly 2 in 3 seniors facing mental health challenges do not receive the care they need. Why?",
@@ -39,7 +39,7 @@ export default function ListenerMobile() {
         "But support doesn’t have to feel this way. We offer on-demand, judgment-free conversations with compassionate Listeners who are here to help—anytime, anywhere.",
     },
     {
-      img: "/desktop3/your-path/relationshipChallenges.png",
+      img: "assets/desktop3/your-path/relationshipChallenges.png",
       title: "Life Change, But So Do the Challenges We Face",
       description:
         "As we grow older, feelings of isolation and stress can creep in. Nearly 2 in 3 seniors facing mental health challenges do not receive the care they need. Why?",
@@ -69,7 +69,7 @@ export default function ListenerMobile() {
                       </p>
                       <div className="flex space-x-2">
                         <img
-                          src="/desktop3/listener/tick-circle.webp"
+                          src="assets/desktop3/listener/tick-circle.webp"
                           alt="Icon"
                           className="mr-1 mt-1  w-[20px] h-[21px] relative z-20"
                         />

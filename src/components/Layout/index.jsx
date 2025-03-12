@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../Navbar/Desktop/Navbar.jsx";
-import NavbarMobile from "../Navbar/Mobile/NavbarMobile.jsx";
-import Footer from "../Footer/Desktop/Footer.jsx";
-import FooterMobile from "../Footer/Mobile/FooterMobile.jsx";
+import Navbar from "../Navbar/desktop/Navbar.jsx";
+import NavbarMobile from "../Navbar/mobile/NavbarMobile.jsx";
+import Footer from "../Footer/desktop/Footer.jsx";
+import FooterMobile from "../Footer/mobile/FooterMobile.jsx";
 
 const Layout = () => {
   return (

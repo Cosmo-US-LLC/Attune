@@ -31,7 +31,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[10px]  bg-[#e5ff7d]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/tick.svg"
+                    src="assets/desktop2/why-choose/tick.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -41,7 +41,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/cross.svg"
+                    src="assets/desktop2/why-choose/cross.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -56,7 +56,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/tick.svg"
+                    src="assets/desktop2/why-choose/tick.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -66,7 +66,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/exclaim.svg"
+                    src="assets/desktop2/why-choose/exclaim.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -82,7 +82,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/tick.svg"
+                    src="assets/desktop2/why-choose/tick.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -92,7 +92,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/cross.svg"
+                    src="assets/desktop2/why-choose/cross.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -108,7 +108,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/tick.svg"
+                    src="assets/desktop2/why-choose/tick.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -118,7 +118,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/cross.svg"
+                    src="assets/desktop2/why-choose/cross.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -133,7 +133,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/tick.svg"
+                    src="assets/desktop2/why-choose/tick.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -143,7 +143,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/cross.svg"
+                    src="assets/desktop2/why-choose/cross.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -158,7 +158,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]  bg-[#e5ff7d]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/tick.svg"
+                    src="assets/desktop2/why-choose/tick.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />
@@ -168,7 +168,7 @@ function WhyChooseListener() {
               <td className="col-span-3 p-[20px] pl-[60px] border-l border-black text-[20px] flex items-center gap-[15px]">
                 <div>
                   <img
-                    src="/desktop2/why-choose/exclaim.svg"
+                    src="assets/desktop2/why-choose/exclaim.svg"
                     alt="Tick"
                     className="w-[40px] h-[40px]"
                   />

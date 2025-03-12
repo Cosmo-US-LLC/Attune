@@ -10,22 +10,22 @@ import {
 function WeBelieve() {
   const cards = [
     {
-      img: "/mobile1/weBelieve/b1.webp",
+      img: "assets/mobile1/weBelieve/b1.webp",
     },
     {
-      img: "/mobile1/weBelieve/b2.webp",
+      img: "assets/mobile1/weBelieve/b2.webp",
     },
     {
-      img: "/mobile1/weBelieve/b3.webp",
+      img: "assets/mobile1/weBelieve/b3.webp",
     },
     {
-      img: "/mobile1/weBelieve/b4.webp",
+      img: "assets/mobile1/weBelieve/b4.webp",
     },
     {
-      img: "/mobile1/weBelieve/b5.webp",
+      img: "assets/mobile1/weBelieve/b5.webp",
     },
     {
-      img: "/mobile1/weBelieve/b6.webp",
+      img: "assets/mobile1/weBelieve/b6.webp",
     },
   ];
 

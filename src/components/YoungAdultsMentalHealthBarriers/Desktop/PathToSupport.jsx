@@ -21,14 +21,14 @@ function PathToSupport() {
         </h6>
         <div className="max-w-4xl w-fit mx-auto grid md:grid-cols-2 gap-x-[28px] gap-y-[28px]">
           <YourPathCard
-            img="/desktop3/your-path/matter1.png"
+            img="assets/desktop3/your-path/matter1.png"
             title="Stigma and Judgment:"
             classes="bg-[#95ADF0] text-white"
             body="Fear of being labeled or misunderstood."
           />
 
           <YourPathCard
-            img="/desktop3/your-path/matter2.png"
+            img="assets/desktop3/your-path/matter2.png"
             imgClass="bg-[#95ADF0] rounded-[30px] border border-black"
             title="Limited Resources:"
             classes="bg-[#95ADF0] text-white"
@@ -36,14 +36,14 @@ function PathToSupport() {
           />
 
           <YourPathCard
-            img="/desktop3/your-path/matter3.png"
+            img="assets/desktop3/your-path/matter3.png"
             title="Pressure to Succeed:"
             classes="bg-[#95ADF0] text-white"
             body="Balancing academic, career, and personal expectations."
           />
 
           <YourPathCard
-            img="/desktop3/your-path/matter4.png"
+            img="assets/desktop3/your-path/matter4.png"
             title="Cultural and Family Expectations"
             classes="bg-[#95ADF0] text-white"
             body="Pressure to conform to societal norms."

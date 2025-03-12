@@ -31,7 +31,7 @@ const PrivatePracticeMobile = () => {
           {benefits.map((benefit, index) => (
             <li key={index} className="flex items-start space-x-3">
               <img
-                src="/listener-recruitment/desktop/private-practice/tick.webp"
+                src="assets/listener-recruitmentassets/desktop/private-practice/tick.webp"
                 alt="Check"
                 className="w-5 h-5 mt-1"
               />

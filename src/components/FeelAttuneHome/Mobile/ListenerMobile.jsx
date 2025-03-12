@@ -12,22 +12,22 @@ import {
 export default function ListenerMobile() {
   const cards = [
     {
-      img: "/desktop1/listener/tick-circle.webp",
+      img: "assets/desktop1/listener/tick-circle.webp",
       title: "How a Listener Can Help",
       body: <p><strong>Reframing Experiences: </strong>Gain a fresh perspective and clarity on your challenges.</p>,
     },
     {
-      img: "/desktop1/your-path/socialPressures.png",
+      img: "assets/desktop1/your-path/socialPressures.png",
       title: "How a Listener Can Help",
       body: <p><strong>Setting and Achieving Goals: </strong>Boost your confidence, manage transitions, and achieve personal milestone.</p>,
     },
     {
-      img: "/desktop1/your-path/digitalOverload.png",
+      img: "assets/desktop1/your-path/digitalOverload.png",
       title: "How a Listener Can Help",
       body: <p><strong>Emotional well-being: </strong>Explore strategies to enhance your motivation and overall well-being.</p>,
     },
     {
-      img: "/desktop1/your-path/relationshipChallenges.png",
+      img: "assets/desktop1/your-path/relationshipChallenges.png",
       title: "How a Listener Can Help",
       body: <p><strong>Building Resilience: </strong>Strengthen your ability to navigate life’s hurdles and move towards your desired outcomes.</p>,
     },
@@ -47,7 +47,7 @@ export default function ListenerMobile() {
                       </h3>
                       <p className=" text-[15px] flex flex-row leading-[22px]">
                         <img
-                          src="/desktop1/listener/tick-circle.webp"
+                          src="assets/desktop1/listener/tick-circle.webp"
                           alt="Icon"
                           className=" mr-1 mt-0.5 w-[20px] h-[21px]"
                         />

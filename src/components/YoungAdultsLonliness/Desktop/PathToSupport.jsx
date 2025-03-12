@@ -19,7 +19,7 @@ function PathToSupport() {
         </h6>
         <div className="flex flex-wrap justify-center gap-6 ">
           <YourPathCard
-            img="/desktop2/your-path/path6.webp"
+            img="assets/desktop2/your-path/path6.webp"
             imgClass="  rounded-[30px] border border-black w-[380px] h-[213px]"
             title="Life Transitions"
             description="Starting college, moving to a new city, or stepping into adulthood can feel overwhelming. Adjusting to change takes time, but feeling disconnected during major life transitions can make the journey harder."
@@ -37,7 +37,7 @@ function PathToSupport() {
           />
 
           <YourPathCard
-            img="/desktop2/your-path/path7.webp"
+            img="assets/desktop2/your-path/path7.webp"
             imgClass="  rounded-[30px] border border-black w-[380px] h-[213px]"
             title="Social Pressures"
             description="From academic expectations to fitting in, social pressures can lead to stress and self-doubt. The fear of not being “enough” often isolates young adults, making it harder to reach out for support."
@@ -56,7 +56,7 @@ function PathToSupport() {
 
           {/* Card 3 */}
           <YourPathCard
-            img="/desktop2/your-path/path8.webp"
+            img="assets/desktop2/your-path/path8.webp"
             imgClass=" rounded-[30px] border border-black w-[380px] h-[213px]"
             title="Digital Overload"
             description="Social media can make it seem like everyone has it all figured out—except you. The constant comparison, unrealistic expectations, and online interactions often deepen loneliness instead of solving it."
@@ -73,7 +73,7 @@ function PathToSupport() {
             ]}
           />
           <YourPathCard
-            img="/desktop2/your-path/path9.webp"
+            img="assets/desktop2/your-path/path9.webp"
             imgClass=" rounded-[30px] border border-black w-[380px] h-[213px]"
             title="Relationship Challenges"
             description="Navigating friendships, romantic relationships, and family dynamics isn’t always easy. Breakups, conflicts, or a lack of emotional support can make loneliness feel even heavier."
@@ -91,7 +91,7 @@ function PathToSupport() {
           />
 
           <YourPathCard
-            img="/desktop2/your-path/path10.webp"
+            img="assets/desktop2/your-path/path10.webp"
             imgClass="  rounded-[30px] border border-black w-[380px] h-[213px]"
             title="Career Stress"
             description="Balancing work, studies, and personal life can be exhausting. Whether it’s job stress, imposter syndrome, or uncertainty about the future, feeling overwhelmed is common—but you don’t have to handle it alone."

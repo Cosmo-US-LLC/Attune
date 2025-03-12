@@ -12,27 +12,27 @@ import {
 export default function ListenerMobile() {
     const cards = [
         {
-            img: "/desktop2/listener/tick-circle.webp",
+            img: "assets/desktop2/listener/tick-circle.webp",
             title: "How a Listener Can Help You Feel Less Alone",
             body: <p><strong>Find Emotional Relief: </strong>Share your thoughts without fear of being judged.</p>
         },
         {
-            img: "/desktop2/your-path/socialPressures.png",
+            img: "assets/desktop2/your-path/socialPressures.png",
             title: "How a Listener Can Help You Feel Less Alone",
             body: <p><strong>Build Confidence: </strong>Gain clarity and self-assurance as you work through your feelings.</p>,
         },
         {
-            img: "/desktop2/your-path/digitalOverload.png",
+            img: "assets/desktop2/your-path/digitalOverload.png",
             title: "How a Listener Can Help You Feel Less Alone",
             body: <p><strong>Rediscover Connection: </strong>Strengthen relationships and overcome isolation.</p>,
         },
         {
-            img: "/desktop2/your-path/relationshipChallenges.png",
+            img: "assets/desktop2/your-path/relationshipChallenges.png",
             title: "How a Listener Can Help You Feel Less Alone",
             body: <p><strong>Feel Understood: </strong>Experience the comfort of being heard by someone who truly cares.</p>,
         },
         {
-            img: "/desktop2/your-path/careerStress.png",
+            img: "assets/desktop2/your-path/careerStress.png",
             title: "How a Listener Can Help You Feel Less Alone",
             body: <p><strong>Navigate Challenges: </strong>Discuss specific situations like transitioning to college or starting a new job.</p>,
         },
@@ -53,7 +53,7 @@ export default function ListenerMobile() {
                                             How a Listener <br/> Can Help
                                             </h3>
                                             <p className=" text-[15px] flex flex-row font-[400] leading-[22px]">
-                                            <img src='/desktop2/listener/tick-circle.webp' alt="Icon" className=" mr-2 mt-0.5 w-[20px] h-[21px]" />
+                                            <img src='assets/desktop2/listener/tick-circle.webp' alt="Icon" className=" mr-2 mt-0.5 w-[20px] h-[21px]" />
                                                 {card?.body}
                                             </p>
 

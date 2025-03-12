@@ -11,14 +11,14 @@ function UnspokenChallengesOfMiddleAgeLife() {
         </h6>
         <div className="flex flex-wrap justify-center gap-6">
           <YourPathCard
-            img="/desktop7/your-path/path-to-support-1.webp"
+            img="assets/desktop7/your-path/path-to-support-1.webp"
             title="Life Transitions:"
             classes="bg-[#6FE0D1] text-black"
             body="Retirement, loss of loved ones, and reduced social opportunities can leave seniors feeling disconnected."
           />
 
           <YourPathCard
-            img="/desktop7/your-path/path-to-support-2.webp"
+            img="assets/desktop7/your-path/path-to-support-2.webp"
             imgClass="bg-[#95ADF0] rounded-[30px] border border-black"
             title="Physical Barriers:"
             classes="bg-[#6FE0D1] text-black"
@@ -27,14 +27,14 @@ function UnspokenChallengesOfMiddleAgeLife() {
         </div>
         <div className="flex flex-wrap justify-center gap-6">
           <YourPathCard
-            img="/desktop7/your-path/path-to-support-3.webp"
+            img="assets/desktop7/your-path/path-to-support-3.webp"
             title="Technology Gaps:"
             classes="bg-[#6FE0D1] text-black"
             body="A lack of familiarity with digital tools can make staying connected difficult."
           />
 
           <YourPathCard
-            img="/desktop7/your-path/path-to-support-4.webp"
+            img="assets/desktop7/your-path/path-to-support-4.webp"
             title="Emotional Impact:"
             classes="bg-[#6FE0D1] text-black"
             body="Loneliness often leads to feelings of sadness, anxiety, and low self-worth."

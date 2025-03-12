@@ -27,7 +27,7 @@ function Footer() {
       <div className="max-w-[1440px] h-[500] mx-auto  ">
         <div className="relative flex flex-row w-[100%] py-[30px] px-[50px]">
           <div className="absolute bottom-[30px] left-[0px]">
-            <img src="/desktop1/feelattune.webp" alt="Attune logo" />
+            <img src="assets/desktop1/feelattune.webp" alt="Attune logo" />
           </div>
           <div className="w-[25%] flex justify-center items-center relative z-10">
             <h1 className="text-[55px] font-[400] font-miniature leading-[69px] w-[301px]">
@@ -88,7 +88,7 @@ function Footer() {
             </div>
             <div className="relative z-10 flex items-end justify-center w-full mt-12" onClick={handleLogoClick}>
               <img
-                src="/desktop1/feel-attune-logo.webp"
+                src="assets/desktop1/feel-attune-logo.webp"
                 alt="Attune Logo"
                 className="cursor-pointer w-[174px] h-[54px]"
               />
@@ -97,7 +97,7 @@ function Footer() {
           <div className="w-[25%] flex flex-col justify-center items-center gap-[80px]">
             <div className="relative z-10 pt-2 mt-4">
               <img
-                src="/desktop1/heart.webp"
+                src="assets/desktop1/heart.webp"
                 alt="Mental Wellness"
                 className="w-[233px] h-[185px]"
               />
@@ -106,21 +106,21 @@ function Footer() {
             <div className="flex gap-4 justify-end items-center w-[50%] z-20">
               <a href="https://www.linkedin.com/company/easecare/">
                 <img
-                  src="/desktop1/footer/link-4.svg"
+                  src="assets/desktop1/footer/link-4.svg"
                   alt="Share link"
                   className="w-[43px] h-[43px]"
                 />
               </a>
               <a href="https://www.facebook.com/easecare.ca">
                 <img
-                  src="/desktop1/footer/link-1.svg"
+                  src="assets/desktop1/footer/link-1.svg"
                   alt="Share link"
                   className="w-[43px] h-[43px]"
                 />
               </a>
               <a href="https://www.instagram.com/easecare.ca/">
                 <img
-                  src="/desktop1/footer/link-2.svg"
+                  src="assets/desktop1/footer/link-2.svg"
                   alt="Share link"
                   className="w-[43px] h-[43px]"
                 />

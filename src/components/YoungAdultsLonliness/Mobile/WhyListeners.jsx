@@ -6,7 +6,7 @@ function WhyListeners() {
     <div className="relative">
       <div
         className="absolute top-0 left-0 w-full h-full bg-center bg-cover filter grayscale -z-10"
-        style={{ backgroundImage: "url(/mobile2/whyListen/whylistenBg.webp)" }}
+        style={{ backgroundImage: "url(assets/mobile2/whyListen/whylistenBg.webp)" }}
       ></div>
       <div className="py-[30px] flex flex-col justify-between items-center  w-full h-full left-0 top-0 z-10">
         <div className="flex justify-between w-full min-h-[230px] pl-[17px] pr-2">

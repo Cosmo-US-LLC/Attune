@@ -35,7 +35,7 @@ function PrivatePractice() {
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex space-x-4 text-left">
                     <img
-                      src="/listener-recruitment/desktop/private-practice/tick.webp"
+                      src="assets/listener-recruitmentassets/desktop/private-practice/tick.webp"
                       alt="Check"
                       className="w-5 h-5 mt-2"
                     />

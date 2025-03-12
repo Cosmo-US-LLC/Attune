@@ -8,7 +8,7 @@ function BreakingBarriers() {
         </h1>
         <div className="flex flex-row gap-10">
           <YourPathCard
-          img="/desktop1/BreakingBarriers/icon1.webp"
+          img="assets/desktop1/BreakingBarriers/icon1.webp"
           imgClass="absolute right-0 w-[90px] h-[90px]"
             title="Loneliness: Finding Connection in a Disconnected World"
             description="Loneliness can feel overwhelming, but it doesn’t have to be permanent. Whether you're dealing with loneliness at university, feeling isolated at work, or searching for companionship, real human connection is just a conversation away."
@@ -30,7 +30,7 @@ function BreakingBarriers() {
             ]}
           />
           <YourPathCard
-          img="/desktop1/BreakingBarriers/icon2.webp"
+          img="assets/desktop1/BreakingBarriers/icon2.webp"
           imgClass="absolute right-0 top-[-20px] w-[96px] h-[73px]"
             title="Mental Health Barriers: Support Without Stigma or Labels"
             buttonLabel="Find Your Support"
@@ -94,7 +94,7 @@ function YourPathCard({
               key={id}
               className="pl-4 capitalize "
               style={{
-                listStyleImage: "url(/desktop1/your-path/list-disc.svg)",
+                listStyleImage: "url(assets/desktop1/your-path/list-disc.svg)",
               }}
             >
               <strong>{point?.title}</strong> {point?.body}

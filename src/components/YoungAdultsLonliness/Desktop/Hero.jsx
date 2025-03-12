@@ -1,5 +1,5 @@
 // import Image from "next/image";
-// import phoneImage from "../../../public/desktop2/hero/phone-boy.webp";
+// import phoneImage from "../../../publicassets/desktop2/hero/phone-boy.webp";
 
 function Hero() {
   return (
@@ -7,7 +7,7 @@ function Hero() {
       <div className="bg-[#E5FF7D] min-w-[50%] ">
         <div className="relative">
           <img
-            src={"/desktop2/hero/Hero-Image.webp"}
+            src={"assets/desktop2/hero/Hero-Image.webp"}
             alt="Listener"
             className="max-2xl:w-[650px] max-lg:w-[480p] max-lg:h-auto h-[532px] w-[600px] rounded-lg object-cover"
           />
@@ -75,7 +75,7 @@ function Hero() {
     //     <div className="mt-8 md:mt-0 relative  md:max-w-[50%]">
     //       <div className="relative">
     //         <img
-    //           src={"/desktop2/hero/phone-boy.webp"}
+    //           src={"assets/desktop2/hero/phone-boy.webp"}
     //           alt="Listener"
     //           className="max-xl:w-[480px] max-xl:h-auto h-[442px] w-[600px] rounded-lg object-contain"
     //         />

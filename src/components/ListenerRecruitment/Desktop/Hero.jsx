@@ -48,7 +48,7 @@ function Hero() {
 
         <div className="border-4 border-[#b49ef6] rounded-xl w-[50%] max-w-[500px]   flex justify-center  items-start">
           <img
-            src={"/listener-recruitment/desktop/hero/Hero.webp"}
+            src={"assets/listener-recruitmentassets/desktop/hero/Hero.webp"}
             alt="Listener"
             className="object-cover w-[500px] h-auto    "
           />

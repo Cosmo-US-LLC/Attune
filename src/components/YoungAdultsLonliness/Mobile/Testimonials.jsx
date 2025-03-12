@@ -11,19 +11,19 @@ function Testimonials() {
   const testimonials = [
     {
       bg: "bg-[#E5FF7D]",
-      img: "/mobile1/testimonials/test1.webp",
+      img: "assets/mobile1/testimonials/test1.webp",
       title: "Jake, 24",
       body: '"Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference."',
     },
     {
       bg: "bg-[#F097DD]",
-      img: "/mobile1/testimonials/test2.webp",
+      img: "assets/mobile1/testimonials/test2.webp",
       title: "Jessica, 45",
       body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
     },
     {
       bg: "bg-[#FF6F61]",
-      img: "/mobile1/testimonials/test3.webp",
+      img: "assets/mobile1/testimonials/test3.webp",
       textColor: "text-white",
       title: "John, 72",
       body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
@@ -37,7 +37,7 @@ function Testimonials() {
       </h1>
       <div className="space-y-2">
         <img
-          src="/desktop2/testimonials/progress95.png"
+          src="assets/desktop2/testimonials/progress95.png"
           alt="pg95"
           className="w-full"
         />
@@ -49,7 +49,7 @@ function Testimonials() {
 
       <div className="space-y-2">
         <img
-          src="/desktop2/testimonials/progress75.png"
+          src="assets/desktop2/testimonials/progress75.png"
           alt="pg75"
           className="w-full"
         />

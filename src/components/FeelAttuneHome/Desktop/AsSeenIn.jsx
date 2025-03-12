@@ -1,9 +1,9 @@
 // import Image from 'next/image';
-// import timeImage from "@/public/desktop1/as-seen-in/time.svg";
-// import newsImage from "@/public/desktop1/as-seen-in/news-nation.svg";
-// import axiosImage from "@/public/desktop1/as-seen-in/axios.svg";
-// import bbcImage from "@/public/desktop1/as-seen-in/bbc.svg";
-// import incImage from "@/public/desktop1/as-seen-in/inc.svg";
+// import timeImage from "@/publicassets/desktop1/as-seen-in/time.svg";
+// import newsImage from "@/publicassets/desktop1/as-seen-in/news-nation.svg";
+// import axiosImage from "@/publicassets/desktop1/as-seen-in/axios.svg";
+// import bbcImage from "@/publicassets/desktop1/as-seen-in/bbc.svg";
+// import incImage from "@/publicassets/desktop1/as-seen-in/inc.svg";
 
 function AsSeenIn() {
   return (
@@ -14,11 +14,11 @@ function AsSeenIn() {
         </p>
 
         <div className="flex items-center justify-evenly rounded-[30px] bg-white py-[33px] w-fit">
-          {/* <img src={"/desktop1/as-seen-in/logo1.webp"} alt="Time Logo" className="max-xl:h-[25px] h-[32px] w-[102px]" /> */}
-          <img src= {"/desktop1/as-seen-in/news-nation.svg"} alt="NewsNation Logo" className="max-xl:h-[25px] h-[41px] w-[135px]" />
-          <img src={"/desktop1/as-seen-in/axios.svg"} alt="Axios Logo" className="max-xl:h-[20px] h-[27px] w-[106px]" />
-          <img src={"/desktop1/as-seen-in/bbc.svg"} alt="BBC Logo" className="max-xl:h-[25px] h-[33px] w-[116px]" />
-          <img src={"/desktop1/as-seen-in/inc.svg"} alt="INC Logo" className="max-xl:h-[25px] h-[31px] w-[90px]" />
+          {/* <img src={"assets/desktop1/as-seen-in/logo1.webp"} alt="Time Logo" className="max-xl:h-[25px] h-[32px] w-[102px]" /> */}
+          <img src= {"assets/desktop1/as-seen-in/news-nation.svg"} alt="NewsNation Logo" className="max-xl:h-[25px] h-[41px] w-[135px]" />
+          <img src={"assets/desktop1/as-seen-in/axios.svg"} alt="Axios Logo" className="max-xl:h-[20px] h-[27px] w-[106px]" />
+          <img src={"assets/desktop1/as-seen-in/bbc.svg"} alt="BBC Logo" className="max-xl:h-[25px] h-[33px] w-[116px]" />
+          <img src={"assets/desktop1/as-seen-in/inc.svg"} alt="INC Logo" className="max-xl:h-[25px] h-[31px] w-[90px]" />
         </div>
       </div>
     </div>

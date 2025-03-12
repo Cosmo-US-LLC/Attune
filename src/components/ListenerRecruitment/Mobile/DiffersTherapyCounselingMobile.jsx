@@ -18,13 +18,13 @@ const tabs = [
 const content = {
   "focus-on-everyday-challenges": [
     {
-      img: "/listener-recruitment/mobile/differsTherapyCounseling/therapy4.webp",
+      img: "assets/listener-recruitmentassets/mobile/differsTherapyCounseling/therapy4.webp",
       title: "What it Means:",
       description:
         "Listeners don't diagnose mental health conditions, give medical advice, or provide clinical treatments.",
     },
     {
-      img: "/listener-recruitment/mobile/differsTherapyCounseling/therapy1.webp",
+      img: "assets/listener-recruitmentassets/mobile/differsTherapyCounseling/therapy1.webp",
       title: "What They Do Instead:",
       description:
         "Listeners create a safe and supportive environment where people can freely express their thoughts and feelings without fear of judgment.",
@@ -32,13 +32,13 @@ const content = {
   ],
   "non-clinical-support": [
     {
-      img: "/listener-recruitment/mobile/differsTherapyCounseling/therapy2.webp",
+      img: "assets/listener-recruitmentassets/mobile/differsTherapyCounseling/therapy2.webp",
       title: "What it Means:",
       description:
         "Listeners do not diagnose, treat, or provide clinical interventions but instead offer a supportive space for people to share their thoughts and feelings.",
     },
     {
-      img: "/listener-recruitment/mobile/differsTherapyCounseling/therapy3.webp",
+      img: "assets/listener-recruitmentassets/mobile/differsTherapyCounseling/therapy3.webp",
       title: "What They Do Instead:",
       description: [
         "While therapy addresses severe mental health conditions (e.g., trauma, severe anxiety, depression, or addiction), the Listener Program focuses on:",
@@ -161,13 +161,13 @@ export default DiffersTherapyCounselingMobile;
 // const content = {
 //   "focus-on-everyday-challenges": [
 //     {
-//       img: "/listener-recruitment/mobile/differsTherapyCounseling/therapy4.webp",
+//       img: "assets/listener-recruitmentassets/mobile/differsTherapyCounseling/therapy4.webp",
 //       title: "What it Means:",
 //       description:
 //         "Listeners don't diagnose mental health conditions, give medical advice, or provide clinical treatments.",
 //     },
 //     {
-//       img: "/listener-recruitment/mobile/differsTherapyCounseling/therapy1.webp",
+//       img: "assets/listener-recruitmentassets/mobile/differsTherapyCounseling/therapy1.webp",
 //       title: "What They Do Instead:",
 //       description:
 //         "Listeners create a safe and supportive environment where people can freely express their thoughts and feelings without fear of judgment.",
@@ -175,13 +175,13 @@ export default DiffersTherapyCounselingMobile;
 //   ],
 //   "non-clinical-support": [
 //     {
-//       img: "/listener-recruitment/mobile/differsTherapyCounseling/therapy2.webp",
+//       img: "assets/listener-recruitmentassets/mobile/differsTherapyCounseling/therapy2.webp",
 //       title: "What it Means:",
 //       description:
 //         "Listeners do not diagnose, treat, or provide clinical interventions but instead offer a supportive space for people to share their thoughts and feelings.",
 //     },
 //     {
-//       img: "/listener-recruitment/mobile/differsTherapyCounseling/therapy3.webp",
+//       img: "assets/listener-recruitmentassets/mobile/differsTherapyCounseling/therapy3.webp",
 //       title: "What They Do Instead:",
 //       description: [
 //         "While therapy addresses severe mental health conditions (e.g., trauma, severe anxiety, depression, or addiction), the Listener Program focuses on:",

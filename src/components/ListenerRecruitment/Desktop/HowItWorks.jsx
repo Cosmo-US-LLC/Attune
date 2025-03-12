@@ -15,7 +15,7 @@ function HowItWorks() {
           body="Submit your application to join our network of Listeners."
         >
           <img
-            src="/listener-recruitment/desktop/how-it/card-1.svg"
+            src="assets/listener-recruitmentassets/desktop/how-it/card-1.svg"
             alt="Hug"
             className="w-[107px] h-[71px]"
           />
@@ -27,7 +27,7 @@ function HowItWorks() {
           body="Participate in our specialized training program to enhance your listening and communication skills."
         >
           <img
-            src="/listener-recruitment/desktop/how-it/card-2.svg"
+            src="assets/listener-recruitmentassets/desktop/how-it/card-2.svg"
             alt="Talk"
             className="w-[92px] h-[69px]"
           />
@@ -39,7 +39,7 @@ function HowItWorks() {
           body="Choose when and how often you want to support others."
         >
           <img
-            src="/listener-recruitment/desktop/how-it/card-3.svg"
+            src="assets/listener-recruitmentassets/desktop/how-it/card-3.svg"
             alt="Schedule"
             className="w-[82px] h-[73px]"
           />
@@ -50,7 +50,7 @@ function HowItWorks() {
           body="your own hourly rate for your services."
         >
           <img
-            src="/listener-recruitment/desktop/how-it/card-4.svg"
+            src="assets/listener-recruitmentassets/desktop/how-it/card-4.svg"
             alt="Hug"
             className="w-[107px] h-[71px]"
           />
@@ -62,7 +62,7 @@ function HowItWorks() {
           body="Offer empathetic support to individuals seeking guidance, encouragement, and clarity."
         >
           <img
-            src="/listener-recruitment/desktop/how-it/card-5.svg"
+            src="assets/listener-recruitmentassets/desktop/how-it/card-5.svg"
             alt="Talk"
             className="w-[92px] h-[69px]"
           />
@@ -74,7 +74,7 @@ function HowItWorks() {
           body="Earn for your time and the meaningful support you provide."
         >
           <img
-            src="/listener-recruitment/desktop/how-it/card-6.svg"
+            src="assets/listener-recruitmentassets/desktop/how-it/card-6.svg"
             alt="Schedule"
             className="w-[82px] h-[73px]"
           />

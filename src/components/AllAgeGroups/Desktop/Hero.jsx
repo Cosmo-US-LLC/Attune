@@ -4,7 +4,7 @@ function Hero() {
       <div className="bg-[#E5FF7D] min-w-[50%] ">
         <div className="relative bottom-[-2%] ">
           <img
-            src={"/desktop6/hero/Hero.webp"}
+            src={"assets/desktop6/hero/Hero.webp"}
             alt="Listener"
             className="max-2xl:w-[650px] w-[100%] rounded-lg object-cover"
           />

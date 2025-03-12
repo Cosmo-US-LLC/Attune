@@ -8,7 +8,7 @@ function PathToSupport() {
         <div className="grid gap-6 mx-auto max-w-7xl md:grid-cols-12">
           {/* <div className="col-span-2"></div> */}
           <YourPathCard
-            img="/desktop1/your-path/path-to-support-1.webp"
+            img="assets/desktop1/your-path/path-to-support-1.webp"
             title="For youth"
             classes="bg-[#38AB9B] text-white col-span-4"
             buttonLabel="Start Your Journey "
@@ -29,7 +29,7 @@ function PathToSupport() {
           />
 
           <YourPathCard
-            img="/desktop1/your-path/path-to-support-2.webp"
+            img="assets/desktop1/your-path/path-to-support-2.webp"
             imgClass="bg-[#00FBFC] rounded-[30px] border border-black"
             title="For Middle-Aged Individuals"
             buttonLabel="Connect Now"
@@ -51,7 +51,7 @@ function PathToSupport() {
           />
           
           <YourPathCard
-            img="/desktop1/your-path/path-to-support-4.webp"
+            img="assets/desktop1/your-path/path-to-support-4.webp"
             imgClass="bg-[#E5FF7D] rounded-[30px] border border-black"
             title="For Seniors"
             buttonLabel="Talk To Someone"
@@ -75,7 +75,7 @@ function PathToSupport() {
 
           {/* Card 3 */}
           {/* <YourPathCard
-            img="/desktop1/your-path/path-to-support-3.webp"
+            img="assets/desktop1/your-path/path-to-support-3.webp"
             title="Looking for Extra Support?"
             classes="bg-[#FF6F61] text-white"
             points={[
@@ -124,7 +124,7 @@ function YourPathCard({ img, imgClass = "", title, classes, points, buttonLabel 
               key={id}
               className="pl-4 capitalize "
               style={{
-                listStyleImage: "url(/desktop1/your-path/list-disc.svg)",
+                listStyleImage: "url(assets/desktop1/your-path/list-disc.svg)",
               }}
             >
               <strong>{point?.title}</strong> {point?.body}

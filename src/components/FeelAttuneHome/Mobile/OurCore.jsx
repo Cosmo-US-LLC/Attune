@@ -16,19 +16,19 @@ function OurCore() {
   const values = [
     {
       bg: "bg-[#E5FF7D]",
-      img: "/mobile1/ourCore/core1.svg",
+      img: "assets/mobile1/ourCore/core1.svg",
       title: "You Deserve Connection",
       body: "Navigating university life or starting a career? We’re here for you. Our platform creates a safe, open space for you to talk about what matters to you, no matter how big or small.",
     },
     {
       bg: "bg-[#FFA8ED]",
-      img: "/mobile1/ourCore/core2.svg",
+      img: "assets/mobile1/ourCore/core2.svg",
       title: "No Labels, Just Support",
       body: "Whether you're feeling stressed, overwhelmed, or just want to share your thoughts, we’re ready to listen.",
     },
     {
       bg: "bg-[#6FE0D1]",
-      img: "/mobile1/ourCore/core3.svg",
+      img: "assets/mobile1/ourCore/core3.svg",
       title: "Affordable & Accessible",
       body: "Support that fits your budget and schedule. Designed for students and young professionals, we ensure connection is easy and affordable anytime, anywhere.",
     },
@@ -101,14 +101,14 @@ function OurCore() {
 
         <button className="swiper-button-prev-tes z-[80] rotate-[180deg] !w-[30px] !h-[30px] text-white rounded-full absolute -left-3 top-1/2 transform bg-[#fff] -translate-y-1/2">
           <img
-            src="/mobile1/whatMakes/arrow.png"
+            src="assets/mobile1/whatMakes/arrow.png"
             className="h-[30px] w-[30px]"
             alt=""
           />
         </button>
         <button className="swiper-button-next-tes z-[80] !w-[30px] !h-[30px]  text-white rounded-full absolute -right-3 top-1/2 transform bg-[#fff] -translate-y-1/2">
           <img
-            src="/mobile1/whatMakes/arrow.png"
+            src="assets/mobile1/whatMakes/arrow.png"
             className="h-[30px] w-[30px]"
             alt=""
           />

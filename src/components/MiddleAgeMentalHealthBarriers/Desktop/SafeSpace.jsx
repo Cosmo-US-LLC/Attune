@@ -47,7 +47,7 @@ function SafeSpace() {
                         width: "30px",
                         height: "30px",
                         backgroundImage:
-                          "url('/desktop4/listener/tick-circle.svg')",
+                          "url('assets/desktop4/listener/tick-circle.svg')",
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         display: "inline-block",

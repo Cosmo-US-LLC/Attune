@@ -5,7 +5,7 @@ export default function Feel() {
     <>
       <div className="bg-[#D43525]">
         <img
-          src={"/desktop4/feel-heard/smiling-girl.webp"}
+          src={"assets/desktop4/feel-heard/smiling-girl.webp"}
           alt="smilinggirl"
           className="object-cover "
         />
@@ -20,7 +20,7 @@ export default function Feel() {
               </span>
             </h3>
             <img
-              src={"/desktop4/feel-heard/feel-circle2.webp"}
+              src={"assets/desktop4/feel-heard/feel-circle2.webp"}
               alt="smilinggirl"
               className="h-[76px] w-[75px] ml-[252px] mt-9 absolute "
             />
@@ -55,7 +55,7 @@ export default function Feel() {
               </div>
             </a>
             <img
-              src={"/desktop4/feel-heard/feel-circle1.webp"}
+              src={"assets/desktop4/feel-heard/feel-circle1.webp"}
               alt="smilinggirl"
               className="h-[94px] w-[94px] ml-44 mt-3 absolute "
             />

@@ -12,35 +12,35 @@ import {
 export default function ListenerMobile() {
   const cards = [
     {
-      img: "/desktop3/listener/tick-circle.webp",
+      img: "assets/desktop3/listener/tick-circle.webp",
       title: "How a Listener Can Help",
       description:
         "You don’t need a diagnosis to deserve support. Our trained Listeners provide a safe, non-judgmental space to talk, vent, and process emotions—without the pressures of therapy.",
       body: "Judgment-Free Conversations – Talk openly about what’s on your mind, without fear of labels.",
     },
     {
-      img: "/desktop3/your-path/socialPressures.png",
+      img: "assets/desktop3/your-path/socialPressures.png",
       title: "How a Listener Can Help",
       description:
         "You don’t need a diagnosis to deserve support. Our trained Listeners provide a safe, non-judgmental space to talk, vent, and process emotions—without the pressures of therapy.",
       body: "Affordable & Accessible – Get support without the high cost of therapy.",
     },
     {
-      img: "/desktop3/your-path/digitalOverload.png",
+      img: "assets/desktop3/your-path/digitalOverload.png",
       title: "How a Listener Can Help",
       description:
         "You don’t need a diagnosis to deserve support. Our trained Listeners provide a safe, non-judgmental space to talk, vent, and process emotions—without the pressures of therapy.",
       body: "Flexible & On-Demand – Connect at your own pace, whenever you need to.",
     },
     {
-      img: "/desktop3/your-path/relationshipChallenges.png",
+      img: "assets/desktop3/your-path/relationshipChallenges.png",
       title: "How a Listener Can Help",
       description:
         "You don’t need a diagnosis to deserve support. Our trained Listeners provide a safe, non-judgmental space to talk, vent, and process emotions—without the pressures of therapy.",
       body: "Emotional Clarity & Relief – Gain perspective, guidance, and emotional validation.",
     },
     {
-      img: "/desktop3/your-path/relationshipChallenges.png",
+      img: "assets/desktop3/your-path/relationshipChallenges.png",
       title: "How a Listener Can Help",
       description:
         "You don’t need a diagnosis to deserve support. Our trained Listeners provide a safe, non-judgmental space to talk, vent, and process emotions—without the pressures of therapy.",
@@ -68,7 +68,7 @@ export default function ListenerMobile() {
                       </p>
                       <div className="flex space-x-2">
                         <img
-                          src="/desktop3/listener/tick-circle.webp"
+                          src="assets/desktop3/listener/tick-circle.webp"
                           alt="Icon"
                           className="mr-1 mt-1  w-[20px] h-[21px]"
                         />

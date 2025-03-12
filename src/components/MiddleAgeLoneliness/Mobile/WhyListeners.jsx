@@ -8,7 +8,7 @@ function WhyListeners() {
         className="absolute top-0 left-0 w-full h-full bg-center bg-cover filter grayscale"
         style={{
           backgroundImage:
-            "url(/desktop4/why-listeners-matter/whylistenBg.webp)",
+            "url(assets/desktop4/why-listeners-matter/whylistenBg.webp)",
         }}
       ></div>
       <div className="py-[30px] flex flex-col justify-between items-center absolute w-full h-full left-0 top-0 z-10">

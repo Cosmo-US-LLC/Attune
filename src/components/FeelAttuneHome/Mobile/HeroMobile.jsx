@@ -18,7 +18,7 @@ function HeroMobile() {
         <Button className="bg-[#5200FF] rounded-full text-[15px]">Connect to a Listener</Button>
       </a>
 
-      <img src={"/mobile1/heroBg.webp"} alt='' className='h-[257.833px] w-[350px] object-contain' />
+      <img src={"assets/mobile1/heroBg.webp"} alt='' className='h-[257.833px] w-[350px] object-contain' />
     </div>
   )
 }
