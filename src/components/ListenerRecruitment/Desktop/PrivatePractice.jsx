@@ -22,11 +22,11 @@ function PrivatePractice() {
       <div className="max-w-[1280px] min-w-[1000px] mx-auto flex flex-col gap-6">
         <div className="flex flex-col items-center justify-center">
           <h1 className="w-[899px] text-[76px] font-[400] leading-[95px] font-miniature text-center">
-            Private practice with no doors & no overhead
+          Your potential Earning with <br/> FeelAttune
           </h1>
         </div>
         <div className="flex flex-row w-[100%]">
-          <div className="w-[50%]">
+          {/* <div className="w-[50%]">
             <div className="max-w-md mx-auto text-gray-900">
               <p className="text-[20px] font-[400] leading-normal">
                 The key benefits that we need to focus on for Google ads are:
@@ -47,20 +47,20 @@ function PrivatePractice() {
                 ))}
               </ul>
             </div>
-          </div>
-          <div className="w-[50%]">
-            <div className="w-full max-w-lg p-5 mx-auto text-center bg-white border shadow-md border-lime-300 rounded-xl">
+          </div> */}
+          <div className="w-[100%]">
+            <div className="w-full max-w-[1000px] p-5 mx-auto text-center bg-white border shadow-md border-lime-300 rounded-xl">
               <h2 className="text-[28px] font-[500] leading-tight text-black">
                 Estimated earnings <br /> with FeelAttune
               </h2>
 
-              <div className="flex justify-between px-6 mt-6">
+              <div className="flex justify-center px-6 mt-6 gap-[100px]">
                 <div className="flex flex-col text-left">
                   <label className="text-[16px] font-[600] text-[#4A4D4A]">
                     Weekly Hours
                   </label>
                   <select
-                    className="w-24 p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md focus:ring-2 focus:ring-[#A78BFA]"
+                    className="w-36 p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md focus:ring-2 focus:ring-[#A78BFA]"
                     value={hours}
                     onChange={(e) => setHours(Number(e.target.value))}
                   >

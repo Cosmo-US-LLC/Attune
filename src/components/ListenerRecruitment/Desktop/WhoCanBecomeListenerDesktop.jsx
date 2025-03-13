@@ -69,8 +69,7 @@ const WhoCanBecomeListenerDesktop = () => {
       </div>
 
       <p className="mt-8 text-[23px] text-center text-[#000] max-w-[780px]">
-        Whether you're a student, a life coach, a retired professional, or
-        simply someone who loves helping others—this opportunity is for you!
+        If you're a Certified Coach this opportunity is for you!
       </p>
     </div>
   );
