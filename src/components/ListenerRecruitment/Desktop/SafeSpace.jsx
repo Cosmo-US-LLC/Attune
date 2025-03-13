@@ -1,7 +1,7 @@
 function SafeSpace() {
   const cardArr = [
     <p>
-      <strong> Clients Reframe Experiences:</strong> Guide individuals in
+      <strong>Help Clients Reframe Experiences:</strong> Guide individuals in
       shifting perspectives, gaining clarity, and uncovering new insights to
       navigate their challenges more effectively.
     </p>,
