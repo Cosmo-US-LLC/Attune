@@ -3,18 +3,14 @@ import React from "react";
 const WhyBecomeListenerMobile = () => {
   return (
     <div className="px-4 py-10 space-y-6 bg-white">
-  
       <h1 className="text-[38px] font-[400] leading-normal text-center font-miniature">
         Why Become a Listener?
       </h1>
 
-    
       <p className="text-[15px] font-[400] leading-[26px] text-center">
         As a Listener, you will
       </p>
 
- 
-  
       <div className="grid max-w-md gap-4 mx-auto">
         <HowItCards
           title={<p>Join a Meaningful Movement</p>}
@@ -23,23 +19,20 @@ const WhyBecomeListenerMobile = () => {
         />
 
         <HowItCards
+          title={<p>make real Impact</p>}
+          body="Provide a supportive environment that helps people feel heard and validated in their daily challenges—all without the pressures of formal "
+          image="/listener-recruitment/desktop/whyBecomeListener/icon1.svg"
+        />
+        <HowItCards
           title={<p>Empower Personal Growth</p>}
           body="Help individuals set goals, explore new perspectives, and gain life skills. As a Listener, you focus on the present and future, guiding people forward rather than diagnosing or treating clinical issues."
           image="/listener-recruitment/desktop/whyBecomeListener/icon2.svg"
         />
 
-        
-
         <HowItCards
           title={<p>Enjoy Flexibility</p>}
           body="Set your own availability and support others at times that work for you."
           image="/listener-recruitment/desktop/whyBecomeListener/icon4.svg"
-        />
-
-        <HowItCards
-          title={<p>Set Your Own Rate</p>}
-          body="Decide on the hourly rate that reflects the value of your time and empathy."
-          image="/listener-recruitment/desktop/whyBecomeListener/icon5.svg"
         />
 
         <HowItCards
@@ -65,7 +58,9 @@ const HowItCards = ({ title, body, image }) => {
         <h3 className="text-[24px] font-[400] capitalize text-black font-miniature">
           {title}
         </h3>
-        <p className="text-[15px] leading-[20px] font-[400] text-black">{body}</p>
+        <p className="text-[15px] leading-[20px] font-[400] text-black">
+          {body}
+        </p>
       </div>
     </div>
   );
