@@ -15,9 +15,11 @@ function HeroMobile() {
               Make a Difference, One Conversation at a Time{" "}
             </p>
             <p className="text-[14px] font-[400] my-6 leading-[21px] ">
-              FeelAttune connects compassionate individuals with people seeking
-              judgment-free support. If you’re empathetic and great at
-              listening, join our community to make a meaningful impact.
+              FeelAttune connects compassionate coaches with individuals seeking
+              judgment-free support for everyday challenges. If you’re
+              empathetic, a great listener, and passionate about helping others,
+              this is your opportunity to make a meaningful impact—while earning
+              on your own schedule.
             </p>
           </div>
 

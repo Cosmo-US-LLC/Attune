@@ -15,29 +15,35 @@ export default function ListenerMobile() {
       img: "/listener-recruitment/desktop/private-practice/tick.webp",
       title: "What is a Listener",
       description: "A listener is a someone who provides",
-      body: "A Safe Space for individuals to express their thoughts and emotions without fear of judgment.",
+      body: "Help Clients Reframe Experiences: Guide individuals in shifting perspectives, gaining clarity, and uncovering new insights to navigate their challenges more effectively.",
     },
     {
       img: "/listener-recruitment/desktop/private-practice/tick.webp",
       title: "What is a Listner",
       description: "A listener is a someone who provides",
-      body: "Support & Encouragement to help individuals gain clarity, motivation, and resilience.",
+      body: "Support Goal-Setting & Achievement: Empower your clients to build confidence, navigate life transitions, and reach meaningful personal milestones.",
     },
     {
       img: "/listener-recruitment/desktop/private-practice/tick.webp",
       title: "What is a Listner",
       description: "A listener is a someone who provides",
-      body: "Guidance to Navigate Life’s Challenges, such as confidence-building, life transitions, and personal goal-setting.",
+      body: "Enhance Emotional Well-Being: Provide strategies to boost motivation, foster self-awareness, and cultivate lasting emotional balance.",
+    },
+    {
+      img: "/listener-recruitment/desktop/private-practice/tick.webp",
+      title: "What is a Listner",
+      description: "A listener is a someone who provides",
+      body: "Build Resilience & Empower Growth: Equip individuals with the mindset and tools to overcome setbacks, adapt to change, and move toward their desired outcomes with confidence.",
     },
   ];
 
   return (
-    <div className="listenerMobile6 min-h-[400px] py-[50px] px-1 space-y-4">
+    <div className="listenerRecruitment min-h-[400px] py-[50px] px-1 space-y-4">
       <div className="space-y-5">
         <Carousel className="Listener">
           <CarouselContent>
             {cards?.map((card, id) => {
-              const [boldText, normalText] = card.body.split("–");
+              const [boldText, normalText] = card.body.split(":");
 
               return (
                 <CarouselItem key={id} className="w-full basis-1/1">
@@ -56,18 +62,20 @@ export default function ListenerMobile() {
                           className="mr-1 mt-1  w-[20px] h-[21px]"
                         />
                         <p className="text-[15px] !block flex flex-row leading-[22px]">
-                          <span className="">{boldText}</span>
+                          <span className="relative z-20 font-bold">
+                            {boldText}:
+                          </span>
                           <span className="ml-1">{normalText}</span>
                         </p>
                       </div>
-                      <p className="text-[15px] font-[400] leading-[26px]">
+                      {/* <p className="text-[15px] font-[400] leading-[26px]">
                         Listeners are not licensed mental health professionals
                         and do not diagnose, treat mental illnesses, or provide
                         clinical interventions. Our program is designed to
                         complement professional mental health care by offering
                         everyday emotional support and meaningful human
                         connection.
-                      </p>
+                      </p> */}
                     </div>
                     <div>
                       <a href="https://innovacare.tech/listenerhub/signup">
@@ -101,8 +109,8 @@ export default function ListenerMobile() {
               );
             })}
           </CarouselContent>
-          <CarouselPrevious className="left-0 bg-white border border-black disabled:hidden top-60" />
-          <CarouselNext className="right-0 bg-white border border-black disabled:hidden top-60" />
+          <CarouselPrevious className="left-0 bg-white border border-black disabled:hidden top-[180px]" />
+          <CarouselNext className="right-0 bg-white border border-black disabled:hidden top-[180px]" />
         </Carousel>
       </div>
     </div>

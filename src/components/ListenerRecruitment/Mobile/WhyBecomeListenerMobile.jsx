@@ -19,7 +19,7 @@ const WhyBecomeListenerMobile = () => {
         <HowItCards
           title={<p>Join a Meaningful Movement</p>}
           body="Our mission is to transform the mental health landscape by making emotional support universally accessible, affordable, and free of stigma. By becoming a Listener, you’ll join a community dedicated to empowering individuals through empathetic, judgment-free conversations. Together, we’re bridging the gap between traditional mental health services and everyday emotional support."
-          image="/listener-recruitment/desktop/whyBecomeListener/icon1.svg"
+          image="/listener-recruitment/desktop/whyBecomeListener/icon7.svg"
         />
 
         <HowItCards

@@ -270,6 +270,14 @@ body {
  min-height: 543px;
   
 }
+.listenerRecruitment{
+  background-image: url(/mobile6/listener/listener-bg.webp); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: start;
+ min-height: 350px;
+  
+}
 .listenerMobile8{
   background-image: url(/mobile8/listener/listener-bg.webp); /* Replace with your image path */
   background-size: cover;
