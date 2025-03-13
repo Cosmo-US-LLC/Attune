@@ -3,7 +3,8 @@ import React, { useState } from "react";
 function PrivatePractice() {
   const [hours, setHours] = useState(12);
   const hourlyRate = 30;
-  const estimatedEarnings = hours * hourlyRate;
+  const hourlyRateByYear = 52;
+  const estimatedEarnings = hours * hourlyRate * hourlyRateByYear;
 
   // const [hours, setHours] = useState(40);
   // const estimatedEarnings = (hours / 40) * 100100;
@@ -22,7 +23,7 @@ function PrivatePractice() {
       <div className="max-w-[1280px] min-w-[1000px] mx-auto flex flex-col gap-6">
         <div className="flex flex-col items-center justify-center">
           <h1 className="w-[899px] text-[76px] font-[400] leading-[95px] font-miniature text-center">
-          Your potential Earning with <br/> FeelAttune
+            Your potential Earning with <br /> FeelAttune
           </h1>
         </div>
         <div className="flex flex-row w-[100%]">
@@ -51,16 +52,16 @@ function PrivatePractice() {
           <div className="w-[100%]">
             <div className="w-full max-w-[1000px] p-5 mx-auto text-center bg-white border shadow-md border-lime-300 rounded-xl">
               <h2 className="text-[28px] font-[500] leading-tight text-black">
-                Estimated earnings <br /> with FeelAttune
+                Estimated Yearly Earnings
               </h2>
 
-              <div className="flex justify-center px-6 mt-6 gap-[100px]">
-                <div className="flex flex-col text-left">
+              <div className="flex justify-center   mt-6 gap-[80px] ">
+                <div className="flex flex-col gap-2 text-left">
                   <label className="text-[16px] font-[600] text-[#4A4D4A]">
                     Weekly Hours
                   </label>
                   <select
-                    className="w-36 p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md focus:ring-2 focus:ring-[#A78BFA]"
+                    className="w-32 p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md focus:ring-2 focus:ring-[#A78BFA]"
                     value={hours}
                     onChange={(e) => setHours(Number(e.target.value))}
                   >
@@ -72,9 +73,9 @@ function PrivatePractice() {
                   </select>
                 </div>
 
-                <div className="flex flex-col gap-1 text-left">
+                <div className="flex flex-col gap-1 text-center">
                   <label className="text-[16px] font-[600] text-[#4A4D4A]">
-                    Estimated Annual Earnings <br /> Based on $30/hr
+                    Estimated Annual Earnings Based on $30/hr
                   </label>
                   <p className="text-[50px] font-[400] text-[#7F8AE0] font-miniature">
                     ${estimatedEarnings.toLocaleString()}
@@ -82,7 +83,7 @@ function PrivatePractice() {
                 </div>
               </div>
 
-              <div className="flex justify-center mt-2">
+              <div className="flex justify-center mt-3">
                 <a href="https://innovacare.tech/listenerhub/signup">
                   <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#5200FF] hover:bg-purple-800">
                     <button className="text-white font-[500] text-[16px]">

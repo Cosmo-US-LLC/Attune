@@ -1,7 +1,7 @@
 function HowItWorks() {
   return (
     <div
-      id="how-it-works"
+      id="mobile-how-it-works"
       className="bg-[#e5ff7d] py-[30px] px-4 space-y-[26px]"
     >
       <h1 className="font-miniature text-center text-[38px] font-[400] leading-normal">
