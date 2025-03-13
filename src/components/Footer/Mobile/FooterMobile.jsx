@@ -1,5 +1,6 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const handleScroll = (event, targetId, offset) => {
   event.preventDefault();
@@ -16,6 +17,9 @@ const handleScroll = (event, targetId, offset) => {
 };
 
 function FooterMobile() {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   return (
     <div className="relative min-h-[738px] bg-[#E5DDD4] px-5 py-[30px] overflow-hidden">
       <div className="relative z-10">
@@ -42,36 +46,42 @@ function FooterMobile() {
           <div className="flex flex-col gap-4 font-[500]">
             <a
               href="#path-to-support"
-              onClick={(e) => handleScroll(e, "mobile-path-to-support", 90)}
+              onClick={(e) => handleScroll(e, "mobile-path-to-support", 70)}
             >
               Path To Support
             </a>
             <a
               href="#how-it-works"
-              onClick={(e) => handleScroll(e, "mobile-how-it-works", 90)}
+              onClick={(e) => handleScroll(e, "mobile-how-it-works", 70)}
             >
               How It Works
             </a>
             <a
               href="#why-choose-a-listener"
-              onClick={(e) => handleScroll(e, "mobile-why-choose-a-listener", 90)}
+              onClick={(e) =>
+                handleScroll(e, "mobile-why-choose-a-listener", 70)
+              }
             >
               Our Approach
             </a>
-            <a href="#FAQs" onClick={(e) => handleScroll(e, "mobile-FAQs", 90)}>
-              FAQs
-            </a>
+            {currentPath === "/listener-recruitment" ? (
+              <p></p>
+            ) : (
+              <a
+                href="#FAQs"
+                onClick={(e) => handleScroll(e, "mobile-FAQs", 70)}
+              >
+                FAQs
+              </a>
+            )}
+
             <div className="space-y-[15px] flex flex-col text-[16px] font-[500] ">
               <Link to="/terms-of-use">
-            <a href="" >
-              Terms of Use
-              </a>
+                <a href="">Terms of Use</a>
               </Link>
-             <Link to="/privacy-policy">
-             <a href="" >
-              Privacy Policy
-              </a>
-             </Link>
+              <Link to="/privacy-policy">
+                <a href="">Privacy Policy</a>
+              </Link>
             </div>
           </div>
           <img

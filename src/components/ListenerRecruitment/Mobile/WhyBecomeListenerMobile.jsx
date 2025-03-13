@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyBecomeListenerMobile = () => {
   return (
-    <div className="px-4 py-10 space-y-6 bg-white">
+    <div id="mobile-path-to-support" className="px-4 py-10 space-y-6 bg-white">
       <h1 className="text-[38px] font-[400] leading-normal text-center font-miniature">
         Why Become a Listener?
       </h1>

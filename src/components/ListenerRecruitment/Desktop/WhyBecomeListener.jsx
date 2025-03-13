@@ -1,6 +1,6 @@
 function WhyBecomeListener() {
   return (
-    <div id=" " className="bg-[#FFFFFF] py-[80px] px-4 space-y-[26px]">
+    <div id="path-to-support" className="bg-[#FFFFFF] py-[80px] px-4 space-y-[26px]">
       <h1 className="font-miniature text-center text-[76px] leading-[40px]">
         Why Become a Listener?
       </h1>

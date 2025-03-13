@@ -5,25 +5,23 @@ import { useLocation } from "react-router-dom";
 function Navbar() {
   const location = useLocation();
 
- 
   const currentPath = location.pathname;
 
   useEffect(() => {
-   
     if (location.hash) {
       const targetId = location.hash.replace("#", "");
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
         setTimeout(() => {
           window.scrollTo({
-            top: targetElement.getBoundingClientRect().top + window.scrollY - 50,
+            top:
+              targetElement.getBoundingClientRect().top + window.scrollY - 50,
             behavior: "smooth",
           });
         }, 100);
       }
     }
   }, []);
-
 
   const handleScroll = (targetId, offset = 0) => {
     const targetElement = document.getElementById(targetId);
@@ -58,11 +56,10 @@ function Navbar() {
         <nav className="bg-white h-[99px] shadow-sm">
           <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
             <Link
-            smooth
-            to={`${currentPath}`}
+              smooth
+              to={`${currentPath}`}
               className="flex items-center"
               onClick={(e) => {
-               
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
@@ -78,7 +75,6 @@ function Navbar() {
                 smooth
                 to={`${currentPath}#path-to-support`}
                 onClick={(e) => {
-                  
                   handleScroll("path-to-support", 50);
                 }}
                 className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
@@ -89,7 +85,6 @@ function Navbar() {
                 smooth
                 to={`${currentPath}#how-it-works`}
                 onClick={(e) => {
-                  
                   handleScroll("how-it-works", 90);
                 }}
                 className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
@@ -100,24 +95,26 @@ function Navbar() {
                 smooth
                 to={`${currentPath}#why-choose-a-listener`}
                 onClick={(e) => {
-                 
                   handleScroll("why-choose-a-listener", 90);
                 }}
                 className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
               >
                 Our Approach
               </Link>
-              <Link
-                smooth
-                to={`${currentPath}#FAQs`}
-                onClick={(e) => {
-                  
-                  handleScroll("FAQs", 90);
-                }}
-                className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
-              >
-                FAQs
-              </Link>
+              {currentPath === "/listener-recruitment" ? (
+                <p></p>
+              ) : (
+                <Link
+                  smooth
+                  to={`${currentPath}#FAQs`}
+                  onClick={(e) => {
+                    handleScroll("FAQs", 90);
+                  }}
+                  className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
+                >
+                  FAQs
+                </Link>
+              )}
             </div>
 
             <a href="https://innovacare.tech/listenerhub/signup">
