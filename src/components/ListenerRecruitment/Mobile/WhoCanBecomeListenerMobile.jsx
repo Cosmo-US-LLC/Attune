@@ -63,6 +63,9 @@ const WhoCanBecomeListenerMobile = () => {
           </div>
         ))}
       </div>
+      <p className="mt-8 text-[20px] text-center text-[#000] font-[400]">
+        If you're a Certified Coach this opportunity is for you!
+      </p>
     </div>
   );
 };

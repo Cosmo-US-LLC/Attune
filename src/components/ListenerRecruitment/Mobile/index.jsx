@@ -14,9 +14,9 @@ function ListenerRecruitmentMobile() {
     <>
       <HeroMobile />
       <WhyBecomeListenerMobile />
-      <MeaningfulMovementMobile/>
-      <ListenerMobile />
+      {/* <MeaningfulMovementMobile/> */}
       <PrivatePracticeMobile />
+      <ListenerMobile />
       <HowItWorks />
       <DiffersTherapyCounselingMobile/>
       <ReadyToMakeMobile />

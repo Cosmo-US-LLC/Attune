@@ -14,9 +14,9 @@ function ListenerRecruitmentDesktop() {
     <>
       <Hero />
       <WhyBecomeListener />
-      <MeaningfulMovement />
-      <SafeSpace />
+      {/* <MeaningfulMovement /> */}
       <PrivatePractice />
+      <SafeSpace />     
       <HowItWorks />
       <DiffersTherapyCounseling />
       <ReadyToMake />

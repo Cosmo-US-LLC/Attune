@@ -11,9 +11,11 @@ function Hero() {
             Make a Difference, One Conversation at a Time
           </p>
           <p className="mt-4   text-white font-inter text-[16px] font-[400] leading-[26px]   pr-2">
-            FeelAttune connects compassionate individuals with people seeking
-            judgment-free support. If you’re empathetic and great at listening,
-            join our community to make a meaningful impact.
+            FeelAttune connects compassionate coaches with individuals seeking
+            judgment-free support for everyday challenges. If you’re empathetic,
+            a great listener, and passionate about helping others, this is your
+            opportunity to make a meaningful impact—while earning on your own
+            schedule.
           </p>
           <a
             href="https://innovacare.tech/listenerhub/signup"

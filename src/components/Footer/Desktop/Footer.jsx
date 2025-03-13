@@ -1,12 +1,13 @@
-import { useEffect } from "react";
-import {Link} from "react-router-dom"
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 function Footer() {
-
+  const location = useLocation();
+  const currentPath = location.pathname;
   const handleLogoClick = () => {
- 
     window.scrollTo({
       top: 0,
-      behavior: "smooth",  
+      behavior: "smooth",
     });
   };
   const handleScroll = (event, targetId, offset) => {
@@ -49,44 +50,47 @@ function Footer() {
               </p>
             </div>
             <div className="space-y-[10px]">
-            <div className="text-[16px] font-[500] mt-8 flex gap-10 relative z-40">
-              <a
-              className="relative z-10"
-                href="#path-to-support"
-                onClick={(e) => handleScroll(e, "path-to-support", 90)}
-              >
-                Path To Support
-              </a>
-              <a
-                href="#how-it-works"
-                onClick={(e) => handleScroll(e, "how-it-works", 90)}
-              >
-                How It Works
-              </a>
-              <a
-                href="#why-choose-a-listener"
-                onClick={(e) => handleScroll(e, "why-choose-a-listener", 90)}
-              >
-                Our Approach
-              </a>
-              <a href="#FAQs" onClick={(e) => handleScroll(e, "FAQs", 90)}>
-                FAQs
-              </a>
+              <div className="text-[16px] font-[500] mt-8 flex gap-10 relative z-40">
+                <a
+                  className="relative z-10"
+                  href="#path-to-support"
+                  onClick={(e) => handleScroll(e, "path-to-support", 90)}
+                >
+                  Path To Support
+                </a>
+                <a
+                  href="#how-it-works"
+                  onClick={(e) => handleScroll(e, "how-it-works", 90)}
+                >
+                  How It Works
+                </a>
+                <a
+                  href="#why-choose-a-listener"
+                  onClick={(e) => handleScroll(e, "why-choose-a-listener", 90)}
+                >
+                  Our Approach
+                </a>
+                {currentPath === "/listener-recruitment" ? (
+                  <p></p>
+                ) : (
+                  <a href="#FAQs" onClick={(e) => handleScroll(e, "FAQs", 90)}>
+                    FAQs
+                  </a>
+                )}
+              </div>
+              <div className="space-x-[3.8rem] text-[16px] font-[500] ">
+                <Link to="/terms-of-use">
+                  <a href="">Terms of Use</a>
+                </Link>
+                <Link to="/privacy-policy">
+                  <a href="">Privacy Policy</a>
+                </Link>
+              </div>
             </div>
-            <div className="space-x-[3.8rem] text-[16px] font-[500] ">
-              <Link to="/terms-of-use">
-            <a href="" >
-              Terms of Use
-              </a>
-              </Link>
-             <Link to="/privacy-policy">
-             <a href="" >
-              Privacy Policy
-              </a>
-             </Link>
-            </div>
-            </div>
-            <div className="relative z-10 flex items-end justify-center w-full mt-12" onClick={handleLogoClick}>
+            <div
+              className="relative z-10 flex items-end justify-center w-full mt-12"
+              onClick={handleLogoClick}
+            >
               <img
                 src="/desktop1/feel-attune-logo.webp"
                 alt="Attune Logo"

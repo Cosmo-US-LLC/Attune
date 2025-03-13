@@ -5,13 +5,19 @@ const tabs = [
     id: "focus-on-everyday-challenges",
     label: "Focus on Everyday Challenges",
     number: "01",
-    color: "bg-[#F4F4F4] text-black",
+    color: "bg-[#FFF] text-black",
   },
+  // {
+  //   id: "non-clinical-support",
+  //   label: "Non-Clinical Support",
+  //   number: "02",
+  //   color: "bg-[#F4F4F4] text-black",
+  // },
   {
-    id: "non-clinical-support",
+    id: "focus-on-everyday-challenges",
     label: "Non-Clinical Support",
     number: "02",
-    color: "bg-[#F4F4F4] text-black",
+    color: "bg-[#FFF] text-black",
   },
 ];
 
@@ -19,15 +25,15 @@ const content = {
   "focus-on-everyday-challenges": [
     {
       img: "/listener-recruitment/desktop/differsTherapyCounseling/therapy1.webp",
-      title: "What it Means:",
+      title: "Support for Everyday Challenges",
       description:
-        "Listeners don't diagnose mental health conditions, give medical advice, or provide clinical treatments.",
+        "Listeners help individuals reframe experiences, set goals, and improve emotional well-being. They provide support for stress, confidence, and motivation but do not diagnose or treat clinical conditions.",
     },
     {
       img: "/listener-recruitment/desktop/differsTherapyCounseling/therapy2.webp",
-      title: "What They Do Instead:",
+      title: "A Complement to Professional Care",
       description:
-        "Listeners create a safe and supportive environment where people can freely express their thoughts and feelings without fear of judgment.",
+        "While Listeners provide meaningful emotional support, those experiencing severe distress or clinical conditions are encouraged to seek professional mental health care.",
     },
   ],
   "non-clinical-support": [
@@ -56,7 +62,7 @@ const DiffersTherapyCounseling = () => {
   const activeTabData = tabs.find((tab) => tab.id === activeTab);
 
   return (
-    <div className="px-6 py-16 bg-[#FFF]">
+    <div id="why-choose-a-listener" className="px-6 py-16 bg-[#FFF]">
       <div className="flex flex-col items-center max-w-6xl mx-auto">
         <h1 className="mb-6 text-[76px] w-[1000px] font-[400] font-miniature leading-[90px] text-center text-black">
           How This Differs from Therapy <br /> or Counseling

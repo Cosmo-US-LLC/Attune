@@ -164,15 +164,18 @@ function NavbarMobile() {
                             >
                               Our Approach
                             </Link>
-                            <Link
-                              smooth
-                              to={`${window.location.pathname}#mobile-FAQs`}
-                              onClick={(e) => {
-                                handleClick("mobile-FAQs", 50);
-                              }}
-                            >
-                              FAQs
-                            </Link>
+                            {currentPath === "/listener-recruitment" ? (<></>) :(
+                               <Link
+                               smooth
+                               to={`${window.location.pathname}#mobile-FAQs`}
+                               onClick={(e) => {
+                                 handleClick("mobile-FAQs", 50);
+                               }}
+                             >
+                               FAQs
+                             </Link>
+                            )}
+                           
                           </div>
                         </div>
 
