@@ -19,15 +19,15 @@ const content = {
   "focus-on-everyday-challenges": [
     {
       img: "/listener-recruitment/desktop/differsTherapyCounseling/therapy1.webp",
-      title: "What it Means:",
+      title: "Support for Everyday Challenges",
       description:
-        "Listeners don't diagnose mental health conditions, give medical advice, or provide clinical treatments.",
+        "Listeners help individuals reframe experiences, set goals, and improve emotional well-being. They provide support for stress, confidence, and motivation but do not diagnose or treat clinical conditions.",
     },
     {
       img: "/listener-recruitment/desktop/differsTherapyCounseling/therapy2.webp",
-      title: "What They Do Instead:",
+      title: "A Complement to Professional Care",
       description:
-        "Listeners create a safe and supportive environment where people can freely express their thoughts and feelings without fear of judgment.",
+        "While Listeners provide meaningful emotional support, those experiencing severe distress or clinical conditions are encouraged to seek professional mental health care.",
     },
   ],
   "non-clinical-support": [

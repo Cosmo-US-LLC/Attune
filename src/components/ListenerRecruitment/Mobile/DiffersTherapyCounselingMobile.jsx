@@ -19,15 +19,15 @@ const content = {
   "focus-on-everyday-challenges": [
     {
       img: "/listener-recruitment/mobile/differsTherapyCounseling/therapy4.webp",
-      title: "What it Means:",
+      title: "Support for Everyday Challenges",
       description:
-        "Listeners don't diagnose mental health conditions, give medical advice, or provide clinical treatments.",
+        "Listeners help individuals reframe experiences, set goals, and improve emotional well-being. They provide support for stress, confidence, and motivation but do not diagnose or treat clinical conditions.",
     },
     {
       img: "/listener-recruitment/mobile/differsTherapyCounseling/therapy1.webp",
-      title: "What They Do Instead:",
+      title: "A Complement to Professional Care",
       description:
-        "Listeners create a safe and supportive environment where people can freely express their thoughts and feelings without fear of judgment.",
+        "While Listeners provide meaningful emotional support, those experiencing severe distress or clinical conditions are encouraged to seek professional mental health care.",
     },
   ],
   "non-clinical-support": [
@@ -70,7 +70,9 @@ const DiffersTherapyCounselingMobile = () => {
             <div key={tab.id} className="overflow-hidden">
               <button
                 className={`flex items-center gap-3 px-4 py-3 justify-between overflow-hidden w-full transition-all duration-300 rounded-[12px] border border-black   ${
-                  activeTab === tab.id ? "bg-[#F4F4F4] text-black" : "bg-white text-black"
+                  activeTab === tab.id
+                    ? "bg-[#F4F4F4] text-black"
+                    : "bg-white text-black"
                 }`}
                 onClick={() => toggleAccordion(tab.id)}
               >
@@ -96,7 +98,7 @@ const DiffersTherapyCounselingMobile = () => {
                         />
                       </div>
 
-                      <h2 className="text-[24px] font-[400] font-miniature leading-normal text-black">
+                      <h2 className="text-[22px] font-[400] font-miniature leading-normal text-black">
                         {item.title}
                       </h2>
 
@@ -130,16 +132,6 @@ const DiffersTherapyCounselingMobile = () => {
 };
 
 export default DiffersTherapyCounselingMobile;
-
-
-
-
-
-
-
-
-
-
 
 // import React, { useState } from "react";
 

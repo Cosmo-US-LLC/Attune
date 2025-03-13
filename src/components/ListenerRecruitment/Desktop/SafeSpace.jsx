@@ -1,16 +1,24 @@
 function SafeSpace() {
   const cardArr = [
     <p>
-      A Safe Space for individuals to express their thoughts and emotions
-      without fear of judgment.
+      <strong> Clients Reframe Experiences:</strong> Guide individuals in
+      shifting perspectives, gaining clarity, and uncovering new insights to
+      navigate their challenges more effectively.
     </p>,
-    <p className="pt-2">
-      Support & Encouragement to help individuals gain clarity, motivation, and
-      resilience.
+    <p className="">
+      <strong>Support Goal-Setting & Achievement:</strong> Empower your clients
+      to build confidence, navigate life transitions, and reach meaningful
+      personal milestones.
     </p>,
-    <p className="pt-2">
-      Guidance to Navigate Life’s Challenges, such as confidence-building, life
-      transitions, and personal goal-setting.
+    <p className="">
+      <strong>Enhance Emotional Well-Being:</strong> Provide strategies to boost
+      motivation, foster self-awareness, and cultivate lasting emotional
+      balance.
+    </p>,
+    <p className="">
+      <strong>Build Resilience & Empower Growth:</strong> Equip individuals with
+      the mindset and tools to overcome setbacks, adapt to change, and move
+      toward their desired outcomes with confidence.
     </p>,
   ];
 
@@ -26,7 +34,7 @@ function SafeSpace() {
                 What is a Listener
               </h3>
               <p className="text-[16px] font-[400] leading-[26px]">
-                A listener is a someone who provides
+                A listener is a someone who supports every day people with:
               </p>
               <ul className="leading-[28px] md:leading-[24px] pl-6 md:pl-12 lg:pl-10">
                 {cardArr.map((item, index) => (
@@ -53,13 +61,13 @@ function SafeSpace() {
                   </li>
                 ))}
               </ul>
-              <p className="text-[16px] font-[400] leading-[26px]">
+              {/* <p className="text-[16px] font-[400] leading-[26px]">
                 Listeners are not licensed mental health professionals and do
                 not diagnose, treat mental illnesses, or provide clinical
                 interventions. Our program is designed to complement
                 professional mental health care by offering everyday emotional
                 support and meaningful human connection.
-              </p>
+              </p> */}
               <div className="flex justify-center mt-6 md:justify-start">
                 <a href="https://innovacare.tech/listenerhub/signup">
                   <button className="bg-[#5200FF] flex flex-row text-white text-[14px] md:text-[16px] font-[500] py-2 md:py-4 px-8 md:px-8 rounded-full hover:bg-purple-800">
