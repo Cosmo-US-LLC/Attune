@@ -20,10 +20,10 @@ const PrivatePracticeMobile = () => {
   return (
     <div className="w-full py-10 px-4 bg-[#FAFAFA] flex flex-col gap-6 items-center">
       <h1 className="w-full   text-[38px] font-[400] leading-normal font-miniature text-center">
-        Private practice with no doors & no overhead
+      Your potential Earning with FeelAttune
       </h1>
 
-      <div className="w-full max-w-md text-gray-900">
+      {/* <div className="w-full max-w-md text-gray-900">
         <p className="text-lg font-[400] text-center">
           The key benefits that we need to focus on for Google ads are:
         </p>
@@ -41,7 +41,7 @@ const PrivatePracticeMobile = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
 
       <div className="w-full max-w-lg p-5 mx-auto text-center bg-white border shadow-md border-lime-300 rounded-xl">
         <h2 className="text-[14px] font-[500] leading-[18px] text-black">
