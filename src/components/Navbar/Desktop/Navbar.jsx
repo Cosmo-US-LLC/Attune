@@ -116,18 +116,21 @@ function Navbar() {
                 </Link>
               )}
             </div>
-
-            <a
-              href={
-                currentPath === "/listener-recruitment"
-                  ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                  : "https://innovacare.tech/listenerhub/signup"
-              }
-            >
-              <button className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500">
-                Connect Now
-              </button>
-            </a>
+            <div className="w-[160px] h-[37px]">
+              {currentPath !== "/listener-recruitment" && (
+                <a
+                  href={
+                    currentPath === "/listener-recruitment"
+                      ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                      : "https://innovacare.tech/listenerhub/signup"
+                  }
+                >
+                  <button className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500">
+                    Connect Now
+                  </button>
+                </a>
+              )}
+            </div>
           </div>
         </nav>
       </div>
