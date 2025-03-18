@@ -13,7 +13,7 @@ function ReadyToMake() {
           conversation at a time.
         </p>
         <div className="flex justify-center pt-[20px]">
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df">
             <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#5200FF] hover:bg-purple-800">
               <button className="text-white font-[500] text-[16px]">
                 Apply Now

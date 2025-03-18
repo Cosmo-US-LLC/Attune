@@ -78,7 +78,7 @@ export default function ListenerMobile() {
                       </p> */}
                     </div>
                     <div>
-                      <a href="https://innovacare.tech/listenerhub/signup">
+                      <a href="https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df">
                         <Button className="bg-[#5200FF] rounded-full text-[15px] font-[500] leading-[20px] py-6">
                           Join Now
                           <svg
