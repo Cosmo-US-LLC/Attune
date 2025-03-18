@@ -22,7 +22,7 @@ const ThankYouPage = () => {
       </div>
 
       <div>
-        <a href="/">
+        <a href="listener-recruitment">
           <Button className="bg-[#5200FF] rounded-full text-[15px] md:text-[16px] px-8 py-3 flex items-center justify-center">
             Back to home
             <svg

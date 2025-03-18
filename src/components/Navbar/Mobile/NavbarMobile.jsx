@@ -257,23 +257,19 @@ function NavbarMobile() {
               </Link>
             </div>
 
-            <a
-              href={
-                currentPath === "/listener-recruitment"
-                  ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                  : "https://innovacare.tech/listenerhub/signup"
-              }
-            >
-              <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                Connect Now
-              </Button>
-            </a>
-
-            {/* <a href="https://innovacare.tech/listenerhub/signup">
-              <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                Connect Now
-              </Button>
-            </a> */}
+            {currentPath !== "/listener-recruitment" && (
+              <a
+                href={
+                  currentPath === "/listener-recruitment"
+                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                    : "https://innovacare.tech/listenerhub/signup"
+                }
+              >
+                <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                  Connect Now
+                </Button>
+              </a>
+            )}
           </div>
         </div>
       </div>
