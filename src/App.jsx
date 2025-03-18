@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import useFavicon from "./hooks/useFavicon";
 import Layout from "./components/Layout";
 import NotFound from "./components/NotFound";
+import ThankYouPage from "./components/ThankYouPage/ThankYouPage";
 
 import FeelAttuneHomeDesktop from "./components/FeelAttuneHome/Desktop";
 import FeelAttuneHomeMobile from "./components/FeelAttuneHome/Mobile";
@@ -154,6 +155,7 @@ function App() {
           />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsAndConditions />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />

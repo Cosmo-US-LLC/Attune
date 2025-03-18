@@ -12,7 +12,7 @@ function ReadyToMakeMobile() {
           fosters emotional well-being and human connection—one conversation at a time.
         </p>
         <div className="flex justify-center">
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df">
             <div className="flex flex-row justify-center items-center px-4 py-2 gap-2 rounded-full bg-[#5200FF] hover:bg-purple-800">
               <button className="text-white font-[500] text-[14px]">Apply Now</button>
               <svg

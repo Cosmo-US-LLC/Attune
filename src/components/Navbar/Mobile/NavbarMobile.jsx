@@ -20,19 +20,19 @@ function NavbarMobile() {
   useEffect(() => {
     // Check if there is a hash in the URL
     if (location.hash) {
-        const targetId = location.hash.replace("#", "");
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            setTimeout(() => {
-                window.scrollTo({
-                    top: targetElement.getBoundingClientRect().top + window.scrollY - 50,
-                    behavior: "smooth",
-                });
-            }, 100);
-        }
+      const targetId = location.hash.replace("#", "");
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        setTimeout(() => {
+          window.scrollTo({
+            top:
+              targetElement.getBoundingClientRect().top + window.scrollY - 50,
+            behavior: "smooth",
+          });
+        }, 100);
+      }
     }
-}, [location]);
-
+  }, [location]);
 
   const handleClick = (targetId, offset) => {
     setSideOpen(false);
@@ -164,18 +164,19 @@ function NavbarMobile() {
                             >
                               Our Approach
                             </Link>
-                            {currentPath === "/listener-recruitment" ? (<></>) :(
-                               <Link
-                               smooth
-                               to={`${window.location.pathname}#mobile-FAQs`}
-                               onClick={(e) => {
-                                 handleClick("mobile-FAQs", 50);
-                               }}
-                             >
-                               FAQs
-                             </Link>
+                            {currentPath === "/listener-recruitment" ? (
+                              <></>
+                            ) : (
+                              <Link
+                                smooth
+                                to={`${window.location.pathname}#mobile-FAQs`}
+                                onClick={(e) => {
+                                  handleClick("mobile-FAQs", 50);
+                                }}
+                              >
+                                FAQs
+                              </Link>
                             )}
-                           
                           </div>
                         </div>
 
@@ -245,7 +246,7 @@ function NavbarMobile() {
                   setSideOpen(false);
                   setTimeout(() => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
-                  }, 100);  
+                  }, 100);
                 }}
               >
                 <img
@@ -256,11 +257,23 @@ function NavbarMobile() {
               </Link>
             </div>
 
-            <a href="https://innovacare.tech/listenerhub/signup">
+            <a
+              href={
+                currentPath === "/listener-recruitment"
+                  ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                  : "https://innovacare.tech/listenerhub/signup"
+              }
+            >
               <Button className="bg-[#FF6F61] rounded-full text-[15px]">
                 Connect Now
               </Button>
             </a>
+
+            {/* <a href="https://innovacare.tech/listenerhub/signup">
+              <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                Connect Now
+              </Button>
+            </a> */}
           </div>
         </div>
       </div>
