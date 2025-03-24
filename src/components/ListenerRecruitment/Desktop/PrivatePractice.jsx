@@ -4,8 +4,10 @@ import * as Slider from "@radix-ui/react-slider";
 function PrivatePractice() {
   const [hours, setHours] = useState(12);
   const [hourlyRate, setHourlyRate] = useState(30);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const hourlyRateByYear = 52;
   const estimatedEarnings = hours * hourlyRate * hourlyRateByYear;
+  const hourOptions = Array.from({ length: 31 }, (_, i) => i + 10);
 
   return (
     <div className="w-full py-8 bg-[#FAFAFA]">
@@ -18,7 +20,7 @@ function PrivatePractice() {
             <h2 className="text-[28px] font-[500] leading-tight text-black mt-1">
               Estimated earnings <br /> with FeelAttune
             </h2>
-
+ 
             <div className="w-full max-w-[580px] mx-auto mt-5">
               <label className="block text-left text-[16px] font-semibold text-[#4A4D4A] mb-3">
                 Hourly Rate Range
@@ -26,11 +28,10 @@ function PrivatePractice() {
 
               <Slider.Root
                 className="relative flex items-center w-full h-6 select-none touch-none"
-                defaultValue={[hourlyRate]}
+                value={[hourlyRate]}
                 min={22}
                 max={40}
                 step={1}
-                value={[hourlyRate]}
                 onValueChange={(value) => setHourlyRate(value[0])}
               >
                 <Slider.Track className="relative h-2 bg-gray-300 rounded-full grow">
@@ -53,22 +54,34 @@ function PrivatePractice() {
             </div>
 
             <div className="flex flex-col gap-4 mt-6">
-              <div className="flex justify-center w-full gap-14">
-                <div className="flex flex-col gap-1 text-left w-[30%]">
+              <div className="flex items-start justify-center w-full gap-14">
+ 
+                <div className="flex flex-col gap-1 text-left w-[30%] relative">
                   <label className="text-[16px] font-[600] text-[#4A4D4A]">
                     Weekly Hours
                   </label>
-                  <select
-                    className="p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md focus:ring-2 focus:ring-[#7F8AE0]"
-                    value={hours}
-                    onChange={(e) => setHours(Number(e.target.value))}
+                  <div
+                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                    className="p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md cursor-pointer"
                   >
-                    {[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40].map((h) => (
-                      <option key={h} value={h} >
-                        {h}
-                      </option>
-                    ))}
-                  </select>
+                    {hours} 
+                  </div>
+                  {dropdownOpen && (
+                    <div className="absolute top-20 w-full z-10 bg-white border border-gray-300 rounded-md shadow-md mt-1 max-h-[160px] overflow-y-auto">
+                      {hourOptions.map((h) => (
+                        <div
+                          key={h}
+                          onClick={() => {
+                            setHours(h);
+                            setDropdownOpen(false);
+                          }}
+                          className="px-4 py-2 hover:bg-[#7F8AE0] hover:text-white cursor-pointer"
+                        >
+                          {h} 
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 <div className="flex flex-col gap-1 text-left w-[40%]">
