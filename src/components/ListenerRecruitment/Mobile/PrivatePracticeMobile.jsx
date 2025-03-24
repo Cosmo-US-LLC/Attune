@@ -3,9 +3,11 @@ import * as Slider from "@radix-ui/react-slider";
 
 const PrivatePracticeMobile = () => {
   const [hours, setHours] = useState(12);
-  const [hourlyRate, setHourlyRate] = useState(32);
+  const [hourlyRate, setHourlyRate] = useState(30);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const hourlyRateByYear = 52;
   const estimatedEarnings = hours * hourlyRate * hourlyRateByYear;
+  const hourOptions = Array.from({ length: 31 }, (_, i) => i + 10);
 
   return (
     <div className="w-full py-6 px-4 bg-[#FAFAFA] flex flex-col gap-6 items-center">
@@ -48,37 +50,44 @@ const PrivatePracticeMobile = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 px-2 mt-4">
-          <div className="flex items-center justify-center w-full gap-6">
-            <div className="flex flex-col text-left w-[100%]">
-              <label className="text-[14px] font-[600] leading-[15px] text-[#4A4D4A]">
-                Weekly Hours
-              </label>
-              <select
-                className="p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md focus:ring-2 focus:ring-[#7F8AE0]"
-                value={hours}
-                onChange={(e) => setHours(Number(e.target.value))}
-              >
-                {[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40].map((h) => (
-                  <option key={h} value={h}>
-                    {h}
-                  </option>
-                ))}
-              </select>
+        <div className="relative w-full mt-6 text-left">
+          <label className="text-[14px] font-[600] leading-[15px] text-[#4A4D4A]">
+            Weekly Hours
+          </label>
+          <div
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+            className="p-2 mt-2 text-black bg-white border border-gray-300 rounded-md shadow-md cursor-pointer"
+          >
+            {hours}  
+          </div>
+          {dropdownOpen && (
+            <div className="absolute w-full z-10 bg-white border border-gray-300 rounded-md shadow-md mt-1 max-h-[150px] overflow-y-auto">
+              {hourOptions.map((h) => (
+                <div
+                  key={h}
+                  onClick={() => {
+                    setHours(h);
+                    setDropdownOpen(false);
+                  }}
+                  className="px-4 py-2 hover:bg-[#7F8AE0] hover:text-white cursor-pointer"
+                >
+                  {h}  
+                </div>
+              ))}
             </div>
-          </div>
-
-          <div className="flex flex-col mt-2 text-center">
-            <label className="text-[14px] font-[600] leading-[15px] text-[#4A4D4A]">
-              Estimated Annual Earnings <br /> Based on ${hourlyRate}/hr
-            </label>
-            <p className="text-[31px] font-[400] leading-[50px] text-[#7F8AE0] font-miniature">
-              ${estimatedEarnings.toLocaleString()}
-            </p>
-          </div>
+          )}
         </div>
 
-        <div className="flex justify-center mt-2">
+        <div className="flex flex-col mt-4 text-center">
+          <label className="text-[14px] font-[600] leading-[15px] text-[#4A4D4A]">
+            Estimated Annual Earnings <br /> Based on ${hourlyRate}/hr
+          </label>
+          <p className="text-[31px] font-[400] leading-[50px] text-[#7F8AE0] font-miniature">
+            ${estimatedEarnings.toLocaleString()}
+          </p>
+        </div>
+
+        <div className="flex justify-center mt-4">
           <a href="https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df">
             <div className="flex flex-row justify-center items-center px-5 py-[10px] gap-2 rounded-full bg-[#5200FF] hover:bg-purple-800">
               <button className="text-white font-[500] text-[14px] leading-[17px]">
