@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import * as Slider from "@radix-ui/react-slider";
 
 const PrivatePracticeMobile = () => {
-  const [hours, setHours] = useState(12);
-  const [hourlyRate, setHourlyRate] = useState(30);
+  const [hours, setHours] = useState(25);
+  const [hourlyRate, setHourlyRate] = useState(31);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const hourlyRateByYear = 52;
   const estimatedEarnings = hours * hourlyRate * hourlyRateByYear;
