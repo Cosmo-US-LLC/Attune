@@ -13,7 +13,7 @@ function WhyChoose() {
 
   return (
     <div
-      id="mobile-why-choose-a-listener"
+      id="mobile-our-approach"
       className="bg-white px-5 py-[30px] space-y-[24px]"
     >
       <h1 className="font-miniature text-center text-[38px]">
@@ -259,7 +259,7 @@ function WhyChoose() {
 
         <a
           href="https://innovacare.tech/listenerhub/signup"
-          className="flex justify-center w-fit mx-auto"
+          className="flex justify-center mx-auto w-fit"
         >
           <Button className="bg-[#5200FF] hover:bg-purple-800 rounded-full font-[500] text-[15px]">
             Get Started

@@ -36,7 +36,7 @@ const DiffersTherapyCounselingMobile = () => {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
 
   return (
-    <div id="mobile-why-choose-a-listener" className="px-4 py-10 bg-[#FFF]">
+    <div id="mobile-our-approach" className="px-4 py-10 bg-[#FFF]">
       <div className="flex flex-col items-center max-w-md mx-auto">
         <h1 className="mb-4 text-[38px] font-[500] font-miniature leading-normal text-center text-black">
           How This Differs from Therapy or Counseling

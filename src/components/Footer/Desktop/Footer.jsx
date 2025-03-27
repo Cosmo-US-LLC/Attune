@@ -65,16 +65,19 @@ function Footer() {
                   How It Works
                 </a>
                 <a
-                  href="#why-choose-a-listener"
-                  onClick={(e) => handleScroll(e, "why-choose-a-listener", 90)}
+                  href="#our-approach"
+                  onClick={(e) => handleScroll(e, "our-approach", 90)}
                 >
                   Our Approach
                 </a>
-                {currentPath === "/listener-recruitment" ? (
-                  <p></p>
-                ) : (
+                {currentPath !== "/listener-recruitment" && (
                   <a href="#FAQs" onClick={(e) => handleScroll(e, "FAQs", 90)}>
                     FAQs
+                  </a>
+                )}
+                {currentPath === "/listener-recruitment" && (
+                  <a href="#Become-a-listener" onClick={(e) => handleScroll(e, "Become-a-listener", 90)}>
+                    Become a listener
                   </a>
                 )}
               </div>

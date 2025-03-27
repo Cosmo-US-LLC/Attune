@@ -18,7 +18,6 @@ function NavbarMobile() {
   const currentPath = location.pathname;
 
   useEffect(() => {
-    // Check if there is a hash in the URL
     if (location.hash) {
       const targetId = location.hash.replace("#", "");
       const targetElement = document.getElementById(targetId);
@@ -157,16 +156,14 @@ function NavbarMobile() {
                             </Link>
                             <Link
                               smooth
-                              to={`${window.location.pathname}#mobile-why-choose-a-listener`}
+                              to={`${window.location.pathname}#mobile-our-approach`}
                               onClick={(e) => {
-                                handleClick("mobile-why-choose-a-listener", 50);
+                                handleClick("mobile-our-approach", 50);
                               }}
                             >
                               Our Approach
                             </Link>
-                            {currentPath === "/listener-recruitment" ? (
-                              <></>
-                            ) : (
+                            {currentPath !== "/listener-recruitment" && (
                               <Link
                                 smooth
                                 to={`${window.location.pathname}#mobile-FAQs`}
@@ -175,6 +172,17 @@ function NavbarMobile() {
                                 }}
                               >
                                 FAQs
+                              </Link>
+                            )}
+                            {currentPath === "/listener-recruitment" && (
+                              <Link
+                                smooth
+                                to={`${window.location.pathname}#Become-a-listener`}
+                                onClick={(e) => {
+                                  handleClick("mobile-Become-a-listener", 50);
+                                }}
+                              >
+                                Become A Listener
                               </Link>
                             )}
                           </div>
@@ -257,19 +265,19 @@ function NavbarMobile() {
               </Link>
             </div>
 
-            {currentPath !== "/listener-recruitment" && (
-              <a
-                href={
-                  currentPath === "/listener-recruitment"
-                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                    : "https://innovacare.tech/listenerhub/signup"
-                }
-              >
-                <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                  Connect Now
-                </Button>
-              </a>
-            )}
+            <a
+              href={
+                currentPath === "/listener-recruitment"
+                  ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                  : "https://innovacare.tech/listenerhub/signup"
+              }
+            >
+              <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                {currentPath === "/listener-recruitment"
+                  ? "Apply Now"
+                  : "Connect Now"}
+              </Button>
+            </a>
           </div>
         </div>
       </div>
