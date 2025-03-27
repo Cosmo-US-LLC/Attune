@@ -37,7 +37,7 @@ const WhoCanBecomeListenerMobile = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center w-full px-4 py-8 bg-white">
+    <div className="flex flex-col items-center w-full px-4 py-8 bg-white" id="mobile-Become-a-listener">
       <h1 className="mb-4 text-[38px] font-[400] leading-normal font-miniature text-center">
         Who Can Become a Listener?
       </h1>

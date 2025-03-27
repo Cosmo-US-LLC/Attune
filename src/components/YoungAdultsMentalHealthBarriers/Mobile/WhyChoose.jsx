@@ -14,7 +14,7 @@ function WhyChoose() {
 
   return (
     <div
-      id="mobile-why-choose-a-listener"
+      id="mobile-our-approach"
       className="bg-[#F4EFEA] px-5 py-[30px] space-y-[24px]"
     >
       <h1 className="font-miniature text-center text-[38px]">

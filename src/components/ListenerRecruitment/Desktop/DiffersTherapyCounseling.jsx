@@ -62,7 +62,7 @@ const DiffersTherapyCounseling = () => {
   const activeTabData = tabs.find((tab) => tab.id === activeTab);
 
   return (
-    <div id="why-choose-a-listener" className="px-6 py-16 bg-[#FFF]">
+    <div id="our-approach" className="px-6 py-16 bg-[#FFF]">
       <div className="flex flex-col items-center max-w-6xl mx-auto">
         <h1 className="mb-6 text-[76px] w-[1000px] font-[400] font-miniature leading-[90px] text-center text-black">
           How This Differs from Therapy <br /> or Counseling

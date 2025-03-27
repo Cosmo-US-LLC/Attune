@@ -14,7 +14,7 @@ function WhyChoose() {
 
   return (
     <div
-      id="mobile-why-choose-a-listener"
+      id="mobile-our-approach"
       className="bg-[#F4EFEA] px-5 py-[30px] space-y-[24px]"
     >
       <h1 className="font-miniature text-center text-[38px]">
@@ -24,7 +24,7 @@ function WhyChoose() {
       <div className="space-y-[18px]" id="Mourapproach2">
         <table className="w-full">
           <thead>
-            <tr className="border-b border-black grid grid-cols-2">
+            <tr className="grid grid-cols-2 border-b border-black">
               <th className="p-[10px]  border-black text-left  flex items-center leading-[22px] text-[24.238px] font-[400] font-miniature bg-[#e5ff7d]">
                 Att<span className="italic">une</span>
               </th>
