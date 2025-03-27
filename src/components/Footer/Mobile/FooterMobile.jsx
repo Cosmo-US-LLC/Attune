@@ -57,16 +57,14 @@ function FooterMobile() {
               How It Works
             </a>
             <a
-              href="#why-choose-a-listener"
+              href="#our-approach"
               onClick={(e) =>
-                handleScroll(e, "mobile-why-choose-a-listener", 70)
+                handleScroll(e, "mobile-our-approach", 70)
               }
             >
               Our Approach
             </a>
-            {currentPath === "/listener-recruitment" ? (
-              <p></p>
-            ) : (
+            {currentPath !== "/listener-recruitment" && (
               <a
                 href="#FAQs"
                 onClick={(e) => handleScroll(e, "mobile-FAQs", 70)}
@@ -74,8 +72,16 @@ function FooterMobile() {
                 FAQs
               </a>
             )}
+            {currentPath === "/listener-recruitment" && (
+              <a
+                href="#Become-a-listener"
+                onClick={(e) => handleScroll(e, "mobile-Become-a-listener", 70)}
+              >
+                Become A Listener
+              </a>
+            )}
 
-            <div className="space-y-[15px] flex flex-col text-[16px] font-[500] ">
+            <div className="space-y-[15px] flex flex-col text-[16px] font-[500]  mt-4">
               <Link to="/terms-of-use">
                 <a href="">Terms of Use</a>
               </Link>

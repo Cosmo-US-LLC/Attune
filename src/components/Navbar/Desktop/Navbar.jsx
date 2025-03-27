@@ -93,17 +93,15 @@ function Navbar() {
               </Link>
               <Link
                 smooth
-                to={`${currentPath}#why-choose-a-listener`}
+                to={`${currentPath}#our-approach`}
                 onClick={(e) => {
-                  handleScroll("why-choose-a-listener", 90);
+                  handleScroll("our-approach", 90);
                 }}
                 className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
               >
                 Our Approach
               </Link>
-              {currentPath === "/listener-recruitment" ? (
-                <p></p>
-              ) : (
+              {currentPath !== "/listener-recruitment" && (
                 <Link
                   smooth
                   to={`${currentPath}#FAQs`}
@@ -115,21 +113,33 @@ function Navbar() {
                   FAQs
                 </Link>
               )}
+              {currentPath === "/listener-recruitment" && (
+                <Link
+                  smooth
+                  to={`${currentPath}#Become-a-listener`}
+                  onClick={(e) => {
+                    handleScroll("Become-a-listener", 80);
+                  }}
+                  className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
+                >
+                  Become a listener
+                </Link>
+              )}
             </div>
             <div className="w-[160px] h-[37px]">
-              {currentPath !== "/listener-recruitment" && (
-                <a
-                  href={
-                    currentPath === "/listener-recruitment"
-                      ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                      : "https://innovacare.tech/listenerhub/signup"
-                  }
-                >
-                  <button className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500">
-                    Connect Now
-                  </button>
-                </a>
-              )}
+              <a
+                href={
+                  currentPath === "/listener-recruitment"
+                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                    : "https://innovacare.tech/listenerhub/signup"
+                }
+              >
+                <button className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500">
+                  {currentPath === "/listener-recruitment"
+                    ? "Apply Now"
+                    : "Connect Now"}
+                </button>
+              </a>
             </div>
           </div>
         </nav>

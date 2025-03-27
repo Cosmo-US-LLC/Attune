@@ -42,7 +42,7 @@ const WhoCanBecomeListenerDesktop = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center w-full px-8 py-12 bg-white">
+    <div className="flex flex-col items-center w-full px-8 py-12 bg-white" id="Become-a-listener">
       <h1 className="mb-8 text-[76px] font-[400] leading-[84px] font-miniature text-center">
         Who Can Become a Listener?
       </h1>

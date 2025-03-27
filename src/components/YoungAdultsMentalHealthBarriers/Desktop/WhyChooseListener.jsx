@@ -1,15 +1,15 @@
 function WhyChooseListener() {
   return (
-    <div id="why-choose-a-listener" className="bg-[#F4EFEA] p-[105px] space-y-[87px]">
+    <div id="our-approach" className="bg-[#F4EFEA] p-[105px] space-y-[87px]">
       <h1 className="text-[76px] font-miniature text-center">
         Why Choose a Listener?
       </h1>
 
-      <div className="overflow-x-auto max-w-7xl mx-auto">
+      <div className="mx-auto overflow-x-auto max-w-7xl">
         <table className="w-full border-collapse">
           {/* Table Head */}
           <thead>
-            <tr className="border-b border-black grid grid-cols-10">
+            <tr className="grid grid-cols-10 border-b border-black">
               <th className="p-[20px] text-left text-[20px] font-[500] flex items-center col-span-4">
                 Feature
               </th>
@@ -24,7 +24,7 @@ function WhyChooseListener() {
 
           {/* Table Body */}
           <tbody className="font-[500]">
-            <tr className="border-b border-black grid grid-cols-10">
+            <tr className="grid grid-cols-10 border-b border-black">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Accessibility
               </td>
@@ -49,7 +49,7 @@ function WhyChooseListener() {
                 Long wait times for appointments.
               </td>
             </tr>
-            <tr className="border-b border-black grid grid-cols-10">
+            <tr className="grid grid-cols-10 border-b border-black">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Cost
               </td>
@@ -75,7 +75,7 @@ function WhyChooseListener() {
 
               </td>
             </tr>
-            <tr className="border-b border-black grid grid-cols-10">
+            <tr className="grid grid-cols-10 border-b border-black">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Focus
               </td>
@@ -101,7 +101,7 @@ function WhyChooseListener() {
 
               </td>
             </tr>
-            <tr className="border-b border-black grid grid-cols-10">
+            <tr className="grid grid-cols-10 border-b border-black">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Purpose
               </td>
@@ -126,7 +126,7 @@ function WhyChooseListener() {
                 Clinical interventions
               </td>
             </tr>
-            <tr className="border-b border-black grid grid-cols-10">
+            <tr className="grid grid-cols-10 border-b border-black">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Stigma
               </td>
@@ -151,7 +151,7 @@ function WhyChooseListener() {
                 May carry stigma.
               </td>
             </tr>
-            <tr className=" grid grid-cols-10">
+            <tr className="grid grid-cols-10 ">
               <td className="p-[20px] text-[25px] flex items-center col-span-4">
                 Ideal For
               </td>
