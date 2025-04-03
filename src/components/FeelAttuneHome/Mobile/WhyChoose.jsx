@@ -258,7 +258,7 @@ function WhyChoose() {
         </table>
 
         <a
-          href="https://innovacare.tech/listenerhub/signup"
+          href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
           className="flex justify-center mx-auto w-fit"
         >
           <Button className="bg-[#5200FF] hover:bg-purple-800 rounded-full font-[500] text-[15px]">

@@ -10,9 +10,9 @@ function FAQAccordion() {
   const questions = [
     {
       id: "01",
-      question: "What is Attune?",
+      question: "What is FeelAttune ?",
       answer:
-        "Attune is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
+        "FeelAttune  is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
     },
     {
       id: "02",
@@ -56,7 +56,7 @@ function FAQAccordion() {
     {
       id: "04",
       question: "How much does it cost?",
-      answer: (<>Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, <span className="font-bold">starting at just $30/hr</span>. We believe emotional support should be accessible to everyone.</>),
+      answer: (<>Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, <span className="font-bold">starting at just $40/session</span>. We believe emotional support should be accessible to everyone.</>),
     },
     {
       id: "05",

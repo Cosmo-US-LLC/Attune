@@ -106,8 +106,8 @@ function SupportCards({ bg, img, title, points }) {
       </div>
 
       <a
-        href="https://innovacare.tech/listenerhub/signup"
-        className="flex justify-center w-fit mx-auto"
+        href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+        className="flex justify-center mx-auto w-fit"
       >
         <Button className="bg-[#5200FF] rounded-full text-[15px] mt-4">
           Get Started

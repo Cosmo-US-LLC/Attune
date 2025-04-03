@@ -96,7 +96,7 @@ function Footer() {
             >
               <img
                 src="/desktop1/feel-attune-logo.webp"
-                alt="Attune Logo"
+                alt="FeelAttune  Logo"
                 className="cursor-pointer w-[174px] h-[54px]"
               />
             </div>
@@ -148,7 +148,7 @@ function Footer() {
         </div>
         <div className="flex justify-center items-center h-[60px] px-[50px] border-t  border-black">
           <div className="text-black font-inter text-[16px] font-[400] leading-[20px] capitalize">
-            &copy; 2025 Attune. All Rights Reserved
+            &copy; 2025 FeelAttune . All Rights Reserved
           </div>
         </div>
       </div>
