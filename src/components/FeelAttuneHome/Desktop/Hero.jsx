@@ -13,12 +13,12 @@ function Hero() {
           </h1>
           <p className="w-[539px] my-4 text-black max-xl:text-[15px] text-[18px] font-[500] pr-10 max-xl:leading-[20px] leading-[26px]">
             In a world where 1 in 5 adults experience mental health challenges,
-            Attune offers a revolutionary approach to emotional well-being.
-            Attune connects you with compassionate Listeners, providing a
+            FeelAttune  offers a revolutionary approach to emotional well-being.
+            FeelAttune  connects you with compassionate Listeners, providing a
             judgment-free zone for sharing your thoughts and feelings.
           </p>
 
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use">
             <button className="bg-[#5200FF] text-white text-[16px] font-[500] py-2 px-4 rounded-full hover:bg-purple-800">
               Connect to a Listener
             </button>

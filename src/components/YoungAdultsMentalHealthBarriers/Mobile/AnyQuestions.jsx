@@ -10,9 +10,9 @@ function AnyQuestions() {
   const questions = [
     {
       id: "01",
-      question: "What is Attune?",
+      question: "What is FeelAttune?",
       answer:
-        "Attune is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
+        "FeelAttune is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
     },
     {
       id: "02",
@@ -30,7 +30,7 @@ function AnyQuestions() {
             your thoughts and feelings. Listeners can help you:
           </p>
           <br />
-          <ul className="list-disc pl-6 mt-2">
+          <ul className="pl-6 mt-2 list-disc">
             <li>
               Reframe experiences and gain fresh perspective and clarity about
               your challenges.
@@ -96,7 +96,7 @@ function AnyQuestions() {
             }
           >
             <AccordionTrigger className="">
-              <div className="flex gap-2 items-center">
+              <div className="flex items-center gap-2">
                 <span className="text-[#95ADF0] text-[24px] font-bold leading-[120%]">
                   {question?.id}
                 </span>

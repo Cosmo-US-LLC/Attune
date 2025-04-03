@@ -174,6 +174,42 @@ function NavbarMobile() {
                                 FAQs
                               </Link>
                             )}
+                            <div className="flex flex-row items-center justify-center gap-2">
+                              <a href="https://innovacare.tech/listenerhub/login">
+                                <Button className="bg-[#FFF] text-[#5200FF] border border-[#5200FF] hover:border-[#FFF] hover:bg-[[#FF6F61] rounded-full text-[15px]">
+                                  Log In
+                                </Button>
+                              </a>
+                              {/* <a
+                                href={
+                                  currentPath === "/listener-recruitment"
+                                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                                    : "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+                                }
+                              >
+                                <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                                  {currentPath === "/listener-recruitment"
+                                    ? "Apply Now"
+                                    : "Connect Now"}
+                                </Button>
+                              </a> */}
+                              <a
+                                href={
+                                  currentPath === "/"
+                                    ? "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+                                    : currentPath === "/listener-recruitment"
+                                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                                    : "https://innovacare.tech/listenerhub/signup"
+                                }
+                              >
+                                <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                                  {currentPath === "/listener-recruitment"
+                                    ? "Apply Now"
+                                    : "Connect Now"}
+                                </Button>
+                              </a>
+                            </div>
+
                             {currentPath === "/listener-recruitment" && (
                               <Link
                                 smooth
@@ -222,7 +258,7 @@ function NavbarMobile() {
                       </div>
                       <div>
                         <p className="mt-8 text-xs text-left">
-                          © 2025 Attune. All rights reserved
+                          © 2025 FeelAttune. All rights reserved
                         </p>
                         <div className="my-4 border-[0.5px] border-[black] w-full" />
                         <p className="mt-4 text-xs text-left capitalize">
@@ -267,7 +303,9 @@ function NavbarMobile() {
 
             <a
               href={
-                currentPath === "/listener-recruitment"
+                currentPath === "/"
+                  ? "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+                  : currentPath === "/listener-recruitment"
                   ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
                   : "https://innovacare.tech/listenerhub/signup"
               }

@@ -41,7 +41,7 @@ function NoNeed() {
               </h1>
             </div>
 
-            <div className="flex justify-end items-end">
+            <div className="flex items-end justify-end">
               <img
                 src="/desktop1/no-need/bird.svg"
                 alt="Bird"
@@ -58,8 +58,8 @@ function NoNeed() {
             />
           </div>
 
-          <div className="grid grid-rows-2 col-span-3">
-            <div className="flex justify-center items-center">
+          <div className="grid col-span-3 grid-rows-2">
+            <div className="flex items-center justify-center">
               <img
                 src="/desktop1/no-need/mood.svg"
                 alt="Moods"
@@ -83,7 +83,7 @@ function NoNeed() {
               <br />
               alone.
             </h2>
-            <a href="https://innovacare.tech/listenerhub/signup" className="relative z-10">
+            <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use" className="relative z-10">
               <button className="rounded-full text-white bg-[#5200FF] hover:bg-purple-800 text-[16px] font-[500] p-[10px] w-[115px] text-center">
                 Get Started
               </button>

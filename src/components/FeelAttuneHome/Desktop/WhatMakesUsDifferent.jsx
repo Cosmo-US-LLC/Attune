@@ -5,14 +5,14 @@ const features = [
     Real Conversations,<br/> Real Impact
     </>),
     description:
-      "Attune connects you to compassionate listeners who provide a supportive environment for sharing your thoughts and feelings. It's a space to gain clarity, set goals, and explore strategies for emotional well-being.",
+      "FeelAttune  connects you to compassionate listeners who provide a supportive environment for sharing your thoughts and feelings. It's a space to gain clarity, set goals, and explore strategies for emotional well-being.",
     icon: "/desktop1/what-makes/card-1.svg", // Replace with an actual image or SVG if needed
   },
   {
     id: 2,
     title: "Accessible and Affordable Support",
     description:
-      "No more barriers like high costs or long wait times. Attune offers connection to immediate, non-clinical emotional support that fits your schedule and budget.",
+      "No more barriers like high costs or long wait times. FeelAttune  offers connection to immediate, non-clinical emotional support that fits your schedule and budget.",
     icon: "/desktop1/what-makes/card-2.svg", // Replace with an actual image or SVG if needed
   },
   {
@@ -26,7 +26,7 @@ const features = [
     id: 4,
     title: <>No Stigma,<br />Just Support</>,
     description:
-      "Seeking support has never been easier. Attune normalizes conversations about mental wellness, creating a space that prioritizes connection and growth over clinical formality.",
+      "Seeking support has never been easier. FeelAttune  normalizes conversations about mental wellness, creating a space that prioritizes connection and growth over clinical formality.",
     icon: "/desktop1/what-makes/card-4.svg", // Replace with an actual image or SVG if needed
   },
   {
@@ -47,7 +47,7 @@ function WhatMakesUsDifferent() {
           What Makes Us Different?
         </h1>
         <p className="text-lg text-left max-w-[677px]">
-          At Attune, we understand that mental wellness is personal, and
+          At FeelAttune , we understand that mental wellness is personal, and
           everyone’s journey is unique. Here’s why our platform is the right
           place for you.
         </p>
@@ -69,12 +69,12 @@ function WhatMakesUsDifferent() {
         </div>
 
         <p className="relative z-10 text-[18px] leading-[26px] max-w-[630px]">
-          Choose Attune for an approachable, supportive, and stigma-free experience in managing your emotional health and well-being.
+          Choose FeelAttune  for an approachable, supportive, and stigma-free experience in managing your emotional health and well-being.
         </p>
 
         {/* Footer Section */}
         <div className="relative z-0">
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use">
             <button className="bg-[#5200FF] hover:bg-purple-800 relative z-10 text-white py-3 px-6 rounded-full">
               Connect Now
             </button>

@@ -10,9 +10,9 @@ function FAQAccordion() {
   const questions = [
     {
       id: "01",
-      question: "What is Attune?",
+      question: "What is FeelAttune?",
       answer:
-        "Attune is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
+        "FeelAttune is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
     },
     {
       id: "02",

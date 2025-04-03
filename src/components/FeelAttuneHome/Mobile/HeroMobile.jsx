@@ -10,11 +10,11 @@ function HeroMobile() {
           Your Safe Space for <span className='text-[#5200FF] italic'>Support</span>
         </p>
         <p className='text-[15px] font-[500] leading-[26px] w-[350px]'>
-        In a world where 1 in 5 adults experience mental health challenges, Attune offers a revolutionary approach to emotional well-being. Our platform connects you with compassionate Listeners, providing a judgment-free zone for sharing your thoughts and feelings.
+        In a world where 1 in 5 adults experience mental health challenges, FeelAttune offers a revolutionary approach to emotional well-being. Our platform connects you with compassionate Listeners, providing a judgment-free zone for sharing your thoughts and feelings.
         </p>
       </div>
       
-      <a href="https://innovacare.tech/listenerhub/signup">
+      <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use">
         <Button className="bg-[#5200FF] rounded-full text-[15px]">Connect to a Listener</Button>
       </a>
 

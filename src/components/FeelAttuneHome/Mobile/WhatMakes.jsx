@@ -18,12 +18,12 @@ const cards = [
   {
     img: "/mobile1/whatMakes/card1.svg",
     title: "Real Conversations, Real Impact",
-    body: "Attune connects you to compassionate listeners who provide a supportive environment for sharing your thoughts and feelings. It's a space to gain clarity, set goals, and explore strategies for emotional well-being.",
+    body: "FeelAttune connects you to compassionate listeners who provide a supportive environment for sharing your thoughts and feelings. It's a space to gain clarity, set goals, and explore strategies for emotional well-being.",
   },
   {
     img: "/mobile1/whatMakes/card2.svg",
     title: "Accessible and Affordable Support",
-    body: "No more barriers like high costs or long wait times. Attune offers connection to immediate, non-clinical emotional support that fits your schedule and budget.",
+    body: "No more barriers like high costs or long wait times. FeelAttune offers connection to immediate, non-clinical emotional support that fits your schedule and budget.",
   },
   {
     img: "/mobile1/whatMakes/card3.svg",
@@ -33,7 +33,7 @@ const cards = [
   {
     img: "/mobile1/whatMakes/card4.svg",
     title: <>No Stigma Just<br /> Support</>,
-    body: "Seeking support has never been easier. Attune normalizes conversations about mental wellness, creating a space that prioritizes connection and growth over clinical formality.",
+    body: "Seeking support has never been easier. FeelAttune normalizes conversations about mental wellness, creating a space that prioritizes connection and growth over clinical formality.",
   },
   {
     img: "/mobile1/whatMakes/card5.svg",
@@ -50,7 +50,7 @@ function WhatMakes() {
           <br /> Different?
         </h1>
         <p className="text-[15px] leading-[20px]">
-          At Attune, we understand that mental wellness is personal, and
+          At FeelAttune, we understand that mental wellness is personal, and
           everyone’s journey is unique. Here’s why our platform is the right
           choice for you:
         </p>
@@ -125,12 +125,12 @@ function WhatMakes() {
       </Carousel>
 
       <p className="text-[15px] leading-[20px] w-[350px]">
-        Choose Attune for an approachable, supportive, and stigma-free
+        Choose FeelAttune for an approachable, supportive, and stigma-free
         experience in managing your emotional health and well-being.
       </p>
 
       <div className="flex justify-center">
-        <a href="https://innovacare.tech/listenerhub/signup">
+        <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use">
           <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">
             Connect Now
           </Button>
