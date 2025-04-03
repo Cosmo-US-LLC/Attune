@@ -15,14 +15,14 @@ function NoNeed() {
                 <img src="/mobile1/noNeed/bird.svg" alt="Bird" className='object-contain absolute -right-7 -top-14 h-[40px] w-[45px]' />
             </div>
 
-            <div className='flex justify-between items-center mb-4'>
+            <div className='flex items-center justify-between mb-4'>
                 <img src="/mobile1/noNeed/moods.svg" alt="Bird" className='object-contain h-[75px] w-[50px]' />
                 <img src="/mobile1/noNeed/clouds.svg" alt="Bird" className='object-contain pb-[10px] h-[34px] w-[63px]' />
             </div>
         </div>
 
         <div className='relative bg-[#FFD23F] h-[61px] px-[33px] flex items-center'>
-            <a href="https://innovacare.tech/listenerhub/signup">
+            <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use">
                 <button className='rounded-full hover:bg-purple-800 px-[14px] py-[10px] text-[15px] bg-[#5200FF] text-center w-fit text-white font-[500] whitespace-nowrap'>
                     Get Started
                 </button>

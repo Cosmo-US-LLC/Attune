@@ -47,7 +47,7 @@ function Listener() {
                   className="bg-[#5200FF] flex flex-row text-white text-[16px] md:text-[16px] font-[600] py-2 md:py-4 px-8 md:px-16 rounded-full hover:bg-purple-800"
                   onClick={() =>
                     (window.location.href =
-                      "https://innovacare.tech/listenerhub/signup")
+                      "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use")
                   }
                 >
                   Find Your Listener

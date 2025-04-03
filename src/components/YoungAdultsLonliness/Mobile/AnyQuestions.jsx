@@ -10,8 +10,8 @@ function AnyQuestions() {
   const questions = [
     {
       id: "01",
-      question: "What is Attune?",
-      answer: "Attune is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
+      question: "What is FeelAttune?",
+      answer: "FeelAttune is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
     },
     {
       id: "02",
@@ -24,7 +24,7 @@ function AnyQuestions() {
       answer: (
         <div>
           <p>The Listeners offer a supportive and judgment-free space to share your thoughts and feelings. Listeners can help you:</p>
-          <ul className="list-disc pl-6 mt-2">
+          <ul className="pl-6 mt-2 list-disc">
             <li>Reframe experiences and gain fresh perspective and clarity about your challenges.</li>
             <li>Set and achieve personal goals, such as improving confidence or managing life transitions.</li>
             <li>Explore strategies to enhance emotional well-being and motivation.</li>
@@ -64,7 +64,7 @@ function AnyQuestions() {
         {questions?.map((question) => (
           <AccordionItem key={question?.id} value={question?.id} className={"px-[14px] data-[state=open]:bg-[#e5ff7d] duration-200 border-black " + (question?.id == "05" && "border-transparent")}>
             <AccordionTrigger className="">
-              <div className="flex gap-2 items-center">
+              <div className="flex items-center gap-2">
                 <span className="text-[#95ADF0] text-[24px] font-bold leading-[120%]">{question?.id}</span>
                 <span className="text-left text-[16px] font-bold leading-[22px]">{question?.question}</span>
               </div>

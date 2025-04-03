@@ -33,7 +33,7 @@ function WhyListeners() {
           <h1 className="text-[38px] text-center font-miniature">
             Mental Health <br /> Challenges are <br /> More Common <br /> Than You Think
           </h1>
-          <a href="https://innovacare.tech/listenerhub/signup" className="w-fit mx-auto flex justify-center">
+          <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use" className="flex justify-center mx-auto w-fit">
             <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px] hover:bg-purple-800">
               Connect Now
             </Button>

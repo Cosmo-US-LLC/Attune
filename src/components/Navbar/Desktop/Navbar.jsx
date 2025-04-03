@@ -126,20 +126,31 @@ function Navbar() {
                 </Link>
               )}
             </div>
-            <div className="w-[160px] h-[37px]">
-              <a
-                href={
-                  currentPath === "/listener-recruitment"
-                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                    : "https://innovacare.tech/listenerhub/signup"
-                }
-              >
-                <button className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500">
-                  {currentPath === "/listener-recruitment"
-                    ? "Apply Now"
-                    : "Connect Now"}
-                </button>
-              </a>
+            <div className="flex items-center space-x-4">
+              <div className="">
+                <a href="https://innovacare.tech/listenerhub/login">
+                  <button className="w-[100px] h-[37px] border border-[#5200FF] bg-[#FFF] text-[#5200FF] rounded-[34.878px] hover:bg-red-500 hover:text-white hover:border-white">
+                    Log In
+                  </button>
+                </a>
+              </div>
+              <div className="w-[160px] h-[37px]">
+                <a
+                  href={
+                    currentPath === "/"
+                      ? "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+                      : currentPath === "/listener-recruitment"
+                      ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                      : "https://innovacare.tech/listenerhub/signup"
+                  }
+                >
+                  <button className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500">
+                    {currentPath === "/listener-recruitment"
+                      ? "Apply Now"
+                      : "Connect Now"}
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </nav>

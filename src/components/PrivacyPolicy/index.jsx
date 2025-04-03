@@ -14,7 +14,7 @@ function PrivacyPolicy() {
         <div>
             <p className="2xl:text-[18px] xltext-[18px] lg:text-[18px] md:text-[18px] sm:text-[14px] text-[14px] font-[400]">InnovaCARE Tech (“InnovaCARE Tech”, “we”, “us”, or “our”), operating as FeelAttune respects your privacy and is committed to protecting it through our compliance with this policy.</p> <br />
             <p className="2xl:text-[18px] xltext-[18px] lg:text-[18px] md:text-[18px] sm:text-[14px] text-[14px] font-[400]">
-            ​ The FeelAttune.com website, including offered products and services, is owned and operated by CARE Group. The Innovacare Tech products and services are operated by the means of an online platform that is accessible to all users on the web and the mobile application (collectively referred to as the “Platform”). The Platform includes two components:
+            ​The FeelAttune.com website, including offered products and services, is owned and operated by CARE Group. The Innovacare Tech products and services are operated by the means of an online platform that is accessible to all users on the web and the mobile application (collectively referred to as the “Platform”). The Platform includes two components:
             </p> <br />
             <ul className="">
               <li className="2xl:text-[18px] xltext-[18px] lg:text-[18px] md:text-[18px] sm:text-[14px] text-[14px] font-[400]">•	on-demand access to Listeners by secure real-time text voice and video communication for community connection, social network, and personal communication ("Listening Services"), and</li>

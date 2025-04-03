@@ -23,7 +23,7 @@ function Hero() {
           Experience the power of real connection—judgment-free, accessible, and
           affordable support for young adults navigating life's challenges.
         </p>
-        <a href="https://innovacare.tech/listenerhub/signup" className="w-fit flex">
+        <a href="https://innovacare.tech/listenerhub/signup" className="flex w-fit">
           <button className="mt-6 bg-[#5200FF] flex flex-row text-white text-[16px] font-[500] py-2 px-10 rounded-full hover:bg-purple-800">
             Talk to Someone Now
             <svg
