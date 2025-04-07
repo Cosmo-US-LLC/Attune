@@ -295,13 +295,13 @@ function NavbarMobile() {
 
               <Link
                 to="/"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setSideOpen(false);
-                  setTimeout(() => {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }, 100);
-                }}
+                // onClick={(e) => {
+                //   e.preventDefault();
+                //   setSideOpen(false);
+                //   setTimeout(() => {
+                //     window.scrollTo({ top: 0, behavior: "smooth" });
+                //   }, 100);
+                // }}
               >
                 <img
                   src="/mobile1/feel-attune-logo.webp"
