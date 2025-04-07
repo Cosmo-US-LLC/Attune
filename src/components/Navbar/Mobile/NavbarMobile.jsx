@@ -136,34 +136,44 @@ function NavbarMobile() {
                         </div>
                         <div className="relative mt-8">
                           <div className="flex flex-col gap-4 font-[500]">
-                            <Link
-                              smooth
-                              to={`${window.location.pathname}#mobile-path-to-support`}
-                              onClick={(e) => {
-                                handleClick("mobile-path-to-support", 50);
-                              }}
-                            >
-                              Path To Support
-                            </Link>
-                            <Link
-                              smooth
-                              to={`${window.location.pathname}#mobile-how-it-works`}
-                              onClick={(e) => {
-                                handleClick("mobile-how-it-works", 50);
-                              }}
-                            >
-                              How It Works
-                            </Link>
-                            <Link
-                              smooth
-                              to={`${window.location.pathname}#mobile-our-approach`}
-                              onClick={(e) => {
-                                handleClick("mobile-our-approach", 50);
-                              }}
-                            >
-                              Our Approach
-                            </Link>
-                            {currentPath !== "/listener-recruitment" && (
+                            {currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
+
+                              <Link
+                                smooth
+                                to={`${window.location.pathname}#mobile-path-to-support`}
+                                onClick={(e) => {
+                                  handleClick("mobile-path-to-support", 50);
+                                }}
+                              >
+                                Path To Support
+                              </Link>
+                            )}
+
+                            {currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
+
+                              <Link
+                                smooth
+                                to={`${window.location.pathname}#mobile-how-it-works`}
+                                onClick={(e) => {
+                                  handleClick("mobile-how-it-works", 50);
+                                }}
+                              >
+                                How It Works
+                              </Link>
+                            )}
+                            {currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
+
+                              <Link
+                                smooth
+                                to={`${window.location.pathname}#mobile-our-approach`}
+                                onClick={(e) => {
+                                  handleClick("mobile-our-approach", 50);
+                                }}
+                              >
+                                Our Approach
+                              </Link>
+                            )}
+                            {currentPath !== "/listener-recruitment" && currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
                               <Link
                                 smooth
                                 to={`${window.location.pathname}#mobile-FAQs`}
@@ -184,7 +194,7 @@ function NavbarMobile() {
                                 href={
                                   currentPath === "/listener-recruitment"
                                     ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                                    : "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+                                    : "https://signup.feelattune.com/sign-up"
                                 }
                               >
                                 <Button className="bg-[#FF6F61] rounded-full text-[15px]">
@@ -198,8 +208,8 @@ function NavbarMobile() {
                                   currentPath === "/"
                                     ? "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
                                     : currentPath === "/listener-recruitment"
-                                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                                    : "https://innovacare.tech/listenerhub/signup"
+                                      ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                                      : "https://innovacare.tech/listenerhub/signup"
                                 }
                               >
                                 <Button className="bg-[#FF6F61] rounded-full text-[15px]">
@@ -306,8 +316,8 @@ function NavbarMobile() {
                 currentPath === "/"
                   ? "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
                   : currentPath === "/listener-recruitment"
-                  ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                  : "https://innovacare.tech/listenerhub/signup"
+                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                    : "https://innovacare.tech/listenerhub/signup"
               }
             >
               <Button className="bg-[#FF6F61] rounded-full text-[15px]">

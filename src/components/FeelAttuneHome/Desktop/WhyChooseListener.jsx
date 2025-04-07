@@ -219,7 +219,7 @@ function WhyChooseListener() {
         </table>
 
         {/* Call-to-Action Button */}
-        <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use" className="w-fit mx-auto flex justify-center mt-[47px]">
+        <a href="https://signup.feelattune.com/sign-up" className="w-fit mx-auto flex justify-center mt-[47px]">
           <button className="bg-[#5200FF] hover:bg-purple-800 text-white py-3 px-8 rounded-full text-lg">
             Get Started
           </button>

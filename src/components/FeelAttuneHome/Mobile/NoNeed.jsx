@@ -22,7 +22,7 @@ function NoNeed() {
         </div>
 
         <div className='relative bg-[#FFD23F] h-[61px] px-[33px] flex items-center'>
-            <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use">
+            <a href="https://signup.feelattune.com/sign-up">
                 <button className='rounded-full hover:bg-purple-800 px-[14px] py-[10px] text-[15px] bg-[#5200FF] text-center w-fit text-white font-[500] whitespace-nowrap'>
                     Get Started
                 </button>

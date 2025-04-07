@@ -18,7 +18,7 @@ function HowItWorks() {
       </div>
 
       {/* Call-to-Action Button */}
-      <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use" className="flex justify-center mx-auto mt-8 w-fit">
+      <a href="https://signup.feelattune.com/sign-up" className="flex justify-center mx-auto mt-8 w-fit">
         <button className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[16px] hover:bg-purple-800">
           Sign up now
         </button>

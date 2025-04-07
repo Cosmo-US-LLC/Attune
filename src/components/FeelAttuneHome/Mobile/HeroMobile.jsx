@@ -14,7 +14,7 @@ function HeroMobile() {
         </p>
       </div>
       
-      <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use">
+      <a href="https://signup.feelattune.com/sign-up">
         <Button className="bg-[#5200FF] rounded-full text-[15px]">Connect to a Listener</Button>
       </a>
 
