@@ -44,27 +44,37 @@ function FooterMobile() {
         </p>
         <div className="relative flex flex-row items-center justify-between mt-8">
           <div className="flex flex-col gap-4 font-[500]">
-            <a
-              href="#path-to-support"
-              onClick={(e) => handleScroll(e, "mobile-path-to-support", 70)}
-            >
-              Path To Support
-            </a>
-            <a
-              href="#how-it-works"
-              onClick={(e) => handleScroll(e, "mobile-how-it-works", 70)}
-            >
-              How It Works
-            </a>
-            <a
-              href="#our-approach"
-              onClick={(e) =>
-                handleScroll(e, "mobile-our-approach", 70)
-              }
-            >
-              Our Approach
-            </a>
-            {currentPath !== "/listener-recruitment" && (
+            {currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
+
+              <a
+                href="#path-to-support"
+                onClick={(e) => handleScroll(e, "mobile-path-to-support", 70)}
+              >
+                Path To Support
+              </a>
+            )}
+            {currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
+
+              <a
+                href="#how-it-works"
+                onClick={(e) => handleScroll(e, "mobile-how-it-works", 70)}
+              >
+
+                How It Works
+              </a>
+            )}
+            {currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
+
+              <a
+                href="#our-approach"
+                onClick={(e) =>
+                  handleScroll(e, "mobile-our-approach", 70)
+                }
+              >
+                Our Approach
+              </a>
+            )}
+            {currentPath !== "/listener-recruitment" && currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
               <a
                 href="#FAQs"
                 onClick={(e) => handleScroll(e, "mobile-FAQs", 70)}

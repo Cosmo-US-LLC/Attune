@@ -58,7 +58,7 @@ export default function ListenerMobile() {
                       className="bg-[#5200FF] rounded-full text-[15px]"
                       onClick={() =>
                         (window.location.href =
-                          "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use")
+                          "https://signup.feelattune.com/sign-up")
                       }
                     >
                       Find Your Listener

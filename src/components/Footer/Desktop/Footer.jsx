@@ -51,6 +51,8 @@ function Footer() {
             </div>
             <div className="space-y-[10px]">
               <div className="text-[16px] font-[500] mt-8 flex gap-10 relative z-40">
+              {currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
+
                 <a
                   className="relative z-10"
                   href="#path-to-support"
@@ -58,19 +60,27 @@ function Footer() {
                 >
                   Path To Support
                 </a>
+              )}
+             {currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
+
                 <a
                   href="#how-it-works"
                   onClick={(e) => handleScroll(e, "how-it-works", 90)}
                 >
                   How It Works
                 </a>
+                )}
+
+{currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
+
                 <a
                   href="#our-approach"
                   onClick={(e) => handleScroll(e, "our-approach", 90)}
                 >
                   Our Approach
                 </a>
-                {currentPath !== "/listener-recruitment" && (
+)}
+                {currentPath !== "/listener-recruitment" && currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
                   <a href="#FAQs" onClick={(e) => handleScroll(e, "FAQs", 90)}>
                     FAQs
                   </a>

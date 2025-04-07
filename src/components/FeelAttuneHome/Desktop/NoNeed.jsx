@@ -83,7 +83,7 @@ function NoNeed() {
               <br />
               alone.
             </h2>
-            <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use" className="relative z-10">
+            <a href="https://signup.feelattune.com/sign-up" className="relative z-10">
               <button className="rounded-full text-white bg-[#5200FF] hover:bg-purple-800 text-[16px] font-[500] p-[10px] w-[115px] text-center">
                 Get Started
               </button>
