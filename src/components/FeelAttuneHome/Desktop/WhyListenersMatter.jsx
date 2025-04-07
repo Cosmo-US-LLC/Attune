@@ -27,7 +27,7 @@ function WhyListenersMatter() {
           Think
         </p>
         <a
-          href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+          href="https://signup.feelattune.com/sign-up"
           className="flex justify-center mx-auto w-fit"
         >
           <button className="bg-[#5200FF]  hover:bg-red-500 text-white py-3 px-6 w-fit mx-auto rounded-full">

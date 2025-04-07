@@ -132,7 +132,7 @@ function YourPathCard({ img, imgClass = "", title, classes, points, buttonLabel 
           ))}
         </ul>
 
-        <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use" className="pt-10 w-fit">
+        <a href="https://signup.feelattune.com/sign-up" className="pt-10 w-fit">
           <button className="w-fit bg-[#5200FF] text-white py-2 px-6 rounded-full text-[16px] font-[500] hover:bg-purple-800">
              {buttonLabel}
           </button>

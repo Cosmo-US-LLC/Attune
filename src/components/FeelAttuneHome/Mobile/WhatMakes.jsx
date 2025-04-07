@@ -130,7 +130,7 @@ function WhatMakes() {
       </p>
 
       <div className="flex justify-center">
-        <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use">
+        <a href="https://signup.feelattune.com/sign-up">
           <Button className="bg-[#5200FF] rounded-full font-[500] text-[15px]">
             Connect Now
           </Button>

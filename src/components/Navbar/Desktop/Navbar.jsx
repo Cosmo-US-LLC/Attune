@@ -6,6 +6,7 @@ function Navbar() {
   const location = useLocation();
 
   const currentPath = location.pathname;
+  console.log(currentPath)
 
   useEffect(() => {
     if (location.hash) {
@@ -57,7 +58,7 @@ function Navbar() {
           <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
             <Link
               smooth
-              to={`${currentPath}`}
+              to="/"
               className="flex items-center"
               onClick={(e) => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
@@ -71,6 +72,8 @@ function Navbar() {
             </Link>
 
             <div className="flex items-center space-x-8">
+            {currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
+
               <Link
                 smooth
                 to={`${currentPath}#path-to-support`}
@@ -81,6 +84,9 @@ function Navbar() {
               >
                 Path To Support
               </Link>
+            )}
+              {currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
+
               <Link
                 smooth
                 to={`${currentPath}#how-it-works`}
@@ -91,6 +97,8 @@ function Navbar() {
               >
                 How It Works
               </Link>
+              )}
+              {currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
               <Link
                 smooth
                 to={`${currentPath}#our-approach`}
@@ -101,7 +109,8 @@ function Navbar() {
               >
                 Our Approach
               </Link>
-              {currentPath !== "/listener-recruitment" && (
+              )}
+              {currentPath !== "/listener-recruitment" && currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
                 <Link
                   smooth
                   to={`${currentPath}#FAQs`}
@@ -138,7 +147,7 @@ function Navbar() {
                 <a
                   href={
                     currentPath === "/"
-                      ? "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+                      ? "https://signup.feelattune.com/sign-up"
                       : currentPath === "/listener-recruitment"
                       ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
                       : "https://innovacare.tech/listenerhub/signup"

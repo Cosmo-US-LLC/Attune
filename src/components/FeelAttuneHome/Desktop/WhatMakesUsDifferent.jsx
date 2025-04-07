@@ -74,7 +74,7 @@ function WhatMakesUsDifferent() {
 
         {/* Footer Section */}
         <div className="relative z-0">
-          <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use">
+          <a href="https://signup.feelattune.com/sign-up">
             <button className="bg-[#5200FF] hover:bg-purple-800 relative z-10 text-white py-3 px-6 rounded-full">
               Connect Now
             </button>

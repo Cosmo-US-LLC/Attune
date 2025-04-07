@@ -18,7 +18,7 @@ function Hero() {
             judgment-free zone for sharing your thoughts and feelings.
           </p>
 
-          <a href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use">
+          <a href="https://signup.feelattune.com/sign-up">
             <button className="bg-[#5200FF] text-white text-[16px] font-[500] py-2 px-4 rounded-full hover:bg-purple-800">
               Connect to a Listener
             </button>

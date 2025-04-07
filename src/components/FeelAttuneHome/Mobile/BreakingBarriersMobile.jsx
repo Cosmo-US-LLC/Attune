@@ -103,7 +103,7 @@ function BreakingBarriersMobile() {
           </ul>
   
           <a
-            href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+            href="https://signup.feelattune.com/sign-up"
             className="mt-4 w-fit"
           >
             <button className="w-fit bg-[#5200FF] text-white py-2 px-6 rounded-full text-[16px] font-[500] hover:bg-purple-800">

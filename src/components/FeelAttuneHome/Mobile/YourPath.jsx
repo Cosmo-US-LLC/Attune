@@ -106,7 +106,7 @@ function SupportCards({ bg, img, title, points }) {
       </div>
 
       <a
-        href="https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%[…]use&TermsofUse=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+        href="https://signup.feelattune.com/sign-up"
         className="flex justify-center mx-auto w-fit"
       >
         <Button className="bg-[#5200FF] rounded-full text-[15px] mt-4">
