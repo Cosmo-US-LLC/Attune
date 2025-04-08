@@ -44,30 +44,45 @@ const CountdownTimer = () => {
   }, [deadline]);
 
   return (
-    <div className="bg-[#FF6F61] py-1 flex items-center justify-center text-white text-center gap-10 max-sm:gap-4 ">
-      <p className="text-[18px] max-sm:text-[12px] max-sm:w-[192px] text-left font-[500]">
-        Get Your First Session Free Of Charge If You Book Within
-      </p>
-      <div className="flex items-center justify-center gap-6 ">
-        <div className="flex flex-col items-center w-[30px] max-sm:w-[15px]  ">
-          <p className="text-[28px] max-sm:text-[20px] font-[500] font-miniature h-[33px] max-sm:h-[100%]  ">
-            {timeLeft.hours < 10 ? `0${timeLeft.hours}` : timeLeft.hours}
-          </p>
-          <p className="text-[12px] max-sm:text-[12px] font-[400] text-[#E5FF7D]">Hours</p>
-        </div>
-        <div className="flex flex-col  items-center w-[30px] max-sm:w-[15px]  ">
-          <p className="text-[28px] font-[500] max-sm:text-[20px] font-miniature h-[33px] max-sm:h-[100%] ">
-            {timeLeft.minutes < 10 ? `0${timeLeft.minutes}` : timeLeft.minutes}
-          </p>
-          <p className="text-[12px] font-[400] max-sm:text-[12px] text-[#E5FF7D]">Min</p>
-        </div>
-        <div className="flex flex-col items-center w-[30px] max-sm:w-[15px] ">
-          <p className="text-[28px] font-[500] max-sm:text-[20px] font-miniature h-[33px] max-sm:h-[100%]">
-            {timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds}
-          </p>
-          <p className="text-[12px] font-[400] max-sm:text-[12px] text-[#E5FF7D]">Sec</p>
+    <div className="bg-[#FF6F61] py-1 flex flex-row max-sm:flex-col justify-center items-center gap-10 max-sm:gap-3">
+      <div className="flex flex-row items-center justify-center gap-10 text-center text-white max-sm:gap-4">
+        <p className="text-[18px] max-sm:text-[12px] max-sm:w-[210px] text-left font-[500]">
+          Get Your First Session Free Of Charge If You Book Within
+        </p>
+        <div className="flex items-center justify-center gap-6 ">
+          <div className="flex flex-col items-center w-[30px] max-sm:w-[15px]  ">
+            <p className="text-[28px] max-sm:text-[20px] font-[500] font-miniature h-[33px] max-sm:h-[100%]  ">
+              {timeLeft.hours < 10 ? `0${timeLeft.hours}` : timeLeft.hours}
+            </p>
+            <p className="text-[12px] max-sm:text-[12px] font-[400] text-[#E5FF7D]">
+              Hours
+            </p>
+          </div>
+          <div className="flex flex-col  items-center w-[30px] max-sm:w-[15px]  ">
+            <p className="text-[28px] font-[500] max-sm:text-[20px] font-miniature h-[33px] max-sm:h-[100%] ">
+              {timeLeft.minutes < 10
+                ? `0${timeLeft.minutes}`
+                : timeLeft.minutes}
+            </p>
+            <p className="text-[12px] font-[400] max-sm:text-[12px] text-[#E5FF7D]">
+              Min
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-[30px] max-sm:w-[15px] ">
+            <p className="text-[28px] font-[500] max-sm:text-[20px] font-miniature h-[33px] max-sm:h-[100%]">
+              {timeLeft.seconds < 10
+                ? `0${timeLeft.seconds}`
+                : timeLeft.seconds}
+            </p>
+            <p className="text-[12px] font-[400] max-sm:text-[12px] text-[#E5FF7D]">
+              Sec
+            </p>
+          </div>
         </div>
       </div>
+      <p className="w-[300px] capitalize leading-[21px] text-[16px] text-white max-sm:text-[12px] max-sm:w-[330px] text-center font-[500]">
+        Use code <strong className="text-[17px]">Canadian2025</strong> to Claim your 15 min session
+      </p>
     </div>
   );
 };

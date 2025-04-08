@@ -43,7 +43,7 @@ function Navbar() {
   return (
     <>
       <div
-        className={`${currentPath === "/" ? "pb-[9.2rem]" : "pb-[5.5rem]"} `}
+        className={`${currentPath === "/" ? "pb-[9.4rem]" : "pb-[5.5rem]"} `}
       >
         <div className="fixed top-0 w-[100%] z-[99]">
           {currentPath === "/" && <CountdownTimer />}

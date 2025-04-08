@@ -51,7 +51,7 @@ function NavbarMobile() {
 
   return (
     <>
-      <div className={`${currentPath === "/" ? "pb-[7.5rem]" : "pb-[3.5rem]"}`}>
+      <div className={`${currentPath === "/" ? "pb-[9.3rem]" : "pb-[3.5rem]"}`}>
         <div className="fixed top-0 w-[100%] z-[99]">
           {currentPath === "/" && <CountdownTimer />}
           <div className="bg-white h-[68px] flex justify-between items-center py-[14px] px-5">
