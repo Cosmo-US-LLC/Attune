@@ -81,7 +81,7 @@ const CountdownTimer = () => {
         </div>
       </div>
       <p className="w-[300px] capitalize leading-[21px] text-[16px] text-white max-sm:text-[13px] max-sm:w-[350px] text-center font-[500]">
-        Use code <strong className="text-[13px] font-[700]">Canadian2025</strong> to Claim your 15 min session
+        Use code <strong className="text-[18px] max-sm:text-[13px] font-[700]">Canadian2025</strong> to Claim your 15 min session
       </p>
     </div>
   );
