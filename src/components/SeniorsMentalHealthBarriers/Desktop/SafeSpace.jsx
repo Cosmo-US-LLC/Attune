@@ -62,7 +62,7 @@ function SafeSpace() {
                 here to help—anytime, anywhere.
               </p>
               <div className="flex justify-center mt-6 md:justify-start">
-                <a href="https://innovacare.tech/listenerhub/signup">
+                <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
                   <button className="bg-[#5200FF] flex flex-row text-white text-[14px] md:text-[16px] font-[500] py-2 md:py-4 px-8 md:px-8 rounded-full hover:bg-purple-800">
                     Find Your Listener
                     <svg

@@ -49,7 +49,7 @@ function HowItWorks() {
 
       {/* Call-to-Action Button */}
       <div className="flex justify-center mt-8">
-        <a href="https://innovacare.tech/listenerhub/signup">
+        <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
           <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#5200FF] hover:bg-purple-800">
             <button className="text-white font-[500] text-[16px]">Sign up now</button>
             <svg

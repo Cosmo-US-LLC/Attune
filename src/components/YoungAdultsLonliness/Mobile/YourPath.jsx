@@ -86,7 +86,7 @@ function YourPath() {
           <CarouselNext className="right-0 bg-white border border-black disabled:border-neutral-500" />
         </Carousel>
       </div>
-      <a href="https://innovacare.tech/listenerhub/signup">
+      <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
         <Button className="bg-[#5200FF] rounded-full text-[15px] !mt-5 ml-3">
           {" "}
           Start Your Journey to Connection Today
