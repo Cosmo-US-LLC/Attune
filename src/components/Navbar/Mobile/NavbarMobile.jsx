@@ -51,9 +51,9 @@ function NavbarMobile() {
 
   return (
     <>
-      <div className={`${currentPath === "/" ? "pb-[9.3rem]" : "pb-[3.5rem]"}`}>
+      <div className={`${currentPath === "/" ? "pb-[3.5rem]" : "pb-[3.5rem]"}`}>
         <div className="fixed top-0 w-[100%] z-[99]">
-          {currentPath === "/" && <CountdownTimer />}
+          {/* {currentPath === "/" && <CountdownTimer />} */}
           <div className="bg-white h-[68px] flex justify-between items-center py-[14px] px-5">
             <div className="flex gap-3 relative z-[100]">
               <Sheet open={sideOpen} onOpenChange={setSideOpen}>
@@ -295,10 +295,10 @@ function NavbarMobile() {
             <a
               href={
                 currentPath === "/"
-                  ? "https://signup.feelattune.com/t/jcLDEqP45Aus?Terms_of_Use=https%3A%2F%2Ffeelattune.com%2Fterms-of-use"
+                  ? "https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
                   : currentPath === "/listener-recruitment"
                   ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                  : "https://innovacare.tech/listenerhub/signup"
+                  : "https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
               }
             >
               <Button className="bg-[#FF6F61] rounded-full text-[15px]">

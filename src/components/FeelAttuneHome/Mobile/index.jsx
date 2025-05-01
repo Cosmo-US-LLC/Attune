@@ -15,6 +15,7 @@ import OurCore from './OurCore'
 import { List } from 'lucide-react'
 import ListenerMobile from './ListenerMobile'
 import BreakingBarriersMobile from './BreakingBarriersMobile'
+import Sessions from './Sessions'
 
 function FeelAttuneHomeMobile() {
   return (
@@ -25,6 +26,8 @@ function FeelAttuneHomeMobile() {
       <BreakingBarriersMobile/>
       <ListenerMobile/>
       <HowIt />
+      <Sessions/>
+
       <NoNeed />
       <WhatMakes />
       <Testimonials />
