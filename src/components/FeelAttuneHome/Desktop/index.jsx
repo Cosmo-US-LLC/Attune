@@ -16,6 +16,7 @@ import OurCoreValues from './OurCore'
 import Listener from './Listener'
 import BreakingBarriers from './BreakingBarriers'
 import CountdownTimer from '../../ui/CountdownTimer'
+import Sessions from './Sessions'
 
 function FeelAttuneHomeDesktop() {
   return (
@@ -26,6 +27,7 @@ function FeelAttuneHomeDesktop() {
       <BreakingBarriers />
       <Listener />
       <HowItWorks />
+      <Sessions/>
       <NoNeed />
       <WhatMakesUsDifferent />
       <Testimonials />

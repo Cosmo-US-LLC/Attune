@@ -19,7 +19,7 @@ export default function FeelHeard() {
               </span>
             </h3>
             <a
-              href="https://innovacare.tech/listenerhub/signup"
+              href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
               className="flex w-fit"
             >
               <button className="bg-[#5200FF] text-white w-[160px] hover:bg-purple-800   py-3 rounded-full">

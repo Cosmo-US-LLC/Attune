@@ -41,7 +41,7 @@ function UnspokenChallengesOfMiddleAgeLife() {
           />
         </div>
         <div className="flex items-center justify-center">
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
             <button className="mt-6 bg-[#5200FF] flex flex-row text-white text-[16px] font-[500] py-5 px-10 rounded-full hover:bg-purple-800">
             Combat Loneliness With Real Connection. Learn More
               <svg

@@ -18,7 +18,7 @@ function WhyListenersMatter() {
           Care and Self
         </p>
         <div className="mx-auto w-fit">
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
             <button className="bg-[#FF6F61] text-white py-3 hover:bg-red-500 px-6 rounded-full">
               Connect Now
             </button>

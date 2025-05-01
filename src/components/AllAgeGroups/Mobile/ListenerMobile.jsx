@@ -79,7 +79,7 @@ export default function ListenerMobile() {
                       </div>
                     </div>
                     <div>
-                      <a href="https://innovacare.tech/listenerhub/signup">
+                      <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
                         <Button className="bg-[#5200FF] rounded-full text-[15px] font-[500] leading-[20px] py-6">
                           Find Your Listener
                           <svg

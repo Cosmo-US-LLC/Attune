@@ -18,11 +18,14 @@ function Hero() {
             judgment-free zone for sharing your thoughts and feelings.
           </p>
 
+          <div className="space-x-[12px] flex items-center">
           <a href="https://signup.feelattune.com/sign-up">
             <button className="bg-[#5200FF] text-white text-[16px] font-[500] py-2 px-4 rounded-full hover:bg-purple-800">
               Connect to a Listener
             </button>
           </a>
+          <p className="text-[25px] leading-[100%] font-[400] font-miniature text-[#000]">Starting from $39</p>
+          </div>
         </div>
 
         {/* Image Section */}

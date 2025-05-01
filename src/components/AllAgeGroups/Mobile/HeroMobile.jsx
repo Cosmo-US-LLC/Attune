@@ -25,7 +25,7 @@ function HeroMobile() {
         </div>
 
         <div>
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
             <Button className="bg-[#5200FF] rounded-full text-[15px]">
             Talk to Someone Now
               <svg

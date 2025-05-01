@@ -32,7 +32,7 @@ function WhyListeners() {
             loneliness is <br /> more common <br /> than you think
           </h1>
           <div className="flex justify-center">
-            <a href="https://innovacare.tech/listenerhub/signup">
+            <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
               <Button className="bg-[#FF6F61] rounded-full font-[500] text-[15px]">
                 Connect Now
               </Button>

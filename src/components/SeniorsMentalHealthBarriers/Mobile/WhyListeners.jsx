@@ -28,7 +28,7 @@ function WhyListeners() {
           <h1 className="text-[38px] font-[400] leading-normal text-center font-miniature">
             Statistics That <br /> Matter
           </h1>
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
             <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#5200FF] mt-4">
               <button className="text-white font-[500] text-[15px]">
                 Connect Now

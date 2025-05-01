@@ -22,7 +22,7 @@ export default function Feel() {
           />
               </div>
               <div className='flex flex-row'>
-                <a href="https://innovacare.tech/listenerhub/signup">
+                <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
               <Button className="bg-[#5200FF] text-white mt-4 py-3 rounded-full">Connect Now</Button>
                 </a>
               <img

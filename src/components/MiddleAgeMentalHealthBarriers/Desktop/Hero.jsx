@@ -23,7 +23,7 @@ function Hero() {
           judgment.
         </p>
         <a
-          href="https://innovacare.tech/listenerhub/signup"
+          href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
           className="flex w-fit"
         >
           <button className="mt-6 bg-[#5200FF] flex flex-row text-white text-[16px] font-[500] py-2 px-10 rounded-full hover:bg-purple-800">

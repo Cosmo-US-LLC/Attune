@@ -43,11 +43,11 @@ function Navbar() {
   return (
     <>
       <div
-        className={`${currentPath === "/" ? "pb-[6rem]" : "pb-[5.5rem]"} `}
+        className={`${currentPath === "/" ? "pb-[5.5rem]" : "pb-[5.5rem]"} `}
       >
         <div className="fixed top-0 w-[100%] z-[99]">
           {/* {currentPath === "/" && <CountdownTimer />} */}
-          <nav className="bg-white h-[99px] shadow-sm">
+          <nav className="bg-white h-[90px] shadow-sm">
             <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
               <Link
                 smooth
@@ -143,10 +143,10 @@ function Navbar() {
                   <a
                     href={
                       currentPath === "/"
-                        ? "https://signup.feelattune.com/sign-up"
+                        ? "https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
                         : currentPath === "/listener-recruitment"
                         ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                        : "https://innovacare.tech/listenerhub/signup"
+                        : "https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
                     }
                   >
                     <button className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500">

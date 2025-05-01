@@ -41,7 +41,7 @@ function WhyListeners() {
             Mental health struggles are more common than you think, yet many
             hesitate to seek help due to stigma, cost, or fear of judgment.
           </p>
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
             <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#ff6f61] mt-4">
               <button className="text-white font-[500] text-[15px]">
                 Connect Now

@@ -72,7 +72,7 @@ export default function ListenerMobile() {
                       </div>
                     </div>
                     <div>
-                      <a href="https://innovacare.tech/listenerhub/signup">
+                      <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
                         <Button className="bg-[#5200FF] w-[300px] rounded-full text-[15px] text-left font-[500] leading-[20px] py-7 ">
                           Combat Loneliness With Real
                           <br /> Connection. Learn More
