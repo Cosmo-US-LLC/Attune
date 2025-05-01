@@ -17,6 +17,7 @@ function HeroMobile() {
       <a href="https://signup.feelattune.com/sign-up">
         <Button className="bg-[#5200FF] rounded-full text-[15px]">Connect to a Listener</Button>
       </a>
+      <p className="text-[25px] leading-[100%] font-[400] font-miniature text-[#000]">Starting from $39</p>
 
       <img src={"/mobile1/heroBg.webp"} alt='' className='h-[257.833px] w-[350px] object-contain' />
     </div>
