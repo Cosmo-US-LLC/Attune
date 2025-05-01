@@ -39,7 +39,7 @@ function WhyListeners() {
             Balancing <br />
             Care and Self
           </h1>
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
             <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#ff6f61] mt-4">
               <button className="text-white font-[500] text-[15px]">
                 Connect Now

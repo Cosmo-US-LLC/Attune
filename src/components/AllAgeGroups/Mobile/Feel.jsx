@@ -26,7 +26,7 @@ export default function Feel() {
             />
           </div>
           <div className="flex flex-row">
-            <a href="https://innovacare.tech/listenerhub/signup">
+            <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
               <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#5200FF] mt-4">
                 <button className="text-white font-[500] text-[15px]">
                   Connect Now

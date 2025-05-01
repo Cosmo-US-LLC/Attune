@@ -18,7 +18,7 @@ function HowItWorks() {
       </div>
 
       <div className="flex justify-center mt-8">
-        <a href="https://innovacare.tech/listenerhub/signup" >
+        <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true" >
         <button className="bg-[#5200FF] text-white py-3 px-8 hover:bg-purple-800 rounded-full text-[16px]">
           Sign up now
         </button>

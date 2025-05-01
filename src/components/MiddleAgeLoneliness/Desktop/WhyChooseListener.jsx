@@ -181,7 +181,7 @@ function WhyChooseListener() {
 
         {/* Call-to-Action Button */}
         <div className="flex justify-center mt-[47px]">
-          <a href="https://innovacare.tech/listenerhub/signup">
+          <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
             <button className="bg-[#5200FF] hover:bg-purple-800 text-white py-3 px-8 rounded-full text-lg">
               Get Started
             </button>
