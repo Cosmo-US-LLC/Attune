@@ -17,7 +17,7 @@ function Sessions() {
         
       </div>
 </div>
-<div className="mx-auto max-w-7xl flex flex-col justify-center items-center  bg-white border-[1px] border-black rounded-[29px] mt-[28px] ">
+{/* <div className="mx-auto max-w-7xl flex flex-col justify-center items-center  bg-white border-[1px] border-black rounded-[29px] mt-[28px] ">
     <h2 className="font-miniature  text-[30px] font-[400] text-center pt-[23px] px-[327px]">Not Sure Which Option Is Right for You?</h2>
     <p className="font-inter text-[18px] text-center  px-[97px]">We get it — reaching out is a big step.That’s why we offer a free 15-minute consultation to help you explore what works best for you.No pressure. No obligations. Just a space to ask questions and feel it out.</p>
     <button
@@ -28,7 +28,7 @@ function Sessions() {
     className="bg-[#5200FF] text-white py-3 px-8 mt-[17px] mb-[28px]  rounded-full text-[15px] hover:bg-purple-800">
     Book Your Appointment 
         </button>
-</div>
+</div> */}
 </div>
 
 
