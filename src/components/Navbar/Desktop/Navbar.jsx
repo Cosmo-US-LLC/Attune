@@ -143,7 +143,7 @@ function Navbar() {
                   <a
                     href={
                       currentPath === "/"
-                        ? "https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
+                        ? "https://signup.feelattune.com/sign-up"
                         : currentPath === "/listener-recruitment"
                         ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
                         : "https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
