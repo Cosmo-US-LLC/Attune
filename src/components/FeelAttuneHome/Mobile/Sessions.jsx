@@ -17,7 +17,7 @@ function Sessions() {
           <SessionsCards
             bandge="4 video Sessions"
             title="CAD $39"
-            subtitle="(Only $39/session)"
+            subtitle="(4 sessions in just $160)"
             isSubtitle={true}
             item1="Best for ongoing support"
             item2="Flexible scheduling"
