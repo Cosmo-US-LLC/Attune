@@ -158,7 +158,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsAndConditions />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
-          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/ghl-contact-us" element={<ContactUs />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
