@@ -4,6 +4,7 @@ import useFavicon from "./hooks/useFavicon";
 import Layout from "./components/Layout";
 import NotFound from "./components/NotFound";
 import ThankYouPage from "./components/ThankYouPage/ThankYouPage";
+// import ContactUs from "./components/ContactUs/ContactUs";
 
 import FeelAttuneHomeDesktop from "./components/FeelAttuneHome/Desktop";
 import FeelAttuneHomeMobile from "./components/FeelAttuneHome/Mobile";
@@ -26,6 +27,7 @@ import ListenerRecruitmentMobile from "./components/ListenerRecruitment/Mobile";
 
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsandConditions";
+import ContactUs from "./components/ContactUs";
 
 
 function App() {
@@ -156,6 +158,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsAndConditions />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
