@@ -7,7 +7,7 @@ import HowItWorks from "./HowItWorks";
 import WhoCanBecomeListenerMobile from "./WhoCanBecomeListenerMobile";
 import ReadyToMakeMobile from "./ReadyToMakeMobile";
 import DiffersTherapyCounselingMobile from "./DiffersTherapyCounselingMobile";
-import MeaningfulMovementMobile from "./MeaningfulMovementMobile";
+import CoachesSection from "./CoachesSection";
 
 function ListenerRecruitmentMobile() {
   return (
@@ -21,6 +21,7 @@ function ListenerRecruitmentMobile() {
       <DiffersTherapyCounselingMobile/>
       <ReadyToMakeMobile />
       <WhoCanBecomeListenerMobile />
+      <CoachesSection/>
     </>
   );
 }
