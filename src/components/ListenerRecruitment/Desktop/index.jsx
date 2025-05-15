@@ -7,7 +7,7 @@ import DiffersTherapyCounseling from "./DiffersTherapyCounseling";
 import WhyBecomeListener from "./WhyBecomeListener";
 import PrivatePractice from "./PrivatePractice";
 import WhoCanBecomeListenerDesktop from "./WhoCanBecomeListenerDesktop";
-import MeaningfulMovement from "./MeaningfulMovement";
+import CoachesSection from "./CoachesSection";
 
 function ListenerRecruitmentDesktop() {
   return (
@@ -21,6 +21,7 @@ function ListenerRecruitmentDesktop() {
       <DiffersTherapyCounseling />
       <ReadyToMake />
       <WhoCanBecomeListenerDesktop />
+      <CoachesSection />
     </>
   );
 }
