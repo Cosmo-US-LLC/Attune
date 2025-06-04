@@ -48,7 +48,7 @@ const testimonials = [
     city: "Halifax",
     quote:
       "“It was the first time in a long time that I said how I really felt. And someone was there.”",
-    rating: 2,
+    rating: 5,
     quoteIcon: vectorIcon4,
     bgColor: "bg-[#FFCD56]",
     pillColor: "bg-[#828282]",
@@ -60,7 +60,7 @@ const testimonials = [
     city: "Montreal",
     quote:
       "“I’ve been holding stuff in for weeks. After just one session, I felt lighter.”",
-    rating: 3,
+    rating: 5,
     quoteIcon: vectorIcon5,
     bgColor: "bg-[#DAFF6C]",
     pillColor: "bg-[#FF6F61]",
