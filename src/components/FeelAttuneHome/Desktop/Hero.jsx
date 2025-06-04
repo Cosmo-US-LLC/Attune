@@ -11,7 +11,7 @@ function Hero() {
         playsInline
         className="absolute top-0 left-0 z-0 object-cover w-full h-full"
       />
-
+      <div className="absolute top-0 left-0 z-10 w-full h-full bg-black/40" />
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center text-black">
         <h1 className="font-miniature text-[64px] leading-[72px] font-[500] text-white drop-shadow-lg max-w-[700px]">
           Your Safe Space for{" "}

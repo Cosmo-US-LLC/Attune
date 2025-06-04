@@ -13,7 +13,7 @@
 //         In a world where 1 in 5 adults experience mental health challenges, FeelAttune offers a revolutionary approach to emotional well-being. Our platform connects you with compassionate Listeners, providing a judgment-free zone for sharing your thoughts and feelings.
 //         </p>
 //       </div>
-      
+
 //       <a href="https://signup.feelattune.com/sign-up">
 //         <Button className="bg-[#5200FF] rounded-full text-[15px]">Connect to a Listener</Button>
 //       </a>
@@ -26,9 +26,9 @@
 
 // export default HeroMobile
 
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import feelAttuneVideo from '../../../../public/video/CG - FeelAttune Webpage Header v2 (1).mp4';
+import React from "react";
+import { Button } from "@/components/ui/button";
+import feelAttuneVideo from "../../../../public/video/CG - FeelAttune Webpage Header v2 (1).mp4";
 
 function HeroMobile() {
   return (
@@ -41,14 +41,18 @@ function HeroMobile() {
         playsInline
         className="absolute top-0 left-0 z-0 object-cover w-full h-full"
       />
-
+      <div className="absolute top-0 left-0 z-10 w-full h-full bg-black/40" />
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 space-y-6 text-center text-white">
         <p className="text-[48px] leading-[52px] font-miniature">
-          Your Safe Space for <span className="text-[#5200FF] italic">Support</span>
+          Your Safe Space for{" "}
+          <span className="text-[#5200FF] italic">Support</span>
         </p>
 
         <p className="text-[15px] font-[500] leading-[24px] max-w-[320px]">
-          In a world where 1 in 5 adults experience mental health challenges, FeelAttune offers a revolutionary approach to emotional well-being. Our platform connects you with compassionate Listeners, providing a judgment-free zone for sharing your thoughts and feelings.
+          In a world where 1 in 5 adults experience mental health challenges,
+          FeelAttune offers a revolutionary approach to emotional well-being.
+          Our platform connects you with compassionate Listeners, providing a
+          judgment-free zone for sharing your thoughts and feelings.
         </p>
 
         <a href="https://signup.feelattune.com/sign-up">
@@ -66,4 +70,3 @@ function HeroMobile() {
 }
 
 export default HeroMobile;
-
