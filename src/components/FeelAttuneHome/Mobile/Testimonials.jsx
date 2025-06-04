@@ -11,45 +11,150 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import vectorIcon1 from "../../../../public/desktop1/testimonials/vector1.webp";
+import vectorIcon2 from "../../../../public/desktop1/testimonials/vector2.webp";
+import vectorIcon3 from "../../../../public/desktop1/testimonials/vector3.webp";
+import vectorIcon4 from "../../../../public/desktop1/testimonials/vector4.webp";
+import vectorIcon5 from "../../../../public/desktop1/testimonials/vector5.webp";
+import vectorIcon6 from "../../../../public/desktop1/testimonials/vector6.webp";
 
 function Testimonials() {
   const testimonials = [
     {
-      bg: "bg-[#E5FF7D]",
-      img: "/mobile1/testimonials/test1.webp",
-      title: "Jake, 24",
-      body: '"Starting my first job was overwhelming. Having someone to talk to who really understood what I was going through made all the difference."',
+      name: "Aisha K.",
+      age: 24,
+      city: "Toronto",
+      quote:
+        "I didn’t think talking to a stranger could feel this safe. But it did. They just... got it.",
+      rating: 5,
+      quoteIcon: vectorIcon1,
+      bgColor: "bg-[#33B7AC]",
+      pillColor: "bg-[#FF5A1F]",
+      quoteColor: "text-[#FFF]",
     },
     {
-      bg: "bg-[#F097DD]",
-      img: "/mobile1/testimonials/test2.webp",
-      title: "Jessica, 45",
-      body: '"As a caregiver, I often felt overwhelmed. Talking to my Listener gave me the tools to manage my stress and focus on what truly matters."',
+      name: "Mark L.",
+      age: 41,
+      city: "Calgary",
+      quote:
+        "It wasn’t therapy, but somehow it helped more than I expected. I finally felt heard.",
+      rating: 5,
+      quoteIcon: vectorIcon2,
+      bgColor: "bg-[#E776C2]",
+      pillColor: "bg-[#00BFE3]",
+      quoteColor: "text-[#FFF]",
     },
     {
-      bg: "bg-[#FF6F61]",
-      img: "/mobile1/testimonials/test3.webp",
-      textColor: "text-white",
-      title: "John, 72",
-      body: '"Losing my partner was the hardest thing I’ve ever faced. Talking to a Listener allowed me to process my grief and feel less alone."',
+      name: "Deepa N.",
+      age: 35,
+      city: "Mississauga",
+      quote:
+        "I wasn’t in crisis. I just needed someone to talk to. FeelAttune was exactly that.",
+      rating: 5,
+      quoteIcon: vectorIcon3,
+      bgColor: "bg-[#FF6F61]",
+      pillColor: "bg-[#C6D644]",
+      quoteColor: "text-[#FFF]",
+    },
+    {
+      name: "Robert S.",
+      age: 72,
+      city: "Halifax",
+      quote:
+        "It was the first time in a long time that I said how I really felt. And someone was there.",
+      rating: 5,
+      quoteIcon: vectorIcon4,
+      bgColor: "bg-[#FFCD56]",
+      pillColor: "bg-[#828282]",
+      quoteColor: "",
+    },
+    {
+      name: "Jamie D.",
+      age: 29,
+      city: "Montreal",
+      quote:
+        "I’ve been holding stuff in for weeks. After just one session, I felt lighter.",
+      rating: 5,
+      quoteIcon: vectorIcon5,
+      bgColor: "bg-[#DAFF6C]",
+      pillColor: "bg-[#FF6F61]",
+      quoteColor: "",
+    },
+    {
+      name: "Helen M.",
+      age: 67,
+      city: "Vancouver",
+      quote:
+        "No pressure, no judgment — just a real person who actually listened. That’s rare.",
+      rating: 4,
+      quoteIcon: vectorIcon6,
+      bgColor: "bg-[#33C3FF]",
+      pillColor: "bg-[#74D66A]",
+      quoteColor: "text-[#FFF]",
     },
   ];
 
   return (
-    <div className="bg-[#F4EFEA] pb-[30px] px-5 space-y-6">
-      <h1 className="font-miniature text-[38px]">Testimonials</h1>
+    <div className="bg-[#F4EFEA] pt-4 pb-[30px] px-5 space-y-6">
+      <h1 className="font-miniature text-center text-[38px]">Testimonials</h1>
+      
 
       <Carousel>
         <CarouselContent>
-          {testimonials?.map((test, id) => (
-            <CarouselItem key={id} className="basis-1/1 w-full">
-                <div className={"border border-black rounded-[12px] p-5 " + test?.bg}>
+          {testimonials?.map((t, id) => (
+            <CarouselItem key={id} className="w-full basis-1/1">
+              <div className="pt-6 ">
+                
+              <div
+               className={`relative rounded-[29.557px] border-[0.985px] border-black p-6 ${t.bgColor} min-h-[300px] flex flex-col justify-between`}
+              >
+                <img
+                  src={t.quoteIcon}
+                  alt="Quote icon"
+                  className="w-[40px] h-[40px] absolute -top-5 left-8 z-[99]"
+                />
+
+                <h3
+                  className={`mt-8 text-[36px] font-miniature font-[400] leading-[42px] ${
+                    t.quoteColor || "text-black"
+                  }`}
+                >
+                  {t.name}
+                </h3>
+
+                <div className="flex items-center mt-2 space-x-1">
+                  {[...Array(5)].map((_, j) => (
+                    <span
+                      key={j}
+                      className="w-[20px] h-[20px] text-[20px] leading-[20px] flex items-center justify-center"
+                    >
+                      {j < t.rating ? "⭐" : "☆"}
+                    </span>
+                  ))}
+                </div>
+
+                <p
+                  className={`mt-3 text-[16px] leading-[22px] font-[400] ${
+                    t.quoteColor || "text-black"
+                  }`}
+                >
+                  “{t.quote}”
+                </p>
+
+                <div
+                  className={`${t.pillColor} flex justify-center items-center w-full max-w-[180px] mt-4 text-white text-[16px] font-[400] leading-[120%] capitalize px-4 py-2 rounded-full`}
+                >
+                  {t.age}, {t.city}
+                </div>
+              </div>
+              {/* <div className={"border border-black rounded-[12px] p-5 " + test?.bg}>
                     <img src={test?.img} alt="person" className="w-[60px] h-[60px] object-contain rounded-full mb-[28px]" />
 
                     <div className={`space-y-[10px] pb-5 ${test?.textColor || 'text-black'}`}>
                       <h3 className={`font-miniature text-[32px] ${test?.textColor || ''}`}>{test?.title}</h3>
                       <p className={`text-[15px] leading-[20px] ${test?.textColor || ''}`}>{test?.body}</p>
                     </div>
+                </div> */}
                 </div>
             </CarouselItem>
           ))}
@@ -73,7 +178,7 @@ function Testimonials() {
           className="swiper-container !min-h-[320px]"
         >
           {testimonials?.map((test, id) => (
-            <SwiperSlide key={id} className="basis-1/1 w-full">
+            <SwiperSlide key={id} className="w-full basis-1/1">
               <div
                 className={"border border-black rounded-[12px] p-5 " + test?.bg}
               >
