@@ -51,9 +51,9 @@ function NavbarMobile() {
 
   return (
     <>
-      <div className={`${currentPath === "/" ? "pb-[3.5rem]" : "pb-[3.5rem]"}`}>
+      <div className={`${currentPath === "/" ? "pb-[9.5rem]" : "pb-[3.5rem]"}`}>
         <div className="fixed top-0 w-[100%] z-[99]">
-          {/* {currentPath === "/" && <CountdownTimer />} */}
+          {currentPath === "/" && <CountdownTimer />}
           <div className="bg-white h-[68px] flex justify-between items-center py-[14px] px-5">
             <div className="flex gap-3 relative z-[100]">
               <Sheet open={sideOpen} onOpenChange={setSideOpen}>
