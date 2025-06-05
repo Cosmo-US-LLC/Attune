@@ -18,7 +18,7 @@ export default function FeelHeard() {
                   Att<span className="italic">une</span>
                 </span>
               </h3>
-              <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true" className="flex w-fit">
+              <a href="https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA" className="flex w-fit">
                 <button className="bg-[#5200FF] text-white w-[160px] hover:bg-purple-800 mt-4 py-3 rounded-full">
                   Connect Now
                 </button>

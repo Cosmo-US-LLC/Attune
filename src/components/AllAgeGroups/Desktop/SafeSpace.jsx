@@ -63,7 +63,7 @@ function SafeSpace() {
                 It’s time to put yourself first, even for just a moment.
               </p> */}
               <div className="flex justify-center mt-6 md:justify-start">
-                <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
+                <a href="https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA">
                   <button className="bg-[#5200FF] flex flex-row text-white text-[14px] md:text-[16px] font-[500] py-2 md:py-4 px-8 md:px-8 rounded-full hover:bg-purple-800">
                     Find Your Listener Today
                     <svg

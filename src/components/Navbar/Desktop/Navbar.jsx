@@ -146,7 +146,7 @@ function Navbar() {
                         ? "https://signup.feelattune.com/sign-up"
                         : currentPath === "/listener-recruitment"
                         ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                        : "https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
+                        : "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
                     }
                   >
                     <button className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500">
