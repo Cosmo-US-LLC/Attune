@@ -28,7 +28,7 @@ function WhyListenersMatter() {
           More Common Than You Think
         </p>
         <div className="mx-auto w-fit">
-          <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true">
+          <a href="https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA">
             <button className="bg-[#FF6F61] text-white py-3 hover:bg-red-500 px-6 rounded-full">
               Connect Now
             </button>

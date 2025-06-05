@@ -19,7 +19,7 @@ export default function FeelHeard() {
               </span>
             </h3>
             <a
-              href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
+              href="https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
               className="flex w-fit"
             >
               <div className="flex flex-row justify-center items-center px-5 py-3  gap-2 rounded-full bg-[#5200FF] hover:bg-purple-800">
