@@ -26,7 +26,7 @@ function Hero() {
           and be heard—without judgment.
         </p>
         <a
-          href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true"
+          href="https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
           className="flex w-fit"
         >
           <button className="mt-6 bg-[#5200FF] flex flex-row text-white text-[16px] font-[500] py-2 px-10 rounded-full hover:bg-purple-800">
