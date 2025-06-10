@@ -15,7 +15,7 @@ export default function FeelHeard (){
            <div className="flex flex-row">
             <div className="flex flex-col mb-4">
               <h3 className="font-miniature justify-center items-center lg:text-[36px] 2xl:text-[50px] lg:leading-[60px] 2xl:leading-[74px] ">Feel Heard with <br/> <span className="text-[500] lg:text-[80px] 2xl:text-[101px]">Att<span className="italic">une</span></span></h3>
-              <a href="https://innovacare.tech/listenerhub/patient/book-appointments/select-user?guest=true" className="w-fit flex">
+              <a href="https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA" className="w-fit flex">
               <button className="bg-[#5200FF] text-white w-[160px] hover:bg-purple-800 mt-4 py-3 rounded-full">Connect Now</button>
               </a>
             </div>
