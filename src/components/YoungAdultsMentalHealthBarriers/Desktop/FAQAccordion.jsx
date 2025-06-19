@@ -44,7 +44,7 @@ function FAQAccordion() {
       answer: (
         <div>
          Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs,
-          <span className="font-bold">starting at just $40/session.</span>. We believe emotional support should be accessible to everyone.
+          <span className="font-bold"> starting at just $40/session</span>. We believe emotional support should be accessible to everyone.
         </div>
       ),
     },
