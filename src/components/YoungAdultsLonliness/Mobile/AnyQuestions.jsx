@@ -16,7 +16,7 @@ function AnyQuestions() {
     {
       id: "02",
       question: "How does it work?",
-      answer: "You can connect with a Listener anytime, anywhere. Simply sign up, choose a Listener, and schedule your session. You can talk to them via voice or video—whatever makes you most comfortable.",
+      answer: "You can connect with a Listener anytime, anywhere. Simply sign up, choose a Listener, and schedule your session. You can talk to them via voice or video—whatever makes you most comfortable. ",
     },
     {
       id: "03",
@@ -31,7 +31,7 @@ function AnyQuestions() {
             <li>Build resilience and navigate toward your desired outcomes.</li>
           </ul>
           <p className="mt-4">
-            However, it’s important to note that Listeners are not licensed mental health professionals. They do not diagnose, treat mental illnesses, or provide clinical interventions. If you’re experiencing severe emotional distress, trauma, or clinical conditions such as anxiety, depression, or addiction, we recommend seeking support from a qualified therapist or counselor. <br/> Listeners are here to complement—not replace—professional mental health care, offering empathetic support for everyday challenges.
+           However, it’s important to note that Listeners are not licensed mental health professionals. They do not diagnose, treat mental illnesses, or provide clinical interventions. If you’re experiencing severe emotional distress, trauma, or clinical conditions such as anxiety, depression, or addiction, we recommend seeking support from a qualified therapist or counselor. <br/> Listeners is here to complement—not replace—professional mental health care, offering empathetic support for everyday challenges.
           </p>
         </div>
       ),
@@ -43,8 +43,8 @@ function AnyQuestions() {
       question: "How much does this cost?",
       answer: (
         <div>
-          Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs,{" "}
-          <span className="font-bold">starting at just $30/hr</span>. We believe emotional support should be accessible to everyone.
+         Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs,
+          <span className="font-bold">starting at just $40/session.</span>. We believe emotional support should be accessible to everyone.
         </div>
       ),
     },
