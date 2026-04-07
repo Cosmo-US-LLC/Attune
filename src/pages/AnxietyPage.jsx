@@ -1,4 +1,3 @@
-import PromoBanner from "../components/anxiety-page/PromoBanner";
 import Navbar from "../components/anxiety-page/Navbar";
 import HeroSection from "../components/anxiety-page/HeroSection";
 import ProudlySupportingBar from "../components/anxiety-page/ProudlySupportingBar";
@@ -19,7 +18,6 @@ import Footer from "../components/anxiety-page/Footer";
 function AnxietyPage() {
   return (
     <div className="min-h-screen overflow-x-hidden pt-[90px]">
-      <PromoBanner />
       <Navbar />
       <HeroSection />
       <ProudlySupportingBar />
