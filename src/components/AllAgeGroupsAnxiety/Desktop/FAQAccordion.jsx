@@ -12,45 +12,32 @@ function FAQAccordion() {
       id: "01",
       question: "What is FeelAttune?",
       answer:
-        "FeelAttune is a mental wellness platform connecting individuals with empathetic Listeners for judgment-free, personalized support. Available anytime, it offers a user-friendly interface, voice or video calls, and affordable, stigma-free emotional support for everyday challenges.",
+        "FeelAttune is a life coaching platform that connects you with certified coaches who specialize in anxiety. Whether you're dealing with social pressure, financial stress, academic overwhelm, or simply the weight of everyday life, we offer personalized, one-on-one sessions designed to help you build real coping strategies and move forward with confidence.",
     },
     {
       id: "02",
       question: "How does it work?",
       answer:
-        "You can connect with a Listener anytime, anywhere. Simply sign up, choose a Listener, and schedule your session. You can talk to them via voice or video—whatever makes you most comfortable.",
+        "Getting started is simple. Tell us a little about yourself and what you're navigating, we'll match you with the right life coach for your situation. You'll receive a booking link via email or SMS to schedule your session then simply join the call and start moving forward.",
     },
     {
       id: "03",
       question: "Is this therapy?",
       answer: (
         <>
-          The Listeners offer a supportive and judgment-free space to share your
-          thoughts and feelings. Listeners can help you:
-          <ul className="list-disc pl-7 py-7">
-            <li>
-              Reframe experiences and gain fresh perspective and clarity about
-              your challenges.
-            </li>
-            <li>
-              Set and achieve personal goals, such as improving confidence or
-              managing life transitions.
-            </li>
-            <li>
-              Explore strategies to enhance emotional well-being and motivation.
-            </li>
-            <li>Build resilience and navigate toward your desired outcomes.</li>
-          </ul>
-          However, it’s important to note that Listeners are not licensed mental
-          health professionals. They do not diagnose, treat mental illnesses, or
-          provide clinical interventions. If you’re experiencing severe
-          emotional distress, trauma, or clinical conditions such as anxiety,
-          depression, or addiction, we recommend seeking support from a
-          qualified therapist or counselor.
+          No. Attune offers one-on-one life coaching, not therapy or clinical
+          treatment.
           <br />
           <br />
-          Listeners is here to complement—not replace—professional mental health
-          care, offering empathetic support for everyday challenges.
+          Our life coaches don&apos;t diagnose or treat mental health conditions. What
+          they do is create a judgment-free space to help you understand your
+          anxiety, work through what&apos;s keeping you stuck, and build practical
+          strategies to move forward.
+          <br />
+          <br />
+          If you&apos;re experiencing severe distress or a clinical condition, we
+          recommend seeking support from a qualified mental health professional.
+          Attune is here to complement not replace that care.
         </>
       ),
     },
@@ -61,16 +48,16 @@ function FAQAccordion() {
         <>
           Our pricing is affordable and based on the number of hours you use.
           You can choose from flexible plans that work for your needs,{" "}
-          <span className="font-bold">starting at just $30/hr</span>. We believe
-          emotional support should be accessible to everyone.
+          <span className="font-bold">starting at just $40/session</span>. We
+          believe emotional support should be accessible to everyone.
         </>
       ),
     },
     {
       id: "05",
-      question: "What if I don’t feel a connection with my Listener?",
+      question: "What if I don't connect with my life coach?",
       answer:
-        "No problem! Our platform allows you to easily switch to a different Listener at any time. Finding someone you connect with is important, and we’re here to ensure you feel comfortable and supported throughout your journey. Simply browse other Listeners and choose the one that feels right for you.",
+        "No problem. Finding the right fit matters and we make it easy to switch. Simply browse our other life coaches and choose the one that feels right for you. Your comfort and progress always come first.",
     },
   ];
 
