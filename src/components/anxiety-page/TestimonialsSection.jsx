@@ -20,7 +20,7 @@ const testimonials = [
       "I was lying awake every night running through worst-case financial scenarios. It was affecting my work, my relationship, everything. Life coaching gave me the clarity to stop spiraling and start making decisions from a calmer place.",
   },
   {
-    name: "Marcus, 19",
+    name: "Marcus, 70",
     bg: "bg-[#ff6f61]",
     photo: "/images/anxiety-page/testimonial-marcus.png",
     quote:
