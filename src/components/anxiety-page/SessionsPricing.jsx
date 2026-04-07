@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function SessionsPricing() {
   return (
     <div className="bg-[#F4EFEA] py-[122px] max-md:py-[60px] px-4 md:px-6">
@@ -47,12 +48,12 @@ function SessionsPricing() {
           No pressure. No obligations. Just a space to ask questions and feel it
           out.
         </p>
-        <a
-          href="https://signup.feelattune.com/sign-up"
+        <Link
+            to="/signup-anxiety"
           className="bg-[#5200FF] text-white py-3 px-8 mt-[17px] mb-[28px] rounded-full text-[15px] hover:bg-purple-800 max-md:self-start inline-block"
         >
           Book Your Appointment
-        </a>
+        </Link>
       </div>
     </div>
   );
@@ -106,12 +107,12 @@ function PricingCard({ badge, title, subtitle, item1, item2, item3, isSubtitle }
           </div>
         </div>
 
-        <a
-          href="https://signup.feelattune.com/sign-up"
+        <Link
+            to="/signup-anxiety"
           className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[15px] hover:bg-purple-800 inline-block"
         >
           Get Started
-        </a>
+        </Link>
       </div>
     </div>
   );

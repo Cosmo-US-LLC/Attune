@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function StatisticsSection() {
   return (
     <section className="relative w-full bg-white overflow-hidden max-md:h-auto h-[1000px]">
@@ -109,12 +110,12 @@ function StatisticsSection() {
           don&apos;t want it, but because traditional options feel out of reach.
           FeelAttune makes support accessible, affordable, and judgment-free.
         </p>
-        <a
-          href="https://signup.feelattune.com/sign-up"
+        <Link
+            to="/signup-anxiety"
           className="mt-7 bg-[#FF6F61] hover:bg-[#e85d50] text-white py-3 px-8 rounded-full inline-block text-center font-medium transition-colors md:pointer-events-auto"
         >
           Connect Now
-        </a>
+        </Link>
       </div>
 
       {/* ===== MOBILE: 2x2 grid of stat cards ===== */}

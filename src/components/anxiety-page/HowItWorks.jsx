@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function HowItWorks() {
   return (
     <section
@@ -115,12 +116,12 @@ function HowItWorks() {
       </div>
 
       {/* CTA Button */}
-      <a
-        href="https://signup.feelattune.com/sign-up"
+      <Link
+            to="/signup-anxiety"
         className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[16px] capitalize hover:bg-purple-800 transition-colors inline-block"
       >
         Connect now
-      </a>
+      </Link>
     </section>
   );
 }

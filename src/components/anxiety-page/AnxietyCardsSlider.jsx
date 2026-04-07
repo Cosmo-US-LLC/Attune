@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState, useCallback, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -175,13 +176,13 @@ function AnxietyCard({ card }) {
       </ul>
 
       {/* CTA */}
-      <a
-        href="https://signup.feelattune.com/sign-up"
+      <Link
+            to="/signup-anxiety"
         className="bg-[#5200ff] rounded-full px-8 py-2.5 text-white text-center font-medium inline-flex items-center justify-center gap-2 self-start"
       >
         Start One-on-One Life Coaching
         <img src={arrowRightWhite} alt="" className="w-5 h-5 object-contain" />
-      </a>
+      </Link>
     </div>
   );
 }

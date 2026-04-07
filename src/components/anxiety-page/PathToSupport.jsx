@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const cards = [
   {
     bg: "bg-[#38AB9B]",
@@ -86,12 +87,12 @@ export default function PathToSupport() {
                 ))}
               </ul>
 
-              <a
-                href="https://signup.feelattune.com/sign-up"
+              <Link
+            to="/signup-anxiety"
                 className="bg-[#5200FF] text-white rounded-full px-6 py-3 w-fit hover:opacity-90 transition-opacity inline-block"
               >
                 {card.button}
-              </a>
+              </Link>
             </div>
           </div>
         ))}

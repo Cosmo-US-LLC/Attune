@@ -87,7 +87,7 @@ function AnxietyNavbar() {
 
                 <div className="flex flex-col gap-3 mt-4 pt-4 border-t border-gray-200">
                   <a
-                    href="https://signup.feelattune.com/sign-up"
+                    href="/signup-anxiety"
                     className="w-full h-[40px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
                   >
                     Connect Now
@@ -111,7 +111,7 @@ function AnxietyNavbar() {
         {/* Mobile: Connect Now button (right side) */}
         <div className="lg:hidden">
           <a
-            href="https://signup.feelattune.com/sign-up"
+            href="/signup-anxiety"
             className="px-5 py-2 bg-[#FF6F61] text-white text-sm rounded-full hover:bg-red-500 transition-colors"
           >
             Connect Now
@@ -147,7 +147,7 @@ function AnxietyNavbar() {
         {/* Desktop: CTA (right) */}
         <div className="hidden lg:flex items-center">
           <a
-            href="https://signup.feelattune.com/sign-up"
+            href="/signup-anxiety"
             className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
           >
             Connect Now

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const trustPoints = [
   "Certified life coaches",
   "Flexible scheduling",
@@ -39,13 +40,13 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 mt-8">
-          <a
-            href="https://signup.feelattune.com/sign-up"
+          <Link
+            to="/signup-anxiety"
             className="bg-[#5200FF] text-white rounded-full px-8 py-3 font-medium hover:opacity-90 transition-opacity whitespace-nowrap flex items-center gap-2"
           >
             Start Your Journey Today
             <img src="/images/anxiety-page/cta-arrow.svg" alt="" className="w-5 h-5" />
-          </a>
+          </Link>
           <span className="font-miniature text-[24px] text-black whitespace-nowrap">
             Starting from $39
           </span>
