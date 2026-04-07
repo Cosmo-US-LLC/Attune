@@ -10,7 +10,7 @@ const questions = [
     id: "01",
     question: "What is FeelAttune?",
     answer:
-      "FeelAttune is a life coaching platform that connects you with certified coaches who specialize in anxiety. Whether you're dealing with social pressure, financial stress, academic overwhelm, or simply the weight of everyday life. We offer personalized, one-on-one sessions designed to help you build real coping strategies and move forward with confidence.",
+      "FeelAttune is a life coaching platform that connects you with coaches who understand anxiety. Whether you're dealing with social pressure, financial stress, academic overwhelm, or simply the weight of everyday life. We offer personalized, one-on-one sessions designed to help you build real coping strategies and move forward with confidence.",
   },
   {
     id: "02",
