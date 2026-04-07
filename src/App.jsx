@@ -18,6 +18,8 @@ import MiddleAgeMentalHealthBarriersDesktop from "./components/MiddleAgeMentalHe
 import MiddleAgeMentalHealthBarriersMobile from "./components/MiddleAgeMentalHealthBarriers/Mobile";
 import AllAgeGroupsDesktop from "./components/AllAgeGroups/Desktop";
 import AllAgeGroupsMobile from "./components/AllAgeGroups/Mobile";
+import AllAgeGroupsAnxietyDesktop from "./components/AllAgeGroupsAnxiety/Desktop";
+import AllAgeGroupsAnxietyMobile from "./components/AllAgeGroupsAnxiety/Mobile";
 import SeniorsMentalHealthBarriersDesktop from "./components/SeniorsMentalHealthBarriers/Desktop";
 import SeniorsMentalHealthBarriersMobile from "./components/SeniorsMentalHealthBarriers/Mobile";
 import SeniorsLonelinessDesktop from "./components/SeniorsLoneliness/Desktop";
@@ -110,6 +112,19 @@ function App() {
                 </div>
                 <div className="lg:hidden">
                   <AllAgeGroupsMobile />
+                </div>
+              </>
+            }
+          />
+          <Route
+            path="/all-age-groups-anxiety"
+            element={
+              <>
+                <div className="max-lg:hidden">
+                  <AllAgeGroupsAnxietyDesktop />
+                </div>
+                <div className="lg:hidden">
+                  <AllAgeGroupsAnxietyMobile />
                 </div>
               </>
             }
