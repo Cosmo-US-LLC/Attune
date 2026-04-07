@@ -19,7 +19,7 @@ function PromoBanner() {
   return (
     <div className="bg-[#5200FF] w-full py-3 px-4 flex flex-col items-center justify-center gap-2 md:flex-row md:gap-3 relative">
       <div className="flex items-center gap-2 text-white text-sm font-medium text-center md:text-left">
-        <span className="text-lg">🎄</span>
+        <img src="/images/anxiety-page/promo-icon.svg" alt="" className="w-7 h-7 flex-shrink-0 object-contain" />
         <span>
           Use code <strong>CANADA</strong> and book within the next 3 hours to get 20% off your session!
         </span>

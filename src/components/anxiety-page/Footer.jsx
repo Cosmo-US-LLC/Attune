@@ -38,13 +38,12 @@ function Footer() {
           <div className="w-[50%] max-md:w-full flex gap-6 flex-col justify-center items-start px-4 pt-6 max-md:px-0 max-md:pt-0 relative z-10">
             <div className="flex flex-col gap-2 mt-4 max-md:mt-0">
               <p className="text-[16px] font-[700] leading-[20px]">
-                Looking for someone to listen?
+                Ready to work through your anxiety with someone in your corner?
               </p>
-              <p className="text-[16px] leading-[22px] capitalize ">
-                Our trained Listeners are here to provide non-judgmental,
-                compassionate support whenever you need it. Whether you're
-                managing stress, navigating life transitions, or simply craving
-                a connection, we're here to help.
+              <p className="text-[16px] leading-[22px]">
+                Our life coaches offer personalized, one-on-one support to help
+                you understand your anxiety, build real coping strategies, and
+                move toward the life you want, at a pace that works for you.
               </p>
             </div>
             <div className="space-y-[10px]">
@@ -135,7 +134,7 @@ function Footer() {
         </div>
         <div className="flex justify-center items-center h-[60px] px-[50px] max-md:px-4 border-t  border-black">
           <div className="text-black font-inter text-[16px] font-[400] leading-[20px] capitalize">
-            &copy; 2025 FeelAttune . All Rights Reserved
+            &copy; 2024 Attune. All Rights Reserved
           </div>
         </div>
       </div>

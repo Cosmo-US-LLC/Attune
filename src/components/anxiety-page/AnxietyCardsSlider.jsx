@@ -1,8 +1,6 @@
 import { useState, useCallback, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
 
 import {
   Carousel,
@@ -154,7 +152,7 @@ function AnxietyCard({ card }) {
       </h3>
 
       {/* Description */}
-      <p className={`text-[18px] font-medium leading-[26px] ${textColor}`}>
+      <p className={`text-[18px] font-normal leading-[26px] ${textColor}`}>
         {card.desc}
       </p>
 
@@ -165,7 +163,7 @@ function AnxietyCard({ card }) {
             <img
               src={checkmark}
               alt=""
-              className="w-[19px] h-[29px] object-contain shrink-0 mt-0.5"
+              className="w-5 h-5 object-contain shrink-0 mt-0.5"
             />
             <span
               className={`text-[18px] font-medium leading-[26px] ${textColor}`}
@@ -191,10 +189,12 @@ function AnxietyCard({ card }) {
 function DesktopSlider() {
   const [api, setApi] = useState(null);
   const [canScrollNext, setCanScrollNext] = useState(false);
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
 
   const onSelect = useCallback(() => {
     if (!api) return;
     setCanScrollNext(api.canScrollNext());
+    setCanScrollPrev(api.canScrollPrev());
   }, [api]);
 
   useEffect(() => {
@@ -211,21 +211,39 @@ function DesktopSlider() {
     if (api) api.scrollNext();
   }, [api]);
 
+  const scrollPrev = useCallback(() => {
+    if (api) api.scrollPrev();
+  }, [api]);
+
   return (
     <div className="relative">
       <Carousel
         opts={{ align: "start", loop: false }}
         setApi={setApi}
-        className="w-full"
+        className="w-full [&+div]:hidden"
       >
         <CarouselContent className="-ml-6">
           {cards.map((card, index) => (
-            <CarouselItem key={index} className="basis-1/3 pl-6">
+            <CarouselItem key={index} className="basis-1/3 pl-6 flex">
               <AnxietyCard card={card} />
             </CarouselItem>
           ))}
         </CarouselContent>
       </Carousel>
+
+      {canScrollPrev && (
+        <button
+          onClick={scrollPrev}
+          className="absolute -left-5 top-1/2 -translate-y-1/2 z-10"
+          aria-label="Previous slide"
+        >
+          <img
+            src={sliderArrowBtn}
+            alt="Previous"
+            className="w-[60px] h-[60px] object-contain rotate-180"
+          />
+        </button>
+      )}
 
       {canScrollNext && (
         <button
@@ -247,10 +265,8 @@ function DesktopSlider() {
 function MobileSlider() {
   return (
     <Swiper
-      modules={[Pagination]}
       slidesPerView={1.2}
       spaceBetween={16}
-      pagination={{ clickable: true }}
       className="anxiety-cards-swiper"
     >
       {cards.map((card, index) => (
@@ -264,7 +280,7 @@ function MobileSlider() {
 
 export default function AnxietyCardsSlider() {
   return (
-    <section className="bg-[#E5FF7D] px-4 pb-12 md:px-[60px] md:pb-[100px]">
+    <section className="bg-[#E5FF7D] px-4 pb-20 md:px-[60px] md:pb-[100px]">
       {/* Desktop */}
       <div className="hidden md:block">
         <DesktopSlider />

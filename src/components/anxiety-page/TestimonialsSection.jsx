@@ -20,7 +20,7 @@ const testimonials = [
       "I was lying awake every night running through worst-case financial scenarios. It was affecting my work, my relationship, everything. Life coaching gave me the clarity to stop spiraling and start making decisions from a calmer place.",
   },
   {
-    name: "Marcus, 70",
+    name: "Marcus, 19",
     bg: "bg-[#ff6f61]",
     photo: "/images/anxiety-page/testimonial-marcus.png",
     quote:
@@ -65,31 +65,6 @@ function TestimonialsSection() {
             Testimonials
           </h2>
 
-          {/* Arrow buttons - desktop */}
-          <div className="hidden md:flex items-center gap-3">
-            <button
-              onClick={() => swiperInstance?.slidePrev()}
-              className="w-[60px] h-[60px] flex items-center justify-center cursor-pointer"
-              aria-label="Previous testimonial"
-            >
-              <img
-                src="/images/anxiety-page/arrow-prev.svg"
-                alt=""
-                className="w-full h-full"
-              />
-            </button>
-            <button
-              onClick={() => swiperInstance?.slideNext()}
-              className="w-[60px] h-[60px] flex items-center justify-center cursor-pointer"
-              aria-label="Next testimonial"
-            >
-              <img
-                src="/images/anxiety-page/arrow-next.svg"
-                alt=""
-                className="w-full h-full"
-              />
-            </button>
-          </div>
         </div>
 
         {/* Desktop: 3 cards in a row */}

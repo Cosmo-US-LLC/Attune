@@ -65,9 +65,9 @@ function HowItWorks() {
             aria-hidden="true"
             className="absolute pointer-events-none w-[120px]"
             style={{
-              left: "247px",
-              top: "222px",
-              transform: "rotate(-30.45deg) scaleX(-1)",
+              left: "310px",
+              top: "260px",
+              transform: "scaleY(-1) rotate(-25deg)",
             }}
           />
 
@@ -78,9 +78,9 @@ function HowItWorks() {
             aria-hidden="true"
             className="absolute pointer-events-none w-[120px]"
             style={{
-              left: "863px",
-              top: "270px",
-              transform: "rotate(-105deg) scaleX(-1)",
+              right: "310px",
+              top: "300px",
+              transform: "rotate(-15deg)",
             }}
           />
         </div>

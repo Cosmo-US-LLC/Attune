@@ -15,7 +15,7 @@ function StatisticsSection() {
         <img
           src="/images/anxiety-page/char-teal.svg"
           alt=""
-          className="absolute -top-[80px] -right-[20px] w-[160px] h-[125px] rotate-[18deg] z-20"
+          className="absolute -top-[50px] -right-[10px] w-[140px] h-[110px] rotate-[18deg] z-20"
         />
         <img
           src="/images/anxiety-page/circle-lime.svg"
@@ -37,7 +37,7 @@ function StatisticsSection() {
         <img
           src="/images/anxiety-page/char-pink.svg"
           alt=""
-          className="absolute -top-[80px] -left-[20px] w-[163px] h-[134px] -rotate-[17deg] z-20"
+          className="absolute -top-[50px] -left-[10px] w-[143px] h-[114px] -rotate-[17deg] z-20"
         />
         <img
           src="/images/anxiety-page/circle-pink-right.svg"
@@ -60,7 +60,7 @@ function StatisticsSection() {
         <img
           src="/images/anxiety-page/char-yellow.svg"
           alt=""
-          className="absolute -top-[80px] right-[10px] w-[144px] h-[130px] z-20"
+          className="absolute -top-[50px] right-[10px] w-[124px] h-[110px] z-20"
         />
         <img
           src="/images/anxiety-page/circle-teal-left.svg"
@@ -82,7 +82,7 @@ function StatisticsSection() {
         <img
           src="/images/anxiety-page/char-green.svg"
           alt=""
-          className="absolute -top-[70px] left-[10px] w-[148px] h-[122px] -rotate-[11deg] z-20"
+          className="absolute -top-[40px] left-[10px] w-[128px] h-[102px] -rotate-[11deg] z-20"
         />
         <img
           src="/images/anxiety-page/circle-magenta.svg"
@@ -101,10 +101,10 @@ function StatisticsSection() {
 
       {/* ===== Center content (desktop: absolute overlay; mobile: normal flow) ===== */}
       <div className="md:absolute md:inset-0 md:z-20 md:pointer-events-none flex flex-col items-center justify-center text-center max-md:py-[60px] max-md:px-6">
-        <h2 className="font-miniature text-[64px] leading-[72px] font-normal text-black max-w-[600px] max-md:text-[36px] max-md:leading-[44px]">
+        <h2 className="font-miniature text-[64px] leading-[72px] font-normal text-black max-w-[900px] max-md:text-[36px] max-md:leading-[44px]">
           Anxiety is more common than you think and more treatable.
         </h2>
-        <p className="mt-5 text-[16px] leading-[28px] text-gray-700 max-w-[805px]">
+        <p className="mt-6 text-[16px] leading-[28px] text-gray-700 max-w-[805px]">
           Most people struggling with anxiety never get help, not because they
           don&apos;t want it, but because traditional options feel out of reach.
           FeelAttune makes support accessible, affordable, and judgment-free.
