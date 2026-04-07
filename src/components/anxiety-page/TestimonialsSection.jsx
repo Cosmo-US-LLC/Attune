@@ -13,7 +13,7 @@ const testimonials = [
       "Social situations used to drain me completely. I'd cancel plans just to avoid the anxiety of showing up. My life coach helped me understand what was actually driving it and gave me real ways to move through it, not just cope with it.",
   },
   {
-    name: "Priya, 34",
+    name: "Emma, 34",
     bg: "bg-[#f097dd]",
     photo: "/images/anxiety-page/testimonial-priya.png",
     quote:
