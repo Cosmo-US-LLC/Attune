@@ -22,13 +22,13 @@ const questions = [
     id: "03",
     question: "Is this therapy?",
     answer:
-      "No. Attune offers one-on-one life coaching not therapy or clinical treatment. Our life coaches don't diagnose or treat mental health conditions. What they do is create a judgment-free space to help you understand your anxiety, work through what's keeping you stuck, and build practical strategies to move forward. If you're experiencing severe distress or a clinical condition, we recommend seeking support from a qualified mental health professional. Attune is here to complement not replace that care.",
+      "No. FeelAttune offers one-on-one life coaching not therapy or clinical treatment. Our life coaches don't diagnose or treat mental health conditions. What they do is create a judgment-free space to help you understand your anxiety, work through what's keeping you stuck, and build practical strategies to move forward. If you're experiencing severe distress or a clinical condition, we recommend seeking support from a qualified mental health professional. FeelAttune is here to complement not replace that care.",
   },
   {
     id: "04",
     question: "How much does it cost?",
     answer:
-      "Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, starting at just $40/session. We believe emotional support should be accessible to everyone.",
+      "Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, starting at just $39/session. We believe emotional support should be accessible to everyone.",
   },
   {
     id: "05",

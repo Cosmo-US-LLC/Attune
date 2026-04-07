@@ -53,7 +53,7 @@ const WhyChooseCoach = () => {
                 Feature
               </th>
               <th className="col-span-3 p-[20px] max-md:p-3 border-l border-black text-left flex justify-center items-center leading-[22px] text-[43.85px] max-md:text-[28px] font-[400] font-miniature bg-[#e5ff7d]">
-                Att<span className="italic">une</span>
+                FeelAtt<span className="italic">une</span>
               </th>
               <th className="col-span-3 p-[20px] max-md:p-3 border-l border-black text-left text-[20px] max-md:text-[14px] font-[500] flex justify-center items-center">
                 Traditional Therapy

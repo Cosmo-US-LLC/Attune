@@ -26,7 +26,7 @@ function Footer() {
       <div className="max-w-[1440px] mx-auto">
         <div className="relative flex flex-row max-md:flex-col w-[100%] py-[30px] px-[50px] max-md:px-5 max-md:py-8 max-md:gap-8">
           <div className="absolute bottom-[30px] left-[0px] max-md:hidden">
-            <img src="/desktop1/feelattune.webp" alt="Attune logo" />
+            <img src="/desktop1/feelattune.webp" alt="FeelAttune logo" />
           </div>
           <div className="w-[25%] max-md:w-full flex justify-center items-center relative z-10">
             <h1 className="text-[55px] max-md:text-[36px] max-md:leading-[48px] font-[400] font-miniature leading-[69px] w-[301px] max-md:w-full">
@@ -134,7 +134,7 @@ function Footer() {
         </div>
         <div className="flex justify-center items-center h-[60px] px-[50px] max-md:px-4 border-t  border-black">
           <div className="text-black font-inter text-[16px] font-[400] leading-[20px] capitalize">
-            &copy; 2024 Attune. All Rights Reserved
+            &copy; 2024 FeelAttune. All Rights Reserved
           </div>
         </div>
       </div>
