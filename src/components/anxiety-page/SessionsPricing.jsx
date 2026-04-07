@@ -38,7 +38,7 @@ function SessionsPricing() {
           Not Sure Which Option Is Right for You?
         </h2>
         <p className="font-inter text-[18px] text-center max-md:text-left px-[97px] max-md:px-6">
-          We get it — reaching out is a big step.
+          We get it - reaching out is a big step.
           <br />
           That's why we offer a{" "}
           <strong>free 15-minute consultation</strong> to help you explore what

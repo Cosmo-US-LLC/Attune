@@ -20,7 +20,7 @@ import sliderArrowBtn from "@/assets/images/slider-arrow-btn.svg";
 const cards = [
   {
     title: "Social Anxiety:\nWhen Connection Feels Scary",
-    desc: "Social anxiety is more than shyness. It's the fear of being judged, misread, or rejected — in meetings, social settings, or even a simple conversation.",
+    desc: "Social anxiety is more than shyness. It's the fear of being judged, misread, or rejected - in meetings, social settings, or even a simple conversation.",
     bg: "bg-[#38ab9b]",
     text: "white",
     icon: iconSocial,

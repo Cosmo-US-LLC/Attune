@@ -22,7 +22,7 @@ const questions = [
     id: "03",
     question: "Is this therapy?",
     answer:
-      "No. Our Life Coaches are not therapists. They provide guidance, coping strategies, and emotional support — not clinical diagnosis or treatment.",
+      "No. Our Life Coaches are not therapists. They provide guidance, coping strategies, and emotional support - not clinical diagnosis or treatment.",
   },
   {
     id: "04",
