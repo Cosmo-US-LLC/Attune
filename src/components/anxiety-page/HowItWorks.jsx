@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function HowItWorks() {
   return (
     <section
@@ -65,9 +66,9 @@ function HowItWorks() {
             aria-hidden="true"
             className="absolute pointer-events-none w-[120px]"
             style={{
-              left: "247px",
-              top: "222px",
-              transform: "rotate(-30.45deg) scaleX(-1)",
+              left: "310px",
+              top: "260px",
+              transform: "scaleY(-1) rotate(-25deg)",
             }}
           />
 
@@ -78,9 +79,9 @@ function HowItWorks() {
             aria-hidden="true"
             className="absolute pointer-events-none w-[120px]"
             style={{
-              left: "863px",
-              top: "270px",
-              transform: "rotate(-105deg) scaleX(-1)",
+              right: "310px",
+              top: "300px",
+              transform: "rotate(-15deg)",
             }}
           />
         </div>
@@ -115,12 +116,12 @@ function HowItWorks() {
       </div>
 
       {/* CTA Button */}
-      <a
-        href="https://signup.feelattune.com/sign-up"
+      <Link
+            to="/signup-anxiety"
         className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[16px] capitalize hover:bg-purple-800 transition-colors inline-block"
       >
         Connect now
-      </a>
+      </Link>
     </section>
   );
 }

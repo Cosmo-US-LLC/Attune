@@ -10,31 +10,31 @@ const questions = [
     id: "01",
     question: "What is FeelAttune?",
     answer:
-      "FeelAttune is a platform that connects you with trained Life Coaches who provide compassionate, non-judgmental support for anxiety and everyday mental health challenges.",
+      "FeelAttune is a life coaching platform that connects you with certified coaches who specialize in anxiety. Whether you're dealing with social pressure, financial stress, academic overwhelm, or simply the weight of everyday life. We offer personalized, one-on-one sessions designed to help you build real coping strategies and move forward with confidence.",
   },
   {
     id: "02",
     question: "How does it work?",
     answer:
-      "Sign up, browse available Life Coaches, and book a session. Sessions are conducted via video call at a time that works for you.",
+      "Getting started is simple. Tell us a little about yourself and what you're navigating, we'll match you with the right life coach for your situation. You'll receive a booking link via email or SMS to schedule your session then simply join the call and start moving forward.",
   },
   {
     id: "03",
     question: "Is this therapy?",
     answer:
-      "No. Our Life Coaches are not therapists. They provide guidance, coping strategies, and emotional support - not clinical diagnosis or treatment.",
+      "No. Attune offers one-on-one life coaching not therapy or clinical treatment. Our life coaches don't diagnose or treat mental health conditions. What they do is create a judgment-free space to help you understand your anxiety, work through what's keeping you stuck, and build practical strategies to move forward. If you're experiencing severe distress or a clinical condition, we recommend seeking support from a qualified mental health professional. Attune is here to complement not replace that care.",
   },
   {
     id: "04",
     question: "How much does it cost?",
     answer:
-      "Sessions start from $39 CAD. We offer single sessions, 4-session bundles, and weekly plans.",
+      "Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, starting at just $40/session. We believe emotional support should be accessible to everyone.",
   },
   {
     id: "05",
     question: "What if I don't connect with my life coach?",
     answer:
-      "That's completely okay. You can switch to a different Life Coach at any time at no extra cost.",
+      "No problem. Finding the right fit matters and we make it easy to switch. Simply browse our other life coaches and choose the one that feels right for you. Your comfort and progress always come first.",
   },
 ];
 

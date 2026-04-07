@@ -11,19 +11,19 @@ const values = [
     bg: "bg-[#E5FF7D]",
     img: "/desktop1/our-core/core1.svg",
     title: "You Deserve Real Support",
-    body: "Everyone deserves access to meaningful guidance. We believe support should feel personal, warm, and always within reach.",
+    body: "Anxiety is hard enough without having to figure it out alone. Our coaches create a safe, judgment-free space where you can be honest about what you're going through and start making real progress.",
   },
   {
     bg: "bg-[#FFA8ED]",
     img: "/desktop1/our-core/core2.svg",
     title: "Coaching, Not Diagnosing",
-    body: "We focus on helping you grow, set goals, and build resilience. No clinical labels, just real conversations that move you forward.",
+    body: "You don't need a label to get help. Our coaches meet you where you are, whether you're overwhelmed, stuck, or just ready for change, and work with you on practical strategies that move the needle.",
   },
   {
     bg: "bg-[#6FE0D1]",
     img: "/desktop1/our-core/core3.svg",
     title: "Affordable & Built for Your Life",
-    body: "Quality support shouldn't break the bank. Our plans are designed to fit your budget and your busy schedule seamlessly.",
+    body: "Professional coaching shouldn't come with a therapy price tag. We offer flexible, budget-friendly sessions designed around your schedule, so getting support is easy, accessible, and something you can actually stick with.",
   },
 ];
 

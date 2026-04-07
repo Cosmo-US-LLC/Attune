@@ -18,7 +18,7 @@ import Footer from "../components/anxiety-page/Footer";
 
 function AnxietyPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden pt-[90px]">
       <PromoBanner />
       <Navbar />
       <HeroSection />

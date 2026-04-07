@@ -28,49 +28,10 @@ function AnxietyNavbar() {
   };
 
   return (
-    <nav className="bg-white h-[90px]">
+    <nav className="bg-white h-[90px] fixed top-0 left-0 right-0 z-50">
       <div className="max-w-[1440px] w-full h-full mx-auto px-6 md:px-8 flex items-center justify-between">
-        {/* Logo */}
-        <Link
-          to="/"
-          className="flex items-center gap-3"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-          <img
-            src="/desktop1/feel-attune-logo.webp"
-            alt="Feel Attune Logo"
-            className="w-[160px] md:w-[196px]"
-          />
-          <span className="hidden sm:block text-[11px] text-gray-500 font-medium leading-tight -ml-1">
-            By EaseCare
-          </span>
-        </Link>
-
-        {/* Desktop Nav Links */}
-        <div className="hidden lg:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <button
-              key={link.id}
-              onClick={() => handleScroll(link.id, link.offset)}
-              className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900 bg-transparent border-none cursor-pointer"
-            >
-              {link.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Desktop Button */}
-        <div className="hidden lg:flex items-center">
-          <a
-            href="https://signup.feelattune.com/sign-up"
-            className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
-          >
-            Connect Now
-          </a>
-        </div>
-
-        {/* Mobile Hamburger */}
-        <div className="lg:hidden">
+        {/* Mobile: Hamburger + Logo (left side) */}
+        <div className="flex items-center gap-2 lg:hidden">
           <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
               <button
@@ -93,10 +54,9 @@ function AnxietyNavbar() {
                 </svg>
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="z-[101] w-[280px] pt-12">
+            <SheetContent side="left" className="z-[101] w-[280px] pt-12">
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <div className="flex flex-col gap-6">
-                {/* Mobile Logo */}
                 <Link
                   to="/"
                   className="flex items-center gap-2 mb-4"
@@ -107,12 +67,8 @@ function AnxietyNavbar() {
                     alt="Feel Attune Logo"
                     className="w-[140px]"
                   />
-                  <span className="text-[10px] text-gray-500 font-medium">
-                    By EaseCare
-                  </span>
                 </Link>
 
-                {/* Mobile Nav Links */}
                 {navLinks.map((link) => (
                   <button
                     key={link.id}
@@ -129,10 +85,9 @@ function AnxietyNavbar() {
                   </button>
                 ))}
 
-                {/* Mobile Button */}
                 <div className="flex flex-col gap-3 mt-4 pt-4 border-t border-gray-200">
                   <a
-                    href="https://signup.feelattune.com/sign-up"
+                    href="/signup-anxiety"
                     className="w-full h-[40px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
                   >
                     Connect Now
@@ -141,6 +96,62 @@ function AnxietyNavbar() {
               </div>
             </SheetContent>
           </Sheet>
+          <Link
+            to="/"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            <img
+              src="/desktop1/feel-attune-logo.webp"
+              alt="Feel Attune Logo"
+              className="w-[140px]"
+            />
+          </Link>
+        </div>
+
+        {/* Mobile: Connect Now button (right side) */}
+        <div className="lg:hidden">
+          <a
+            href="/signup-anxiety"
+            className="px-5 py-2 bg-[#FF6F61] text-white text-sm rounded-full hover:bg-red-500 transition-colors"
+          >
+            Connect Now
+          </a>
+        </div>
+
+        {/* Desktop: Logo (left) */}
+        <Link
+          to="/"
+          className="hidden lg:flex items-center gap-3"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <img
+            src="/desktop1/feel-attune-logo.webp"
+            alt="Feel Attune Logo"
+            className="w-[196px]"
+          />
+        </Link>
+
+        {/* Desktop: Nav Links (center) */}
+        <div className="hidden lg:flex items-center space-x-8">
+          {navLinks.map((link) => (
+            <button
+              key={link.id}
+              onClick={() => handleScroll(link.id, link.offset)}
+              className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900 bg-transparent border-none cursor-pointer"
+            >
+              {link.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Desktop: CTA (right) */}
+        <div className="hidden lg:flex items-center">
+          <a
+            href="/signup-anxiety"
+            className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
+          >
+            Connect Now
+          </a>
         </div>
       </div>
     </nav>

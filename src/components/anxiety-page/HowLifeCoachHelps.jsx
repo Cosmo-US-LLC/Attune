@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function HowLifeCoachHelps() {
   return (
     <section id="our-approach" className="relative flex items-center justify-end px-[60px] py-[100px] min-h-[700px] max-lg:flex-col max-lg:px-4 max-lg:py-12 max-lg:bg-[#95adf0]">
@@ -36,10 +37,10 @@ export default function HowLifeCoachHelps() {
           ))}
         </div>
 
-        <a href="https://signup.feelattune.com/sign-up" className="mt-12 inline-flex items-center gap-2 bg-[#5200FF] text-white rounded-full px-8 py-2.5 text-[16px] font-medium hover:opacity-90 transition-opacity max-lg:mt-8">
+        <Link to="/signup-anxiety" className="mt-12 inline-flex items-center gap-2 bg-[#5200FF] text-white rounded-full px-8 py-2.5 text-[16px] font-medium hover:opacity-90 transition-opacity max-lg:mt-8">
           Find Your Life Coach
           <img src="/images/anxiety-page/arrow-right-cta.svg" alt="" className="w-5 h-5" />
-        </a>
+        </Link>
       </div>
     </section>
   );

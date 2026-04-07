@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const trustPoints = [
   "Certified life coaches",
   "Flexible scheduling",
@@ -6,56 +7,47 @@ const trustPoints = [
 ];
 
 const CheckIcon = () => (
-  <svg
-    className="w-5 h-5 flex-shrink-0"
-    viewBox="0 0 20 20"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="10" cy="10" r="10" fill="#4ADE80" />
-    <path
-      d="M6 10.5L8.5 13L14 7.5"
-      stroke="white"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
+  <img
+    src="/images/anxiety-page/check-square.svg"
+    alt=""
+    className="w-6 h-6 flex-shrink-0"
+  />
 );
 
 export default function HeroSection() {
   return (
     <section className="flex flex-col lg:flex-row min-h-[85vh]">
       {/* Left - Image */}
-      <div className="w-full lg:w-[55%] h-[350px] lg:h-auto bg-[#E5FF7D] relative">
+      <div className="w-full lg:w-1/2 h-[420px] lg:h-auto bg-[#E5FF7D] relative overflow-hidden">
         <img
           src="/desktop6/hero/Hero.webp"
           alt="Person with puzzle pieces, finding peace of mind"
-          className="w-full h-full object-contain"
+          className="absolute inset-0 w-full h-full object-cover object-top"
         />
       </div>
 
       {/* Right - Content */}
-      <div className="w-full lg:w-[45%] bg-[#8B80F0] px-5 py-10 lg:px-12 lg:py-16 flex flex-col justify-center text-left">
-        <h1 className="font-miniature text-[42px] leading-[46px] lg:text-[80px] lg:leading-[84px] text-white">
+      <div className="w-full lg:w-1/2 bg-[#95ADF0] px-5 py-10 lg:px-[80px] lg:py-[100px] flex flex-col justify-center text-left">
+        <h1 className="font-miniature text-[56px] leading-[60px] lg:text-[80px] lg:leading-[84px] text-white">
           Anxiety holding you back?{" "}
           <span className="italic">Let's change that.</span>
         </h1>
 
-        <p className="text-white text-[18px] leading-[28px] opacity-90 mt-6">
+        <p className="text-white text-[16px] leading-[24px] opacity-90 mt-6">
           No stigma. No diagnosis needed. Just real, one-on-one coaching with
           someone who gets what anxiety feels like and knows how to help you move
           through it. On your terms, at your pace.
         </p>
 
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 mt-8">
-          <a
-            href="https://signup.feelattune.com/sign-up"
-            className="bg-[#FF6F61] text-white rounded-full px-8 py-3 font-semibold hover:opacity-90 transition-opacity whitespace-nowrap"
+          <Link
+            to="/signup-anxiety"
+            className="bg-[#5200FF] text-white rounded-full px-8 py-3 font-medium hover:opacity-90 transition-opacity whitespace-nowrap flex items-center gap-2"
           >
-            15min Free Consultation ➔
-          </a>
-          <span className="font-miniature text-[22px] text-white whitespace-nowrap">
+            Start Your Journey Today
+            <img src="/images/anxiety-page/cta-arrow.svg" alt="" className="w-5 h-5" />
+          </Link>
+          <span className="font-miniature text-[24px] text-black whitespace-nowrap">
             Starting from $39
           </span>
         </div>
@@ -67,7 +59,7 @@ export default function HeroSection() {
               className="flex items-center gap-2 justify-start"
             >
               <CheckIcon />
-              <span className="text-white text-[16px]">{point}</span>
+              <span className="text-black text-[16px]">{point}</span>
             </div>
           ))}
         </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const features = [
   {
     title: "Accessibility",
@@ -99,12 +100,12 @@ const WhyChooseCoach = () => {
         </table>
 
         {/* Call-to-Action Button */}
-        <a
-          href="https://signup.feelattune.com/sign-up"
+        <Link
+            to="/signup-anxiety"
           className="w-fit mx-auto flex justify-center mt-[47px] bg-[#5200FF] hover:bg-purple-800 text-white py-3 px-8 rounded-full text-lg"
         >
           Get Started
-        </a>
+        </Link>
       </div>
     </div>
   );
