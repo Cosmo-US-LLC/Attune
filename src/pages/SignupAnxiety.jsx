@@ -1,9 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import AnxietyNavbar from "../components/anxiety-page/Navbar";
 
 function SignupAnxiety() {
-  const formStarted = useRef(false);
-
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
 
@@ -12,23 +10,14 @@ function SignupAnxiety() {
     script.async = true;
     document.body.appendChild(script);
 
-    // Detect form_start when user first interacts with the form
-    const handleFormStart = () => {
-      if (!formStarted.current) {
-        formStarted.current = true;
+    const handleMessage = (e) => {
+      if (!e.data || !e.data.type) return;
+
+      if (e.data.type === "form_init") {
         window.dataLayer.push({ event: "form_start", form_name: "signup-anxiety" });
       }
-    };
 
-    const formContainer = document.getElementById("fillout-form-container");
-    if (formContainer) {
-      formContainer.addEventListener("click", handleFormStart);
-      formContainer.addEventListener("focusin", handleFormStart);
-    }
-
-    // Listen for Fillout submit event via postMessage
-    const handleMessage = (e) => {
-      if (e.data && (e.data.type === "fillout-form-submitted" || e.data === "fillout-form-submitted")) {
+      if (e.data.type === "form_submit") {
         window.dataLayer.push({ event: "form_submit", form_name: "signup-anxiety" });
       }
     };
@@ -37,10 +26,6 @@ function SignupAnxiety() {
     return () => {
       document.body.removeChild(script);
       window.removeEventListener("message", handleMessage);
-      if (formContainer) {
-        formContainer.removeEventListener("click", handleFormStart);
-        formContainer.removeEventListener("focusin", handleFormStart);
-      }
     };
   }, []);
 
