@@ -17,7 +17,7 @@ function SessionsPricing() {
         <PricingCard
           badge="4 Video Sessions"
           title="CAD $39"
-          subtitle="(4 sessions in just $160)"
+          subtitle="(4 sessions in just $156)"
           isSubtitle={true}
           item1="Best for ongoing support"
           item2="Flexible scheduling"
