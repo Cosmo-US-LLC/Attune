@@ -24,7 +24,7 @@ import SeniorsLonelinessDesktop from "./components/SeniorsLoneliness/Desktop";
 import SeniorsLonelinessMobile from "./components/SeniorsLoneliness/Mobile";
 import ListenerRecruitmentDesktop from "./components/ListenerRecruitment/Desktop";
 import ListenerRecruitmentMobile from "./components/ListenerRecruitment/Mobile";
-
+import AnxietyPage from "./pages/AnxietyPage";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsandConditions";
 import ContactUs from "./components/ContactUs";
@@ -161,6 +161,7 @@ function App() {
           <Route path="/ghl-contact-us" element={<ContactUs />} />
         </Route>
 
+        <Route path="/anxiety" element={<AnxietyPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
