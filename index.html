@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google Tag Manager -->
@@ -36,11 +36,14 @@
       async="true"
     ></script>
 
+    <!-- LeadConnector chat widget (disabled) -->
+    <!--
     <script
       src="https://widgets.leadconnectorhq.com/loader.js"
       data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
       data-widget-id="67b8567ca81d1cec2bd76c7e"
     ></script>
+    -->
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <!-- <link id="favicon" rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon-light.svg"> -->
@@ -72,7 +75,7 @@
             cc = {};
           try {
             var c = JSON.parse(
-              localStorage.getItem("_vwo_" + account_id + "_config")
+              localStorage.getItem("_vwo_" + account_id + "_config"),
             );
             cc = c && typeof c === "object" ? c : {};
           } catch (e) {}
