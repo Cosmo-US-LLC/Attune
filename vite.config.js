@@ -11,4 +11,7 @@ export default defineConfig({
     },
   },
   base: '/',
+  server: {
+    allowedHosts: ['feelattune.com'],
+  },
 })
