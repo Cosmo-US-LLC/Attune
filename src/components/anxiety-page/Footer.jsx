@@ -97,21 +97,21 @@ function Footer() {
             </div>
 
             <div className="flex gap-4 justify-end items-center w-[50%] max-md:w-auto z-20">
-              <a href="https://www.linkedin.com/company/easecare/">
+              <a href="https://www.linkedin.com/company/feelattune/">
                 <img
                   src="/desktop1/footer/link-4.svg"
                   alt="Share link"
                   className="w-[43px] h-[43px]"
                 />
               </a>
-              <a href="https://www.facebook.com/easecare.ca">
+              <a href="https://www.facebook.com/profile.php?id=61585879137501#">
                 <img
                   src="/desktop1/footer/link-1.svg"
                   alt="Share link"
                   className="w-[43px] h-[43px]"
                 />
               </a>
-              <a href="https://www.instagram.com/easecare.ca/">
+              <a href="https://www.instagram.com/feelattuneofficial">
                 <img
                   src="/desktop1/footer/link-2.svg"
                   alt="Share link"
