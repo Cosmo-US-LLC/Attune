@@ -108,21 +108,21 @@ function FooterMobile() {
         </div>
         <div className="flex items-center justify-between py-0 mt-6">
           <div className="flex flex-row items-center justify-center gap-4">
-            <a href="https://www.linkedin.com/company/easecare/">
+            <a href="https://www.linkedin.com/company/feelattune/">
               <img
                 src="/mobile1/footer/linkedIn.svg"
                 alt="linkedIn"
                 className=""
               />
             </a>
-            <a href="https://www.facebook.com/easecare.ca">
+            <a href="https://www.facebook.com/profile.php?id=61585879137501#">
               <img
                 src="/mobile1/footer/facebook.svg"
                 alt="facebook"
                 className=""
               />
             </a>
-            <a href="https://www.instagram.com/easecare.ca/">
+            <a href="https://www.instagram.com/feelattuneofficial">
               <img
                 src="/mobile1/footer/instagram.svg"
                 alt="instagram"
