@@ -15,12 +15,12 @@ export default function BeginJourney() {
           <img
             src="/images/anxiety-page/begin-journey-woman-mobile.png"
             alt="Smiling woman talking on phone"
-            className="hidden max-md:block w-full h-full object-cover object-center"
+            className="hidden object-cover object-center w-full h-full max-md:block"
           />
         </div>
 
         {/* Right - White box with content and illustrations */}
-        <div className="flex-1 bg-white border border-black border-l-0 border-r-0 relative overflow-hidden max-md:border-l max-md:border-t-0">
+        <div className="relative flex-1 overflow-hidden bg-white border border-l-0 border-r-0 border-black max-md:border-l max-md:border-t-0">
           {/* Text + Button */}
           <div className="absolute left-[80px] top-[96px] z-10 max-md:relative max-md:left-0 max-md:top-0 max-md:p-6">
             <h2 className="font-miniature text-[50px] max-md:text-[32px] max-md:leading-[42px] leading-[69px] text-black">
@@ -33,7 +33,7 @@ export default function BeginJourney() {
             to="/signup-anxiety"
               className="mt-6 inline-block bg-[#5200FF] text-white rounded-full px-10 py-3 text-[16px] font-medium hover:opacity-90 transition-opacity"
             >
-              Connect Now
+              Schedule a Free 15-Minute Call
             </Link>
           </div>
 

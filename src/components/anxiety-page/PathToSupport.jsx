@@ -13,7 +13,7 @@ const cards = [
       "Grow Confidence Beyond The Highlight Reel",
       "Work Through Body Image And Self-Worth",
     ],
-    button: "Start Your Journey",
+    button: "Schedule a Free 15-Minute Call",
   },
   {
     bg: "bg-[#F097DD]",
@@ -27,7 +27,7 @@ const cards = [
       "Move Through Life Changes With Clarity",
       "Reduce Digital Overload And Anxiety",
     ],
-    button: "Connect Now",
+    button: "Schedule a Free 15-Minute Call",
   },
   {
     bg: "bg-[#FF6F61]",
@@ -42,7 +42,7 @@ const cards = [
       "Gain Peace Of Mind Around Financial Security",
       "Reconnect And Overcome Social Isolation",
     ],
-    button: "Talk to a Life Coach",
+    button: "Schedule a Free 15-Minute Call",
   },
 ];
 
@@ -73,12 +73,12 @@ export default function PathToSupport() {
             </div>
 
             {/* Content */}
-            <div className="px-4 pb-6 pt-5 flex flex-col flex-1">
+            <div className="flex flex-col flex-1 px-4 pt-5 pb-6">
               <h3 className="font-miniature text-[28px] text-white mb-4">
                 {card.title}
               </h3>
 
-              <ul className="space-y-3 mb-6 flex-1">
+              <ul className="flex-1 mb-6 space-y-3">
                 {card.bullets.map((bullet, j) => (
                   <li key={j} className="flex items-start gap-3">
                     <span className="w-[19px] h-[19px] min-w-[19px] mt-0.5 rounded-full border-2 border-white bg-white/20 inline-block" />

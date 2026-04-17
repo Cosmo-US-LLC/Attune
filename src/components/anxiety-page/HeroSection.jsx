@@ -10,7 +10,7 @@ const CheckIcon = () => (
   <img
     src="/images/anxiety-page/check-square.svg"
     alt=""
-    className="w-6 h-6 flex-shrink-0"
+    className="flex-shrink-0 w-6 h-6"
   />
 );
 
@@ -22,7 +22,7 @@ export default function HeroSection() {
         <img
           src="/desktop6/hero/Hero.webp"
           alt="Person with puzzle pieces, finding peace of mind"
-          className="absolute inset-0 w-full h-full object-cover object-top"
+          className="absolute inset-0 object-cover object-top w-full h-full"
         />
       </div>
 
@@ -39,12 +39,12 @@ export default function HeroSection() {
           through it. On your terms, at your pace.
         </p>
 
-        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 mt-8">
+        <div className="flex flex-col items-start gap-6 mt-8 lg:flex-row lg:items-center">
           <Link
             to="/signup-anxiety"
             className="bg-[#5200FF] text-white rounded-full px-8 py-3 font-medium hover:opacity-90 transition-opacity whitespace-nowrap flex items-center gap-2"
           >
-            15min Free Consultation
+            Schedule a Free 15-Minute Call
             <img src="/images/anxiety-page/cta-arrow.svg" alt="" className="w-5 h-5" />
           </Link>
           <span className="font-miniature text-[24px] text-black whitespace-nowrap">
@@ -52,11 +52,11 @@ export default function HeroSection() {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-8">
+        <div className="grid grid-cols-1 gap-3 mt-8 sm:grid-cols-2">
           {trustPoints.map((point) => (
             <div
               key={point}
-              className="flex items-center gap-2 justify-start"
+              className="flex items-center justify-start gap-2"
             >
               <CheckIcon />
               <span className="text-black text-[16px]">{point}</span>

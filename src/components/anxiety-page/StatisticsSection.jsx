@@ -6,7 +6,7 @@ function StatisticsSection() {
       <img
         src="/images/anxiety-page/anxiety-boy-bg.png"
         alt=""
-        className="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-25 max-md:hidden"
+        className="absolute inset-0 object-cover w-full h-full opacity-25 mix-blend-luminosity max-md:hidden"
       />
 
       {/* ===== DESKTOP: absolute-positioned circles ===== */}
@@ -114,7 +114,7 @@ function StatisticsSection() {
             to="/signup-anxiety"
           className="mt-7 bg-[#FF6F61] hover:bg-[#e85d50] text-white py-3 px-8 rounded-full inline-block text-center font-medium transition-colors md:pointer-events-auto"
         >
-          Connect Now
+          Schedule a Free 15-Minute Call
         </Link>
       </div>
 

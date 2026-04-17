@@ -6,7 +6,7 @@ function HowItWorks() {
       className="bg-[#E5FF7D] px-4 md:px-[60px] py-[100px] flex flex-col gap-[64px] items-center"
     >
       {/* Title with decorative highlight */}
-      <div className="relative w-full flex justify-center">
+      <div className="relative flex justify-center w-full">
         <h2 className="font-miniature text-[40px] md:text-[64px] leading-[48px] md:leading-[72px] text-center">
           How it works
         </h2>
@@ -87,7 +87,7 @@ function HowItWorks() {
         </div>
 
         {/* Mobile: stacked layout, no arrows */}
-        <div className="md:hidden flex flex-col gap-6">
+        <div className="flex flex-col gap-6 md:hidden">
           <HowItCard
             number="01"
             title="Sign Up"
@@ -120,7 +120,7 @@ function HowItWorks() {
             to="/signup-anxiety"
         className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[16px] capitalize hover:bg-purple-800 transition-colors inline-block"
       >
-        Connect now
+        Schedule a Free 15-Minute Call
       </Link>
     </section>
   );

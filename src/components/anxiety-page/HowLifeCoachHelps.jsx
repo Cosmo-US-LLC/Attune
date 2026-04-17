@@ -27,7 +27,7 @@ export default function HowLifeCoachHelps() {
             { lead: "Rebuild confidence and momentum:", desc: "Move past the thoughts that keep you stuck and take real steps toward the life you want." },
             { lead: "Create lasting resilience:", desc: "Anxiety doesn't disappear overnight. Your coach helps you grow stronger with every session, not just feel better in the moment." },
           ].map((item, i) => (
-            <div key={i} className="flex gap-4 items-start">
+            <div key={i} className="flex items-start gap-4">
               <img src="/images/anxiety-page/tick-circle.svg" alt="" className="w-7 h-7 flex-shrink-0 mt-0.5" />
               <p className="text-black text-[16px] leading-[24px]">
                 <span className="font-bold">{item.lead} </span>
@@ -38,7 +38,7 @@ export default function HowLifeCoachHelps() {
         </div>
 
         <Link to="/signup-anxiety" className="mt-12 inline-flex items-center gap-2 bg-[#5200FF] text-white rounded-full px-8 py-2.5 text-[16px] font-medium hover:opacity-90 transition-opacity max-lg:mt-8">
-          Find Your Life Coach
+          Schedule a Free 15-Minute Call
           <img src="/images/anxiety-page/arrow-right-cta.svg" alt="" className="w-5 h-5" />
         </Link>
       </div>

@@ -142,7 +142,7 @@ function AnxietyCard({ card }) {
     >
       {/* Icon top-right */}
       <div className="flex justify-end">
-        <img src={card.icon} alt="" className="w-16 h-16 object-contain" />
+        <img src={card.icon} alt="" className="object-contain w-16 h-16" />
       </div>
 
       {/* Title */}
@@ -180,8 +180,8 @@ function AnxietyCard({ card }) {
             to="/signup-anxiety"
         className="bg-[#5200ff] rounded-full px-8 py-2.5 text-white text-center font-medium inline-flex items-center justify-center gap-2 self-start"
       >
-        Start One-on-One Life Coaching
-        <img src={arrowRightWhite} alt="" className="w-5 h-5 object-contain" />
+        Schedule a Free 15-Minute Call
+        <img src={arrowRightWhite} alt="" className="object-contain w-5 h-5" />
       </Link>
     </div>
   );
@@ -225,7 +225,7 @@ function DesktopSlider() {
       >
         <CarouselContent className="-ml-6">
           {cards.map((card, index) => (
-            <CarouselItem key={index} className="basis-1/3 pl-6 flex">
+            <CarouselItem key={index} className="flex pl-6 basis-1/3">
               <AnxietyCard card={card} />
             </CarouselItem>
           ))}
@@ -235,7 +235,7 @@ function DesktopSlider() {
       {canScrollPrev && (
         <button
           onClick={scrollPrev}
-          className="absolute -left-5 top-1/2 -translate-y-1/2 z-10"
+          className="absolute z-10 -translate-y-1/2 -left-5 top-1/2"
           aria-label="Previous slide"
         >
           <img
@@ -249,7 +249,7 @@ function DesktopSlider() {
       {canScrollNext && (
         <button
           onClick={scrollNext}
-          className="absolute -right-5 top-1/2 -translate-y-1/2 z-10"
+          className="absolute z-10 -translate-y-1/2 -right-5 top-1/2"
           aria-label="Next slide"
         >
           <img

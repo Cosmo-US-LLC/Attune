@@ -29,7 +29,7 @@ function AnxietyNavbar() {
 
   return (
     <nav className="bg-white h-[90px] fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-[1440px] w-full h-full mx-auto px-6 md:px-8 flex items-center justify-between">
+      <div className="max-w-[1440px] w-full h-full mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Mobile: Hamburger + Logo (left side) */}
         <div className="flex items-center gap-2 lg:hidden">
           <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
@@ -40,7 +40,7 @@ function AnxietyNavbar() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-7 w-7 text-gray-800"
+                  className="text-gray-800 h-7 w-7"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -58,7 +58,7 @@ function AnxietyNavbar() {
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <div className="flex flex-col gap-6">
                 <Link
-                  to="/"
+                  to="/anxiety"
                   className="flex items-center gap-2 mb-4"
                   onClick={() => setSheetOpen(false)}
                 >
@@ -85,19 +85,19 @@ function AnxietyNavbar() {
                   </button>
                 ))}
 
-                <div className="flex flex-col gap-3 mt-4 pt-4 border-t border-gray-200">
+                <div className="flex flex-col gap-3 pt-4 mt-4 border-t border-gray-200">
                   <a
                     href="/signup-anxiety"
-                    className="w-full h-[40px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
+                    className="w-full h-[35px] bg-[#FF6F61] text-[14px] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
                   >
-                    Connect Now
+                    Schedule a Free 15-Minute Call
                   </a>
                 </div>
               </div>
             </SheetContent>
           </Sheet>
           <Link
-            to="/"
+            to="/anxiety"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             <img
@@ -112,16 +112,16 @@ function AnxietyNavbar() {
         <div className="lg:hidden">
           <a
             href="/signup-anxiety"
-            className="px-5 py-2 bg-[#FF6F61] text-white text-sm rounded-full hover:bg-red-500 transition-colors"
+            className="w-full px-4 py-2 bg-[#FF6F61] text-white text-sm rounded-full hover:bg-red-500 transition-colors"
           >
-            Connect Now
+           Free 15-Min Call
           </a>
         </div>
 
         {/* Desktop: Logo (left) */}
         <Link
-          to="/"
-          className="hidden lg:flex items-center gap-3"
+          to="/anxiety"
+          className="items-center hidden gap-3 lg:flex"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <img
@@ -132,7 +132,7 @@ function AnxietyNavbar() {
         </Link>
 
         {/* Desktop: Nav Links (center) */}
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="items-center hidden space-x-8 lg:flex">
           {navLinks.map((link) => (
             <button
               key={link.id}
@@ -145,12 +145,12 @@ function AnxietyNavbar() {
         </div>
 
         {/* Desktop: CTA (right) */}
-        <div className="hidden lg:flex items-center">
+        <div className="items-center hidden lg:flex">
           <a
             href="/signup-anxiety"
-            className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
+            className="px-4 py-2 bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
           >
-            Connect Now
+            Schedule a Free 15-Minute Call
           </a>
         </div>
       </div>
