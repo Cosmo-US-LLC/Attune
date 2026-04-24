@@ -85,12 +85,12 @@ function AnxietyNavbar() {
                   </button>
                 ))}
 
-                <div className="flex flex-col gap-3 pt-4 mt-4 border-t border-gray-200">
+                <div className="flex flex-col gap-3 pt-4 mt-4 border-t border-gray-200 ">
                   <a
                     href="/signup-anxiety"
-                    className="w-full h-[35px] bg-[#FF6F61] text-[14px] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
+                    className="p-2 w-full h-[35px] bg-[#FF6F61] text-[13px] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
                   >
-                    Schedule a Free 15-Minute Call
+                    Book a Free 15-Min Discovery Call
                   </a>
                 </div>
               </div>
@@ -150,7 +150,7 @@ function AnxietyNavbar() {
             href="/signup-anxiety"
             className="px-4 py-2 bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
           >
-            Schedule a Free 15-Minute Call
+            Book a Free 15-Min Discovery Call
           </a>
         </div>
       </div>

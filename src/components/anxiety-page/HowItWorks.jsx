@@ -120,7 +120,7 @@ function HowItWorks() {
             to="/signup-anxiety"
         className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[16px] capitalize hover:bg-purple-800 transition-colors inline-block"
       >
-        Schedule a Free 15-Minute Call
+        Book a Free 15-Min Discovery Call
       </Link>
     </section>
   );

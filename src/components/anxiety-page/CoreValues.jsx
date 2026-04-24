@@ -40,7 +40,7 @@ const CoreValues = () => {
             {values.map((value, id) => (
               <CarouselItem
                 key={id}
-                className="max-xl:basis-1/2 max-md:basis-full basis-1/3 w-full h-full"
+                className="w-full h-full max-xl:basis-1/2 max-md:basis-full basis-1/3"
               >
                 <div
                   className={

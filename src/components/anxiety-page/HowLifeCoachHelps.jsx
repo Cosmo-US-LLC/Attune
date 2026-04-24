@@ -38,7 +38,7 @@ export default function HowLifeCoachHelps() {
         </div>
 
         <Link to="/signup-anxiety" className="mt-12 inline-flex items-center gap-2 bg-[#5200FF] text-white rounded-full px-8 py-2.5 text-[16px] font-medium hover:opacity-90 transition-opacity max-lg:mt-8">
-          Schedule a Free 15-Minute Call
+          Book a Free 15-Min Discovery Call
           <img src="/images/anxiety-page/arrow-right-cta.svg" alt="" className="w-5 h-5" />
         </Link>
       </div>

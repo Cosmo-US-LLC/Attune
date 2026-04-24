@@ -104,7 +104,7 @@ const WhyChooseCoach = () => {
             to="/signup-anxiety"
           className="w-fit mx-auto flex justify-center mt-[47px] bg-[#5200FF] hover:bg-purple-800 text-white py-3 px-8 rounded-full text-lg"
         >
-          Schedule a Free 15-Minute Call
+          Book a Free 15-Min Discovery Call
         </Link>
       </div>
     </div>

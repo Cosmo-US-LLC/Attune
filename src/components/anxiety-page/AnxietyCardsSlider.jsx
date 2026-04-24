@@ -180,7 +180,7 @@ function AnxietyCard({ card }) {
             to="/signup-anxiety"
         className="bg-[#5200ff] rounded-full px-8 py-2.5 text-white text-center font-medium inline-flex items-center justify-center gap-2 self-start"
       >
-        Schedule a Free 15-Minute Call
+        Book a Free 15-Min Discovery Call
         <img src={arrowRightWhite} alt="" className="object-contain w-5 h-5" />
       </Link>
     </div>

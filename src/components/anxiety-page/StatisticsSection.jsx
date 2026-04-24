@@ -114,7 +114,7 @@ function StatisticsSection() {
             to="/signup-anxiety"
           className="mt-7 bg-[#FF6F61] hover:bg-[#e85d50] text-white py-3 px-8 rounded-full inline-block text-center font-medium transition-colors md:pointer-events-auto"
         >
-          Schedule a Free 15-Minute Call
+          Book a Free 15-Min Discovery Call
         </Link>
       </div>
 

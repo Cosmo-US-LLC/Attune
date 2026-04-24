@@ -33,7 +33,7 @@ export default function BeginJourney() {
             to="/signup-anxiety"
               className="mt-6 inline-block bg-[#5200FF] text-white rounded-full px-10 py-3 text-[16px] font-medium hover:opacity-90 transition-opacity"
             >
-              Schedule a Free 15-Minute Call
+              Book a Free 15-Min Discovery Call
             </Link>
           </div>
 

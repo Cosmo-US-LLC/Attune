@@ -44,7 +44,7 @@ export default function HeroSection() {
             to="/signup-anxiety"
             className="bg-[#5200FF] text-white rounded-full px-8 py-3 font-medium hover:opacity-90 transition-opacity whitespace-nowrap flex items-center gap-2"
           >
-            Schedule a Free 15-Minute Call
+            Book a Free 15-Min Discovery Call
             <img src="/images/anxiety-page/cta-arrow.svg" alt="" className="w-5 h-5" />
           </Link>
           <span className="font-miniature text-[24px] text-black whitespace-nowrap">

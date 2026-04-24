@@ -13,7 +13,7 @@ const cards = [
       "Grow Confidence Beyond The Highlight Reel",
       "Work Through Body Image And Self-Worth",
     ],
-    button: "Schedule a Free 15-Minute Call",
+    button: "Book a Free 15-Min Discovery Call",
   },
   {
     bg: "bg-[#F097DD]",
@@ -27,7 +27,7 @@ const cards = [
       "Move Through Life Changes With Clarity",
       "Reduce Digital Overload And Anxiety",
     ],
-    button: "Schedule a Free 15-Minute Call",
+    button: "Book a Free 15-Min Discovery Call",
   },
   {
     bg: "bg-[#FF6F61]",
@@ -42,7 +42,7 @@ const cards = [
       "Gain Peace Of Mind Around Financial Security",
       "Reconnect And Overcome Social Isolation",
     ],
-    button: "Schedule a Free 15-Minute Call",
+    button: "Book a Free 15-Min Discovery Call",
   },
 ];
 

@@ -52,7 +52,7 @@ function SessionsPricing() {
             to="/signup-anxiety"
           className="bg-[#5200FF] text-white py-3 px-8 mt-[17px] mb-[28px] rounded-full text-[15px] hover:bg-purple-800 max-md:self-start inline-block"
         >
-          Schedule a Free 15-Minute Call
+          Book a Free 15-Min Discovery Call
         </Link>
       </div>
     </div>
@@ -111,7 +111,7 @@ function PricingCard({ badge, title, subtitle, item1, item2, item3, isSubtitle }
             to="/signup-anxiety"
           className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[15px] hover:bg-purple-800 inline-block"
         >
-          Schedule a Free 15-Minute Call
+          Book a Free 15-Min Discovery Call
         </Link>
       </div>
     </div>
