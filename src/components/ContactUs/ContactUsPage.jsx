@@ -1,19 +1,32 @@
+import { useState, useEffect } from "react";
 import Hero from "./Hero";
 import Stats from "./Stats";
 import HeroMobile from "./Mobile/HeroMobile";
 import StatsMobile from "./Mobile/StatsMobile";
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 1024);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 1023px)");
+    setIsMobile(mq.matches);
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+  return isMobile;
+}
+
 function ContactUsPage() {
-  return (
+  const isMobile = useIsMobile();
+  return isMobile ? (
     <>
-      <div className="max-lg:hidden">
-        <Hero />
-        <Stats />
-      </div>
-      <div className="lg:hidden">
-        <HeroMobile />
-        <StatsMobile />
-      </div>
+      <HeroMobile />
+      <StatsMobile />
+    </>
+  ) : (
+    <>
+      <Hero />
+      <Stats />
     </>
   );
 }

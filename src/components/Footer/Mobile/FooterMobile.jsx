@@ -92,12 +92,8 @@ function FooterMobile() {
             )}
 
             <div className="space-y-[15px] flex flex-col text-[16px] font-[500]  mt-4">
-              <Link to="/terms-of-use">
-                <a href="">Terms of Use</a>
-              </Link>
-              <Link to="/privacy-policy">
-                <a href="">Privacy Policy</a>
-              </Link>
+              <Link to="/terms-of-use">Terms of Use</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </div>
           </div>
           <img
