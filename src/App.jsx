@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 import useFavicon from "./hooks/useFavicon";
 import Layout from "./components/Layout";
 import NotFound from "./components/NotFound";
@@ -29,7 +30,25 @@ import SignupAnxiety from "./pages/SignupAnxiety";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsandConditions";
 import ContactUs from "./components/ContactUs";
+import LifeCoachingHomeDesktop from "./components/LifeCoachingHome/Desktop";
+import LifeCoachingHomeMobile from "./components/LifeCoachingHome/Mobile";
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 1024);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 1023px)");
+    setIsMobile(mq.matches);
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+  return isMobile;
+}
+
+function LifeCoachingHomePage() {
+  const isMobile = useIsMobile();
+  return isMobile ? <LifeCoachingHomeMobile /> : <LifeCoachingHomeDesktop />;
+}
 
 function App() {
   useFavicon();
@@ -160,6 +179,7 @@ function App() {
           <Route path="/terms-of-use" element={<TermsAndConditions />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/ghl-contact-us" element={<ContactUs />} />
+          <Route path="/life-coaching" element={<LifeCoachingHomePage />} />
         </Route>
 
         <Route path="/anxiety" element={<AnxietyPage />} />
