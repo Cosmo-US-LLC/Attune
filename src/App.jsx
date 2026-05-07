@@ -30,6 +30,8 @@ import SignupAnxiety from "./pages/SignupAnxiety";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsandConditions";
 import ContactUs from "./components/ContactUs";
+import ContactUsPage from "./components/ContactUs/ContactUsPage";
+import FAQsPage from "./components/FAQs/FAQsPage";
 import LifeCoachingHomeDesktop from "./components/LifeCoachingHome/Desktop";
 import LifeCoachingHomeMobile from "./components/LifeCoachingHome/Mobile";
 
@@ -179,6 +181,8 @@ function App() {
           <Route path="/terms-of-use" element={<TermsAndConditions />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/ghl-contact-us" element={<ContactUs />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
+          <Route path="/faqs" element={<FAQsPage />} />
           <Route path="/life-coaching" element={<LifeCoachingHomePage />} />
         </Route>
 
