@@ -46,7 +46,7 @@ function RealOutcomes() {
               </span>
             </div>
             <div>
-              <p className="font-miniature text-[55px] leading-[67px] text-[#0d0d0d]">
+              <p className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d]">
                 What changes when you work with a{" "}
                 <span className="font-miniature italic text-[#ff6f61]">life coach</span>
               </p>
@@ -62,7 +62,7 @@ function RealOutcomes() {
             <img
               src="/life-coaching/desktop/real-outcomes/coach-illustration.webp"
               alt="Life coaching illustration"
-              className="w-full h-full object-contain"
+              className="object-contain w-full h-full"
             />
           </div>
         </div>

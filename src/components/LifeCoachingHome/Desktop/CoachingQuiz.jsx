@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const quizQuestions = [
   {
@@ -12,39 +13,39 @@ const quizQuestions = [
     ],
   },
   {
-    question: "How often do you feel stuck in the same patterns or habits?",
+    question: "How often do you feel like you're making real progress toward the things that matter to you?",
     options: [
-      "Almost every day",
-      "A few times a week",
-      "Occasionally",
-      "Rarely — I feel mostly in control",
+      "Rarely — I feel stuck most of the timeAlmost every day",
+      "Sometimes — but it doesn't last",
+      "Often — but I want to go deeper",
+      "Regularly — I'm just looking to accelerate",
     ],
   },
   {
-    question: "Have you tried to make a significant life change in the past year?",
+    question: "When you face an important decision, what tends to happen?",
     options: [
-      "Yes, but it didn't stick",
-      "I wanted to but didn't start",
-      "I made some progress but stalled",
-      "Yes, and it went well",
+      "I freeze and avoid it",
+      "I decide but always second-guess myself",
+      "I decide, but it takes a long time",
+      "I decide with reasonable confidence",
     ],
   },
   {
-    question: "How comfortable are you asking for support when you need it?",
+    question: "How would you describe your current relationship with your own confidence?",
     options: [
-      "Very uncomfortable — I prefer to handle things alone",
-      "Somewhat uncomfortable",
-      "Fairly comfortable",
-      "Very comfortable",
+      "It's mostly absent — I doubt myself a lot",
+      "It shows up sometimes, but not reliably",
+      "I'm fairly confident in some areas",
+      "I'm confident, but want to expand my capacity",
     ],
   },
   {
-    question: "What best describes what you're looking for right now?",
+    question: "What's the main thing you're hoping coaching could give you?",
     options: [
-      "Someone to help me figure out what I want",
-      "Accountability to follow through on my goals",
-      "A thinking partner for big decisions",
-      "Tools to manage anxiety or stress better",
+      "Clarity on what I actually want",
+      "A plan I'll finally stick to",
+      "More confidence and self-belief",
+      "Someone to keep me accountable",
     ],
   },
 ];
@@ -97,7 +98,7 @@ function CoachingQuiz() {
               </span>
             </div>
             <div>
-              <p className="font-miniature text-[55px] leading-[67px] text-[#0d0d0d]">
+              <p className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d]">
                 Could coaching{" "}
                 <span className="font-miniature italic text-[#ff6f61]">change </span>
                 things for you?
@@ -189,11 +190,11 @@ function CoachingQuiz() {
                 Based on your answers, you&apos;re exactly the kind of person who thrives with
                 life coaching support. Let&apos;s get you started.
               </p>
-              <a href="https://signup.feelattune.com/sign-up">
+              <Link to ="/signup-anxiety">
                 <button className="bg-[#5200ff] text-white font-semibold text-[18px] px-[32px] py-[16px] rounded-[39px] hover:bg-[#4000cc] transition-colors">
                   Start your journey →
                 </button>
-              </a>
+              </Link>
             </div>
           )}
         </div>

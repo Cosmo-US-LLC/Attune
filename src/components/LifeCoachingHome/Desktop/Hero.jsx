@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
-    <div className="bg-[#e5ff7d] relative overflow-hidden min-h-[680px] flex items-center px-[113px] py-[60px]">
+    <div className="bg-[#e5ff7d] relative overflow-hidden min-h-[680px] flex items-center px-[113px] py-[60px] ">
       <div className="max-w-[1440px] mx-auto w-full flex items-center justify-between gap-12">
         {/* Left content */}
         <div className="flex flex-col gap-[32px] max-w-[607px]">
@@ -26,14 +28,14 @@ function Hero() {
               confidence you&apos;ve always had inside you.
             </p>
 
-            <a
-              href="https://signup.feelattune.com/sign-up"
+            <Link
+              to ="/signup-anxiety"
               className="self-start"
             >
               <button className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] px-[32px] py-[20px] rounded-[39px] hover:bg-[#4000cc] transition-colors">
                 Start your journey →
               </button>
-            </a>
+            </Link>
           </div>
 
           {/* Money-back guarantee badge */}
@@ -68,6 +70,7 @@ function Hero() {
         </div>
 
         {/* Right illustration — 5 coloured bars + 5 characters (node 4158:1628) */}
+
         <div className="relative flex-shrink-0 w-[585px] h-[596px]">
           {/* Coloured transparent vertical bars */}
           <div className="absolute bg-[rgba(255,106,1,0.26)]  w-[111px] h-[459px] left-[55px]  top-[137px]" />

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const questions = [
   {
-    q: "When you think about where you want to be in a year, how clear does that picture feel?",
+    q:
+      "When you think about where you want to be in a year, how clear does that picture feel?",
     options: [
       "Completely foggy — I have no idea",
       "Vague — I have feelings but not clarity",
@@ -12,39 +14,39 @@ const questions = [
     ],
   },
   {
-    q: "How often do you feel stuck, even when you know what you want?",
+    q: "How often do you feel like you're making real progress toward the things that matter to you?",
     options: [
-      "Almost always — I can't seem to move",
-      "Often — I start but lose momentum",
-      "Sometimes — it depends on the area",
-      "Rarely — I generally follow through",
+      "Rarely — I feel stuck most of the timeAlmost every day",
+      "Sometimes — but it doesn't last",
+      "Often — but I want to go deeper",
+      "Regularly — I'm just looking to accelerate",
     ],
   },
   {
-    q: "How do you currently handle setbacks or tough decisions?",
+    q: "When you face an important decision, what tends to happen?",
     options: [
-      "I avoid them or freeze up",
-      "I manage but it drains me",
-      "I push through but wish I had support",
-      "I'm fairly resilient but want to grow",
+      "I freeze and avoid it",
+      "I decide but always second-guess myself",
+      "I decide, but it takes a long time",
+      "I decide with reasonable confidence",
     ],
   },
   {
-    q: "How important is accountability to you when making changes?",
+    q: "How would you describe your current relationship with your own confidence?",
     options: [
-      "Very — I need someone to check in",
-      "Somewhat — it helps but isn't essential",
-      "Not much — I'm self-motivated",
-      "I'm not sure yet",
+      "It's mostly absent — I doubt myself a lot",
+      "It shows up sometimes, but not reliably",
+      "I'm fairly confident in some areas",
+      "I'm confident, but want to expand my capacity",
     ],
   },
   {
-    q: "What best describes why you're exploring life coaching?",
+    q: "What's the main thing you're hoping coaching could give you?",
     options: [
-      "I'm in a rut and need direction",
-      "I want to level up personally or professionally",
-      "I'm going through a big life transition",
-      "I'm curious and open to exploring",
+      "Clarity on what I actually want",
+      "A plan I'll finally stick to",
+      "More confidence and self-belief",
+      "Someone to keep me accountable",
     ],
   },
 ];
@@ -84,12 +86,12 @@ function CoachingQuizMobile() {
   };
 
   return (
-    <div id="quiz" className="bg-white px-5 py-10 space-y-8">
+    <div id="quiz" className="px-5 py-10 space-y-8 bg-white">
       <div className="space-y-4">
         <span className="inline-flex items-center bg-[#e5ff7d] px-4 py-2 rounded-full text-xs font-semibold tracking-widest uppercase">
           ✦ Not sure yet?
         </span>
-        <h2 className="font-miniature text-[32px] leading-[38px] text-[#0d0d0d]">
+        <h2 className="font-miniature text-[32px] font-semibold leading-[38px] text-[#0d0d0d]">
           Could coaching{" "}
           <span className="italic text-[#ff6f61]">change</span> things for you?
         </h2>
@@ -121,7 +123,7 @@ function CoachingQuizMobile() {
           <h3 className="font-miniature text-[20px] text-center text-black">
             Is life coaching right for you?
           </h3>
-          <p className="text-[12px] text-[rgba(0,0,0,0.7)] text-center">
+          <p className="text-[12px] text-[rgba(0,0,0,0.7)] font-semibold text-center">
             5 quick questions — honest answers only
           </p>
           <div className="bg-[rgba(0,0,0,0.1)] h-1 rounded-full overflow-hidden">
@@ -137,11 +139,11 @@ function CoachingQuizMobile() {
             <p className="text-[15px] leading-[22px] text-[#0d0d0d] font-medium">
               {fitMessages[result]}
             </p>
-            <a href="https://signup.feelattune.com/sign-up">
+            <Link to="/signup-anxiety">
               <Button className="w-full bg-[#5200ff] rounded-full font-semibold">
                 Start your journey →
               </Button>
-            </a>
+            </Link>
             <button onClick={reset} className="w-full text-[13px] text-[rgba(0,0,0,0.5)] underline">
               Retake quiz
             </button>

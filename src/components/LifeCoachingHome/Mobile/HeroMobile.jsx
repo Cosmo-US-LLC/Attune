@@ -1,11 +1,12 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 function HeroMobile() {
   return (
-    <div className="bg-[#e5ff7d] px-5 py-10 space-y-6">
+    <div className="bg-[#e5ff7d] px-5 pt-10 pb-1 space-y-6">
       <div className="space-y-4">
-        <div className="bg-white inline-flex items-center px-4 py-2 rounded-full text-xs font-semibold tracking-widest uppercase">
+        <div className="inline-flex items-center px-4 py-2 text-xs font-semibold uppercase bg-white rounded-full">
           ✦ Life coaching for anxiety and wellbeing
         </div>
 
@@ -20,14 +21,16 @@ function HeroMobile() {
           you&apos;ve always had inside you.
         </p>
       </div>
+      <div className="">
+        <Link to="/signup-anxiety">
+          <Button className="w-full bg-[#5200ff] rounded-full text-[16px] font-semibold py-6">
+            Start your journey →
+          </Button>
+        </Link>
+      </div>
+      
 
-      <a href="https://signup.feelattune.com/sign-up">
-        <Button className="w-full bg-[#5200ff] rounded-full text-[16px] font-semibold py-6">
-          Start your journey →
-        </Button>
-      </a>
-
-      <div className="flex items-start gap-3 bg-white/60 rounded-2xl p-4">
+      <div className="flex items-start gap-3 p-4 bg-white/60 rounded-2xl">
         <div className="bg-[#ff6f61] rounded-xl p-2 flex-shrink-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -56,11 +59,28 @@ function HeroMobile() {
         </div>
       </div>
 
-      <img
+      {/* <img
         src="/life-coaching/desktop/hero/character-group.webp"
         alt="Life coaching illustration"
         className="w-full rounded-2xl"
-      />
+      /> */}
+      <div className="relative w-full">
+        {/* Background Image */}
+        <img
+          src="/life-coaching/desktop/hero/character-group.webp"
+          alt="Life coaching illustration"
+          className="w-full rounded-2xl"
+        />
+
+        {/* Front Image */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img
+            src="/life-coaching/desktop/hero/Mobile_hero.webp"
+            alt="Mobile Hero"
+            className="w-full "
+          />
+        </div>
+      </div>
     </div>
   );
 }
