@@ -15,8 +15,14 @@ import CountdownTimer from "../../ui/CountdownTimer";
 function NavbarMobile() {
   const [sideOpen, setSideOpen] = useState(false);
   const location = useLocation();
-
   const currentPath = location.pathname;
+  const NewPagesNavbar = [
+    "/",
+    "/contact-us",
+    "/about-us",
+    "/faqs",
+  ].includes(currentPath);
+
 
   useEffect(() => {
     if (location.hash) {
@@ -117,7 +123,7 @@ function NavbarMobile() {
                           <div className="flex flex-col gap-4 font-[500]">
 
                             {/* ── Life Coaching links ── */}
-                            {currentPath === "/life-coaching" && (
+                            {NewPagesNavbar && (
                               <>
                                 {[
                                   { label: "How It Works", id: "how-it-works" },
@@ -127,7 +133,7 @@ function NavbarMobile() {
                                   <Link
                                     key={id}
                                     smooth
-                                    to={`/life-coaching#${id}`}
+                                    to={`/#${id}`}
                                     onClick={() => handleClick(id, 50)}
                                   >
                                     {label}
@@ -150,7 +156,7 @@ function NavbarMobile() {
                             )}
 
                             {/* ── Default links ── */}
-                            {currentPath !== "/life-coaching" && (
+                            {!NewPagesNavbar && (
                               <>
                                 {currentPath !== "/privacy-policy" &&
                                   currentPath !== "/terms-of-use" && (
@@ -320,7 +326,7 @@ function NavbarMobile() {
 
             <a
               href={
-                currentPath === "/life-coaching"
+                NewPagesNavbar
                   ? "https://signup.feelattune.com/sign-up"
                   : currentPath === "/"
                   ? "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
@@ -330,7 +336,7 @@ function NavbarMobile() {
               }
             >
               <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                {currentPath === "/life-coaching"
+                {NewPagesNavbar
                   ? "Get Started"
                   : currentPath === "/listener-recruitment"
                   ? "Apply Now"
