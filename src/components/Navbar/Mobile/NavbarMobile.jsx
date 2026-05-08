@@ -146,9 +146,9 @@ function NavbarMobile() {
                                   FAQs
                                 </Link>
                                 <div className="flex justify-center">
-                                  <Link to ="/signup-anxiety">
+                                  <Link to ="/contact-us">
                                     <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                                      Get Started
+                                      Contact Us
                                     </Button>
                                   </Link>
                                 </div>
@@ -328,14 +328,14 @@ function NavbarMobile() {
               href={
                 currentPath === "/listener-recruitment"
                   ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                  : "/signup-anxiety"
+                  : "/contact-us"
               }
             >
               <Button className="bg-[#FF6F61] rounded-full text-[15px]">
                 {currentPath === "/listener-recruitment"
                   ? "Apply Now"
                   : NewPagesNavbar
-                  ? "Get Started"
+                  ? "Contact Us"
                   : "Connect Now"}
               </Button>
             </a>
