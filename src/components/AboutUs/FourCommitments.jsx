@@ -33,9 +33,9 @@ function FourCommitments() {
 
         {/* Heading */}
         <h2 className="font-miniature text-[55px] leading-[1.1]">
-          <span className="text-black font-normal">Our practice is built on</span>
+          <span className="font-semibold text-black ">Our practice is built on</span>
           <br />
-          <span className="italic text-[#ff6f61] font-normal">four commitments.</span>
+          <span className="italic text-[#ff6f61] font-semibold">four commitments.</span>
         </h2>
 
         {/* Subtitle */}
@@ -59,7 +59,7 @@ function FourCommitments() {
 
             {/* Card content */}
             <div className="flex flex-col gap-[8px]">
-              <h3 className="font-miniature text-[30px] leading-none text-[#0d0d0d] capitalize">
+              <h3 className="font-miniature text-[30px] leading-none text-[#0d0d0d] font-semibold capitalize">
                 {c.title}
               </h3>
               <p className="text-[14px] font-normal text-[#0d0d0d]/70 leading-[1.25]">{c.body}</p>

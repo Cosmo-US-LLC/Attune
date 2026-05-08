@@ -22,12 +22,12 @@ function HeroMobile() {
       </p>
 
       {/* CTA */}
-      <Link
-        to="/contact-us"
-        className="bg-[#5200ff] text-white font-semibold text-[17px] py-[16px] rounded-full w-full inline-flex items-center justify-center text-center hover:bg-[#4000cc] transition-colors"
-      >
-        Book Your Free Consultation →
+      <Link to="/signup-anxiety">
+        <button className="bg-[#5200ff] text-white font-semibold text-[17px] py-[16px] rounded-full w-full hover:bg-[#4000cc] transition-colors">
+          Book Your Free Consultation →
+        </button>
       </Link>
+      
 
       {/* Coach image */}
       <img

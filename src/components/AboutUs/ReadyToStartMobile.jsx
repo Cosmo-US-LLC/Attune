@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 function ReadyToStartMobile() {
   return (
-    <section className="bg-white px-5 py-10 flex flex-col gap-6 items-center text-center lg:hidden">
+    <section className="flex flex-col items-center gap-6 px-5 py-10 text-center bg-white lg:hidden">
       {/* Image */}
       <img
-        src="/about-us/cta/woman.webp"
+        src="/about-us/cta/begin-image.webp"
         alt="Coach"
         className="rounded-[24px] object-cover max-h-[280px] w-full"
       />
@@ -13,7 +15,7 @@ function ReadyToStartMobile() {
         <p className="font-miniature font-normal text-[36px] leading-none text-black">
           Ready to start?
         </p>
-        <p className="font-miniature font-normal italic text-[44px] leading-none text-black">
+        <p className="font-miniature font-semibold italic text-[44px] leading-none text-black">
           We're ready too.
         </p>
       </div>
@@ -25,9 +27,12 @@ function ReadyToStartMobile() {
       </p>
 
       {/* Button */}
-      <button className="w-full bg-[#5200ff] text-white rounded-full px-[32px] py-[16px] font-semibold text-[18px] leading-none">
-        Get started →
-      </button>
+      <Link to="/signup-anxiety">
+        <button className="w-full bg-[#5200ff] text-white rounded-full px-[32px] py-[16px] font-semibold text-[18px] leading-none">
+          Get started →
+        </button>
+      </Link>
+      
     </section>
   );
 }
