@@ -64,99 +64,156 @@ function Navbar() {
                 />
               </Link>
 
-              <div className="flex items-center space-x-8">
-                {currentPath !== "/privacy-policy" &&
-                  currentPath !== "/terms-of-use" && (
+              {/* ── Life Coaching nav links ── */}
+              {currentPath === "/life-coaching" && (
+                <div className="flex items-center gap-[47px]">
+                  {[
+                    { label: "How It Works", id: "how-it-works" },
+                    { label: "Take the Quiz", id: "quiz" },
+                    { label: "Pricing", id: "pricing" },
+                  ].map(({ label, id }) => (
                     <Link
+                      key={id}
                       smooth
-                      to={`${currentPath}#path-to-support`}
-                      onClick={(e) => {
-                        handleScroll("path-to-support", 50);
-                      }}
-                      className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
+                      to={`/life-coaching#${id}`}
+                      onClick={() => handleScroll(id, 90)}
+                      className="text-black font-medium text-[16.222px] capitalize hover:text-[#5200ff] transition-colors"
                     >
-                      Path To Support
+                      {label}
                     </Link>
-                  )}
-                {currentPath !== "/privacy-policy" &&
-                  currentPath !== "/terms-of-use" && (
-                    <Link
-                      smooth
-                      to={`${currentPath}#how-it-works`}
-                      onClick={(e) => {
-                        handleScroll("how-it-works", 90);
-                      }}
-                      className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
-                    >
-                      How It Works
-                    </Link>
-                  )}
-                {currentPath !== "/privacy-policy" &&
-                  currentPath !== "/terms-of-use" && (
-                    <Link
-                      smooth
-                      to={`${currentPath}#our-approach`}
-                      onClick={(e) => {
-                        handleScroll("our-approach", 90);
-                      }}
-                      className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
-                    >
-                      Our Approach
-                    </Link>
-                  )}
-                {currentPath !== "/listener-recruitment" &&
-                  currentPath !== "/privacy-policy" &&
-                  currentPath !== "/terms-of-use" && (
-                    <Link
-                      smooth
-                      to={`${currentPath}#FAQs`}
-                      onClick={(e) => {
-                        handleScroll("FAQs", 90);
-                      }}
-                      className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
-                    >
-                      FAQs
-                    </Link>
-                  )}
-                {currentPath === "/listener-recruitment" && (
+                  ))}
                   <Link
-                    smooth
-                    to={`${currentPath}#Become-a-listener`}
-                    onClick={(e) => {
-                      handleScroll("Become-a-listener", 80);
-                    }}
-                    className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
+                    to="/about-us"
+                    className="text-black font-medium text-[16.222px] capitalize hover:text-[#5200ff] transition-colors"
                   >
-                    Become a listener
+                    About Us
                   </Link>
-                )}
-              </div>
-              <div className="flex items-center space-x-4">
-                <div className="">
-                  <a href="https://innovacare.tech/listenerhub/login">
-                    <button className="w-[100px] h-[37px] border border-[#5200FF] bg-[#FFF] text-[#5200FF] rounded-[34.878px] hover:bg-red-500 hover:text-white hover:border-white">
-                      Log In
-                    </button>
-                  </a>
-                </div>
-                <div className="w-[160px] h-[37px]">
-                  <a
-                    href={
-                      currentPath === "/"
-                        ? "https://signup.feelattune.com/sign-up"
-                        : currentPath === "/listener-recruitment"
-                        ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                        : "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
-                    }
+                  <Link
+                    to="/faqs"
+                    className="text-black font-medium text-[16.222px] capitalize hover:text-[#5200ff] transition-colors"
                   >
-                    <button className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500">
-                      {currentPath === "/listener-recruitment"
-                        ? "Apply Now"
-                        : "Connect Now"}
+                    FAQs
+                  </Link>
+                </div>
+              )}
+
+              {/* ── Default nav links (all other routes) ── */}
+              {currentPath !== "/life-coaching" && (
+                <div className="flex items-center space-x-8">
+                  {currentPath !== "/privacy-policy" &&
+                    currentPath !== "/terms-of-use" && (
+                      <Link
+                        smooth
+                        to={`${currentPath}#path-to-support`}
+                        onClick={(e) => {
+                          handleScroll("path-to-support", 50);
+                        }}
+                        className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
+                      >
+                        Path To Support
+                      </Link>
+                    )}
+                  {currentPath !== "/privacy-policy" &&
+                    currentPath !== "/terms-of-use" && (
+                      <Link
+                        smooth
+                        to={`${currentPath}#how-it-works`}
+                        onClick={(e) => {
+                          handleScroll("how-it-works", 90);
+                        }}
+                        className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
+                      >
+                        How It Works
+                      </Link>
+                    )}
+                  {currentPath !== "/privacy-policy" &&
+                    currentPath !== "/terms-of-use" && (
+                      <Link
+                        smooth
+                        to={`${currentPath}#our-approach`}
+                        onClick={(e) => {
+                          handleScroll("our-approach", 90);
+                        }}
+                        className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
+                      >
+                        Our Approach
+                      </Link>
+                    )}
+                  {currentPath !== "/listener-recruitment" &&
+                    currentPath !== "/privacy-policy" &&
+                    currentPath !== "/terms-of-use" && (
+                      <Link
+                        to="/about-us"
+                        className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
+                      >
+                        About Us
+                      </Link>
+                    )}
+                  {currentPath !== "/listener-recruitment" &&
+                    currentPath !== "/privacy-policy" &&
+                    currentPath !== "/terms-of-use" && (
+                      <Link
+                        to="/faqs"
+                        className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
+                      >
+                        FAQs
+                      </Link>
+                    )}
+                  {currentPath === "/listener-recruitment" && (
+                    <Link
+                      smooth
+                      to={`${currentPath}#Become-a-listener`}
+                      onClick={(e) => {
+                        handleScroll("Become-a-listener", 80);
+                      }}
+                      className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900"
+                    >
+                      Become a listener
+                    </Link>
+                  )}
+                </div>
+              )}
+
+              {/* ── Life Coaching CTA: single "Get started" button ── */}
+              {currentPath === "/life-coaching" && (
+                <div>
+                  <a href="https://signup.feelattune.com/sign-up">
+                    <button className="h-[42px] px-[24px] bg-[#FF6F61] text-white font-medium text-[16.222px] rounded-[34.878px] border-[1.622px] border-white hover:bg-red-500 transition-colors">
+                      Get started
                     </button>
                   </a>
                 </div>
-              </div>
+              )}
+
+              {/* ── Default CTA: Log In + Connect Now ── */}
+              {currentPath !== "/life-coaching" && (
+                <div className="flex items-center space-x-4">
+                  <div className="">
+                    <a href="https://innovacare.tech/listenerhub/login">
+                      <button className="w-[100px] h-[37px] border border-[#5200FF] bg-[#FFF] text-[#5200FF] rounded-[34.878px] hover:bg-red-500 hover:text-white hover:border-white">
+                        Log In
+                      </button>
+                    </a>
+                  </div>
+                  <div className="w-[160px] h-[37px]">
+                    <a
+                      href={
+                        currentPath === "/"
+                          ? "https://signup.feelattune.com/sign-up"
+                          : currentPath === "/listener-recruitment"
+                            ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                            : "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
+                      }
+                    >
+                      <button className="w-[160px] h-[37px] bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500">
+                        {currentPath === "/listener-recruitment"
+                          ? "Apply Now"
+                          : "Connect Now"}
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              )}
             </div>
           </nav>
         </div>

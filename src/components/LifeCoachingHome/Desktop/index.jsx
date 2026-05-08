@@ -14,7 +14,7 @@ import Guarantee from "./Guarantee";
 function LifeCoachingHomeDesktop() {
   return (
     <div className="min-h-screen bg-white">
-      {/* <Nav /> */}
+      {/* Nav handled by global Navbar */}
       <Hero />
       <Ticker />
       <HowItWorks />

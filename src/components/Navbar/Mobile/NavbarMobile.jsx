@@ -115,91 +115,117 @@ function NavbarMobile() {
                         </div>
                         <div className="relative mt-8">
                           <div className="flex flex-col gap-4 font-[500]">
-                            {currentPath !== "/privacy-policy" &&
-                              currentPath !== "/terms-of-use" && (
-                                <Link
-                                  smooth
-                                  to={`${window.location.pathname}#mobile-path-to-support`}
-                                  onClick={(e) => {
-                                    handleClick("mobile-path-to-support", 50);
-                                  }}
-                                >
-                                  Path To Support
-                                </Link>
-                              )}
 
-                            {currentPath !== "/privacy-policy" &&
-                              currentPath !== "/terms-of-use" && (
-                                <Link
-                                  smooth
-                                  to={`${window.location.pathname}#mobile-how-it-works`}
-                                  onClick={(e) => {
-                                    handleClick("mobile-how-it-works", 50);
-                                  }}
-                                >
-                                  How It Works
+                            {/* ── Life Coaching links ── */}
+                            {currentPath === "/life-coaching" && (
+                              <>
+                                {[
+                                  { label: "How It Works", id: "how-it-works" },
+                                  { label: "Take the Quiz", id: "quiz" },
+                                  { label: "Pricing", id: "pricing" },
+                                ].map(({ label, id }) => (
+                                  <Link
+                                    key={id}
+                                    smooth
+                                    to={`/life-coaching#${id}`}
+                                    onClick={() => handleClick(id, 50)}
+                                  >
+                                    {label}
+                                  </Link>
+                                ))}
+                                <Link to="/about-us" onClick={() => setSideOpen(false)}>
+                                  About Us
                                 </Link>
-                              )}
-                            {currentPath !== "/privacy-policy" &&
-                              currentPath !== "/terms-of-use" && (
-                                <Link
-                                  smooth
-                                  to={`${window.location.pathname}#mobile-our-approach`}
-                                  onClick={(e) => {
-                                    handleClick("mobile-our-approach", 50);
-                                  }}
-                                >
-                                  Our Approach
-                                </Link>
-                              )}
-                            {currentPath !== "/listener-recruitment" &&
-                              currentPath !== "/privacy-policy" &&
-                              currentPath !== "/terms-of-use" && (
-                                <Link
-                                  smooth
-                                  to={`${window.location.pathname}#mobile-FAQs`}
-                                  onClick={(e) => {
-                                    handleClick("mobile-FAQs", 50);
-                                  }}
-                                >
+                                <Link to="/faqs" onClick={() => setSideOpen(false)}>
                                   FAQs
                                 </Link>
-                              )}
-                            <div className="flex flex-row items-center justify-center gap-2">
-                              <a href="https://innovacare.tech/listenerhub/login">
-                                <Button className="bg-[#FFF] text-[#5200FF] border border-[#5200FF] hover:border-[#FFF] hover:bg-[[#FF6F61] rounded-full text-[15px]">
-                                  Log In
-                                </Button>
-                              </a>
-                              {/* <a
-                                href={
-                                  currentPath === "/listener-recruitment"
-                                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                                    : "https://signup.feelattune.com/sign-up"
-                                }
-                              >
-                                <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                                  {currentPath === "/listener-recruitment"
-                                    ? "Apply Now"
-                                    : "Connect Now"}
-                                </Button>
-                              </a> */}
-                              <a
-                                href={
-                                  currentPath === "/"
-                                    ? "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
-                                    : currentPath === "/listener-recruitment"
-                                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                                    : "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
-                                }
-                              >
-                                <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                                  {currentPath === "/listener-recruitment"
-                                    ? "Apply Now"
-                                    : "Connect Now"}
-                                </Button>
-                              </a>
-                            </div>
+                                <div className="flex justify-center">
+                                  <a href="https://signup.feelattune.com/sign-up">
+                                    <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                                      Get Started
+                                    </Button>
+                                  </a>
+                                </div>
+                              </>
+                            )}
+
+                            {/* ── Default links ── */}
+                            {currentPath !== "/life-coaching" && (
+                              <>
+                                {currentPath !== "/privacy-policy" &&
+                                  currentPath !== "/terms-of-use" && (
+                                    <Link
+                                      smooth
+                                      to={`${window.location.pathname}#mobile-path-to-support`}
+                                      onClick={(e) => {
+                                        handleClick("mobile-path-to-support", 50);
+                                      }}
+                                    >
+                                      Path To Support
+                                    </Link>
+                                  )}
+                                {currentPath !== "/privacy-policy" &&
+                                  currentPath !== "/terms-of-use" && (
+                                    <Link
+                                      smooth
+                                      to={`${window.location.pathname}#mobile-how-it-works`}
+                                      onClick={(e) => {
+                                        handleClick("mobile-how-it-works", 50);
+                                      }}
+                                    >
+                                      How It Works
+                                    </Link>
+                                  )}
+                                {currentPath !== "/privacy-policy" &&
+                                  currentPath !== "/terms-of-use" && (
+                                    <Link
+                                      smooth
+                                      to={`${window.location.pathname}#mobile-our-approach`}
+                                      onClick={(e) => {
+                                        handleClick("mobile-our-approach", 50);
+                                      }}
+                                    >
+                                      Our Approach
+                                    </Link>
+                                  )}
+                                {currentPath !== "/listener-recruitment" &&
+                                  currentPath !== "/privacy-policy" &&
+                                  currentPath !== "/terms-of-use" && (
+                                    <Link to="/about-us" onClick={() => setSideOpen(false)}>
+                                      About Us
+                                    </Link>
+                                  )}
+                                {currentPath !== "/listener-recruitment" &&
+                                  currentPath !== "/privacy-policy" &&
+                                  currentPath !== "/terms-of-use" && (
+                                    <Link to="/faqs" onClick={() => setSideOpen(false)}>
+                                      FAQs
+                                    </Link>
+                                  )}
+                                <div className="flex flex-row items-center justify-center gap-2">
+                                  <a href="https://innovacare.tech/listenerhub/login">
+                                    <Button className="bg-[#FFF] text-[#5200FF] border border-[#5200FF] hover:border-[#FFF] hover:bg-[[#FF6F61] rounded-full text-[15px]">
+                                      Log In
+                                    </Button>
+                                  </a>
+                                  <a
+                                    href={
+                                      currentPath === "/"
+                                        ? "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
+                                        : currentPath === "/listener-recruitment"
+                                        ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                                        : "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
+                                    }
+                                  >
+                                    <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                                      {currentPath === "/listener-recruitment"
+                                        ? "Apply Now"
+                                        : "Connect Now"}
+                                    </Button>
+                                  </a>
+                                </div>
+                              </>
+                            )}
 
                             {currentPath === "/listener-recruitment" && (
                               <Link
@@ -294,7 +320,9 @@ function NavbarMobile() {
 
             <a
               href={
-                currentPath === "/"
+                currentPath === "/life-coaching"
+                  ? "https://signup.feelattune.com/sign-up"
+                  : currentPath === "/"
                   ? "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
                   : currentPath === "/listener-recruitment"
                   ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
@@ -302,7 +330,9 @@ function NavbarMobile() {
               }
             >
               <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                {currentPath === "/listener-recruitment"
+                {currentPath === "/life-coaching"
+                  ? "Get Started"
+                  : currentPath === "/listener-recruitment"
                   ? "Apply Now"
                   : "Connect Now"}
               </Button>

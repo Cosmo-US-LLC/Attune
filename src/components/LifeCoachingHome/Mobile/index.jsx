@@ -14,7 +14,7 @@ import GuaranteeMobile from "./GuaranteeMobile";
 function LifeCoachingHomeMobile() {
   return (
     <div>
-      {/* <NavMobile /> */}
+      {/* Nav handled by global NavbarMobile */}
       <HeroMobile />
       <TickerMobile />
       <HowItWorksMobile />
