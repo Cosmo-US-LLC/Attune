@@ -23,16 +23,15 @@ const commitments = [
 
 function FourCommitmentsMobile() {
   return (
-    <section className="bg-white flex flex-col gap-4 px-5 py-10 lg:hidden">
+    <section className="flex flex-col gap-4 px-5 py-10 bg-white lg:hidden">
       {/* Header */}
-      <div className="flex flex-col items-center gap-5 text-center mb-2">
+      <div className="flex flex-col items-center gap-5 mb-2 text-center">
         <span className="bg-[#e5ff7d] text-black text-[13px] font-normal px-4 py-2 rounded-full">
           ✦ What we stand for
         </span>
         <h2 className="font-miniature text-[38px] leading-[1.1]">
-          <span className="text-black font-normal">Our practice is built on</span>
-          <br />
-          <span className="italic text-[#ff6f61] font-normal">four commitments.</span>
+          <span className="font-semibold text-black ">Our practice is built on {" "}</span>
+          <span className="italic text-[#ff6f61] font-semibold ">four commitments.</span>
         </h2>
         <p className="text-[15px] font-normal text-[#0d0d0d]/70 leading-[1.25]">
           These aren't marketing words. They're the principles every coach at Feelattune is held
@@ -50,7 +49,7 @@ function FourCommitmentsMobile() {
             <img src={c.icon} alt="" className="size-[28px] object-contain" />
           </div>
           <div className="flex flex-col gap-[6px]">
-            <h3 className="font-miniature text-[24px] leading-none text-[#0d0d0d] capitalize">
+            <h3 className="font-miniature text-[24px] leading-none font-semibold  text-[#0d0d0d] capitalize">
               {c.title}
             </h3>
             <p className="text-[14px] font-normal text-[#0d0d0d]/70 leading-[1.25]">{c.body}</p>

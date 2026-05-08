@@ -3,7 +3,7 @@ import heroImage from "../../../assets/images/home_hero_emoji.webp";
 
 function Hero() {
   return (
-    <div className="bg-[#e5ff7d] relative overflow-hidden min-h-[680px] flex items-center px-[113px]  ">
+    <div className="bg-[#e5ff7d] relative overflow-hidden min-h-[680px] flex items-center px-[113px]">
       <div className="max-w-[1440px] mx-auto w-full flex items-center justify-between gap-12">
         {/* Left content */}
         <div className="flex flex-col gap-[32px]">
@@ -69,11 +69,19 @@ function Hero() {
 
         {/* Right illustration — 5 coloured bars + 5 characters (node 4158:1628) */}
 
-        <div className="relative flex-shrink-0  flex-1">
+        {/* <div className="relative flex-1 flex-shrink-0">
           <img
             src={heroImage}
             alt="Hero"
-            className="absolute right-0 -bottom-[300px]   object-cover"
+            className="absolute right-0 -bottom-[300px]  object-cover"
+          />
+        </div> */}
+        {/* Right illustration */}
+        <div className="relative flex items-end justify-end flex-1 pt-12 overflow-hidden">
+          <img
+            src={heroImage}
+            alt="Hero"
+            className="w-full max-w-[600px] h-auto object-contain"
           />
         </div>
       </div>

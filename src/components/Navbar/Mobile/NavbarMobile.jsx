@@ -326,6 +326,22 @@ function NavbarMobile() {
 
             <a
               href={
+                currentPath === "/listener-recruitment"
+                  ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                  : "/signup-anxiety"
+              }
+            >
+              <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                {currentPath === "/listener-recruitment"
+                  ? "Apply Now"
+                  : NewPagesNavbar
+                  ? "Get Started"
+                  : "Connect Now"}
+              </Button>
+            </a>
+
+            {/* <a
+              href={
                 NewPagesNavbar
                   ? currentPath === "/"
                     ? "/signup-anxiety"
@@ -342,7 +358,7 @@ function NavbarMobile() {
                   ? "Apply Now"
                   : "Connect Now"}
               </Button>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

@@ -11,7 +11,6 @@ import phoneImage from "../../assets/images/about_us_video_call.webp";
  * fixed absolute offsets are not measured against the full viewport (which
  * broke alignment / caused overlap below ~1160px).
  */
-import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="max-lg:hidden bg-[#f4efea] relative min-h-[680px] h-[680px] overflow-hidden">
@@ -21,7 +20,7 @@ function Hero() {
           <p className="font-semibold text-[25px] text-[#0d0d0d] leading-[1.2]">
             We started because
           </p>
-          <h1 className="font-miniature text-[72px] leading-[83px] text-[#0d0d0d]">
+          <h1 className="font-miniature text-[72px] leading-[83px] font-semibold  text-[#0d0d0d]">
             <span className="italic text-[#ff6f61]">Great coaching</span>
             {" shouldn't be"}
             <br />
