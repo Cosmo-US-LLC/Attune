@@ -1,16 +1,14 @@
 import { FilloutStandardEmbed } from "@fillout/react";
 
-/** Fillout form hosted on FeelAttune signup domain */
+/** signup.feelattune.com — jcLDEqP45Aus; inherit URL query params */
 const FILLOUT_FORM_ID = "jcLDEqP45Aus";
 const FILLOUT_DOMAIN = "signup.feelattune.com";
 
 const trustBadges = ["Confidential", "No credit card", "Cancel anytime"];
 
 /**
- * Replaces the static contact fields with the Fillout form (inline standard embed).
- * Your embed snippet used `slider`; for the same card layout without an extra click,
- * standard + dynamic resize matches the old form area. To use a sliding panel instead,
- * switch to `FilloutSliderEmbed` + a CTA button.
+ * Inline form in the card (standard embed). Slider-only embed hid the form until
+ * click — use FilloutSliderEmbed in addition only if you want a panel variant.
  */
 function ContactMessageForm() {
   return (

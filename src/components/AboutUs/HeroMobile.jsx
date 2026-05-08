@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function HeroMobile() {
   return (
     <section className="lg:hidden bg-[#f4efea] px-5 py-10 flex flex-col gap-6">
@@ -20,9 +22,12 @@ function HeroMobile() {
       </p>
 
       {/* CTA */}
-      <button className="bg-[#5200ff] text-white font-semibold text-[17px] py-[16px] rounded-full w-full hover:bg-[#4000cc] transition-colors">
+      <Link
+        to="/contact-us"
+        className="bg-[#5200ff] text-white font-semibold text-[17px] py-[16px] rounded-full w-full inline-flex items-center justify-center text-center hover:bg-[#4000cc] transition-colors"
+      >
         Book Your Free Consultation →
-      </button>
+      </Link>
 
       {/* Coach image */}
       <img
