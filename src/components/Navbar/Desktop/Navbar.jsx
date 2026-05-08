@@ -183,9 +183,9 @@ function Navbar() {
               {/* ── Life Coaching CTA: single "Get started" button ── */}
               {NewPagesNavbar && (
                 <div>
-                  <Link to="/signup-anxiety">
+                  <Link to="/contact-us">
                     <button className="h-[42px] px-[24px] bg-[#FF6F61] text-white font-medium text-[16.222px] rounded-[34.878px] border-[1.622px] border-white hover:bg-red-500 transition-colors">
-                      Get started
+                      Contact Us
                     </button>
                   </Link>
                 </div>
