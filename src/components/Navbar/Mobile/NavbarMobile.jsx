@@ -146,11 +146,11 @@ function NavbarMobile() {
                                   FAQs
                                 </Link>
                                 <div className="flex justify-center">
-                                  <a href="https://signup.feelattune.com/sign-up">
+                                  <Link to ="/signup-anxiety">
                                     <Button className="bg-[#FF6F61] rounded-full text-[15px]">
                                       Get Started
                                     </Button>
-                                  </a>
+                                  </Link>
                                 </div>
                               </>
                             )}
@@ -327,9 +327,9 @@ function NavbarMobile() {
             <a
               href={
                 NewPagesNavbar
-                  ? "https://signup.feelattune.com/sign-up"
-                  : currentPath === "/"
-                  ? "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
+                  ? currentPath === "/"
+                    ? "/signup-anxiety"
+                    : "https://signup.feelattune.com/sign-up"
                   : currentPath === "/listener-recruitment"
                   ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
                   : "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
