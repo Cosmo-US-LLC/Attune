@@ -81,7 +81,7 @@ function Navbar() {
                     <Link
                       key={id}
                       smooth
-                      to={`/life-coaching#${id}`}
+                      to={`/#${id}`}
                       onClick={() => handleScroll(id, 90)}
                       className="text-black font-medium text-[16.222px] capitalize hover:text-[#5200ff] transition-colors"
                     >
