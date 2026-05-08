@@ -16,7 +16,7 @@ function CheckIcon() {
 
 function OurStoryMobile() {
   return (
-    <section className="lg:hidden bg-white px-5 py-10 flex flex-col gap-8">
+    <section className="flex flex-col gap-8 px-5 py-10 bg-white lg:hidden">
       {/* Badge */}
       <span className="bg-[#e5ff7d] px-[21px] py-[14px] rounded-[39px] self-start font-semibold text-[14px] tracking-[0.72px] uppercase text-[#0d0d0d]">
         ✦ Our story
@@ -55,7 +55,7 @@ function OurStoryMobile() {
         </span>
 
         {/* Card heading */}
-        <h3 className="font-miniature text-[26px] leading-[1.2]">
+        <h3 className="font-miniature text-[26px] font-semibold leading-[1.2]">
           <span className="text-[#0d0d0d]">A coaching experience that&apos;s </span>
           <span className="text-[#ff6f61]">affordable, </span>
           <span className="text-[#f097dd]">accessible, </span>

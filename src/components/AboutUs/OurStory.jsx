@@ -59,7 +59,7 @@ function OurStory() {
         </span>
 
         {/* Card heading */}
-        <h3 className="font-miniature text-[32px] leading-[1.2]">
+        <h3 className="font-miniature text-[32px] font-semibold leading-[1.2]">
           <span className="text-[#0d0d0d]">A coaching experience that&apos;s </span>
           <span className="text-[#ff6f61]">affordable, </span>
           <span className="text-[#f097dd]">accessible, </span>

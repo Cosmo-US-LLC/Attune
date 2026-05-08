@@ -35,8 +35,8 @@ function TickerRow() {
   return (
     <>
       {items.map((item, i) => (
-        <span key={i} className="flex flex-shrink-0 items-center">
-          <span className="font-medium text-[20px] text-black tracking-[0.52px] px-[40px] whitespace-nowrap">
+        <span key={i} className="flex items-center flex-shrink-0">
+          <span className="font-medium text-[16] md:text-[20px] text-black tracking-[0.52px] px-[40px] whitespace-nowrap">
             <span className="text-[#ff6f61]">✓ </span>
             {item}
           </span>

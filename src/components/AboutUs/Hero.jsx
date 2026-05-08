@@ -5,6 +5,7 @@
  * Layer coach photo BEHIND the frame. Frame PNG sits on top and naturally
  * clips the photo via its transparent cutout — no CSS mask-image needed.
  */
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="max-lg:hidden bg-[#f4efea] relative h-[680px] overflow-hidden">
@@ -14,7 +15,7 @@ function Hero() {
         <p className="font-semibold text-[25px] text-[#0d0d0d] leading-[1.2]">
           We started because
         </p>
-        <h1 className="font-miniature text-[72px] leading-[83px] text-[#0d0d0d]">
+        <h1 className="font-miniature text-[72px] font-semibold leading-[83px] text-[#0d0d0d]">
           <span className="italic text-[#ff6f61]">Great coaching</span>
           {" shouldn't be"}
           <br />out of reach
@@ -23,9 +24,12 @@ function Hero() {
           Built by people who saw a gap and decided to close it. Feelattune exists to make
           high-quality, human life coaching accessible to anyone who&apos;s ready to move forward.
         </p>
-        <button className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] capitalize px-[21px] py-[18px] rounded-[39px] w-[409px] hover:bg-[#4000cc] transition-colors">
-          Book Your Free Consultation →
-        </button>
+        <Link to="/signup-anxiety">
+          <button className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] capitalize px-[21px] py-[18px] rounded-[39px] w-[409px] hover:bg-[#4000cc] transition-colors">
+            Book Your Free Consultation →
+          </button>
+        </Link>
+        
       </div>
 
       {/* ── Right column: phone mockup container (438×638px) ── */}
@@ -42,7 +46,7 @@ function Hero() {
           <img
             src="/about-us/hero/coach-man.webp"
             alt="Life coaching video session"
-            className="absolute max-w-none pointer-events-none"
+            className="absolute pointer-events-none max-w-none"
             style={{ width: "203.62%", height: "103.24%", top: "-3.31%", left: "-51.77%" }}
           />
         </div>
@@ -56,7 +60,7 @@ function Hero() {
           <img
             src="/about-us/hero/woman-pip.webp"
             alt="Session participant"
-            className="absolute max-w-none object-cover pointer-events-none"
+            className="absolute object-cover pointer-events-none max-w-none"
             style={{ left: -29.11, top: -14.37, width: 205.45, height: 136.88 }}
           />
         </div>
@@ -127,7 +131,7 @@ function Hero() {
             src="/about-us/hero/phone-frame.png"
             alt=""
             aria-hidden="true"
-            className="absolute block inset-0 max-w-none w-full h-full"
+            className="absolute inset-0 block w-full h-full max-w-none"
           />
         </div>
 
