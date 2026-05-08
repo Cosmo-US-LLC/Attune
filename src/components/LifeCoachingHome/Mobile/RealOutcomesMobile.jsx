@@ -46,7 +46,7 @@ function RealOutcomesMobile() {
         <span className="inline-flex items-center bg-[#e5ff7d] px-4 py-2 rounded-full text-xs font-semibold tracking-widest uppercase">
           ✦ Real outcomes
         </span>
-        <h2 className="font-miniature text-[32px] leading-[38px] text-[#0d0d0d]">
+        <h2 className="font-miniature text-[32px] font-semibold leading-[38px] text-[#0d0d0d]">
           What changes when you work with a{" "}
           <span className="italic text-[#ff6f61]">life coach</span>
         </h2>
@@ -59,7 +59,7 @@ function RealOutcomesMobile() {
       <img
         src="/life-coaching/desktop/real-outcomes/coach-illustration.webp"
         alt="Life coaching illustration"
-        className="w-full max-w-[220px] mx-auto"
+        className="w-full max-w-[240px] mx-auto"
       />
 
       <div className="grid grid-cols-2 gap-4">

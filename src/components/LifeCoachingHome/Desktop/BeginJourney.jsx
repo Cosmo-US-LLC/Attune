@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function BeginJourney() {
   return (
@@ -26,7 +27,7 @@ function BeginJourney() {
         {/* Left — illustration */}
         <div className="flex-shrink-0 w-[351px] h-[352px]">
           <img
-            src="/life-coaching/desktop/begin-journey/photo-main.webp"
+            src="/life-coaching/desktop/begin-journey/begin_image.webp"
             alt="Person at laptop beginning their journey"
             className="w-full h-full object-cover rounded-[24px]"
           />
@@ -38,11 +39,11 @@ function BeginJourney() {
             <p className="font-miniature text-[50px] leading-[69px]">Begin Your Journey</p>
             <p className="font-miniature italic text-[92px] leading-[normal]">Today!</p>
           </div>
-          <a href="https://signup.feelattune.com/sign-up" className="self-start">
+          <Link to="/signup-anxiety" className="self-start">
             <button className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] capitalize px-[32px] py-[16px] rounded-[39px] hover:bg-[#4000cc] transition-colors">
               Start your journey →
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

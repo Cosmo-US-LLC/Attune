@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const cards = [
   {
@@ -32,12 +33,12 @@ const benefits = [
 
 function WhyChooseCoachingMobile() {
   return (
-    <div className="bg-white px-5 py-10 space-y-8">
+    <div className="px-5 py-10 space-y-8 bg-white">
       <div className="space-y-4 text-center">
         <span className="inline-flex items-center bg-[#e5ff7d] px-4 py-2 rounded-full text-xs font-semibold tracking-widest uppercase">
           ✦ Why choose coaching
         </span>
-        <h2 className="font-miniature text-[32px] leading-[38px] text-[#0d0d0d]">
+        <h2 className="font-miniature text-[32px] leading-[38px] font-semibold text-[#0d0d0d]">
           Coaching meets you where you are and helps you go{" "}
           <span className="text-[#ff6f61]">further</span>
         </h2>
@@ -64,7 +65,7 @@ function WhyChooseCoachingMobile() {
       </div>
 
       <div className="bg-[#e5ff7d] rounded-[24px] px-5 py-8 space-y-4 text-center">
-        <h3 className="font-miniature text-[28px] leading-[34px] text-black">
+        <h3 className="font-miniature text-[28px] leading-[34px] font-semibold text-black">
           A little support can go a{" "}
           <span className="italic">long way.</span>
         </h3>
@@ -73,14 +74,14 @@ function WhyChooseCoachingMobile() {
           people come to us simply because they want to feel a bit clearer, a
           bit more confident, and a bit more like themselves again.
         </p>
-        <a href="https://signup.feelattune.com/sign-up">
+        <Link to="/signup-anxiety">
           <Button className="w-full bg-[#5200ff] rounded-full font-semibold py-5">
             Start your journey →
           </Button>
-        </a>
+        </Link>
       </div>
 
-      <div className="flex flex-wrap gap-2 justify-center">
+      <div className="flex flex-wrap justify-center gap-2">
         {benefits.map((b, i) => (
           <span
             key={i}

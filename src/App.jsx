@@ -68,7 +68,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
-          <Route
+          {/* <Route
             path="/"
             element={
               <>
@@ -80,7 +80,7 @@ function App() {
                 </div>
               </>
             }
-          />
+          /> */}
           <Route
             path="/young-adults-lonliness"
             element={
@@ -194,7 +194,8 @@ function App() {
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/faqs" element={<FAQsPage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
-          <Route path="/life-coaching" element={<LifeCoachingHomePage />} />
+          {/* New Home page  */}
+          <Route path="/" element={<LifeCoachingHomePage />} />
         </Route>
 
         <Route path="/anxiety" element={<AnxietyPage />} />

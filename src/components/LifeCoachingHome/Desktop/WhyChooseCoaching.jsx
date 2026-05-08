@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const tags = [
   "More self-awareness",
   "Clearer decisions",
@@ -20,7 +22,7 @@ function WhyChooseCoaching() {
           </span>
         </div>
         <div className="max-w-[800px] text-center">
-          <p className="font-miniature text-[55px] leading-[67px] text-[#0d0d0d]">
+          <p className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d]">
             Coaching meets you where you are and helps you go{" "}
             <span className="text-[#ff6f61]">further</span>
           </p>
@@ -114,12 +116,12 @@ function WhyChooseCoaching() {
           src="/life-coaching/desktop/why-coaching/union-bg.webp"
           alt=""
           aria-hidden="true"
-          className="object-fill absolute inset-0 w-full h-full pointer-events-none select-none"
+          className="absolute inset-0 object-fill w-full h-full pointer-events-none select-none"
         />
 
         {/* CTA */}
-        <div className="relative z-10 px-[114px] pt-[60px] pb-[40px] flex flex-col items-center gap-[24px] max-w-[500px] mx-auto text-center">
-          <h2 className="font-miniature text-[42px] leading-[48px] text-black">
+        <div className="relative z-10 px-[114px] pt-[60px] pb-[40px] flex flex-col items-center gap-[24px] max-w-[600px] mx-auto text-center">
+          <h2 className="font-miniature text-[42px] font-semibold leading-[48px] text-black">
             A little support can go{" "}
             <span className="italic font-miniature">a long way.</span>
           </h2>
@@ -128,11 +130,11 @@ function WhyChooseCoaching() {
             people come to us simply because they want to feel a bit clearer, a
             bit more confident, and a bit more like themselves again.
           </p>
-          <a href="https://signup.feelattune.com/sign-up">
+          <Link to="/signup-anxiety">
             <button className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] capitalize px-[32px] py-[16px] rounded-[39px] hover:bg-[#4000cc] transition-colors">
               Start your journey →
             </button>
-          </a>
+          </Link>
         </div>
 
         {/* Tags */}

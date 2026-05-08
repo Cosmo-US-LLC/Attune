@@ -1,17 +1,18 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 function BeginJourneyMobile() {
   return (
-    <div className="bg-white px-5 py-10 space-y-6">
+    <div className="px-5 py-10 space-y-6 bg-white">
       <img
-        src="/life-coaching/desktop/begin-journey/photo-main.webp"
+        src="/life-coaching/desktop/begin-journey/begin_image.webp"
         alt="Person starting their coaching journey"
-        className="w-full rounded-[20px] object-cover max-h-[260px]"
+        className="w-full rounded-[20px] object-cover h-full"
       />
 
-      <div className="space-y-4 text-center">
-        <h2 className="font-miniature text-[40px] leading-[46px] text-black">
+      <div className="pb-4 space-y-4 text-center">
+        <h2 className="font-miniature text-[40px] font-semibold leading-[46px] text-black">
           Begin Your Journey
           <br />
           <span className="italic">Today!</span>
@@ -22,11 +23,11 @@ function BeginJourneyMobile() {
         </p>
       </div>
 
-      <a href="https://signup.feelattune.com/sign-up">
+      <Link to="/signup-anxiety">
         <Button className="w-full bg-[#5200ff] rounded-full font-semibold py-5 text-[15px]">
           Start your journey →
         </Button>
-      </a>
+      </Link>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Guarantee() {
   return (
@@ -39,7 +40,7 @@ function Guarantee() {
 
           {/* Main content */}
           <div className="flex flex-col items-center gap-[27px] max-w-[818px] text-center relative z-10">
-            <h2 className="font-miniature text-[55px] leading-[67px] text-[#0d0d0d]">
+            <h2 className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d]">
               Your results are{" "}
               <span className="font-miniature italic text-[#ff6f61]">guaranteed</span>
               <span className="text-[#ff6f61]">.</span>
@@ -50,11 +51,11 @@ function Guarantee() {
               refund — no awkward conversations, no fine print. Just a genuine commitment to your
               growth.
             </p>
-            <a href="https://signup.feelattune.com/sign-up">
+            <Link to="/signup-anxiety">
               <button className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] capitalize px-[32px] py-[20px] rounded-[39px] hover:bg-[#4000cc] transition-colors w-[340px]">
                 Get started, risk free →
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

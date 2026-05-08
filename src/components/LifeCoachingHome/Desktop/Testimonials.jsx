@@ -57,8 +57,9 @@ function Testimonials() {
               ✦ Real stories
             </span>
           </div>
-          <p className="font-miniature text-[55px] leading-[67px] text-[#0d0d0d] text-center max-w-[1006px]">
-            What people say after they start.
+          <p className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d] text-center max-w-[1006px]">
+            What people say{" "} 
+            <span className="font-miniature italic text-[#ff6f61]">after they start.</span>
           </p>
         </div>
 

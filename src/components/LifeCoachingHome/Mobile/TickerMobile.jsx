@@ -12,9 +12,9 @@ const items = [
 function TickerMobile() {
   return (
     <div className="bg-[#96adf0] py-4 overflow-hidden">
-      <div className="flex items-center animate-marquee whitespace-nowrap gap-0">
+      <div className="flex items-center gap-0 animate-marquee whitespace-nowrap">
         {[...items, ...items].map((item, i) => (
-          <span key={i} className="flex items-center gap-3 text-[14px] font-medium text-black">
+          <span key={i} className="flex items-center gap-3 text-[16px] font-medium text-black">
             <span className="text-[#ff6f61] font-bold">✓</span>
             <span>{item}</span>
             <span className="text-[#e5ff7d] text-[18px] mx-4">✦</span>

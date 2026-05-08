@@ -35,12 +35,12 @@ const steps = [
 
 function HowItWorksMobile() {
   return (
-    <div id="how-it-works" className="bg-white px-5 py-10 space-y-8">
+    <div id="how-it-works" className="px-5 py-10 space-y-8 bg-white">
       <div className="space-y-4 text-center">
         <span className="inline-flex items-center bg-[#e5ff7d] px-4 py-2 rounded-full text-xs font-semibold tracking-widest uppercase">
           ✦ How it works
         </span>
-        <h2 className="font-miniature text-[36px] leading-[42px] text-[#0d0d0d]">
+        <h2 className="font-miniature text-[36px] leading-[42px] font-semibold text-[#0d0d0d]">
           The coaching{" "}
           <span className="italic text-[#ff6f61]">journey</span>
         </h2>
@@ -57,7 +57,7 @@ function HowItWorksMobile() {
             key={i}
             className="bg-[#f4efea] rounded-[24px] px-5 py-6 space-y-4"
           >
-            <h3 className="font-miniature text-[24px] leading-[30px] text-[#0d0d0d] capitalize">
+            <h3 className="font-miniature text-[24px] font-semibold leading-[30px] text-[#0d0d0d] capitalize">
               {step.title}
             </h3>
             <p className="text-[14px] leading-[22px] text-[rgba(13,13,13,0.7)]">

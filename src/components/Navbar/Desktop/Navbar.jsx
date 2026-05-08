@@ -8,6 +8,12 @@ function Navbar() {
 
   const currentPath = location.pathname;
   console.log(currentPath);
+  const NewPagesNavbar = [
+    "/",
+    "/contact-us",
+    "/about-us",
+    "/faqs",
+  ].includes(currentPath);
 
   useEffect(() => {
     if (location.hash) {
@@ -43,10 +49,10 @@ function Navbar() {
   return (
     <>
       <div
-        className={`${currentPath === "/" ? "pb-[8.5rem]" : "pb-[5.5rem]"} `}
+        className={`${currentPath === "/" ? "pb-[5.5rem]" : "pb-[5.5rem]"} `}
       >
         <div className="fixed top-0 w-[100%] z-[99]">
-          {currentPath === "/" && <CountdownTimer />}
+          {/* {currentPath === "/" && <CountdownTimer />} */}
           <nav className="bg-white h-[90px] shadow-sm">
             <div className="max-w-[1440px] w-full h-full mx-auto px-8 pr-16 flex items-center justify-between">
               <Link
@@ -65,7 +71,7 @@ function Navbar() {
               </Link>
 
               {/* ── Life Coaching nav links ── */}
-              {currentPath === "/life-coaching" && (
+              {NewPagesNavbar && (
                 <div className="flex items-center gap-[47px]">
                   {[
                     { label: "How It Works", id: "how-it-works" },
@@ -98,7 +104,7 @@ function Navbar() {
               )}
 
               {/* ── Default nav links (all other routes) ── */}
-              {currentPath !== "/life-coaching" && (
+              {!NewPagesNavbar && (
                 <div className="flex items-center space-x-8">
                   {currentPath !== "/privacy-policy" &&
                     currentPath !== "/terms-of-use" && (
@@ -175,18 +181,18 @@ function Navbar() {
               )}
 
               {/* ── Life Coaching CTA: single "Get started" button ── */}
-              {currentPath === "/life-coaching" && (
+              {NewPagesNavbar && (
                 <div>
-                  <a href="https://signup.feelattune.com/sign-up">
+                  <Link to="/signup-anxiety">
                     <button className="h-[42px] px-[24px] bg-[#FF6F61] text-white font-medium text-[16.222px] rounded-[34.878px] border-[1.622px] border-white hover:bg-red-500 transition-colors">
                       Get started
                     </button>
-                  </a>
+                  </Link>
                 </div>
               )}
 
               {/* ── Default CTA: Log In + Connect Now ── */}
-              {currentPath !== "/life-coaching" && (
+              {!NewPagesNavbar && (
                 <div className="flex items-center space-x-4">
                   <div className="">
                     <a href="https://innovacare.tech/listenerhub/login">

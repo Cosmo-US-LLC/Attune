@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const plans = [
   {
@@ -30,7 +31,7 @@ const plans = [
       "Continuous progress tracking",
       "Best for lasting, ongoing change",
     ],
-    cta: "Start membership →",
+    cta: "Get Started →",
   },
 ];
 
@@ -41,7 +42,7 @@ function PricingMobile() {
         <span className="inline-flex items-center bg-[#e5ff7d] px-4 py-2 rounded-full text-xs font-semibold tracking-widest uppercase">
           ✦ Simple pricing
         </span>
-        <h2 className="font-miniature text-[32px] leading-[38px] text-[#0d0d0d]">
+        <h2 className="font-miniature text-[32px] font-semibold leading-[38px] text-[#0d0d0d]">
           Choose what{" "}
           <span className="italic text-[#ff6f61]">works for you</span>
         </h2>
@@ -53,7 +54,7 @@ function PricingMobile() {
 
       <div className="space-y-5">
         {plans.map((plan, i) => (
-          <div key={i} className="bg-white rounded-[24px] px-5 py-6 space-y-5 relative">
+          <div key={i} className="bg-white rounded-[24px] h-[400px] px-5 py-6 space-y-5 relative">
             <div className="flex items-start justify-between">
               <p className="text-[13px] text-[rgba(13,13,13,0.7)]">{plan.type}</p>
               <span
@@ -84,12 +85,14 @@ function PricingMobile() {
                 </li>
               ))}
             </ul>
-
-            <a href="https://signup.feelattune.com/sign-up">
-              <Button className="w-full bg-[#5200ff] rounded-full font-semibold">
-                {plan.cta}
-              </Button>
-            </a>
+            <div className="pt-2">
+              <Link to="/signup-anxiety">
+                <Button className="w-full bg-[#5200ff] rounded-full font-semibold">
+                  {plan.cta}
+                </Button>
+              </Link>
+            </div>
+            
           </div>
         ))}
       </div>

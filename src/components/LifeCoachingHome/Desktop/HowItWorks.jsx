@@ -56,9 +56,9 @@ function HowItWorks() {
             </span>
           </div>
           <div className="text-center">
-            <p className="font-miniature text-[55px] leading-[67px] text-[#0d0d0d]">
-              The coaching{" "}
-              <span className="font-miniature italic text-[#ff6f61]">journey</span>
+            <p className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d]">
+              The coaching{"  "}
+              <span className="font-miniature italic text-[#ff6f61]"> journey</span>
             </p>
             <p className="mt-[24px] text-[18px] font-normal text-[rgba(13,13,13,0.7)] leading-[1.25]">
               Life coaching isn&apos;t a quick fix. It&apos;s a structured, human process that
@@ -75,7 +75,7 @@ function HowItWorks() {
               className="bg-[#f4efea] flex-1 flex flex-col gap-[32px] px-[20px] py-[32px] rounded-[30px] overflow-hidden"
             >
               <div className="flex flex-col gap-[12px]">
-                <h3 className="font-miniature text-[30px] leading-[38px] text-[#0d0d0d] capitalize">
+                <h3 className="font-miniature text-[30px] font-semibold leading-[38px] text-[#0d0d0d] capitalize">
                   {step.titleLines.map((line, j) => (
                     <span key={j} className="block">
                       {line}

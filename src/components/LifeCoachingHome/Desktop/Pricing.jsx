@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const plans = [
   {
@@ -29,7 +30,7 @@ const plans = [
       "Continuous progress tracking",
       "Best for lasting, ongoing change",
     ],
-    cta: "Start membership →",
+    cta: "Get Started →",
   },
 ];
 
@@ -53,7 +54,7 @@ function Pricing() {
             </span>
           </div>
           <div className="text-center">
-            <p className="font-miniature text-[55px] leading-[67px] text-[#0d0d0d]">
+            <p className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d]">
               Choose what{" "}
               <span className="font-miniature italic text-[#ff6f61]">works for you</span>
             </p>
@@ -70,7 +71,7 @@ function Pricing() {
           {plans.map((plan, i) => (
             <div
               key={i}
-              className="bg-white rounded-[30px] overflow-hidden w-[429px] h-[347px] relative flex-shrink-0"
+              className="bg-white rounded-[30px] overflow-hidden w-[429px] h-[360px] relative flex-shrink-0"
             >
               {/* Badge */}
               <div
@@ -93,7 +94,7 @@ function Pricing() {
                   {plan.perSession}
                 </p>
 
-                <ul className="mt-[12px] flex flex-col gap-[7px]">
+                <ul className="mt-[12px] mb-[20px] flex flex-col gap-[7px]">
                   {plan.features.map((feat, j) => (
                     <li key={j} className="flex items-center gap-[10px]">
                       <CheckIcon />
@@ -104,12 +105,12 @@ function Pricing() {
               </div>
 
               {/* CTA button */}
-              <div className="absolute bottom-[18px] left-[18px] right-[18px]">
-                <a href="https://signup.feelattune.com/sign-up">
+              <div className="absolute bottom-[18px] left-[18px] right-[18px] pt-6">
+                <Link to="/signup-anxiety">
                   <button className="w-full bg-[#5200ff] text-white font-semibold text-[18px] capitalize tracking-[0.72px] py-[12px] rounded-[39px] hover:bg-[#4000cc] transition-colors">
                     {plan.cta}
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           ))}
