@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import heroImage from "../../../assets/images/home_hero_emoji.webp";
 
 function Hero() {
   return (
-    <div className="bg-[#e5ff7d] relative overflow-hidden min-h-[680px] flex items-center px-[113px] py-[60px] ">
+    <div className="bg-[#e5ff7d] relative overflow-hidden min-h-[680px] flex items-center px-[113px]  ">
       <div className="max-w-[1440px] mx-auto w-full flex items-center justify-between gap-12">
         {/* Left content */}
-        <div className="flex flex-col gap-[32px] max-w-[607px]">
+        <div className="flex flex-col gap-[32px]">
           <div className="flex flex-col gap-[27px]">
             <div className="bg-white inline-flex items-center justify-center px-[21px] py-[14px] rounded-[39px] self-start">
               <span className="font-semibold text-[#0d0d0d] text-[16px] tracking-[0.72px] uppercase">
@@ -28,10 +29,7 @@ function Hero() {
               confidence you&apos;ve always had inside you.
             </p>
 
-            <Link
-              to ="/signup-anxiety"
-              className="self-start"
-            >
+            <Link to="/signup-anxiety" className="self-start">
               <button className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] px-[32px] py-[20px] rounded-[39px] hover:bg-[#4000cc] transition-colors">
                 Start your journey →
               </button>
@@ -71,49 +69,11 @@ function Hero() {
 
         {/* Right illustration — 5 coloured bars + 5 characters (node 4158:1628) */}
 
-        <div className="relative flex-shrink-0 w-[585px] h-[596px]">
-          {/* Coloured transparent vertical bars */}
-          <div className="absolute bg-[rgba(255,106,1,0.26)]  w-[111px] h-[459px] left-[55px]  top-[137px]" />
-          <div className="absolute bg-[rgba(68,245,221,0.42)]  w-[127px] h-[459px] left-[155px] top-[137px]" />
-          <div className="absolute bg-[rgba(251,121,223,0.37)] w-[194px] h-[459px] left-[196px] top-[137px]" />
-          <div className="absolute bg-[rgba(255,210,63,0.38)]  w-[135px] h-[459px] left-[333px] top-[137px]" />
-          <div className="absolute bg-[rgba(150,173,240,0.32)] w-[107px] h-[459px] left-[422px] top-[137px]" />
-
-          {/* Characters sitting above the bars */}
-          {/* character-1: small yellow — far left */}
+        <div className="relative flex-shrink-0  flex-1">
           <img
-            src="/life-coaching/desktop/hero/character-1.webp"
-            alt="Character 1"
-            className="absolute w-[128px] object-contain"
-            style={{ left: 42, top: 71 }}
-          />
-          {/* character-2: teal — second from left */}
-          <img
-            src="/life-coaching/desktop/hero/character-2.webp"
-            alt="Character 2"
-            className="absolute w-[167px] object-contain"
-            style={{ left: 107, top: 49 }}
-          />
-          {/* character-5: pink large — centre */}
-          <img
-            src="/life-coaching/desktop/hero/character-5.webp"
-            alt="Character 5"
-            className="absolute w-[224px] object-contain"
-            style={{ left: 181, top: 0 }}
-          />
-          {/* character-4: orange — second from right */}
-          <img
-            src="/life-coaching/desktop/hero/character-4.webp"
-            alt="Character 4"
-            className="absolute w-[167px] object-contain"
-            style={{ left: 337, top: 49 }}
-          />
-          {/* character-3: blue — far right (mirrored) */}
-          <img
-            src="/life-coaching/desktop/hero/character-3.webp"
-            alt="Character 3"
-            className="absolute w-[127px] object-contain scale-x-[-1]"
-            style={{ left: 420, top: 72 }}
+            src={heroImage}
+            alt="Hero"
+            className="absolute right-0 -bottom-[300px]   object-cover"
           />
         </div>
       </div>

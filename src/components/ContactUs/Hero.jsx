@@ -32,7 +32,7 @@ function Hero() {
   return (
     <section className="bg-[#f4efea] px-[114px] py-[69px] flex items-start gap-[80px]">
       {/* Left column */}
-      <div className="max-w-[1280px] mx-auto w-full flex items-center justify-between gap-12">
+      <div className="max-w-[1280px] mx-auto w-full flex justify-between gap-12">
         <div className="flex flex-col gap-12 flex-1 min-w-0 max-w-[576px]">
           <div className="flex flex-col gap-[27px]">
             <span className="bg-[#e5ff7d] px-5 py-4 rounded-[39px] self-start font-semibold text-[16px] tracking-[0.72px] uppercase text-[#0d0d0d] leading-normal">
