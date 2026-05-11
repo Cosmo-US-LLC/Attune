@@ -3,45 +3,41 @@ import heroImage from "../../../assets/images/home_hero_emoji.webp";
 
 function Hero() {
   return (
-    <div className="bg-[#e5ff7d] relative overflow-hidden min-h-[680px] flex items-center px-[113px]">
-      <div className="max-w-[1440px] mx-auto w-full flex items-center justify-between gap-12">
-        {/* Left content */}
-        <div className="flex flex-col gap-[32px]">
+    <div className="relative flex min-h-[680px] items-center overflow-hidden bg-[#e5ff7d] px-4">
+      <div className="mx-auto flex w-full max-w-[1280px] flex-col items-center justify-between gap-30 lg:flex-row lg:items-center lg:gap-12">
+        {/* Left content — Figma 4158:1611 */}
+        <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-[27px]">
-            <div className="bg-white inline-flex items-center justify-center px-[21px] py-[14px] rounded-[39px] self-start">
-              <span className="font-semibold text-[#0d0d0d] text-[16px] tracking-[0.72px] uppercase">
+            <div className="inline-flex items-center justify-center self-start rounded-[39px] bg-white px-[20px] py-[16px]">
+              <span className="text-center text-[16px] font-semibold uppercase tracking-[0.72px] text-[#0d0d0d]">
                 ✦ Life coaching for anxiety and wellbeing
               </span>
             </div>
 
-            <div className="font-miniature text-[#0d0d0d] leading-[83px]">
-              <p className="text-[72px] font-normal leading-[83px]">
-                Feeling held back?
-              </p>
-              <p className="text-[72px] font-bold leading-[83px]">
-                Let&apos;s change that.
-              </p>
+            <div className="font-miniature text-[#0d0d0d]">
+              <p className="text-[72px] font-normal leading-[80px]">Feeling held back?</p>
+              <p className="text-[72px] font-bold leading-[80px]">Let&apos;s change that.</p>
             </div>
 
-            <p className="text-[18px] font-normal text-[rgba(13,13,13,0.7)] leading-[1.25] max-w-[600px]">
-              A skilled life coach doesn&apos;t tell you what to do. They help
-              you see clearly, choose deliberately, and move forward with the
-              confidence you&apos;ve always had inside you.
+            <p className="max-w-[607px] text-[18px] font-normal leading-[26px] text-[rgba(13,13,13,0.7)]">
+              A skilled life coach doesn&apos;t tell you what to do. They help you see clearly,
+              choose deliberately, and move forward with the confidence you&apos;ve always had
+              inside you.
             </p>
 
-            <Link to="/signup-anxiety" className="self-start">
-              <button className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] px-[32px] py-[20px] rounded-[39px] hover:bg-[#4000cc] transition-colors">
-                Start your journey →
-              </button>
+            <Link
+              to="/signup-anxiety"
+              className="inline-flex h-[76px] shrink-0 items-center justify-center self-start rounded-[39px] bg-[#5200ff] px-6 py-[18px] text-[20px] font-semibold capitalize tracking-[0.72px] text-white no-underline transition-colors hover:bg-[#4000cc] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5200ff]"
+            >
+              Start your journey →
             </Link>
           </div>
 
-          {/* Money-back guarantee badge */}
-          <div className="flex items-center gap-[11px]">
-            <div className="bg-[#ff6f61] rounded-[8px] p-[14px] flex-shrink-0 flex items-center justify-center size-[80px]">
+          <div className="flex items-center gap-4">
+            <div className="flex size-[80px] flex-shrink-0 items-center justify-center rounded-[8px] bg-[#ff6f61] p-[14px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-[52px] h-[52px] text-white"
+                className="h-[52px] w-[52px] text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -54,11 +50,11 @@ function Hero() {
                 />
               </svg>
             </div>
-            <div className="flex flex-col gap-[6px]">
-              <p className="font-semibold text-[16px] text-[#0d0d0d] leading-[18px] capitalize">
+            <div className="flex min-w-0 flex-col gap-1 leading-[0]">
+              <p className="text-[16px] font-semibold capitalize leading-[24px] text-[#0d0d0d]">
                 Money-back guarantee
               </p>
-              <p className="text-[14px] text-[rgba(13,13,13,0.55)] leading-[1.25]">
+              <p className="text-[14px] font-normal leading-[22px] text-[rgba(13,13,13,0.55)]">
                 Not happy with your results?
                 <br />
                 We&apos;ll make it right, no questions asked.
@@ -67,21 +63,11 @@ function Hero() {
           </div>
         </div>
 
-        {/* Right illustration — 5 coloured bars + 5 characters (node 4158:1628) */}
-
-        {/* <div className="relative flex-1 flex-shrink-0">
+        <div className="relative flex flex-1 items-end justify-end overflow-hidden pt-16">
           <img
             src={heroImage}
-            alt="Hero"
-            className="absolute right-0 -bottom-[300px]  object-cover"
-          />
-        </div> */}
-        {/* Right illustration */}
-        <div className="relative flex items-end justify-end flex-1 pt-12 overflow-hidden">
-          <img
-            src={heroImage}
-            alt="Hero"
-            className="w-full max-w-[600px] h-auto object-contain"
+            alt="People expressing different moods aligned with coaching support"
+            className="h-auto w-full max-w-[600px] object-contain"
           />
         </div>
       </div>

@@ -41,41 +41,58 @@ const stats = [
 
 function RealOutcomesMobile() {
   return (
-    <div className="bg-[#f4efea] px-5 py-10 space-y-8">
-      <div className="space-y-4">
-        <span className="inline-flex items-center bg-[#e5ff7d] px-4 py-2 rounded-full text-xs font-semibold tracking-widest uppercase">
-          ✦ Real outcomes
-        </span>
-        <h2 className="font-miniature text-[32px] font-semibold leading-[38px] text-[#0d0d0d]">
-          What changes when you work with a{" "}
-          <span className="italic text-[#ff6f61]">life coach</span>
-        </h2>
-        <p className="text-[14px] leading-[20px] text-[rgba(13,13,13,0.7)]">
-          These aren&apos;t abstract promises. These are the shifts our clients
-          report after working consistently with a FeelAttune coach.
-        </p>
+    <div className="bg-[#f4efea] px-5 py-8 flex flex-col gap-12">
+      <div className="flex flex-col gap-7">
+        <div className="bg-[#e5ff7d] rounded-[39px] px-5 py-3.5 w-fit">
+          <p className="text-[14px] leading-[22px] font-semibold uppercase tracking-[0.72px] text-[#0d0d0d]">
+            ✦ Real outcomes
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <h2 className="font-miniature font-bold text-[42px] leading-[50px] text-[#0d0d0d]">
+            What changes when you work with a{" "}
+            <span className="italic font-bold text-[#ff6f61]">life coach</span>
+          </h2>
+          <p className="text-[16px] leading-[24px] text-[rgba(13,13,13,0.7)]">
+            These aren&apos;t abstract promises. These are the shifts our clients
+            report after working consistently with a FeelAttune coach.
+          </p>
+        </div>
+
+        <img
+          src="/figma/home-mobile/real-outcomes-illustration.webp"
+          alt=""
+          className="w-[280px] h-auto"
+        />
       </div>
 
-      <img
-        src="/life-coaching/desktop/real-outcomes/coach-illustration.webp"
-        alt="Life coaching illustration"
-        className="w-full max-w-[240px] mx-auto"
-      />
-
-      <div className="grid grid-cols-2 gap-4">
-        {stats.map((stat, i) => (
-          <div key={i} className="space-y-1 border-t border-[rgba(13,13,13,0.12)] pt-4">
-            <p className="font-miniature text-[40px] leading-[44px] text-[#96adf0]">
+      <div className="grid grid-cols-2">
+        {stats.map((stat, i) => {
+          const isRightCol = i % 2 === 1;
+          const isTopRow = i < 2;
+          return (
+            <div
+              key={i}
+              className={[
+                "flex flex-col gap-2",
+                "py-6",
+                isRightCol ? "pl-6 border-l border-[rgba(13,13,13,0.12)]" : "pr-6",
+                !isTopRow ? "border-t border-[rgba(13,13,13,0.12)]" : "",
+              ].join(" ")}
+            >
+            <p className="font-miniature text-[28px] leading-[34px] text-[#96adf0] capitalize">
               {stat.percent}
             </p>
-            <p className="font-bold text-[13px] leading-[18px] text-[rgba(13,13,13,0.7)]">
+            <p className="text-[14px] leading-[22px] font-bold text-[rgba(13,13,13,0.9)]">
               {stat.label}
             </p>
-            <p className="text-[12px] leading-[17px] text-[rgba(13,13,13,0.55)]">
+            <p className="text-[14px] leading-[22px] text-[rgba(13,13,13,0.7)]">
               {stat.detail}
             </p>
-          </div>
-        ))}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -26,18 +26,13 @@ const testimonials = [
 
 function StarRow({ color }) {
   return (
-    <div className="flex items-center gap-[4px]">
+    <div className="flex items-center gap-1">
       {Array.from({ length: 5 }).map((_, i) => (
         <div
           key={i}
-          className={`${color} rounded-full size-[24px] flex items-center justify-center`}
+          className={`${color} flex size-[24px] items-center justify-center rounded-full`}
         >
-          <svg
-            viewBox="0 0 16 16"
-            fill="white"
-            className="w-4 h-4"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg viewBox="0 0 16 16" fill="white" className="h-4 w-4" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1l1.854 3.757L14 5.515l-3 2.924.708 4.128L8 10.25l-3.708 2.317L5 8.439 2 5.515l4.146-.758L8 1z" />
           </svg>
         </div>
@@ -48,39 +43,39 @@ function StarRow({ color }) {
 
 function Testimonials() {
   return (
-    <div className="bg-white px-[114px] py-[60px]">
-      <div className="max-w-[1440px] mx-auto flex flex-col gap-[48px] items-center">
-        {/* Header */}
-        <div className="flex flex-col gap-[24px] items-center w-full">
-          <div className="bg-[#e5ff7d] px-[20px] py-[16px] rounded-[39px]">
-            <span className="font-semibold text-[#0d0d0d] text-[16px] tracking-[0.72px] uppercase">
+    <div className="bg-white px-4 py-[60px] sm:px-6 lg:px-[80px]">
+      <div className="mx-auto flex w-full max-w-[1280px] flex-col items-center gap-12">
+        <div className="flex w-full flex-col items-center gap-6">
+          <div className="rounded-[39px] bg-[#e5ff7d] px-5 py-4">
+            <span className="text-[16px] font-semibold uppercase tracking-[0.72px] text-[#0d0d0d]">
               ✦ Real stories
             </span>
           </div>
-          <p className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d] text-center max-w-[1006px]">
-            What people say{" "} 
-            <span className="font-miniature italic text-[#ff6f61]">after they start.</span>
+          <p className="max-w-[1006px] text-center font-miniature text-[54px] font-bold leading-[62px] text-[#0d0d0d]">
+            <span>{`What people say `}</span>
+            <span className="text-[#ff6f61]">after they start.</span>
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="flex gap-[16px] items-stretch w-full">
+        <div className="flex w-full items-stretch gap-4">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-[#f4efea] flex-1 flex flex-col justify-between px-[24px] py-[32px] rounded-[30px] gap-[48px] overflow-hidden"
+              className="flex flex-1 flex-col justify-between gap-12 overflow-hidden rounded-[30px] bg-[#f4efea] px-6 py-8"
             >
               <div className="flex flex-col gap-[13px]">
                 <StarRow color={t.starColor} />
-                <p className="text-[14px] font-normal text-[rgba(13,13,13,0.7)] leading-[1.25]">
+                <p className="text-[18px] font-medium leading-[26px] text-[rgba(13,13,13,0.7)]">
                   {t.quote}
                 </p>
               </div>
               <div className="flex flex-col">
-                <p className="font-miniature text-[25px] leading-[31px] text-[#0d0d0d] capitalize">
+                <p className="font-miniature text-[24px] font-bold capitalize leading-8 text-[#0d0d0d]">
                   {t.name}
                 </p>
-                <p className="text-[14px] font-normal text-[rgba(13,13,13,0.7)]">{t.role}</p>
+                <p className="text-[14px] font-normal leading-[1.25] text-[rgba(13,13,13,0.7)]">
+                  {t.role}
+                </p>
               </div>
             </div>
           ))}

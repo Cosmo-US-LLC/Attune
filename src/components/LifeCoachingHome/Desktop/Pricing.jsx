@@ -15,10 +15,9 @@ const plans = [
       "Best for building real momentum",
       "Use at your own pace",
     ],
-    cta: "Get started →",
   },
   {
-    badge: "Best value",
+    badge: "Best Value",
     badgeColor: "bg-[#f097dd]",
     type: "Monthly Membership",
     price: "239",
@@ -30,86 +29,88 @@ const plans = [
       "Continuous progress tracking",
       "Best for lasting, ongoing change",
     ],
-    cta: "Get Started →",
   },
 ];
 
 function CheckIcon() {
   return (
-    <div className="border border-[#5200ff] bg-white/30 rounded-[9px] flex-shrink-0 size-[18px] flex items-center justify-center">
-      <span className="text-[#5200ff] text-[10px] font-bold">✓</span>
+    <div className="flex size-[18px] flex-shrink-0 items-center justify-center rounded-[9px] border border-[#5200ff] bg-white/30 p-px">
+      <span className="text-[10px] font-bold text-[#5200ff]">✓</span>
     </div>
   );
 }
 
 function Pricing() {
   return (
-    <div id="pricing" className="bg-[#f4efea] px-[114px] py-[60px]">
-      <div className="max-w-[1440px] mx-auto flex flex-col gap-[48px] items-center">
-        {/* Header */}
-        <div className="flex flex-col gap-[32px] items-center max-w-[1006px]">
-          <div className="bg-[#e5ff7d] px-[20px] py-[16px] rounded-[39px]">
-            <span className="font-semibold text-[#0d0d0d] text-[16px] tracking-[0.72px] uppercase">
+    <div id="pricing" className="bg-[#f4efea] px-4 py-[60px] sm:px-6 lg:px-[80px]">
+      <div className="mx-auto flex w-full max-w-[1280px] flex-col items-center gap-12">
+        <div className="flex max-w-[1006px] flex-col items-center gap-8">
+          <div className="rounded-[39px] bg-[#e5ff7d] px-5 py-4">
+            <span className="text-center text-[16px] font-semibold uppercase tracking-[0.72px] text-[#0d0d0d]">
               ✦ Simple pricing
             </span>
           </div>
           <div className="text-center">
-            <p className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d]">
-              Choose what{" "}
-              <span className="font-miniature italic text-[#ff6f61]">works for you</span>
+            <p className="font-miniature text-[54px] font-bold leading-[62px] text-[#0d0d0d]">
+              Choose what <span className="italic text-[#ff6f61]">works for you</span>
             </p>
-            <p className="mt-[24px] text-[18px] font-normal text-[rgba(13,13,13,0.7)] leading-[1.25]">
-              No lock-in contracts. Every plan begins with a free conversation
-              <br />
-              no payment until you&apos;re ready to start.
-            </p>
+            <div className="mt-6 whitespace-pre-wrap text-[18px] font-normal leading-[26px] text-[rgba(13,13,13,0.7)]">
+              <p className="mb-0">No lock-in contracts. Every plan begins with a free conversation</p>
+              <p className="mb-0">{` no payment until you're ready to start.`}</p>
+            </div>
           </div>
         </div>
 
-        {/* Plan cards */}
-        <div className="flex gap-[32px] items-center">
+        <div className="flex flex-row items-center justify-center gap-8">
           {plans.map((plan, i) => (
             <div
               key={i}
-              className="bg-white rounded-[30px] overflow-hidden w-[429px] h-[360px] relative flex-shrink-0"
+              className="relative flex min-h-[405px] w-full max-w-[429px] flex-shrink-0 flex-col overflow-hidden rounded-[24px] bg-white px-4 py-6"
             >
-              {/* Badge */}
-              <div
-                className={`absolute top-[22px] right-[18px] ${plan.badgeColor} rounded-[26px] px-[14px] py-[6px]`}
-              >
-                <span className="font-semibold text-[14px] text-white capitalize">
-                  {plan.badge}
-                </span>
+              <div className="flex items-start justify-between gap-2">
+                <p className="text-[14px] font-normal leading-[22px] text-[rgba(13,13,13,0.7)]">
+                  {plan.type}
+                </p>
+                <div
+                  className={`shrink-0 rounded-[26px] px-3.5 py-1.5 ${plan.badgeColor}`}
+                >
+                  <span className="text-[14px] font-semibold capitalize leading-[22px] text-white">
+                    {plan.badge}
+                  </span>
+                </div>
               </div>
 
-              <div className="px-[31px] pt-[32px] pb-[0px]">
-                <p className="text-[14px] font-normal text-[rgba(13,13,13,0.7)]">{plan.type}</p>
-                <div className="flex items-baseline gap-[4px] mt-[4px]">
-                  <span className="text-[14px] text-[rgba(13,13,13,0.7)]">CAD $</span>
-                  <span className="font-miniature text-[40px] text-black leading-tight">
+              <div className="mt-3 flex flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-[14px] font-normal leading-[22px] text-[rgba(13,13,13,0.7)]">
+                    CAD $
+                  </span>
+                  <span className="font-miniature text-[40px] font-bold capitalize leading-[50px] text-black">
                     {plan.price} /mo
                   </span>
                 </div>
-                <p className="italic text-[14px] font-medium text-[rgba(13,13,13,0.7)] mt-[2px]">
+                <p className="text-[14px] font-medium italic leading-[22px] text-[rgba(13,13,13,0.7)]">
                   {plan.perSession}
                 </p>
-
-                <ul className="mt-[12px] mb-[20px] flex flex-col gap-[7px]">
-                  {plan.features.map((feat, j) => (
-                    <li key={j} className="flex items-center gap-[10px]">
-                      <CheckIcon />
-                      <span className="font-medium text-[14px] text-[#0d0d0d]">{feat}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
 
-              {/* CTA button */}
-              <div className="absolute bottom-[18px] left-[18px] right-[18px] pt-6">
-                <Link to="/signup-anxiety">
-                  <button className="w-full bg-[#5200ff] text-white font-semibold text-[18px] capitalize tracking-[0.72px] py-[12px] rounded-[39px] hover:bg-[#4000cc] transition-colors">
-                    {plan.cta}
-                  </button>
+              <ul className="mt-3 flex flex-1 flex-col gap-2 overflow-hidden">
+                {plan.features.map((feat, j) => (
+                  <li key={j} className="flex items-center gap-2">
+                    <CheckIcon />
+                    <span className="text-[14px] font-medium leading-[22px] text-[#0d0d0d]">
+                      {feat}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-auto pt-4">
+                <Link
+                  to="/signup-anxiety"
+                  className="flex w-full items-center justify-center rounded-[39px] bg-[#5200ff] px-[21px] py-4 text-[18px] font-semibold capitalize text-white no-underline transition-colors hover:bg-[#4000cc]"
+                >
+                  Get started →
                 </Link>
               </div>
             </div>

@@ -4,36 +4,112 @@ import { Link } from "react-router-dom";
 
 function GuaranteeMobile() {
   return (
-    <div className="bg-[#e5ff7d] px-5 py-10">
-      <div className="bg-white rounded-[24px] h-[420px] px-6 py-10 space-y-5 text-center relative overflow-visible">
-        <img
-          src="/life-coaching/desktop/guarantee/character-1.webp"
-          alt=""
-          className="absolute left-[-16px] bottom-[10px] w-[80px] h-[74px] object-contain rotate-[-4deg]"
-        />
-        <img
-          src="/life-coaching/desktop/guarantee/character-6.webp"
-          alt=""
-          className="absolute right-[-16px] top-[10px] w-[80px] h-[74px] object-contain rotate-[-16deg]"
-        />
-        <h2 className="font-miniature text-[32px] leading-[38px] text-[#0d0d0d]">
-          Your results are{" "}
-          <span className="italic text-[#ff6f61]">guaranteed</span>.
-        </h2>
-        <p className="text-[14px] leading-[22px] text-[rgba(13,13,13,0.7)]">
-          We believe in coaching deeply enough to put our money behind it. If
-          you complete your sessions and don&apos;t feel you&apos;ve made real
-          progress, we&apos;ll offer a full refund — no awkward conversations,
-          no fine print. Just a genuine commitment to your growth.
-        </p>
-        <div className="pt-1">
-          <Link to="/signup-anxiety">
-            <Button className="bg-[#5200ff] rounded-full font-semibold py-5 px-5 text-[16px]">
+    <div className="flex items-center justify-center bg-[#e5ff7d] px-5 py-16">
+      <div className="relative w-full min-w-0 flex-1 overflow-clip rounded-[30px] bg-white px-6 pb-20 pt-[100px]">
+        <div className="relative z-[1] flex w-full flex-col items-center justify-center gap-4">
+          <h2 className="w-full text-center font-miniature text-[42px] font-bold leading-[50px] text-[#0d0d0d]">
+            <span className="leading-[50px]">Your results are </span>
+            <span className="font-bold italic leading-[50px] text-[#ff6f61]">
+              guaranteed
+            </span>
+            <span className="leading-[50px] text-[#ff6f61]">.</span>
+          </h2>
+          <p className="w-full text-center font-inter text-[16px] font-normal leading-6 text-[rgba(13,13,13,0.7)]">
+            We believe in coaching deeply enough to put our money behind it. If you
+            complete your sessions and don&apos;t feel you&apos;ve made real
+            progress, we&apos;ll offer a full refund, no awkward conversations, no fine
+            print. Just a genuine commitment to your growth.
+          </p>
+          <Link
+            to="/signup-anxiety"
+            className="mt-1 flex w-full shrink-0 justify-center"
+          >
+            <Button className="h-auto rounded-[100px] bg-[#5200ff] px-5 py-3.5 font-inter text-[14px] font-semibold leading-6 text-white">
               Get started, risk free →
             </Button>
           </Link>
         </div>
-        
+
+        <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
+          {/* Top-left */}
+          <div className="absolute left-[-10px] top-0 flex h-[77.45px] w-[87.33px] items-center justify-center">
+            <div className="flex-none rotate-[13.62deg]">
+              <div className="relative h-[61.53px] w-[74.95px]">
+                <img
+                  src="/figma/home-mobile/guarantee-deco-01.webp"
+                  alt=""
+                  className="absolute inset-0 block size-full max-w-none object-contain"
+                  draggable={false}
+                />
+              </div>
+            </div>
+          </div>
+          {/* Top-right */}
+          <div className="absolute right-[8.52px] top-[-28px] flex h-[87.35px] w-[87.48px] items-center justify-center">
+            <div className="flex-none rotate-[163.82deg]">
+              <div className="relative h-[70.45px] w-[70.65px]">
+                <img
+                  src="/figma/home-mobile/guarantee-deco-02.webp"
+                  alt=""
+                  className="absolute inset-0 block size-full max-w-none object-contain"
+                  draggable={false}
+                />
+              </div>
+            </div>
+          </div>
+          {/* Mid-left */}
+          <div className="absolute left-[-24px] top-[372px] flex h-[71.25px] w-[77.88px] items-center justify-center">
+            <div className="flex-none -scale-y-100 rotate-[-175.64deg]">
+              <div className="relative h-[65.89px] w-[73.09px]">
+                <div className="absolute inset-[0_0_0_-0.68%]">
+                  <img
+                    src="/figma/home-mobile/guarantee-deco-03.webp"
+                    alt=""
+                    className="block size-full max-w-none object-contain"
+                    draggable={false}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Mid-right */}
+          <div className="absolute left-[calc(50%+154.45px)] top-[368px] flex h-[82.06px] w-[86.9px] -translate-x-1/2 items-center justify-center">
+            <div className="flex-none rotate-[-16.06deg]">
+              <div className="relative h-[64.73px] w-[71.79px]">
+                <div className="absolute inset-[0_0_0_-0.68%]">
+                  <img
+                    src="/figma/home-mobile/guarantee-deco-04.webp"
+                    alt=""
+                    className="block size-full max-w-none object-contain"
+                    draggable={false}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Bottom (center-ish) */}
+          <div className="absolute bottom-[-4.8px] right-[264.9px] h-[66.8px] w-[74.1px]">
+            <div className="absolute inset-[0_0_0_-0.68%]">
+              <img
+                src="/figma/home-mobile/guarantee-deco-05.webp"
+                alt=""
+                className="block size-full max-w-none object-cover"
+                draggable={false}
+              />
+            </div>
+          </div>
+          {/* Bottom-right */}
+          <div className="absolute bottom-[-2.65px] right-[32px] h-[65.65px] w-[79.97px]">
+            <div className="absolute inset-[0_0_0_-0.47%]">
+              <img
+                src="/figma/home-mobile/guarantee-deco-06.webp"
+                alt=""
+                className="block size-full max-w-none object-cover"
+                draggable={false}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
