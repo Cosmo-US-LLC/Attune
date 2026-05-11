@@ -16,7 +16,7 @@ const questions = [
   {
     q: "How often do you feel like you're making real progress toward the things that matter to you?",
     options: [
-      "Rarely — I feel stuck most of the timeAlmost every day",
+      "Rarely — I feel stuck most of the time",
       "Sometimes — but it doesn't last",
       "Often — but I want to go deeper",
       "Regularly — I'm just looking to accelerate",
@@ -86,44 +86,52 @@ function CoachingQuizMobile() {
   };
 
   return (
-    <div id="quiz" className="px-5 py-10 space-y-8 bg-white">
-      <div className="space-y-4">
-        <span className="inline-flex items-center bg-[#e5ff7d] px-4 py-2 rounded-full text-xs font-semibold tracking-widest uppercase">
-          ✦ Not sure yet?
-        </span>
-        <h2 className="font-miniature text-[32px] font-semibold leading-[38px] text-[#0d0d0d]">
-          Could coaching{" "}
-          <span className="italic text-[#ff6f61]">change</span> things for you?
-        </h2>
-        <p className="text-[14px] leading-[20px] text-[rgba(13,13,13,0.7)]">
-          You don&apos;t have to know exactly what you need before you start.
-          Take the 2-minute quiz and we&apos;ll tell you whether coaching is a
-          good fit.
-        </p>
+    <div id="quiz" className="bg-white px-5 py-8 flex flex-col gap-6">
+      <div className="flex flex-col gap-8">
+        <div className="bg-[#e5ff7d] rounded-[39px] px-5 py-3.5 w-fit">
+          <p className="text-[14px] leading-[22px] font-semibold uppercase tracking-[0.72px] text-[#0d0d0d]">
+            ✦ Not sure yet?
+          </p>
+        </div>
 
-        <ul className="space-y-2">
+        <div className="flex flex-col gap-4">
+          <h2 className="font-miniature font-bold text-[42px] leading-[50px] text-[#0d0d0d]">
+            Could coaching{" "}
+            <span className="italic font-bold text-[#ff6f61]">change </span>
+            things for you?
+          </h2>
+          <p className="text-[16px] leading-[24px] text-[rgba(13,13,13,0.7)]">
+            You don&apos;t have to know exactly what you need before you start.
+            Take the 2-minute quiz and we&apos;ll tell you whether coaching is a
+            good fit and what kind of support would help most.
+          </p>
+        </div>
+
+        <ul className="flex flex-col gap-3">
           {[
             "You feel stuck but can't pinpoint why",
             "You know what you want but can't seem to get there",
             "You're tired of going in circles on the same problems",
             "You're ready for something to actually change",
           ].map((item, i) => (
-            <li key={i} className="flex items-center gap-2 text-[13px] font-medium text-[#0d0d0d]">
-              <span className="w-[16px] h-[16px] flex-shrink-0 border border-[#5200ff] rounded-[6px] flex items-center justify-center">
-                <span className="text-[#5200ff] text-[9px]">✓</span>
+            <li key={i} className="flex items-start gap-2">
+              <span className="mt-0.5 w-[18px] h-[18px] flex-shrink-0 border border-[#5200ff] rounded-[9px] flex items-center justify-center bg-white/30">
+                <span className="text-[#5200ff] text-[10px] leading-none">✓</span>
               </span>
-              {item}
+              <span className="text-[14px] leading-[1.25] font-medium text-[#0d0d0d]">
+                {item}
+              </span>
             </li>
           ))}
         </ul>
       </div>
 
-      <div className="border border-[#0d0d0d] rounded-[20px] overflow-hidden">
-        <div className="bg-[#f4efea] px-5 pt-5 pb-4 space-y-2">
-          <h3 className="font-miniature text-[20px] text-center text-black">
+      <div className="border border-[#0d0d0d] rounded-[24px] overflow-hidden bg-white">
+        <div className="bg-[#f4efea] p-5 space-y-2">
+          <h3 className="font-miniature text-[20px] leading-[28px] text-center text-black">
             Is life coaching right for you?
           </h3>
-          <p className="text-[12px] text-[rgba(0,0,0,0.7)] font-semibold text-center">
+          <p className="text-[14px] leading-[17.5px] text-[rgba(0,0,0,0.7)] text-center">
             5 quick questions — honest answers only
           </p>
           <div className="bg-[rgba(0,0,0,0.1)] h-1 rounded-full overflow-hidden">
@@ -136,12 +144,12 @@ function CoachingQuizMobile() {
 
         {result ? (
           <div className="px-5 py-6 space-y-5">
-            <p className="text-[15px] leading-[22px] text-[#0d0d0d] font-medium">
+            <p className="text-[14px] leading-[22px] text-[#0d0d0d] font-medium pb-4">
               {fitMessages[result]}
             </p>
             <Link to="/signup-anxiety">
               <Button className="w-full bg-[#5200ff] rounded-full font-semibold">
-                Start your journey →
+                Start Your Journey →
               </Button>
             </Link>
             <button onClick={reset} className="w-full text-[13px] text-[rgba(0,0,0,0.5)] underline">
@@ -149,33 +157,42 @@ function CoachingQuizMobile() {
             </button>
           </div>
         ) : (
-          <div className="px-5 py-5 space-y-4">
-            <p className="text-[14px] font-semibold text-[#0d0d0d] leading-[20px]">
+          <div className="px-5 pt-5 space-y-5">
+            <p className="text-[14px] font-semibold text-[#0d0d0d] leading-[22px]">
               {questions[step].q}
             </p>
-            <div className="space-y-2">
+            <div className="space-y-2.5">
               {questions[step].options.map((opt, i) => (
                 <button
                   key={i}
                   onClick={() => handleSelect(i)}
-                  className={`w-full text-left px-4 py-3 rounded-xl text-[13px] font-medium border transition-colors ${
+                  className={`w-full text-left px-[9px] py-[9px] rounded-[12px] text-[13px] font-medium border transition-colors flex items-center gap-2 ${
                     selected === i
                       ? "border-[#5200ff] bg-[rgba(82,0,255,0.06)] text-[#0d0d0d]"
                       : "border-[rgba(13,13,13,0.12)] text-[#0d0d0d]"
                   }`}
                 >
-                  {opt}
+                  <span
+                    className={[
+                      "box-border w-[12px] h-[12px] rounded-full border flex-shrink-0",
+                      selected === i
+                        ? "border-[#5200ff] bg-[#5200ff]"
+                        : "border-[rgba(13,13,13,0.2)] bg-white",
+                    ].join(" ")}
+                    aria-hidden
+                  />
+                  <span className="leading-normal">{opt}</span>
                 </button>
               ))}
             </div>
-            <div className="flex items-center justify-between pt-2">
-              <span className="text-[11px] text-[rgba(13,13,13,0.4)]">
+            <div className="flex items-center justify-between pt-1 pb-6 px-2">
+              <span className="text-[12px] text-[rgba(13,13,13,0.4)] font-medium">
                 Question {step + 1} of {questions.length}
               </span>
               <button
                 onClick={handleNext}
                 disabled={selected === null}
-                className="bg-[#5200ff] disabled:opacity-40 text-white text-[13px] font-semibold px-5 py-2 rounded-full"
+                className="bg-[#5200ff] disabled:opacity-40 text-white text-[14px] font-semibold px-[22px] py-[10px] rounded-full"
               >
                 Next →
               </button>

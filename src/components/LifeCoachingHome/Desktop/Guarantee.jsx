@@ -1,65 +1,109 @@
-import React from "react";
 import { Link } from "react-router-dom";
+
+const G = "/life-coaching/desktop/guarantee";
+
+/** Desktop Guarantee — Figma 4079:2813 */
 
 function Guarantee() {
   return (
-    <div className="bg-[#e5ff7d] px-[80px] py-[60px]">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-center">
-        <div className="bg-white rounded-[30px] overflow-hidden w-full max-w-[1280px] min-h-[417px] relative flex items-center justify-center px-[40px] py-[60px]">
-          {/* Decorative character images (corners) */}
+    <section className="bg-[#e5ff7d] px-4 py-8 sm:px-10 sm:py-10 lg:px-[80px] lg:py-[38px]">
+      <div className="mx-auto w-full max-w-[1280px]">
+        <div className="relative mx-auto flex min-h-[417px] w-full max-w-[1280px] flex-col items-center justify-center overflow-clip rounded-[30px] bg-white">
+          {/* Six characters — Figma MCP raster exports */}
+          <div className="pointer-events-none absolute left-[-10px] top-[194px] z-[1] hidden h-[142.509px] w-[155.766px] items-center justify-center xl:flex">
+            <div className="-scale-y-100">
+              <div className="relative h-[131.787px] w-[146.178px] flex-none rotate-[-175.64deg]">
+                <img
+                  src={`${G}/figma-pink.webp`}
+                  alt=""
+                  draggable={false}
+                  decoding="async"
+                  className="block size-full max-w-none object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
           <img
-            src="/life-coaching/desktop/guarantee/character-1.webp"
+            src={`${G}/figma-green.webp`}
             alt=""
-            className="absolute left-[-10px] bottom-[50px] w-[140px] h-[130px] object-contain opacity-90 rotate-[-4deg]"
-          />
-          <img
-            src="/life-coaching/desktop/guarantee/character-2.webp"
-            alt=""
-            className="absolute left-[33px] top-[-17px] w-[150px] h-[123px] object-contain rotate-[14deg]"
-          />
-          <img
-            src="/life-coaching/desktop/guarantee/character-3.webp"
-            alt=""
-            className="absolute left-[249px] bottom-[40px] w-[148px] h-[134px] object-contain"
-          />
-          <img
-            src="/life-coaching/desktop/guarantee/character-4.webp"
-            alt=""
-            className="absolute right-[180px] bottom-[20px] w-[160px] h-[131px] object-contain"
-          />
-          <img
-            src="/life-coaching/desktop/guarantee/character-5.webp"
-            alt=""
-            className="absolute right-[120px] top-[-64px] w-[141px] h-[141px] object-contain rotate-[164deg]"
-          />
-          <img
-            src="/life-coaching/desktop/guarantee/character-6.webp"
-            alt=""
-            className="absolute right-[-10px] top-1/2 -translate-y-1/2 w-[144px] h-[129px] object-contain rotate-[-16deg]"
+            aria-hidden
+            draggable={false}
+            decoding="async"
+            className="pointer-events-none absolute left-[916px] top-[315px] z-[1] hidden h-[131px] w-[160px] max-w-none object-contain xl:block"
           />
 
-          {/* Main content */}
-          <div className="flex flex-col items-center gap-[27px] max-w-[818px] text-center relative z-10">
-            <h2 className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d]">
-              Your results are{" "}
-              <span className="font-miniature italic text-[#ff6f61]">guaranteed</span>
-              <span className="text-[#ff6f61]">.</span>
-            </h2>
-            <p className="text-[18px] font-normal text-[rgba(13,13,13,0.7)] leading-[1.25]">
-              We believe in coaching deeply enough to put our money behind it. If you complete your
-              sessions and don&apos;t feel you&apos;ve made real progress, we&apos;ll offer a full
-              refund — no awkward conversations, no fine print. Just a genuine commitment to your
-              growth.
-            </p>
-            <Link to="/signup-anxiety">
-              <button className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] capitalize px-[32px] py-[20px] rounded-[39px] hover:bg-[#4000cc] transition-colors w-[340px]">
-                Get started, risk free →
-              </button>
+          <div className="pointer-events-none absolute left-[33px] top-[-17px] z-[1] hidden h-[154.899px] w-[174.662px] items-center justify-center xl:flex">
+            <div className="relative h-[123.058px] w-[149.896px] flex-none rotate-[13.62deg]">
+              <img
+                src={`${G}/figma-top-left.webp`}
+                alt=""
+                draggable={false}
+                decoding="async"
+                className="absolute inset-0 size-full max-w-none object-contain"
+              />
+            </div>
+          </div>
+
+          <div className="pointer-events-none absolute left-[1123px] top-[calc(50%+17.56px)] z-[1] hidden h-[164.129px] w-[173.802px] -translate-y-1/2 items-center justify-center xl:flex">
+            <div className="relative h-[129.454px] w-[143.591px] flex-none rotate-[-16.06deg]">
+              <img
+                src={`${G}/figma-bottom-right.webp`}
+                alt=""
+                draggable={false}
+                decoding="async"
+                className="block size-full max-w-none object-contain"
+              />
+            </div>
+          </div>
+
+          <div className="pointer-events-none absolute left-[1018px] top-[-64px] z-[1] hidden h-[174.7px] w-[174.968px] items-center justify-center xl:flex">
+            <div className="relative h-[140.907px] w-[141.299px] flex-none rotate-[163.82deg]">
+              <img
+                src={`${G}/figma-top-right.webp`}
+                alt=""
+                draggable={false}
+                decoding="async"
+                className="absolute inset-0 size-full max-w-none object-contain"
+              />
+            </div>
+          </div>
+
+          <img
+            src={`${G}/figma-bottom-left.webp`}
+            alt=""
+            aria-hidden
+            draggable={false}
+            decoding="async"
+            className="pointer-events-none absolute left-[249px] top-[315px] z-[1] hidden h-[134px] w-[148px] max-w-none object-contain xl:block"
+          />
+
+          <div className="relative z-10 mx-auto flex w-full max-w-[800px] flex-col items-center gap-6 px-6 py-12 text-center sm:px-8 lg:gap-6 lg:py-10">
+            <div className="flex w-full flex-col gap-4 lg:gap-4">
+              <h2 className="mx-auto max-w-[759px] font-miniature text-[40px] font-bold leading-[48px] text-[#0d0d0d] sm:text-[48px] sm:leading-[56px] lg:text-[54px] lg:leading-[62px]">
+                <span>{`Your results are `}</span>
+                <span className="font-miniature italic font-bold text-[#ff6f61]">
+                  guaranteed
+                </span>
+                <span className="font-bold text-[#ff6f61]">.</span>
+              </h2>
+              <p className="text-[16px] font-normal leading-[24px] text-[rgba(13,13,13,0.7)] sm:text-[18px] sm:leading-[26px]">
+                We believe in coaching deeply enough to put our money behind it. If
+                you complete your sessions and don&apos;t feel you&apos;ve made real
+                progress, we&apos;ll offer a full refund, no awkward conversations, no
+                fine print. Just a genuine commitment to your growth.
+              </p>
+            </div>
+            <Link
+              to="/signup-anxiety"
+              className="inline-flex h-[76px] w-full max-w-[340px] shrink-0 cursor-pointer items-center justify-center rounded-[39px] bg-[#5200ff] px-[21px] py-[18px] font-semibold text-[20px] capitalize tracking-[0.72px] text-white no-underline transition-colors hover:bg-[#4000cc] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5200ff]"
+            >
+              Get started, risk free →
             </Link>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

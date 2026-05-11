@@ -8,6 +8,10 @@ export default {
   			miniature: [
   				'OT Miniature',
   				'sans-serif'
+  			],
+  			syne: [
+  				'Syne',
+  				'sans-serif'
   			]
   		},
   		borderRadius: {

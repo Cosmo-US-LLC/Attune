@@ -15,7 +15,7 @@ const quizQuestions = [
   {
     question: "How often do you feel like you're making real progress toward the things that matter to you?",
     options: [
-      "Rarely — I feel stuck most of the timeAlmost every day",
+      "Rarely — I feel stuck most of the time",
       "Sometimes — but it doesn't last",
       "Often — but I want to go deeper",
       "Regularly — I'm just looking to accelerate",
@@ -59,8 +59,8 @@ const quizReasons = [
 
 function CheckIcon() {
   return (
-    <div className="border border-[#5200ff] bg-white/30 rounded-[9px] flex-shrink-0 size-[18px] flex items-center justify-center">
-      <span className="text-[#5200ff] text-[10px] font-bold">✓</span>
+    <div className="flex size-[18px] flex-shrink-0 items-center justify-center rounded-[9px] border border-[#5200ff] bg-white/30 p-px">
+      <span className="text-[10px] font-bold text-[#5200ff]">✓</span>
     </div>
   );
 }
@@ -84,96 +84,96 @@ function CoachingQuiz() {
   };
 
   const q = quizQuestions[currentQ];
-  const progress = ((currentQ) / quizQuestions.length) * 100;
+  /** Figma 4082:280 — bar fill reflects current step (Q1 = 20%). */
+  const progress = ((currentQ + 1) / quizQuestions.length) * 100;
 
   return (
-    <div id="quiz" className="bg-white px-[114px] py-[60px]">
-      <div className="max-w-[1440px] mx-auto flex gap-[80px] items-start">
-        {/* Left */}
-        <div className="flex-1 flex flex-col gap-[32px]">
-          <div className="flex flex-col gap-[32px]">
-            <div className="bg-[#e5ff7d] px-[20px] py-[16px] rounded-[39px] self-start">
-              <span className="font-semibold text-[#0d0d0d] text-[16px] tracking-[0.72px] uppercase">
+    <div id="quiz" className="bg-white px-4 py-[60px] sm:px-6 lg:px-[80px]">
+      <div className="mx-auto flex w-full max-w-[1280px] flex-col items-start gap-12 xl:flex-row xl:gap-[80px]">
+        <div className="flex flex-1 flex-col gap-8">
+          <div className="flex flex-col gap-8">
+            <div className="w-fit rounded-[39px] bg-[#e5ff7d] px-5 py-4">
+              <span className="text-[16px] font-semibold uppercase tracking-[0.72px] text-[#0d0d0d]">
                 ✦ Not sure yet?
               </span>
             </div>
             <div>
-              <p className="font-miniature text-[55px] font-semibold leading-[67px] text-[#0d0d0d]">
-                Could coaching{" "}
-                <span className="font-miniature italic text-[#ff6f61]">change </span>
-                things for you?
+              <p className="font-miniature text-[54px] font-bold leading-[62px] text-[#0d0d0d]">
+                <span>{`Could coaching `}</span>
+                <span className="italic text-[#ff6f61]">{`change `}</span>
+                <span>things for you?</span>
               </p>
-              <p className="mt-[24px] text-[18px] font-normal text-[rgba(13,13,13,0.7)] leading-[1.25]">
+              <p className="mt-6 text-[18px] font-normal leading-[26px] text-[rgba(13,13,13,0.7)]">
                 You don&apos;t have to know exactly what you need before you start. Take the
                 2-minute quiz and we&apos;ll tell you whether coaching is a good fit and what kind
                 of support would help most.
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-4">
             {quizReasons.map((reason, i) => (
-              <div key={i} className="flex items-center gap-[8px]">
+              <div key={i} className="flex items-center gap-2">
                 <CheckIcon />
-                <span className="font-medium text-[14px] text-[#0d0d0d]">{reason}</span>
+                <span className="text-[14px] font-medium leading-[1.25] text-[#0d0d0d]">
+                  {reason}
+                </span>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Right — Quiz card */}
-        <div className="flex-1 border border-[#0d0d0d] rounded-[28px] overflow-hidden">
+        <div className="flex-1 overflow-hidden rounded-[28px] border border-[#0d0d0d]">
           {!completed ? (
             <>
-              {/* Card header */}
-              <div className="bg-[#f4efea] px-[28px] pt-[28px] pb-[20px]">
-                <h3 className="font-miniature text-[22px] text-black text-center leading-normal">
+              <div className="bg-[#f4efea] px-7 pb-5 pt-7">
+                <h3 className="font-miniature text-center text-[20px] font-bold leading-7 text-black">
                   Is life coaching right for you?
                 </h3>
-                <p className="text-[14px] font-normal text-[rgba(0,0,0,0.7)] text-center leading-[1.25] pb-[8px]">
+                <p className="pb-2 text-center text-[14px] font-normal leading-[22px] text-[rgba(0,0,0,0.7)]">
                   5 quick questions — honest answers only
                 </p>
-                {/* Progress bar */}
-                <div className="bg-black/10 h-[4px] rounded-[2px] overflow-hidden mt-2">
+                <div className="mt-2 h-1 overflow-hidden rounded-sm bg-black/10">
                   <div
-                    className="bg-[#5200ff] h-full rounded-[2px] transition-all duration-300"
+                    className="h-full rounded-sm bg-[#5200ff] transition-all duration-300"
                     style={{ width: `${progress}%` }}
                   />
                 </div>
               </div>
 
-              {/* Question + options */}
-              <div className="bg-white px-[28px] pt-[20px] pb-[24px] flex flex-col gap-[20px]">
-                <p className="font-semibold text-[16px] text-[#0d0d0d] leading-[1.25]">
-                  {q.question}
-                </p>
-                <div className="flex flex-col gap-[10px]">
+              <div className="flex flex-col gap-5 bg-white px-7 pb-6 pt-5">
+                <p className="text-[16px] font-semibold leading-6 text-[#0d0d0d]">{q.question}</p>
+                <div className="flex flex-col gap-2.5">
                   {q.options.map((opt, i) => (
                     <button
+                      type="button"
                       key={i}
                       onClick={() => setSelected(i)}
-                      className={`flex items-center gap-[12px] px-[17px] py-[14px] rounded-[12px] border text-left transition-colors ${
+                      className={`flex items-center gap-3 rounded-xl border px-[17px] py-[13px] text-left transition-colors ${
                         selected === i
                           ? "border-[#5200ff] bg-[#f3eeff]"
                           : "border-[rgba(13,13,13,0.12)] hover:border-[#5200ff]/40"
                       }`}
                     >
                       <div
-                        className={`border rounded-[9px] flex-shrink-0 size-[18px] ${
+                        className={`size-[18px] flex-shrink-0 rounded-[9px] border ${
                           selected === i ? "border-[#5200ff] bg-[#5200ff]" : "border-[rgba(13,13,13,0.2)]"
                         }`}
                       />
-                      <span className="font-medium text-[14px] text-[#0d0d0d]">{opt}</span>
+                      <span className="text-[14px] font-medium leading-[22px] text-[#0d0d0d]">
+                        {opt}
+                      </span>
                     </button>
                   ))}
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-[12px] font-medium text-[rgba(13,13,13,0.4)]">
+                <div className="flex items-center justify-between pb-1">
+                  <span className="font-syne text-[12px] font-medium leading-5 text-[rgba(13,13,13,0.4)]">
                     Question {currentQ + 1} of {quizQuestions.length}
                   </span>
                   <button
+                    type="button"
                     onClick={handleNext}
                     disabled={selected === null}
-                    className="bg-[#5200ff] text-white font-semibold text-[14px] tracking-[0.72px] capitalize px-[22px] py-[10px] rounded-full disabled:opacity-40 hover:bg-[#4000cc] transition-colors"
+                    className="rounded-full bg-[#5200ff] px-[22px] py-2.5 text-[14px] font-semibold capitalize text-white transition-colors hover:bg-[#4000cc] disabled:opacity-40"
                   >
                     Next →
                   </button>
@@ -181,19 +181,20 @@ function CoachingQuiz() {
               </div>
             </>
           ) : (
-            <div className="bg-[#f4efea] px-[40px] py-[60px] flex flex-col items-center gap-[24px] text-center">
+            <div className="flex flex-col items-center gap-6 bg-[#f4efea] px-10 py-[60px] text-center">
               <div className="text-[48px]">🎉</div>
-              <h3 className="font-miniature text-[28px] text-[#0d0d0d] leading-normal">
+              <h3 className="font-miniature text-[28px] leading-normal text-[#0d0d0d]">
                 Coaching sounds like a great fit for you!
               </h3>
-              <p className="text-[16px] text-[rgba(13,13,13,0.7)] leading-[1.25]">
-                Based on your answers, you&apos;re exactly the kind of person who thrives with
-                life coaching support. Let&apos;s get you started.
+              <p className="max-w-xl text-[16px] leading-[1.25] text-[rgba(13,13,13,0.7)]">
+                Based on your answers, you&apos;re exactly the kind of person who thrives with life
+                coaching support. Let&apos;s get you started.
               </p>
-              <Link to ="/signup-anxiety">
-                <button className="bg-[#5200ff] text-white font-semibold text-[18px] px-[32px] py-[16px] rounded-[39px] hover:bg-[#4000cc] transition-colors">
-                  Start your journey →
-                </button>
+              <Link
+                to="/signup-anxiety"
+                className="inline-flex rounded-[39px] bg-[#5200ff] px-8 py-4 text-[18px] font-semibold capitalize text-white no-underline transition-colors hover:bg-[#4000cc]"
+              >
+                Start your journey →
               </Link>
             </div>
           )}

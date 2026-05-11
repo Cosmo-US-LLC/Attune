@@ -14,11 +14,11 @@ function TickerRow() {
     <>
       {items.map((item, i) => (
         <React.Fragment key={i}>
-          <span className="font-medium text-[20px] text-black tracking-[0.52px] px-[40px] whitespace-nowrap">
+          <span className="whitespace-nowrap px-10 text-[20px] font-medium leading-[28px] tracking-[0.52px] text-black">
             <span className="text-[#ff6f61]">✓ </span>
             {item}
           </span>
-          <span className="text-[#e5ff7d] text-[19px] font-medium tracking-[0.78px] flex-shrink-0">
+          <span className="flex-shrink-0 font-syne text-[19px] font-medium leading-normal tracking-[0.78px] text-[#e5ff7d]">
             ✦
           </span>
         </React.Fragment>
@@ -29,9 +29,9 @@ function TickerRow() {
 
 function Ticker() {
   return (
-    <div className="bg-[#96adf0] py-[24px] overflow-hidden">
+    <div className="overflow-hidden bg-[#96adf0] py-6">
       <div
-        className="flex items-center animate-marquee"
+        className="flex animate-marquee items-center"
         style={{ "--duration": "30s", "--gap": "0px" }}
       >
         <TickerRow />

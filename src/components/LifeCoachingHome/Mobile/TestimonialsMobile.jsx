@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -51,42 +44,40 @@ function StarRow({ count, color }) {
 
 function TestimonialsMobile() {
   return (
-    <div className="bg-white px-5 py-10 space-y-6">
-      <div className="space-y-3 text-center">
-        <span className="inline-flex items-center bg-[#e5ff7d] px-4 py-2 rounded-full text-xs font-semibold tracking-widest uppercase">
-          ✦ Real stories
-        </span>
-        <h2 className="font-miniature text-[32px] leading-[38px] text-[#0d0d0d]">
-          What people say after they start.
+    <div className="bg-white px-5 py-8 flex flex-col gap-8">
+      <div className="flex flex-col items-center gap-4 text-center">
+        <div className="bg-[#e5ff7d] rounded-[39px] px-5 py-3.5 w-fit">
+          <p className="text-[14px] leading-[22px] font-semibold uppercase tracking-[0.72px] text-[#0d0d0d]">
+            ✦ Real stories
+          </p>
+        </div>
+        <h2 className="font-miniature font-bold text-[42px] leading-[50px] text-[#0d0d0d]">
+          <span className="normal-case lowercase">what people say </span>
+          <span className="lowercase text-[#ff6f61]">after they start.</span>
         </h2>
       </div>
 
-      <Carousel>
-        <CarouselContent>
-          {testimonials.map((t, i) => (
-            <CarouselItem key={i} className="basis-full">
-              <div className="bg-[#f4efea] rounded-[24px] px-5 py-6 space-y-5 flex flex-col justify-between min-h-[260px]">
-                <div className="space-y-3">
-                  <StarRow count={t.stars} color={t.starColor} />
-                  <p className="text-[14px] leading-[22px] text-[rgba(13,13,13,0.7)] italic">
-                    {t.quote}
-                  </p>
-                </div>
-                <div>
-                  <p className="font-miniature text-[22px] text-[#0d0d0d]">
-                    {t.name}
-                  </p>
-                  <p className="text-[12px] text-[rgba(13,13,13,0.7)]">
-                    {t.role}
-                  </p>
-                </div>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="border border-black disabled:hidden bg-white -left-3" />
-        <CarouselNext className="border border-black disabled:hidden bg-white -right-3" />
-      </Carousel>
+      <div className="flex flex-col gap-4">
+        {testimonials.map((t, i) => (
+          <div
+            key={i}
+            className="bg-[#f4efea] rounded-[24px] px-5 py-6 flex flex-col gap-5"
+          >
+            <StarRow count={t.stars} color={t.starColor} />
+            <p className="text-[14px] leading-[22px] text-[rgba(13,13,13,0.7)]">
+              {t.quote}
+            </p>
+            <div className="pt-1">
+              <p className="font-miniature text-[22px] leading-[28px] text-[#0d0d0d]">
+                {t.name}
+              </p>
+              <p className="text-[12px] leading-[18px] text-[rgba(13,13,13,0.7)]">
+                {t.role}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

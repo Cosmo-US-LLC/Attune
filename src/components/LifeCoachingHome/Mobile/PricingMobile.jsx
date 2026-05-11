@@ -19,7 +19,7 @@ const plans = [
     cta: "Get started →",
   },
   {
-    badge: "Best value",
+    badge: "Best Value",
     badgeColor: "bg-[#f097dd]",
     type: "Monthly Membership",
     price: "239",
@@ -31,68 +31,81 @@ const plans = [
       "Continuous progress tracking",
       "Best for lasting, ongoing change",
     ],
-    cta: "Get Started →",
+    cta: "Get started →",
   },
 ];
 
 function PricingMobile() {
   return (
-    <div id="pricing" className="bg-[#f4efea] px-5 py-10 space-y-8">
-      <div className="space-y-4 text-center">
-        <span className="inline-flex items-center bg-[#e5ff7d] px-4 py-2 rounded-full text-xs font-semibold tracking-widest uppercase">
-          ✦ Simple pricing
-        </span>
-        <h2 className="font-miniature text-[32px] font-semibold leading-[38px] text-[#0d0d0d]">
-          Choose what{" "}
-          <span className="italic text-[#ff6f61]">works for you</span>
-        </h2>
-        <p className="text-[14px] leading-[20px] text-[rgba(13,13,13,0.7)]">
-          No lock-in contracts. Every plan begins with a free conversation — no
-          payment until you&apos;re ready to start.
-        </p>
+    <div id="pricing" className="bg-[#f4efea] px-5 py-8 flex flex-col gap-6 items-center">
+      <div className="flex flex-col gap-6 items-center text-center w-full">
+        <div className="bg-[#e5ff7d] rounded-[39px] px-5 py-3.5 w-fit">
+          <p className="text-[14px] leading-[22px] font-semibold uppercase tracking-[0.72px] text-[#0d0d0d]">
+            ✦ Simple pricing
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-4 w-full">
+          <h2 className="font-miniature font-bold text-[42px] leading-[50px] text-[#0d0d0d]">
+            Choose what{" "}
+            <span className="italic font-bold text-[#ff6f61]">works for you</span>
+          </h2>
+          <p className="text-[16px] leading-[24px] text-[rgba(13,13,13,0.7)]">
+            No lock-in contracts. Every plan begins with a free conversation no payment
+            until you&apos;re ready to start.
+          </p>
+        </div>
       </div>
 
-      <div className="space-y-5">
+      <div className="flex flex-col gap-3.5 w-full">
         {plans.map((plan, i) => (
-          <div key={i} className="bg-white rounded-[24px] h-[400px] px-5 py-6 space-y-5 relative">
-            <div className="flex items-start justify-between">
-              <p className="text-[13px] text-[rgba(13,13,13,0.7)]">{plan.type}</p>
+          <div
+            key={i}
+            className="bg-white rounded-[24px] px-4 py-5 flex flex-col gap-[22px] overflow-hidden"
+          >
+            <div className="flex items-center justify-between">
+              <p className="text-[14px] leading-[1.25] text-[rgba(13,13,13,0.7)] font-normal">
+                {plan.type}
+              </p>
               <span
-                className={`${plan.badgeColor} text-white text-[11px] font-semibold px-3 py-1 rounded-full`}
+                className={`${plan.badgeColor} text-white text-[14px] font-semibold px-[14px] py-[8px] rounded-[26px] capitalize`}
               >
                 {plan.badge}
               </span>
             </div>
 
-            <div>
-              <p className="text-[11px] text-[rgba(13,13,13,0.7)]">CAD $</p>
-              <p className="font-miniature text-[40px] leading-[44px] text-black">
-                {plan.price}
-                <span className="text-[20px]"> /mo</span>
-              </p>
-              <p className="italic text-[12px] text-[rgba(13,13,13,0.7)] mt-1">
+            <div className="flex flex-col gap-3.5">
+              <div className="flex items-center gap-1">
+                <span className="text-[14px] leading-[1.25] text-[rgba(13,13,13,0.7)] font-normal">
+                  CAD $
+                </span>
+                <span className="font-miniature text-[32px] leading-[40px] text-black capitalize">
+                  {plan.price} /mo
+                </span>
+              </div>
+              <p className="text-[14px] font-medium italic leading-[1.25] text-[rgba(13,13,13,0.7)]">
                 {plan.note}
               </p>
+
+              <ul className="space-y-2">
+                {plan.features.map((feat, j) => (
+                  <li key={j} className="flex items-center gap-2">
+                    <span className="w-[18px] h-[18px] flex-shrink-0 border border-[#5200ff] rounded-[9px] flex items-center justify-center bg-white/30">
+                      <span className="text-[#5200ff] text-[10px] leading-none">✓</span>
+                    </span>
+                    <span className="text-[14px] leading-[22px] font-medium text-[#0d0d0d]">
+                      {feat}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            <ul className="space-y-2">
-              {plan.features.map((feat, j) => (
-                <li key={j} className="flex items-center gap-2 text-[13px] text-[#0d0d0d] font-medium">
-                  <span className="w-[16px] h-[16px] flex-shrink-0 border border-[#5200ff] rounded-[5px] flex items-center justify-center">
-                    <span className="text-[#5200ff] text-[9px]">✓</span>
-                  </span>
-                  {feat}
-                </li>
-              ))}
-            </ul>
-            <div className="pt-2">
-              <Link to="/signup-anxiety">
-                <Button className="w-full bg-[#5200ff] rounded-full font-semibold">
-                  {plan.cta}
-                </Button>
-              </Link>
-            </div>
-            
+            <Link to="/signup-anxiety" className="w-full">
+              <Button className="w-full bg-[#5200ff] rounded-full font-semibold px-5 py-3.5 text-[14px] leading-6 h-auto">
+                {plan.cta}
+              </Button>
+            </Link>
           </div>
         ))}
       </div>
