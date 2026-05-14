@@ -1,9 +1,9 @@
 const bulletItems = [
   "No diagnosis or referral needed to get started",
-  "Affordable sessions starting at CAD $45",
-  "Coaches matched to your specific goals",
+  "Sessions starting at CAD $60/mo less than most single therapy sessions",
+  "Dedicated coaches matched to your specific needs",
   "Fully online support wherever you are",
-  "Cancel or change plans at any time",
+  "Flexible scheduling. Cancel anytime.",
 ];
 
 function CheckIcon() {
@@ -86,7 +86,7 @@ function OurStoryMobile() {
         <h3 className="font-miniature text-[24px] font-bold leading-[32px] tracking-[-0.01em] text-[#0d0d0d]">
           A Coaching Experience
           <br />
-          <span className="text-[#ff6f61]">that&apos;s{" "}Affordable, </span>
+          <span className="text-[#ff6f61]">that&apos;s Affordable, </span>
           <br />
           <span className="text-[#f097dd]">Accessible, </span>&amp;{" "}
           <span className="text-[#96adf0]"> Genuinely</span>
@@ -97,9 +97,11 @@ function OurStoryMobile() {
         {/* Bullet list */}
         <ul className="flex flex-col gap-2">
           {bulletItems.map((item) => (
-            <li key={item} className="flex items-center gap-[10px]">
+            <li key={item} className="flex gap-[10px]">
               <CheckIcon />
-              <span className="font-medium text-[13px] text-[#0d0d0d] leading-[22px]">{item}</span>
+              <span className="font-medium text-[13px] text-[#0d0d0d] leading-[22px]">
+                {item}
+              </span>
             </li>
           ))}
         </ul>

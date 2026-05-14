@@ -4,7 +4,7 @@ import { FilloutStandardEmbed } from "@fillout/react";
 const FILLOUT_FORM_ID = "jcLDEqP45Aus";
 const FILLOUT_DOMAIN = "signup.feelattune.com";
 
-const trustBadges = ["Confidential", "No credit card", "Cancel anytime"];
+const trustBadges = ["Confidential", "Cancel anytime"];
 
 /**
  * Inline form in the card (standard embed). Slider-only embed hid the form until
@@ -22,9 +22,9 @@ function ContactMessageForm() {
         />
       </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-4">
+      <div className="flex flex-wrap gap-4 justify-center items-center">
         {trustBadges.map((badge, i) => (
-          <span key={badge} className="flex items-center gap-1">
+          <span key={badge} className="flex gap-1 items-center">
             {i > 0 && (
               <span
                 className="text-[10px] text-[rgba(0,0,0,0.15)] mr-1"

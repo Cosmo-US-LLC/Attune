@@ -18,20 +18,23 @@ const womanMaskStyle = {
  */
 function ReadyToStartMobile() {
   return (
-    <section className="overflow-visible bg-white px-5 py-12 lg:hidden">
+    <section className="overflow-visible px-5 py-12 bg-white lg:hidden">
       {/* 350px column — matches Figma “Text Container” width; centered with side margins */}
       <div className="mx-auto flex w-full max-w-[350px] flex-col gap-20 overflow-visible">
-        <div className="flex w-full flex-col items-start gap-8">
-          <div className="flex w-full flex-col gap-2 text-black">
-            <p className="font-miniature text-[40px] font-normal leading-[48px]">Ready to start?</p>
+        <div className="flex flex-col gap-8 items-start w-full">
+          <div className="flex flex-col gap-2 w-full text-black">
+            <p className="font-miniature text-[40px] font-normal leading-[48px]">
+              Ready to start?
+            </p>
             <p className="font-miniature text-[64px] font-normal italic leading-[72px]">
               We&apos;re ready too.
             </p>
           </div>
 
           <p className="text-[16px] font-normal leading-[24px] text-[#0d0d0d]/70">
-            Book your session today. No credit card, no commitment just a conversation about where
-            you want to go and whether we&apos;re the right fit to help you get there.
+            Book your session today. No commitment, just a conversation about
+            where you want to go and whether we're the right fit to help you get
+            there.
           </p>
 
           <Link
@@ -40,14 +43,17 @@ function ReadyToStartMobile() {
             aria-label="Get started"
           >
             Get started{" "}
-            <span className="text-[16px] font-normal leading-none" aria-hidden="true">
+            <span
+              className="text-[16px] font-normal leading-none"
+              aria-hidden="true"
+            >
               →
             </span>
           </Link>
         </div>
 
         {/* Illustration: 286×316, flush right; overflow visible for clouds above frame */}
-        <div className="flex w-full justify-end overflow-visible">
+        <div className="flex overflow-visible justify-end w-full">
           <div className="relative h-[316px] w-[286px] shrink-0 overflow-visible">
             {/* Lime panel + photo — anchored to bottom of 316px frame; icons use this box as origin */}
             <div className="absolute bottom-0 left-0 h-[287px] w-[286px] overflow-visible">
@@ -56,7 +62,7 @@ function ReadyToStartMobile() {
                 alt=""
                 width={286}
                 height={287}
-                className="pointer-events-none absolute inset-0 z-0 block h-full w-full select-none object-fill"
+                className="block object-fill absolute inset-0 z-0 w-full h-full pointer-events-none select-none"
                 decoding="async"
                 draggable={false}
               />

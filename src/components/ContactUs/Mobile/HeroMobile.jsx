@@ -124,7 +124,7 @@ function HeroMobile() {
             </div>
             <div className="flex flex-col gap-2">
               <label className={labelClass}>What brings you here?</label>
-              <select defaultValue="" className={`${inputClass} h-[56px] py-0`}>
+              <select defaultValue="" className={`py-0 ${inputClass} h-[56px]`}>
                 <option value="" disabled>
                   Choose a topic…
                 </option>
@@ -135,7 +135,7 @@ function HeroMobile() {
               </select>
             </div>
             <div className="flex flex-col gap-2">
-              <label className={`${labelClass} normal-case`}>
+              <label className={`normal-case ${labelClass}`}>
                 <span className="uppercase">
                   Anything else you&apos;d like to share?{" "}
                 </span>
@@ -144,7 +144,7 @@ function HeroMobile() {
               <textarea
                 rows={4}
                 placeholder="Feel free to share as much or as little as you'd like…"
-                className={`${inputClass} min-h-[110px] resize-none`}
+                className={`resize-none ${inputClass} min-h-[110px]`}
               />
             </div>
           </div>
@@ -158,9 +158,9 @@ function HeroMobile() {
               <ArrowRight className="size-5 shrink-0" aria-hidden strokeWidth={2.25} />
             </button>
 
-            <div className="flex flex-wrap items-center justify-center gap-3">
+            <div className="flex flex-wrap gap-3 justify-center items-center">
               {trustBadges.map((badge, i) => (
-                <span key={badge} className="flex items-center gap-1">
+                <span key={badge} className="flex gap-1 items-center">
                   {i > 0 && (
                     <span
                       className="text-[10px] text-[rgba(0,0,0,0.15)] mr-1"

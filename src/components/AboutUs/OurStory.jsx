@@ -1,9 +1,9 @@
 const bulletItems = [
   "No diagnosis or referral needed to get started",
-  "Affordable sessions starting at CAD $45",
-  "Coaches matched to your specific goals",
+  "Sessions starting at CAD $60/mo less than most single therapy sessions",
+  "Dedicated coaches matched to your specific needs",
   "Fully online support wherever you are",
-  "Cancel or change plans at any time",
+  "Flexible scheduling. Cancel anytime.",
 ];
 
 function CheckIcon() {
@@ -27,26 +27,30 @@ function OurStory() {
         {/* Heading */}
         <h2 className="font-miniature font-bold text-[55px] leading-[1.1]">
           <span className="block text-[#0d0d0d]">Built from a</span>
-          <span className="block italic text-[#ff6f61]">simple frustration</span>
+          <span className="block italic text-[#ff6f61]">
+            simple frustration
+          </span>
         </h2>
 
         {/* Paragraphs */}
         <div className="flex flex-col gap-[16px]">
           <p className="text-[18px] font-normal text-[rgba(13,13,13,0.7)] leading-[1.25]">
-            Feelattune is built by EaseCare, a mental health service trusted by thousands of
-            Albertans. Through years of working in the mental health space, we saw a clear gap: the
-            kind of high-quality, personalised support that truly helps people move forward was often
+            FeelAttune is built by EaseCare, a mental health service trusted by
+            thousands of Albertans. Through years of working in the mental
+            health space, we saw a clear gap: the kind of high-quality,
+            personalised support that truly helps people move forward was often
             too expensive, too slow to access, or felt overly clinical.
           </p>
           <p className="text-[18px] font-normal text-[rgba(13,13,13,0.7)] leading-[1.25]">
-            We knew it didn&apos;t have to be that way. The people who could benefit most from life
-            coaching were the least likely to access it. So we built something different, a coaching
-            experience that&apos;s affordable, accessible, and genuinely human.
+            We knew it didn&apos;t have to be that way. The people who could
+            benefit most from life coaching were the least likely to access it.
+            So we built something different, a coaching experience that&apos;s
+            affordable, accessible, and genuinely human.
           </p>
           <p className="text-[18px] font-normal text-[rgba(13,13,13,0.7)] leading-[1.25]">
-            A place where you don&apos;t need a diagnosis, a crisis, or a corporate wellness budget
-            to get real support just a desire to move forward and build a better version of your
-            life.
+            A place where you don&apos;t need a diagnosis, a crisis, or a
+            corporate wellness budget to get real support just a desire to move
+            forward and build a better version of your life.
           </p>
         </div>
       </div>
@@ -60,7 +64,9 @@ function OurStory() {
 
         {/* Card heading */}
         <h3 className="font-miniature text-[32px] font-semibold leading-[1.2]">
-          <span className="text-[#0d0d0d]">A coaching experience that&apos;s </span>
+          <span className="text-[#0d0d0d]">
+            A coaching experience that&apos;s{" "}
+          </span>
           <span className="text-[#ff6f61]">affordable, </span>
           <span className="text-[#f097dd]">accessible, </span>
           <span className="text-[#0d0d0d]">&amp; </span>
@@ -70,9 +76,11 @@ function OurStory() {
         {/* Bullet list */}
         <ul className="flex flex-col gap-[14px]">
           {bulletItems.map((item) => (
-            <li key={item} className="flex items-center gap-[12px]">
-              <CheckIcon />
-              <span className="font-medium text-[14px] text-[#0d0d0d]">{item}</span>
+            <li key={item} className="flex  gap-[12px]">
+              <CheckIcon className="" />
+              <span className="font-medium text-[14px] text-[#0d0d0d]">
+                {item}
+              </span>
             </li>
           ))}
         </ul>

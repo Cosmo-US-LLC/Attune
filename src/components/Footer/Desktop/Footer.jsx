@@ -40,53 +40,59 @@ function Footer() {
           <div className="w-[50%] flex gap-6 flex-col justify-center items-start px-4 pt-6 relative z-10">
             <div className="flex flex-col gap-2 mt-4">
               <p className="text-[16px] font-[700] leading-[20px]">
-                Looking for someone to listen?
+                Coaching That Fits Your Life
               </p>
               <p className="text-[16px] leading-[22px] capitalize ">
-                Our trained Listeners are here to provide non-judgmental,
-                compassionate support whenever you need it. Whether you’re
-                managing stress, navigating life transitions, or simply craving
-                a connection, we’re here to help.
+                Life coaching built around you. Your goals, your pace, your
+                version of a life well lived.
               </p>
             </div>
             <div className="space-y-[10px]">
               <div className="text-[16px] font-[500] mt-8 flex gap-10 relative z-40">
-              {currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
+                {currentPath !== "/privacy-policy" &&
+                  currentPath !== "/terms-of-use" && (
+                    <a
+                      className="relative z-10"
+                      href="#path-to-support"
+                      onClick={(e) => handleScroll(e, "path-to-support", 90)}
+                    >
+                      Path To Support
+                    </a>
+                  )}
+                {currentPath !== "/privacy-policy" &&
+                  currentPath !== "/terms-of-use" && (
+                    <a
+                      href="#how-it-works"
+                      onClick={(e) => handleScroll(e, "how-it-works", 90)}
+                    >
+                      How It Works
+                    </a>
+                  )}
 
-                <a
-                  className="relative z-10"
-                  href="#path-to-support"
-                  onClick={(e) => handleScroll(e, "path-to-support", 90)}
-                >
-                  Path To Support
-                </a>
-              )}
-             {currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
-
-                <a
-                  href="#how-it-works"
-                  onClick={(e) => handleScroll(e, "how-it-works", 90)}
-                >
-                  How It Works
-                </a>
-                )}
-
-{currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
-
-                <a
-                  href="#our-approach"
-                  onClick={(e) => handleScroll(e, "our-approach", 90)}
-                >
-                  Our Approach
-                </a>
-)}
-                {currentPath !== "/listener-recruitment" && currentPath !== "/privacy-policy"  && currentPath !== "/terms-of-use" && (
-                  <a href="#FAQs" onClick={(e) => handleScroll(e, "FAQs", 90)}>
-                    FAQs
-                  </a>
-                )}
+                {currentPath !== "/privacy-policy" &&
+                  currentPath !== "/terms-of-use" && (
+                    <a
+                      href="#our-approach"
+                      onClick={(e) => handleScroll(e, "our-approach", 90)}
+                    >
+                      Our Approach
+                    </a>
+                  )}
+                {currentPath !== "/listener-recruitment" &&
+                  currentPath !== "/privacy-policy" &&
+                  currentPath !== "/terms-of-use" && (
+                    <a
+                      href="#FAQs"
+                      onClick={(e) => handleScroll(e, "FAQs", 90)}
+                    >
+                      FAQs
+                    </a>
+                  )}
                 {currentPath === "/listener-recruitment" && (
-                  <a href="#Become-a-listener" onClick={(e) => handleScroll(e, "Become-a-listener", 90)}>
+                  <a
+                    href="#Become-a-listener"
+                    onClick={(e) => handleScroll(e, "Become-a-listener", 90)}
+                  >
                     Become a listener
                   </a>
                 )}
@@ -97,7 +103,7 @@ function Footer() {
               </div>
             </div>
             <div
-              className="relative z-10 flex items-end justify-center w-full mt-12"
+              className="flex relative z-10 justify-center items-end mt-12 w-full"
               onClick={handleLogoClick}
             >
               <img
@@ -154,7 +160,7 @@ function Footer() {
         </div>
         <div className="flex justify-center items-center h-[60px] px-[50px] border-t  border-black">
           <div className="text-black font-inter text-[16px] font-[400] leading-[20px] capitalize">
-            &copy; 2025 FeelAttune . All Rights Reserved
+            &copy; 2024 FeelAttune . All Rights Reserved
           </div>
         </div>
       </div>

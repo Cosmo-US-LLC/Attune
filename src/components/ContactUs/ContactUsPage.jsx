@@ -21,12 +21,12 @@ function ContactUsPage() {
   return isMobile ? (
     <>
       <HeroMobile />
-      <StatsMobile />
+      {/* <StatsMobile /> */}
     </>
   ) : (
     <>
       <Hero />
-      <Stats />
+      {/* <Stats /> */}
     </>
   );
 }

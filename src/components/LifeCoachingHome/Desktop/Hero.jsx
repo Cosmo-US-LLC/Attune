@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import heroImage from "../../../assets/images/home_hero_emoji.webp";
+import CertifiedLifeCoachesSeal from "../CertifiedLifeCoachesSeal";
 
 function Hero() {
   return (
@@ -15,14 +16,18 @@ function Hero() {
             </div>
 
             <div className="font-miniature text-[#0d0d0d]">
-              <p className="text-[72px] font-normal leading-[80px]">Feeling held back?</p>
-              <p className="text-[72px] font-bold leading-[80px]">Let&apos;s change that.</p>
+              <p className="text-[72px] font-normal leading-[80px]">
+                Feeling held back?
+              </p>
+              <p className="text-[72px] font-bold leading-[80px]">
+                Let&apos;s change that.
+              </p>
             </div>
 
             <p className="max-w-[607px] text-[18px] font-normal leading-[26px] text-[rgba(13,13,13,0.7)]">
-              A skilled life coach doesn&apos;t tell you what to do. They help you see clearly,
-              choose deliberately, and move forward with the confidence you&apos;ve always had
-              inside you.
+              A skilled life coach doesn&apos;t tell you what to do. They help
+              you see clearly, choose deliberately, and move forward with the
+              confidence you&apos;ve always had inside you.
             </p>
 
             <Link
@@ -33,7 +38,7 @@ function Hero() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex gap-4 items-center">
             <div className="flex size-[80px] flex-shrink-0 items-center justify-center rounded-[8px] bg-[#ff6f61] p-[14px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,12 +68,17 @@ function Hero() {
           </div>
         </div>
 
-        <div className="relative flex flex-1 items-end justify-end overflow-hidden pt-16">
-          <img
-            src={heroImage}
-            alt="People expressing different moods aligned with coaching support"
-            className="h-auto w-full max-w-[600px] object-contain"
-          />
+        <div className="flex overflow-hidden relative flex-1 justify-end items-end pt-16">
+          <div className="relative h-auto w-full max-w-[600px]">
+            <img
+              src={heroImage}
+              alt="People expressing different moods aligned with coaching support"
+              className="object-contain w-full h-auto"
+            />
+            <div className="pointer-events-none absolute left-1/2 top-[62%] z-10 -translate-x-1/2 -translate-y-1/2">
+              <CertifiedLifeCoachesSeal />
+            </div>
+          </div>
         </div>
       </div>
     </div>

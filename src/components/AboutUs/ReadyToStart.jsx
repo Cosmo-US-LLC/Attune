@@ -4,7 +4,6 @@ function ReadyToStart() {
   return (
     <section className="w-full bg-white max-lg:hidden">
       <div className="relative max-w-[1440px] mx-auto h-[484px] flex items-center justify-between px-[113px]">
-
         {/* Left image */}
         <div className="w-[480px] h-[400px] flex-shrink-0">
           <img
@@ -16,7 +15,6 @@ function ReadyToStart() {
 
         {/* Right text block */}
         <div className="flex flex-col gap-[27px] max-w-[514px]">
-
           <div>
             <p className="font-miniature font-normal text-[50px] leading-none text-black">
               Ready to start?
@@ -28,9 +26,9 @@ function ReadyToStart() {
           </div>
 
           <p className="text-[14px] font-normal text-[#0d0d0d]/70 leading-[1.25]">
-            Book your session today. No credit card, no commitment just a
-            conversation about where you want to go and whether we're the right fit
-            to help you get there.
+            Book your session today. No commitment, just a conversation about
+            where you want to go and whether we're the right fit to help you get
+            there.
           </p>
 
           <Link to="/signup-anxiety">
@@ -38,9 +36,7 @@ function ReadyToStart() {
               Get started →
             </button>
           </Link>
-
         </div>
-
       </div>
     </section>
   );

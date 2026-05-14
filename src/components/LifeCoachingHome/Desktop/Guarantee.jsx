@@ -18,7 +18,7 @@ function Guarantee() {
                   alt=""
                   draggable={false}
                   decoding="async"
-                  className="block size-full max-w-none object-contain"
+                  className="block object-contain max-w-none size-full"
                 />
               </div>
             </div>
@@ -40,7 +40,7 @@ function Guarantee() {
                 alt=""
                 draggable={false}
                 decoding="async"
-                className="absolute inset-0 size-full max-w-none object-contain"
+                className="object-contain absolute inset-0 max-w-none size-full"
               />
             </div>
           </div>
@@ -52,7 +52,7 @@ function Guarantee() {
                 alt=""
                 draggable={false}
                 decoding="async"
-                className="block size-full max-w-none object-contain"
+                className="block object-contain max-w-none size-full"
               />
             </div>
           </div>
@@ -64,7 +64,7 @@ function Guarantee() {
                 alt=""
                 draggable={false}
                 decoding="async"
-                className="absolute inset-0 size-full max-w-none object-contain"
+                className="object-contain absolute inset-0 max-w-none size-full"
               />
             </div>
           </div>
@@ -79,7 +79,7 @@ function Guarantee() {
           />
 
           <div className="relative z-10 mx-auto flex w-full max-w-[800px] flex-col items-center gap-6 px-6 py-12 text-center sm:px-8 lg:gap-6 lg:py-10">
-            <div className="flex w-full flex-col gap-4 lg:gap-4">
+            <div className="flex flex-col gap-4 w-full lg:gap-4">
               <h2 className="mx-auto max-w-[759px] font-miniature text-[40px] font-bold leading-[48px] text-[#0d0d0d] sm:text-[48px] sm:leading-[56px] lg:text-[54px] lg:leading-[62px]">
                 <span>{`Your results are `}</span>
                 <span className="font-miniature italic font-bold text-[#ff6f61]">
@@ -88,10 +88,10 @@ function Guarantee() {
                 <span className="font-bold text-[#ff6f61]">.</span>
               </h2>
               <p className="text-[16px] font-normal leading-[24px] text-[rgba(13,13,13,0.7)] sm:text-[18px] sm:leading-[26px]">
-                We believe in coaching deeply enough to put our money behind it. If
-                you complete your sessions and don&apos;t feel you&apos;ve made real
-                progress, we&apos;ll offer a full refund, no awkward conversations, no
-                fine print. Just a genuine commitment to your growth.
+                We're committed to finding the right fit for you. If you're not
+                happy after your first session, we'll either match you with a
+                different coach with the next session on us or give you a full
+                refund. No awkward conversations, no fine print.
               </p>
             </div>
             <Link

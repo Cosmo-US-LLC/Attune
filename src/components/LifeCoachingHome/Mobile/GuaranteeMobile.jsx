@@ -15,14 +15,14 @@ function GuaranteeMobile() {
             <span className="leading-[50px] text-[#ff6f61]">.</span>
           </h2>
           <p className="w-full text-center font-inter text-[16px] font-normal leading-6 text-[rgba(13,13,13,0.7)]">
-            We believe in coaching deeply enough to put our money behind it. If you
-            complete your sessions and don&apos;t feel you&apos;ve made real
-            progress, we&apos;ll offer a full refund, no awkward conversations, no fine
-            print. Just a genuine commitment to your growth.
+            We're committed to finding the right fit for you. If you're not
+            happy after your first session, we'll either match you with a
+            different coach with the next session on us or give you a full
+            refund. No awkward conversations, no fine print.
           </p>
           <Link
             to="/signup-anxiety"
-            className="mt-1 flex w-full shrink-0 justify-center"
+            className="flex justify-center mt-1 w-full shrink-0"
           >
             <Button className="h-auto rounded-[100px] bg-[#5200ff] px-5 py-3.5 font-inter text-[14px] font-semibold leading-6 text-white">
               Get started, risk free →
@@ -30,7 +30,7 @@ function GuaranteeMobile() {
           </Link>
         </div>
 
-        <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
+        <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden>
           {/* Top-left */}
           <div className="absolute left-[-10px] top-0 flex h-[77.45px] w-[87.33px] items-center justify-center">
             <div className="flex-none rotate-[13.62deg]">
@@ -38,7 +38,7 @@ function GuaranteeMobile() {
                 <img
                   src="/figma/home-mobile/guarantee-deco-01.webp"
                   alt=""
-                  className="absolute inset-0 block size-full max-w-none object-contain"
+                  className="block object-contain absolute inset-0 max-w-none size-full"
                   draggable={false}
                 />
               </div>
@@ -51,7 +51,7 @@ function GuaranteeMobile() {
                 <img
                   src="/figma/home-mobile/guarantee-deco-02.webp"
                   alt=""
-                  className="absolute inset-0 block size-full max-w-none object-contain"
+                  className="block object-contain absolute inset-0 max-w-none size-full"
                   draggable={false}
                 />
               </div>
@@ -65,7 +65,7 @@ function GuaranteeMobile() {
                   <img
                     src="/figma/home-mobile/guarantee-deco-03.webp"
                     alt=""
-                    className="block size-full max-w-none object-contain"
+                    className="block object-contain max-w-none size-full"
                     draggable={false}
                   />
                 </div>
@@ -80,7 +80,7 @@ function GuaranteeMobile() {
                   <img
                     src="/figma/home-mobile/guarantee-deco-04.webp"
                     alt=""
-                    className="block size-full max-w-none object-contain"
+                    className="block object-contain max-w-none size-full"
                     draggable={false}
                   />
                 </div>
@@ -93,7 +93,7 @@ function GuaranteeMobile() {
               <img
                 src="/figma/home-mobile/guarantee-deco-05.webp"
                 alt=""
-                className="block size-full max-w-none object-cover"
+                className="block object-cover max-w-none size-full"
                 draggable={false}
               />
             </div>
@@ -104,7 +104,7 @@ function GuaranteeMobile() {
               <img
                 src="/figma/home-mobile/guarantee-deco-06.webp"
                 alt=""
-                className="block size-full max-w-none object-cover"
+                className="block object-cover max-w-none size-full"
                 draggable={false}
               />
             </div>

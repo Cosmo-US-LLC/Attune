@@ -102,7 +102,7 @@ function FAQsPage() {
         </div>
 
         {/* Mobile — same copy; typography scaled; 4453:3537 is desktop spec */}
-        <div className="w-full lg:hidden">
+        <div className="px-4 w-full lg:hidden">
           <Accordion
             type="single"
             defaultValue="item-1"

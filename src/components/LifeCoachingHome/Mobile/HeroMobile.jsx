@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import CertifiedLifeCoachesSeal from "../CertifiedLifeCoachesSeal";
 
 /** Figma Hero — Content Container 4170:2579 (~364.41×371.5); Background Shapes 4170:2556 (358×358) layered beneath */
 function HeroMobile() {
@@ -79,6 +80,9 @@ function HeroMobile() {
             alt=""
             className="pointer-events-none absolute inset-0 z-[1] h-full w-full select-none object-contain object-bottom"
           />
+          <div className="pointer-events-none absolute left-1/2 top-[62%] z-[2] -translate-x-1/2 -translate-y-1/2">
+            <CertifiedLifeCoachesSeal />
+          </div>
         </div>
       </div>
     </div>

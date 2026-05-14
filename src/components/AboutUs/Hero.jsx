@@ -27,15 +27,15 @@ function Hero() {
             out of reach
           </h1>
           <p className="text-[18px] font-normal text-[rgba(13,13,13,0.7)] leading-[1.5]">
-            Built by people who saw a gap and decided to close it. Feelattune
+            Built by people who saw a gap and decided to close it. FeelAttune
             exists to make high-quality, human life coaching accessible to
-            anyone who&apos;s ready to move forward.
+            anyone who's ready to move forward.
           </p>
           <Link
-            to="/contact-us"
-            className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] capitalize px-[21px] py-[18px] rounded-[39px] max-w-[409px] w-full inline-flex items-center justify-center hover:bg-[#4000cc] transition-colors"
+            to="/signup-anxiety"
+            className="bg-[#5200ff] text-white font-semibold text-[20px] tracking-[0.72px] capitalize px-[21px] py-[18px] rounded-[39px] max-w-fit w-full inline-flex items-center justify-center hover:bg-[#4000cc] transition-colors"
           >
-            Book Your Free Consultation →
+            Get Start →
           </Link>
         </div>
 
@@ -44,7 +44,7 @@ function Hero() {
           <img
             src={phoneImage}
             alt="Video call on phone"
-            className="absolute inset-0 object-cover object-center w-full h-full"
+            className="object-cover object-center absolute inset-0 w-full h-full"
           />
         </div>
 
@@ -65,7 +65,7 @@ function Hero() {
           <img
             src="/about-us/hero/coach-man.webp"
             alt="Life coaching video session"
-            className="absolute pointer-events-none max-w-none"
+            className="absolute max-w-none pointer-events-none"
             style={{
               width: "203.62%",
               height: "103.24%",
@@ -90,7 +90,7 @@ function Hero() {
           <img
             src="/about-us/hero/woman-pip.webp"
             alt="Session participant"
-            className="absolute object-cover pointer-events-none max-w-none"
+            className="object-cover absolute max-w-none pointer-events-none"
             style={{ left: -29.11, top: -14.37, width: 205.45, height: 136.88 }}
           />
         </div>
@@ -152,7 +152,7 @@ function Hero() {
 
         
         <div
-          className="absolute flex items-center justify-between"
+          className="flex absolute justify-between items-center"
           style={{
             left: "calc(50% - 168.25px)",
             top: 46,
@@ -219,7 +219,7 @@ function Hero() {
             src="/about-us/hero/phone-frame.png"
             alt=""
             aria-hidden="true"
-            className="absolute inset-0 block w-full h-full max-w-none"
+            className="block absolute inset-0 w-full max-w-none h-full"
           />
         </div>
       </div> */}

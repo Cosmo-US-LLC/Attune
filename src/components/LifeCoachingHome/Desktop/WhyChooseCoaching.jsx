@@ -48,7 +48,7 @@ function WhyChooseCoaching() {
                 src="/life-coaching/desktop/why-coaching/union-bg.webp"
                 alt=""
                 aria-hidden
-                className="size-full select-none object-contain object-center"
+                className="object-contain object-center select-none size-full"
               />
             </div>
           </div>
@@ -62,22 +62,23 @@ function WhyChooseCoaching() {
                   01
                 </span>
               </div>
-              <div className="mt-2 flex flex-col items-center gap-12">
+              <div className="flex flex-col gap-12 items-center mt-2">
                 <div className="flex h-[162px] w-[180px] shrink-0 items-center justify-center">
                   <img
                     src="/life-coaching/desktop/why-coaching/character-card-1.webp"
                     alt=""
-                    className="h-full w-full object-contain"
+                    className="object-contain w-full h-full"
                   />
                 </div>
-                <div className="flex w-full flex-col gap-2 text-black">
+                <div className="flex flex-col gap-2 w-full text-black">
                   <h3 className="font-miniature text-[32px] font-normal leading-[40px]">
                     Direction over drift
                   </h3>
                   <p className="text-[18px] font-normal leading-[26px]">
-                    Most of us drift through decisions shaped by habit, fear, or other people&apos;s
-                    expectations. Coaching replaces drift with intentional direction choices that
-                    reflect who you genuinely are and where you want to go.
+                    Most of us drift through decisions shaped by habit, fear, or
+                    other people&apos;s expectations. Coaching replaces drift
+                    with intentional direction choices that reflect who you
+                    genuinely are and where you want to go.
                   </p>
                 </div>
               </div>
@@ -90,14 +91,14 @@ function WhyChooseCoaching() {
                   02
                 </span>
               </div>
-              <div className="flex min-w-0 flex-1 flex-col gap-2 self-stretch pt-6 text-black lg:justify-center lg:pt-8 lg:pb-2">
+              <div className="flex flex-col flex-1 gap-2 self-stretch pt-6 min-w-0 text-black lg:justify-center lg:pt-8 lg:pb-2">
                 <h3 className="font-miniature text-[32px] font-normal leading-[40px]">
                   Tools, not just talk
                 </h3>
                 <div className="text-[18px] font-normal leading-[26px]">
                   <p className="mb-0">
-                    A good coaching session leaves you with something concrete: a
-                    reframe, a plan, a decision, an action.
+                    A good coaching session leaves you with something concrete:
+                    a reframe, a plan, a decision, an action.
                   </p>
                   <p className="mb-0">
                     Not just a feeling. Every session is designed to move you
@@ -109,7 +110,7 @@ function WhyChooseCoaching() {
                 <img
                   src="/life-coaching/desktop/why-coaching/character-card-2.webp"
                   alt=""
-                  className="h-full w-full object-contain"
+                  className="object-contain w-full h-full"
                 />
               </div>
             </div>
@@ -126,10 +127,10 @@ function WhyChooseCoaching() {
                   Growth that compounds
                 </h3>
                 <p className="text-[18px] font-normal leading-[26px]">
-                  The person you become through coaching doesn&apos;t revert when
-                  the sessions end. The clarity, the habits, the self-trust they
-                  compound. Each version of yourself becomes the foundation for
-                  the next.
+                  The person you become through coaching doesn&apos;t revert
+                  when the sessions end. The clarity, the habits, the self-trust
+                  they compound. Each version of yourself becomes the foundation
+                  for the next.
                 </p>
               </div>
               <div className="relative h-[229px] w-full overflow-hidden">
@@ -153,9 +154,10 @@ function WhyChooseCoaching() {
                 </span>
               </h2>
               <p className="font-syne text-[16px] font-normal leading-6 text-[rgba(0,0,0,0.65)]">
-                You don&apos;t need to be in crisis to benefit from coaching. Most
-                people come to us simply because they want to feel a bit clearer,
-                a bit more confident, and a bit more like themselves again.
+                You don&apos;t need to be in crisis to benefit from coaching.
+                Most people come to us simply because they want to feel a bit
+                clearer, a bit more confident, and a bit more like themselves
+                again.
               </p>
             </div>
             <Link

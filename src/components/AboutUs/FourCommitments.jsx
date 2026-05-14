@@ -17,7 +17,7 @@ const commitments = [
   {
     icon: "/about-us/commitments/icon-badge.webp",
     title: "Progress you can feel",
-    body: "We measure our success by yours. If you're not moving forward, we're not doing our job. That's why we track satisfaction, match carefully, and offer a money-back guarantee on your first session.",
+    body: "The right coach makes all the difference. That's why we take the time to match you carefully, check in on your satisfaction, and stay committed to your growth  because when the relationship is right, progress follows naturally.",
   },
 ];
 
@@ -33,15 +33,19 @@ function FourCommitments() {
 
         {/* Heading */}
         <h2 className="font-miniature text-[55px] leading-[1.1]">
-          <span className="font-semibold text-black ">Our practice is built on</span>
+          <span className="font-semibold text-black">
+            Our practice is built on
+          </span>
           <br />
-          <span className="italic text-[#ff6f61] font-semibold">four commitments.</span>
+          <span className="italic text-[#ff6f61] font-semibold">
+            four commitments.
+          </span>
         </h2>
 
         {/* Subtitle */}
         <p className="text-[18px] font-normal text-[#0d0d0d]/70 leading-[1.25]">
-          These aren't marketing words. They're the principles every coach at Feelattune is held
-          to, in every session.
+          These aren't marketing words. They're the principles every coach at
+          Feelattune is held to, in every session.
         </p>
       </div>
 
@@ -62,7 +66,9 @@ function FourCommitments() {
               <h3 className="font-miniature text-[30px] leading-none text-[#0d0d0d] font-semibold capitalize">
                 {c.title}
               </h3>
-              <p className="text-[14px] font-normal text-[#0d0d0d]/70 leading-[1.25]">{c.body}</p>
+              <p className="text-[14px] font-normal text-[#0d0d0d]/70 leading-[1.25]">
+                {c.body}
+              </p>
             </div>
           </div>
         ))}
