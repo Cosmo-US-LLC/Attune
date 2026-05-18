@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 
 const questions = [
   {
-    q:
-      "When you think about where you want to be in a year, how clear does that picture feel?",
+    q: "When you think about where you want to be in a year, how clear does that picture feel?",
     options: [
       "Completely foggy — I have no idea",
       "Vague — I have feelings but not clarity",
@@ -14,52 +13,74 @@ const questions = [
     ],
   },
   {
-    q: "How often do you feel like you're making real progress toward the things that matter to you?",
+    q: "When you set a goal for yourself, what usually happens?",
     options: [
-      "Rarely — I feel stuck most of the time",
-      "Sometimes — but it doesn't last",
-      "Often — but I want to go deeper",
-      "Regularly — I'm just looking to accelerate",
+      "I struggle to even get started",
+      "I start, then lose momentum after a few weeks",
+      "I make progress but often get in my own way",
+      "I follow through, but I want to go deeper or faster",
     ],
   },
   {
-    q: "When you face an important decision, what tends to happen?",
+    q: "How would you describe the way you talk to yourself when things get hard?",
     options: [
-      "I freeze and avoid it",
-      "I decide but always second-guess myself",
-      "I decide, but it takes a long time",
-      "I decide with reasonable confidence",
+      "Pretty harsh — I'm my own worst critic",
+      "I doubt myself a lot, but I try to push through",
+      "I'm okay, but I don't always back myself",
+      "I'm fairly kind to myself — I just want more support",
     ],
   },
   {
-    q: "How would you describe your current relationship with your own confidence?",
+    q: "How often do you feel like your life reflects what actually matters to you?",
     options: [
-      "It's mostly absent — I doubt myself a lot",
-      "It shows up sometimes, but not reliably",
-      "I'm fairly confident in some areas",
-      "I'm confident, but want to expand my capacity",
+      "Rarely — it feels like I'm just going through the motions",
+      "Sometimes — but something feels off and I can't name it",
+      "Often — but there are a few areas I know need work",
+      "Most of the time — I just want to accelerate",
     ],
   },
   {
-    q: "What's the main thing you're hoping coaching could give you?",
+    q: "What would feel most valuable to you right now?",
     options: [
-      "Clarity on what I actually want",
-      "A plan I'll finally stick to",
-      "More confidence and self-belief",
-      "Someone to keep me accountable",
+      "Someone to help me figure out what I actually want",
+      "A clear plan I'll finally commit to",
+      "More confidence to make decisions and back myself",
+      "Accountability and a fresh perspective on where I'm heading",
     ],
   },
 ];
 
-const fitMessages = {
-  high: "Based on your answers, life coaching could be a great fit for you right now. You're ready to grow — let's get started.",
-  medium: "Coaching could help you gain the clarity and momentum you're looking for. A free intro call can tell you more.",
-  low: "You might benefit from some support to get unstuck. Even one session can shift your perspective.",
-};
+const resultTiers = [
+  {
+    range: [5, 10],
+    label: "Strong fit",
+    labelColor: "#5200ff",
+    headline: "Coaching could be a real turning point for you.",
+    body: "You're at a stage where having the right support alongside you could unlock a lot. You don't need to have it all figured out — that's exactly what coaching is for.",
+  },
+  {
+    range: [11, 16],
+    label: "Good fit",
+    labelColor: "#38ab9b",
+    headline: "Coaching sounds like the right next step.",
+    body: "You have some direction, but there are clear areas where a coach could help you move faster and feel more certain. Most people at this stage see real results within a few sessions.",
+  },
+  {
+    range: [17, 20],
+    label: "Ready to accelerate",
+    labelColor: "#5a7a00",
+    headline: "You're already moving — coaching will help you go further.",
+    body: "You have self-awareness and momentum. A coach won't tell you what to do — they'll help you sharpen your thinking, remove the friction, and make sure the progress compounds.",
+  },
+];
+
+function getResult(score) {
+  return resultTiers.find(({ range }) => score >= range[0] && score <= range[1]);
+}
 
 function CoachingQuizMobile() {
   const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState([]);
+  const [totalScore, setTotalScore] = useState(0);
   const [selected, setSelected] = useState(null);
   const [result, setResult] = useState(null);
 
@@ -67,20 +88,21 @@ function CoachingQuizMobile() {
 
   const handleNext = () => {
     if (selected === null) return;
-    const newAnswers = [...answers, selected];
+    const points = selected + 1; // A=1, B=2, C=3, D=4
+    const newScore = totalScore + points;
     if (step < questions.length - 1) {
-      setAnswers(newAnswers);
+      setTotalScore(newScore);
       setSelected(null);
       setStep(step + 1);
     } else {
-      const avg = newAnswers.reduce((a, b) => a + b, 0) / newAnswers.length;
-      setResult(avg >= 2 ? "high" : avg >= 1 ? "medium" : "low");
+      setTotalScore(newScore);
+      setResult(getResult(newScore));
     }
   };
 
   const reset = () => {
     setStep(0);
-    setAnswers([]);
+    setTotalScore(0);
     setSelected(null);
     setResult(null);
   };
@@ -137,24 +159,51 @@ function CoachingQuizMobile() {
           <div className="bg-[rgba(0,0,0,0.1)] h-1 rounded-full overflow-hidden">
             <div
               className="bg-[#5200ff] h-full rounded-full transition-all duration-300"
-              style={{ width: `${((step) / questions.length) * 100}%` }}
+              style={{ width: result ? "100%" : `${((step + 1) / questions.length) * 100}%` }}
             />
           </div>
         </div>
 
         {result ? (
-          <div className="px-5 py-6 space-y-5">
-            <p className="text-[14px] leading-[22px] text-[#0d0d0d] font-medium pb-4">
-              {fitMessages[result]}
+          <div className="px-5 py-6 flex flex-col items-center gap-4 text-center">
+            <span
+              className="rounded-full px-4 py-1.5 text-[12px] font-semibold uppercase tracking-wide text-white"
+              style={{ backgroundColor: result.labelColor }}
+            >
+              {result.label}
+            </span>
+            <p className="text-[18px] font-bold leading-[26px] text-[#0d0d0d] font-miniature">
+              {result.headline}
             </p>
-            <Link to="/signup-anxiety">
+            <p className="text-[14px] leading-[22px] text-[rgba(13,13,13,0.7)]">
+              {result.body}
+            </p>
+            <div className="w-full rounded-2xl bg-[#f4efea] px-5 py-4 flex flex-col items-center gap-1">
+              <span
+                className="text-[10px] font-bold uppercase tracking-widest"
+                style={{ color: result.labelColor }}
+              >
+                {result.label}
+              </span>
+              <div className="flex items-baseline gap-1">
+                <span
+                  className="text-[42px] font-bold leading-none"
+                  style={{ color: result.labelColor }}
+                >
+                  {totalScore}
+                </span>
+                <span className="text-[18px] font-medium text-[rgba(13,13,13,0.35)]">/ 20</span>
+              </div>
+              <span className="text-[11px] font-medium text-[rgba(13,13,13,0.45)]">Your score</span>
+            </div>
+            <Link to="/signup-anxiety" className="w-full">
               <Button className="w-full bg-[#5200ff] rounded-full font-semibold">
                 Start Your Journey →
               </Button>
             </Link>
-            <button onClick={reset} className="w-full text-[13px] text-[rgba(0,0,0,0.5)] underline">
+            {/* <button onClick={reset} className="w-full text-[13px] text-[rgba(0,0,0,0.5)] underline">
               Retake quiz
-            </button>
+            </button> */}
           </div>
         ) : (
           <div className="px-5 pt-5 space-y-5">
@@ -194,7 +243,7 @@ function CoachingQuizMobile() {
                 disabled={selected === null}
                 className="bg-[#5200ff] disabled:opacity-40 text-white text-[14px] font-semibold px-[22px] py-[10px] rounded-full"
               >
-                Next →
+                {step === questions.length - 1 ? "See My Result →" : "Next →"}
               </button>
             </div>
           </div>

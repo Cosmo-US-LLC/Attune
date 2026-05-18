@@ -45,7 +45,7 @@ function FourCommitments() {
         {/* Subtitle */}
         <p className="text-[18px] font-normal text-[#0d0d0d]/70 leading-[1.25]">
           These aren't marketing words. They're the principles every coach at
-          Feelattune is held to, in every session.
+          FeelAttune is held to, in every session.
         </p>
       </div>
 
