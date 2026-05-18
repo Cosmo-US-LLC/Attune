@@ -25,7 +25,7 @@ function FourCommitmentsMobile() {
   return (
     <section className="flex flex-col gap-8 px-5 py-12 bg-white lg:hidden">
       {/* Header */}
-      <div className="flex flex-col gap-6 items-center w-full text-center">
+      <div className="flex flex-col items-center w-full gap-6 text-center">
         <span className="bg-[#e5ff7d] text-[#0d0d0d] text-[14px] font-semibold px-5 py-4 rounded-[39px] tracking-[0.72px] uppercase">
           ✦ What we stand for
         </span>
@@ -41,7 +41,7 @@ function FourCommitmentsMobile() {
         </h2>
         <p className="text-[16px] font-normal text-[#0d0d0d]/70 leading-[24px]">
           These aren&apos;t marketing words. They&apos;re the principles every
-          coach at Feelattune is held
+          coach at FeelAttune is held
           <br />
           to, in every session.
         </p>
@@ -57,7 +57,7 @@ function FourCommitmentsMobile() {
             <div className="bg-[#f097dd] size-14 rounded-[40px] flex items-center justify-center flex-shrink-0">
               <img src={c.icon} alt="" className="size-[30px] object-contain" />
             </div>
-            <div className="flex flex-col gap-2 w-full">
+            <div className="flex flex-col w-full gap-2">
               <h3 className="font-miniature text-[24px] leading-[32px] font-bold text-[#0d0d0d] capitalize">
                 {c.title}
               </h3>
