@@ -1,164 +1,239 @@
 import { Link } from "react-router-dom";
+
+const statBlocks = [
+  {
+    type: "photo",
+    image: "/images/anxiety-page/v2/stat-photo-1.webp",
+    imageClass: "h-full w-full object-cover object-bottom",
+  },
+  {
+    type: "stat",
+    bg: "bg-[#E5FF7D]",
+    blob: "/images/anxiety-page/v2/stat-blob-1.svg",
+    blobBox: { left: "11.67%", top: "21.75%", width: "40%", height: "40%" },
+    char: "/images/anxiety-page/v2/stat-char-1.svg",
+    charBox: { left: "29.44%", top: "9%", width: "53%", height: "42.15%" },
+    charSize: { width: "150px", height: "120px" },
+    charRotate: "rotate-[18.52deg]",
+    stat: "Over 50%",
+    text: " of people struggle with stress and anxiety but avoid clinical care.",
+    textStyle: { left: "50%", top: "60.63%", width: "65%" },
+  },
+  {
+    type: "photo",
+    image: "/images/anxiety-page/v2/stat-photo-2.webp",
+    imageClass: "h-full w-full object-cover",
+  },
+  {
+    type: "stat",
+    bg: "bg-[#6FE0D1]",
+    blob: "/images/anxiety-page/v2/stat-blob-2.svg",
+    blobBox: { left: "14.72%", top: "29.75%", width: "70.28%", height: "63.25%" },
+    char: "/images/anxiety-page/v2/stat-char-2.svg",
+    charBox: { left: "17.5%", top: "6.75%", width: "54.02%", height: "43.77%" },
+    charSize: { width: "150px", height: "120px" },
+    charRotate: "rotate-[-16.88deg]",
+    stat: "20% of older adults",
+    text: "Experience mental health challenges, including depression and anxiety.",
+    textStyle: { left: "49.86%", top: "65.88%", width: "64.72%" },
+    statBreak: true,
+  },
+  {
+    type: "stat",
+    bg: "bg-[#6FE0D1]",
+    blob: "/images/anxiety-page/v2/stat-blob-3.svg",
+    blobBox: { left: "8.33%", top: "17%", width: "83.06%", height: "74.75%" },
+    char: "/images/anxiety-page/v2/stat-char-3.svg",
+    charBox: { left: "25.28%", top: "8%", width: "48.28%", height: "41.03%" },
+    charSize: { width: "140px", height: "120px" },
+    charRotate: "-scale-y-100 rotate-[-163.94deg]",
+    stat: "1 in 5 young adults",
+    text: " struggles with social anxiety in their daily life.",
+    textStyle: { left: "49.86%", top: "64.88%", width: "64.72%" },
+  },
+  {
+    type: "photo",
+    image: "/images/anxiety-page/v2/stat-photo-3.webp",
+    imageClass: "h-full w-full object-cover",
+  },
+  {
+    type: "stat",
+    bg: "bg-[#FFA8ED]",
+    blob: "/images/anxiety-page/v2/stat-blob-4.svg",
+    blobBox: { left: "7.5%", top: "16.75%", width: "85%", height: "76.5%" },
+    char: "/images/anxiety-page/v2/stat-char-4.svg",
+    charBox: { left: "19.72%", top: "7%", width: "46.85%", height: "36.89%" },
+    charSize: { width: "150px", height: "120px" },
+    charRotate: "rotate-[-10.87deg]",
+    stat: "70% of caregivers",
+    text: " experience significant levels of anxiety or emotional exhaustion.",
+    textStyle: { left: "50%", top: "56.13%", width: "70.56%" },
+    statBreak: true,
+  },
+  {
+    type: "photo",
+    image: "/images/anxiety-page/v2/stat-photo-4.webp",
+    imageClass:
+      "absolute h-[117.32%] w-[195.58%] max-w-none left-[-33.35%] top-[-17.32%] object-cover",
+    mobileImageClass:
+      "absolute h-[112.07%] w-[206.95%] max-w-none left-[-42.33%] top-[-12.07%] object-cover",
+  },
+];
+
+const mobileCells = [
+  statBlocks[0],
+  statBlocks[3],
+  statBlocks[1],
+  statBlocks[2],
+  statBlocks[5],
+  statBlocks[4],
+  statBlocks[6],
+  statBlocks[7],
+];
+
+function MobileStatCell({ block }) {
+  if (block.type === "photo") {
+    return (
+      <div className="relative h-[240px] w-full overflow-hidden">
+        <img
+          src={block.image}
+          alt=""
+          className={block.mobileImageClass ?? block.imageClass}
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div
+      className={`flex h-[240px] w-full items-center justify-center px-4 py-6 ${block.bg}`}
+    >
+      <div className="flex flex-col items-center gap-1 text-center text-black">
+        <div className="flex h-[92px] w-[96px] items-center justify-center">
+          <div className={`flex-none ${block.charRotate}`}>
+            <img
+              src={block.char}
+              alt=""
+              className="h-[67px] w-[80px] max-w-none"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+        <p className="text-[20px] font-bold leading-6">{block.stat}</p>
+        <p className="text-[14px] leading-[22px]">{block.text.trim()}</p>
+      </div>
+    </div>
+  );
+}
+
+function DesktopStatCell({ block }) {
+  if (block.type === "photo") {
+    return (
+      <div className="relative aspect-[360/400] w-full overflow-hidden">
+        <img src={block.image} alt="" className={block.imageClass} />
+      </div>
+    );
+  }
+
+  return (
+    <div className={`relative aspect-[360/400] w-full overflow-hidden ${block.bg}`}>
+      <img
+        src={block.blob}
+        alt=""
+        className="absolute max-w-none"
+        style={block.blobBox}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute flex items-center justify-center"
+        style={block.charBox}
+      >
+        <div className={`flex-none ${block.charRotate}`}>
+          <img
+            src={block.char}
+            alt=""
+            className="block max-w-none"
+            style={block.charSize}
+            aria-hidden="true"
+          />
+        </div>
+      </div>
+      <div
+        className="absolute -translate-x-1/2 -translate-y-1/2 text-center text-black"
+        style={block.textStyle}
+      >
+        <p className="text-[16px] leading-[28px]">
+          <span className="block text-[25px] font-bold leading-[27px]">
+            {block.stat}
+          </span>
+          {block.statBreak ? (
+            <>
+              <br />
+              {block.text.trim()}
+            </>
+          ) : (
+            block.text
+          )}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function StatisticsSection() {
   return (
-    <section className="relative w-full bg-white overflow-hidden max-md:h-auto h-[1000px]">
-      {/* Background image - faint grayscale boy with anxiety */}
-      <img
-        src="/images/anxiety-page/anxiety-boy-bg.png"
-        alt=""
-        className="absolute inset-0 object-cover w-full h-full opacity-25 mix-blend-luminosity max-md:hidden"
-      />
-
-      {/* ===== DESKTOP: absolute-positioned circles ===== */}
-
-      {/* TOP-LEFT: Lime circle */}
-      <div className="max-md:hidden absolute left-[147px] top-[130px] w-[275px] h-[276px] z-10">
-        <img
-          src="/images/anxiety-page/char-teal.svg"
-          alt=""
-          className="absolute -top-[50px] -right-[10px] w-[140px] h-[110px] rotate-[18deg] z-20"
-        />
-        <img
-          src="/images/anxiety-page/circle-lime.svg"
-          alt=""
-          className="absolute inset-0 w-full h-full"
-        />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
-          <p className="text-[16px] leading-[22px] text-black">
-            <span className="font-bold text-[25px] leading-[30px] block mb-1">
-              Over 50%
-            </span>
-            of people struggle with stress and anxiety but avoid clinical care.
-          </p>
-        </div>
-      </div>
-
-      {/* TOP-RIGHT: Teal/Cyan circle */}
-      <div className="max-md:hidden absolute right-[111px] top-[100px] w-[253px] h-[254px] z-10">
-        <img
-          src="/images/anxiety-page/char-pink.svg"
-          alt=""
-          className="absolute -top-[50px] -left-[10px] w-[143px] h-[114px] -rotate-[17deg] z-20"
-        />
-        <img
-          src="/images/anxiety-page/circle-pink-right.svg"
-          alt=""
-          className="absolute inset-0 w-full h-full"
-        />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
-          <p className="text-[16px] leading-[22px] text-black">
-            <span className="font-bold text-[25px] leading-[30px] block mb-1">
-              20% of older adults
-            </span>
-            Experience mental health challenges, including depression and
-            anxiety.
-          </p>
-        </div>
-      </div>
-
-      {/* BOTTOM-LEFT: Teal circle */}
-      <div className="max-md:hidden absolute left-[71px] bottom-[80px] w-[299px] h-[300px] z-10">
-        <img
-          src="/images/anxiety-page/char-yellow.svg"
-          alt=""
-          className="absolute -top-[50px] right-[10px] w-[124px] h-[110px] z-20"
-        />
-        <img
-          src="/images/anxiety-page/circle-teal-left.svg"
-          alt=""
-          className="absolute inset-0 w-full h-full"
-        />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
-          <p className="text-[16px] leading-[22px] text-black">
-            <span className="font-bold text-[25px] leading-[30px] block mb-1">
-              1 in 5 young adults
-            </span>
-            struggles with social anxiety in their daily life.
-          </p>
-        </div>
-      </div>
-
-      {/* BOTTOM-RIGHT: Magenta/Pink circle */}
-      <div className="max-md:hidden absolute right-[139px] bottom-[60px] w-[306px] h-[307px] z-10">
-        <img
-          src="/images/anxiety-page/char-green.svg"
-          alt=""
-          className="absolute -top-[40px] left-[10px] w-[128px] h-[102px] -rotate-[11deg] z-20"
-        />
-        <img
-          src="/images/anxiety-page/circle-magenta.svg"
-          alt=""
-          className="absolute inset-0 w-full h-full"
-        />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
-          <p className="text-[16px] leading-[22px] text-black">
-            <span className="font-bold text-[25px] leading-[30px] block mb-1">
-              70% of caregivers
-            </span>
-            experience significant levels of anxiety or emotional exhaustion.
-          </p>
-        </div>
-      </div>
-
-      {/* ===== Center content (desktop: absolute overlay; mobile: normal flow) ===== */}
-      <div className="md:absolute md:inset-0 md:z-20 md:pointer-events-none flex flex-col items-center justify-center text-center max-md:py-[60px] max-md:px-6">
-        <h2 className="font-miniature text-[64px] leading-[72px] font-normal text-black max-w-[900px] max-md:text-[36px] max-md:leading-[44px]">
-          Anxiety is more common than you think and more treatable.
-        </h2>
-        <p className="mt-6 text-[16px] leading-[28px] text-gray-700 max-w-[805px]">
-          Most people struggling with anxiety never get help, not because they
-          don&apos;t want it, but because traditional options feel out of reach.
-          FeelAttune makes support accessible, affordable, and judgment-free.
-        </p>
-        <Link
+    <section className="bg-white">
+      {/* Mobile — Figma 4791:17597 */}
+      <div className="flex flex-col items-center pt-20 lg:hidden">
+        <div className="flex w-full flex-col items-center gap-6 px-5">
+          <div className="flex w-full flex-col items-center gap-3.5 text-center">
+            <h2 className="font-miniature text-[42px] font-bold leading-[50px] text-black">
+              Anxiety is more common than you think and more treatable.
+            </h2>
+            <p className="text-[16px] leading-7 text-[rgba(0,0,0,0.7)]">
+              Most people struggling with anxiety never get help, not because they
+              don&apos;t want it, but because traditional options feel out of reach.
+              FeelAttune makes support accessible, affordable, and judgment-free.
+            </p>
+          </div>
+          <Link
             to="/signup-anxiety"
-          className="mt-7 bg-[#FF6F61] hover:bg-[#e85d50] text-white py-3 px-8 rounded-full inline-block text-center font-medium transition-colors md:pointer-events-auto"
-        >
-          Book a Free 15-Min Discovery Call
-        </Link>
+            className="inline-flex w-full items-center justify-center rounded-full bg-[#5200FF] px-5 py-3.5 text-[14px] font-semibold leading-6 text-white transition-opacity hover:opacity-90"
+          >
+            Connect Now
+          </Link>
+        </div>
+
+        <div className="mt-16 grid w-full grid-cols-2">
+          {mobileCells.map((block, index) => (
+            <MobileStatCell key={index} block={block} />
+          ))}
+        </div>
       </div>
 
-      {/* ===== MOBILE: 2x2 grid of stat cards ===== */}
-      <div className="md:hidden grid grid-cols-2 gap-4 px-4 pb-[60px]">
-        {/* Lime card */}
-        <div className="relative w-full aspect-square">
-          <img src="/images/anxiety-page/circle-lime.svg" alt="" className="absolute inset-0 w-full h-full" />
-          <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
-            <p className="text-[13px] leading-[18px] text-black">
-              <span className="font-bold text-[18px] leading-[24px] block mb-1">Over 50%</span>
-              of people struggle with stress and anxiety but avoid clinical care.
-            </p>
-          </div>
+      {/* Desktop — unchanged */}
+      <div className="hidden px-4 pt-20 pb-0 lg:block">
+        <div className="mx-auto flex max-w-[888px] flex-col items-center gap-8 text-center">
+          <h2 className="font-miniature text-[54px] font-bold leading-[62px] text-black">
+            Anxiety is more common than you think and more treatable.
+          </h2>
+          <p className="max-w-[805px] text-[16px] leading-[28px] text-[rgba(0,0,0,0.7)]">
+            Most people struggling with anxiety never get help, not because they
+            don&apos;t want it, but because traditional options feel out of reach.
+            FeelAttune makes support accessible, affordable, and judgment-free.
+          </p>
+          <Link
+            to="/signup-anxiety"
+            className="inline-flex items-center justify-center rounded-full bg-[#5200FF] px-5 py-5 text-[16px] font-semibold capitalize leading-[26px] text-white transition-opacity hover:opacity-90"
+          >
+            Connect Now
+          </Link>
         </div>
-        {/* Pink card */}
-        <div className="relative w-full aspect-square">
-          <img src="/images/anxiety-page/circle-pink-right.svg" alt="" className="absolute inset-0 w-full h-full" />
-          <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
-            <p className="text-[13px] leading-[18px] text-black">
-              <span className="font-bold text-[18px] leading-[24px] block mb-1">20% of older adults</span>
-              Experience mental health challenges, including depression and anxiety.
-            </p>
-          </div>
-        </div>
-        {/* Teal card */}
-        <div className="relative w-full aspect-square">
-          <img src="/images/anxiety-page/circle-teal-left.svg" alt="" className="absolute inset-0 w-full h-full" />
-          <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
-            <p className="text-[13px] leading-[18px] text-black">
-              <span className="font-bold text-[18px] leading-[24px] block mb-1">1 in 5 young adults</span>
-              struggles with social anxiety in their daily life.
-            </p>
-          </div>
-        </div>
-        {/* Magenta card */}
-        <div className="relative w-full aspect-square">
-          <img src="/images/anxiety-page/circle-magenta.svg" alt="" className="absolute inset-0 w-full h-full" />
-          <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
-            <p className="text-[13px] leading-[18px] text-black">
-              <span className="font-bold text-[18px] leading-[24px] block mb-1">70% of caregivers</span>
-              experience significant levels of anxiety or emotional exhaustion.
-            </p>
-          </div>
+
+        <div className="mt-12 grid w-full grid-cols-4">
+          {statBlocks.map((block, index) => (
+            <DesktopStatCell key={index} block={block} />
+          ))}
         </div>
       </div>
     </section>

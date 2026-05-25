@@ -1,46 +1,110 @@
 import { Link } from "react-router-dom";
+
+const items = [
+  {
+    lead: "Identify your triggers:",
+    desc: "understand what's driving your stress",
+  },
+  {
+    lead: "Build coping strategies:",
+    desc: "practical tools that fit your real life",
+  },
+  {
+    lead: "Rebuild confidence:",
+    desc: "take real steps toward the life you want",
+  },
+  {
+    lead: "Create lasting resilience:",
+    desc: "grow stronger with every session",
+  },
+];
+
+function Checklist({ className = "" }) {
+  return (
+    <div className={`flex flex-col gap-6 ${className}`}>
+      {items.map((item) => (
+        <div key={item.lead} className="flex items-start gap-3">
+          <img
+            src="/images/anxiety-page/v2/check-one.svg"
+            alt=""
+            className="size-5 shrink-0"
+          />
+          <p className="text-[14px] leading-[22px] text-black lg:text-[16px] lg:leading-6">
+            <span className="font-bold">{item.lead} </span>
+            {item.desc}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function HowLifeCoachHelps() {
   return (
-    <section id="our-approach" className="relative flex items-center justify-end px-[60px] py-[100px] min-h-[700px] max-lg:flex-col max-lg:px-4 max-lg:py-12 max-lg:bg-[#95adf0]">
-      {/* Background: woman image + gradient overlay */}
-      <div className="absolute inset-0 pointer-events-none max-lg:hidden" aria-hidden="true">
-        <div className="absolute inset-0 overflow-hidden">
-          <img
-            src="/images/anxiety-page/listener-woman.jpg"
-            alt=""
-            className="absolute h-full left-[-13%] max-w-none top-0 w-[87%] object-cover"
-          />
+    <section id="our-approach" className="relative overflow-hidden">
+      {/* Mobile — Figma 4780:17434 */}
+      <div className="relative flex items-center justify-center p-8 lg:hidden">
+        <img
+          src="/images/anxiety-page/v2/coach-help-bg.webp"
+          alt=""
+          className="pointer-events-none absolute inset-0 size-full object-cover"
+          aria-hidden="true"
+        />
+
+        <div className="relative flex w-full flex-col gap-8 rounded-3xl border border-black bg-white px-4 py-6 backdrop-blur-[50px]">
+          <div className="flex w-full flex-col gap-6">
+            <h2 className="font-miniature text-[42px] font-bold leading-[50px] text-black">
+              How a Life Coach Can Help
+            </h2>
+            <Checklist />
+          </div>
+
+          <Link
+            to="/signup-anxiety"
+            className="inline-flex w-fit items-center gap-2 rounded-full bg-[#5200FF] px-5 py-2.5 text-[14px] font-medium leading-6 text-white transition-opacity hover:opacity-90"
+          >
+            Find Your Life Coach
+            <img
+              src="/images/anxiety-page/v2/cta-arrow-circle.svg"
+              alt=""
+              className="size-[18px]"
+            />
+          </Link>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-l from-[#95adf0] from-[35%] to-[54%] to-transparent" />
       </div>
 
-      {/* White card on the right */}
-      <div className="bg-white border border-black rounded-[48px] px-8 py-12 relative w-full max-w-[580px] max-lg:max-w-full">
-        <h2 className="font-miniature text-[64px] leading-[72px] text-black mb-12 max-lg:text-[36px] max-lg:leading-[40px] max-lg:mb-8">
-          How a Life Coach Can Help
-        </h2>
-
-        <div className="flex flex-col gap-6">
-          {[
-            { lead: "Identify your anxiety triggers:", desc: "Understand what's driving your stress so you can respond with intention, not just reaction." },
-            { lead: "Build practical coping strategies:", desc: "Get personalized tools, not generic advice, that fit into your real life and actually work." },
-            { lead: "Rebuild confidence and momentum:", desc: "Move past the thoughts that keep you stuck and take real steps toward the life you want." },
-            { lead: "Create lasting resilience:", desc: "Anxiety doesn't disappear overnight. Your coach helps you grow stronger with every session, not just feel better in the moment." },
-          ].map((item, i) => (
-            <div key={i} className="flex items-start gap-4">
-              <img src="/images/anxiety-page/tick-circle.svg" alt="" className="w-7 h-7 flex-shrink-0 mt-0.5" />
-              <p className="text-black text-[16px] leading-[24px]">
-                <span className="font-bold">{item.lead} </span>
-                {item.desc}
-              </p>
-            </div>
-          ))}
+      {/* Desktop — unchanged */}
+      <div className="relative hidden min-h-[744px] items-center justify-end overflow-hidden px-[114px] py-[100px] lg:flex">
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute inset-0 overflow-hidden">
+            <img
+              src="/images/anxiety-page/v2/coach-help-bg.webp"
+              alt=""
+              className="absolute h-[104%] left-[-25%] top-[-2%] w-[87%] max-w-none object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-l from-[#E5FF7D] from-[35%] to-[54%] to-transparent" />
         </div>
 
-        <Link to="/signup-anxiety" className="mt-12 inline-flex items-center gap-2 bg-[#5200FF] text-white rounded-full px-8 py-2.5 text-[16px] font-medium hover:opacity-90 transition-opacity max-lg:mt-8">
-          Book a Free 15-Min Discovery Call
-          <img src="/images/anxiety-page/arrow-right-cta.svg" alt="" className="w-5 h-5" />
-        </Link>
+        <div className="relative w-full max-w-[610px] rounded-[48px] border border-black bg-white px-8 py-12">
+          <h2 className="font-miniature mb-12 text-center text-[54px] font-bold leading-[62px] text-black">
+            How a Life Coach Can Help
+          </h2>
+
+          <Checklist />
+
+          <Link
+            to="/signup-anxiety"
+            className="mt-12 inline-flex items-center gap-2 rounded-full bg-[#5200FF] px-8 py-2.5 text-[16px] font-semibold capitalize leading-6 text-white transition-opacity hover:opacity-90"
+          >
+            Find Your Life Coach
+            <img
+              src="/images/anxiety-page/v2/cta-arrow-circle.svg"
+              alt=""
+              className="size-5"
+            />
+          </Link>
+        </div>
       </div>
     </section>
   );

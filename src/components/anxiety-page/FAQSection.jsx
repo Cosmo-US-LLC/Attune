@@ -10,7 +10,7 @@ const questions = [
     id: "01",
     question: "What is FeelAttune?",
     answer:
-      "FeelAttune is a life coaching platform that connects you with coaches who understand anxiety. Whether you're dealing with social pressure, financial stress, academic overwhelm, or simply the weight of everyday life. We offer personalized, one-on-one sessions designed to help you build real coping strategies and move forward with confidence.",
+      "FeelAttune is a life coaching platform that connects you with certified coaches who understand anxiety. Whether you're dealing with social pressure, financial stress, academic overwhelm, or simply the weight of everyday life. We offer personalized, one-on-one sessions designed to help you build real coping strategies and move forward with confidence.",
   },
   {
     id: "02",
@@ -40,40 +40,45 @@ const questions = [
 
 function FAQSection() {
   return (
-    <div id="FAQs" className="bg-[#f4efea]">
-      <div className="max-w-[1440px] mx-auto px-[130px] max-md:px-4 py-[107px] max-md:py-[60px] space-y-[74px] max-md:space-y-[32px]">
-        <h1 className="font-miniature text-[76px] max-md:text-[40px] max-md:leading-[52px] text-center">
-          Any Questions?
-        </h1>
+    <section id="FAQs" className="bg-[#f4efea]">
+      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-12 px-5 py-12 md:gap-16 md:px-[114px] md:py-[80px]">
+        <h2 className="text-center font-miniature text-[42px] font-bold leading-[50px] text-black md:text-[54px] md:leading-[62px]">
+          Any{" "}
+          <span className="text-[#FF6F61]">Questions?</span>
+        </h2>
 
-        <Accordion type="single" collapsible>
+        <Accordion
+          type="single"
+          collapsible
+          defaultValue="01"
+          className="flex w-full max-w-[1080px] flex-col gap-4"
+        >
           {questions.map((question) => (
             <AccordionItem
               key={question.id}
               value={question.id}
-              className={
-                "px-[60px] max-md:px-4 py-[52px] max-md:py-[24px] data-[state=closed]:bg-[#f4efea] data-[state=open]:bg-[#e5ff7d] duration-200 border-black " +
-                (question.id === "05" && "border-transparent")
-              }
+              className="overflow-hidden rounded-[24px] border-0 data-[state=closed]:border-b data-[state=closed]:border-black data-[state=closed]:bg-[#FBF9F7] data-[state=open]:bg-[#E5FF7D] data-[state=open]:[&_.faq-number]:text-[#FF6F61]"
             >
-              <AccordionTrigger className2="w-8 h-8">
-                <div className="flex gap-[52px] max-md:gap-4 items-start">
-                  <span className="text-[#95ADF0] text-[48px] max-md:text-[28px] font-bold leading-[50px] max-md:leading-[36px] shrink-0">
+              <AccordionTrigger className="gap-4 px-4 py-4 hover:no-underline md:gap-12 md:px-5 md:py-5 [&[data-state=open]>svg]:bg-black [&[data-state=open]>svg]:text-white [&>svg]:size-12 [&>svg]:bg-white [&>svg]:p-[14px]">
+                <div className="flex flex-1 items-start gap-4 md:gap-12">
+                  <span className="faq-number w-[40px] shrink-0 text-center text-[28px] font-bold leading-[1.2] text-[#95ADF0] md:w-[66px] md:text-[40px]">
                     {question.id}
                   </span>
-                  <span className="text-left text-[32px] max-md:text-[18px] font-bold leading-[38px] max-md:leading-[26px]">
+                  <span className="text-left text-[20px] font-bold leading-[28px] text-black md:text-[32px] md:leading-[40px]">
                     {question.question}
                   </span>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="data-[state=open]:bg-[#e5ff7d] pl-[110px] max-md:pl-0 pb-0 text-[20px] max-md:text-[16px] leading-[28px] duration-150 max-w-[90%] max-md:max-w-full">
-                {question.answer}
+              <AccordionContent className="px-4 pb-4 pt-0 md:px-5 md:pb-5">
+                <p className="pl-[56px] text-[16px] leading-[26px] text-[rgba(13,13,13,0.7)] md:pl-[114px] md:text-[18px] md:leading-[26px]">
+                  {question.answer}
+                </p>
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
       </div>
-    </div>
+    </section>
   );
 }
 
