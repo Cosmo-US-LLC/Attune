@@ -18,6 +18,7 @@ type CarouselProps = {
   plugins?: CarouselPlugin;
   orientation?: "horizontal" | "vertical";
   setApi?: (api: CarouselApi) => void;
+  showDots?: boolean;
 };
 
 type CarouselContextProps = {
@@ -51,6 +52,7 @@ const Carousel = React.forwardRef<
       opts,
       setApi,
       plugins,
+      showDots = true,
       className,
       children,
       ...props
@@ -145,7 +147,7 @@ const Carousel = React.forwardRef<
         >
           {children}
         </div>
-        {scrollSnaps && scrollSnaps?.length > 1 && (
+        {showDots && scrollSnaps && scrollSnaps?.length > 1 && (
           <div className="flex justify-center gap-[5px] pt-[0px]">
             {scrollSnaps.map((_, index) => (
               <DotButton
