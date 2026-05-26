@@ -104,7 +104,7 @@ function MobileHowItWorksSteps() {
                   </div>
                 </div>
 
-                <div className="h-[400px] w-[206px] shrink-0 overflow-hidden">
+                <div className="h-[400px] w-full max-w-[350px] shrink-0">
                   <img
                     src={step.screen}
                     alt=""
