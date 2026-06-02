@@ -18,7 +18,7 @@ function AnxietyPage() {
     <div className="min-h-screen overflow-x-hidden pt-[80px] md:pt-[98px]">
       <Navbar />
       <HeroSection />
-      <WhoIsThisFor />
+      {/* <WhoIsThisFor /> */}
       <BreakingBarriers />
       <HowLifeCoachHelps />
       <StatisticsSection />
@@ -26,7 +26,7 @@ function AnxietyPage() {
       <SessionsPricing />
       <TestimonialsSection />
       <BeginJourney />
-      <WhyChooseCoach />
+      {/* <WhyChooseCoach /> */}
       <CoreValues />
       <FAQSection />
       <Footer />

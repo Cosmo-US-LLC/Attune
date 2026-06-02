@@ -1,119 +1,291 @@
-import { useState, useCallback, useEffect } from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
+import { useMemo, useState } from "react";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+
+const ICON_BASE = "/images/anxiety-page/v2/barriers";
 
 const cards = [
   {
-    title: "Social Anxiety: When connection Feels Scary",
-    subtitle: "You want to connect but showing up just feels like too much.",
-    bg: "bg-[#38AB9B]",
-    text: "text-white",
+    key: "social",
+    icon: `${ICON_BASE}/social.svg`,
+    titleLines: ["Social", "Anxiety"],
+    caption: "Connection feels scary",
+    detailTitle: "Social Anxiety: When connection Feels Scary",
+    detailDescription:
+      "Social anxiety is more than shyness. It's the fear of being judged, misread, or rejected in meetings, social settings, or even a simple conversation.",
     points: [
-      "You cancel plans to avoid the anxiety of showing up",
-      "You overthink everything you said long after it's over",
-      "Crowded rooms, small talk, even texting back feels draining",
+      "Constant worry about what others think",
+      "Avoiding social situations or group settings",
+      "Physical symptoms: racing heart, blushing, sweating",
+      "Replaying conversations long after they've ended",
+      "Withdrawing from friendships and opportunities",
     ],
+    tall: false,
   },
   {
-    title: "Financial Anxiety: Your Bank Account Lives Rent-Free in Your Head",
-    subtitle: "The numbers might be fine. Your mind isn't.",
-    bg: "bg-[#FF6F61]",
-    text: "text-white",
+    key: "financial",
+    icon: `${ICON_BASE}/financial.svg`,
+    titleLines: ["Financial", "Anxiety"],
+    caption: "Money keeps you up",
+    detailTitle: "Financial Anxiety: Your Bank Account Lives Rent-Free in Your Head",
+    detailDescription: "The numbers might be fine. Your mind isn't.",
     points: [
       "You lie awake running worst-case financial scenarios",
       "Money conversations with loved ones turn into arguments",
       "You can't enjoy the present because you're terrified of the future",
     ],
+    tall: false,
   },
   {
-    title: "Academic Anxiety: You Know You Can, So Why Can't You Start?",
-    subtitle: "Capable doesn't always feel like enough..",
-    bg: "bg-[#6FE0D1]",
-    text: "text-black",
+    key: "academic",
+    icon: `${ICON_BASE}/academic.svg`,
+    titleLines: ["Academic", "Anxiety"],
+    caption: "Pressure becomes paralysis",
+    detailTitle: "Academic Anxiety: You Know You Can, So Why Can't You Start?",
+    detailDescription: "Capable doesn't always feel like enough..",
     points: [
       "Deadlines make you freeze instead of focus",
       "You feel like everyone else has it figured out except you",
       "You push through but the burnout is real",
     ],
+    tall: false,
   },
   {
-    title: "Body Anxiety: Getting Dressed Feels Like a Battle",
-    subtitle: "Your inner critic follows you everywhere.",
-    bg: "bg-[#FFA8ED]",
-    text: "text-black",
+    key: "technology",
+    icon: `${ICON_BASE}/technology.svg`,
+    titleLines: ["Technology Anxiety"],
+    caption: "Always on, never at ease",
+    detailTitle: "Technology Anxiety",
+    detailDescription: "Always on, never at ease.",
+    points: [
+      "Always checking notifications, never switching off",
+      "Scrolling replaces rest and recovery",
+      "Feeling behind even when you're doing enough",
+    ],
+    tall: false,
+  },
+  {
+    key: "body",
+    icon: `${ICON_BASE}/body.svg`,
+    titleLines: ["Body", "Anxiety"],
+    caption: "At war with yourself",
+    detailTitle: "Body Anxiety: Getting Dressed Feels Like a Battle",
+    detailDescription: "Your inner critic follows you everywhere.",
     points: [
       "You avoid mirrors, photos, anything that draws attention",
       "You compare yourself without even meaning to",
       "Your worth shouldn't depend on how you look but it feels like it does",
     ],
+    tall: true,
   },
   {
-    title: "General Anxiety: Your Brain Won't Let You Just Relax",
-    subtitle: "No specific reason. Just can't switch off.",
-    bg: "bg-[#F1854F]",
-    text: "text-black",
+    key: "general",
+    icon: `${ICON_BASE}/general.svg`,
+    titleLines: ["General", "Anxiety"],
+    caption: "Worry with no off switch",
+    detailTitle: "General Anxiety: Your Brain Won't Let You Just Relax",
+    detailDescription: "No specific reason. Just can't switch off.",
     points: [
       "Your mind races even when life is fine",
       "Small decisions feel overwhelming",
       "You worry about worrying and it makes it worse",
     ],
+    tall: true,
   },
   {
-    title: "Performance Anxiety: You Know Your Stuff But Go Blank",
-    subtitle: "All eyes on you. Everything you prepared disappears.",
-    bg: "bg-[#D43525]",
-    text: "text-white",
+    key: "performance",
+    icon: `${ICON_BASE}/performance.svg`,
+    titleLines: ["Performance Anxiety"],
+    caption: "Showing up feels like too much",
+    detailTitle: "Performance Anxiety",
+    detailDescription: "Showing up feels like too much",
     points: [
       "You dread a 10-minute meeting for days",
       "You rehearse until the words stop making sense",
       "Staying quiet feels safer than getting it wrong",
     ],
+    tall: true,
   },
   {
-    title: "Life Transitions Anxiety: Everyone's Excited. You're Just Scared.",
-    subtitle: "New chapters should feel good. So why don't they?",
-    bg: "bg-[#A089E4]",
-    text: "text-white",
+    key: "life",
+    icon: `${ICON_BASE}/life.svg`,
+    titleLines: ["Life", "Transitions"],
+    caption: "Change feels like threat at ease",
+    detailTitle: "Life Transitions",
+    detailDescription: "Always on, Change feels like threat at ease",
     points: [
       "Change feels like a threat, not an opportunity",
       "You miss the old even when you chose to leave it",
       "You put pressure on yourself to feel excited when you don't",
     ],
+    tall: true,
   },
 ];
 
-function MobileBarrierCard({ card }) {
+function CardTitle({ lines }) {
+  return (
+    <div className="font-miniature text-[32px] leading-10 text-black">
+      {lines.map((line, i) => (
+        <p key={line} className={i < lines.length - 1 ? "mb-0" : ""}>
+          {line}
+        </p>
+      ))}
+    </div>
+  );
+}
+
+function TypeCard({ card, isActive, onClick }) {
+  const heightClass = card.tall ? "h-[316px]" : "h-[290px]";
+  const [isHovered, setIsHovered] = useState(false);
+
+  const backgroundClass = isActive
+    ? "border border-black bg-[#E5FF7D]"
+    : isHovered
+      ? "bg-[#E6DED5]"
+      : "bg-[#F4EFEA]";
+
   return (
     <div
-      className={`${card.bg} flex w-[340px] flex-col rounded-[30px] border border-black px-4 py-6`}
+      role="button"
+      tabIndex={0}
+      onClick={onClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onClick?.();
+        }
+      }}
+      className={[
+        "flex w-full cursor-pointer flex-col items-start gap-12 rounded-[8px] px-4 py-8 outline-none transition-colors",
+        heightClass,
+        backgroundClass,
+      ].join(" ")}
     >
-      <div className="flex flex-col gap-8">
-        <div className="flex flex-col gap-2">
+      <img
+        src={card.icon}
+        alt=""
+        className="size-16 shrink-0 object-contain"
+        aria-hidden="true"
+        draggable={false}
+      />
+      <div className="flex w-full flex-col gap-2">
+        <CardTitle lines={card.titleLines} />
+        <p className="font-inter text-[18px] font-normal leading-[26px] text-black">
+          {card.caption}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+const SOCIAL_POINTS_MOBILE = [
+  ["Constant worry about what others", "think"],
+  ["Avoiding social situations or group", "settings"],
+  ["Physical symptoms: racing heart,", "blushing, sweating"],
+  ["Replaying conversations long after", "they've ended"],
+  ["Withdrawing from friendships and", "opportunities"],
+];
+
+function SocialDetailDescription() {
+  const textClass =
+    "font-inter text-[16px] leading-6 text-black lg:text-[18px] lg:leading-[26px]";
+
+  return (
+    <>
+      <p className={`${textClass} lg:hidden`}>
+        <span className="block">
+          Social anxiety is more than shyness. It&apos;s
+        </span>
+        <span className="block">the fear of being judged, misread, or</span>
+        <span className="block">
+          rejected in meetings, social settings, or
+        </span>
+        <span className="block">even a simple conversation.</span>
+      </p>
+      <p className={`${textClass} hidden lg:block`}>
+        <span className="lg:whitespace-nowrap">
+          Social anxiety is more than shyness. It&apos;s the fear of being judged,
+        </span>
+        <br />
+        misread, or rejected in meetings, social settings, or even{" "}
+        <span className="lg:whitespace-nowrap">a</span>
+        <br />
+        simple conversation.
+      </p>
+    </>
+  );
+}
+
+function SocialDetailTitle() {
+  return (
+    <>
+      <span className="block min-w-0 max-w-full text-[clamp(1.125rem,5.65vw,1.5rem)] leading-8 lg:hidden">
+        <span className="block">
+          Social Anxiety:{" "}
+          <span className="whitespace-nowrap">When&nbsp;connection</span>
+        </span>
+        <span className="block">Feels Scary</span>
+      </span>
+      <span className="hidden lg:inline">
+        Social Anxiety: When connection Feels Scary
+      </span>
+    </>
+  );
+}
+
+function DetailPanel({ card }) {
+  return (
+    <div className="rounded-[16px] bg-[#6FE0D1] px-6 py-12 lg:px-[24px] lg:py-[48px]">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-[58px]">
+        <div className="flex min-w-0 flex-col gap-6">
           <h3
-            className={`font-miniature text-[24px] leading-8 ${card.text}`}
+            className={`min-w-0 max-w-full font-miniature text-black ${
+              card.key === "social"
+                ? "lg:text-[32px] lg:leading-10"
+                : "text-[28px] leading-9 lg:text-[32px] lg:leading-10"
+            }`}
           >
-            {card.title}
+            {card.key === "social" ? <SocialDetailTitle /> : card.detailTitle}
           </h3>
-          <p
-            className={`text-[16px] font-medium leading-6 ${card.text}`}
-          >
-            {card.subtitle}
-          </p>
+          {card.key === "social" ? (
+            <SocialDetailDescription />
+          ) : (
+            <p className="font-inter text-[16px] leading-6 text-black lg:text-[18px] lg:leading-[26px]">
+              {card.detailDescription}
+            </p>
+          )}
         </div>
+
         <ul className="flex flex-col gap-3">
-          {card.points.map((point) => (
-            <li key={point} className="flex items-start gap-2">
+          {card.points.map((point, index) => (
+            <li key={point} className="flex items-start gap-4">
               <img
-                src="/images/anxiety-page/v2/bullet-circle.svg"
+                src="/images/anxiety-page/v2/check-one.svg"
                 alt=""
-                className="h-[29px] w-4 shrink-0"
+                className="mt-0.5 size-6 shrink-0"
+                aria-hidden="true"
+                draggable={false}
               />
-              <span className={`text-[16px] leading-6 ${card.text}`}>
-                {point}
-              </span>
+              {card.key === "social" ? (
+                <>
+                  <span className="font-inter text-[16px] leading-6 text-black lg:hidden">
+                    <span className="block">
+                      {SOCIAL_POINTS_MOBILE[index][0]}
+                    </span>
+                    <span className="block">
+                      {SOCIAL_POINTS_MOBILE[index][1]}
+                    </span>
+                  </span>
+                  <span className="hidden font-inter text-[18px] leading-[26px] text-black lg:inline">
+                    {point}
+                  </span>
+                </>
+              ) : (
+                <span className="font-inter text-[16px] leading-6 text-black lg:text-[18px] lg:leading-[26px]">
+                  {point}
+                </span>
+              )}
             </li>
           ))}
         </ul>
@@ -122,221 +294,94 @@ function MobileBarrierCard({ card }) {
   );
 }
 
-function DesktopBarrierCard({ card }) {
-  return (
-    <div
-      className={`${card.bg} flex h-full w-full flex-col rounded-[30px] border border-black px-5 py-8`}
-    >
-      <div className="mb-8 flex flex-col gap-2">
-        <h3
-          className={`font-miniature text-[32px] leading-10 ${card.text}`}
-        >
-          {card.title}
-        </h3>
-        <p
-          className={`text-[18px] font-medium leading-[26px] ${card.text}`}
-        >
-          {card.subtitle}
-        </p>
-      </div>
-      <ul className="flex flex-col gap-3">
-        {card.points.map((point) => (
-          <li key={point} className="flex items-start gap-4">
-            <img
-              src="/images/anxiety-page/v2/bullet-circle.svg"
-              alt=""
-              className="mt-1 h-[29px] w-[19px] shrink-0"
-            />
-            <span className={`text-[18px] leading-[26px] ${card.text}`}>
-              {point}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function DesktopSlider() {
-  const [api, setApi] = useState(null);
-  const [canScrollNext, setCanScrollNext] = useState(false);
-  const [canScrollPrev, setCanScrollPrev] = useState(false);
-
-  const onSelect = useCallback(() => {
-    if (!api) return;
-    setCanScrollNext(api.canScrollNext());
-    setCanScrollPrev(api.canScrollPrev());
-  }, [api]);
-
-  useEffect(() => {
-    if (!api) return;
-    onSelect();
-    api.on("reInit", onSelect);
-    api.on("select", onSelect);
-    return () => {
-      api.off("select", onSelect);
-    };
-  }, [api, onSelect]);
+function MobileView({ activeKey, setActiveKey }) {
+  const active = cards.find((c) => c.key === activeKey) ?? cards[0];
 
   return (
-    <div className="mx-auto flex w-full max-w-[1408px] items-center">
-      <button
-        type="button"
-        onClick={() => api?.scrollPrev()}
-        disabled={!canScrollPrev}
-        className="flex h-16 w-16 shrink-0 items-center justify-center disabled:pointer-events-none disabled:opacity-0"
-        aria-label="Previous slide"
-      >
-        <img
-          src="/images/anxiety-page/v2/slider-arrow.svg"
-          alt=""
-          className="size-14 rotate-180 object-contain"
-        />
-      </button>
-
-      <div className="w-[1280px] max-w-full shrink-0 overflow-hidden">
+    <div className="flex w-full flex-col items-center gap-8">
+      <div className="w-full max-w-[350px] overflow-hidden">
         <Carousel
           opts={{ align: "start", loop: false, containScroll: "trimSnaps" }}
-          setApi={setApi}
           showDots={false}
           className="w-full"
         >
-          <CarouselContent className="ml-0 gap-6">
-            {cards.map((card, index) => (
-              <CarouselItem
-                key={index}
-                className="basis-[calc((100%-1.5rem)/2)] pl-0 lg:basis-[calc((100%-3rem)/3)]"
-              >
-                <DesktopBarrierCard card={card} />
+          <CarouselContent className="ml-0 gap-4">
+            {cards.map((card) => (
+              <CarouselItem key={card.key} className="basis-[288px] pl-0">
+                <div onClick={() => setActiveKey(card.key)}>
+                  <TypeCard
+                    card={card}
+                    isActive={card.key === activeKey}
+                    onClick={() => setActiveKey(card.key)}
+                  />
+                </div>
               </CarouselItem>
             ))}
           </CarouselContent>
         </Carousel>
       </div>
 
-      <button
-        type="button"
-        onClick={() => api?.scrollNext()}
-        disabled={!canScrollNext}
-        className="flex h-16 w-16 shrink-0 items-center justify-center disabled:pointer-events-none disabled:opacity-0"
-        aria-label="Next slide"
-      >
-        <img
-          src="/images/anxiety-page/v2/slider-arrow.svg"
-          alt=""
-          className="size-14 object-contain"
-        />
-      </button>
-    </div>
-  );
-}
-
-function MobileSlider() {
-  const [api, setApi] = useState(null);
-  const [canScrollNext, setCanScrollNext] = useState(false);
-  const [canScrollPrev, setCanScrollPrev] = useState(false);
-
-  const onSelect = useCallback(() => {
-    if (!api) return;
-    setCanScrollNext(api.canScrollNext());
-    setCanScrollPrev(api.canScrollPrev());
-  }, [api]);
-
-  useEffect(() => {
-    if (!api) return;
-    onSelect();
-    api.on("reInit", onSelect);
-    api.on("select", onSelect);
-    return () => {
-      api.off("select", onSelect);
-    };
-  }, [api, onSelect]);
-
-  return (
-    <div className="flex flex-col items-center gap-5">
-      <div className="w-[350px] max-w-full overflow-hidden">
-        <Carousel
-          opts={{ align: "start", loop: false, containScroll: "trimSnaps" }}
-          setApi={setApi}
-          showDots={false}
-          className="w-full"
-        >
-          <CarouselContent className="ml-0 gap-6">
-            {cards.map((card, index) => (
-              <CarouselItem key={index} className="basis-[340px] pl-0">
-                <MobileBarrierCard card={card} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
-      </div>
-
-      <div className="flex items-center justify-center gap-4">
-        <button
-          type="button"
-          onClick={() => api?.scrollPrev()}
-          disabled={!canScrollPrev}
-          className="flex size-8 items-center justify-center disabled:opacity-40"
-          aria-label="Previous slide"
-        >
-          <img
-            src="/images/anxiety-page/v2/slider-arrow.svg"
-            alt=""
-            className="size-8 rotate-180 object-contain"
-          />
-        </button>
-        <button
-          type="button"
-          onClick={() => api?.scrollNext()}
-          disabled={!canScrollNext}
-          className="flex size-8 items-center justify-center disabled:opacity-40"
-          aria-label="Next slide"
-        >
-          <img
-            src="/images/anxiety-page/v2/slider-arrow.svg"
-            alt=""
-            className="size-8 object-contain"
-          />
-        </button>
+      <div className="w-full px-1">
+        <DetailPanel card={active} />
       </div>
     </div>
   );
 }
 
 export default function BreakingBarriers() {
-  return (
-    <section className="bg-[#F4EFEA]">
-      {/* Mobile — Figma 4777:16257 */}
-      <div className="flex flex-col items-center gap-6 px-5 py-8 md:hidden">
-        <div className="relative w-full text-center">
-          <h2 className="font-miniature text-[42px] font-bold leading-[50px] text-black">
-            <span className="text-[#FF6F61]">Breaking Barriers:</span>{" "}
-            <br />
-            Life Coaching Built Around Anxiety and the Challenges It Brings
-          </h2>
-        </div>
+  const desktopTop = useMemo(() => cards.slice(0, 4), []);
+  const desktopBottom = useMemo(() => cards.slice(4, 8), []);
+  const [activeKey, setActiveKey] = useState("social");
+  const active = useMemo(
+    () => cards.find((c) => c.key === activeKey) ?? cards[0],
+    [activeKey],
+  );
 
-        <MobileSlider />
+  return (
+    <section className="bg-white">
+      {/* Mobile */}
+      <div className="flex flex-col items-center gap-8 px-5 py-12 lg:hidden">
+        <h2 className="max-w-[520px] text-center font-miniature text-[36px] font-bold leading-[44px] text-black">
+          <span className="block">Which type of</span>
+          <span className="block">anxiety feels most</span>
+          <span className="block font-miniature italic text-[#FF6F61]">
+            familiar?
+          </span>
+        </h2>
+        <MobileView activeKey={activeKey} setActiveKey={setActiveKey} />
       </div>
 
-      {/* Desktop — unchanged */}
-      <div className="hidden py-[100px] md:block">
-        <div className="relative mx-auto mb-16 max-w-[1080px] px-[114px] text-center">
-          <h2 className="font-miniature text-[54px] font-bold leading-[62px] text-black">
-            <span className="text-[#FF6F61]">Breaking Barriers:</span>
-            <br />
-            Life Coaching Built Around Anxiety and the Challenges It Brings
-          </h2>
-          <img
-            src="/images/anxiety-page/v2/highlight-scribble-v2.svg"
-            alt=""
-            className="pointer-events-none absolute top-0 right-[20%] h-[60px] w-[100px] rotate-[12deg]"
-            aria-hidden="true"
-          />
-        </div>
+      {/* Desktop — Figma 4920:569 */}
+      <div className="hidden flex-col items-center gap-16 px-[114px] py-[100px] lg:flex">
+        <h2 className="w-full max-w-[800px] text-center font-miniature text-[54px] font-bold leading-[62px] text-black">
+          Which type of anxiety feels most{" "}
+          <span className="font-miniature italic text-[#FF6F61]">familiar?</span>
+        </h2>
 
-        <div className="mx-auto w-full max-w-[1408px] overflow-hidden">
-          <DesktopSlider />
+        <div className="flex w-full max-w-[1212px] flex-col gap-5">
+          <div className="grid grid-cols-4 gap-5">
+            {desktopTop.map((card) => (
+              <TypeCard
+                key={card.key}
+                card={card}
+                isActive={card.key === activeKey}
+                onClick={() => setActiveKey(card.key)}
+              />
+            ))}
+          </div>
+
+          <DetailPanel card={active} />
+
+          <div className="grid grid-cols-4 gap-5">
+            {desktopBottom.map((card) => (
+              <TypeCard
+                key={card.key}
+                card={card}
+                isActive={card.key === activeKey}
+                onClick={() => setActiveKey(card.key)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
