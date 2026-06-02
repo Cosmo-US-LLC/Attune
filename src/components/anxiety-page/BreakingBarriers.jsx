@@ -1,5 +1,7 @@
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+
+const SLIDER_ARROW = "/images/anxiety-page/v2/slider-arrow.svg";
 
 const ICON_BASE = "/images/anxiety-page/v2/barriers";
 
@@ -294,31 +296,104 @@ function DetailPanel({ card }) {
   );
 }
 
+function CarouselNavButton({ direction, onClick, className }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={className}
+      aria-label={
+        direction === "next" ? "Next anxiety type" : "Previous anxiety type"
+      }
+    >
+      <img
+        src={SLIDER_ARROW}
+        alt=""
+        className={`size-11 object-contain sm:size-12 ${
+          direction === "prev" ? "rotate-180" : ""
+        }`}
+        draggable={false}
+        aria-hidden="true"
+      />
+    </button>
+  );
+}
+
 function MobileView({ activeKey, setActiveKey }) {
+  const [api, setApi] = useState(null);
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(true);
+
   const active = cards.find((c) => c.key === activeKey) ?? cards[0];
+
+  const onSelect = useCallback(() => {
+    if (!api) return;
+    setCanScrollPrev(api.canScrollPrev());
+    setCanScrollNext(api.canScrollNext());
+    const index = api.selectedScrollSnap();
+    const card = cards[index];
+    if (card) setActiveKey(card.key);
+  }, [api, setActiveKey]);
+
+  useEffect(() => {
+    if (!api) return;
+    onSelect();
+    api.on("reInit", onSelect);
+    api.on("select", onSelect);
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [api, onSelect]);
+
+  const scrollNext = useCallback(() => {
+    api?.scrollNext();
+  }, [api]);
+
+  const scrollPrev = useCallback(() => {
+    api?.scrollPrev();
+  }, [api]);
 
   return (
     <div className="flex w-full flex-col items-center gap-8">
-      <div className="w-full max-w-[350px] overflow-hidden">
+      <div className="relative w-full max-w-[350px]">
         <Carousel
           opts={{ align: "start", loop: false, containScroll: "trimSnaps" }}
+          setApi={setApi}
           showDots={false}
           className="w-full"
         >
           <CarouselContent className="ml-0 gap-4">
             {cards.map((card) => (
               <CarouselItem key={card.key} className="basis-[288px] pl-0">
-                <div onClick={() => setActiveKey(card.key)}>
-                  <TypeCard
-                    card={card}
-                    isActive={card.key === activeKey}
-                    onClick={() => setActiveKey(card.key)}
-                  />
-                </div>
+                <TypeCard
+                  card={card}
+                  isActive={card.key === activeKey}
+                  onClick={() => {
+                    setActiveKey(card.key);
+                    const index = cards.findIndex((c) => c.key === card.key);
+                    if (index >= 0) api?.scrollTo(index);
+                  }}
+                />
               </CarouselItem>
             ))}
           </CarouselContent>
         </Carousel>
+
+        {canScrollPrev ? (
+          <CarouselNavButton
+            direction="prev"
+            onClick={scrollPrev}
+            className="absolute left-[-6px] top-1/2 z-10 -translate-y-1/2"
+          />
+        ) : null}
+
+        {canScrollNext ? (
+          <CarouselNavButton
+            direction="next"
+            onClick={scrollNext}
+            className="absolute right-[-6px] top-1/2 z-10 -translate-y-1/2"
+          />
+        ) : null}
       </div>
 
       <div className="w-full px-1">
