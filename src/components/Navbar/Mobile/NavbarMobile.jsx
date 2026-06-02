@@ -15,8 +15,14 @@ import CountdownTimer from "../../ui/CountdownTimer";
 function NavbarMobile() {
   const [sideOpen, setSideOpen] = useState(false);
   const location = useLocation();
-
   const currentPath = location.pathname;
+  const NewPagesNavbar = [
+    "/",
+    "/contact-us",
+    "/about-us",
+    "/faqs",
+  ].includes(currentPath);
+
 
   useEffect(() => {
     if (location.hash) {
@@ -51,9 +57,9 @@ function NavbarMobile() {
 
   return (
     <>
-      <div className={`${currentPath === "/" ? "pb-[9.5rem]" : "pb-[3.5rem]"}`}>
+      <div className={`${currentPath === "/" ? "pb-[3.5rem]" : "pb-[3.5rem]"}`}>
         <div className="fixed top-0 w-[100%] z-[99]">
-          {currentPath === "/" && <CountdownTimer />}
+          {/* {currentPath === "/" && <CountdownTimer />} */}
           <div className="bg-white h-[68px] flex justify-between items-center py-[14px] px-5">
             <div className="flex gap-3 relative z-[100]">
               <Sheet open={sideOpen} onOpenChange={setSideOpen}>
@@ -115,91 +121,117 @@ function NavbarMobile() {
                         </div>
                         <div className="relative mt-8">
                           <div className="flex flex-col gap-4 font-[500]">
-                            {currentPath !== "/privacy-policy" &&
-                              currentPath !== "/terms-of-use" && (
-                                <Link
-                                  smooth
-                                  to={`${window.location.pathname}#mobile-path-to-support`}
-                                  onClick={(e) => {
-                                    handleClick("mobile-path-to-support", 50);
-                                  }}
-                                >
-                                  Path To Support
-                                </Link>
-                              )}
 
-                            {currentPath !== "/privacy-policy" &&
-                              currentPath !== "/terms-of-use" && (
-                                <Link
-                                  smooth
-                                  to={`${window.location.pathname}#mobile-how-it-works`}
-                                  onClick={(e) => {
-                                    handleClick("mobile-how-it-works", 50);
-                                  }}
-                                >
-                                  How It Works
+                            {/* ── Life Coaching links ── */}
+                            {NewPagesNavbar && (
+                              <>
+                                {[
+                                  { label: "How It Works", id: "how-it-works" },
+                                  { label: "Take the Quiz", id: "quiz" },
+                                  { label: "Pricing", id: "pricing" },
+                                ].map(({ label, id }) => (
+                                  <Link
+                                    key={id}
+                                    smooth
+                                    to={`/#${id}`}
+                                    onClick={() => handleClick(id, 50)}
+                                  >
+                                    {label}
+                                  </Link>
+                                ))}
+                                <Link to="/about-us" onClick={() => setSideOpen(false)}>
+                                  About Us
                                 </Link>
-                              )}
-                            {currentPath !== "/privacy-policy" &&
-                              currentPath !== "/terms-of-use" && (
-                                <Link
-                                  smooth
-                                  to={`${window.location.pathname}#mobile-our-approach`}
-                                  onClick={(e) => {
-                                    handleClick("mobile-our-approach", 50);
-                                  }}
-                                >
-                                  Our Approach
-                                </Link>
-                              )}
-                            {currentPath !== "/listener-recruitment" &&
-                              currentPath !== "/privacy-policy" &&
-                              currentPath !== "/terms-of-use" && (
-                                <Link
-                                  smooth
-                                  to={`${window.location.pathname}#mobile-FAQs`}
-                                  onClick={(e) => {
-                                    handleClick("mobile-FAQs", 50);
-                                  }}
-                                >
+                                <Link to="/faqs" onClick={() => setSideOpen(false)}>
                                   FAQs
                                 </Link>
-                              )}
-                            <div className="flex flex-row items-center justify-center gap-2">
-                              <a href="https://innovacare.tech/listenerhub/login">
-                                <Button className="bg-[#FFF] text-[#5200FF] border border-[#5200FF] hover:border-[#FFF] hover:bg-[[#FF6F61] rounded-full text-[15px]">
-                                  Log In
-                                </Button>
-                              </a>
-                              {/* <a
-                                href={
-                                  currentPath === "/listener-recruitment"
-                                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                                    : "https://signup.feelattune.com/sign-up"
-                                }
-                              >
-                                <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                                  {currentPath === "/listener-recruitment"
-                                    ? "Apply Now"
-                                    : "Connect Now"}
-                                </Button>
-                              </a> */}
-                              <a
-                                href={
-                                  currentPath === "/"
-                                    ? "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
-                                    : currentPath === "/listener-recruitment"
-                                    ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
-                                    : "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
-                                }
-                              >
-                                <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                                  {currentPath === "/listener-recruitment"
-                                    ? "Apply Now"
-                                    : "Connect Now"}
-                                </Button>
-                              </a>
-                            </div>
+                                <div className="flex justify-center">
+                                  <Link to ="/contact-us">
+                                    <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                                      Contact Us
+                                    </Button>
+                                  </Link>
+                                </div>
+                              </>
+                            )}
+
+                            {/* ── Default links ── */}
+                            {!NewPagesNavbar && (
+                              <>
+                                {currentPath !== "/privacy-policy" &&
+                                  currentPath !== "/terms-of-use" && (
+                                    <Link
+                                      smooth
+                                      to={`${window.location.pathname}#mobile-path-to-support`}
+                                      onClick={(e) => {
+                                        handleClick("mobile-path-to-support", 50);
+                                      }}
+                                    >
+                                      Path To Support
+                                    </Link>
+                                  )}
+                                {currentPath !== "/privacy-policy" &&
+                                  currentPath !== "/terms-of-use" && (
+                                    <Link
+                                      smooth
+                                      to={`${window.location.pathname}#mobile-how-it-works`}
+                                      onClick={(e) => {
+                                        handleClick("mobile-how-it-works", 50);
+                                      }}
+                                    >
+                                      How It Works
+                                    </Link>
+                                  )}
+                                {currentPath !== "/privacy-policy" &&
+                                  currentPath !== "/terms-of-use" && (
+                                    <Link
+                                      smooth
+                                      to={`${window.location.pathname}#mobile-our-approach`}
+                                      onClick={(e) => {
+                                        handleClick("mobile-our-approach", 50);
+                                      }}
+                                    >
+                                      Our Approach
+                                    </Link>
+                                  )}
+                                {currentPath !== "/listener-recruitment" &&
+                                  currentPath !== "/privacy-policy" &&
+                                  currentPath !== "/terms-of-use" && (
+                                    <Link to="/about-us" onClick={() => setSideOpen(false)}>
+                                      About Us
+                                    </Link>
+                                  )}
+                                {currentPath !== "/listener-recruitment" &&
+                                  currentPath !== "/privacy-policy" &&
+                                  currentPath !== "/terms-of-use" && (
+                                    <Link to="/faqs" onClick={() => setSideOpen(false)}>
+                                      FAQs
+                                    </Link>
+                                  )}
+                                <div className="flex flex-row items-center justify-center gap-2">
+                                  <a href="https://innovacare.tech/listenerhub/login">
+                                    <Button className="bg-[#FFF] text-[#5200FF] border border-[#5200FF] hover:border-[#FFF] hover:bg-[[#FF6F61] rounded-full text-[15px]">
+                                      Log In
+                                    </Button>
+                                  </a>
+                                  <a
+                                    href={
+                                      currentPath === "/"
+                                        ? "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
+                                        : currentPath === "/listener-recruitment"
+                                        ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                                        : "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
+                                    }
+                                  >
+                                    <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                                      {currentPath === "/listener-recruitment"
+                                        ? "Apply Now"
+                                        : "Connect Now"}
+                                    </Button>
+                                  </a>
+                                </div>
+                              </>
+                            )}
 
                             {currentPath === "/listener-recruitment" && (
                               <Link
@@ -294,19 +326,39 @@ function NavbarMobile() {
 
             <a
               href={
-                currentPath === "/"
-                  ? "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
+                currentPath === "/listener-recruitment"
+                  ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
+                  : "/contact-us"
+              }
+            >
+              <Button className="bg-[#FF6F61] rounded-full text-[15px]">
+                {currentPath === "/listener-recruitment"
+                  ? "Apply Now"
+                  : NewPagesNavbar
+                  ? "Contact Us"
+                  : "Connect Now"}
+              </Button>
+            </a>
+
+            {/* <a
+              href={
+                NewPagesNavbar
+                  ? currentPath === "/"
+                    ? "/signup-anxiety"
+                    : "https://signup.feelattune.com/sign-up"
                   : currentPath === "/listener-recruitment"
                   ? "https://api.leadconnectorhq.com/widget/survey/muCacUA6u8Oe725E99df"
                   : "https://signup.feelattune.com/sign-up?_gl=1*46lrc9*_gcl_au*NDQyODE2NjgyLjE3NDY0NTQ3Njc.*_ga*MjEyMDE1OTQyMi4xNzM4NTIxNjMz*_ga_2MGYLNPB9W*czE3NDkwMDA4MzYkbzEwNiRnMCR0MTc0OTAwMDgzNiRqNjAkbDAkaDA"
               }
             >
               <Button className="bg-[#FF6F61] rounded-full text-[15px]">
-                {currentPath === "/listener-recruitment"
+                {NewPagesNavbar
+                  ? "Get Started"
+                  : currentPath === "/listener-recruitment"
                   ? "Apply Now"
                   : "Connect Now"}
               </Button>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

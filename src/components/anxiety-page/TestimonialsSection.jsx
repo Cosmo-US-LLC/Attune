@@ -1,52 +1,62 @@
-import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-
 const testimonials = [
   {
-    name: "Jake, 24",
-    bg: "bg-[#e5ff7d]",
-    photo: "/images/anxiety-page/testimonial-jake.png",
+    starColor: "bg-[#F097DD]",
     quote:
       "Social situations used to drain me completely. I'd cancel plans just to avoid the anxiety of showing up. My life coach helped me understand what was actually driving it and gave me real ways to move through it, not just cope with it.",
+    name: "Jake, 24",
+    role: "Career change client",
   },
   {
-    name: "Emma, 34",
-    bg: "bg-[#f097dd]",
-    photo: "/images/anxiety-page/testimonial-priya.png",
+    starColor: "bg-[#00E4C5]",
     quote:
-      "I was lying awake every night running through worst-case financial scenarios. It was affecting my work, my relationship, everything. Life coaching gave me the clarity to stop spiraling and start making decisions from a calmer place.",
+      "I was lying awake every night running through worst-case financial scenarios, it was affecting everything. Life coaching gave me the clarity to stop spiraling and make decisions from a calmer place.",
+    name: "Priya, 34",
+    role: "Entrepreneur",
   },
   {
-    name: "Marcus, 19",
-    bg: "bg-[#ff6f61]",
-    photo: "/images/anxiety-page/testimonial-marcus.png",
+    starColor: "bg-[#96ADF0]",
     quote:
       "Exam season felt like it was going to break me. The pressure I put on myself was relentless. Working with my life coach didn't just help me get through it, it changed how I talk to myself when things get hard.",
+    name: "Marcus, 19",
+    role: "Life transition client",
   },
 ];
 
-function TestimonialCard({ t }) {
+function StarRow({ color }) {
   return (
-    <div
-      className={`${t.bg} border border-black rounded-[30px] px-[24px] py-[32px] flex flex-col items-start gap-[48px] h-full`}
-    >
-      {/* Photo */}
-      <img
-        src={t.photo}
-        alt={t.name}
-        className="w-[114px] h-[114px] rounded-full object-cover"
-      />
+    <div className="flex items-center gap-1">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <div
+          key={i}
+          className={`${color} flex size-[24px] items-center justify-center rounded-full`}
+        >
+          <img
+            src="/images/anxiety-page/v2/testimonial-star.svg"
+            alt=""
+            className="size-4"
+            aria-hidden="true"
+          />
+        </div>
+      ))}
+    </div>
+  );
+}
 
-      {/* Name + Quote */}
-      <div className="flex flex-col gap-[24px]">
-        <h3 className="font-miniature text-[40px] leading-[48px] text-black">
-          {t.name}
-        </h3>
-        <p className="text-[16px] leading-[22px] text-black">
-          &ldquo;{t.quote}&rdquo;
+function TestimonialCard({ testimonial }) {
+  return (
+    <div className="flex flex-1 flex-col justify-between gap-8 overflow-hidden rounded-[30px] bg-[#F4EFEA] px-5 py-6 lg:gap-12 lg:px-6 lg:py-8">
+      <div className="flex flex-col gap-[13px]">
+        <StarRow color={testimonial.starColor} />
+        <p className="text-[16px] font-medium leading-[24px] text-[rgba(13,13,13,0.7)] lg:text-[18px] lg:leading-[26px]">
+          &ldquo;{testimonial.quote}&rdquo;
+        </p>
+      </div>
+      <div className="flex flex-col">
+        <p className="font-miniature text-[20px] font-bold capitalize leading-[28px] text-[#0D0D0D] lg:text-[24px] lg:font-normal lg:leading-8">
+          {testimonial.name}
+        </p>
+        <p className="text-[14px] leading-[20px] text-[rgba(13,13,13,0.7)]">
+          {testimonial.role}
         </p>
       </div>
     </div>
@@ -54,44 +64,18 @@ function TestimonialCard({ t }) {
 }
 
 function TestimonialsSection() {
-  const [swiperInstance, setSwiperInstance] = useState(null);
-
   return (
-    <section className="bg-white px-[60px] py-[100px] max-md:px-[20px] max-md:py-[60px]">
-      <div className="max-w-[1440px] mx-auto px-[48px] max-md:px-0">
-        {/* Header row */}
-        <div className="flex items-center justify-between mb-[64px]">
-          <h2 className="font-miniature text-[64px] leading-[1] text-black max-md:text-[40px]">
-            Testimonials
-          </h2>
+    <section className="bg-white px-5 py-12 lg:px-[144px] lg:py-20">
+      <div className="mx-auto flex w-full max-w-[1280px] flex-col items-center gap-8 lg:gap-16">
+        <h2 className="max-w-[1006px] text-center font-bold font-miniature text-[42px] leading-[50px] text-[#0D0D0D] lg:text-[54px] lg:leading-[62px]">
+          <span>What people say </span>
+          <span className="text-[#FF6F61]">after they start.</span>
+        </h2>
 
-        </div>
-
-        {/* Desktop: 3 cards in a row */}
-        <div className="hidden md:flex gap-[24px]">
-          {testimonials.map((t, i) => (
-            <div key={i} className="flex-1">
-              <TestimonialCard t={t} />
-            </div>
+        <div className="flex w-full flex-col items-stretch gap-3.5 lg:flex-row lg:gap-4">
+          {testimonials.map((testimonial) => (
+            <TestimonialCard key={testimonial.name} testimonial={testimonial} />
           ))}
-        </div>
-
-        {/* Mobile: Swiper with 1 card */}
-        <div className="md:hidden">
-          <Swiper
-            modules={[Pagination]}
-            pagination={{ clickable: true }}
-            spaceBetween={16}
-            slidesPerView={1}
-            onSwiper={setSwiperInstance}
-            className="pb-12"
-          >
-            {testimonials.map((t, i) => (
-              <SwiperSlide key={i}>
-                <TestimonialCard t={t} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
         </div>
       </div>
     </section>

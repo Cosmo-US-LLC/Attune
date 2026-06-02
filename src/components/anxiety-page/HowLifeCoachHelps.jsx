@@ -1,46 +1,171 @@
 import { Link } from "react-router-dom";
+
+const ICON_BASE = "/images/anxiety-page/v2/coach-help";
+
+const items = [
+  {
+    icon: `${ICON_BASE}/goal.svg`,
+    iconClass: "size-8",
+    bg: "#E5FF7D",
+    title: "Identify your triggers",
+   description: (
+  <>
+    Understand what's actually driving your anxiety so you can respond
+    with intention, not just react.
+  </>
+),
+  },
+  {
+    icon: `${ICON_BASE}/chess.svg`,
+    iconClass: "size-8",
+    bg: "#96ADF0",
+    title: "Build practical strategies",
+   description: (
+  <>
+    Get personalised tools that fit
+    your real life - not generic advice
+    you've already tried and 
+    abandoned.
+  </>
+),
+  },
+  {
+    icon: `${ICON_BASE}/momentum.svg`,
+    iconClass: "size-8",
+    bg: "#FFC70F",
+    title: "Rebuild confidence & momentum",
+    mobileTitleLines: ["Rebuild confidence &", "momentum"],
+    description: (
+  <>
+    Move past the thoughts that keep
+    you stuck and take real steps
+    toward the life you want.
+  </>
+),
+  },
+  {
+    icon: `${ICON_BASE}/resilience.svg`,
+    iconClass: "size-10",
+    bg: "#00E4C6",
+    title: "Create lasting resilience",
+    description: (
+  <>
+    Anxiety doesn't disappear 
+    overnight.
+    
+    Your coach helps you
+     grow stronger with every
+    
+    session
+     not just feel better in the moment.
+  </>
+),
+  },
+];
+
+function BenefitItem({ item }) {
+  return (
+    <div className="flex w-full items-start gap-8">
+      <div
+        className="flex size-16 shrink-0 items-center justify-center rounded border border-black"
+        style={{ backgroundColor: item.bg }}
+      >
+        <img
+          src={item.icon}
+          alt=""
+          className={`${item.iconClass} object-contain`}
+          aria-hidden="true"
+          draggable={false}
+        />
+      </div>
+      <div className="flex min-w-0 flex-1 flex-col gap-3">
+        <h3 className="font-miniature text-[28px] leading-9 text-black lg:text-[32px] lg:leading-10">
+          {item.mobileTitleLines ? (
+            <>
+              <span className="block lg:hidden">{item.mobileTitleLines[0]}</span>
+              <span className="block lg:hidden">{item.mobileTitleLines[1]}</span>
+              <span className="hidden lg:inline">{item.title}</span>
+            </>
+          ) : (
+            item.title
+          )}
+        </h3>
+        <p className="font-inter text-[16px] leading-6 text-black lg:text-[18px] lg:leading-[26px]">
+          {item.description}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function BenefitsList() {
+  return (
+    <div className="flex w-full flex-col gap-6">
+      {items.map((item, index) => (
+        <div key={item.title} className="flex flex-col gap-6">
+          <BenefitItem item={item} />
+          {index < items.length - 1 ? (
+            <div className="h-px w-full bg-black/10" aria-hidden="true" />
+          ) : null}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function HowLifeCoachHelps() {
   return (
-    <section id="our-approach" className="relative flex items-center justify-end px-[60px] py-[100px] min-h-[700px] max-lg:flex-col max-lg:px-4 max-lg:py-12 max-lg:bg-[#95adf0]">
-      {/* Background: woman image + gradient overlay */}
-      <div className="absolute inset-0 pointer-events-none max-lg:hidden" aria-hidden="true">
-        <div className="absolute inset-0 overflow-hidden">
-          <img
-            src="/images/anxiety-page/listener-woman.jpg"
-            alt=""
-            className="absolute h-full left-[-13%] max-w-none top-0 w-[87%] object-cover"
-          />
+    <section id="our-approach" className="bg-[#F4EFEA]">
+      {/* Mobile */}
+      <div className="flex flex-col gap-10 px-5 py-12 lg:hidden">
+        <div className="flex flex-col gap-6">
+          <h2 className="font-miniature text-[36px] font-bold leading-[44px] text-black">
+            <span className="block">How life coach</span>
+            <span className="block">
+              helps with{" "}
+              <span className="font-miniature italic text-[#FF6F61]">
+                anxiety
+              </span>
+            </span>
+          </h2>
+          <p className="font-inter text-[16px] leading-6 text-[rgba(13,13,13,0.7)]">
+            Anxiety coaching isn&apos;t about eliminating the feeling. It&apos;s
+            about changing your relationship <br /> with it so it no longer runs the
+            show.
+          </p>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-l from-[#95adf0] from-[35%] to-[54%] to-transparent" />
+        <BenefitsList />
+        <Link
+          to="/signup-anxiety"
+          className="inline-flex w-full items-center justify-center rounded-full bg-[#5200FF] px-5 py-3.5 text-[14px] font-semibold leading-6 text-white transition-opacity hover:opacity-90"
+        >
+          Book a Free 15-Min Match Call →
+        </Link>
       </div>
 
-      {/* White card on the right */}
-      <div className="bg-white border border-black rounded-[48px] px-8 py-12 relative w-full max-w-[580px] max-lg:max-w-full">
-        <h2 className="font-miniature text-[64px] leading-[72px] text-black mb-12 max-lg:text-[36px] max-lg:leading-[40px] max-lg:mb-8">
-          How a Life Coach Can Help
-        </h2>
-
-        <div className="flex flex-col gap-6">
-          {[
-            { lead: "Identify your anxiety triggers:", desc: "Understand what's driving your stress so you can respond with intention, not just reaction." },
-            { lead: "Build practical coping strategies:", desc: "Get personalized tools, not generic advice, that fit into your real life and actually work." },
-            { lead: "Rebuild confidence and momentum:", desc: "Move past the thoughts that keep you stuck and take real steps toward the life you want." },
-            { lead: "Create lasting resilience:", desc: "Anxiety doesn't disappear overnight. Your coach helps you grow stronger with every session, not just feel better in the moment." },
-          ].map((item, i) => (
-            <div key={i} className="flex items-start gap-4">
-              <img src="/images/anxiety-page/tick-circle.svg" alt="" className="w-7 h-7 flex-shrink-0 mt-0.5" />
-              <p className="text-black text-[16px] leading-[24px]">
-                <span className="font-bold">{item.lead} </span>
-                {item.desc}
-              </p>
-            </div>
-          ))}
+      {/* Desktop — Figma 4925:5964 */}
+      <div className="mx-auto hidden max-w-[1440px] items-center gap-20 px-[114px] py-[100px] lg:flex">
+        <div className="flex w-full max-w-[566px] flex-1 flex-col gap-6">
+          <h2 className="font-miniature text-[54px] font-bold leading-[62px] text-black">
+            How life coach helps with{" "}
+            <span className="font-miniature italic text-[#FF6F61]">anxiety</span>
+          </h2>
+          <p className="font-inter text-[18px] leading-[26px] text-[rgba(13,13,13,0.7)]">
+            Anxiety coaching isn&apos;t about eliminating the feeling. It&apos;s
+            about changing your relationship with it so it no longer runs the
+            show.
+          </p>
+          <Link
+            to="/signup-anxiety"
+            className="inline-flex w-fit items-center justify-center rounded-[39px] bg-[#5200FF] px-6 py-6 text-[20px] font-semibold capitalize tracking-[0.72px] text-white transition-opacity hover:opacity-90"
+          >
+            Book a Free 15-Min Match Call →
+          </Link>
         </div>
 
-        <Link to="/signup-anxiety" className="mt-12 inline-flex items-center gap-2 bg-[#5200FF] text-white rounded-full px-8 py-2.5 text-[16px] font-medium hover:opacity-90 transition-opacity max-lg:mt-8">
-          Book a Free 15-Min Discovery Call
-          <img src="/images/anxiety-page/arrow-right-cta.svg" alt="" className="w-5 h-5" />
-        </Link>
+        <div className="flex w-full max-w-[566px] flex-1 flex-col">
+          <BenefitsList />
+        </div>
       </div>
     </section>
   );

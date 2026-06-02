@@ -23,7 +23,7 @@ function FooterMobile() {
   return (
     <div className="relative min-h-[738px] bg-[#E5DDD4] px-5 py-[30px] overflow-hidden">
       <div className="relative z-10">
-        <div className="relative flex flex-row items-start justify-start">
+        <div className="flex relative flex-row justify-start items-start">
           <h1 className="text-left font-miniature text-[38px]">
             Talk to a <br />
             professional
@@ -36,52 +36,54 @@ function FooterMobile() {
             />
           </a>
         </div>
-        <p className="mt-6 text-[15px]">
-          Looking for someone to listen? Our trained Listeners are here to
-          provide non-judgmental, compassionate support whenever you need it.
-          Whether you’re managing stress, navigating life transitions, or simply
-          craving a connection, we’re here to help.
-        </p>
-        <div className="relative flex flex-row items-center justify-between mt-8">
+        <div className="flex flex-col gap-2 mt-6">
+          <p className="text-[16px] font-[700] leading-[20px]">
+            Coaching That Fits Your Life
+          </p>
+          <p className=" text-[15px]">
+            Life coaching built around you. Your goals, your pace, your version
+            of a life well lived.
+          </p>
+        </div>
+        <div className="flex relative flex-row justify-between items-center mt-8">
           <div className="flex flex-col gap-4 font-[500]">
-            {currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
-
-              <a
-                href="#path-to-support"
-                onClick={(e) => handleScroll(e, "mobile-path-to-support", 70)}
-              >
-                Path To Support
-              </a>
-            )}
-            {currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
-
-              <a
-                href="#how-it-works"
-                onClick={(e) => handleScroll(e, "mobile-how-it-works", 70)}
-              >
-
-                How It Works
-              </a>
-            )}
-            {currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
-
-              <a
-                href="#our-approach"
-                onClick={(e) =>
-                  handleScroll(e, "mobile-our-approach", 70)
-                }
-              >
-                Our Approach
-              </a>
-            )}
-            {currentPath !== "/listener-recruitment" && currentPath !== "/privacy-policy" && currentPath !== "/terms-of-use" && (
-              <a
-                href="#FAQs"
-                onClick={(e) => handleScroll(e, "mobile-FAQs", 70)}
-              >
-                FAQs
-              </a>
-            )}
+            {currentPath !== "/privacy-policy" &&
+              currentPath !== "/terms-of-use" && (
+                <a
+                  href="#path-to-support"
+                  onClick={(e) => handleScroll(e, "mobile-path-to-support", 70)}
+                >
+                  Path To Support
+                </a>
+              )}
+            {currentPath !== "/privacy-policy" &&
+              currentPath !== "/terms-of-use" && (
+                <a
+                  href="#how-it-works"
+                  onClick={(e) => handleScroll(e, "mobile-how-it-works", 70)}
+                >
+                  How It Works
+                </a>
+              )}
+            {currentPath !== "/privacy-policy" &&
+              currentPath !== "/terms-of-use" && (
+                <a
+                  href="#our-approach"
+                  onClick={(e) => handleScroll(e, "mobile-our-approach", 70)}
+                >
+                  Our Approach
+                </a>
+              )}
+            {currentPath !== "/listener-recruitment" &&
+              currentPath !== "/privacy-policy" &&
+              currentPath !== "/terms-of-use" && (
+                <a
+                  href="#FAQs"
+                  onClick={(e) => handleScroll(e, "mobile-FAQs", 70)}
+                >
+                  FAQs
+                </a>
+              )}
             {currentPath === "/listener-recruitment" && (
               <a
                 href="#Become-a-listener"
@@ -92,12 +94,8 @@ function FooterMobile() {
             )}
 
             <div className="space-y-[15px] flex flex-col text-[16px] font-[500]  mt-4">
-              <Link to="/terms-of-use">
-                <a href="">Terms of Use</a>
-              </Link>
-              <Link to="/privacy-policy">
-                <a href="">Privacy Policy</a>
-              </Link>
+              <Link to="/terms-of-use">Terms of Use</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </div>
           </div>
           <img
@@ -106,8 +104,8 @@ function FooterMobile() {
             className="w-[134px] h-[107px]"
           />
         </div>
-        <div className="flex items-center justify-between py-0 mt-6">
-          <div className="flex flex-row items-center justify-center gap-4">
+        <div className="flex justify-between items-center py-0 mt-6">
+          <div className="flex flex-row gap-4 justify-center items-center">
             <a href="https://www.linkedin.com/company/feelattune/">
               <img
                 src="/mobile1/footer/linkedIn.svg"
@@ -137,7 +135,7 @@ function FooterMobile() {
             </button>
           </a> */}
         </div>
-        <p className="mt-5 text-left">© 2025 FeelAttune. All Rights Reserved</p>
+        <p className="mt-5 text-left">© 2024 FeelAttune. All Rights Reserved</p>
         <div className="my-4 border-[0.5px] border-[black] w-full" />
         <p className="mt-4 text-left text-[14px] capitalize w-[340px]">
           We would like to acknowledge the traditional, ancestral, and unceded
@@ -149,7 +147,7 @@ function FooterMobile() {
           whose territory we reside on.
         </p>
       </div>
-      <div className="absolute top-0 left-0 z-0 flex items-center w-full h-full">
+      <div className="flex absolute top-0 left-0 z-0 items-center w-full h-full">
         <h1 className="font-miniature text-center w-full text-[#ded6ce] text-[35vw] z-0">
           Att<span className="italic">une</span>
         </h1>

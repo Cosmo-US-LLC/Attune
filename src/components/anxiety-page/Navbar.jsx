@@ -8,10 +8,10 @@ import {
 } from "@/components/ui/sheet";
 
 const navLinks = [
-  { label: "Path To Support", id: "path-to-support", offset: 50 },
-  { label: "How It Works", id: "how-it-works", offset: 90 },
-  { label: "Our Approach", id: "our-approach", offset: 90 },
-  { label: "FAQs", id: "FAQs", offset: 90 },
+  { label: "How It Works", id: "how-it-works", offset: 98 },
+  { label: "Pricing", id: "pricing", offset: 98 },
+  { label: "About Us", href: "/about-us" },
+  { label: "FAQs", id: "FAQs", offset: 98 },
 ];
 
 function AnxietyNavbar() {
@@ -28,19 +28,19 @@ function AnxietyNavbar() {
   };
 
   return (
-    <nav className="bg-white h-[90px] fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-[1440px] w-full h-full mx-auto px-4 md:px-8 flex items-center justify-between">
-        {/* Mobile: Hamburger + Logo (left side) */}
+    <nav className="fixed left-0 right-0 top-0 z-50 bg-white">
+      <div className="mx-auto flex h-[98px] max-w-[1440px] items-center justify-between px-4 py-[21px] lg:px-[114px]">
+        {/* Mobile: Hamburger + Logo */}
         <div className="flex items-center gap-2 lg:hidden">
           <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
               <button
-                className="p-2 rounded-md hover:bg-gray-100 focus:outline-none"
+                className="rounded-md p-2 hover:bg-gray-100 focus:outline-none"
                 aria-label="Open menu"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="text-gray-800 h-7 w-7"
+                  className="h-7 w-7 text-gray-800"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -59,7 +59,7 @@ function AnxietyNavbar() {
               <div className="flex flex-col gap-6">
                 <Link
                   to="/anxiety"
-                  className="flex items-center gap-2 mb-4"
+                  className="mb-4 flex items-center gap-2"
                   onClick={() => setSheetOpen(false)}
                 >
                   <img
@@ -69,28 +69,39 @@ function AnxietyNavbar() {
                   />
                 </Link>
 
-                {navLinks.map((link) => (
-                  <button
-                    key={link.id}
-                    onClick={() => {
-                      setSheetOpen(false);
-                      setTimeout(
-                        () => handleScroll(link.id, link.offset),
-                        300
-                      );
-                    }}
-                    className="text-left text-black font-medium text-[16px] capitalize hover:text-gray-700 bg-transparent border-none cursor-pointer py-1"
-                  >
-                    {link.label}
-                  </button>
-                ))}
+                {navLinks.map((link) =>
+                  link.href ? (
+                    <Link
+                      key={link.label}
+                      to={link.href}
+                      onClick={() => setSheetOpen(false)}
+                      className="py-1 text-left text-[16px] font-medium capitalize text-black hover:text-gray-700"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <button
+                      key={link.label}
+                      onClick={() => {
+                        setSheetOpen(false);
+                        setTimeout(
+                          () => handleScroll(link.id, link.offset),
+                          300
+                        );
+                      }}
+                      className="cursor-pointer border-none bg-transparent py-1 text-left text-[16px] font-medium capitalize text-black hover:text-gray-700"
+                    >
+                      {link.label}
+                    </button>
+                  )
+                )}
 
-                <div className="flex flex-col gap-3 pt-4 mt-4 border-t border-gray-200 ">
+                <div className="mt-4 flex flex-col gap-3 border-t border-gray-200 pt-4">
                   <a
-                    href="/signup-anxiety"
-                    className="p-2 w-full h-[35px] bg-[#FF6F61] text-[13px] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
+                    href="/contact-us"
+                    className="flex h-[35px] w-full items-center justify-center rounded-[34.878px] bg-[#FF6F61] p-2 text-[13px] text-white transition-colors hover:bg-red-500"
                   >
-                    Book a Free 15-Min Discovery Call
+                    Contact Us
                   </a>
                 </div>
               </div>
@@ -108,51 +119,59 @@ function AnxietyNavbar() {
           </Link>
         </div>
 
-        {/* Mobile: Connect Now button (right side) */}
+        {/* Mobile: Contact Us */}
         <div className="lg:hidden">
           <a
-            href="/signup-anxiety"
-            className="w-full px-4 py-2 bg-[#FF6F61] text-white text-sm rounded-full hover:bg-red-500 transition-colors"
+            href="/contact-us"
+            className="rounded-full bg-[#FF6F61] px-4 py-2 text-sm text-white transition-colors hover:bg-red-500"
           >
-           Free 15-Min Call
+            Contact Us
           </a>
         </div>
 
-        {/* Desktop: Logo (left) */}
+        {/* Desktop: Logo */}
         <Link
           to="/anxiety"
-          className="items-center hidden gap-3 lg:flex"
+          className="hidden shrink-0 items-center lg:flex"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <img
             src="/desktop1/feel-attune-logo.webp"
             alt="Feel Attune Logo"
-            className="w-[196px]"
+            className="h-[56px] w-[177px] object-contain object-left"
           />
         </Link>
 
-        {/* Desktop: Nav Links (center) */}
-        <div className="items-center hidden space-x-8 lg:flex">
-          {navLinks.map((link) => (
-            <button
-              key={link.id}
-              onClick={() => handleScroll(link.id, link.offset)}
-              className="text-black font-medium text-[16.222px] capitalize hover:text-gray-900 bg-transparent border-none cursor-pointer"
-            >
-              {link.label}
-            </button>
-          ))}
+        {/* Desktop: Nav links — grouped with 47px gap */}
+        <div className="hidden shrink-0 items-center justify-center gap-[47px] lg:flex">
+          {navLinks.map((link) =>
+            link.href ? (
+              <Link
+                key={link.label}
+                to={link.href}
+                className="whitespace-nowrap text-[16.222px] font-medium capitalize text-black hover:text-gray-900"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <button
+                key={link.label}
+                onClick={() => handleScroll(link.id, link.offset)}
+                className="cursor-pointer whitespace-nowrap border-none bg-transparent text-[16.222px] font-medium capitalize text-black hover:text-gray-900"
+              >
+                {link.label}
+              </button>
+            )
+          )}
         </div>
 
-        {/* Desktop: CTA (right) */}
-        <div className="items-center hidden lg:flex">
-          <a
-            href="/signup-anxiety"
-            className="px-4 py-2 bg-[#FF6F61] text-white rounded-[34.878px] hover:bg-red-500 transition-colors flex items-center justify-center"
-          >
-            Book a Free 15-Min Discovery Call
-          </a>
-        </div>
+        {/* Desktop: CTA */}
+        <a
+          href="/contact-us"
+          className="hidden h-[42px] w-[157px] shrink-0 items-center justify-center rounded-[34.878px] border-[1.622px] border-white bg-[#FF6F61] text-[16.222px] font-medium capitalize text-white transition-colors hover:bg-red-500 lg:flex"
+        >
+          Contact Us
+        </a>
       </div>
     </nav>
   );

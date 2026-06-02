@@ -1,5 +1,14 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 import useFavicon from "./hooks/useFavicon";
 import Layout from "./components/Layout";
 import NotFound from "./components/NotFound";
@@ -29,15 +38,37 @@ import SignupAnxiety from "./pages/SignupAnxiety";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsandConditions";
 import ContactUs from "./components/ContactUs";
+import ContactUsPage from "./components/ContactUs/ContactUsPage";
+import FAQsPage from "./components/FAQs/FAQsPage";
+import AboutUsPage from "./components/AboutUs/AboutUsPage";
+import LifeCoachingHomeDesktop from "./components/LifeCoachingHome/Desktop";
+import LifeCoachingHomeMobile from "./components/LifeCoachingHome/Mobile";
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 1024);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 1023px)");
+    setIsMobile(mq.matches);
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+  return isMobile;
+}
+
+function LifeCoachingHomePage() {
+  const isMobile = useIsMobile();
+  return isMobile ? <LifeCoachingHomeMobile /> : <LifeCoachingHomeDesktop />;
+}
 
 function App() {
   useFavicon();
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
-          <Route
+          {/* <Route
             path="/"
             element={
               <>
@@ -49,7 +80,7 @@ function App() {
                 </div>
               </>
             }
-          />
+          /> */}
           <Route
             path="/young-adults-lonliness"
             element={
@@ -160,6 +191,11 @@ function App() {
           <Route path="/terms-of-use" element={<TermsAndConditions />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/ghl-contact-us" element={<ContactUs />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
+          <Route path="/faqs" element={<FAQsPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+          {/* New Home page  */}
+          <Route path="/" element={<LifeCoachingHomePage />} />
         </Route>
 
         <Route path="/anxiety" element={<AnxietyPage />} />

@@ -1,118 +1,138 @@
 import { Link } from "react-router-dom";
-function SessionsPricing() {
+
+const plans = [
+  {
+    badge: "",
+    badgeColor: "",
+    type: "One Video Session",
+    price: "79",
+    note: "Pay-as-you-go available",
+    features: [
+      "No commitment",
+      "Great for one-time clarity",
+      "Ideal for first-timers",
+    ],
+  },
+  {
+    badge: "Most popular",
+    badgeColor: "bg-[#96adf0]",
+    type: "4-Session Pack",
+    price: "269 /mo",
+    perSession: "$67 per session · sessions never expire",
+    features: [
+      "4 video sessions (50 min each)",
+      "Same coach every session",
+      "Flexible scheduling",
+      "Best for building real momentum",
+      "Use at your own pace",
+    ],
+  },
+  {
+    badge: "Best Value",
+    badgeColor: "bg-[#f097dd]",
+    type: "Monthly Membership",
+    price: "239 /mo",
+    perSession: "$60 per session · ongoing · cancel anytime",
+    features: [
+      "4 sessions per month (50 min each)",
+      "Dedicated coach, every session",
+      "Priority scheduling",
+      "Continuous progress tracking",
+      "Best for lasting, ongoing change",
+    ],
+  },
+];
+
+function CheckIcon() {
   return (
-    <div className="bg-[#F4EFEA] py-[122px] max-md:py-[60px] px-4 md:px-6">
-      <h1 className="font-miniature text-center text-[76px] max-md:text-[40px] max-md:leading-[52px] mb-[34px] leading-[110px]">
-        Sessions that Works best for you
-      </h1>
-
-      <div className="grid gap-6 mx-auto max-w-7xl md:grid-cols-3">
-        <PricingCard
-          badge="One Video Session"
-          title="CAD $45"
-          isSubtitle={false}
-          item1="No commitment"
-          item2="Great for one-time clarity"
-          item3="Ideal for first-timers"
-        />
-        <PricingCard
-          badge="4 Video Sessions"
-          title="CAD $39"
-          subtitle="(4 sessions in just $156)"
-          isSubtitle={true}
-          item1="Best for ongoing support"
-          item2="Flexible scheduling"
-          item3="Save more per session"
-        />
-        <PricingCard
-          badge="Personalized Coach Plan"
-          title="CAD $69/Week"
-          isSubtitle={false}
-          item1="Tailored to your needs"
-          item2="Ongoing weekly sessions"
-          item3="Continuous emotional support"
-        />
-      </div>
-
-      <div className="mx-auto max-w-7xl flex flex-col justify-center items-center max-md:items-start bg-white border-[1px] border-black rounded-[29px] mt-[28px] max-md:p-6">
-        <h2 className="font-miniature text-[30px] font-[400] text-center max-md:text-left pt-[23px] px-[327px] max-md:px-6">
-          Not Sure Which Option Is Right for You?
-        </h2>
-        <p className="font-inter text-[18px] text-center max-md:text-left px-[97px] max-md:px-6">
-          We get it - reaching out is a big step.
-          <br />
-          That's why we offer a{" "}
-          <strong>free 15-minute consultation</strong> to help you explore what
-          works best for you.
-          <br />
-          No pressure. No obligations. Just a space to ask questions and feel it
-          out.
-        </p>
-        <Link
-            to="/signup-anxiety"
-          className="bg-[#5200FF] text-white py-3 px-8 mt-[17px] mb-[28px] rounded-full text-[15px] hover:bg-purple-800 max-md:self-start inline-block"
-        >
-          Book a Free 15-Min Discovery Call
-        </Link>
-      </div>
+    <div className="flex size-[18px] shrink-0 items-center justify-center rounded-[9px] border border-[#5200ff] bg-white/30 p-px">
+      <img
+        src="/images/anxiety-page/v2/pricing-check.svg"
+        alt=""
+        className="h-2 w-2.5"
+      />
     </div>
   );
 }
 
-function PricingCard({ badge, title, subtitle, item1, item2, item3, isSubtitle }) {
+function SessionsPricing() {
   return (
-    <div className="bg-white border border-black min-h-[386px] px-[29px] py-[37px] rounded-[20px] space-y-[10px]">
-      <div className="flex items-start justify-between">
-        <div className="h-[29px] py-[3.5px] px-[11.5px] mb-[14px] rounded-full bg-[#FFA8ED] text-black font-inter flex justify-center items-center text-[18px]">
-          {badge}
-        </div>
-      </div>
-
-      <div>
-        <h3
-          className={`text-black font-miniature leading-[50px] text-[50px] ${
-            isSubtitle ? "mb-[4px]" : "mb-[45px]"
-          } font-[400]`}
-        >
-          {title}
-        </h3>
-        {isSubtitle && (
-          <span className="text-black font-inter text-[16px]">{subtitle}</span>
-        )}
-
-        <div className="mt-[19px] flex flex-col gap-y-[17px] mb-[35px]">
-          <div className="flex gap-x-[11px] items-center">
-            <img
-              src="/desktop1/listener/tick-circle.webp"
-              alt="Check"
-              className="w-[20px] h-[20px]"
-            />
-            <p className="font-inter text-[18px] text-black">{item1}</p>
-          </div>
-          <div className="flex gap-x-[11px] items-center">
-            <img
-              src="/desktop1/listener/tick-circle.webp"
-              alt="Check"
-              className="w-[20px] h-[20px]"
-            />
-            <p className="font-inter text-[18px] text-black">{item2}</p>
-          </div>
-          <div className="flex gap-x-[11px] items-center">
-            <img
-              src="/desktop1/listener/tick-circle.webp"
-              alt="Check"
-              className="w-[20px] h-[20px]"
-            />
-            <p className="font-inter text-[18px] text-black">{item3}</p>
-          </div>
+    <div
+      id="pricing"
+      className="bg-[#F4EFEA] px-5 py-12 lg:px-[114px] lg:py-[60px]"
+    >
+      <div className="mx-auto flex w-full max-w-[1212px] flex-col items-center gap-12">
+        <div className="flex max-w-[800px] flex-col items-center gap-6 text-center lg:gap-8">
+          <h2 className="font-miniature text-[42px] leading-[50px] font-bold text-[#0d0d0d] lg:text-[54px] lg:leading-[62px]">
+            Choose what{" "}
+            <span className="text-[#FF6F61]">works for you</span>
+          </h2>
+          <p className="text-[16px] leading-[26px] text-[rgba(13,13,13,0.7)] lg:text-[18px] lg:leading-[26px]">
+            No lock-in contracts. Not happy after your first session? We&apos;ll
+            match you with a different coach or give you a full refund. No
+            questions asked.
+          </p>
         </div>
 
-        <Link
-            to="/signup-anxiety"
-          className="bg-[#5200FF] text-white py-3 px-8 rounded-full text-[15px] hover:bg-purple-800 inline-block"
-        >
-          Book a Free 15-Min Discovery Call
-        </Link>
+        <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
+          {plans.map((plan) => (
+            <div
+              key={plan.type}
+              className="relative flex min-h-[408px] flex-col overflow-hidden rounded-[24px] bg-white px-4 py-6"
+            >
+              <div className="flex items-start justify-between gap-2">
+                <p className="text-[14px] leading-[22px] text-[rgba(13,13,13,0.7)]">
+                  {plan.type}
+                </p>
+                {plan.badge && (
+                  <div
+                    className={`shrink-0 rounded-[26px] px-3.5 py-1.5 ${plan.badgeColor}`}
+                  >
+                    <span className="text-[14px] font-semibold capitalize leading-[22px] text-white">
+                      {plan.badge}
+                    </span>
+                  </div>
+                )}
+              </div>
+
+              <div className="mt-3 flex flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-[14px] leading-[22px] text-[rgba(13,13,13,0.7)]">
+                    CAD $
+                  </span>
+                  <span className="font-miniature text-[40px] font-bold capitalize leading-[50px] text-black">
+                    {plan.price}
+                  </span>
+                </div>
+                {(plan.note || plan.perSession) && (
+                  <p className="text-[14px] font-medium italic leading-[22px] text-[rgba(13,13,13,0.7)]">
+                    {plan.note || plan.perSession}
+                  </p>
+                )}
+              </div>
+
+              <ul className="mt-3 flex flex-1 flex-col gap-2">
+                {plan.features.map((feat) => (
+                  <li key={feat} className="flex items-center gap-2">
+                    <CheckIcon />
+                    <span className="text-[14px] font-medium leading-[22px] text-[#0d0d0d]">
+                      {feat}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-auto pt-4">
+                <Link
+                  to="/signup-anxiety"
+                  className="flex w-full items-center justify-center rounded-[39px] bg-[#5200ff] px-[21px] py-4 text-[18px] font-semibold capitalize text-white no-underline transition-colors hover:bg-[#4000cc]"
+                >
+                  Get started →
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
