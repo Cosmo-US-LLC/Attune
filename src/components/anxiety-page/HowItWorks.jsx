@@ -12,7 +12,7 @@ const steps = [
     description:
       "Tell us a bit about yourself so we can find the right coach for you.",
     activeBg: "bg-[#E5FF7D]",
-    screen: "/images/anxiety-page/v2/how-it-phone-1.webp",
+    screen: "/images/anxiety-page/v2/how-it-phone-1.png",
   },
   {
     number: "02",
@@ -20,16 +20,32 @@ const steps = [
     description:
       "We'll send you a link to book directly with your matched coach.",
     activeBg: "bg-[#FFC70F]",
-    screen: "/images/anxiety-page/v2/how-it-phone-2.webp",
+    screen: "/images/anxiety-page/v2/how-it-phone-2.png",
   },
   {
     number: "03",
     title: "Start Your Journey",
     description: "Join your session and start making real progress.",
     activeBg: "bg-[#96ADF0]",
-    screen: "/images/anxiety-page/v2/how-it-phone-3.webp",
+    screen: "/images/anxiety-page/v2/how-it-phone-3.png",
   },
 ];
+
+/** Figma phone mockups — 500×681px (nodes 4987:2595, 4920:1692, 4920:1817) */
+function PhoneMockup({ src, className = "" }) {
+  return (
+    <div
+      className={`relative mx-auto w-full max-w-[500px] shrink-0 overflow-hidden aspect-[500/681] ${className}`}
+    >
+      <img
+        src={src}
+        alt=""
+        className="absolute inset-0 size-full object-contain"
+        draggable={false}
+      />
+    </div>
+  );
+}
 
 function StepCard({ step, isActive, onActivate }) {
   return (
@@ -104,13 +120,10 @@ function MobileHowItWorksSteps() {
                   </div>
                 </div>
 
-                <div className="h-[400px] w-full max-w-[350px] shrink-0">
-                  <img
-                    src={step.screen}
-                    alt=""
-                    className="h-full w-full object-contain"
-                  />
-                </div>
+                <PhoneMockup
+                  src={step.screen}
+                  className="max-w-[min(100%,350px)]"
+                />
               </div>
             </CarouselItem>
           ))}
@@ -163,18 +176,19 @@ function HowItWorks() {
           ))}
         </div>
 
-        <div className="relative mx-auto h-[681px] w-full max-w-[500px] shrink-0 overflow-hidden">
+        <div className="relative mx-auto w-full max-w-[500px] shrink-0 aspect-[500/681]">
           {steps.map((s, index) => (
             <img
               key={s.number}
               src={s.screen}
               alt=""
-              className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-300 ${
+              className={`absolute inset-0 size-full object-contain transition-opacity duration-300 ${
                 activeStep === index
                   ? "opacity-100"
                   : "pointer-events-none opacity-0"
               }`}
               aria-hidden={activeStep !== index}
+              draggable={false}
             />
           ))}
         </div>

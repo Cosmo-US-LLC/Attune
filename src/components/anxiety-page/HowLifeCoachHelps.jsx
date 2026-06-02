@@ -11,7 +11,6 @@ const items = [
    description: (
   <>
     Understand what's actually driving your anxiety so you can respond
-    <br />
     with intention, not just react.
   </>
 ),
@@ -24,11 +23,8 @@ const items = [
    description: (
   <>
     Get personalised tools that fit
-    <br />
     your real life - not generic advice
-    <br />
     you've already tried and 
-    <br />
     abandoned.
   </>
 ),
@@ -42,9 +38,7 @@ const items = [
     description: (
   <>
     Move past the thoughts that keep
-    <br />
     you stuck and take real steps
-    <br />
     toward the life you want.
   </>
 ),
@@ -57,15 +51,12 @@ const items = [
     description: (
   <>
     Anxiety doesn't disappear 
-    <br />
     overnight.
     
     Your coach helps you
-    <br />
      grow stronger with every
     
     session
-    <br />
      not just feel better in the moment.
   </>
 ),
@@ -142,14 +133,14 @@ export default function HowLifeCoachHelps() {
             about changing your relationship <br /> with it so it no longer runs the
             show.
           </p>
-          <Link
-            to="/signup-anxiety"
-            className="inline-flex w-fit items-center justify-center rounded-full bg-[#5200FF] px-5 py-3.5 text-[14px] font-semibold leading-6 text-white transition-opacity hover:opacity-90"
-          >
-            Book a Free 15-Min Match Call →
-          </Link>
         </div>
         <BenefitsList />
+        <Link
+          to="/signup-anxiety"
+          className="inline-flex w-full items-center justify-center rounded-full bg-[#5200FF] px-5 py-3.5 text-[14px] font-semibold leading-6 text-white transition-opacity hover:opacity-90"
+        >
+          Book a Free 15-Min Match Call →
+        </Link>
       </div>
 
       {/* Desktop — Figma 4925:5964 */}
