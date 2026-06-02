@@ -134,7 +134,9 @@ function CardTitle({ lines }) {
 }
 
 function TypeCard({ card, isActive, onClick }) {
-  const heightClass = card.tall ? "h-[316px]" : "h-[290px]";
+  const heightClass = card.tall
+    ? "h-[316px]"
+    : "h-[316px] lg:h-[290px]";
   const [isHovered, setIsHovered] = useState(false);
 
   const backgroundClass = isActive
