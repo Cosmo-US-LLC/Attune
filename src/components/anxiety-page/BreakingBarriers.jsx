@@ -1,8 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 
-const SLIDER_ARROW = "/images/anxiety-page/v2/slider-arrow.svg";
-
 const ICON_BASE = "/images/anxiety-page/v2/barriers";
 
 const cards = [
@@ -301,20 +299,27 @@ function CarouselNavButton({ direction, onClick, className }) {
     <button
       type="button"
       onClick={onClick}
-      className={className}
+      className={`flex size-9 shrink-0 items-center justify-center rounded-full border border-black bg-white sm:size-10 ${className}`}
       aria-label={
         direction === "next" ? "Next anxiety type" : "Previous anxiety type"
       }
     >
-      <img
-        src={SLIDER_ARROW}
-        alt=""
-        className={`size-11 object-contain sm:size-12 ${
+      <svg
+        viewBox="0 0 24 24"
+        className={`size-4 text-black sm:size-[18px] ${
           direction === "prev" ? "rotate-180" : ""
         }`}
-        draggable={false}
+        fill="none"
         aria-hidden="true"
-      />
+      >
+        <path
+          d="M9 6l6 6-6 6"
+          stroke="currentColor"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
     </button>
   );
 }
@@ -355,35 +360,37 @@ function MobileView({ activeKey, setActiveKey }) {
 
   return (
     <div className="flex w-full flex-col items-center gap-8">
-      <div className="relative w-full max-w-[350px]">
-        <Carousel
-          opts={{ align: "start", loop: false, containScroll: "trimSnaps" }}
-          setApi={setApi}
-          showDots={false}
-          className="w-full"
-        >
-          <CarouselContent className="ml-0 gap-4">
-            {cards.map((card) => (
-              <CarouselItem key={card.key} className="basis-[288px] pl-0">
-                <TypeCard
-                  card={card}
-                  isActive={card.key === activeKey}
-                  onClick={() => {
-                    setActiveKey(card.key);
-                    const index = cards.findIndex((c) => c.key === card.key);
-                    if (index >= 0) api?.scrollTo(index);
-                  }}
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
+      <div className="relative w-full">
+        <div className="relative mx-auto w-full max-w-[350px] overflow-hidden">
+          <Carousel
+            opts={{ align: "start", loop: false, containScroll: "trimSnaps" }}
+            setApi={setApi}
+            showDots={false}
+            className="w-full"
+          >
+            <CarouselContent className="ml-0 gap-4">
+              {cards.map((card) => (
+                <CarouselItem key={card.key} className="basis-[288px] pl-0">
+                  <TypeCard
+                    card={card}
+                    isActive={card.key === activeKey}
+                    onClick={() => {
+                      setActiveKey(card.key);
+                      const index = cards.findIndex((c) => c.key === card.key);
+                      if (index >= 0) api?.scrollTo(index);
+                    }}
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </div>
 
         {canScrollPrev ? (
           <CarouselNavButton
             direction="prev"
             onClick={scrollPrev}
-            className="absolute left-[-6px] top-1/2 z-10 -translate-y-1/2"
+            className="absolute -left-2 top-1/2 z-10 -translate-y-1/2 sm:-left-3"
           />
         ) : null}
 
@@ -391,7 +398,7 @@ function MobileView({ activeKey, setActiveKey }) {
           <CarouselNavButton
             direction="next"
             onClick={scrollNext}
-            className="absolute right-[-6px] top-1/2 z-10 -translate-y-1/2"
+            className="absolute -right-2 top-1/2 z-10 -translate-y-1/2 sm:-right-3"
           />
         ) : null}
       </div>

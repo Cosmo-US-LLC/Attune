@@ -12,7 +12,7 @@ const steps = [
     description:
       "Tell us a bit about yourself so we can find the right coach for you.",
     activeBg: "bg-[#E5FF7D]",
-    screen: "/images/anxiety-page/v2/how-it-phone-1.png",
+    screen: "/images/anxiety-page/signup.webp",
   },
   {
     number: "02",
@@ -20,18 +20,16 @@ const steps = [
     description:
       "We'll send you a link to book directly with your matched coach.",
     activeBg: "bg-[#FFC70F]",
-    screen: "/images/anxiety-page/v2/how-it-phone-2.png",
+    screen: "/images/anxiety-page/find_your_life_coach.webp",
   },
   {
     number: "03",
     title: "Start Your Journey",
     description: "Join your session and start making real progress.",
     activeBg: "bg-[#96ADF0]",
-    screen: "/images/anxiety-page/v2/how-it-phone-3.png",
+    screen: "/images/anxiety-page/how_it_works.webp",
   },
 ];
-
-/** Figma phone mockups — 500×681px (nodes 4987:2595, 4920:1692, 4920:1817) */
 function PhoneMockup({ src, className = "" }) {
   return (
     <div
@@ -40,7 +38,7 @@ function PhoneMockup({ src, className = "" }) {
       <img
         src={src}
         alt=""
-        className="absolute inset-0 size-full object-contain"
+        className="absolute inset-0 size-full object-contain object-center"
         draggable={false}
       />
     </div>
