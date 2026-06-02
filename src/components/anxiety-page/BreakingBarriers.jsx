@@ -218,14 +218,9 @@ function SocialDetailDescription() {
     <>
       <p className={`${textClass} lg:hidden`}>
         <span className="block">
-          Social anxiety is more than shyness. It&apos;s
+          Social anxiety is more than shyness. It&apos;s the fear of being judged, misread, or rejected in meetings, social settings, or even a simple conversation.
         </span>
-        <span className="block">the fear of being judged, misread, or</span>
-        <span className="block">
-          rejected in meetings, social settings, or
-        </span>
-        <span className="block">even a simple conversation.</span>
-      </p>
+              </p>
       <p className={`${textClass} hidden lg:block`}>
         <span className="lg:whitespace-nowrap">
           Social anxiety is more than shyness. It&apos;s the fear of being judged,
