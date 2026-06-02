@@ -1,12 +1,16 @@
 import { useId } from "react";
+import { cn } from "@/lib/utils";
 
 /** Figma 4473:1798 — “Floating Button”; text ring rotates slowly clockwise (dev annotation). */
-function CertifiedLifeCoachesSeal() {
+function CertifiedLifeCoachesSeal({ className }) {
   const pathId = `hero-life-coaching-certified-text-path-${useId().replace(/:/g, "")}`;
 
   return (
     <div
-      className="relative size-[128px] shrink-0"
+      className={cn(
+        "relative size-[128px] shrink-0 [container-type:size]",
+        className,
+      )}
       role="img"
       aria-label="Certified life coaches"
     >
@@ -37,7 +41,7 @@ function CertifiedLifeCoachesSeal() {
         </text>
       </svg>
       <div
-        className="pointer-events-none absolute inset-0 flex items-center justify-center text-[28px] leading-none"
+        className="pointer-events-none absolute inset-0 flex items-center justify-center text-[22cqi] leading-none"
         aria-hidden
       >
         ⭐
