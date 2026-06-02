@@ -299,7 +299,7 @@ function CarouselNavButton({ direction, onClick, className }) {
     <button
       type="button"
       onClick={onClick}
-      className={`flex size-9 shrink-0 items-center justify-center rounded-full border border-black bg-white sm:size-10 ${className}`}
+      className={`flex size-8 shrink-0 items-center justify-center rounded-full border border-black bg-white sm:size-10 ${className}`}
       aria-label={
         direction === "next" ? "Next anxiety type" : "Previous anxiety type"
       }
