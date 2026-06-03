@@ -11,8 +11,8 @@ function HeroMobile() {
           </p>
 
           <h1 className="font-miniature font-bold text-[56px] leading-[64px] tracking-[-0.02em] text-[#0d0d0d]">
-            <span className="block italic text-[#ff6f61]">Great</span>
-            <span className="block italic text-[#ff6f61]">coaching</span>
+            <span className="block heading-accent">Great</span>
+            <span className="block heading-accent">coaching</span>
             <span className="block">shouldn&apos;t be</span>
             <span className="block">out of reach</span>
           </h1>

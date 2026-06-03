@@ -80,12 +80,10 @@ function Guarantee() {
 
           <div className="relative z-10 mx-auto flex w-full max-w-[800px] flex-col items-center gap-6 px-6 py-12 text-center sm:px-8 lg:gap-6 lg:py-10">
             <div className="flex flex-col gap-4 w-full lg:gap-4">
-              <h2 className="mx-auto max-w-[759px] font-miniature text-[40px] font-bold leading-[48px] text-[#0d0d0d] sm:text-[48px] sm:leading-[56px] lg:text-[54px] lg:leading-[62px]">
-                <span>{`Your results are `}</span>
-                <span className="font-miniature italic font-bold text-[#ff6f61]">
-                  guaranteed
-                </span>
-                <span className="font-bold text-[#ff6f61]">.</span>
+              <h2 className="section-heading mx-auto max-w-[759px]">
+                <span>Your results are </span>
+                <span className="heading-accent">guaranteed</span>
+                {/* <span className="text-[#ff6f61]">.</span> */}
               </h2>
               <p className="text-[16px] font-normal leading-[24px] text-[rgba(13,13,13,0.7)] sm:text-[18px] sm:leading-[26px]">
                 We're committed to finding the right fit for you. If you're not

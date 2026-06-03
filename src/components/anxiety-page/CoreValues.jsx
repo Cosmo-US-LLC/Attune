@@ -23,9 +23,8 @@ const CoreValues = () => {
   return (
     <section className="bg-white">
       <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-12 px-5 py-12 md:gap-16 md:px-[114px] md:py-[80px]">
-        <h2 className="text-center font-miniature text-[42px] font-bold leading-[50px] text-black md:text-[62px] md:leading-[72px]">
-          Our{" "}
-          <span className="font-miniature italic text-[#FF6F61]">Core Values</span>
+        <h2 className="section-heading text-black">
+          Our <span className="heading-accent">Core Values</span>
         </h2>
 
         <div className="grid w-full grid-cols-1 gap-6 px-0 md:grid-cols-3 md:gap-6 md:px-12">

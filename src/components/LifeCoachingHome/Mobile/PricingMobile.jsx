@@ -62,11 +62,8 @@ function PricingMobile() {
         </div>
 
         <div className="flex flex-col gap-4 w-full">
-          <h2 className="font-miniature font-bold text-[42px] leading-[50px] text-[#0d0d0d]">
-            Choose what{" "}
-            <span className="italic font-bold text-[#ff6f61]">
-              works for you
-            </span>
+          <h2 className="section-heading">
+            Choose what <span className="heading-accent">works for you</span>
           </h2>
           <p className="text-[16px] leading-[24px] text-[rgba(13,13,13,0.7)]">
             No lock-in contracts. Not happy after your first session? We'll

@@ -51,10 +51,10 @@ function Testimonials() {
               ✦ Real stories
             </span>
           </div>
-          <p className="max-w-[1006px] text-center font-miniature text-[54px] font-bold leading-[62px] text-[#0d0d0d]">
-            <span>{`What people say `}</span>
-            <span className="text-[#ff6f61]">after they start.</span>
-          </p>
+          <h2 className="section-heading max-w-[1006px]">
+            <span>What people say </span>
+            <span className="heading-accent">after they start</span>
+          </h2>
         </div>
 
         <div className="flex w-full items-stretch gap-4">

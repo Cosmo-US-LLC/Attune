@@ -63,10 +63,10 @@ function HowItWorks() {
             </span>
           </div>
           <div className="text-center">
-            <p className="font-miniature text-[54px] font-bold leading-[62px] text-[#0d0d0d]">
-              <span className="whitespace-pre">{`The coaching  `}</span>
-              <span className="italic text-[#ff6f61]">journey</span>
-            </p>
+            <h2 className="section-heading">
+              <span className="whitespace-pre">The coaching </span>
+              <span className="heading-accent"> journey</span>
+            </h2>
             <p className="mt-6 text-[18px] font-normal leading-[26px] text-[rgba(13,13,13,0.7)]">
               Life coaching isn&apos;t a quick fix. It&apos;s a structured, human process that builds
               on itself each session taking you further than the last.

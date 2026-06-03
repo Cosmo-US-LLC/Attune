@@ -25,11 +25,9 @@ function OurStory() {
         </span>
 
         {/* Heading */}
-        <h2 className="font-miniature font-bold text-[55px] leading-[1.1]">
-          <span className="block text-[#0d0d0d]">Built from a</span>
-          <span className="block italic text-[#ff6f61]">
-            simple frustration
-          </span>
+        <h2 className="section-heading text-left text-[#0d0d0d]">
+          <span className="block">Built from a</span>
+          <span className="block heading-accent">simple frustration</span>
         </h2>
 
         {/* Paragraphs */}

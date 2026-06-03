@@ -21,7 +21,7 @@ function Hero() {
             We started because
           </p>
           <h1 className="font-miniature text-[72px] leading-[83px] font-semibold  text-[#0d0d0d]">
-            <span className="italic text-[#ff6f61]">Great coaching</span>
+            <span className="heading-accent">Great coaching</span>
             {" shouldn't be"}
             <br />
             out of reach

@@ -117,9 +117,8 @@ function CoachingQuizMobile() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="font-miniature font-bold text-[42px] leading-[50px] text-[#0d0d0d]">
-            Could coaching{" "}
-            <span className="italic font-bold text-[#ff6f61]">change </span>
+          <h2 className="section-heading text-left">
+            Could coaching <span className="heading-accent">change </span>
             things for you?
           </h2>
           <p className="text-[16px] leading-[24px] text-[rgba(13,13,13,0.7)]">
