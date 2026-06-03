@@ -52,12 +52,12 @@ function TestimonialCard({ testimonial }) {
         </p>
       </div>
       <div className="flex flex-col">
-        <p className="font-miniature text-[20px] font-bold capitalize leading-[28px] text-[#0D0D0D] lg:text-[24px] lg:font-normal lg:leading-8">
+        <p className="font-miniature text-[20px] font-bold capitalize leading-[28px] text-[#0D0D0D] md:text-[24px] md:leading-8">
           {testimonial.name}
         </p>
-        <p className="text-[14px] leading-[20px] text-[rgba(13,13,13,0.7)]">
+        {/* <p className="text-[14px] leading-[20px] text-[rgba(13,13,13,0.7)]">
           {testimonial.role}
-        </p>
+        </p> */}
       </div>
     </div>
   );
@@ -69,7 +69,7 @@ function TestimonialsSection() {
       <div className="mx-auto flex w-full max-w-[1280px] flex-col items-center gap-8 lg:gap-16">
         <h2 className="max-w-[1006px] text-center font-bold font-miniature text-[42px] leading-[50px] text-[#0D0D0D] lg:text-[54px] lg:leading-[62px]">
           <span>What people say </span>
-          <span className="text-[#FF6F61]">after they start.</span>
+          <span className="font-miniature italic text-[#FF6F61]">after they start.</span>
         </h2>
 
         <div className="flex w-full flex-col items-stretch gap-3.5 lg:flex-row lg:gap-4">
