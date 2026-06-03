@@ -50,9 +50,9 @@ function RealOutcomesMobile() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="font-miniature font-bold text-[42px] leading-[50px] text-[#0d0d0d]">
+          <h2 className="section-heading text-left">
             What changes when you work with a{" "}
-            <span className="italic font-bold text-[#ff6f61]">life coach</span>
+            <span className="heading-accent">life coach</span>
           </h2>
           <p className="text-[16px] leading-[24px] text-[rgba(13,13,13,0.7)]">
             These aren&apos;t abstract promises. These are the shifts our clients

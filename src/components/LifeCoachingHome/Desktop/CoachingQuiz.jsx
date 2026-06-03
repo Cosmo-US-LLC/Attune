@@ -127,11 +127,11 @@ function CoachingQuiz() {
               </span>
             </div>
             <div>
-              <p className="font-miniature text-[54px] font-bold leading-[62px] text-[#0d0d0d]">
-                <span>{`Could coaching `}</span>
-                <span className="italic text-[#ff6f61]">{`change `}</span>
+              <h2 className="section-heading text-left">
+                <span>Could coaching </span>
+                <span className="heading-accent">change </span>
                 <span>things for you?</span>
-              </p>
+              </h2>
               <p className="mt-6 text-[18px] font-normal leading-[26px] text-[rgba(13,13,13,0.7)]">
                 You don&apos;t have to know exactly what you need before you start. Take the
                 2-minute quiz and we&apos;ll tell you whether coaching is a good fit and what kind

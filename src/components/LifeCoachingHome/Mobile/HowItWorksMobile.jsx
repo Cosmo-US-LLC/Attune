@@ -47,14 +47,10 @@ function HowItWorksMobile() {
             ✦ How it works
           </p>
         </div>
-        <p className="font-miniature text-[42px] text-[#0d0d0d] text-center w-full">
-          <span className="font-normal leading-[50px] whitespace-pre-wrap">
-            The coaching{"  "}
-          </span>
-          <span className="font-bold italic leading-[50px] text-[#ff6f61]">
-            journey
-          </span>
-        </p>
+        <h2 className="section-heading w-full">
+          <span>The coaching </span>
+          <span className="heading-accent">journey</span>
+        </h2>
         <p className="text-[16px] leading-[24px] text-[rgba(13,13,13,0.7)]">
           Life coaching isn&apos;t a quick fix. It&apos;s a structured, human
           process that builds on itself each session taking you further than the

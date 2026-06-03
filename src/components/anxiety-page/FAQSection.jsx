@@ -42,9 +42,8 @@ function FAQSection() {
   return (
     <section id="FAQs" className="bg-[#f4efea]">
       <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-12 px-5 py-12 md:gap-16 md:px-[114px] md:py-[80px]">
-        <h2 className="text-center font-miniature text-[42px] font-bold leading-[50px] text-black md:text-[54px] md:leading-[62px]">
-          Things People{" "}
-          <span className="font-miniature italic text-[#FF6F61]">Ask</span>
+        <h2 className="section-heading text-black">
+          Things People <span className="heading-accent">Ask</span>
         </h2>
 
         <Accordion

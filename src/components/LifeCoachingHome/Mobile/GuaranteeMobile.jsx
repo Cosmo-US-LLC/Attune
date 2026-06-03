@@ -7,12 +7,10 @@ function GuaranteeMobile() {
     <div className="flex items-center justify-center bg-[#e5ff7d] px-5 py-16">
       <div className="relative w-full min-w-0 flex-1 overflow-clip rounded-[30px] bg-white px-6 pb-20 pt-[100px]">
         <div className="relative z-[1] flex w-full flex-col items-center justify-center gap-4">
-          <h2 className="w-full text-center font-miniature text-[42px] font-bold leading-[50px] text-[#0d0d0d]">
-            <span className="leading-[50px]">Your results are </span>
-            <span className="font-bold italic leading-[50px] text-[#ff6f61]">
-              guaranteed
-            </span>
-            <span className="leading-[50px] text-[#ff6f61]">.</span>
+          <h2 className="section-heading w-full">
+            <span>Your results are </span>
+            <span className="heading-accent">guaranteed</span>
+            {/* <span className="text-[#ff6f61]">.</span> */}
           </h2>
           <p className="w-full text-center font-inter text-[16px] font-normal leading-6 text-[rgba(13,13,13,0.7)]">
             We're committed to finding the right fit for you. If you're not

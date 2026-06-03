@@ -67,10 +67,9 @@ function Pricing() {
             </span>
           </div>
           <div className="text-center">
-            <p className="font-miniature text-[54px] font-bold leading-[62px] text-[#0d0d0d]">
-              Choose what{" "}
-              <span className="italic text-[#ff6f61]">works for you</span>
-            </p>
+            <h2 className="section-heading">
+              Choose what <span className="heading-accent">works for you</span>
+            </h2>
             <div className="mt-6 whitespace-pre-wrap text-[18px] font-normal leading-[26px] text-[rgba(13,13,13,0.7)]">
               <p className="mb-0">
                 No lock-in contracts. Not happy after your first session? We'll

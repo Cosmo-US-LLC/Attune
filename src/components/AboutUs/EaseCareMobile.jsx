@@ -2,8 +2,8 @@ function EaseCareMobile() {
   return (
     <section className="flex flex-col gap-6 px-5 pt-20 pb-12 bg-white lg:hidden">
       <div className="flex flex-col gap-4 w-full">
-        <h2 className="font-miniature font-bold text-[42px] leading-[50px] tracking-[-0.02em] text-[#0d0d0d]">
-          <span className="text-[#ff6f61]">
+        <h2 className="section-heading text-left text-[#0d0d0d]">
+          <span className="heading-accent">
             Backed by
             <br />
             EaseCare
