@@ -7,7 +7,8 @@
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@fillout/react": "^3.1.2",
@@ -30,6 +31,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.39.2",
     "@eslint/js": "^9.17.0",
     "@types/node": "^22.10.7",
     "@types/react": "^18.3.18",
@@ -44,6 +46,7 @@
     "postcss": "^8.5.1",
     "sharp": "^0.34.5",
     "tailwindcss": "^3.4.17",
-    "vite": "^6.0.5"
+    "vite": "^6.1.0",
+    "wrangler": "^4.97.0"
   }
 }
