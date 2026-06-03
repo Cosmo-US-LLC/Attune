@@ -12,12 +12,12 @@ const statBlocks = [
     blob: "/images/anxiety-page/v2/stat-blob-1.svg",
     blobBox: { left: "11.67%", top: "21.75%", width: "40%", height: "40%" },
     char: "/images/anxiety-page/v2/stat-char-1.svg",
-    charBox: { left: "29.44%", top: "9%", width: "53%", height: "42.15%" },
+    charBox: { left: "28.44%", top: "18%", width: "53%", height: "42.15%" },
     charSize: { width: "150px", height: "120px" },
     charRotate: "rotate-[18.52deg]",
     stat: "Over 50%",
     text: " of people struggle with stress and anxiety but avoid clinical care.",
-    textStyle: { left: "50%", top: "60.63%", width: "65%" },
+    textStyle: { left: "50%", top: "65.63%", width: "65%" },
   },
   {
     type: "photo",
@@ -30,13 +30,13 @@ const statBlocks = [
     blob: "/images/anxiety-page/v2/stat-blob-2.svg",
     blobBox: { left: "14.72%", top: "29.75%", width: "70.28%", height: "63.25%" },
     char: "/images/anxiety-page/v2/stat-char-2.svg",
-    charBox: { left: "17.5%", top: "6.75%", width: "54.02%", height: "43.77%" },
+    charBox: { left: "19.5%", top: "15.75%", width: "54.02%", height: "43.77%" },
     charSize: { width: "150px", height: "120px" },
     charRotate: "rotate-[-16.88deg]",
     stat: "20% of older adults",
     text: "Experience mental health challenges, including depression and anxiety.",
-    textStyle: { left: "49.86%", top: "65.88%", width: "64.72%" },
-    statBreak: true,
+    textStyle: { left: "50%", top: "65.63%", width: "65%" },
+    // statBreak: true,
   },
   {
     type: "stat",
@@ -44,12 +44,12 @@ const statBlocks = [
     blob: "/images/anxiety-page/v2/stat-blob-3.svg",
     blobBox: { left: "8.33%", top: "17%", width: "83.06%", height: "74.75%" },
     char: "/images/anxiety-page/v2/stat-char-3.svg",
-    charBox: { left: "25.28%", top: "8%", width: "48.28%", height: "41.03%" },
+    charBox: { left: "25.28%", top: "18%", width: "48.28%", height: "41.03%" },
     charSize: { width: "140px", height: "120px" },
     charRotate: "-scale-y-100 rotate-[-163.94deg]",
     stat: "1 in 5 young adults",
     text: " struggles with social anxiety in their daily life.",
-    textStyle: { left: "49.86%", top: "64.88%", width: "64.72%" },
+    textStyle: { left: "50%", top: "65.63%", width: "65%" },
   },
   {
     type: "photo",
@@ -62,13 +62,13 @@ const statBlocks = [
     blob: "/images/anxiety-page/v2/stat-blob-4.svg",
     blobBox: { left: "7.5%", top: "16.75%", width: "85%", height: "76.5%" },
     char: "/images/anxiety-page/v2/stat-char-4.svg",
-    charBox: { left: "19.72%", top: "7%", width: "46.85%", height: "36.89%" },
+    charBox: { left: "21.72%", top: "20%", width: "46.85%", height: "36.89%" },
     charSize: { width: "150px", height: "120px" },
     charRotate: "rotate-[-10.87deg]",
     stat: "70% of caregivers",
     text: " experience significant levels of anxiety or emotional exhaustion.",
-    textStyle: { left: "50%", top: "56.13%", width: "70.56%" },
-    statBreak: true,
+    textStyle: { left: "50%", top: "65.63%", width: "65%" },
+    // statBreak: true,
   },
   {
     type: "photo",
@@ -188,7 +188,10 @@ function StatisticsSection() {
         <div className="flex w-full flex-col items-center gap-6 px-5">
           <div className="flex w-full flex-col items-center gap-3.5 text-center">
             <h2 className="font-miniature text-[42px] font-bold leading-[50px] text-black">
-              Anxiety is more common than you think and more treatable.
+              Anxiety is more common than you think and {" "}
+              <span className="font-miniature italic text-[#FF6F61]">
+                more treatable.
+              </span>
             </h2>
             <p className="text-[16px] leading-7 text-[rgba(0,0,0,0.7)]">
               Most people struggling with anxiety never get help, not because they
@@ -215,7 +218,8 @@ function StatisticsSection() {
       <div className="hidden px-4 pt-20 pb-0 lg:block">
         <div className="mx-auto flex max-w-[888px] flex-col items-center gap-8 text-center">
           <h2 className="font-miniature text-[54px] font-bold leading-[62px] text-black">
-            Anxiety is more common than you think and more treatable.
+            Anxiety is more common than you think and {" "}
+            <span className="font-miniature italic text-[#FF6F61]">more treatable.</span>
           </h2>
           <p className="max-w-[805px] text-[16px] leading-[28px] text-[rgba(0,0,0,0.7)]">
             Most people struggling with anxiety never get help, not because they
