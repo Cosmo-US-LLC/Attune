@@ -117,9 +117,9 @@ function WhyChooseCoachingMobile() {
           </p>
         </div>
         <div className="flex flex-col gap-4 w-full">
-          <h2 className="font-miniature font-bold text-[42px] leading-[50px] text-[#0d0d0d]">
+          <h2 className="section-heading">
             Coaching meets you where you are and helps you go{" "}
-            <span className="italic font-bold text-[#ff6f61]">further</span>
+            <span className="heading-accent">further</span>
           </h2>
           <p className="text-[16px] leading-[24px] text-[rgba(13,13,13,0.7)]">
             Life coaching isn&apos;t crisis care. It&apos;s a partnership for people

@@ -62,10 +62,10 @@ function RealOutcomes() {
               </span>
             </div>
             <div>
-              <p className="font-miniature text-[54px] font-bold leading-[62px] text-[#0d0d0d]">
+              <h2 className="section-heading text-left">
                 What changes when you work with a{" "}
-                <span className="italic text-[#ff6f61]">life coach</span>
-              </p>
+                <span className="heading-accent">life coach</span>
+              </h2>
               <div className="mt-6 text-[18px] font-normal leading-[26px] text-[rgba(13,13,13,0.7)]">
                 <p className="mb-0">{`These aren't abstract promises.`}</p>
                 <p className="mb-0">

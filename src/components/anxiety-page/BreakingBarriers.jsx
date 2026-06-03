@@ -441,21 +441,19 @@ export default function BreakingBarriers() {
     <section className="bg-white">
       {/* Mobile */}
       <div className="flex flex-col items-center gap-8 px-5 py-12 lg:hidden">
-        <h2 className="max-w-[520px] text-center font-miniature text-[36px] font-bold leading-[44px] text-black">
+        <h2 className="section-heading max-w-[520px] text-black">
           <span className="block">Which type of</span>
           <span className="block">anxiety feels most</span>
-          <span className="block font-miniature italic text-[#FF6F61]">
-            familiar?
-          </span>
+          <span className="block heading-accent">familiar?</span>
         </h2>
         <MobileView activeKey={activeKey} setActiveKey={setActiveKey} />
       </div>
 
       {/* Desktop — Figma 4920:569 */}
       <div className="hidden flex-col items-center gap-16 px-[114px] py-[100px] lg:flex">
-        <h2 className="w-full max-w-[800px] text-center font-miniature text-[54px] font-bold leading-[62px] text-black">
+        <h2 className="section-heading w-full max-w-[800px] text-black">
           Which type of anxiety feels most{" "}
-          <span className="font-miniature italic text-[#FF6F61]">familiar?</span>
+          <span className="heading-accent">familiar?</span>
         </h2>
 
         <div className="flex w-full max-w-[1212px] flex-col gap-5">

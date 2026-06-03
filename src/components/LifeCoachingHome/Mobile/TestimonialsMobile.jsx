@@ -51,9 +51,9 @@ function TestimonialsMobile() {
             ✦ Real stories
           </p>
         </div>
-        <h2 className="font-miniature font-bold text-[42px] leading-[50px] text-[#0d0d0d]">
-          <span className="normal-case lowercase">what people say </span>
-          <span className="lowercase text-[#ff6f61]">after they start.</span>
+        <h2 className="section-heading">
+          <span>What people say </span>
+          <span className="heading-accent">after they start</span>
         </h2>
       </div>
 

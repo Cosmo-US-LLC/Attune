@@ -48,6 +48,18 @@ body {
   }
 }
 
+@layer components {
+  .section-heading {
+    @apply text-center font-miniature text-[42px] font-bold leading-[50px] text-[#0d0d0d] md:text-[54px] md:leading-[62px];
+  }
+
+  .heading-accent {
+    font-style: italic;
+    font-weight: 700;
+    color: #ff6f61;
+  }
+}
+
 .accordion-icon::before {
   content: "+";
   transition: transform 0.3s ease;

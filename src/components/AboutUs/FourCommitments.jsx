@@ -32,14 +32,10 @@ function FourCommitments() {
         </span>
 
         {/* Heading */}
-        <h2 className="font-miniature text-[55px] leading-[1.1]">
-          <span className="font-semibold text-black">
-            Our practice is built on
-          </span>
+        <h2 className="section-heading">
+          <span>Our practice is built on</span>
           <br />
-          <span className="italic text-[#ff6f61] font-semibold">
-            four commitments.
-          </span>
+          <span className="heading-accent">four commitments</span>
         </h2>
 
         {/* Subtitle */}

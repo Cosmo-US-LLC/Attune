@@ -92,7 +92,7 @@ function EaseCare() {
           }}
         >
           <h2 className="font-miniature text-[55px] leading-[1.11] text-[#0d0d0d]">
-            <span className="font-bold text-[#ff6f61]">Backed by EaseCare</span>
+            <span className="heading-accent">Backed by EaseCare</span>
             <br />
             <span className="font-normal">
               trusted in mental health across Alberta.

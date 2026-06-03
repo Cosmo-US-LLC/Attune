@@ -67,9 +67,9 @@ function TestimonialsSection() {
   return (
     <section className="bg-white px-5 py-12 lg:px-[144px] lg:py-20">
       <div className="mx-auto flex w-full max-w-[1280px] flex-col items-center gap-8 lg:gap-16">
-        <h2 className="max-w-[1006px] text-center font-bold font-miniature text-[42px] leading-[50px] text-[#0D0D0D] lg:text-[54px] lg:leading-[62px]">
+        <h2 className="section-heading max-w-[1006px]">
           <span>What people say </span>
-          <span className="font-miniature italic text-[#FF6F61]">after they start.</span>
+          <span className="heading-accent">after they start</span>
         </h2>
 
         <div className="flex w-full flex-col items-stretch gap-3.5 lg:flex-row lg:gap-4">

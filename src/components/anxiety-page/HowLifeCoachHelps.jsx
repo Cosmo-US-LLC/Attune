@@ -119,13 +119,10 @@ export default function HowLifeCoachHelps() {
       {/* Mobile */}
       <div className="flex flex-col gap-10 px-5 py-12 lg:hidden">
         <div className="flex flex-col gap-6">
-          <h2 className="font-miniature text-[36px] font-bold leading-[44px] text-black">
+          <h2 className="section-heading text-left text-black">
             <span className="block">How life coach</span>
             <span className="block">
-              helps with{" "}
-              <span className="font-miniature italic text-[#FF6F61]">
-                anxiety
-              </span>
+              helps with <span className="heading-accent">anxiety</span>
             </span>
           </h2>
           <p className="font-inter text-[16px] leading-6 text-[rgba(13,13,13,0.7)]">
@@ -146,9 +143,8 @@ export default function HowLifeCoachHelps() {
       {/* Desktop — Figma 4925:5964 */}
       <div className="mx-auto hidden max-w-[1440px] items-center gap-20 px-[114px] py-[100px] lg:flex">
         <div className="flex w-full max-w-[566px] flex-1 flex-col gap-6">
-          <h2 className="font-miniature text-[54px] font-bold leading-[62px] text-black">
-            How life coach helps with{" "}
-            <span className="font-miniature italic text-[#FF6F61]">anxiety</span>
+          <h2 className="section-heading text-left text-black">
+            How life coach helps with <span className="heading-accent">anxiety</span>
           </h2>
           <p className="font-inter text-[18px] leading-[26px] text-[rgba(13,13,13,0.7)]">
             Anxiety coaching isn&apos;t about eliminating the feeling. It&apos;s

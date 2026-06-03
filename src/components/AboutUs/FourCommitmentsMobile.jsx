@@ -29,14 +29,14 @@ function FourCommitmentsMobile() {
         <span className="bg-[#e5ff7d] text-[#0d0d0d] text-[14px] font-semibold px-5 py-4 rounded-[39px] tracking-[0.72px] uppercase">
           ✦ What we stand for
         </span>
-        <h2 className="font-miniature font-bold text-[42px] leading-[50px] tracking-[-0.02em] text-[#0d0d0d]">
+        <h2 className="section-heading text-[#0d0d0d]">
           Our practice is
           <br />
           built on{" "}
-          <span className="italic text-[#ff6f61]">
+          <span className="heading-accent">
             four
             <br />
-            commitments.
+            commitments
           </span>
         </h2>
         <p className="text-[16px] font-normal text-[#0d0d0d]/70 leading-[24px]">

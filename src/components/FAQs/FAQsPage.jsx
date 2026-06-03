@@ -54,12 +54,9 @@ function FAQsPage() {
               ✦ FAQs
             </span>
           </div>
-          <p className="max-w-[1081px] text-center font-miniature text-[54px] leading-[62px] text-black">
-            <span>You might be </span>
-            <span className="font-miniature text-[54px] font-bold italic leading-[62px] text-[#ff6f61]">
-              wondering...
-            </span>
-          </p>
+          <h2 className="section-heading max-w-[1081px] text-black">
+            You might be <span className="heading-accent">wondering...</span>
+          </h2>
         </div>
 
         {/* Desktop accordion — matches Figma & Accordion / v2-m1 */}
