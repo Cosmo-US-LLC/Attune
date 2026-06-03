@@ -65,7 +65,7 @@ function SessionsPricing() {
         <div className="flex max-w-[800px] flex-col items-center gap-6 text-center lg:gap-8">
           <h2 className="font-miniature text-[42px] leading-[50px] font-bold text-[#0d0d0d] lg:text-[54px] lg:leading-[62px]">
             Choose what{" "}
-            <span className="text-[#FF6F61]">works for you</span>
+            <span className="font-miniature italic text-[#FF6F61]">works for you</span>
           </h2>
           <p className="text-[16px] leading-[26px] text-[rgba(13,13,13,0.7)] lg:text-[18px] lg:leading-[26px]">
             No lock-in contracts. Not happy after your first session? We&apos;ll

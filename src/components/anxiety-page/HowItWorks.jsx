@@ -156,7 +156,8 @@ function HowItWorks() {
       className="flex flex-col items-center gap-6 bg-white px-5 py-8 lg:gap-16 lg:px-[114px] lg:py-20"
     >
       <h2 className="text-center font-miniature text-[42px] font-bold leading-[50px] text-black lg:text-[54px] lg:leading-[62px]">
-        How it works
+        How it {" "}
+        <span className="font-miniature italic text-[#FF6F61]">works</span>
       </h2>
 
       <MobileHowItWorksSteps />
