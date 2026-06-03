@@ -28,7 +28,7 @@ const questions = [
     id: "04",
     question: "How much does it cost?",
     answer:
-      "Our pricing is affordable and based on the number of hours you use. You can choose from flexible plans that work for your needs, starting at just $39/session. We believe emotional support should be accessible to everyone.",
+      "Our pricing is straightforward and affordable, with sessions starting at $60/mo through our Monthly Membership or $67/session with our 4-Session Pack. Whether you're looking for flexibility or ongoing support, we have a plan that works for you. Because we believe meaningful coaching should be accessible to everyone.",
   },
   {
     id: "05",
